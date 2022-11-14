@@ -1,0 +1,53 @@
+{
+    "title": "VMware as a Service docs",
+    "lastupdated": "2022-11-10",
+    "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
+    "section_recommended": [
+      {
+        "title": "Getting started with VMware as a Service",
+        "description": "Get familiar with the process of ordering a VMware as a Service instance.",
+        "href": "/docs/vmware-service?topic=vmware-service-getting-started"
+      },
+      {
+        "title": "Planning the deployment",
+        "description": "Ensure that you plan your deployment properly.",
+        "href": "/docs/vmware-service?topic=vmware-service-tenant-plan-deploy"
+      },
+      {
+        "title": "Ordering instances",
+        "description": "You can order a VMware as a Service instance.",
+        "href": "/docs/vmware-service?topic=vmware-service-tenant-ordering"
+      },
+      {
+        "title": "Adding hosts",
+        "description": "You can increase or decrease the capacity of your deployment.",
+        "href": "/docs/vmware-service?topic=vmware-service-host-adding-deleting"
+      },
+      {
+        "title": "Adding virtual data centers",
+        "description": "You can deploy one or more virtual data centers.",
+        "href": "/docs/vmware-service?topic=vmware-service-vdc-adding"
+      },
+      {
+        "title": "Viewing instances",
+        "description": "You can view the information of the instances that are provisioned for your account.",
+        "href": "/docs/vmware-service?topic=vmware-service-tenant-viewing"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/",
+      "architecture": "https://www.ibm.com/cloud/architecture",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/publiccloud/home"
+    },
+    "section_updates": {
+      "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
+      "tiles": [
+        {
+          "date": "14 November 2022",
+          "title": "VMware as a Service released",
+          "description": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud."
+        }
+      ]
+    }
+  }
