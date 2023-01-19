@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-11-09"
+lastupdated: "2022-11-28"
 
 keywords: order vSphere instance, vSphere instances, vSphere order
 
@@ -18,9 +18,7 @@ subcollection: vmware-service
 # VMware vSphere
 {: #vss-intro}
 
-VMware vSphere instances are the existing [VMware Solutions Dedicated - VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) instances.
-
-For more information, see the following topics:
+For more information about [VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) clusters, see the following topics:
 
 * [Planning for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

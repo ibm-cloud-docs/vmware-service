@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-11-09"
+lastupdated: "2022-11-28"
 
 keywords: order vCenter Server instance, vCenter Server instances, vCenter Server order
 
@@ -18,9 +18,7 @@ subcollection: vmware-service
 # VMware vCenter Server
 {: #vcs-intro}
 
-VMware vCenter Server instances are the existing [VMware Solutions Dedicated - vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances.
-
-For more information, see the following topics:
+For more information about [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances, see the following topics:
 
 * [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
 * [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

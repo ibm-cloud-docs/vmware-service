@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-01-11"
 
 subcollection: vmware-service
 
@@ -59,7 +59,7 @@ Identity and access management includes tasks such as authentication, authorizat
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Identity and access | Provide the function to restrict access to resources through the IBM Cloud console. Provide default access to the provisioned VMware environment. | Manage access to resources through IAM. Manage access to the VMware environment. |
+| Identity and access | Provide the function to restrict access to resources through the IBM Cloud console. Provide default access to the provisioned VMware environment. | Manage access to resources through IAM (Identity and Access Management). Manage access to the VMware environment. |
 | Observability | Allow integration of IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-at-events) with your VMware environment to audit the actions that users take in the cluster. | Set up IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-at-events) or other functions to track user activity. |
 {: row-headers}
 {: caption="Table 3. Responsibilites for identity and access management" caption-side="bottom"}
@@ -84,7 +84,7 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Backup of management configuration data | Conduct backups of the management component configurations. These backups include single-tenant vCenter Server, VMware NSX-T, Cloud Director, and service configurations. Offsite immutable backup copies are enabled in an independent backup account and they run daily. |  |
+| Backup of management configuration data | Conduct backups of the management component configurations. These backups include single-tenant vCenter Server, VMware NSX-T, VMware Cloud Director, and service configurations. Offsite immutable backup copies are enabled in an independent backup account and they run daily. |  |
 | Backup of workloads | Enable backup services for customer workload. | Choose and implement a backup provider for critical workloads. For more information, see [Understanding business continuity and disaster recovery](/docs/vmware-service?topic=vmware-service-bc-dr). |
 | Recovery of configuration | Conduct recovery in the original data center after the infrastructure is available. |  |
 | Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, provide customer restore services after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore backups from your chosen backup provider. For more information, see [Understanding business continuity and disaster recovery](/docs/vmware-service?topic=vmware-service-bc-dr). |

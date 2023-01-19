@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2022-11-10",
+    "lastupdated": "2023-01-12",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_recommended": [
       {
@@ -43,6 +43,11 @@
     "section_updates": {
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
+        {
+          "date": "18 January 2023",
+          "title": "Multizone support",
+          "description": "You can create provider virtual data centers across three data centers in the region."
+        },
         {
           "date": "14 November 2022",
           "title": "VMware as a Service released",

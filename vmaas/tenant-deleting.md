@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-12-06"
 
 keywords: delete tenant instance, single tenant instances, delete instance, single tenant delete
 
@@ -26,11 +26,11 @@ You cannot delete an instance if it still has virtual data centers (VDCs) in it.
 ## Procedure to delete {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-deleting-proc}
 
-1. In the {{site.data.keyword.vmware-service_short}} console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, find and click the instance that you want to delete.
-3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
+3. Click the vertical overflow menu next to the **Status** column, and then click **Delete**.
 
-   The status of the {{site.data.keyword.vmware-service_short}} instance is changed to **Deleting**. When the site is deleted successfully, the components of the site are released, and the status is changed to **Deleted**.
+   The status of the {{site.data.keyword.vmware-service_short}} instance is changed to **Deleting**. When the instance is deleted successfully, the instance components are released, and the status is changed to **Deleted**.
 
 ## Related links
 {: #tenant-deleting-links}

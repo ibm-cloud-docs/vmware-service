@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-01-11"
 
 subcollection: vmware-service
 
@@ -47,7 +47,7 @@ Each customer workload domain contains the following components that are install
 * NSX-T segment to isolate the management components
 * One VMware vCenter Server™ instance
 * One NSX-T Data Center™ instance
-* One Cloud Director™ instance
+* One VMware Cloud Director™ instance
 
 Offloading customer workload instance management components into the management domain makes IaaS resources available in the workload domain for running customer workloads.
 

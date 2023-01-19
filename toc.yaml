@@ -28,24 +28,29 @@ toc:
       - topicgroup:
           label: VMware as a Service
           topics:
-          - vmaas/tenant-plan-deploy.md
-          - vmaas/tenant-ordering.md
+          - topicgroup:
+              label: Managing instances
+              topics:
+              - vmaas/tenant-plan-deploy.md
+              - vmaas/tenant-ordering.md
+              - vmaas/tenant-viewing.md
+              - vmaas/tenant-deleting.md
+          - vmaas/pvdc-adding-deleting.md
           - vmaas/host-adding-deleting.md
           - vmaas/storage-adding-deleting.md
-          - vmaas/vdc-adding.md
-          - vmaas/vdc-view-delete.md
-          - vmaas/accessing-vcd-console.md
-          - vmaas/tenant-viewing.md
-          - vmaas/tenant-deleting.md
-      - topicgroup:
-          label: Other offerings
-          topics:
-          - offerings/shared-intro.md
-          - offerings/vss-intro.md
-          - offerings/vcs-intro.md
-          - offerings/vrw-intro.md
-          - offerings/cr-intro.md
-          - offerings/services-intro.md
+          - topicgroup:
+              label: Managing VDCs
+              topics:
+              - vmaas/vdc-adding.md
+              - vmaas/vdc-view-delete.md
+              - vmaas/accessing-vcd-console.md
+              - common/iam-integration.md
+      - offerings/shared-intro.md
+      - offerings/vss-intro.md
+      - offerings/vcs-intro.md
+      - offerings/vrw-intro.md
+      - offerings/cr-intro.md
+      - offerings/services-intro.md
       - topicgroup:
           label: Enhancing security
           topics:

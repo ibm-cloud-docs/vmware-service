@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-11-09"
+lastupdated: "2022-11-28"
 
 keywords: order shared instance, shared instances, order shared instance, shared order
 
@@ -18,13 +18,11 @@ subcollection: vmware-service
 # VMware Shared
 {: #shared-intro}
 
-VMware Shared instances are the existing [VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) instances.
+For more information about [VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) instances, see the following topics:
 
-For more information, see the following topics:
-
-* [Requirements and planning for VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
-* [Managing your data in VMware Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
+* [Requirements and planning for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
+* [Managing your data in VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Operating VMware Solutions Shared](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Operating VMware Shared](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Deleting virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-11-07"
+lastupdated: "2022-12-02"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -40,14 +40,16 @@ Events are generated when you access VMware Cloud Director in {{site.data.keywor
 
 | Action | Description |
 |:------ |:----------- |
-| `vmware.directorsite.create` | An event is generated when a vCloud Director site is created. |
-| `vmware.directorsite.delete` | An event is generated when a vCloud Director site is deleted. |
-| `vmware.directorsite-host.add` | An event is generated when a host is added to a vCloud Director site. |
-| `vmware.directorsite-host.remove` | An event is generated when a host is removed from a vCloud Director site. |
-| `vmware.directorsite-nfs-storage.add` | An event is generated when NFS storage is added to a vCloud Director site. |
-| `vmware.directorsite-nfs-storage.remove` | An event is generated when NFS storage is removed from a vCloud Director site. |
-| `vmware.directorsite.password-reset` | An event is generated when the user password for a vCloud Director site is reset. |
-{: caption="Table 2. Description of actions that generate events related to vCloud Director site management" caption-side="bottom"}
+| `vmware.directorsite.create` | An event is generated when a VMware Cloud Director site is created. |
+| `vmware.directorsite.delete` | An event is generated when a VMware Cloud Director site is deleted. |
+| `vmware.directorsite-host.add` | An event is generated when a host is added to a VMware Cloud Director site. |
+| `vmware.directorsite-host.remove` | An event is generated when a host is removed from a VMware Cloud Director site. |
+| `vmware.directorsite-nfs-storage.add` | An event is generated when NFS storage is added to a VMware Cloud Director site. |
+| `vmware.directorsite-nfs-storage.remove` | An event is generated when NFS storage is removed from a VMware Cloud Director site. |
+| `vmware.directorsite.password-reset` | An event is generated when the user password for a VMware Cloud Director site is reset. |
+| `vmware.directorsite-iam.config` | An event is generated when the OIDC (OpenID Connect) for a VMware Cloud Director site is configured. |
+| `vmware.directorsite-iam.read` | An event is generated when the OIDC for a VMware Cloud Director site is checked. Monitoring is not enabled yet. |
+{: caption="Table 2. Description of actions that generate events related to VMware Cloud Director site management" caption-side="bottom"}
 
 ## Viewing events
 {: #at-events-viewing}
