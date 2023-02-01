@@ -15,8 +15,8 @@ toc:
     label: VMware as a Service
 
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
       - getting-started.md
@@ -39,7 +39,7 @@ toc:
           - vmaas/host-adding-deleting.md
           - vmaas/storage-adding-deleting.md
           - topicgroup:
-              label: Managing VDCs
+              label: Managing virtual data centers
               topics:
               - vmaas/vdc-adding.md
               - vmaas/vdc-view-delete.md
@@ -56,7 +56,11 @@ toc:
           topics:
           - common/architecture-workload-isolation.md
           - common/single-tenant-monitoring.md
-          - common/iam.md
+          - topicgroup:
+              label: IAM access for VMware as a Service
+              topics:
+              - common/iam.md
+              - common/iam_vcd.md
           - common/data-security.md
           - common/at-events.md
 
@@ -71,7 +75,7 @@ toc:
 
   - navgroup:
       id: help
-      topics: 
+      topics:
       - common/support.md
       - topicgroup:
           label: FAQs
