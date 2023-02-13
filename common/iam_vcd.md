@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-01-20"
+lastupdated: "2023-02-06"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -244,3 +244,8 @@ The following table provides information about roles that are custom-defined by 
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 {: caption="Table 2. Custom-defined roles and permissions for VMware as a Service" caption-side="bottom"}
+
+## Related links
+{: #iam_vcd-links}
+
+* [Managing IAM access for VMware as a Service](https://test.cloud.ibm.com/docs/vmware-service?topic=vmware-service-iam&interface=ui)

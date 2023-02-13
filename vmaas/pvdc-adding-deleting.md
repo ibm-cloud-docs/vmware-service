@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-11"
+lastupdated: "2023-02-01"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -15,12 +15,12 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding and deleting PVDCs
+# Adding and deleting provider virtual data centers
 {: #pvdc-adding-deleting}
 
-You can scale a {{site.data.keyword.vmware-service_short}} instance in different ways. Scaling is used to size the instance properly, based on VMware workload requirements. By creating a provider virtual data center (provider VDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
+You can scale an {{site.data.keyword.vmware-service_full}} instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a provider virtual data center (PVDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
 
-Provider VDCs (PVDCs) are used within the {{site.data.keyword.vmware-service_short}} instance to form units of the following components, which are fully isolated between PVDCs:
+PVDCs are used within the {{site.data.keyword.vmware-service_short}} instance to form units of the following components, which are fully isolated between PVDCs:
 * Compute
 * Memory
 * Storage
@@ -30,7 +30,7 @@ Each PVDC inherits the following policies from the {{site.data.keyword.vmware-se
 * User administration - Users and user policies that are configured for the {{site.data.keyword.vmware-service_short}} instance are shared across all PVDCs.
 * Catalogs - Catalog images and policies also apply across all PVDCs in the instance.
 
-PVDCs consist of one or more vCenter Server clusters. A new vCenter Server cluster is created as part of adding a PVDC to the {{site.data.keyword.vmware-service_short}} instance.
+PVDCs consist of one or more VMware vCenter Server® clusters. A new vCenter Server cluster is created as part of adding a PVDC to the {{site.data.keyword.vmware-service_short}} instance.
 
 You can increase or decrease the capacity of your deployment by adding or deleting PVDCs to and from an instance. You can also expand capacity by adding more clusters to a PVDC.
 
@@ -40,7 +40,7 @@ VDCs deployed to a PVDC can use all compute, memory, and storage within the PVDC
 
 A new PVDC is typically created for the following scenarios:
 * Separate and isolate different types of VMware workloads. The previous guidance is to use the same host profile type for all clusters in the same PVDC. If different workloads are better suited for different host types, then separate PVDCs are required to ensure each workload runs on the correct host type.
-* Run VM workload in different data centers within the region. All clusters in the same PVDC must be in the same data center. Regional high availability across data centers is achieved by creating PVDCs in separate data centers, and then deploying the VDC and applications into each region. A load balancer is used to route requests to active instances of the target workload.
+* Run VM workload in different data centers within the region. All clusters in the same PVDC must be in the same data center. Regional high availability across data centers is achieved by creating PVDCs in separate data centers, and then deploying the virtual data center (VDC) and applications into each region. A load balancer is used to route requests to active instances of the target workload.
 
 ## Procedure to add PVDCs
 {: #pvdc-adding-deleting-add-proc}
@@ -68,7 +68,7 @@ When you deploy a new PVDC, a cluster is created. Cluster configuration can take
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
 3. On the **Infrastructure** tab, locate the PVDC that you want to delete.
 4. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete PVDC**.
-5. Confirm that you want to delete.
+5. Confirm that you want to delete the PVDC.
 
 ## Related links
 {: #pvdc-adding-deleting-links}

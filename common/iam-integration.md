@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-19"
+lastupdated: "2023-01-26"
 
 keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
 
@@ -17,22 +17,22 @@ subcollection: vmware-service
 # VMware Cloud Director single sign-on with IBM Cloud IAM
 {: #iam-integration}
 
-Authentication and authorization to VMware Cloud Director defaults to using IBM Cloud IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their IBM Cloud credentials. When logged in to the IBM Cloud account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
+Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud}} IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
 
 ## Before you begin
 {: #iam-integration-prereq}
 
-Review roles and assign resource access for {{site.data.keyword.vmware-service_short}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
+Review roles and assign resource access for {{site.data.keyword.vmware-service_short}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmware-service?topic=vmware-service-iam_vcd).
 
 ## Responsibilities when you use IAM
 {: #iam-integration-responsib}
 
-Review the following information to understand your responsibilities and IBM responsibilities for managing IAM.
+Review the following information to understand your responsibilities and {{site.data.keyword.IBM}} responsibilities for managing IAM.
 
 ### IBM responsibilities
 {: #iam-integration-responsib-ibm}
 
-Review the IBM's responsibilities for managing IAM.
+Review IBM responsibilities for managing IAM.
 
 * Configure the IAM integration with the VMware Cloud Director console by using OpenID Connect (OIDC) for new deployments.
 * In the VMware Cloud Director console, populate the initial roles and permissions that map to the IAM roles. For more information, see [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui).
@@ -42,15 +42,15 @@ Review the IBM's responsibilities for managing IAM.
 
 Review your responsibilities for managing IAM.
 
-* Maintain and manage the IBM Cloud IAM SSO integration with VMware Cloud Director.
-* User roles and permissions are managed in IBM Cloud IAM.
-* Remove or disconnect the IBM Cloud IAM integration with VMware Cloud Director if you want local authentication (auth-n) and authorization (auth-z) through VMware Cloud Director
+* Maintain and manage the {{site.data.keyword.cloud_notm}} IAM SSO integration with VMware Cloud Director.
+* User roles and permissions are managed in {{site.data.keyword.cloud_notm}} IAM.
+* Remove or disconnect the {{site.data.keyword.cloud_notm}} IAM integration with VMware Cloud Director if you want local authentication (auth-n) and authorization (auth-z) through VMware Cloud Director
 * Users are added to VMware Cloud Director and managed directly in VMware Cloud Director with roles and permissions.
 
 ## Procedure to re-enable IBM Cloud IAM SSO integration for VMware Cloud Director
 {: #iam-integration-procedure}
 
-SSO configuration can be disabled in VMware Cloud Director. When SSO is disabled, local authentication (auth-n) and authorization (auth-z) is managed locally in VMware Cloud Director by adding users in Director and creating policies in Director for the users. At any time VMware Cloud Director configurations can be reset back to using IBM Cloud IAM for auth-n and auth-z with the following steps.
+You can disable SSO configuration disabled in VMware Cloud Director. When SSO is disabled, local authentication (auth-n) and authorization (auth-z) is managed locally in VMware Cloud Director by adding users in Director and creating policies in Director for the users. Use the following steps to reset the VMware Cloud Director configurations back to using {{site.data.keyword.cloud_notm}} IAM for auth-n and auth-z.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.

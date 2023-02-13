@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-11"
+lastupdated: "2023-01-23"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Ordering {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-ordering}
 
-You can order a {{site.data.keyword.vmware-service_short}} instance from the VMware Solutions user interface after you review the minimum requirements.
+You can order an {{site.data.keyword.vmware-service_full}} instance from the VMware Solutions user interface after you review the minimum requirements.
 
 ## Minimum requirements for {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-ordering-min-req}
@@ -33,10 +33,10 @@ You can start with just one virtual data center (VDC) and a performance network 
 {: #tenant-ordering-procedure}
 
 1. In the VMware Solutions console, click **Create** on the **{{site.data.keyword.vmware-service_short}}** card.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, enter the instance name and select a resource group. 
+2. On the **{{site.data.keyword.vmware-service_short}}** page, enter the instance name and select a resource group.
 
    If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to be assigned the **Editor** or **Administrator** role on a resource group in the account. For more information, see [IAM roles](/docs/account?topic=account-userroles).
-3. Specify the settings for the provider VDC (PVDC).
+3. Specify the settings for the provider virtual data center (PVDC).
     1. Specify the PVDC name.
     2. Select the geography, region, and data center to host the PVDC.
 4. Specify the settings for the cluster.

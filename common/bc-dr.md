@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-08-27"
+lastupdated: "2023-01-26"
 
 keywords: HA for vmware service, DR for vmware service, high availability for vmware service, disaster recovery for vmware service, failover for vmware service, BC for vmware service, DR for vmware service, business continuity for vmware service, disaster recovery for vmware service
 
@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM_notm}} and the customer, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vmware-service_full}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-understand-responsib).
+For more information about your responsibilities when using {{site.data.keyword.vmware-service_short}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-understand-responsib).
 
 ## Disaster recovery strategy
 {: #bc-dr-strategy}
@@ -35,7 +35,7 @@ For more information about your responsibilities when using {{site.data.keyword.
 
 | Disaster recovery objective | Target value | Method |
 |:--------------------------- |:------------ | :----- |
-| RPO | 24 h | Use a backup provider such as Veeam Backup and Recovery to store periodic backups of your workload. |
+| RPO | 24 h | Use a backup provider such as Veeam® Backup and Recovery to store periodic backups of your workload. |
 | RPO | Minutes | Use a replication provider such as Veeam to replicate your workload to another location. |
 | RTO | Minutes to hours | The recovery time objective depends on the storage medium that is used for your backups and on how long it takes for your workload to be ready from a cold start. |
 {: caption="Table 1. RPO and RTO for {{site.data.keyword.vmware-service_short}}" caption-side="bottom"}

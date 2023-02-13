@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-11"
+lastupdated: "2023-02-08"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -25,7 +25,7 @@ completion-time: 20m
 {: toc-services="vmware-service"}
 {: toc-completion-time="20m"}
 
-In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vmware-service_short}} instance by using the VMware Solutions user interface. Other operations that you can complete are also listed.
+In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vmware-service_short}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
 {: shortdesc}
 
 The completion time that is listed for this tutorial considers only the time that you spend ordering the artifacts for a {{site.data.keyword.vmware-service_short}} instance on the user interface. It does not consider waiting times for deployments, for example.
@@ -48,7 +48,7 @@ You need an {{site.data.keyword.cloud_notm}} account, which must meet certain re
 
 | Account | Description |
 |:------- |:---------- |
-| IBMid | By using the **IBMid**, you can have a single login username for all IBM products and services that you use, including {{site.data.keyword.cloud_notm}}. {{site.data.keyword.vmwaresolutions_short}} is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the VMware Solutions console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the VMware Solutions console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are guided to either associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You need to go through this process only once. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
+| IBMid | By using the **IBMid**, you can have a single login username for all {{site.data.keyword.IBM}} products and services that you use, including {{site.data.keyword.cloud_notm}}. VMware Solutions is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the VMware Solutions console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the VMware Solutions console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are guided to either associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You need to go through this process only once. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
 | {{site.data.keyword.cloud_notm}} account | To order and use {{site.data.keyword.cloud_notm}} services, an {{site.data.keyword.cloud_notm}} account is required. Billing information is associated with the {{site.data.keyword.cloud_notm}} account. The price of the physical and virtual infrastructure and the resulting licenses are charged to your {{site.data.keyword.cloud_notm}} account. |
 {: caption="Table 1. Required user accounts" caption-side="bottom"}
 
@@ -65,7 +65,7 @@ The VMware Solutions console is the user interface where you order and manage yo
 {: #getting-started-step2}
 {: step}
 
-Before you order an instance, consider the size of the VMware deployment required.
+Before you order an instance, consider the size of the VMware® deployment required.
 
 VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 
@@ -93,7 +93,7 @@ These configurations are used to order a new VMware cluster for running the targ
 * Cluster name
 * Location (geography, region, and data center)
 * Host profile and quantity
-* Attached NFS storage performance tiers and amount of storage in each tier
+* Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
 
 After you specify all configurations, validate the cost and submit the instance order.
 

@@ -2,5 +2,5 @@
 
 Internal-only documentation: https://test.cloud.ibm.com/docs/vmware-service
 
-Customer-facing documentation: https://cloud.ibm.com/docs/vmware-service (not GA-ed yet)
+Customer-facing documentation: https://cloud.ibm.com/docs/vmware-service
 

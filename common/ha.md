@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-10-27"
+lastupdated: "2023-01-26"
 
 keywords: HA for vmware service, high availability for vmware service
 
@@ -16,7 +16,7 @@ subcollection: vmware-service
 # Understanding high availability for {{site.data.keyword.vmware-service_short}}
 {: #ha}
 
-[High availability](#x2284708){: term} (HA) is a core discipline in an IT infrastructure to keep your apps up and running, even after a partial or full site failure. The main purpose of high availability is to eliminate potential points of failures in an IT infrastructure. 
+[High availability](#x2284708){: term} (HA) is a core discipline in an IT infrastructure to keep your apps up and running, even after a partial or full site failure. The main purpose of high availability is to eliminate potential points of failures in an IT infrastructure.
 {: shortdesc}
 
 ## Responsibilities
@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM_notm}} and the customer, see [Shared responsibilities for using {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vmware-service_full}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-understand-responsib).
+For more information about your responsibilities when using {{site.data.keyword.vmware-service_short}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-understand-responsib).
 
 ## What level of availability do I need?
 {: #ha-level}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-01-26"
 
 keywords: monitoring, sysdig, vmware single tenant monitor, vmware site management monitoring, view metrics
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Visualizing your site with IBM Cloud Monitoring
 {: #single-tenant-monitoring}
 
-{{site.data.keyword.at_full}} provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a VMware® site provided default dashboard to view metrics for your sites. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
+{{site.data.keyword.at_full}} provides an integration with {{site.data.keyword.mon_short}}, which allows you to use a VMware® site provided default dashboard to view metrics for your sites. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
 Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 
@@ -27,7 +27,7 @@ Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 * Control cost of monitoring infrastructure.
 * Mitigate impact of abnormal situations with proactive notifications.
 
-For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.cloud}} Monitoring](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
+For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.cloud_notm}} Monitoring](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
 
 ## Monitoring VMware sites
 {: #single-tenant-monitoring-sites}

@@ -36,6 +36,7 @@ toc:
               - vmaas/tenant-viewing.md
               - vmaas/tenant-deleting.md
           - vmaas/pvdc-adding-deleting.md
+          - vmaas/cluster-adding-deleting.md
           - vmaas/host-adding-deleting.md
           - vmaas/storage-adding-deleting.md
           - topicgroup:
@@ -70,6 +71,7 @@ toc:
       id: reference
       topics:
       - common/understand-responsib.md
+      - common/policies.md
       - common/ha.md
       - common/bc-dr.md
 

@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-10-28"
+lastupdated: "2023-01-26"
 
 keywords: data encryption in vmware service, data storage for vmware service, bring your own keys for vmware service, BYOK for vmware service, key management for vmware service, key encryption for vmware service, personal data in vmware service, data deletion for vmware service, data in vmware service, data security in vmware service, KYOK for vmware service
 
@@ -20,7 +20,7 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 
 * Dedicated {{site.data.keyword.keymanagementserviceshort}} instance
 * Dedicated keys per instance
-* Dedicated KMIP adapter per instance
+* Dedicated KMIP™ adapter per instance
 {: shortdesc}
 
 ## How your data is stored and encrypted in {{site.data.keyword.vmware-service_short}}
@@ -38,16 +38,16 @@ All data types and all solution data are regionally isolated. For each region th
 ### Customer {{site.data.keyword.vmware-service_short}} instance metadata
 {: #data-security-cust-metadata}
 
-This data is client metadata that is associated with the created {{site.data.keyword.vmware-service_short}} instance. 
+This data is client metadata that is associated with the created {{site.data.keyword.vmware-service_short}} instance.
 
-{{site.data.keyword.vmware-service_short}} is public in that the same service is supporting many different customers. As instances are created, modified, and deleted by customers, metadata about each customer instance is maintained by the service. The instance metadata describes the details of the {{site.data.keyword.vmware-service_short}} instances. 
+{{site.data.keyword.vmware-service_short}} is public in that the same service is supporting many different customers. As instances are created, modified, and deleted by customers, metadata about each customer instance is maintained by the service. The instance metadata describes the details of the {{site.data.keyword.vmware-service_short}} instances.
 
 Some of the metadata is collected directly from the customer and other metadata is generated as an artifact of the automation logic that is used to order and configure the instance such as the hosts, storage, networking, and service data. Instance metadata includes:
 
 * Client cloud account and contact information
 * Instance names and IDs of VMware instances that are deployed for customers
 * VMware instances locations
-* Installed services, for example, Veeam, Zerto, or HCX
+* Installed services, for example, Veeam®, Zerto, or HCX™
 * Deployment state of each instance, for example Deploying, Failed, or Ready
 * Configuration of user solutions and the underlying components that are used in customer solutions (Compute, networking, storage, licenses)
 * Credentials to access the underlay IaaS and VMware components that are hosting the customers' workloads
