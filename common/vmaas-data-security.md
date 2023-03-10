@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-03-02"
 
 keywords: data encryption in vmware service, data storage for vmware service, bring your own keys for vmware service, BYOK for vmware service, key management for vmware service, key encryption for vmware service, personal data in vmware service, data deletion for vmware service, data in vmware service, data security in vmware service, KYOK for vmware service
 
@@ -14,7 +14,7 @@ subcollection: vmware-service
 {{site.data.keyword.attribute-definition-list}}
 
 # Securing your data in {{site.data.keyword.vmware-service_short}}
-{: #data-security}
+{: #vmaas-data-security}
 
 To ensure that you can securely manage your data when you use {{site.data.keyword.vmware-service_full}}, it is important to know exactly what data is stored and encrypted and how you can delete any stored data. All {{site.data.keyword.vmware-service_short}} instances come with encryption enabled that uses a unique cloud provider key per instance. Each {{site.data.keyword.vmware-service_short}} instance is configured with the following unique resources:
 
@@ -24,7 +24,7 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 {: shortdesc}
 
 ## How your data is stored and encrypted in {{site.data.keyword.vmware-service_short}}
-{: #data-security-storage}
+{: #vmaas-data-security-storage}
 
 The {{site.data.keyword.vmware-service_short}} data plane consists of the following types of data:
 * Customer {{site.data.keyword.vmware-service_short}} instance metadata
@@ -33,10 +33,10 @@ The {{site.data.keyword.vmware-service_short}} data plane consists of the follow
 All data types and all solution data are regionally isolated. For each region that is supported by the {{site.data.keyword.vmware-service_short}} offering, all runtime data is maintained within region. The exception is backup data, which is isolated inside the regions geo-political boundaries for data resiliency if a full region disaster occurs.
 
 ## Protecting your sensitive data in {{site.data.keyword.vmware-service_short}}
-{: #data-security-encryption}
+{: #vmaas-data-security-encryption}
 
 ### Customer {{site.data.keyword.vmware-service_short}} instance metadata
-{: #data-security-cust-metadata}
+{: #vmaas-data-security-cust-metadata}
 
 This data is client metadata that is associated with the created {{site.data.keyword.vmware-service_short}} instance.
 
@@ -58,27 +58,27 @@ Some of the metadata is collected directly from the customer and other metadata 
 {: note}
 
 ### About customer-managed keys
-{: #data-security-about-encryption}
+{: #vmaas-data-security-about-encryption}
 
 Customer keys (BYOK) are not initially supported. {{site.data.keyword.vmware-service_short}} generates the keys uniquely per instance.
 
 ## Deleting your data in {{site.data.keyword.vmware-service_short}}
-{: #data-security-data-delete}
+{: #vmaas-data-security-data-delete}
 
 ### Deleting {{site.data.keyword.vmware-service_short}} metadata
-{: #data-security-data-delete-metadata}
+{: #vmaas-data-security-data-delete-metadata}
 
 Client metadata is associated with the VMware instances that the client creates. When the VMware instance is deleted by the client that the metadata is maintained in the DB where the instance state is set to deleted. Client metadata is maintained in the DB unless the client specifically requests that the data is removed by using a support ticket.
 
 Logs and support data that is associated with the instance are retained by {{site.data.keyword.cloud_notm}} policy for 1 year unless requested for deletion through an IBM Support ticket.
 
 ### Deleting {{site.data.keyword.vmware-service_short}} customer data
-{: #data-security-data-delete-cust-data}
+{: #vmaas-data-security-data-delete-cust-data}
 
 {{site.data.keyword.vmware-service_notm}} customer data is deleted including any customer backups of data by using the service in association with the deletion of the service instance. The cloud service provided data encryption key used by customers to encrypt data is destroyed on deletion. This event renders the data unusable there forward.
 
 ## Related links
-{: #data-security-links}
+{: #vmaas-data-security-links}
 
 * [Data protection](/docs/vmware-service?topic=vmware-service-architecture-workload-isolation-learning#architecture-workload-isolation-data-protection)
 * [Data and data protection for client-owned data](/docs/vmware-service?topic=vmware-service-architecture-workload-isolation-learning#architecture-workload-isolation-data-client)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-03-06"
 
 keywords: order Cyber Recovery instance, Cyber Recovery instances, Cyber Recovery order
 
@@ -24,4 +24,4 @@ For more information about [Cyber Recovery](/docs/vmwaresolutions?topic=vmwareso
 * [Procedure to order Cyber Recovery instance](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
 * [Expanding and contracting capacity for Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingservers)
 * [Adding, viewing, and deleting services for Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingservices)
-* [Viewing and deleting Cyber Recovery instances](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_viewinginstances)
+* [Viewing and deleting Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_viewinginstances)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-27"
+lastupdated: "2023-02-22"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -22,6 +22,8 @@ subcollection: vmware-service
 
 Compute resources are available as dedicated hosts, by using {{site.data.keyword.cloud_notm}} bare metal servers, with multiple host configurations available to address various workload requirements.
 {: shortdesc}
+
+![{{site.data.keyword.vmware-service_short}} architecture](../images/vmware-aas-archi.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} architecture" caption-side="bottom"}
 
 ## {{site.data.keyword.vmware-service_short}} features and functions
 {: #vmware-aas-overview-features}

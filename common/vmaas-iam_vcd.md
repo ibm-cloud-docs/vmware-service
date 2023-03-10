@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-02-06"
+lastupdated: "2023-03-10"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -16,13 +16,13 @@ subcollection: vmware-service
 {{site.data.keyword.attribute-definition-list}}
 
 # Roles and permissions for VMware Cloud Director
-{: #iam_vcd}
+{: #vmaas-iam_vcd}
 
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
 * **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
-* **Custom** - roles that are custom-defined by IBM.
+* **Custom** - roles that are custom-defined by {{site.data.keyword.IBM}}.
 
 | Platform management role | Actions | Level of permission |
 |:----------------- |:----------------- |:----------------- |
@@ -44,7 +44,7 @@ The following table provides information about the platform management roles and
 {: caption="Table 1. Roles and actions for VMware as a Service" caption-side="bottom"}
 
 ## Custom defined roles and permissions
-{: #iam_vcd-custom}
+{: #vmaas-iam_vcd-custom}
 
 The following table provides information about roles that are custom-defined by IBM.
 
@@ -246,6 +246,6 @@ The following table provides information about roles that are custom-defined by 
 {: caption="Table 2. Custom-defined roles and permissions for VMware as a Service" caption-side="bottom"}
 
 ## Related links
-{: #iam_vcd-links}
+{: #vmaas-iam_vcd-links}
 
-* [Managing IAM access for VMware as a Service](https://test.cloud.ibm.com/docs/vmware-service?topic=vmware-service-iam&interface=ui)
+* [Managing IAM access for VMware as a Service](/docs/vmware-service?topic=vmware-service-iam&interface=ui)

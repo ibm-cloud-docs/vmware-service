@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-02-01"
+lastupdated: "2023-03-10"
 
 subcollection: vmware-service
 
@@ -20,9 +20,9 @@ keywords: public isolation for vmware service, compute isolation for vmware serv
 The {{site.data.keyword.vmware-service_full}} architecture is based on two logical entities that are created uniquely per supported cloud region.
 
 * Management domain - Hosts the {{site.data.keyword.IBM}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
-* Customer workload domain - Hosts single-tenant {{site.data.keyword.cloud}} IaaS, networking edges, and customer deployed networking and workload.
+* Customer workload domain - Hosts single-tenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer deployed networking and workload.
 
-![{{site.data.keyword.vmware-service_short}} region](../images/vmware-aas-region.svg "{{site.data.keyword.vmware-service_short}} region"){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} region" caption-side="bottom"}
+![{{site.data.keyword.vmware-service_short}} region](../images/vmware-aas-region.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} region" caption-side="bottom"}
 
 The architecture details {{site.data.keyword.vmware-service_short}} solution components and different architecture layers to provide a dedicated and private implementation for customers. The architecture provides standardized and customizable deployment choices of VMware Cloud Director based virtual data center environments.
 
@@ -105,4 +105,4 @@ In all cases, data must be resilient to support solution continuity and recovery
 ## Related links
 {: #architecture-workload-isolation-links}
 
-* [Securing your data in {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-data-security)
+* [Securing your data in {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-data-security)

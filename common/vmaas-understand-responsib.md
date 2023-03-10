@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-03-10"
 
 subcollection: vmware-service
 
@@ -14,15 +14,15 @@ keywords: ibm responsibilities, customer responsibilities, management responsibi
 {{site.data.keyword.attribute-definition-list}}
 
 # Understanding your responsibilities when you use {{site.data.keyword.vmware-service_short}}
-{: #understand-responsib}
+{: #vmaas-understand-responsib}
 
-Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmware-service_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
+Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmware-service_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 {: shortdesc}
 
 Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.vmware-service_short}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} terms of use](/docs/overview/terms-of-use?topic=overview-terms).
 
 ## Incident and operations management
-{: #understand-responsib-incident-and-ops}
+{: #vmaas-understand-responsib-incident-and-ops}
 
 Incident and operations management includes tasks such as event management, high availability, problem determination, recovery, and full state backup and recovery.
 
@@ -41,7 +41,7 @@ Incident and operations management includes tasks such as event management, high
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Change management
-{: #understand-responsib-change-management}
+{: #vmaas-understand-responsib-change-management}
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
@@ -53,20 +53,20 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Identity and access management
-{: #understand-responsib-iam}
+{: #vmaas-understand-responsib-iam}
 
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Identity and access | Provide the function to restrict access to resources through the {{site.data.keyword.cloud_notm}} console. Provide default access to the provisioned VMware environment. | Manage access to resources through IAM (Identity and Access Management). Manage access to the VMware environment. |
-| Observability | Allow integration of {{site.data.keyword.cloud_notm}} [Activity Tracker](/docs/vmware-service?topic=vmware-service-at-events) with your VMware environment to audit the actions that users take in the cluster. | Set up IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-at-events) or other functions to track user activity. |
+| Observability | Allow integration of {{site.data.keyword.cloud_notm}} [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) with your VMware environment to audit the actions that users take in the cluster. | Set up IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) or other functions to track user activity. |
 {: row-headers}
 {: caption="Table 3. Responsibilites for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Security and regulation compliance
-{: #understand-responsib-security-compliance}
+{: #vmaas-understand-responsib-security-compliance}
 
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
@@ -78,7 +78,7 @@ Security and regulation compliance includes tasks such as security controls impl
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Disaster recovery
-{: #understand-responsib-disaster-recovery}
+{: #vmaas-understand-responsib-disaster-recovery}
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 

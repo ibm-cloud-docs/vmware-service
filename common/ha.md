@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-03-10"
 
 keywords: HA for vmware service, high availability for vmware service
 
@@ -22,9 +22,9 @@ subcollection: vmware-service
 ## Responsibilities
 {: #ha-responsibilities}
 
-For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM_notm}} and the customer, see [Shared responsibilities for using {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
+For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM}} and the customer, see [Shared responsibilities for using {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vmware-service_short}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-understand-responsib).
+For more information about your responsibilities when using {{site.data.keyword.vmware-service_short}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
 
 ## What level of availability do I need?
 {: #ha-level}

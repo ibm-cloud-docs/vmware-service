@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-28"
+lastupdated: "2023-03-06"
 
 keywords: order shared instance, shared instances, order shared instance, shared order
 
@@ -23,6 +23,6 @@ For more information about [VMware Shared](/docs/vmwaresolutions?topic=vmwaresol
 * [Requirements and planning for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
 * [Managing your data in VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Operating VMware Shared](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Deleting virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 
