@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-04-07"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -26,18 +26,25 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2023
 {: #year-2023}
 
+### 7 April 2023
+{: #april-2023}
+{: release-note}
+
+Mirrored M.2 disk availability
+:   VMware® 7.0u3 ESXi™ server host boot disks are now provisioned as mirrored M.2 disks.
+
 ### 10 March 2023
 {: #march-2023}
 {: release-note}
 
 Data center support for 25 GbE
-: Beginning with {{site.data.keyword.vmware-service_short}} 1.3, you can select a data center with networking speed of either 10 GbE or 25 GbE.
+:   Beginning with {{site.data.keyword.vmware-service_short}} 1.3, you can select a data center with networking speed of either 10 GbE or 25 GbE.
 
 User interface updates and enhancements
-:  The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
+:   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
 
 IBM software currency policy
-: Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware® and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
+:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
 {: #february-2023}
