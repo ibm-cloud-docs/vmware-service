@@ -24,17 +24,17 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: shortdesc}
 
 ## 2023
-{: #year-2023}
+{: #vmware-service-year-2023}
 
 ### 7 April 2023
-{: #april-2023}
+{: #vmware-service-april-2023}
 {: release-note}
 
 Mirrored M.2 disk availability
 :   VMware® 7.0u3 ESXi™ server host boot disks are now provisioned as mirrored M.2 disks.
 
 ### 10 March 2023
-{: #march-2023}
+{: #vmware-service-march-2023}
 {: release-note}
 
 Data center support for 25 GbE
@@ -47,7 +47,7 @@ IBM software currency policy
 :   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
-{: #february-2023}
+{: #vmware-service-february-2023}
 {: release-note}
 
 VMware currency
@@ -60,7 +60,7 @@ Virtual data centers without edge
 :   You can deploy virtual data centers (VDCs) without a network edge, which can help you save resources and costs by sharing an existing edge across multiple VDCs. This option is suitable for centralized networking administration and control over many VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 ### 18 January 2023
-{: #january-2023}
+{: #vmware-service-january-2023}
 {: release-note}
 
 Multizone support
@@ -73,10 +73,10 @@ IAM enablement
 :   VMware Cloud Director SSO is enabled with {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) for new sites. You can also enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console from the VMware Solutions console. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmware-service?topic=vmware-service-iam-integration).
 
 ## 2022
-{: #year-2022}
+{: #vmware-service-year-2022}
 
 ### 14 November 2022
-{: #november-2022}
+{: #vmware-service-november-2022}
 {: release-note}
 
 {{site.data.keyword.vmware-service_short}} released
