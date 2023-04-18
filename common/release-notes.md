@@ -30,8 +30,8 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-april-2023}
 {: release-note}
 
-Mirrored M.2 disk availability
-:   VMware® 7.0u3 ESXi™ server host boot disks are now provisioned as mirrored M.2 disks.
+Production refresh
+:   Production refresh to deliver defect resolutions, performance improvements, and maintain security currency.
 
 ### 10 March 2023
 {: #vmware-service-march-2023}
@@ -44,7 +44,7 @@ User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
 
 IBM software currency policy
-:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
+:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware® and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
 {: #vmware-service-february-2023}
