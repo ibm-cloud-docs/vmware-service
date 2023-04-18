@@ -45,8 +45,8 @@
       "tiles": [
         {
           "date": "7 April 2023",
-          "title": "Mirrored M.2 disk availability",
-          "description": "VMware 7.0u3 ESXi server host boot disks are now provisioned as mirrored M.2 disks."
+          "title": "Production refresh",
+          "description": "Production refresh to deliver defect resolutions, performance improvements, and maintain security currency."
         },
         {
           "date": "10 March 2023",
