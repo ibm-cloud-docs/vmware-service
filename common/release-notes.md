@@ -38,7 +38,7 @@ Production refresh
 {: release-note}
 
 Data center support for 25 GbE
-:   Beginning with {{site.data.keyword.vmware-service_short}} 1.3, you can select a data center with networking speed of either 10 GbE or 25 GbE.
+:   You can now select a data center with networking speed of either 10 GbE or 25 GbE.
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
@@ -51,7 +51,7 @@ IBM software currency policy
 {: release-note}
 
 VMware currency
-:   Beginning with {{site.data.keyword.vmware-service_short}} 1.2, the infrastructure is upgraded to VMware NSX-T™ 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   The infrastructure is upgraded to VMware NSX-T™ 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
 
 Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).
@@ -64,7 +64,7 @@ Virtual data centers without edge
 {: release-note}
 
 Multizone support
-:   Beginning with {{site.data.keyword.vmware-service_short}} 1.1, you can create PVDCs across three data centers in the region. For more information, see [Ordering {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-ordering) and [Adding and deleting PVDCs](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
+:   You can now create PVDCs across three data centers in the region. For more information, see [Ordering {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-ordering) and [Adding and deleting PVDCs](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
 Add PVDC with new cluster
 :   Adding multiple PVDCs with new clusters is now supported, with a limitation of one cluster per PVDC. For more information, see [Adding and deleting PVDCs](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
