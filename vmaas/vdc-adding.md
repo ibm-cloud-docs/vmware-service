@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-04-10"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -62,7 +62,7 @@ You can also specify a VDC name that meets the following requirements:
 
 * The deployment of the resources starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the VDC status.
 * When all resources are successfully deployed, the ordered components are installed on your virtual platform.
-* When the resources are ready to use, the status of the VDC is changed to **Running**.
+* When the resources are ready to use, the status of the VDC is changed to **Available**.
 
 ## What to do next
 {: #vdc-adding-next}

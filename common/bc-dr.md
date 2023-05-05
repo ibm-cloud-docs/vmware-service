@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-04-27"
 
 keywords: HA for vmware service, DR for vmware service, high availability for vmware service, disaster recovery for vmware service, failover for vmware service, BC for vmware service, DR for vmware service, business continuity for vmware service, disaster recovery for vmware service
 
@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM}} and the customer, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vmware-service_short}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
+For more information about your responsibilities when using {{site.data.keyword.vmware-service_full}}, see [Understanding your responsibilities when using {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
 
 ## Disaster recovery strategy
 {: #bc-dr-strategy}

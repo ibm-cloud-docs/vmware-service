@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-03"
+lastupdated: "2023-04-27"
 
 keywords: view virtual data center, view virtual data centers, vdc view, delete vdc, virtual data center delete
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Viewing and deleting VDCs
 {: #vdc-view-delete}
 
-View the summary and detailed information of the VDCs (virtual data centers) in your {{site.data.keyword.vmware-service_short}} instance.
+View the summary and detailed information of the VDCs (virtual data centers) in your {{site.data.keyword.vmware-service_full}} instance.
 
 ## Procedure to view a summary of VDCs
 {: #vdc-view-delete-summary}

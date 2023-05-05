@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-03-15"
+lastupdated: "2023-04-27"
 
 subcollection: vmware-service
 
@@ -84,7 +84,7 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Backup of management configuration data | Conduct backups of the management component configurations. These backups include single-tenant vCenter Server, VMware NSX-T, VMware Cloud Director, and service configurations. Offsite immutable backup copies are enabled in an independent backup account and they run daily. |  |
+| Backup of management configuration data | Conduct backups of the management component configurations. These backups include single-tenant vCenter Server, VMware NSX-T, VMware Cloud Director™, and service configurations. Offsite immutable backup copies are enabled in an independent backup account and they run daily. |  |
 | Backup of workloads | Enable backup services for customer workload. | Choose and implement a backup provider for critical workloads. For more information, see [Understanding business continuity and disaster recovery](/docs/vmware-service?topic=vmware-service-bc-dr). |
 | Recovery of configuration | Conduct recovery in the original data center after the infrastructure is available. |  |
 | Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, provide customer restore services after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore backups from your chosen backup provider. For more information, see [Understanding business continuity and disaster recovery](/docs/vmware-service?topic=vmware-service-bc-dr). |

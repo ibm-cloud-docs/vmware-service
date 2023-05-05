@@ -70,6 +70,13 @@ toc:
   - navgroup:
       id: reference
       topics:
+      - topicgroup:
+          label: API reference
+          topics:
+          - link:
+              label: VMware as a Service API
+              href: https://{DomainName}/apidocs/vmware-service
+          - include: common/api-change-log.md
       - common/vmaas-understand-responsib.md
       - common/policies.md
       - common/ha.md

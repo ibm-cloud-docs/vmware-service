@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-23"
+lastupdated: "2023-03-23"
 
 keywords: delete tenant instance, single tenant instances, delete instance, single tenant delete
 
@@ -21,7 +21,7 @@ subcollection: vmware-service
 When you no longer need them, you can delete the {{site.data.keyword.vmware-service_full}} instances that are provisioned in your account.
 
 You cannot delete an instance if it still has virtual data centers (VDCs) in it. Before you delete your instance, ensure that all VDCs in the instance are deleted.
-{: important}
+{: restriction}
 
 ## Procedure to delete {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-deleting-proc}

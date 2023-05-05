@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-22"
+lastupdated: "2023-04-27"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # {{site.data.keyword.vmware-service_short}} overview
 {: #vmware-aas-overview}
 
-{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® software so you can quickly deploy your VMware-based cloud computing environments.
+{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® software so you can quickly deploy your VMware-based cloud computing environments.
 
 Compute resources are available as dedicated hosts, by using {{site.data.keyword.cloud_notm}} bare metal servers, with multiple host configurations available to address various workload requirements.
 {: shortdesc}

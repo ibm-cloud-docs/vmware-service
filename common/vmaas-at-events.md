@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-03-02"
+lastupdated: "2023-04-27"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -36,7 +36,7 @@ Events are generated to track how users and applications interact with virtual d
 ## Events that are related to director site management
 {: #vmaas-at-events-director-site}
 
-Events are generated when you access VMware Cloud Director in {{site.data.keyword.vmware-service_short}}. The following table provides the actions that generate and send events to {{site.data.keyword.at_short}}.
+Events are generated when you access VMware Cloud Director™ in {{site.data.keyword.vmware-service_short}}. The following table provides the actions that generate and send events to {{site.data.keyword.at_short}}.
 
 | Action | Description |
 |:------ |:----------- |

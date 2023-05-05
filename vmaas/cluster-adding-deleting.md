@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-06"
+lastupdated: "2023-04-27"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -28,17 +28,21 @@ You can increase or decrease the capacity of your deployment by adding clusters 
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, click **Add cluster +**.
 5. On the **Add cluster** window, specify the settings for the new cluster.
-    1. Enter the cluster name.
-    2. Specify the host profile.
-    3. Specify the host quantity.
-6. Review the new cost, select the confirmation checkbox, and click **Change** to confirm.
+    1. Specify the cluster name.
+    2. Select the profile storage type.
+    3. Select the host profile.
+    4. Select the host quantity.
+       * For NFS only storage, select a minimum of 2.
+       * For vSAN™ storage, select a minimum of 6.
+6. Click the **Attached NFS storage** tab and specify the settings for the storage.
+7. Review the new cost, select the confirmation checkbox, and click **Change** to confirm.
 
 ## Before you delete clusters
 {: #cluster-adding-deleting-before-delete}
 
 Workload virtual machines (VMs) are deployed in virtual data centers (VDCs) that logically exist in the scope of a PVDC. PVDCs physically consist of one or more VMware vCenter clusters. When the PVDC contains multiple clusters and one cluster is deleted, all VMs running in that cluster are migrated to other clusters in the same PVDC.
 
-VMs deployed to a specific storage performance tier are only migrated to the same performance tier of storage in the remaining clusters. You must ensure that the remaining clusters have compatible storage performance layers of the deleted cluster. The remaining clusters must also have enough CPU and memory to contain the VMs of the deleted cluster. 
+VMs deployed to a specific storage performance tier are only migrated to the same performance tier of storage in the remaining clusters. You must ensure that the remaining clusters have compatible storage performance layers of the deleted cluster. The remaining clusters must also have enough CPU and memory to contain the VMs of the deleted cluster.
 
 If not enough CPU, RAM, or equivalent storage performance for the cluster exists, the delete operation does not succeed. When the delete cluster operations are not successful, workloads are not impacted, and the operation is retried. Resource constraints are resolved by either stopping or deleting VMs or ensuing other clusters in the PVDC have the resource to support migrated workload VMs.
 

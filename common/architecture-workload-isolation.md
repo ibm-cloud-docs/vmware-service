@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-04-27"
 
 subcollection: vmware-service
 
@@ -24,7 +24,7 @@ The {{site.data.keyword.vmware-service_full}} architecture is based on two logic
 
 ![{{site.data.keyword.vmware-service_short}} region](../images/vmware-aas-region.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} region" caption-side="bottom"}
 
-The architecture details {{site.data.keyword.vmware-service_short}} solution components and different architecture layers to provide a dedicated and private implementation for customers. The architecture provides standardized and customizable deployment choices of VMware Cloud Director based virtual data center environments.
+The architecture details {{site.data.keyword.vmware-service_short}} solution components and different architecture layers to provide a dedicated and private implementation for customers. The architecture provides standardized and customizable deployment choices of VMware Cloud Director™ based virtual data center environments.
 
 With single tenant Cloud Director instances and its virtual data center instances, customers can migrate or deploy VMware workloads to the cloud on the IBM-hosted and managed VMware infrastructure. Customer workloads that consist of networking configurations and VMs are isolated to single tenant dedicated infrastructure.
 

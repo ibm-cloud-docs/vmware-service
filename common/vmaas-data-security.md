@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-03-02"
+lastupdated: "2023-04-27"
 
 keywords: data encryption in vmware service, data storage for vmware service, bring your own keys for vmware service, BYOK for vmware service, key management for vmware service, key encryption for vmware service, personal data in vmware service, data deletion for vmware service, data in vmware service, data security in vmware service, KYOK for vmware service
 
@@ -45,7 +45,7 @@ This data is client metadata that is associated with the created {{site.data.key
 Some of the metadata is collected directly from the customer and other metadata is generated as an artifact of the automation logic that is used to order and configure the instance such as the hosts, storage, networking, and service data. Instance metadata includes:
 
 * Client cloud account and contact information
-* Instance names and IDs of VMware instances that are deployed for customers
+* Instance names and IDs of VMware® instances that are deployed for customers
 * VMware instances locations
 * Installed services, for example, Veeam®, Zerto, or HCX™
 * Deployment state of each instance, for example Deploying, Failed, or Ready

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2022-01-23"
+lastupdated: "2022-04-10"
 
 keywords: view tenant instance, single tenant instances, view instance, single tenant view
 
@@ -36,7 +36,7 @@ View the summary and detailed information of the {{site.data.keyword.vmware-serv
    * Click **Set IAM integration** to enable IAM (Identity Access Management) for existing sites. For more information, see [Managing resource groups](/docs/account?topic=account-rgs).
    * Click **Reset site admin password** to reset the site administrator password.
 4. Click the **Infrastructure** tab.
-   * On the **Clusters** tab, view all clusters that are deployed into the instance. Click a cluster name to review information such as total cores and RAM, host units, and cluster status.
+   * On the **Clusters** tab, view all clusters that are deployed into the instance. Click a cluster name to review information such as total cores and RAM, host units, storage type, and cluster status.
    * Click the **Data centers** tab to view all VDCs deployed into the instance. Click a VDC to review information such as public IP addresses.
    * Click the **Network edges** tab to view the edges deployed into the instance.
 

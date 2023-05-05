@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-04-07"
+lastupdated: "2023-05-05"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -25,6 +25,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 5 May 2023
+{: #vmware-service-may-2023}
+{: release-note}
+
+vSAN storage availability
+:   You can now select vSAN™ storage with optional NFS storage for your instance order in locations with 25 GbE availability. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
+
+REST APIs
+:   REST APIs are now available for all {{site.data.keyword.vmware-service_short}} capabilities. For more information, see [VMware as a Service API](/apidocs/vmware-service).
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
 
 ### 7 April 2023
 {: #vmware-service-april-2023}
@@ -51,7 +64,7 @@ IBM software currency policy
 {: release-note}
 
 VMware currency
-:   The infrastructure is upgraded to VMware NSX-T™ 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   Infrastructure upgrade to VMware NSX-T™ 4.0 and VMware Cloud Director™ 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
 
 Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).

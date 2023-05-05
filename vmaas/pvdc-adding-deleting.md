@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-01"
+lastupdated: "2023-04-27"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -49,13 +49,16 @@ A new PVDC is typically created for the following scenarios:
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
 3. Click **Add provider VDC +**.
 4. On the **Add provider VDC** window, specify the settings for the new PVDC.
-    1. Enter the PVDC name.
+    1. Specify the PVDC name.
     2. Select the geography, region, and data center to host the new PVDC.
 5. Click the **Host details** tab and specify the settings for the host.
     1. Specify the cluster name.
-    2. Select the host profile.
-    3. Specify the host quantity (minimum 2).
-6. Click the **NFS storage** tab and specify the settings for the storage.
+    2. Select the profile storage type.
+    3. Select the host profile.
+    4. Select the host quantity.
+       * For NFS only storage, select a minimum of 2.
+       * For vSAN™ storage, select a minimum of 6.
+6. Click the **Attached NFS storage** tab and specify the settings for the storage.
 7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
 
 When you deploy a new PVDC, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can perform user access and administration tasks.

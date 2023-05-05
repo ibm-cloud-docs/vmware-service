@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-04-27"
 
 keywords: vmware service, access, reset, password resources, access VMware Cloud Director console
 
@@ -17,7 +17,7 @@ subcollection: vmware-service
 # Accessing the VMware Cloud Director console
 {: #accessing-vcd-console}
 
-You can use the VMware Cloud Director console to configure and manage the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs). VMware® workloads are created, deployed, and managed in the VMware Cloud Director console.
+You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs). VMware® workloads are created, deployed, and managed in the VMware Cloud Director console.
 
 Access the VMware Cloud Director console from the VDC details page to complete the following tasks from the console.
 

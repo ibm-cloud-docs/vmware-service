@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-23"
+lastupdated: "2023-04-27"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -41,11 +41,15 @@ You can start with just one virtual data center (VDC) and a performance network 
     2. Select the geography, region, and data center to host the PVDC.
 4. Specify the settings for the cluster.
     1. Specify the cluster name.
-    2. Select the host profile.
-    3. Specify the host quantity (minimum 2).
-    4. Specify the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
-5. On the **Summary** pane, review the instance settings and the estimated price.
-6. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
+    2. Select the profile storage type.
+    3. Select the host profile.
+    4. Select the host quantity.
+      * For NFS only storage, select a minimum of 2.
+      * For vSAN™ storage, select a minimum of 6.
+    5. For vSAN, optionally select the **Enable vSAN deduplication and compression** checkbox to save storage space.
+5. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
+6. On the **Summary** pane, review the instance settings and the estimated price.
+7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
 ## Related links
 {: #tenant-ordering-links}

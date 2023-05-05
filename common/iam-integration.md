@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-04-27"
 
 keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
 
@@ -17,7 +17,7 @@ subcollection: vmware-service
 # VMware Cloud Director single sign-on with IBM Cloud IAM
 {: #iam-integration}
 
-Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud}} IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
+Authentication and authorization to VMware Cloud Director™ defaults to using {{site.data.keyword.cloud}} IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
 
 ## Before you begin
 {: #iam-integration-prereq}
