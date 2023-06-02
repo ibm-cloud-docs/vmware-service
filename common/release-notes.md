@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-05-05"
+lastupdated: "2023-06-02"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -25,6 +25,22 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 2 June 2023
+{: #vmware-service-june-2023}
+{: release-note}
+
+Accessing {{site.data.keyword.vmware-service_short}} REST APIs
+:   You can now access {{site.data.keyword.vmware-service_short}} APIs through the {{site.data.keyword.cloud_notm}} Virtual Private Cloud. For more information, see [Using a virtual private endpoint](/docs/vmware-service?topic=vmware-service-virtual-private-endpoints).
+
+Fast provisioning for virtual machines
+:   Fast provisioning for virtual machines is now available for your virtual data centers. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
+
+VMware currency
+:   This release provides infrastructure upgrades to VMware NSX-T™ 4.1 and VMware ESXi™ 7.0U3L.
+
+User interface updates and enhancements
+:   You can check the prices for {{site.data.keyword.vmware-service_short}} without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.
 
 ### 5 May 2023
 {: #vmware-service-may-2023}
@@ -64,7 +80,7 @@ IBM software currency policy
 {: release-note}
 
 VMware currency
-:   Infrastructure upgrade to VMware NSX-T™ 4.0 and VMware Cloud Director™ 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director™ 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
 
 Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).

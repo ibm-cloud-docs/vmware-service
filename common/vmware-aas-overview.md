@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-24"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -34,7 +34,7 @@ The {{site.data.keyword.vmware-service_short}} offering has the following featur
    * IBM-managed infrastructure
    * IBM-managed VMware components and services
 * Dedicated hosts and multiple host profiles for creating VMware vCenter clusters
-* Multiple performance options for attached Network File Storage (NFS v3)
+* Multiple performance options for attached vSAN™ and Network File Storage (NFS v3)
 * Monthly billing
 * Unique provider-managed encryption keys per instance with encrypted VMware storage profiles
 * Single sign-on (SSO) with role-based authentication and authorization from {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) to VMware Cloud Director
@@ -62,11 +62,6 @@ The {{site.data.keyword.vmware-service_short}} offering has the following featur
 * Host type and counts used
 * Egress public networking
 * Networking edge types and counts
-
-## {{site.data.keyword.vmware-service_short}} locations
-{: #vmware-aas-overview-locations}
-
-This offering is available in the **Dallas** region.
 
 ## Related links
 {: #vmware-aas-overview-links}

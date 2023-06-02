@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-10"
+lastupdated: "2023-06-01"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -32,6 +32,13 @@ You can also specify a VDC name that meets the following requirements:
 * Only alphanumeric, dash (-), and underscore (_) characters are allowed.
 * The name must be unique within all active VDCs in your account. You can create a VDC that has the same name as a previously deleted VDC.
 
+## Fast provisioning of virtual machines
+{: #vdc-adding-fast-provisioning}
+
+Fast provisioning saves time by using linked clones for virtual machine (VM) provisioning. You can enable fast provisioning for any VDC created within the PVDC. If not enabled, all provisioning operations use full clones.
+
+You can enable or disable fast provisioning from the **Data center details** page when the VDC is in **Available** status. For more information, see [Procedure to view the VDC details](/docs/vmware-service?topic=vmware-service-vdc-view-delete#vdc-view-delete-details).
+
 ## Procedure to add virtual data centers
 {: #vdc-adding-procedure}
 
@@ -40,7 +47,8 @@ You can also specify a VDC name that meets the following requirements:
 3. Click the **Infrastructure** tab. If the instance has multiple PVDCs, ensure that the appropriate PVDC tab is selected.
 4. Click the **Data centers** tab and click **Add VDC +**.
 5. On the **Virtual data center** page, specify the VDC name, the resource group, and the site and PVDC names. The site and PVDC names are preset based on the instance settings, but you can change them.
-6. To order a network edge, ensure that the **Create network edge** checkbox is selected and specify the edge type, either **Efficiency** or **Performance**. Edge storage costs might occur for either edge type.
+6. Optionally turn the toggle on to enable fast provisioning of VMs.
+7. To order a network edge, ensure that the **Create network edge** checkbox is selected and specify the edge type, either **Efficiency** or **Performance**. Edge storage costs might occur for either edge type.
 
    | Edge type | Details |
    |:--------- |:------- |
@@ -48,7 +56,7 @@ You can also specify a VDC name that meets the following requirements:
    | Performance | These edges allocate new networking resources that are attached to the single VDC. New CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. |
    {: caption="Table 1. Network edge descriptions" caption-side="bottom"}
 
-7. For the **Performance** edge type, specify the edge size: 
+7. For the **Performance** edge type, specify the edge size:
    * **Medium** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps.
    * **Large** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps.
    * **Extra Large** - This option is suitable when the total throughput required is multiple Gbps for L7 and VPN.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-16"
 
 keywords: view virtual data center, view virtual data centers, vdc view, delete vdc, virtual data center delete
 
@@ -15,10 +15,10 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing and deleting VDCs
+# Viewing and deleting virtual data centers
 {: #vdc-view-delete}
 
-View the summary and detailed information of the VDCs (virtual data centers) in your {{site.data.keyword.vmware-service_full}} instance.
+View the summary and detailed information of the virtual data centers (VDCs) in your {{site.data.keyword.vmware-service_full}} instance.
 
 ## Procedure to view a summary of VDCs
 {: #vdc-view-delete-summary}
@@ -39,7 +39,8 @@ View the summary and detailed information of the VDCs (virtual data centers) in 
    * The 6 public IP addresses that are assigned to the VDC. The IP addresses can be assigned to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses.
 
 4. To reset the administrator password, click **Reset on site level**.
-5. To access the service and to create and manage networking and workloads, click **VMware Cloud Director console**. For more information, see [Accessing the VMware Cloud Director console](/docs/vmware-service?topic=vmware-service-accessing-vcd-console).
+5. Use the toggle to either enable or disable fast provisioning.
+6. To access the service and to create and manage networking and workloads, click **VMware Cloud Director console**. For more information, see [Accessing the VMware Cloud Director console](/docs/vmware-service?topic=vmware-service-accessing-vcd-console).
 
 ## Procedure to delete VDCs
 {: #vdc-view-delete-delete}

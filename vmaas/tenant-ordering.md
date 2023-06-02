@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-23"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -47,9 +47,9 @@ You can start with just one virtual data center (VDC) and a performance network 
       * For NFS only storage, select a minimum of 2.
       * For vSAN™ storage, select a minimum of 6.
     5. For vSAN, optionally select the **Enable vSAN deduplication and compression** checkbox to save storage space.
-5. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
-6. On the **Summary** pane, review the instance settings and the estimated price.
-7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
+    6. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
+5. On the **Summary** pane, review the instance settings and the estimated price.
+6. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
 ## Related links
 {: #tenant-ordering-links}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-05"
+lastupdated: "2023-05-24"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -18,6 +18,18 @@ subcollection: vmware-service
 {: #tenant-plan-deploy}
 
 Before you order an {{site.data.keyword.vmware-service_full}} instance, ensure that you plan your deployment.
+
+## IBM Cloud data center availability
+{: #tenant-plan-deploy-locations}
+
+The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vmware-service_short}} deployment.
+
+| Geography | Region | Data center |
+|:----------|:----------|:----------|
+| North America | Dallas | Dallas 10 |
+| North America | Dallas | Dallas 12 |
+| North America | Dallas | Dallas 13 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 
 ## VMware deployment size
 {: #tenant-plan-deploy-vmware-depl}
