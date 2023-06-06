@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-05-16"
+lastupdated: "2023-06-06"
 
 keywords: view virtual data center, view virtual data centers, vdc view, delete vdc, virtual data center delete
 
@@ -25,7 +25,7 @@ View the summary and detailed information of the virtual data centers (VDCs) in 
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, expand a {{site.data.keyword.vmware-service_short}} instance row to view the list of VDCs that are provisioned for that instance.
-4. Review the VDCs information: VDC name, provider VDC name, network edge, and VDC status.
+3. Review the VDCs information: VDC name, provider VDC name, network edge, and VDC status.
 
 ## Procedure to view the VDC details
 {: #vdc-view-delete-details}

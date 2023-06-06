@@ -56,14 +56,14 @@ You can enable or disable fast provisioning from the **Data center details** pag
    | Performance | These edges allocate new networking resources that are attached to the single VDC. New CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. |
    {: caption="Table 1. Network edge descriptions" caption-side="bottom"}
 
-7. For the **Performance** edge type, specify the edge size:
+8. For the **Performance** edge type, specify the edge size:
    * **Medium** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps.
    * **Large** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps.
    * **Extra Large** - This option is suitable when the total throughput required is multiple Gbps for L7 and VPN.
 
-8. You can also clear the **Create network edge** checkbox to create a VDC without a network edge. This option is suitable for centralized networking administration and control over multiple VDCs.
+9. You can also clear the **Create network edge** checkbox to create a VDC without a network edge. This option is suitable for centralized networking administration and control over multiple VDCs.
 
-9. After all configurations are set, review the cost, and click **Create** to submit the VDC order.
+10. After all configurations are set, review the cost, and click **Create** to submit the VDC order.
 
 ## Results after you add virtual data centers
 {: #vdc-adding-results}
