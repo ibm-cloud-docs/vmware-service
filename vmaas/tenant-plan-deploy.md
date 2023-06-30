@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-24"
+lastupdated: "2023-06-30"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -29,6 +29,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | North America | Dallas | Dallas 10 |
 | North America | Dallas | Dallas 12 |
 | North America | Dallas | Dallas 13 |
+| Europe | Frankfurt | Frankfurt 02 |
+| Europe | Frankfurt | Frankfurt 04 |
+| Europe | Frankfurt | Frankfurt 05 |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 
 ## VMware deployment size

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-06-02"
+lastupdated: "2023-06-30"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -29,6 +29,9 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ### 2 June 2023
 {: #vmware-service-june-2023}
 {: release-note}
+
+IBM Cloud data center availability
+:   (Updated on 30 June 2023) The **Frankfurt** region is now available to host your provider virtual data center. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 Accessing {{site.data.keyword.vmware-service_short}} REST APIs
 :   You can now access {{site.data.keyword.vmware-service_short}} APIs through the {{site.data.keyword.cloud_notm}} Virtual Private Cloud. For more information, see [Using a virtual private endpoint](/docs/vmware-service?topic=vmware-service-virtual-private-endpoints).
