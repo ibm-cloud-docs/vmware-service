@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-07-06"
 
 keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
 
@@ -53,7 +53,7 @@ Review your responsibilities for managing IAM.
 You can disable SSO configuration disabled in VMware Cloud Director. When SSO is disabled, local authentication (auth-n) and authorization (auth-z) is managed locally in VMware Cloud Director by adding users in Director and creating policies in Director for the users. Use the following steps to reset the VMware Cloud Director configurations back to using {{site.data.keyword.cloud_notm}} IAM for auth-n and auth-z.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Ensure that you are on the **Summary** tab and scroll down to the **Access controls** section. Click **Set IAM integration**.
 
 ## Results after you enable IAM

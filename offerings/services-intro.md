@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-06-06"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -52,4 +52,4 @@ Add-on services are not supported for all offerings.
 
 * [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
 * [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

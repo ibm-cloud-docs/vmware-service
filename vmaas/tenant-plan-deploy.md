@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-07-06"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -87,7 +87,13 @@ For NFS only storage, you must select at least one unit of 2 IOPS/GB or higher.
 
 Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.4&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
 
+## Services for {{site.data.keyword.vmware-service_short}}
+{: #tenant-plan-deploy-services}
+
+The Veeam® Backup and Replication service is preinstalled and included by default for your instance order. You can remove the service from your instance order. Service charges are incurred only if you choose to include the service in your order.
+
 ## Related links
 {: #tenant-plan-deploy-links}
 
 * [FAQ](/docs/vmware-service?topic=vmware-service-faq-general)
+* [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam)

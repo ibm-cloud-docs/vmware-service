@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2022-06-06"
+lastupdated: "2022-07-06"
 
 keywords: view tenant instance, single tenant instances, view instance, single tenant view
 
@@ -24,22 +24,30 @@ View the summary and detailed information of the {{site.data.keyword.vmware-serv
 {: #tenant-viewing-summary}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, view the list of instances that are provisioned.
-3. Review the name, region, creation time, and status of the provisioned instances.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click either the **Virtual data centers** tab or the **Cloud director sites** tab to view the list of instances that are provisioned.
+3. Review the name, location, and status of the provisioned instances.
 
 ## Procedure to view details for {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-viewing-details}
 
-1. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
-2. On the **Summary** tab, review the following details:
-   * View the number of clusters, virtual data centers (VDCs), provider VDCs, and other instance site details.
-   * In the **Access controls** section, you can:
+1. In the **{{site.data.keyword.vmware-service_short}}** table, click either the **Virtual data centers** tab or the **Cloud director sites** tab. Then, click an instance name.
+2. On the **Summary** tab, review the virtual data center or Cloud Director site details.
+3. For virtual data centers, the following options are available.
+   * On the **Summary** tab, toggle fast provisioning off or on.
+   * On the **Add-on services** tab, you can:
+     * Enable or delete Veeam® Backup and Replication.
+     * Click **Veeam backups** to open the Self-Service Backup Portal.
+4. For Cloud Director sites, the following options are available.
+   * On the **Summary** tab, you can:
      * Click **Set IAM integration** to enable IAM (Identity Access Management) for existing sites. For more information, see [Managing resource groups](/docs/account?topic=account-rgs).
-     * Click **Reset site admin password** to reset the site administrator password.
-3. Click the **Infrastructure** tab.
-   * On the **Clusters** tab, view all clusters that are deployed into the instance. Click a cluster name to review information such as total cores and RAM, host units, storage type, and cluster status.
-   * Click the **Data centers** tab to view all VDCs deployed into the instance. Click a VDC to review information such as public IP addresses.
-   * Click the **Network edges** tab to view the edges deployed into the instance.
+     * Click **Enable Veeam** to provision Veeam Backup and Replication for your instance.
+   * On the **Infrastructure** tab, you can:
+     * Click the **Clusters** tab, view all clusters that are deployed into the instance. Click a cluster name to review information such as total cores and RAM, host units, storage type, and cluster status.
+     * Click the **Virtual data centers** tab to view all VDCs deployed into the instance. Click a VDC to review information such as public IP addresses.
+     * Click the **Network edges** tab to view the edges deployed into the instance.
+   * On the **Add-on services** tab, you can:
+     * Enable or delete Veeam Backup and Replication.
+     * Click **Veeam backups** to open the Self-Service Backup Portal.
 
 ## Related links
 {: #tenant-viewing-links}

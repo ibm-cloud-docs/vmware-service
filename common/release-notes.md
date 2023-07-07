@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-07-07"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -25,6 +25,21 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 7 July 2023
+{: #vmware-service-july-2023}
+{: release-note}
+
+Veeam Backup and Replication availability
+:   The Veeam® Backup and Replication service is now available by default for deployment with new and existing {{site.data.keyword.vmware-service_short}} instances. Service charges are incurred only if you choose to include the service in your order. For more information, see [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam).
+
+User interface updates and enhancements
+:   The user interface is updated and provides the following enhancements.
+
+   * The ordering flow for both {{site.data.keyword.vmware-service_short}} single-tenant Cloud Director sites and associated virtual data centers are now combined into a single ordering page.
+   * The {{site.data.keyword.vmware-service_short}} **Resources** page now provides two tabbed views. In the first tab, all virtual data centers in the account are displayed. In the second tab, all authorized Cloud Director sites are displayed with the associated virtual data centers.
+   * You can now access the VMware console from the virtual data center and Cloud Director site summary pages.
+   * The **Add-on services** tab is available on instance details pages to easily manage the Veeam Backup and Replication service.
 
 ### 2 June 2023
 {: #vmware-service-june-2023}

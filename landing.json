@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2023-06-02",
+    "lastupdated": "2023-07-07",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "7 July 2023",
+          "title": "Veeam Backup and Replication availability",
+          "description": "The Veeam® Backup and Replication service is now available for deployment with new and existing VMware as a Service instances."
+        },
+        {
           "date": "2 June 2023",
           "title": "Accessing VMware as a Service REST APIs",
           "description": "You can now access VMware as a Service APIs through the IBM Cloud Virtual Private Cloud."
@@ -55,11 +60,6 @@
           "date": "5 May 2023",
           "title": "vSAN storage availability",
           "description": "You can now select vSAN storage with optional NFS storage for your instance order in locations with 25 GbE availability."
-        },
-        {
-          "date": "7 April 2023",
-          "title": "Production refresh",
-          "description": "Production refresh to deliver defect resolutions, performance improvements, and maintain security currency."
         }
       ]
     }

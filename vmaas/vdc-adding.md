@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-06-01"
+lastupdated: "2023-07-06"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -21,6 +21,9 @@ subcollection: vmware-service
 With a {{site.data.keyword.vmware-service_full}} single tenant instance, you can control and manage the capacity that is used to run VMware® workloads. You can add virtual data centers (VDCs) to the instance to deploy and run VMware virtualized networking and to run VMware workloads. 
 
 You can deploy one or more VDCs in a {{site.data.keyword.vmware-service_short}} single tenant instance. The minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 100 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the provider virtual data center (PVDC).
+
+You must create a Cloud Director site before you create virtual data centers. You can only deploy virtual data centers to an existing Cloud Director site.
+{: requirement}
 
 ## Virtual data center name
 {: #vdc-adding-vdc-name}
@@ -43,27 +46,24 @@ You can enable or disable fast provisioning from the **Data center details** pag
 {: #vdc-adding-procedure}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
-3. Click the **Infrastructure** tab. If the instance has multiple PVDCs, ensure that the appropriate PVDC tab is selected.
-4. Click the **Data centers** tab and click **Add VDC +**.
-5. On the **Virtual data center** page, specify the VDC name, the resource group, and the site and PVDC names. The site and PVDC names are preset based on the instance settings, but you can change them.
-6. Optionally turn the toggle on to enable fast provisioning of VMs.
-7. To order a network edge, ensure that the **Create network edge** checkbox is selected and specify the edge type, either **Efficiency** or **Performance**. Edge storage costs might occur for either edge type.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, ensure that the **Virtual data centers** tab is selected, and then click **Create new +**.
+3. On the **{{site.data.keyword.vmware-service_short}}** page, ensure that the **VMwaaS single-tenant Virtual data center** card is selected.
+4. Specify the VDC name and select the resource group.
+5. Select the Cloud Director location, and PVDC. The site and PVDC names are preset based on the instance settings, but you can change them.
+6. Optionally toggle fast provisioning of VMs on.
+7. To order a network edge, ensure that the toggle for **Create without network edge** is off and specify the edge type. Edge storage costs might occur.
 
    | Edge type | Details |
    |:--------- |:------- |
    | Efficiency | These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 100 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
-   | Performance | These edges allocate new networking resources that are attached to the single VDC. New CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. |
+   | Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps. |
+   | Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps. |
+   | Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
    {: caption="Table 1. Network edge descriptions" caption-side="bottom"}
 
-8. For the **Performance** edge type, specify the edge size:
-   * **Medium** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps.
-   * **Large** - This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps.
-   * **Extra Large** - This option is suitable when the total throughput required is multiple Gbps for L7 and VPN.
+   Alternatively, toggle **Create without network edge** on. This option is suitable for centralized networking administration and control over multiple VDCs.
 
-9. You can also clear the **Create network edge** checkbox to create a VDC without a network edge. This option is suitable for centralized networking administration and control over multiple VDCs.
-
-10. After all configurations are set, review the cost, and click **Create** to submit the VDC order.
+9. Review the cost, accept the terms, and click **Create** to submit the VDC order.
 
 ## Results after you add virtual data centers
 {: #vdc-adding-results}

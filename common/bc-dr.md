@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-06-06"
 
 keywords: HA for vmware service, DR for vmware service, high availability for vmware service, disaster recovery for vmware service, failover for vmware service, BC for vmware service, DR for vmware service, business continuity for vmware service, disaster recovery for vmware service
 
@@ -34,7 +34,7 @@ For more information about your responsibilities when using {{site.data.keyword.
 {{site.data.keyword.vmware-service_short}} provides mechanisms to protect your data and restore service functions. Business continuity plans are in place to achieve targeted [recovery point objective](#x3429911){: term} (RPO) and [recovery time objective](#x3167918){: term} (RTO) for the service. The following table outlines the targets for {{site.data.keyword.vmware-service_short}}.
 
 | Disaster recovery objective | Target value | Method |
-|:--------------------------- |:------------ | :----- |
+|:--------------------------- |:------------ |:------ |
 | RPO | 24 h | Use a backup provider such as Veeam® Backup and Recovery to store periodic backups of your workload. |
 | RPO | Minutes | Use a replication provider such as Veeam to replicate your workload to another location. |
 | RTO | Minutes to hours | The recovery time objective depends on the storage medium that is used for your backups and on how long it takes for your workload to be ready from a cold start. |

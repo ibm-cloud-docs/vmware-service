@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-07-05"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -24,7 +24,7 @@ You can increase or decrease the capacity of your deployment by adding clusters 
 {: #cluster-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, click **Add cluster +**.
 5. On the **Add cluster** window, specify the settings for the new cluster.
@@ -34,8 +34,9 @@ You can increase or decrease the capacity of your deployment by adding clusters 
     4. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
        * For vSAN™ storage, select a minimum of 6.
-6. Click the **Attached NFS storage** tab and specify the settings for the storage.
-7. Review the new cost, select the confirmation checkbox, and click **Change** to confirm.
+    5. Click **Next**.
+6. Specify the attached NFS storage settings.
+7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
 
 ## Before you delete clusters
 {: #cluster-adding-deleting-before-delete}
@@ -50,7 +51,7 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 {: #cluster-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, locate the cluster that you want to delete.
 5. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete cluster**.

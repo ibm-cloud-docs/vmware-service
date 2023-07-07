@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-06-06"
 
 keywords: monitoring, sysdig, vmware single tenant monitor, vmware site management monitoring, view metrics
 
@@ -39,7 +39,7 @@ Consider the following tasks, predefined alerts, and what they mean when you mon
 | Monitor CPU usage per cluster to prevent CPU resource exhaustion. The default is to alert after CPU usage is over 80% for any cluster in the site | [VMware Site] Cluster CPU Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware workloads start to fail, and new deployments of workloads fail. |
 | Monitor memory usage per cluster to prevent memory resource exhaustion. The default is to alert after memory usage is over 80% for any cluster in the site.| [VMware Site] Cluster Memory Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware workloads start to fail, and new deployments of workloads fail. |
 | Monitor storage usage per cluster to prevent storage resource exhaustion. The default is to alert after storage usage is over 80% for any cluster in the site | [VMware Site] Cluster Storage Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with storage. Each of the four performance tiers for the storage that is used in the cluster can be monitored and can receive alerts independently. As usage reaches 100%, VMware workloads start to fail, and new deployments of workloads fail. |
-{: caption="Table 1: Tasks and predefined alerts" caption-side="top"}
+{: caption="Table 1: Tasks and predefined alerts" caption-side="bottom"}
 
 ## {{site.data.keyword.vmware-service_short}} predefined dashboard
 {: #single-tenant-monitoring-dashboards}
@@ -74,7 +74,7 @@ The following table displays the total usage for the VMware single-tenant site c
 | `Metric Type` | `gauge` |
 | `Value Type` | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 2: CPU usage metadata" caption-side="top"}
+{: caption="Table 2: CPU usage metadata" caption-side="bottom"}
 
 ### Cluster memory usage
 {: #single-tenant-monitoring-metrics-memory}
@@ -87,7 +87,7 @@ The following table displays the total usage for the VMware single-tenant site c
 | `Metric Type` | `gauge` |
 | `Value Type` | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 3: Memory usage metadata" caption-side="top"}
+{: caption="Table 3: Memory usage metadata" caption-side="bottom"}
 
 ### Cluster 0.25 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-storage-25}
@@ -100,7 +100,7 @@ The following table displays the total usage for the VMware single-tenant cluste
 | `Metric Type` | `gauge` |
 | `Value Type`  | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 4: 0.25 IOPS/GB storage usage metadata" caption-side="top"}
+{: caption="Table 4: 0.25 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Cluster 2 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-2}
@@ -113,7 +113,7 @@ The following table displays the total usage for the VMware single-tenant cluste
 | `Metric Type` | `gauge` |
 | `Value Type` | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 5: 2 IOPS/GB storage usage metadata" caption-side="top"}
+{: caption="Table 5: 2 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Cluster 4 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-4}
@@ -126,7 +126,7 @@ The following table displays the total usage for the VMware single-tenant cluste
 | `Metric Type` | `gauge` |
 | `Value Type` | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 6: 4 IOPS/GB storage usage metadata" caption-side="top"}
+{: caption="Table 6: 4 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Cluster 10 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-10}
@@ -139,4 +139,4 @@ The following table displays the total usage for the VMware single-tenant cluste
 | `Metric Type` | `gauge` |
 | `Value Type` | `percent` |
 | `Segment By` | `Service instance, VMware Site cluster, Service instance name` |
-{: caption="Table 7: 10 IOPS/GB storage usage metadata" caption-side="top"}
+{: caption="Table 7: 10 IOPS/GB storage usage metadata" caption-side="bottom"}

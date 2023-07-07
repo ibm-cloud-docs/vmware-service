@@ -46,6 +46,11 @@ toc:
               - vmaas/vdc-view-delete.md
               - vmaas/accessing-vcd-console.md
               - common/iam-integration.md
+          - topicgroup:
+              label: Managing Veeam Backup and Replication
+              topics:
+              - vmaas/tenant-veeam.md
+              - vmaas/veeam-adding-deleting.md
       - offerings/shared-intro.md
       - offerings/vss-intro.md
       - offerings/vcs-intro.md

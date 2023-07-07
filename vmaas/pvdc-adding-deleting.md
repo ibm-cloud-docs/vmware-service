@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-07-06"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -46,19 +46,21 @@ A new PVDC is typically created for the following scenarios:
 {: #pvdc-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
-3. Click **Add provider VDC +**.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
+3. Click the **Infrastructure** tab, then click **Add provider VDC +**.
 4. On the **Add provider VDC** window, specify the settings for the new PVDC.
     1. Specify the PVDC name.
-    2. Select the geography, region, and data center to host the new PVDC.
-5. Click the **Host details** tab and specify the settings for the host.
+    2. Select the PVDC location.
+    3. Click **Next**.
+5. Specify the host details.
     1. Specify the cluster name.
     2. Select the profile storage type.
     3. Select the host profile.
     4. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
        * For vSAN™ storage, select a minimum of 6.
-6. Click the **Attached NFS storage** tab and specify the settings for the storage.
+    5. Click **Next**.
+6. Specify the attached NFS storage settings.
 7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
 
 When you deploy a new PVDC, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can perform user access and administration tasks.
@@ -68,7 +70,7 @@ When you deploy a new PVDC, a cluster is created. Cluster configuration can take
 {: #pvdc-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. On the **Infrastructure** tab, locate the PVDC that you want to delete.
 4. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete PVDC**.
 5. Confirm that you want to delete the PVDC.
