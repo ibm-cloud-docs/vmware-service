@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-07-14"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -248,4 +248,4 @@ The following table provides information about roles that are custom-defined by 
 ## Related links
 {: #vmaas-iam_vcd-links}
 
-* [Managing IAM access for VMware as a Service](/docs/vmware-service?topic=vmware-service-iam&interface=ui)
+* [Managing IAM access for VMware as a Service](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui)

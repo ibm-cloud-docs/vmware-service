@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-06"
+lastupdated: "2023-07-14"
 
 keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
 
@@ -22,7 +22,7 @@ Authentication and authorization to VMware Cloud Director™ defaults to using {
 ## Before you begin
 {: #iam-integration-prereq}
 
-Review roles and assign resource access for {{site.data.keyword.vmware-service_short}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd).
+Review roles and assign resource access for {{site.data.keyword.vmware-service_short}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd).
 
 ## Responsibilities when you use IAM
 {: #iam-integration-responsib}
