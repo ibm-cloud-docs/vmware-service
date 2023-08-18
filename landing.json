@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "18 August 2023",
+          "title": "Production refresh",
+          "description": "Production refresh to deliver defect resolutions, performance improvements, and maintain security currency."
+        },
+        {
           "date": "7 July 2023",
           "title": "Veeam Backup and Replication availability",
           "description": "The Veeam® Backup and Replication service is now available for deployment with new and existing VMware as a Service instances."
@@ -55,11 +60,6 @@
           "date": "2 June 2023",
           "title": "Accessing VMware as a Service REST APIs",
           "description": "You can now access VMware as a Service APIs through the IBM Cloud Virtual Private Cloud."
-        },
-        {
-          "date": "5 May 2023",
-          "title": "vSAN storage availability",
-          "description": "You can now select vSAN storage with optional NFS storage for your instance order in locations with 25 GbE availability."
         }
       ]
     }

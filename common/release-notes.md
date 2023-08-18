@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-07-07"
+lastupdated: "2023-08-18"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 18 August 2023
+{: #vmware-service-aug0923}
+{: release-note}
+
+Production refresh
+:   Production refresh to deliver defect resolutions, performance improvements, and maintain security currency.
 
 ### 7 July 2023
 {: #vmware-service-july-2023}
