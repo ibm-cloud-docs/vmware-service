@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-06"
+lastupdated: "2023-07-25"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding and deleting provider virtual data centers
+# Adding a provider virtual data centers
 {: #pvdc-adding-deleting}
 
 You can scale an {{site.data.keyword.vmware-service_full}} instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a provider virtual data center (PVDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
@@ -42,11 +42,16 @@ A new PVDC is typically created for the following scenarios:
 * Separate and isolate different types of VMware workloads. The previous guidance is to use the same host profile type for all clusters in the same PVDC. If different workloads are better suited for different host types, then separate PVDCs are required to ensure each workload runs on the correct host type.
 * Run VM workload in different data centers within the region. All clusters in the same PVDC must be in the same data center. Regional high availability across data centers is achieved by creating PVDCs in separate data centers, and then deploying the virtual data center (VDC) and applications into each region. A load balancer is used to route requests to active instances of the target workload.
 
+A PVDC is deleted when the last VDC on the PVDC is deleted.
+{: note}
+
+For more information, see [Provider Virtual Data Centers](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-3C2D7ABC-B9A7-4FBD-AD2D-8137ACB23F1B.html). {: external}
+
 ## Procedure to add PVDCs
 {: #pvdc-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Infrastructure** tab, then click **Add provider VDC +**.
 4. On the **Add provider VDC** window, specify the settings for the new PVDC.
     1. Specify the PVDC name.
@@ -65,15 +70,6 @@ A new PVDC is typically created for the following scenarios:
 
 When you deploy a new PVDC, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can perform user access and administration tasks.
 {: note}
-
-## Procedure to delete PVDCs
-{: #pvdc-adding-deleting-delete-proc}
-
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
-3. On the **Infrastructure** tab, locate the PVDC that you want to delete.
-4. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete PVDC**.
-5. Confirm that you want to delete the PVDC.
 
 ## Related links
 {: #pvdc-adding-deleting-links}
