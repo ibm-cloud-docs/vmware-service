@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-06-06"
+lastupdated: "2023-07-17"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -50,6 +50,6 @@ Add-on services are not supported for all offerings.
 ## Other services
 {: #services-intro-other}
 
-* [Managed Disaster Recovery Services by Kyndryl](/docs/vmwaresolutions?topic=vmwaresolutions-managing_zerto_services)
+* [Managed Disaster Recovery Services by Kyndryl](https://www.kyndryl.com/us/en/services/cyber-resilience){: external}
 * [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
