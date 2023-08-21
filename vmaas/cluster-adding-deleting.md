@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-05"
+lastupdated: "2023-07-20"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -18,13 +18,13 @@ subcollection: vmware-service
 # Adding and deleting clusters
 {: #cluster-adding-deleting}
 
-You can increase or decrease the capacity of your deployment by adding clusters to or deleting clusters from an instance. VMware vCenter clusters are the building blocks of VMware Cloud Director provider virtual data centers (PVDCs) and are added to existing PVDCs or are added as part of a PVDC creation.
+You can increase or decrease the capacity of your deployment by adding clusters to or deleting clusters from a single-tenant instance. VMware vCenter clusters are the building blocks of VMware Cloud Director provider virtual data centers (PVDCs) and are added to existing PVDCs or are added as part of a PVDC creation.
 
 ## Procedure to add clusters to {{site.data.keyword.vmware-service_short}} instances
 {: #cluster-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, click **Add cluster +**.
 5. On the **Add cluster** window, specify the settings for the new cluster.
@@ -51,7 +51,7 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 {: #cluster-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, locate the cluster that you want to delete.
 5. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete cluster**.

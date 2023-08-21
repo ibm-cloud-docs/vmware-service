@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-06"
+lastupdated: "2023-07-20"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -27,6 +27,16 @@ Minimum 2 servers (6 servers for vSAN profiles)
  * 2 hosts (2-socket 32 cores, 192 GB RAM)
  * 24 TB of shared storage
  * Minimum of 1 virtual data center (VDC) with a medium performance edge
+
+## Virtual data center name
+{: #tenant-ordering-vdc-name}
+
+The VDC name is set to **vdc-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
+
+You can also specify a VDC name that meets the following requirements:
+* The maximum length is 128 characters.
+* Only alphanumeric, dash (-), and underscore (_) characters are allowed.
+* The name must be unique within all active VDCs in your account. You can create a VDC that has the same name as a previously deleted VDC.
 
 You can start with just one virtual data center (VDC) and a performance network edge of medium size.
 

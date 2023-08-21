@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-06"
+lastupdated: "2023-07-20"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -21,7 +21,7 @@ subcollection: vmware-service
 You can increase or decrease the capacity of your deployment by adding or deleting hosts to and from a cluster.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Infrastructure** tab.
 4. On the **Clusters** tab, click a cluster name to expand its details.
 5. Click **Edit host quantity**.
