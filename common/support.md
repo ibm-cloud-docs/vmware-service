@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-10-27"
+lastupdated: "2023-07-25"
 
-keywords: troubleshooting, contact support, support ticket
+keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
 subcollection: vmware-service
 
@@ -15,10 +15,16 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Contacting IBM Support
+# Getting help and support for {{site.data.keyword.vmware-service_short}}
 {: #support}
 
-If you need help with {{site.data.keyword.vmware-service_full}}, create a case from the {{site.data.keyword.cloud_notm}} Support Center to get assistance.
+If you experience an issue or have questions when using {{site.data.keyword.vmware-service_full}}, you can use the following resources before you open a support case.
+{: shortdesc}
+
+* Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
+* Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 ## Procedure to create a case for {{site.data.keyword.vmware-service_short}}
 {: #support-procedure}

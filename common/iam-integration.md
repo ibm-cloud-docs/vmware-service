@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-08-21"
 
 keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
 
@@ -28,6 +28,8 @@ Access the VMware Cloud Director console from the VMware Solutions console to co
 * User administration
 
 Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
+
+From the VMware Solutions console, click **VMware console** to access the VMware Cloud Director console.
 
 ## Before you begin
 {: #iam-integration-prereq}
@@ -56,40 +58,6 @@ Review your responsibilities for managing IAM.
 * User roles and permissions are managed in {{site.data.keyword.cloud_notm}} IAM.
 * Remove or disconnect the {{site.data.keyword.cloud_notm}} IAM integration with VMware Cloud Director if you want local authentication (auth-n) and authorization (auth-z) through VMware Cloud Director.
 * Users are added to VMware Cloud Director and managed directly in VMware Cloud Director with roles and permissions.
-
-## Procedure to re-enable IBM Cloud IAM SSO integration for VMware Cloud Director
-{: #iam-integration-procedure}
-
-You can disable SSO configuration that is disabled in VMware Cloud Director. When SSO is disabled, local authentication (auth-n) and authorization (auth-z) is managed locally in VMware Cloud Director by adding users in Director and creating policies in Director for the users. Use the following steps to reset the VMware Cloud Director configurations back to using {{site.data.keyword.cloud_notm}} IAM for auth-n and auth-z.
-
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
-3. Ensure that you are on the **Summary** tab and scroll down to the **Access controls** section. Click **Set IAM integration**.
-
-## Results after you enable IAM
-{: #iam-integration-results}
-
-The IAM integration status can have the following results.
-
-| Status | Description |
-|:------ |:----------- |
-| Integration pending | The IAM integration is in progress. |
-| Integration incomplete | The integration is not successful. Contact IBM Support. |
-| Integration enabled | The IAM integration was previously enabled for the organization. You can reset the integration, if needed. |
-{: caption="Table 1. Status descriptions for IAM implementation" caption-side="bottom"}
-
-### Removing or disconnecting the IBM Cloud IAM integration with VMware Cloud Director
-{: #iam-integration-results-reset}
-
-Before you can reset the IAM integration, you must delete all OpenID Connect (OIDC) users and imported groups with the OIDC type, then delete the OIDC provider. For more information, see [Deleting the OpenID Connect configuration in your VMware Cloud Director organization](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-delete-oidc).
-
-### Single sign-on availability
-{: #iam-integration-results-sso}
-
-After the IAM integration is enabled, you can use single sign-on to log in to the VMware Cloud Director console.
-
-1. Click **VMware console**.
-2. From the log in panel, click **SIGN IN WITH SINGLE SIGN-ON** to log in to the console.
 
 ## Related links
 {: #iam-integration-links}

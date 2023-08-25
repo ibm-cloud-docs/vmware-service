@@ -21,6 +21,8 @@ toc:
       topics:
       - getting-started.md
       - common/vmware-aas-overview.md
+      - topic: common/release-notes.md
+        navtitle: Release notes
 
   - navgroup:
       id: howto
@@ -90,9 +92,7 @@ toc:
   - navgroup:
       id: help
       topics:
-      - common/support.md
-      - topicgroup:
-          label: FAQs
-          topics:
-          - common/faq-general.md
-      - common/release-notes.md
+      - topic: common/faq-general.md
+        navtitle: FAQ
+      - topic: commmon/support.md
+        navtitle: Getting help and support

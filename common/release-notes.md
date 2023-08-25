@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-08-18"
+lastupdated: "2023-08-25"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -15,8 +15,6 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-{:release-note: data-hd-content-type='release-note'}
-
 # Release notes for {{site.data.keyword.vmware-service_short}}
 {: #vmware-service-relnotes}
 
@@ -26,15 +24,22 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2023
 {: #vmware-service-year-2023}
 
+### 25 August 2023
+{: #vmware-service-aug2523}
+{: release-note}
+
+User interface updates and enhancements and production refresh
+:   The user interface is updated with various message and tooltip enhancements. Performance and security currency improvements are also included in this refresh.
+
 ### 18 August 2023
-{: #vmware-service-aug0923}
+{: #vmware-service-aug1823}
 {: release-note}
 
 Production refresh
 :   Production refresh to deliver defect resolutions, performance improvements, and maintain security currency.
 
 ### 7 July 2023
-{: #vmware-service-july-2023}
+{: #vmware-service-jul0723}
 {: release-note}
 
 Veeam Backup and Replication availability
@@ -49,7 +54,7 @@ User interface updates and enhancements
    * The **Add-on services** tab is available on instance details pages to easily manage the Veeam Backup and Replication service.
 
 ### 2 June 2023
-{: #vmware-service-june-2023}
+{: #vmware-service-jun0223}
 {: release-note}
 
 IBM Cloud data center availability
@@ -68,7 +73,7 @@ User interface updates and enhancements
 :   You can check the prices for {{site.data.keyword.vmware-service_short}} without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.
 
 ### 5 May 2023
-{: #vmware-service-may-2023}
+{: #vmware-service-may0523}
 {: release-note}
 
 vSAN storage availability
@@ -81,14 +86,14 @@ User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.
 
 ### 7 April 2023
-{: #vmware-service-april-2023}
+{: #vmware-service-apr0723}
 {: release-note}
 
 Production refresh
 :   Production refresh to deliver defect resolutions, performance improvements, and maintain security currency.
 
 ### 10 March 2023
-{: #vmware-service-march-2023}
+{: #vmware-service-mar1023}
 {: release-note}
 
 Data center support for 25 GbE
@@ -101,7 +106,7 @@ IBM software currency policy
 :   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware® and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
-{: #vmware-service-february-2023}
+{: #vmware-service-feb1023}
 {: release-note}
 
 VMware currency
@@ -114,7 +119,7 @@ Virtual data centers without edge
 :   You can deploy virtual data centers (VDCs) without a network edge, which can help you save resources and costs by sharing an existing edge across multiple VDCs. This option is suitable for centralized networking administration and control over many VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 ### 18 January 2023
-{: #vmware-service-january-2023}
+{: #vmware-service-jan1823}
 {: release-note}
 
 Multizone support
@@ -130,7 +135,7 @@ IAM enablement
 {: #vmware-service-year-2022}
 
 ### 14 November 2022
-{: #vmware-service-november-2022}
+{: #vmware-service-nov1422}
 {: release-note}
 
 {{site.data.keyword.vmware-service_short}} released
