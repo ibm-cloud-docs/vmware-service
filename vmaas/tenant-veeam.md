@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-07-06"
+lastupdated: "2023-09-22"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -78,6 +78,7 @@ You can manage (restore or delete) backups in the Veeam self-service portal. All
 
 * For the Veeam **application aware image processing** and **guest file system indexing** options to work for Windows® VMs, the most recent VMware® Tools must be installed on the VMs. Linux® VMs do not support application awareness or guest file system indexing.
 * If you are using **application aware image processing** for MS SQL or Oracle DB backups, the options **application aware** and **Item** restore are not supported. The restore operation needs to complete a full VM restore, which requires a downtime window for any consumers of the database.
+* An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120).{: external}
 
 ## Related links
 {: #tenant-veeam-related}
