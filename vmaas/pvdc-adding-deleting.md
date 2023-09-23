@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-25"
+lastupdated: "2023-09-06"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding a provider virtual data centers
+# Adding provider virtual data centers
 {: #pvdc-adding-deleting}
 
 You can scale an {{site.data.keyword.vmware-service_full}} instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a provider virtual data center (PVDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
@@ -56,14 +56,15 @@ For more information, see [Provider Virtual Data Centers](https://docs.vmware.co
 4. On the **Add provider VDC** window, specify the settings for the new PVDC.
     1. Specify the PVDC name.
     2. Select the PVDC location.
-    3. Click **Next**.
+    3. Optionally enable SAP®-certified server profiles and select the profile type.
+    4. Click **Next**.
 5. Specify the host details.
     1. Specify the cluster name.
-    2. Select the profile storage type.
-    3. Select the host profile.
-    4. Select the host quantity.
+    2. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
        * For vSAN™ storage, select a minimum of 6.
+    3. Select the profile storage type.
+    4. Select the host profile.
     5. Click **Next**.
 6. Specify the attached NFS storage settings.
 7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.

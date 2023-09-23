@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2022-07-06"
+lastupdated: "2022-09-06"
 
 keywords: view tenant instance, single tenant instances, view instance, single tenant view
 
@@ -38,9 +38,7 @@ View the summary and detailed information of the {{site.data.keyword.vmware-serv
      * Enable or delete Veeam® Backup and Replication.
      * Click **Veeam backups** to open the Self-Service Backup Portal.
 4. For Cloud Director sites, the following options are available.
-   * On the **Summary** tab, you can:
-     * Click **Set IAM integration** to enable IAM (Identity Access Management) for existing sites. For more information, see [Managing resource groups](/docs/account?topic=account-rgs).
-     * Click **Enable Veeam** to provision Veeam Backup and Replication for your instance.
+   * On the **Summary** tab, you can click **Enable Veeam Backup and Replication** to provision the recommended service for your instance.
    * On the **Infrastructure** tab, you can:
      * Click the **Clusters** tab, view all clusters that are deployed into the instance. Click a cluster name to review information such as total cores and RAM, host units, storage type, and cluster status.
      * Click the **Virtual data centers** tab to view all VDCs deployed into the instance. Click a VDC to review information such as public IP addresses.

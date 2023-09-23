@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-20"
+lastupdated: "2023-09-12"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -28,17 +28,19 @@ Minimum 2 servers (6 servers for vSAN profiles)
  * 24 TB of shared storage
  * Minimum of 1 virtual data center (VDC) with a medium performance edge
 
-## Virtual data center name
+## Name requirements
 {: #tenant-ordering-vdc-name}
 
-The VDC name is set to **vdc-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
+The Cloud Director site infrastructure names are set by default, where _xx_ represents two randomly generated alphabetic characters.
+* The Cloud Director site name is set to **inst-_xx_**.
+* The provider virtual data center (PVDC) is set to **pvdc-_xx_**.
+* The cluster name is set to **cluster-_xx_**.
 
-You can also specify a VDC name that meets the following requirements:
-* The maximum length is 128 characters.
-* Only alphanumeric, dash (-), and underscore (_) characters are allowed.
-* The name must be unique within all active VDCs in your account. You can create a VDC that has the same name as a previously deleted VDC.
-
-You can start with just one virtual data center (VDC) and a performance network edge of medium size.
+You can specify a name that meets the following requirements:
+* The maximum length is 50 characters.
+* The name must start with an alphabetic character.
+* Only alphanumeric, dash (-), underscore (_), and space characters are allowed.
+* The name must be unique within all active names in your account. You can reuse a name that is previously deleted.
 
 ## Procedure to order {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-ordering-procedure}
@@ -47,9 +49,12 @@ You can start with just one virtual data center (VDC) and a performance network 
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the **VMwaaS single-tenant Cloud Director site** card.
 3. Specify the Cloud Director site name and select a resource group.
 
-   If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to be assigned the **Editor** or **Administrator** role on a resource group in the account. For more information, see [IAM roles](/docs/account?topic=account-userroles).
+   If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [IAM roles](/docs/account?topic=account-userroles).
 4. Select the Cloud Director geography and location.
-5. Specify the provider virtual data center (PVDC) name and select PVDC location.
+5. Specify the settings for the provider virtual data center (PVDC).
+    1. Specify the PVDC name.
+    2. Select the PVDC location.
+    3. Optionally toggle SAP-certified server profiles on and select the profile type.
 6. Specify the settings for the cluster.
     1. Specify the cluster name.
     2. Select the profile storage type.

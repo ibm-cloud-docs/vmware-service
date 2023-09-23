@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-08-25"
+lastupdated: "2023-09-22"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,20 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 22 September 2023
+{: #vmware-service-sep2223}
+{: release-note}
+
+IBM Cloud data center availability
+:   {{site.data.keyword.vmware-service_short}} expands global presence and now supports the **Washington DC** region to host your provider virtual data center. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
+SAP-certified provider virtual data centers
+:   {{site.data.keyword.vmware-service_short}} now supports SAP® workloads that use the new SAP bare metal server profiles. You can reliably run your mission-critical SAP workloads and scenarios on a scalable, compliant, and enterprise-proven VMware® platform.
+ For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
+vSAN host profile updates
+:   The Dual Intel® 8260 Xeon® host profile (2 Sockets - 48 Cores, 768 GB RAM) with 46 TB of vSAN usable capacity is now available for Cloud Director sites.
 
 ### 25 August 2023
 {: #vmware-service-aug2523}
@@ -103,14 +117,14 @@ User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
 
 IBM software currency policy
-:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware® and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
+:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
 {: #vmware-service-feb1023}
 {: release-note}
 
 VMware currency
-:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director™ 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
 
 Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).
