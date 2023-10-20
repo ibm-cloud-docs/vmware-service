@@ -4,9 +4,9 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-10-18"
 
-keywords: set IAM integration, iam roles, manage iam, SSO, single sign on
+keywords: iam roles, manage iam, SSO, single sign on
 
 subcollection: vmware-service
 
@@ -27,7 +27,7 @@ Access the VMware Cloud Director console from the VMware Solutions console to co
 * Edge configuration and putting VMs on the public and private networks
 * User administration
 
-Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
+Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
 
 From the VMware Solutions console, click **VMware console** to access the VMware Cloud Director console.
 
@@ -63,6 +63,5 @@ Review your responsibilities for managing IAM.
 {: #iam-integration-links}
 
 * [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview&interface=ui)
-* [Viewing and deleting VDCs](/docs/vmware-service?topic=vmware-service-vdc-view-delete&interface=ui)
 * [Contacting IBM Support](/docs/vmware-service?topic=vmware-service-support&interface=ui)
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-09-06"
+lastupdated: "2023-10-19"
 
 keywords: add provider vdc, delete provider vdc, pvdc add, pvdc remove, provider virtual data center
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding provider virtual data centers
 {: #pvdc-adding-deleting}
 
-You can scale an {{site.data.keyword.vmware-service_full}} instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a provider virtual data center (PVDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
+You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a provider virtual data center (PVDC), you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
 
 PVDCs are used within the {{site.data.keyword.vmware-service_short}} instance to form units of the following components, which are fully isolated between PVDCs:
 * Compute
@@ -62,7 +62,7 @@ For more information, see [Provider Virtual Data Centers](https://docs.vmware.co
     1. Specify the cluster name.
     2. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
-       * For vSAN™ storage, select a minimum of 6.
+       * For vSAN™ storage, select a minimum of 7.
     3. Select the profile storage type.
     4. Select the host profile.
     5. Click **Next**.
@@ -75,6 +75,6 @@ When you deploy a new PVDC, a cluster is created. Cluster configuration can take
 ## Related links
 {: #pvdc-adding-deleting-links}
 
-* [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Viewing and deleting virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-view-delete)
-* [Viewing {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
+* [Viewing VMware as a Service single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

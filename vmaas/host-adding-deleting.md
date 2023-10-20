@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-20"
+lastupdated: "2023-10-18"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting hosts
 {: #host-adding-deleting}
 
-You can increase or decrease the capacity of your deployment by adding or deleting hosts to and from a cluster.
+You can increase or decrease the capacity of your deployment by adding or deleting hosts to and from a *single-tenant* cluster.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
@@ -31,6 +31,6 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 ## Related links
 {: #host-adding-deleting-links}
 
-* [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Viewing and deleting virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-view-delete)
-* [Viewing {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
+* [Viewing VMware as a Service single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2023-09-22",
+    "lastupdated": "2023-10-20",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "20 October 2023",
+          "title": "VMware as a Service Multitenant",
+          "description": "This release announces the VMware as a Service Multitenant offering. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam® Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads."
+        },
+        {
           "date": "22 September 2023",
           "title": "SAP-certified provider virtual data centers",
           "description": "VMware as a Service now supports SAP workloads that use the new SAP bare metal server profiles. You can reliably run your mission-critical SAP workloads and scenarios on a scalable, compliant, and enterprise-proven VMware platform."
@@ -55,11 +60,6 @@
           "date": "25 August 2023",
           "title": "User interface updates and enhancements and production refresh",
           "description": "The user interface is updated with various message and tooltip enhancements. Performance and security currency improvements are also included in this refresh."
-        },
-        {
-          "date": "18 August 2023",
-          "title": "Production refresh",
-          "description": "Production refresh to deliver defect resolutions, performance improvements, and maintain security currency."
         }
       ]
     }

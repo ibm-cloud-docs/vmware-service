@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-09-06"
+lastupdated: "2023-10-19"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting clusters
 {: #cluster-adding-deleting}
 
-You can increase or decrease the capacity of your deployment by adding clusters to or deleting clusters from a single-tenant instance. VMware vCenter clusters are the building blocks of VMware Cloud Director provider virtual data centers (PVDCs) and are added to existing PVDCs or are added as part of a PVDC creation.
+You can increase or decrease the capacity of your deployment by adding clusters to or deleting clusters from a *single-tenant* instance. VMware vCenter clusters are the building blocks of VMware Cloud Director provider virtual data centers (PVDCs) and are added to existing PVDCs or are added as part of a PVDC creation.
 
 ## Procedure to add clusters to {{site.data.keyword.vmware-service_short}} instances
 {: #cluster-adding-deleting-add-proc}
@@ -31,7 +31,7 @@ You can increase or decrease the capacity of your deployment by adding clusters 
     1. Specify the cluster name.
     2. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
-       * For vSAN™ storage, select a minimum of 6.
+       * For vSAN™ storage, select a minimum of 7.
     3. Select the profile storage type.
     4. Select the host profile.
     5. Click **Next**.
@@ -60,6 +60,6 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 ## Related links
 {: #cluster-adding-deleting-links}
 
-* [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Viewing and deleting virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-view-delete)
-* [Viewing {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
+* [Viewing VMware as a Service single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

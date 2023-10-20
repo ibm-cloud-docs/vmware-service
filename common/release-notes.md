@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-09-22"
+lastupdated: "2023-10-20"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 20 October 2023
+{: #vmware-service-oct2023}
+{: release-note}
+
+VMware as a Service Multitenant
+:   This release announces the {{site.data.keyword.vmware-service_short}} Multitenant offering. {{site.data.keyword.vmware-service_short}} Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam® Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
+
+REST API updates
+:   The [VMware as a Service API](/apidocs/vmware-service) is updated to provide support for {{site.data.keyword.vmware-service_short}} Multitenant. For more information, see [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-20-october-2023).
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
 
 ### 22 September 2023
 {: #vmware-service-sep2223}

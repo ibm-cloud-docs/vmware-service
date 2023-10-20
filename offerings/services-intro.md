@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-09-07"
+lastupdated: "2023-09-25"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -28,16 +28,16 @@ Add-on services are not supported for all offerings.
 
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
-* [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
+* [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations)
 
 ## Data resilience and migration services
 {: #services-intro-dr-mig}
 
 * [HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
-* [Managed Disaster Recovery Services by Kyndryl](https://www.kyndryl.com/us/en/services/cyber-resilience){: external}
 * [PrimaryIO Migrations](https://www.primaryio.com/#){: external}
+* [ProtectIO](https://cloud.ibm.com/catalog/services/protectio#about)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 

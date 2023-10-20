@@ -5,7 +5,7 @@
 toc:
   properties:
     subcollection: vmware-service
-    service-name: vmware-service
+    service-name: vmware
     category: compute_baremetal
     audience: service
     href: /docs/vmware-service
@@ -30,28 +30,38 @@ toc:
       - topicgroup:
           label: VMware as a Service
           topics:
+          - vmaas/tenant-plan-deploy.md
           - topicgroup:
-              label: Managing instances
-              topics:
-              - vmaas/tenant-plan-deploy.md
-              - vmaas/tenant-ordering.md
-              - vmaas/tenant-viewing.md
-              - vmaas/tenant-deleting.md
-          - vmaas/pvdc-adding-deleting.md
-          - vmaas/cluster-adding-deleting.md
-          - vmaas/host-adding-deleting.md
-          - vmaas/storage-adding-deleting.md
-          - topicgroup:
-              label: Managing virtual data centers
+              label: Ordering VMware as a Service instances
               topics:
               - vmaas/vdc-adding.md
-              - vmaas/vdc-view-delete.md
+              - vmaas/tenant-ordering.md
+          - topicgroup:
+              label: Viewing VMware as a Service instances
+              topics:
+              - vmaas/tenant-viewing.md
+              - vmaas/tenant-viewing-mt.md
+          - vmaas/tenant-deleting.md
+          - topicgroup:
+              label: Managing virtual data center instances
+              topics:
+              - vmaas/capacity-adding-deleting.md
+              - common/vmaas-iam.md
+              - common/vmaas-iam_vcd.md
               - common/iam-integration.md
+          - topicgroup:
+              label: Managing Cloud Director site instances
+              topics:
+              - vmaas/pvdc-adding-deleting.md
+              - vmaas/cluster-adding-deleting.md
+              - vmaas/host-adding-deleting.md
+              - vmaas/storage-adding-deleting.md
           - topicgroup:
               label: Managing Veeam Backup and Replication
               topics:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
+          - vmaas/mt_pricing.md
       - offerings/shared-intro.md
       - offerings/vss-intro.md
       - offerings/vcs-intro.md
@@ -63,11 +73,6 @@ toc:
           topics:
           - common/architecture-workload-isolation.md
           - common/single-tenant-monitoring.md
-          - topicgroup:
-              label: IAM access for VMware as a Service
-              topics:
-              - common/vmaas-iam.md
-              - common/vmaas-iam_vcd.md
           - common/vmaas-data-security.md
           - common/vmaas-at-events.md
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-08"
+lastupdated: "2023-10-16"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -67,42 +67,47 @@ The VMware Solutions console is the user interface where you order and manage yo
 
 Before you order an instance, consider the size of the VMware® deployment required.
 
-VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
+VMware® deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 
-After the basic size of the VMware environment is established, consider the performance characteristics and bare metal host type.
+After the basic size of the VMware environment is established, consider the {{site.data.keyword.vmware-service_short}} deployment type of multitenant or single-tenant instance.
 
-You can choose from the following storage performance tiers:
-
-* 0.25 IOPS/GB
-* 2 IOPS/GB
-* 4 IOPS/GB
-* 10 IOPS/GB
-
-Depending on the selected region, you can choose bare metal servers with various CPU and memory sizes.
+For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 
 ## Ordering a {{site.data.keyword.vmware-service_short}} instance
 {: #getting-started-step3}
 {: step}
 
-You must specify the following settings when you order a {{site.data.keyword.vmware-service_short}} instance.
+Specify your {{site.data.keyword.vmware-service_short}} instance settings according to your deployment type.
 
-These configurations are used to order a new VMware cluster for running the target workload:
+For single-tenant instances, the following configurations are used to order a new VMware cluster for running the target workload:
 
-* Instance name
-* Resource group
+* Cloud Director site name and resource group
+* Cloud Director site location (geography and region)
+* Provider virtual data center name and location
+* Optional SAP-certified server profiles
 * Cluster name
-* Location (geography, region, and data center)
-* Host profile and quantity
 * Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
+* Host profile and quantity
+* Add-on services
+
+For multitenant instances, the following configurations are used to order a new virtual data center that deploys on an existing {{site.data.keyword.IBM}} owned VMware cluster.
+
+* Virtual data center name and resource group
+* Pricing plan for on-demand or reserved resource allocation
+* VMware Cloud Director™ site location (region, Cloud Director site, provider virtual data center)
+* Optional fast provisioning of virtual machines that use linked clones
+* Optional network edge types
+* vCPU and RAM limits
 
 After you specify all configurations, validate the cost and submit the instance order.
+
+For more information, see [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering) and [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 ## Other operations
 {: #getting-started-step9}
 
-* [Viewing your {{site.data.keyword.vmware-service_short}} instance](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Adding a provider virtual data centers](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
+* [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
 * [Adding and deleting hosts](/docs/vmware-service?topic=vmware-service-host-adding-deleting)
 * [Adding and deleting storage](/docs/vmware-service?topic=vmware-service-storage-adding-deleting)
-* [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Viewing and deleting virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-view-delete)
-* [Deleting your {{site.data.keyword.vmware-service_short}} instance](/docs/vmware-service?topic=vmware-service-tenant-deleting)
+* [Adding and deleting capacity](/docs/vmware-service?topic=vmware-service-capacity-adding-deleting)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-09-12"
+lastupdated: "2023-10-19"
 
 keywords: order tenant instance, single tenant instances, order instance, single tenant order
 
@@ -15,15 +15,18 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering {{site.data.keyword.vmware-service_short}} instances
+# Ordering Cloud Director site instances
 {: #tenant-ordering}
 
-You can order an {{site.data.keyword.vmware-service_full}} instance from the VMware Solutions user interface after you review the minimum requirements.
+You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First review the minimum requirements.
+
+{{site.data.keyword.vmware-service_short}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
+{: note}
 
 ## Minimum requirements for {{site.data.keyword.vmware-service_short}} instances
 {: #tenant-ordering-min-req}
 
-Minimum 2 servers (6 servers for vSAN profiles)
+Minimum 2 servers (7 servers for vSAN™ profiles)
  * 2 hosts (2-socket 32 cores, 192 GB RAM)
  * 24 TB of shared storage
  * Minimum of 1 virtual data center (VDC) with a medium performance edge
@@ -42,14 +45,14 @@ You can specify a name that meets the following requirements:
 * Only alphanumeric, dash (-), underscore (_), and space characters are allowed.
 * The name must be unique within all active names in your account. You can reuse a name that is previously deleted.
 
-## Procedure to order {{site.data.keyword.vmware-service_short}} instances
+## Procedure to order {{site.data.keyword.vmware-service_short}} Cloud Director site instances
 {: #tenant-ordering-procedure}
 
 1. In the VMware Solutions console, click **Create** on the **{{site.data.keyword.vmware-service_short}}** card.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the **VMwaaS single-tenant Cloud Director site** card.
 3. Specify the Cloud Director site name and select a resource group.
 
-   If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [IAM roles](/docs/account?topic=account-userroles).
+   If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [{{site.data.keyword.IBM_notm}} IAM roles](/docs/account?topic=account-userroles).
 4. Select the Cloud Director geography and location.
 5. Specify the settings for the provider virtual data center (PVDC).
     1. Specify the PVDC name.
@@ -61,7 +64,7 @@ You can specify a name that meets the following requirements:
     3. Select the host profile.
     4. Select the host quantity.
        * For NFS only storage, select a minimum of 2.
-       * For vSAN™ storage, select a minimum of 6.
+       * For vSAN storage, select a minimum of 7.
     5. For vSAN, optionally select the **Enable vSAN de-duplication & compression** checkbox to save storage space.
     6. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
 7. Review the add-on service option to deploy the Veeam® Backup and Replication service. Toggle the service off if you do not want to include it in your order.
@@ -71,7 +74,7 @@ You can specify a name that meets the following requirements:
 ## Related links
 {: #tenant-ordering-links}
 
-* [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview)
-* [Viewing {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
-* [Visualizing your site with {{site.data.keyword.cloud}} Monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)
+* [Viewing {{site.data.keyword.vmware-service_short}} multitenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing-mt)
+* [Viewing {{site.data.keyword.vmware-service_short}} single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Visualizing your site with {{site.data.keyword.cloud_notm}} Monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)
 * [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)
