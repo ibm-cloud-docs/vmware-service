@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-18"
+lastupdated: "2023-10-23"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 
@@ -41,13 +41,13 @@ Before you delete the Veeam Backup and Replication service from your instance, r
 5. On the **Add-on services** window, toggle Veeam Backup and Replication on.
 6. Review the new cost, select the confirmation checkboxes, and click **Add**.
 
-## Procedure to delete Veeam Backup and Replication to {{site.data.keyword.vmware-service_short}} instances
+## Procedure to delete Veeam Backup and Replication from {{site.data.keyword.vmware-service_short}} instances
 {: #veeam-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Add-on services** tab.
-4. Click the vertical overflow menu in the Veeam Backup and Replication panel and click **Delete**.
+4. Click the vertical overflow menu in the Veeam Backup and Replication panel and click **Delete service**.
 5. In the **Delete add-on service** window, review the considerations, and enter **Veeam Backup and Replication** to confirm that you want to delete all Veeam backup services from your instance. Click **Delete**.
 
 ## Related links
