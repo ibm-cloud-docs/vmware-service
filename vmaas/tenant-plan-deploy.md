@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-10-20"
+lastupdated: "2023-10-25"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -81,9 +81,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
-| Dallas | Dallas 10 | Single-tenant |
-| Dallas | Dallas 12 | Single-tenant |
-| Dallas | Dallas 13 | Single-tenant |
+| Dallas | Dallas 10 | Single-tenant and Multitenant |
+| Dallas | Dallas 12 | Single-tenant and Multitenant |
+| Dallas | Dallas 13 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 04 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 06 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 07 | Single-tenant and Multitenant |
@@ -160,9 +160,19 @@ For NFS only storage, you must select at least one unit of 2 IOPS/GB or higher.
 ## Services for {{site.data.keyword.vmware-service_short}}
 {: #tenant-plan-deploy-services}
 
-For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. However, you can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+The following add-on services are optionally available for {{site.data.keyword.vmware-service_short}} Cloud Director site instances.
 
-For multitenant instances, the Veeam® Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision your virtual data center (VDC). Service charges are incurred only if you choose to install the service.
+### Veeam Backup and Replication
+{: #tenant-plan-deploy-services-veeam}
+
+For single-tenant instances, the Veeam® Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+
+For multitenant instances, the Veeam Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision your virtual data center (VDC). Service charges are incurred only if you choose to install the service.
+
+### VMware Cloud Director Availability
+{: #tenant-plan-deploy-services-vcda}
+
+For single-tenant instances, the VMware Cloud Director Availability service is included at no charge by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. You can add or remove the service later as required.
 
 ## Configuration limits for VMware Cloud Director
 {: #tenant-plan-deploy-cloud-dir-limits}
