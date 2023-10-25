@@ -72,7 +72,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 |:----------|:----------|:------|
 | Frankfurt | Frankfurt 02 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 04 | Single-tenant and Multitenant |
-| Frankfurt | Frankfurt 05 | Single-tenant and Multitenant |
+| Frankfurt | Frankfurt 05 | Single-tenant |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
@@ -83,8 +83,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 |:----------|:----------|:------|
 | Dallas | Dallas 10 | Single-tenant and Multitenant |
 | Dallas | Dallas 12 | Single-tenant and Multitenant |
-| Dallas | Dallas 13 | Single-tenant and Multitenant |
-| Washington DC | Washington DC 04 | Single-tenant and Multitenant |
+| Dallas | Dallas 13 | Single-tenant |
+| Washington DC | Washington DC 04 | Single-tenant |
 | Washington DC | Washington DC 06 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 07 | Single-tenant and Multitenant |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
