@@ -28,7 +28,7 @@ subcollection: vmware-service
 ## {{site.data.keyword.vmware-service_short}} single-tenant
 {: #vmware-aas-overview-st}
 
-The {{site.data.keyword.vmware-service_short}} single-tenant offering provides the option to deploy managed VMware environments with a dedicated infrastructure. You can select from a choice of bare metal servers and storage infrastructure components to create a single-tenant VMware site. You manage the capacity of the infrastructure.
+The {{site.data.keyword.vmware-service_short}} single-tenant consumption model provides the option to deploy managed VMware environments with a dedicated infrastructure. You can select from a choice of bare metal servers and storage infrastructure components to create a single-tenant VMware site. You manage the capacity of the infrastructure.
 
 The combination of the single-tenant infrastructure and a software stack that includes VMware ESXi™, VMware vCenter®, VMware NSX-T™, and Cloud Director is called a site. Sites are the single-tenant VMware platform that is used to host one or more VMware VDCs. VMware VDCs are used to deploy VMware workloads to create virtualized networking, and to connect to external networks that include the public internet and the {{site.data.keyword.IBM_notm}} private network. You can start with as little as two dedicated bare metal servers to deploy or migrate existing VMware workloads into a VMware Cloud Director VDC.
 
@@ -39,14 +39,14 @@ For {{site.data.keyword.vmware-service_short}} single-tenant, you first create t
 ## {{site.data.keyword.vmware-service_short}} multitenant
 {: #vmware-aas-overview-mt}
 
-The {{site.data.keyword.vmware-service_short}} multitenant offering provides the same capabilities and experience as the single-tenant offering. With {{site.data.keyword.vmware-service_short}} multitenant, your workloads share the VMware site platform of infrastructure and VMware components. VMware workloads across different Cloud accounts are securely isolated by VMware Cloud Director virtualization of networking, storage, CPU, and RAM.
+The {{site.data.keyword.vmware-service_short}} multitenant consumption model provides the same capabilities and experience as the single-tenant model. With {{site.data.keyword.vmware-service_short}} multitenant, your workloads share the VMware site platform of infrastructure and VMware components. VMware workloads across different Cloud accounts are securely isolated by VMware Cloud Director virtualization of networking, storage, CPU, and RAM.
 
 For {{site.data.keyword.vmware-service_short}} multitenant, you start by creating the multitenant VDC with a choice of on-demand pay as you go pricing or reserved pricing plans. IBM Operations manages the physical CPU, RAM, and storage infrastructure capacity.
 
 ## {{site.data.keyword.vmware-service_short}} features
 {: #vmware-aas-overview-features}
 
-The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant offerings share the following features:
+The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant models share the following features:
 
 * The VMware Cloud Director instance that you log in to provides a 99.99% availability SLA.
 * Unique provider-managed encryption keys per instance with encrypted VMware storage profiles.
@@ -63,7 +63,7 @@ The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant off
 
 For single-tenant instances, first define a VMware environment by provisioning a {{site.data.keyword.vmware-service_short}} single-tenant Cloud Director site. Then, create {{site.data.keyword.vmware-service_short}} single-tenant VDCs to deploy your workloads.
 
-The {{site.data.keyword.vmware-service_short}} single-tenant offering provides the following features:
+The {{site.data.keyword.vmware-service_short}} single-tenant consumption model provides the following features:
 
 * The highest level of isolation, control, and consistency of the underlying VMware environment.
 * Each {{site.data.keyword.vmware-service_short}} single-tenant instance contains the following VMware components:
@@ -84,7 +84,7 @@ The {{site.data.keyword.vmware-service_short}} single-tenant offering provides t
 
 For multitenant instances, create a VDC that deploys on an existing VMware multitenant infrastructure that is created and managed by {{site.data.keyword.IBM_notm}}.
 
-The {{site.data.keyword.vmware-service_short}} multitenant offering provides the following features:
+The {{site.data.keyword.vmware-service_short}} multitenant consumption model provides the following features:
 
 * Shares resources with others by using a balanced VMware environment profile to support a wide range of needs.
 * Pay-per-use consumption model:
