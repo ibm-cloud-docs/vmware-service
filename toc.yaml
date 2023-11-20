@@ -21,8 +21,19 @@ toc:
       topics:
       - getting-started.md
       - common/vmware-aas-overview.md
+      - topicgroup:
+          label: VMware as a Service pricing
+          topics:
+            - vmaas/st_pricing.md
+            - vmaas/mt_pricing.md
       - topic: common/release-notes.md
         navtitle: Release notes
+
+  - navgroup:
+      id: tutorial
+      topics:
+      - include: ../solution-tutorials/vmware-as-a-service-vdc.md
+      - include: ../solution-tutorials/vmware-as-a-service-tf.md
 
   - navgroup:
       id: howto
@@ -34,21 +45,8 @@ toc:
           - topicgroup:
               label: Ordering VMware as a Service instances
               topics:
-              - vmaas/vdc-adding.md
               - vmaas/tenant-ordering.md
-          - topicgroup:
-              label: Viewing VMware as a Service instances
-              topics:
-              - vmaas/tenant-viewing.md
-              - vmaas/tenant-viewing-mt.md
-          - vmaas/tenant-deleting.md
-          - topicgroup:
-              label: Managing virtual data center instances
-              topics:
-              - vmaas/capacity-adding-deleting.md
-              - common/vmaas-iam.md
-              - common/vmaas-iam_vcd.md
-              - common/iam-integration.md
+              - vmaas/vdc-adding.md
           - topicgroup:
               label: Managing Cloud Director site instances
               topics:
@@ -57,11 +55,34 @@ toc:
               - vmaas/host-adding-deleting.md
               - vmaas/storage-adding-deleting.md
           - topicgroup:
-              label: Managing Veeam Backup and Replication
+              label: Managing virtual data center instances
+              topics:
+              - vmaas/capacity-adding-deleting.md
+          - topicgroup:
+              label: Viewing and deleting VMware as a Service instances
+              topics:
+              - vmaas/tenant-viewing-sites.md
+              - vmaas/tenant-viewing-vdc.md
+          - topicgroup:
+              label: Accessing VMware as a Service instances
+              topics:
+              - common/vmaas-iam.md
+              - common/vmaas-iam_vcd.md
+              - common/iam-integration.md
+          - topicgroup:
+              label: Protecting VMs in VMware as a Service instances
               topics:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
-          - vmaas/mt_pricing.md
+          - topicgroup:
+              label: Migrating VMs to VMware as a Service instances
+              topics:
+              - vmaas/tenant-vcda.md
+              - vmaas/vcda-viewing.md
+              - vmaas/vcda-adding-capacity.md
+              - vmaas/vcda-adding-deleting-private-ep.md
+              - vmaas/vcda-migrating.md
+              - vmaas/vcda-adding-deleting.md
       - offerings/shared-intro.md
       - offerings/vss-intro.md
       - offerings/vcs-intro.md

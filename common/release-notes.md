@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-10-20"
+lastupdated: "2023-11-17"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 17 November 2023
+{: #vmware-service-nov2023}
+{: release-note}
+
+Migrating virtual machines to VMware as a Service
+:   The VMware Cloud Director Availability (VCDA) service is now available as a cost-effective solution to easily migrate your VMware vCenter Server® or on-premises workloads to the VMware as a Service single-tenant consumption model. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection at no cost. For more information, see [VMware Cloud Director Availability for VMware as a Service overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
+
+Documentation updates and enhancements
+:   The table of contents is updated for a more streamlined user experience.
 
 ### 20 October 2023
 {: #vmware-service-oct2023}
@@ -104,7 +117,7 @@ User interface updates and enhancements
 {: release-note}
 
 vSAN storage availability
-:   You can now select vSAN™ storage with optional NFS storage for your instance order in locations with 25 GbE availability. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
+:   You can now select vSAN storage with optional NFS storage for your instance order in locations with 25 GbE availability. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 
 REST APIs
 :   REST APIs are now available for all {{site.data.keyword.vmware-service_short}} capabilities. For more information, see [VMware as a Service API](/apidocs/vmware-service).

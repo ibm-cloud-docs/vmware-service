@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-23"
+lastupdated: "2023-11-10"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 
@@ -54,7 +54,6 @@ Before you delete the Veeam Backup and Replication service from your instance, r
 {: #veeam-adding-deleting-links}
 
 * [Ordering {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
-* [Viewing {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
 * [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam)
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}

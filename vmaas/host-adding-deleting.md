@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-10-18"
+lastupdated: "2023-11-10"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -32,5 +32,5 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 {: #host-adding-deleting-links}
 
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
-* [Viewing VMware as a Service single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
 * [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

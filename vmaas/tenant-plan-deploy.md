@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-10-25"
+lastupdated: "2023-11-16"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -24,7 +24,7 @@ Before you order an {{site.data.keyword.vmware-service_full}} instance, ensure t
 
 Consider the size of the VMware® deployment required.
 
-VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
+VMware deployments sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
 
 ## {{site.data.keyword.vmware-service_short}} type
 {: #tenant-plan-deploy-type}
@@ -130,8 +130,23 @@ If you want to save storage space, you can enable vSAN deduplication and compres
 The vSAN deduplication and compression option is available for enablement only when you order a single-tenant cluster.
 {: note}
 
-## Bare metal server requirements
-{: #tenant-plan-deploy-bms-req}
+## Host profile
+{: #tenant-plan-deploy-host}
+
+{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware virtual machines (VMs) and workload you plan to run on {{site.data.keyword.vmware-service_short}}.
+
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/rvtools/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/rvtools/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
+* For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
+
+After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
+
+{{site.data.keyword.vmware-service_short}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
+{: note}
+
+Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead lets you know the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMWare deployment into the total host count calculation.
+
+### Bare metal server requirements
+{: #tenant-plan-deploy-host-bms-req}
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
@@ -160,7 +175,7 @@ For NFS only storage, you must select at least one unit of 2 IOPS/GB or higher.
 ## Services for {{site.data.keyword.vmware-service_short}}
 {: #tenant-plan-deploy-services}
 
-For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. However, you can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+The following add-on services are optionally available for {{site.data.keyword.vmware-service_short}} Cloud Director site instances.
 
 ### Veeam Backup and Replication
 {: #tenant-plan-deploy-services-veeam}
@@ -168,6 +183,11 @@ For single-tenant instances, the Veeam Backup and Replication service is include
 For single-tenant instances, the Veeam® Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
 
 For multitenant instances, the Veeam Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision your virtual data center (VDC). Service charges are incurred only if you choose to install the service.
+
+### VMware Cloud Director Availability
+{: #tenant-plan-deploy-services-vcda}
+
+For single-tenant instances, the VMware Cloud Director Availability (VCDA) service is included at no charge by default with your Cloud Director site instance order. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection. You can optionally remove the service before you create your instance. You can add or remove the service later as required.
 
 ## Configuration limits for VMware Cloud Director
 {: #tenant-plan-deploy-cloud-dir-limits}

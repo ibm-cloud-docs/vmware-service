@@ -4,9 +4,9 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-10-19"
+lastupdated: "2023-11-13"
 
-keywords: order tenant instance, single tenant instances, order instance, single tenant order
+keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
 subcollection: vmware-service
 
@@ -67,14 +67,14 @@ You can specify a name that meets the following requirements:
        * For vSAN storage, select a minimum of 7.
     5. For vSAN, optionally select the **Enable vSAN de-duplication & compression** checkbox to save storage space.
     6. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
-7. Review the add-on service option to deploy the Veeam® Backup and Replication service. Toggle the service off if you do not want to include it in your order.
+7. Review the add-on service options to deploy the Veeam® Backup and Replication service and the VMware Cloud Director Availability service. Toggle the service off if you do not want to include it in your order.
 8. On the **Summary** pane, review the instance settings and the estimated price.
 7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
 ## Related links
 {: #tenant-ordering-links}
 
-* [Viewing {{site.data.keyword.vmware-service_short}} multitenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing-mt)
-* [Viewing {{site.data.keyword.vmware-service_short}} single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
+* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
+* [Viewing and deleting {{site.data.keyword.vmware-service_short}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)
 * [Visualizing your site with {{site.data.keyword.cloud_notm}} Monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)
-* [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-09"
+lastupdated: "2023-11-08"
 
 keywords: order Regulated Workloads instance, Regulated Workloads instances, Regulated Workloads order
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Regulated Workloads
+# Regulated Workloads
 {: #vrw-intro}
 
 For more information about [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview), see the following topics:

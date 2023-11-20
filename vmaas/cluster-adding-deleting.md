@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-10-19"
+lastupdated: "2023-11-10"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -61,5 +61,5 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 {: #cluster-adding-deleting-links}
 
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
-* [Viewing VMware as a Service single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
 * [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

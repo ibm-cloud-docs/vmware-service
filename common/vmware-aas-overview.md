@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-10-18"
+lastupdated: "2023-11-01"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -23,7 +23,9 @@ subcollection: vmware-service
 
 {{site.data.keyword.vmware-service_short}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vmware-service_short}} single-tenant instances are provisioned and managed by your organization.
 
-![{{site.data.keyword.vmware-service_short}} multitenant and single-tenant comparison](../images/vmware-aas-mt-v-st.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} multitenant and single-tenant comparison" caption-side="bottom"}
+Find out more about the {{site.data.keyword.vmware-service_short}} instance models in the following video.
+
+![Introducing IBM Cloud for VMware as a Service (text description follows)](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## {{site.data.keyword.vmware-service_short}} single-tenant
 {: #vmware-aas-overview-st}
@@ -34,7 +36,7 @@ The combination of the single-tenant infrastructure and a software stack that in
 
 For {{site.data.keyword.vmware-service_short}} single-tenant, you first create the dedicated site and then you create the VDCs after the site is ready.
 
-![{{site.data.keyword.vmware-service_short}} architecture](../images/vmware-aas-archi.svg){: caption="Figure 2. {{site.data.keyword.vmware-service_short}} architecture" caption-side="bottom"}
+![{{site.data.keyword.vmware-service_short}} architecture](../images/vmware-aas-archi.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} architecture" caption-side="bottom"}
 
 ## {{site.data.keyword.vmware-service_short}} multitenant
 {: #vmware-aas-overview-mt}
@@ -77,6 +79,7 @@ The {{site.data.keyword.vmware-service_short}} single-tenant consumption model p
    * Add and remove VMware vCenter clusters
    * Add and remove hosts per VMware vCenter cluster
    * Add and remove storage per VMware vCenter cluster
+* Optional migration of VMware vCenter Server® or on-premises workloads through the VMware Cloud Director Availability service.
 * Monthly billing for the dedicated infrastructure and components.
 
 ### {{site.data.keyword.vmware-service_short}} multitenant features

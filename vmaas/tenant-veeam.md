@@ -52,31 +52,6 @@ Alternatively, click the **More** menu in the VMware Cloud Director tenant porta
 If you do not see the **Data Protection with Veeam** option, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmware-service?topic=vmware-service-support). In the subject for your issue, include **Request Veeam Self Service Portal for my Organization** and include your Organization ID and virtual data center name in your issue description.
 {: note}
 
-## Licenses and fees for Veeam Backup and Replication
-{: #tenant-pricing-services}
-
-Veeam usage incurs the following charges. You can view the charges on the {{site.data.keyword.cloud_notm}} **Manage > Billing and usage** view.
-
-In the {{site.data.keyword.cloud_notm}} **Usage** view, locate the **{{site.data.keyword.vmware-service_short}}** service. Locate the **Organization** plan to find the Veeam usage across all virtual data centers in that organization.
-
-Review the following table to understand Veeam for {{site.data.keyword.vmware-service_short}} single-tenant pricing.
-
-For more information about Licenses and fees for Veeam Backup and Replication for {{site.data.keyword.vmware-service_short}} multitenant, see [VMware as a Service multitenant pricing](/docs/vmware-service?topic=vmware-service-mt_pricing).
-{: note}
-
-| Metric                                   | Frequency   | Description |
-|:-----------------------------------------|:------------|:------------|
-| VEEAM_BACKUP_SERVICE_BASE_CHARGE | Monthly | Provisioning charge per instance where Veeam is enabled. |
-| VEEAM_BACKUP_HOST_CHARGE | Monthly | Utilization charge on the number of bare metal servers with VMs that use Veeam backups. |
-| ORG_VEEAM_LICENSES | Monthly | Veeam license charge for every VM under backup. The monthly charge is for the highest number of VMs under backup at any time period in the month. |
-| ORG_VEEAM_BLOCK_STORAGE | Hourly | Charge per GB of block storage used for all backups. |
-| ORG_VEEAM_OBJECT_STORAGE | Hourly | Charge per GB of object storage used for all backups. |
-{: caption="Table 1. Licenses and fees for Veeam" caption-side="bottom"}
-
-For the Veeam service, all backups go to both the block storage cross-data center and to Cloud Object Storage.
-
-
-
 ## Backup data storage and encryption
 {: #tenant-veeam-storage}
 
@@ -96,8 +71,8 @@ You can manage (restore or delete) backups in the Veeam self-service portal. All
 ## Related links
 {: #tenant-veeam-related}
 
-* [Viewing {{site.data.keyword.vmware-service_short}} multitenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing-mt)
-* [Viewing {{site.data.keyword.vmware-service_short}} single-tenant instances](/docs/vmware-service?topic=vmware-service-tenant-viewing)
+* [VMware as a Service single-tenant pricing](/docs/vmware-service?topic=vmware-service-st_pricing)
+* [VMware as a Service multitenant pricing](/docs/vmware-service?topic=vmware-service-mt_pricing)
 * [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}

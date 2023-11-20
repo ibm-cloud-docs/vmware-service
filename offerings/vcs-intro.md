@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-11-28"
+lastupdated: "2023-11-08"
 
 keywords: order vCenter Server instance, vCenter Server instances, vCenter Server order
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware vCenter Server
+# vCenter Server
 {: #vcs-intro}
 
 For more information about [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances, see the following topics:

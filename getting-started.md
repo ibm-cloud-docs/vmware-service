@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-10-16"
+lastupdated: "2023-11-15"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -67,7 +67,7 @@ The VMware Solutions console is the user interface where you order and manage yo
 
 Before you order an instance, consider the size of the VMware® deployment required.
 
-VMware® deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
+VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 
 After the basic size of the VMware environment is established, consider the {{site.data.keyword.vmware-service_short}} deployment type of multitenant or single-tenant instance.
 
@@ -90,7 +90,7 @@ For single-tenant instances, the following configurations are used to order a ne
 * Host profile and quantity
 * Add-on services
 
-For multitenant instances, the following configurations are used to order a new virtual data center that deploys on an existing {{site.data.keyword.IBM}} owned VMware cluster.
+For multitenant instances, the following configurations are used to order a new virtual data center that deploys on an existing {{site.data.keyword.IBM_notm}} owned VMware cluster.
 
 * Virtual data center name and resource group
 * Pricing plan for on-demand or reserved resource allocation

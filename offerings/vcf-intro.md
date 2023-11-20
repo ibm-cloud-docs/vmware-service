@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-09-26"
+lastupdated: "2023-11-08"
 
 keywords: order cloud foundation, vmware cloud foundation instances, cloud foundation order, cloud foundation provisioning
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Cloud Foundation
+# Cloud Foundation
 {: #vcf-intro}
 
 For more information about [VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) instances, see the following topics:
