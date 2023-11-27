@@ -22,7 +22,7 @@ The {{site.data.keyword.vmware-service_full}} architecture is based on two logic
 * Management domain - Hosts the {{site.data.keyword.IBM}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
 * Customer workload domain - Hosts single-tenant and multi-tenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer deployed networking and workload.
 
-![{{site.data.keyword.vmware-service_short}} region](../images/vmware-aas-region.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} region" caption-side="bottom"}
+![{{site.data.keyword.vmware-service_short}} region](../images/MultiVSsingle-tenant.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} region" caption-side="bottom"}
 
 The architecture details the {{site.data.keyword.vmware-service_short}} solution components and different architecture layers to provide an isolated and private implementation for customers. The architecture provides customizable deployment choices of infrastructure and VMware Cloud Director™ based virtual data center environments.
 
