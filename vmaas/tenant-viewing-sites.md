@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2022-11-13"
+lastupdated: "2023-11-20"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -35,7 +35,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the site. |
-   | VMwaas type | The consumption model for the site: Single-tenant or Multitenant |
+   | VMwaaS type | The consumption model for the site: Single-tenant or Multitenant. |
    | Location | The region where the VDC is deployed. |
    | Status | The status of the provisioned site. |
    {: caption="Table 1. Cloud Director site summary" caption-side="bottom"}

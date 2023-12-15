@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-10-13"
+lastupdated: "2023-12-14"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -31,7 +31,7 @@ The Veeam service is configured with seven days of immutability by default. All 
 ## Accessing the Veeam self-service portal
 {: #tenant-veeam-portal}
 
-The Veeam Backup and Replication service has visibility to back up VMs from any virtual data center (VDC) in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
+The Veeam Backup and Replication service has visibility to back up VMs from any VDC in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
 
 When you use the Veeam self-service portal to create backup jobs, you can choose any VM instance from any virtual data center in the organization.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-11-11"
+lastupdated: "2023-11-22"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -26,7 +26,7 @@ vCPU and RAM charges for on-demand VDCs are based on the amount that is used for
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click a multitenant instance name.
 3. On the consumption limit section of the **Summary** tab, click **Modify limit**.
 4. Click the toggle to either disable or enable the limits.
-5. For enabling consumption limits, enter the vCPU and RAM limits. Then, click **Modify**.
+5. For enabling consumption limits, enter the vCPU and RAM limits. Then, click **Save**.
 
 ## Related links
 {: #capacity-adding-deleting-links}

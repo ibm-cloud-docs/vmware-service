@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-11-10"
+lastupdated: "2023-12-14"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -45,8 +45,8 @@ You can also specify a VDC name that meets the following requirements:
 1. In the VMware Solutions console, click **Create** on the **{{site.data.keyword.vmware-service_short}}** card.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **VMwaaS single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
-5. Select the location, Cloud Director site, and provider virtual data center (PVDC). The site and PVDC names are filtered based on the location setting.
-6. Optionally toggle fast provisioning of VMs on.
+5. Select the location, Cloud Director site, and PVDC. The site and PVDC names are filtered based on the location setting.
+6. Optionally toggle fast provisioning of virtual machines (VMs) on.
 7. Review your options to order a network edge.
    * To order a network edge, ensure that the toggle for **Create without network edge** is off and specify the edge type. Edge storage costs might occur.
    * Toggle **Create without network edge** on. This option is suitable for centralized networking administration and control over multiple VDCs.
@@ -59,8 +59,8 @@ You can also specify a VDC name that meets the following requirements:
 2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **VMwaaS multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Select the pricing plan according to your consumption needs.
-5. Select the regional location and Cloud Director site, and then select a provider virtual data center (PVDC) which maps to one or more data centers. The site and PVDC names are filtered based on the location setting.
-6. Optionally toggle fast provisioning of virtual machines (VMs) on.
+5. Select the regional location and Cloud Director site, and then select a PVDC which maps to one or more data centers. The site and PVDC names are filtered based on the location setting.
+6. Optionally toggle fast provisioning of VMs on.
 7. Review your options to order a network edge.
    * To order a network edge, ensure that the toggle for **Create without network edge** is off and specify the edge type. Edge storage costs might occur.
    * Toggle **Create without network edge** on. This option is suitable for centralized networking administration and control over multiple VDCs.

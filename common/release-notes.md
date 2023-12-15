@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-11-17"
+lastupdated: "2023-12-15"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,22 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2023
 {: #vmware-service-year-2023}
+
+### 15 December 2023
+{: #vmware-service-dec2023}
+{: release-note}
+
+Cloud-to-cloud migration to VMware as a Service
+:   You can now use cloud-to-cloud connections to migrate {{site.data.keyword.vmwaresolutions_short}} Shared instances to {{site.data.keyword.vmware-service_short}}. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant {{site.data.keyword.vmware-service_short}} instances to another {{site.data.keyword.vmware-service_short}} instance. For more information, see [Creating and deleting VMware as a Service pairings](/docs/vmware-service?topic=vmware-service-vcda-creating-deleting-vmaas-pairing).
+
+vSAN host profile updates
+:   The Dual Intel® 8260 Xeon® host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN™ usable capacity is now available for Cloud Director sites.
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
+
+New documentation
+:   A number of solution tutorials are now available under the **Tutorials** section of the {{site.data.keyword.vmware-service_short}} documentation. These tutorials provide step-by-step instructions about using VMware as a Service to implement common patterns based on best practices.
 
 ### 17 November 2023
 {: #vmware-service-nov2023}
@@ -62,7 +78,7 @@ SAP-certified provider virtual data centers
  For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 vSAN host profile updates
-:   The Dual Intel® 8260 Xeon® host profile (2 Sockets - 48 Cores, 768 GB RAM) with 46 TB of vSAN usable capacity is now available for Cloud Director sites.
+:   The Dual Intel 8260 Xeon host profile (2 Sockets - 48 Cores, 768 GB RAM) with 46 TB of vSAN usable capacity is now available for Cloud Director sites.
 
 ### 25 August 2023
 {: #vmware-service-aug2523}

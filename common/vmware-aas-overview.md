@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-11-01"
+lastupdated: "2023-12-12"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -58,7 +58,8 @@ The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant mod
 * VMware infrastructure health and patching is managed by {{site.data.keyword.IBM_notm}} Operations up through the hypervisor.
 * Full compatibility to run existing VMware workloads. Migration of existing {{site.data.keyword.cloud_notm}}, on-premises or other workloads are fully supported.
 * Create and delete VDCs to deploy VMware workload vApps and virtual machines in VMware Cloud Director.
-* Optional data protection through the Veeam® Backup and Replication service
+* Optional data protection through the Veeam® Backup and Replication service.
+* Optional VM and vApp migration through the VMware Cloud Director Availability service.
 
 ### {{site.data.keyword.vmware-service_short}} single-tenant features
 {: #vmware-aas-overview-features-st}
@@ -79,7 +80,6 @@ The {{site.data.keyword.vmware-service_short}} single-tenant consumption model p
    * Add and remove VMware vCenter clusters
    * Add and remove hosts per VMware vCenter cluster
    * Add and remove storage per VMware vCenter cluster
-* Optional migration of VMware vCenter Server® or on-premises workloads through the VMware Cloud Director Availability service.
 * Monthly billing for the dedicated infrastructure and components.
 
 ### {{site.data.keyword.vmware-service_short}} multitenant features

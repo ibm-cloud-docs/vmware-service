@@ -3,7 +3,7 @@
 copyright:
   years:  2023
 
-lastupdated: "2023-08-24"
+lastupdated: "2023-12-14"
 
 keywords: change log for VMware as a Service API, updates to VMware as a Service API
 
@@ -24,7 +24,7 @@ In this change log, you can learn about the most recent changes, improvements, a
 * Added support for director site instance `type` and pvdc `provider_type` to distinguish between multitenant and single-tenant. For more information, see [Get a director site instance](/apidocs/vmware-service#get-director-site) and [List director site instances](/apidocs/vmware-service#list-director-sites).
 * Added support for including services when you create a director site instance and retrieve a director site instance. For more information, see [Create a director site instance](/apidocs/vmware-service#create-director-sites) and [Get a director site instance](/apidocs/vmware-service#get-director-site).
 * Added support for creating additional cluster. For more information, see [Create a cluster](/apidocs/vmware-service#create-director-sites-pvdcs-clusters).
-* Added support for updating a VDC instance configuration. Currently, fast provisioning configuration is supported. For more information, see [Update a virtual data center](/apidocs/vmware-service#update-vdc).
+* Added support for updating a virtual data center (VDC) instance configuration. Currently, fast provisioning configuration is supported. For more information, see [Update a virtual data center](/apidocs/vmware-service#update-vdc).
 * Added support for retrieving `rhel_vm_activation_key` of a director site instance. For more information, see [Get a director site instance](/apidocs/vmware-service#get-director-site) and [List director site instances](/apidocs/vmware-service#list-director-sites).
 
 ## 5 May 2023

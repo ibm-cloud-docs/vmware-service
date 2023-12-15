@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-11-10"
+lastupdated: "2023-11-20"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -31,7 +31,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | VMwaas type | The consumption model for the VDC: Single-tenant or Multitenant |
+   | VMwaaS type | The consumption model for the VDC: Single-tenant or Multitenant. |
    | Location | The region where the VDC is deployed. |
    | Cloud Director site | The name of the site where the VDC is deployed. |
    | Status | The status of the provisioned VDC. |

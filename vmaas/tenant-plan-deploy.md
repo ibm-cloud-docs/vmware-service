@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-11-16"
+lastupdated: "2023-12-14"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -116,6 +116,9 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 | Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
 {: caption="Table 2. Network edge descriptions" caption-side="bottom"}
 
+High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](../docs/subnets?topic=subnets-understanding-network-protect).
+{: note}
+
 ## Profile storage type
 {: #tenant-plan-deploy-storage}
 
@@ -133,7 +136,7 @@ The vSAN deduplication and compression option is available for enablement only w
 ## Host profile
 {: #tenant-plan-deploy-host}
 
-{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware virtual machines (VMs) and workload you plan to run on {{site.data.keyword.vmware-service_short}}.
+{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vmware-service_short}}.
 
 * For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/rvtools/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/rvtools/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
 * For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
@@ -143,16 +146,19 @@ After you have a list of target VMs including CPU, RAM, and storage requirements
 {{site.data.keyword.vmware-service_short}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
 {: note}
 
-Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead lets you know the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMWare deployment into the total host count calculation.
+Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMWare deployment into the total host count calculation.
 
 ### Bare metal server requirements
 {: #tenant-plan-deploy-host-bms-req}
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
-For vSAN clusters, you can select Dual Intel® 8260 Xeon® (2 Sockets - 48 Cores, 768 GB RAM) with either 15 TB, 23 TB, or 46 TB of vSAN usable capacity.
+For vSAN clusters, you can select from the following Dual Intel® 8260 Xeon® options.
 
-The following options are available for NFS only clusters.
+* (2 Sockets - 48 Cores, 768 GB RAM) with either 15 TB, 23 TB, or 46 TB of vSAN usable capacity.
+* (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of vSAN usable capacity.
+
+For NFS only clusters, you can select from the following options.
 
 * Dual Intel 5218 Xeon (2 Sockets - 32 Cores, 192 GB RAM)
 * Dual Intel 8260 Xeon (2 Sockets - 48 Cores, 384 GB RAM)
@@ -182,12 +188,16 @@ The following add-on services are optionally available for {{site.data.keyword.v
 
 For single-tenant instances, the Veeam® Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
 
-For multitenant instances, the Veeam Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision your virtual data center (VDC). Service charges are incurred only if you choose to install the service.
+For multitenant instances, the Veeam Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision VDC. Service charges are incurred only if you choose to install the service.
 
 ### VMware Cloud Director Availability
 {: #tenant-plan-deploy-services-vcda}
 
-For single-tenant instances, the VMware Cloud Director Availability (VCDA) service is included at no charge by default with your Cloud Director site instance order. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection. You can optionally remove the service before you create your instance. You can add or remove the service later as required.
+The VMware Cloud Director Availability (VCDA) service is optionally included at no charge with your {{site.data.keyword.vmware-service_short}} single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
+
+The VCDA service is included as a default option in {{site.data.keyword.vmware-service_short}} multitenant VDCs.
+
+Use enterprise-level VCDA to migrate VMs and vAPPS over a secure public internet connection.
 
 ## Configuration limits for VMware Cloud Director
 {: #tenant-plan-deploy-cloud-dir-limits}
