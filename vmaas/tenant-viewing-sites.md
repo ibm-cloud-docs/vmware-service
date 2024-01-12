@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-11-20"
+lastupdated: "2023-12-19"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -45,7 +45,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | Provider VDC | The name of the provider virtual data center (PVDC) for the VDC. |
+   | Resource pool | The name of the resource pool for the VDC. |
    | Network edge | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Status | The status of the VDC. |
    {: caption="Table 2. Virtual data center summary" caption-side="bottom"}
@@ -56,23 +56,23 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 {: #tenant-viewing-sites-details}
 
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site name.
-2. On the **Summary** tab, review the complete summary of Cloud Director site details: the number of PVDCs provisioned for the site, the number of VDCs provisioned for the site, the site details, and the recommended services for the site.
+2. On the **Summary** tab, review the complete summary of Cloud Director site details: the number of resource pools provisioned for the site, the number of VDCs provisioned for the site, the site details, and the recommended services for the site.
 
    | Item | Description |
    |:---- |:----------- |
    | Infrastructure | The {{site.data.keyword.vmware-service_short}} offering uses {{site.data.keyword.cloud_notm}} Classic Infrastructure. |
    | Resource group | Resource grouping for user access to assignemnts in the Cloud user account. |
    | Billing cycle | The pricing plan for the site. |
-   | Created | The date and time that the site was created. |
+   | Creation time | The date and time that the site was created. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    {: caption="Table 3. Cloud Director site details" caption-side="bottom"}
 
    If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
 
-3. On the **Infrastructure** tab, review details for each PVDC provisioned for the site. Click the PVDC tab in the right panel to open details for that PVDC.
-     * Click the **Clusters** tab to view all clusters that are deployed on the PVDC and to view cluster details: name, total cores and RAM, host units, storage type, and status. Expand the cluster to view host and storage details.
-     * Click the **Virtual data centers** tab to view all VDCs deployed on the PVDC and to view VDC details: name, edge type, fast provisioning, and status. Click a VDC name to review complete VDC details.
-     * Click the **Network edges** tab to view the edges that are deployed on the PVDC and to view edge details: type, quantity, vCPU, and RAM.
+3. On the **Resource pool** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
+     * Click the **Clusters** tab to view all clusters that are deployed on the resource pool and to view cluster details: name, total cores and RAM, host units, storage type, and status. Expand the cluster to view host and storage details.
+     * Click the **Virtual data centers** tab to view all VDCs deployed on the resource pool and to view VDC details: name, edge type, fast provisioning, and status. Click a VDC name to review complete VDC details.
+     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.
 4. On the **Add-on services** tab, review your options for available services.
      * Click **Add service** to install a service.
      * Click the overflow menu to delete a service.
@@ -95,7 +95,7 @@ Alternatively, you can click the delete icon that is located in the site row of 
 ## Related links
 {: #tenant-viewing-sites-links}
 
-* [Adding provider virtual data centers](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
+* [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
 * [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
 * [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

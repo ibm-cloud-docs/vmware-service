@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-12-12"
+lastupdated: "2023-12-18"
 
 keywords: add capacity, capacity adding
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 After your {{site.data.keyword.vmware-service_full}} Cloud Director site instance order is complete, use VMware Cloud Director Availability (VCDA) to configure your instance capacity. Determine the amount of capacity based on how many virtual machines (VMs) you plan to migrate.
 
-Select from the following estimated capacity resource options that are required for your provider virtual data center (PVDC) to migrate your VMs. Each resource is per instance.
+Select from the following estimated capacity resource options that are required for your resource pool to migrate your VMs. Each resource is per instance.
 
 VCDA resources can include the VCDA Manager VM, Tunnel VM, and Replicator VMs. Resources are deployed into the workload resource pool and use RAM and CPU from the PVDCs in each zone for the site.
 

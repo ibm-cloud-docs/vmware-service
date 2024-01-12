@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-15"
+lastupdated: "2024-01-12"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -20,6 +20,25 @@ content-type: release-note
 
 Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
+
+## 2024
+{: #vmware-service-year-2024}
+
+### 12 January 2024
+{: #vmware-service-jan2024}
+{: release-note}
+
+Base charge reduction for on-demand multitenant instances
+:   The base charge for {{site.data.keyword.vmware-service_short}} on-demand multitenant instances is adjusted to $0.00 per month. The six public IP addresses are instead included in the efficiency edge charge.
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltips that include the following enhancements.
+
+   * The term **provider virtual data center** is updated to **resource pool** throughout the UI, user documentation, and REST APIs.
+   * The **Infrastructure** tab on the Cloud Director site details page is updated to **Resource pool**.
+
+New documentation
+:   A new solution tutorial, [Creating a VPN between the virtual data center edge gateway and the on-premises VPN gateway](/docs/vmware-service?topic=vmware-service-vmwaas-ipsec-tunnel), is now available. This tutorial provides the steps to connect a {{site.data.keyword.vmware-service_short}} instance with Juniper® vSRX. 
 
 ## 2023
 {: #vmware-service-year-2023}

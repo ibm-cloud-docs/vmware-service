@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-12"
+lastupdated: "2024-01-11"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -114,4 +114,4 @@ The {{site.data.keyword.vmware-service_short}} multitenant consumption model pro
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering {{site.data.keyword.vmware-service_short}} virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Ordering {{site.data.keyword.vmware-service_short}} Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering-mt)
+* [Ordering {{site.data.keyword.vmware-service_short}} Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)

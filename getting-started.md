@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-11-15"
+lastupdated: "2023-12-19"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -83,7 +83,7 @@ For single-tenant instances, the following configurations are used to order a ne
 
 * Cloud Director site name and resource group
 * Cloud Director site location (geography and region)
-* Provider virtual data center name and location
+* Resourc pool name and location
 * Optional SAP-certified server profiles
 * Cluster name
 * Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
@@ -94,7 +94,7 @@ For multitenant instances, the following configurations are used to order a new 
 
 * Virtual data center name and resource group
 * Pricing plan for on-demand or reserved resource allocation
-* VMware Cloud Director™ site location (region, Cloud Director site, provider virtual data center)
+* VMware Cloud Director™ site location (region, Cloud Director instance, data center)
 * Optional fast provisioning of virtual machines that use linked clones
 * Optional network edge types
 * vCPU and RAM limits
@@ -106,7 +106,7 @@ For more information, see [Ordering Cloud Director site instances](/docs/vmware-
 ## Other operations
 {: #getting-started-step9}
 
-* [Adding a provider virtual data centers](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
+* [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
 * [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
 * [Adding and deleting hosts](/docs/vmware-service?topic=vmware-service-host-adding-deleting)
 * [Adding and deleting storage](/docs/vmware-service?topic=vmware-service-storage-adding-deleting)

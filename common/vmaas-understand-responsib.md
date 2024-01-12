@@ -19,7 +19,7 @@ keywords: ibm responsibilities, customer responsibilities, management responsibi
 Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmware-service_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 {: shortdesc}
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.vmware-service_short}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} terms of use](/docs/overview/terms-of-use?topic=overview-terms).
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.vmware-service_short}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} terms of use](/docs/overview?topic=overview-terms).
 
 ## Incident and operations management
 {: #vmaas-understand-responsib-incident-and-ops}

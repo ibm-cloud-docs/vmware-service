@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-11-13"
+lastupdated: "2024-01-02"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Ordering Cloud Director site instances
 {: #tenant-ordering}
 
-You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First review the minimum requirements.
+You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
 
 {{site.data.keyword.vmware-service_short}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 {: note}
@@ -36,7 +36,7 @@ Minimum 2 servers (7 servers for vSAN™ profiles)
 
 The Cloud Director site infrastructure names are set by default, where _xx_ represents two randomly generated alphabetic characters.
 * The Cloud Director site name is set to **inst-_xx_**.
-* The provider virtual data center (PVDC) is set to **pvdc-_xx_**.
+* The resource pool is set to **rp-_xx_**.
 * The cluster name is set to **cluster-_xx_**.
 
 You can specify a name that meets the following requirements:
@@ -53,11 +53,11 @@ You can specify a name that meets the following requirements:
 3. Specify the Cloud Director site name and select a resource group.
 
    If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [{{site.data.keyword.IBM_notm}} IAM roles](/docs/account?topic=account-userroles).
-4. Select the Cloud Director geography and location.
-5. Specify the settings for the provider virtual data center (PVDC).
-    1. Specify the PVDC name.
-    2. Select the PVDC location.
-    3. Optionally toggle SAP-certified server profiles on and select the profile type.
+4. Select the Cloud Director geography and region.
+5. Specify the settings for the resource pool.
+    1. Specify the resource pool name.
+    2. Select the resource pool location.
+    3. Optionally enable SAP®-certified server profiles and select the profile type.
 6. Specify the settings for the cluster.
     1. Specify the cluster name.
     2. Select the profile storage type.

@@ -14,7 +14,7 @@ toc:
     path: vmware-service
     label: VMware as a Service
 
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries:
   - navgroup:
       id: learn
@@ -32,12 +32,22 @@ toc:
   - navgroup:
       id: tutorial
       topics:
-      - include: ../solution-tutorials/vmware-as-a-service-vdc.md
-      - include: ../solution-tutorials/vmware-as-a-service-tf.md
-      - tutorials/vmwaas-ovftool.md
-      - tutorials/vcda-migrating-onprem.md
-      - tutorials/vcda-migrating-cloudtocloud-shared.md
-      - tutorials/vcda-migrating-cloudtocloud-vmaas.md
+      - topicgroup:
+          label: Configuration tutorials
+          topics:
+            - include: ../solution-tutorials/vmware-as-a-service-vdc.md
+            - include: ../solution-tutorials/vmware-as-a-service-tf.md
+      - topicgroup:
+          label: Connectivity tutorials
+          topics:
+            - tutorials/vmwaas-ipsec-tunnel.md
+      - topicgroup:
+          label: Migration tutorials
+          topics:
+            - tutorials/vmwaas-ovftool.md
+            - tutorials/vcda-migrating-onprem.md
+            - tutorials/vcda-migrating-cloudtocloud-shared.md
+            - tutorials/vcda-migrating-cloudtocloud-vmaas.md
 
   - navgroup:
       id: howto

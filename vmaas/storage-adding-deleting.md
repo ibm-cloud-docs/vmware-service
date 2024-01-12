@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-11-10"
+lastupdated: "2024-01-11"
 
 keywords: add storage, delete storage, storage adding, storage remove
 
@@ -22,7 +22,7 @@ You can increase or decrease the NFS storage capacity of your *single-tenant* de
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
-3. Click the **Infrastructure** tab.
+3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, click a cluster name to expand its details.
 5. Click **Edit NFS storage**.
 6. In the **Edit shared storage** window, increase or decrease the current sizings for the performance tiers available.
@@ -36,4 +36,3 @@ Editing the storage details might take up to 24 hours to complete. If a storage 
 
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
-* [Deleting {{site.data.keyword.vmware-service_short}} instances](/docs/vmware-service?topic=vmware-service-tenant-deleting)

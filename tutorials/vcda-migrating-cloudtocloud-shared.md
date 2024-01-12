@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023
-lastupdated: "2023-12-13"
+  years: 2023, 2024
+lastupdated: "2024-01-11"
 
 content-type: tutorial
 services: vmware-service
@@ -49,8 +49,8 @@ This tutorial requires:
 
 1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vmware-service_short}} single-tenant instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc).
 
-VCDA is preinstalled on multitenant instances.
-{: note}
+   VCDA is preinstalled on multitenant instances.
+   {: note}
 
 2. Create a VDC on the VMware Shared instance to migrate. For more information, see [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
 3. From the VMware Shared VDC details page, click **vCloud Director console**. For more information, see [Viewing site and virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details).
@@ -68,7 +68,7 @@ VCDA is preinstalled on multitenant instances.
 {: #vcda-migrating-cloudtocloud-shared-migrate-pairing}
 {: step}
 
-1. From the VMware Solutions console, navigate to the {{site.data.keyword.vmware-service_short}} instance with VCDA installed and click **VMware console**.
+1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service_short}} instance with VCDA installed and click **VMware console**.
 2. From the VMware console, click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.
 3. From the left panel, click **Peer Sites** to review the VMware Shared peer site options.
 4. Select the peer site for the VMware Shared workload to migrate and click **LOGIN**. The peer site name is the VMware Shared organization. To find the VMWare Shared organization name, log in to the Cloud Director user interface in VMware Shared and click a VDC. At the top of the web page, you can find the organization ID.
@@ -90,7 +90,7 @@ Ensure that the VMware Shared VM is powered on from the VMware console.
 3. Provide the login credentials for the peer site and click **LOGIN**.
 4. Select the following options in the **New Incoming Migration** window.
    * For **Source VMs and vApps**:
-   1. From the **Source organization** drop-down menu, select the organization ID that you located in the URL when you created the user ID for the VMware Shared pairing.
+   1. From the **Source organization** menu, select the organization ID that you located in the URL when you created the user ID for the VMware Shared pairing.
    2. Select the VM to replicate and click **NEXT**.
    * For **Destination VDC and Storage policy**, select the target VDC to migrate the VM to and click **NEXT**.
    * For **Settings**, keep the default options and click **NEXT**.
@@ -99,7 +99,7 @@ Ensure that the VMware Shared VM is powered on from the VMware console.
    The VM is first configured and then synchronized. The replication is complete when the **Last changed** column moves from *Synchronizing* to the date and time of the replication.
 
 5. When the replication is complete, ensure that the newly replicated VM is selected and click **ALL ACTIONS > Migrate** to begin the migration.
-6. Select the following options from the **Migrate** window.
+6. Select the following options from the **Migrate** window:
    * For **Migrate Settings**, keep the default options and click **NEXT**.
    * For **Ready to complete**, review the settings and click **FINISH**.
 

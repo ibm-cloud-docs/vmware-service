@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2023-12-15",
+    "lastupdated": "2024-01-12",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -34,7 +34,7 @@
       {
         "title": "Viewing instances",
         "description": "You can view the information of the instances that are provisioned for your account.",
-        "href": "/docs/vmware-service?topic=vmware-service-tenant-viewing"
+        "href": "/docs/vmware-service?topic=vmware-service-tenant-viewing-sites"
       }
     ],
     "section_learn": {
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "12 January 2024",
+          "title": "Base charge reduction for on-demand multitenant instances",
+          "description": "The base charge for VMware as a Service on-demand multitenant instances is adjusted to $0.00 per month. The six public IP addresses are instead included in the efficiency edge charge."
+        },
+        {
           "date": "15 December 2023",
           "title": "Cloud-to-cloud migration to VMware as a Service",
           "description": "You can now use cloud-to-cloud connections to migrate IBM Cloud for VMware Solutions Shared instances to VMware as a Service. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant VMware as a Service instances to another VMware as a Service instance."
@@ -55,11 +60,6 @@
           "date": "17 November 2023",
           "title": "Migrating virtual machines to VMware as a Service",
           "description": "The VMware Cloud Director Availability (VCDA) service is now available as a cost-effective solution to easily migrate your VMware vCenter Server or on-premises workloads to the VMware as a Service single-tenant consumption model. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection at no cost."
-        },
-        {
-          "date": "20 October 2023",
-          "title": "VMware as a Service Multitenant",
-          "description": "This release announces the VMware as a Service Multitenant offering. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam® Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads."
         }
       ]
     }

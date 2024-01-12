@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-12-14"
+lastupdated: "2024-01-11"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -24,6 +24,10 @@ The following steps outline a validated process. Many different configurations w
 {: note}
 
 1. From VMware Customer Connect, download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
+
+   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. For more information about creating a VMware Customer Connect account, see [VMware Customer Connect](https://customerconnect.vmware.com/account-registration). {: external}
+   {: note}
+
 2. Log in to VMware vCenter Server and navigate to the cluster name.
 3. Right-click the cluster name and click **Deploy OVF Template...**.
 4. From the **Deploy OVF Template** window, complete the following configurations. After you complete the configuration for each tab, click **NEXT** to move to the next tab.

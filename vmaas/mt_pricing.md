@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-11-15"
+lastupdated: "2024-01-10"
 
 keywords: vmware as a service, price for vmware as a service, pricing plan, multitenant pricing
 
@@ -40,7 +40,7 @@ subcollection: vmware-service
 
 Metering is for the full potential size of the resource for the time period that the resource is used.
 
-For example, a on-demand VDC is created with a resource limit of 100 vCPU and 800 GB RAM. The data center has no VMs running on it, so you do not receive a charge for the vCPU and RAM. If an 8 vCPU with 8 GB virtual machine (VM) is started, metering is calculated for the size of that VM. If the VM uses fewer resources than the ones assigned to it, metering is applicable to the full size of the VM.
+For example, an on-demand VDC is created with a resource limit of 100 vCPU and 800 GB RAM. The data center has no VMs running on it, so you do not receive a charge for the vCPU and RAM. If an 8 vCPU with 8 GB virtual machine (VM) is started, metering is calculated for the size of that VM. If the VM uses fewer resources than the ones assigned to it, metering is applicable to the full size of the VM.
 
 ### Allocation
 {: #mt_pricing-term-alloc}
@@ -65,14 +65,13 @@ The maximum value of the metric used over an hour. For example, if 100 vCPU is u
 ## {{site.data.keyword.vmware-service_short}} On-demand billing plan
 {: #mt_pricing-cost-ondemand}
 
-{{site.data.keyword.vmware-service_short}} on-demand VDC resources are allocated as needed. Pricing is hourly based on the resource usage in the VDC. The following metrics are part of this plan.
+{{site.data.keyword.vmware-service_short}} on-demand VDC resources are allocated as needed. Pricing is hourly based on the resource usage in the VDC. VDCs include an edge gateway with six IP addresses. The following metrics are part of this plan.
 
 Storage policy availability can vary by region and deployment topology. On the {{site.data.keyword.vmware-service_short}} order page, select the **About** tab to view available storage policy offerings.
 {: note}
 
 | Metric                                   | Frequency | Description |
 |:-----------------------------------------|:----------|:------------|
-| MAX_BASE_COST | Monthly | VDC price, which includes the edge gateway with five IP addresses. |
 | TOTAL_VCPU_HOURS | Hourly | The peak vCPU **usage** over the period of an hour. |
 | TOTAL_RAM_GB_HOURS | Hourly | The peak memory **usage** over the period of an hour. |
 | TOTAL_EGRESS_GB | Usage | The **total** outbound public traffic is charged per GB transferred over the period of an hour. This value includes public outbound traffic. |
@@ -176,7 +175,7 @@ For more information about Licenses and fees for Veeam Backup and Replication fo
 | ORG_VEEAM_OBJECT_STORAGE | Hourly | Charge per GB of object storage used for all backups. |
 {: caption="Table 4. Licenses and fees for Veeam on multitenant" caption-side="bottom"}
 
-For the Veeam service, all backups go to both the block storage cross data center and to Cloud Object Storage.
+For the Veeam service, all backups go to both the block storage cross-data center and to Cloud Object Storage.
 
 No additional Veeam usage charges for {{site.data.keyword.vmware-service_short}} are incurred.
 {: note}

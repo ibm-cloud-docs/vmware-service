@@ -48,7 +48,7 @@ This tutorial requires:
 1. Navigate to the source instance details where you installed VCDA and click the **Add-on services** tab.
 1. Click the **{{site.data.keyword.vmware-service_short}} pairings** tab and click **Create pairing**.
 1. On the **Create connection** panel, complete the following configuration.
-   1. For **Zones**, the default zone of the provider virtual data center (PVDC) is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
+   1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **Instance endpoints** tab. Click the **Copy to clipboard** icon for the **Site name** for the instance to pair. Paste the site name in the create connection configuration.
    1. For **Peer region**, select the region where the peer site is installed.
@@ -59,7 +59,7 @@ This tutorial requires:
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vmware-service_short}} pairings** tab, click **Create pairing**.
 1. On the **Create connection** panel, complete the following configuration.
-   1. For **Zones**, the default zone of the provider virtual data center (PVDC) is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
+   1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **{{site.data.keyword.vmware-service_short}} pairings** tab. Click the **Copy to clipboard** icon for the **Peer site name** that you created for the first pairing. Paste the site name in the create connection configuration.
    1. For **Peer region**, select the region of the first pairing.

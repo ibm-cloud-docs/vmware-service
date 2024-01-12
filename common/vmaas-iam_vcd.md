@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-07-14"
+lastupdated: "2023-12-19"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -172,7 +172,7 @@ The following table provides information about roles that are custom-defined by 
 | Organization: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) |
 | Organization: view metrics | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | |
 | Provider Network: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | |
-| Provider vDC: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | |
+| Resource Pool: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | |
 | Quota Policy Capabilities: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |
 | Resource Class Action: Manage | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  |  |  | |
 | Resource Class Action: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  |  | |

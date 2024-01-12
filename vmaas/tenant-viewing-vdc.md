@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-11-20"
+lastupdated: "2024-01-02"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -32,8 +32,8 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    |:---- |:----------- |
    | Name | The name of the VDC. |
    | VMwaaS type | The consumption model for the VDC: Single-tenant or Multitenant. |
-   | Location | The region where the VDC is deployed. |
-   | Cloud Director site | The name of the site where the VDC is deployed. |
+   | Location | The data center where the VDC is deployed. |
+   | Cloud Director instance | The name of the site where the VDC is deployed. |
    | Status | The status of the provisioned VDC. |
    {: caption="Table 1. Virtual data center summary" caption-side="bottom"}
 
@@ -45,22 +45,44 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab. Then, click a VDC name.
 2. On the **Summary** tab, review the virtual data center details.
 
+   For single-tenant instances:
+
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | Cloud Director Site | The name of the site where the VDC is deployed. Click the name to access site details. |
-   | Provider VDC | The name of the provider virtual data center (PVDC) for the VDC. Click the name to access PVDC details. |
-   | Created | The date and time that the VDC was created. |
-   | Location | The region where the VDC is deployed. |
+   | Cloud Director instance | The name of the instance where the VDC is deployed. Click the name to access site details. |
+   | Resource pool | The name of the resource pool for the VDC. Click the name to access resource pool details. |
+   | Creation time | The date and time that the VDC was created. |
+   | Location | The region and data center where the VDC is deployed. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Public IPs | The 6 public IP addresses that are assigned to the VDC. The IP addresses can be assigned to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
-   {: caption="Table 2. Virtual data center details" caption-side="bottom"}
+   {: caption="Table 2. Virtual data center details for single-tenant instances" caption-side="bottom"}
 
-3. On the **Add-on services** tab, click **Veeam backups** to open the Self-Service Backup Portal.
+   For multitenant instances:
 
-   You can enable the Veeam® Backup and Replication service through the Cloud Director site details page if the service is not installed.
+   | Item | Description |
+   |:---- |:----------- |
+   | vCPU and RAM limits | The current vCPU and RAM consumption limits. Click **Modify limit** to enable or disable limits and increase or decrease limits. |
+   | Name | The name of the VDC. |
+   | Cloud Director instance | The name of the instance where the VDC is deployed. Click the name to access site details. |
+   | Data center | The data center where the VDC is deployed. |
+   | Location | The region and data center where the VDC is deployed. |
+   | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
+   | Pricing plan | The pricing plan for the virtual data center. Pricing plans are either on-demand or reserved. |
+   | Public IPs | The 6 public IP addresses that are assigned to the VDC. The IP addresses can be assigned to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Creation time | The date and time that the VDC was created. |
+   | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
+   | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
+   {: caption="Table 3. Virtual data center details for multitenant instances" caption-side="bottom"}
+
+3. On the **Add-on services** tab, review the available services.
+
+   * Click **Veeam backups** to open the Self-Service Backup Portal.
+   * Click **Open VCDA** to open the VMware Cloud Director Availability (VCDA) Console.
+
+   You can enable the Veeam® Backup and Replication and VCDA services through the Cloud Director site details page if the services are not installed.
    {: note}
 
 ## Procedure to delete a virtual data center

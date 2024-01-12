@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-06-06"
+lastupdated: "2023-12-18"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -43,8 +43,8 @@ Events are generated when you access VMware Cloud Director™ in {{site.data.key
 |:------ |:----------- |
 | `vmware.directorsite.create` | An event is generated when a VMware Cloud Director site is created. |
 | `vmware.directorsite.delete` | An event is generated when a VMware Cloud Director site is deleted. |
-| `vmware.directorsite-pvdc.create` | An event is generated when a VMware Cloud Director site provider virtual data center (PVDC) is created. |
-| `vmware.directorsite-pvdc.delete` | An event is generated when a VMware Cloud Director site PVDC is deleted. |
+| `vmware.directorsite-pvdc.create` | An event is generated when a VMware Cloud Director site resource pool is created. |
+| `vmware.directorsite-pvdc.delete` | An event is generated when a VMware Cloud Director site resource pool is deleted. |
 | `vmware.directorsite-cluster.create` | An event is generated when a VMware Cloud Director site cluster is created. |
 | `vmware.directorsite-cluster.delete` | An event is generated when a VMware Cloud Director site cluster is deleted. |
 | `vmware.directorsite-host.add` | An event is generated when a host is added to a VMware Cloud Director site. |

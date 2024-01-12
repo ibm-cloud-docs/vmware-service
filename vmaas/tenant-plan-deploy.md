@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-12-14"
+lastupdated: "2023-12-18"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -96,7 +96,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 ## Fast provisioning of virtual machines
 {: #tenant-plan-deploy-fast-provisioning}
 
-Fast provisioning saves time by using linked clones for virtual machine (VM) provisioning. You can enable fast provisioning for any VDC created within the PVDC. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
+Fast provisioning saves time by using linked clones for virtual machine (VM) provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
 
 In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
 {: important}
@@ -116,7 +116,7 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 | Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
 {: caption="Table 2. Network edge descriptions" caption-side="bottom"}
 
-High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](../docs/subnets?topic=subnets-understanding-network-protect).
+High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}
 
 ## Profile storage type
@@ -209,4 +209,4 @@ Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.v
 
 * [FAQ](/docs/vmware-service?topic=vmware-service-faq-general)
 * [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering-mt)
+* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)

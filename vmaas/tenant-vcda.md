@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-12-12"
+lastupdated: "2023-12-20"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability installation
 
@@ -40,7 +40,7 @@ When you are ready to complete your migration, you can access the VCDA console f
 2. Click the **Cloud director sites** tab. Then, click the instance name.
 3. Click the **Add-on services** tab on the instance details page and expand the **VMware Cloud Director Availability** service.
 4. In the **Instance endpoints** table, click the overflow menu for the endpoint to migrate and click **Endpoint details**.
-5. Click **Open VCDA Console**.
+5. Click **Open VCDA**.
 6. Use a user with the Organization Administrator role to log in to the VCDA console. A newly provisioned virtual data center's **admin** user has the role by default.
 
 ## Related links

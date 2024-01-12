@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-11-06"
+lastupdated: "2023-12-18"
 
 keywords: add vcda, delete vcda, vcda adding, vcda remove, VMware Cloud Director Availability
 
@@ -22,7 +22,7 @@ You can add the VMware Cloud Director Availability (VCDA) service to your Cloud 
 
 You can delete the service from your instance if you no longer need the service.
 
-VCDA is installed in all virtual data centers (VDCs) for the {{site.data.keyword.vmware-service_short}} instance. For example, if the instance has provider VDCs (PVDCs) in Dallas 10 and Dallas 12, then VCDA is installed in both of the VDCs in the PVDC clusters and takes CPU and RAM resources from the PVDC clusters and hosts.
+VCDA is installed in all virtual data centers (VDCs) for the {{site.data.keyword.vmware-service_short}} instance. For example, if the instance has resource pools in Dallas 10 and Dallas 12, then VCDA is installed in both of the VDCs in the resource pool clusters and takes CPU and RAM resources from the resource pool clusters and hosts.
 
 ## Procedure to add VMware Cloud Director Availability to {{site.data.keyword.vmware-service_short}} instances
 {: #vcda-adding-deleting-add-proc}

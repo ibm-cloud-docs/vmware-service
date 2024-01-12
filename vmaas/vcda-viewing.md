@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-12-14"
+lastupdated: "2023-12-18"
 
 keywords: view vcda details
 
@@ -28,7 +28,7 @@ View the summary and detailed information for migrating your virtual machines (V
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. Review the VCDA configuration and summary details.
 
-   * For single-tenant instances, you can configure the migration capacity based on the estimated number of VMs you plan to migrate. In the **Migration estimated capacity** section, review the range of VMs to migrate, the number of VCDA instances, and the resources that are required for the provider virtual data center (PVDC) to migrate VMs. Resources include the number of replicators, RAM, and CPU per instance.
+   * For single-tenant instances, you can configure the migration capacity based on the estimated number of VMs you plan to migrate. In the **Migration estimated capacity** section, review the range of VMs to migrate, the number of VCDA instances, and the resources that are required for the resource pool to migrate VMs. Resources include the number of replicators, RAM, and CPU per instance.
 
      For multitenant instances, the migration capacity is monitored and scaled by {{site.data.keyword.IBM_notm}}.
      {: note}

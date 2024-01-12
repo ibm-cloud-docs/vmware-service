@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-12-14"
+lastupdated: "2023-12-19"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -20,12 +20,12 @@ subcollection: vmware-service
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
-For single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 100 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the provider virtual data center (PVDC).
+For single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 100 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
 
 You can deploy VDCs only to an existing Cloud Director site. Therefore, you must create a single-tenant Cloud Director site before you can create a single-tenant VDC.
 {: requirement}
 
-For {{site.data.keyword.vmware-service_short}} multitenant, you start by creating the multitenant VDC. A {{site.data.keyword.vmware-service_short}} multitenant site is created automatically when you create the first multitenant VDC in a region. All multitenant VDCs that you create in a region are associated with the same site. User access to the multitenant VDCs within the Cloud account are controlled through IAM policies against the site. 
+For {{site.data.keyword.vmware-service_short}} multitenant, you start by creating the multitenant VDC. A {{site.data.keyword.vmware-service_short}} multitenant site is created automatically when you create the first multitenant VDC in a region. All multitenant VDCs that you create in a region are associated with the same site. User access to the multitenant VDCs within the Cloud account is controlled through IAM policies against the site. 
 
 For multitenant instances, the minimum instance configuration consists of one vCPU and 1 GB RAM.
 
@@ -45,11 +45,11 @@ You can also specify a VDC name that meets the following requirements:
 1. In the VMware Solutions console, click **Create** on the **{{site.data.keyword.vmware-service_short}}** card.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **VMwaaS single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
-5. Select the location, Cloud Director site, and PVDC. The site and PVDC names are filtered based on the location setting.
+5. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
 6. Optionally toggle fast provisioning of virtual machines (VMs) on.
-7. Review your options to order a network edge.
-   * To order a network edge, ensure that the toggle for **Create without network edge** is off and specify the edge type. Edge storage costs might occur.
-   * Toggle **Create without network edge** on. This option is suitable for centralized networking administration and control over multiple VDCs.
+7. Review your options for a network edge:
+   * To order a network edge, ensure that the toggle for **Create with network edge** is on and specify the edge type. Edge storage costs might occur.
+   * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
 9. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
 
 ## Procedure to order {{site.data.keyword.vmware-service_short}} multitenant virtual data centers
@@ -59,11 +59,11 @@ You can also specify a VDC name that meets the following requirements:
 2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **VMwaaS multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Select the pricing plan according to your consumption needs.
-5. Select the regional location and Cloud Director site, and then select a PVDC which maps to one or more data centers. The site and PVDC names are filtered based on the location setting.
+5. Select the region of the Cloud Director site, the Cloud Director instance, and data center. The instance and data center names are filtered based on the region setting.
 6. Optionally toggle fast provisioning of VMs on.
-7. Review your options to order a network edge.
-   * To order a network edge, ensure that the toggle for **Create without network edge** is off and specify the edge type. Edge storage costs might occur.
-   * Toggle **Create without network edge** on. This option is suitable for centralized networking administration and control over multiple VDCs.
+7. Review your options for a network edge:
+   * To order a network edge, ensure that the toggle for **Create with network edge** is on and specify the edge type. Edge storage costs might occur.
+   * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
 8. Select resource allocations according to your pricing plan.
    * For on-demand, optionally enable consumption limits. Then, select the vCPU and RAM limits. Toggle the consumption limit option off if you do not want to set limits. Limits define the ceiling on the maximum amount of vCPU and RAM that can be used by the multitenant VDC.
    * For reserved, select the vCPU and RAM capacity reservation for the VDC. The CPU and RAM are reserved for exclusive use by the VDC and are metered monthly for the full reservation.
