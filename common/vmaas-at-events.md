@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-18"
+lastupdated: "2024-01-18"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -52,7 +52,7 @@ Events are generated when you access VMware Cloud Director™ in {{site.data.key
 | `vmware.directorsite-nfs-storage.add` | An event is generated when NFS storage is added to a VMware Cloud Director site. |
 | `vmware.directorsite-nfs-storage.remove` | An event is generated when NFS storage is removed from a VMware Cloud Director site. |
 | `vmware.directorsite.password-reset` | An event is generated when the user password for a VMware Cloud Director site is reset. |
-| `vmware.directorsite-iam.config` | An event is generated when the OIDC (OpenID Connect) for a VMware Cloud Director site is configured. |
+| `vmware.directorsite-iam.config` | An event is generated when the OpenID Connect (OIDC) for a VMware Cloud Director site is configured. |
 | `vmware.directorsite-iam.read` | An event is generated when the OIDC for a VMware Cloud Director site is checked. Monitoring is not enabled yet. |
 {: caption="Table 2. Description of actions that generate events related to VMware Cloud Director site management" caption-side="bottom"}
 

@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-03-10"
+lastupdated: "2024-01-31"
 
 keywords: HA for vmware service, high availability for vmware service
 
@@ -29,7 +29,7 @@ For more information about your responsibilities when using {{site.data.keyword.
 ## What level of availability do I need?
 {: #ha-level}
 
-You can achieve high availability on different levels in your IT infrastructure and within different components of your workload. The level of availability that is right for you depends on several factors, such as your business requirements, the service level agreements (SLAs) that you have with your customers, and the resources that you want to expend.
+You can achieve high availability on different levels in your IT infrastructure and within different components of your workload. The level of availability that is best for you depends on several factors, such as your business requirements, the service level agreements (SLAs) that you have with your customers, and the resources that you want to expend.
 
 ## What level of availability does {{site.data.keyword.cloud_notm}} offer?
 {: #ha-service}

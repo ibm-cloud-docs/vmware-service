@@ -1,6 +1,4 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+
 ---
 toc:
   properties:
@@ -10,11 +8,10 @@ toc:
     audience: service
     href: /docs/vmware-service
     console-page: /vmware
-    product-page: https://www.ibm.com/cloud/vmware
+    product-page: https://www.ibm.com/products/vmware/managed-services
     path: vmware-service
     label: VMware as a Service
 
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries:
   - navgroup:
       id: learn
@@ -68,6 +65,7 @@ toc:
               - vmaas/cluster-adding-deleting.md
               - vmaas/host-adding-deleting.md
               - vmaas/storage-adding-deleting.md
+              - vmaas/private-subnets-adding-deleting.md
           - topicgroup:
               label: Managing virtual data center instances
               topics:
@@ -98,6 +96,11 @@ toc:
               - vmaas/vcda-creating-deleting-vmaas-pairing.md
               - vmaas/vcda-adding-deleting.md
               - vmaas/vcda-migrating.md
+          - topicgroup:
+              label: Creating secure interconnectivity with VMware as a Service
+              topics:
+                - vmaas/tgw-adding-connections.md
+                - vmaas/tgw-viewing-deleting-connections.md
       - offerings/shared-intro.md
       - offerings/vss-intro.md
       - offerings/vcs-intro.md
@@ -113,8 +116,6 @@ toc:
           - common/vmaas-data-security.md
           - common/vmaas-at-events.md
 
-#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
-#  Links to your command line reference docs should be included in the Reference navigation group.
   - navgroup:
       id: reference
       topics:

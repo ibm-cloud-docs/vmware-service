@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-01-31"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -67,7 +67,11 @@ You can specify a name that meets the following requirements:
        * For vSAN storage, select a minimum of 7.
     5. For vSAN, optionally select the **Enable vSAN de-duplication & compression** checkbox to save storage space.
     6. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
-7. Review the add-on service options to deploy the Veeam® Backup and Replication service and the VMware Cloud Director Availability service. Toggle the service off if you do not want to include it in your order.
+7. Specify the network connectivity settings.
+    1. Select either public-only or private-only networking for management and workload connectivity.
+    2. For private-only management connectivity, click **Add new +** and enter the subnet value. Then, click the **Save** icon. Repeat for all of the subnets you want to add.
+
+8. Review the add-on service options to deploy the Veeam® Backup and Replication service and the VMware Cloud Director Availability service. Toggle the service off if you do not want to include it in your order.
 8. On the **Summary** pane, review the instance settings and the estimated price.
 7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 

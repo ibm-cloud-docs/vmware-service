@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-10-18"
+lastupdated: "2024-01-22"
 
 keywords: monitoring, sysdig, vmware multitenant monitor, vmware single tenant monitor, vmware site management monitoring, view metrics
 
@@ -27,7 +27,7 @@ Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 * Control cost of monitoring infrastructure.
 * Mitigate impact of abnormal situations with proactive notifications.
 
-For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
+For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started).
 
 ## Monitoring VMware sites
 {: #single-tenant-monitoring-sites}

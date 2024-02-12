@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-04-27"
+lastupdated: "2024-01-31"
 
 subcollection: vmware-service
 
@@ -38,7 +38,6 @@ Incident and operations management includes tasks such as event management, high
 | Incident management | Communicate unplanned incidents with customer impact through the CIE process. | If you are an impacted customer, obtain a report about the incident upon request. |
 {: row-headers}
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Change management
 {: #vmaas-understand-responsib-change-management}
@@ -50,7 +49,6 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 | Updates, fixes, and new features | Provide regular updates, bug fixes, and new features, following a continuous delivery model in a way that is transparent to you for all infrastructure tools, VMware components, IBM deployed cloud services and IBM management, monitoring, and automation tools. Post notifications for changes that impact you. | Set preferences to receive email notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. Use best practices and keep application operating systems and workload applications patched and secure with the most recent security patches. |
 {: row-headers}
 {: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Identity and access management
 {: #vmaas-understand-responsib-iam}
@@ -63,7 +61,6 @@ Identity and access management includes tasks such as authentication, authorizat
 | Observability | Allow integration of {{site.data.keyword.cloud_notm}} [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) with your VMware environment to audit the actions that users take in the cluster. | Set up IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) or other functions to track user activity. |
 {: row-headers}
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Security and regulation compliance
 {: #vmaas-understand-responsib-security-compliance}
@@ -75,7 +72,6 @@ Security and regulation compliance includes tasks such as security controls impl
 | Encryption | Provide secure SSL connections to administration portals and replication endpoints. Workload can be deployed by using AES 256-bit encrypted data stores with unique key per customer instance. Backups are encrypted uniquely per customer. | Choose encrypted data stores when you are deploying workloads into the environment where appropriate. Use encrypted networking for workload to workload and workload to IBM Cloud Service connections. Use the {{site.data.keyword.cloud_notm}} private network where appropriate. |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Disaster recovery
 {: #vmaas-understand-responsib-disaster-recovery}
@@ -90,7 +86,6 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 | Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, provide customer restore services after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore backups from your chosen backup provider. For more information, see [Understanding business continuity and disaster recovery](/docs/vmware-service?topic=vmware-service-bc-dr). |
 {: row-headers}
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Operating system licensing
 {: #vmaas-understand-responsib-os-mgmt}
@@ -102,4 +97,3 @@ Operating system (OS) licensing refers to the operating system software and conf
 | Workload OS licensing | Provide OS licensing for infrastructure tools part of the service, such as VMware and add-on services solution components. | Provide OS licensing for your workloads that are running inside your virtual data centers' VMs or vApps. |
 {: row-headers}
 {: caption="Table 6. Responsibilities for OS licensing" caption-side="bottom"}
-{: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}

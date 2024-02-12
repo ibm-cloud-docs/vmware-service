@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2024-01-12",
+    "lastupdated": "2024-02-09",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -39,13 +39,18 @@
     ],
     "section_learn": {
       "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/cloud/architecture",
+      "architecture": "https://www.ibm.com/architectures/hybrid",
       "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/publiccloud/home"
+      "community": "https://community.ibm.com/community/user/cloud/home"
     },
     "section_updates": {
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
+        {
+          "date": "9 February 2024",
+          "title": "IBM Cloud private-only networking",
+          "description": "VMware as a Service now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your VMware as a Service workloads. For private-only workload connections, connect virtual data centers to IBM Cloud Transit Gateway to connect to workloads outside of the private network."
+        },
         {
           "date": "12 January 2024",
           "title": "Base charge reduction for on-demand multitenant instances",
@@ -55,11 +60,6 @@
           "date": "15 December 2023",
           "title": "Cloud-to-cloud migration to VMware as a Service",
           "description": "You can now use cloud-to-cloud connections to migrate IBM Cloud for VMware Solutions Shared instances to VMware as a Service. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant VMware as a Service instances to another VMware as a Service instance."
-        },
-        {
-          "date": "17 November 2023",
-          "title": "Migrating virtual machines to VMware as a Service",
-          "description": "The VMware Cloud Director Availability (VCDA) service is now available as a cost-effective solution to easily migrate your VMware vCenter Server or on-premises workloads to the VMware as a Service single-tenant consumption model. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection at no cost."
         }
       ]
     }

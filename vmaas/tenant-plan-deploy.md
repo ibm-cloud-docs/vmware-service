@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-12-18"
+lastupdated: "2024-02-08"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -93,31 +93,12 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-northamerica}
 
-## Fast provisioning of virtual machines
-{: #tenant-plan-deploy-fast-provisioning}
+## Resource pool
+{: #tenant-plan-deploy-rp}
 
-Fast provisioning saves time by using linked clones for virtual machine (VM) provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
+A resource pool combines compute, memory, and storage resources, and consist of one or more clusters. For more information, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
-In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
-{: important}
-
-You can enable fast provisioning during your instance order and from the **Data center details** page when the VDC is in **Available** status.
-
-## Network edge type
-{: #tenant-plan-deploy-edge}
-
-VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge. Network edge types include: Efficiency, Performance - M, Performance - L, and Performance - XL.
-
-| Edge type | Details |
-|:--------- |:------- |
-| Efficiency | These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 100 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
-| Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps. |
-| Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps. |
-| Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
-{: caption="Table 2. Network edge descriptions" caption-side="bottom"}
-
-High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
-{: note}
+You can optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
 
 ## Profile storage type
 {: #tenant-plan-deploy-storage}
@@ -138,7 +119,7 @@ The vSAN deduplication and compression option is available for enablement only w
 
 {{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vmware-service_short}}.
 
-* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/rvtools/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/rvtools/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
 * For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
 After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
@@ -146,7 +127,7 @@ After you have a list of target VMs including CPU, RAM, and storage requirements
 {{site.data.keyword.vmware-service_short}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
 {: note}
 
-Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMWare deployment into the total host count calculation.
+Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware deployment into the total host count calculation.
 
 ### Bare metal server requirements
 {: #tenant-plan-deploy-host-bms-req}
@@ -178,6 +159,15 @@ For single-tenant Cloud Director sites, you can select from the following storag
 For NFS only storage, you must select at least one unit of 2 IOPS/GB or higher.
 {: requirement}
 
+## Network settings
+{: #tenant-plan-deploy-network}
+
+You can select public-only or private-only access for your management and workload connectivity.
+
+Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup and Replication service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network by using the {{site.data.keyword.cloud_notm}} virtual private network (VPN) or through Direct Link connections. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
+
+Workload connectivity determines how you connect to your {{site.data.keyword.vmware-service_short}} virtual machines (VMs) and vApps. When you select private-only workload connectivity for your Cloud Director site, all VDCs deployed in that site are private-only workloads. These VDCs do not have an incoming or outgoing connectivity path to the public internet and can access {{site.data.keyword.cloud_notm}} Services only over the private {{site.data.keyword.IBM_notm}} network. You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+
 ## Services for {{site.data.keyword.vmware-service_short}}
 {: #tenant-plan-deploy-services}
 
@@ -186,18 +176,44 @@ The following add-on services are optionally available for {{site.data.keyword.v
 ### Veeam Backup and Replication
 {: #tenant-plan-deploy-services-veeam}
 
-For single-tenant instances, the Veeam® Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
 
-For multitenant instances, the Veeam Backup and Replication service is deployed on the VMware Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision VDC. Service charges are incurred only if you choose to install the service.
+For multitenant instances, the Veeam Backup and Replication service is deployed on the Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision VDC. Service charges are incurred only if you choose to install the service.
 
 ### VMware Cloud Director Availability
 {: #tenant-plan-deploy-services-vcda}
 
-The VMware Cloud Director Availability (VCDA) service is optionally included at no charge with your {{site.data.keyword.vmware-service_short}} single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
+The VMware Cloud Director Availability (VCDA) service is optionally included at no charge with your single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
 
 The VCDA service is included as a default option in {{site.data.keyword.vmware-service_short}} multitenant VDCs.
 
 Use enterprise-level VCDA to migrate VMs and vAPPS over a secure public internet connection.
+
+## Fast provisioning of virtual machines
+{: #tenant-plan-deploy-fast-provisioning}
+
+Fast provisioning saves time by using linked clones for VM provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
+
+In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
+{: important}
+
+You can enable fast provisioning during your instance order and from the **Data center details** page when the VDC is in **Available** status.
+
+## Network edge type
+{: #tenant-plan-deploy-edge}
+
+VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge. Network edge types include: Efficiency, Performance - M, Performance - L, and Performance - XL.
+
+| Edge type | Details |
+|:--------- |:------- |
+| Efficiency | These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 100 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
+| Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps. |
+| Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps. |
+| Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
+{: caption="Table 2. Network edge descriptions" caption-side="bottom"}
+
+High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
+{: note}
 
 ## Configuration limits for VMware Cloud Director
 {: #tenant-plan-deploy-cloud-dir-limits}

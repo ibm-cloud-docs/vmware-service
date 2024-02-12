@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-01-18"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -56,7 +56,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Location | The region and data center where the VDC is deployed. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
-   | Public IPs | The 6 public IP addresses that are assigned to the VDC. The IP addresses can be assigned to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
    {: caption="Table 2. Virtual data center details for single-tenant instances" caption-side="bottom"}
 
@@ -71,7 +71,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Location | The region and data center where the VDC is deployed. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Pricing plan | The pricing plan for the virtual data center. Pricing plans are either on-demand or reserved. |
-   | Public IPs | The 6 public IP addresses that are assigned to the VDC. The IP addresses can be assigned to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
    | Creation time | The date and time that the VDC was created. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |

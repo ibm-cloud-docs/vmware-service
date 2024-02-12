@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-11-09"
+lastupdated: "2024-01-22"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 
@@ -13,7 +13,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Using a virtual private endpoint
+# Using a Virtual Private Endpoint
 {: #virtual-private-endpoints}
 
 After you created your {{site.data.keyword.cloud}} Virtual Private Cloud (VPC) and you want to connect to {{site.data.keyword.vmware-service_short}} APIs to create or manage your instance, you can create a Virtual Private Endpoint (VPE) in your VPC to access {{site.data.keyword.vmware-service_short}} APIs within your VPC network.
@@ -30,7 +30,7 @@ To connect to {{site.data.keyword.vmware-service_short}} by using a VPE, you mus
 You must complete the following before you target a VPE for {{site.data.keyword.vmware-service_short}}.
 
 - Ensure that you have [provisioned a Virtual Private Cloud](/docs/vpc?topic=vpc-getting-started).
-- Ensure that you have reviewed [planning for Virtual Private Endpoints](/docs/vpc?topic=vpc-planning-considerations).
+- Ensure that you have reviewed [Planning for Virtual Private Endpoints](/docs/vpc?topic=vpc-planning-considerations).
 - Ensure that [correct access controls](/docs/vpc?topic=vpc-acls-security-groups-vpn) are set for your VPE.
 - Understand the [limitations](/docs/vpc?topic=vpc-limitations-vpe) of having a VPE.
 - Ensure that you have [created](/docs/vpc?topic=vpc-ordering-endpoint-gateway) and understand how to [access](/docs/vpc?topic=vpc-accessing-vpe-after-setup) a VPE gateway.
@@ -44,8 +44,8 @@ You may need to manually update VPE settings, specifically the IP address, durin
 
 The following table lists regions where {{site.data.keyword.vmware-service_short}} supports VPE. The table also provides {{site.data.keyword.vmware-service_short}} endpoints supported from each region. You can connect to {{site.data.keyword.vmware-service_short}} in another region using supported endpoints.
 
-When connecting to a VPE using [CLI](/docs/vpc?topic=vpc-ordering-endpoint-gateway#vpe-ordering-cli)
-or [API](/docs/vpc?topic=vpc-ordering-endpoint-gateway#vpe-ordering-api), you must specify the Cloud resource name of the region that you  use to connect to {{site.data.keyword.vmware-service_short}}. Use the following table to locate the Cloud resource name of the target region.
+When connecting to a VPE using [CLI](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=cli)
+or [API](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=api), you must specify the Cloud resource name of the region that you  use to connect to {{site.data.keyword.vmware-service_short}}. Use the following table to locate the Cloud resource name of the target region.
 {: note}
 
 | Region     | Supported endpoints   | Cloud resource name    |

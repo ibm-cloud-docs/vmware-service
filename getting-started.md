@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-01-31"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -88,6 +88,7 @@ For single-tenant instances, the following configurations are used to order a ne
 * Cluster name
 * Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
 * Host profile and quantity
+* Public-only or private-only network settings
 * Add-on services
 
 For multitenant instances, the following configurations are used to order a new virtual data center that deploys on an existing {{site.data.keyword.IBM_notm}} owned VMware cluster.
@@ -110,4 +111,5 @@ For more information, see [Ordering Cloud Director site instances](/docs/vmware-
 * [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
 * [Adding and deleting hosts](/docs/vmware-service?topic=vmware-service-host-adding-deleting)
 * [Adding and deleting storage](/docs/vmware-service?topic=vmware-service-storage-adding-deleting)
+* [Adding, editing, and deleting private-only network subnets](/docs/vmware-service?topic=vmware-service-subnet-adding-deleting)
 * [Adding and deleting capacity](/docs/vmware-service?topic=vmware-service-capacity-adding-deleting)

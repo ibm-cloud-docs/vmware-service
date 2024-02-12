@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-01-11"
+lastupdated: "2024-01-30"
 
 content-type: tutorial
 services: vmware-service
@@ -112,6 +112,10 @@ The private networking endpoint is more secure and provides more consistent perf
    3. Complete the following configuration for the **Cloud Service Details** tab. After you complete the configuration, click **NEXT**, then **ACCEPT** to accept the configuration.
       * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vmware-service_short}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
       * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vmware-service_short}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
+
+      If you use the ``admin`` user ID, you must include the Organization ID. For example, ``admin@8db98de2-7735-41f1-a487-64fcaefde250``.
+      {: note}
+
       * For **Organization Password**, enter the Organization Administrator password.
    4. Review the configuration on the **Ready To Complete** tab and click **Finish**.
 

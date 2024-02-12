@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-09-25"
+lastupdated: "2024-01-22"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 Add-on services are available for your security and compliance, data resiliency and migration, workload solutions, transformation and modernization, and management tool needs.
 
-Add-on services are not supported for all offerings.
+Add-on services are not supported for all VMware Solutions offerings.
 {: note}
 
 ## Security and compliance services
@@ -37,7 +37,6 @@ Add-on services are not supported for all offerings.
 
 * [HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [PrimaryIO Migrations](https://www.primaryio.com/#){: external}
-* [ProtectIO](https://cloud.ibm.com/catalog/services/protectio#about)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-01-12"
+lastupdated: "2024-02-09"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,22 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2024
 {: #vmware-service-year-2024}
+
+### 9 February 2024
+{: #vmware-service-feb2024}
+{: release-note}
+
+{{site.data.keyword.cloud_notm}} private-only networking
+:   {{site.data.keyword.vmware-service_short}} now offers private-only networks for management connectivity for accessing VMware Cloud Director™ and workload connectivity for accessing your {{site.data.keyword.vmware-service_short}} workloads. For private-only workload connections, connect virtual data centers to {{site.data.keyword.tg_full_notm}} to connect to workloads outside of the private network. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
+
+{{site.data.keyword.tg_full_notm}}
+:   You can now use {{site.data.keyword.tg_short}} to securely interconnect {{site.data.keyword.vmware-service_short}} multitenant and single-tenant virtual data centers to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
+
+REST API updates
+:   The [VMware as a Service API](/apidocs/vmware-service) is updated to provide support for VMware Cloud Director Availability (VCDA), OpenID Connect (OIDC) configuration, and {{site.data.keyword.tg_full_notm}}. For more information, see the [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-9-february-2024).
 
 ### 12 January 2024
 {: #vmware-service-jan2024}
@@ -48,7 +64,7 @@ New documentation
 {: release-note}
 
 Cloud-to-cloud migration to VMware as a Service
-:   You can now use cloud-to-cloud connections to migrate {{site.data.keyword.vmwaresolutions_short}} Shared instances to {{site.data.keyword.vmware-service_short}}. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant {{site.data.keyword.vmware-service_short}} instances to another {{site.data.keyword.vmware-service_short}} instance. For more information, see [Creating and deleting VMware as a Service pairings](/docs/vmware-service?topic=vmware-service-vcda-creating-deleting-vmaas-pairing).
+:   You can now use cloud-to-cloud connections to migrate {{site.data.keyword.vmwaresolutions_short}} Shared instances to {{site.data.keyword.vmware-service_short}}. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant {{site.data.keyword.vmware-service_short}} instances to another {{site.data.keyword.vmware-service_short}} instance. For more information, see [Creating and deleting {{site.data.keyword.vmware-service_short}} pairings](/docs/vmware-service?topic=vmware-service-vcda-creating-deleting-vmaas-pairing).
 
 vSAN host profile updates
 :   The Dual Intel® 8260 Xeon® host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN™ usable capacity is now available for Cloud Director sites.

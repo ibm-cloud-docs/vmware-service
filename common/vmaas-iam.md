@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-03-02"
+lastupdated: "2024-01-22"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -21,7 +21,7 @@ Access to {{site.data.keyword.vmware-service_full}} instances for users in your 
 
 The access policy that you assign users in your account determines the actions that a user can complete within the context of the service or specific instance that you select. The allowable actions are customized and defined by {{site.data.keyword.vmware-service_short}} as operations that are allowed to on the service. Each action is mapped to an IAM platform or service role that you can assign to a user.
 
-If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles) and pick the actions to include.
+If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles&interface=ui) and pick the actions to include.
 {: tip}
 
 IAM access policies enable access to be granted at different levels. Some of the options include the following accesses:

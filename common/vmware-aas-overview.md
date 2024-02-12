@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-11"
+lastupdated: "2024-01-31"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -25,7 +25,7 @@ subcollection: vmware-service
 
 Find out more about the {{site.data.keyword.vmware-service_short}} instance models in the following video.
 
-![Introducing IBM Cloud for VMware as a Service (text description follows)](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Introducing IBM Cloud for VMware as a Service (text description follows)](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_mrpl7ue5?wid=_1773841&iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## {{site.data.keyword.vmware-service_short}} single-tenant
 {: #vmware-aas-overview-st}
@@ -58,6 +58,8 @@ The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant mod
 * VMware infrastructure health and patching is managed by {{site.data.keyword.IBM_notm}} Operations up through the hypervisor.
 * Full compatibility to run existing VMware workloads. Migration of existing {{site.data.keyword.cloud_notm}}, on-premises or other workloads are fully supported.
 * Create and delete VDCs to deploy VMware workload vApps and virtual machines in VMware Cloud Director.
+* Public-only or private-only networking for management and workload connectivity
+* Secure interconnectivity through {{site.data.keyword.tg_full_notm}}
 * Optional data protection through the Veeam® Backup and Replication service.
 * Optional VM and vApp migration through the VMware Cloud Director Availability service.
 
@@ -104,8 +106,9 @@ The {{site.data.keyword.vmware-service_short}} multitenant consumption model pro
 * NFS size and performance tiers used
 * Host type and counts used
 * Egress to public networking
+* Ingress to private networking (optional)
 * Networking edge types and counts
-* Optional Veeam Backup and Replication service
+* Veeam Backup and Replication service (optional)
 
 {{site.data.keyword.vmware-service_short}} multitenant instance charges are based on either the on-demand or reserved pricing models. For more information, see [VMware as a Service multitenant pricing](/docs/vmware-service?topic=vmware-service-mt_pricing).
 
