@@ -125,8 +125,8 @@ toc:
           - link:
               label: VMware as a Service API
               href: https://{DomainName}/apidocs/vmware-service
-          - include: common/api-change-log.md
-          - include: common/api-virtual-private-ep.md
+          - topic: common/api-change-log.md
+          - topic: common/api-virtual-private-ep.md
       - common/vmaas-understand-responsib.md
       - common/policies.md
       - common/ha.md
