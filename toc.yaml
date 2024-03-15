@@ -18,11 +18,7 @@ toc:
       topics:
       - getting-started.md
       - common/vmware-aas-overview.md
-      - topicgroup:
-          label: VMware as a Service pricing
-          topics:
-            - vmaas/st_pricing.md
-            - vmaas/mt_pricing.md
+      - common/vmaas-bom.md
       - topic: common/release-notes.md
         navtitle: Release notes
 
@@ -131,6 +127,13 @@ toc:
       - common/policies.md
       - common/ha.md
       - common/bc-dr.md
+      - topicgroup:
+          label: Solution architectures on VMware as a Service
+          topics:
+          - topicgroup:
+              label: VMware as a Service architecture patterns
+              topics:
+              - archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
 
   - navgroup:
       id: help

@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-01-11"
+lastupdated: "2024-03-06"
 
 content-type: tutorial
 services: vmware-service
@@ -11,6 +11,7 @@ completion-time: 30m
 
 ---
 {{site.data.keyword.attribute-definition-list}}
+{:video: .video}
 
 # Migrating VMware Shared workloads to {{site.data.keyword.vmware-service_short}} with cloud-to-cloud connections
 {: #vcda-migrating-cloudtocloud-shared}
@@ -18,12 +19,14 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vmware-service_short}}.
+You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vmware-service_short}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
+
+![Migrate workloads from IBM Cloud VMWare Shared to VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_hycjbyi0?wid=_1773841&iframeembed=true&entry_id=1_hycjbyi0){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Objectives
 {: #vcda-migrating-cloudtocloud-shared-objectives}
 
-In this tutorial, you learn how to migrate virtual machines (VMs) and vApps between your {{site.data.keyword.vmware-service_short}} instance and VMware Shared instances.
+In this tutorial, you learn how to migrate vApps and VMs between your {{site.data.keyword.vmware-service_short}} instance and VMware Shared instances.
 
 Pairings are automatically created to the closest geographical VMware Shared region when you install VCDA on a {{site.data.keyword.vmware-service_short}} instance. Migrations between VMware Shared and {{site.data.keyword.vmware-service_short}} require a pairing between the two offerings. The following pairings are supported and created automatically.
 * {{site.data.keyword.vmware-service_short}} DAL region pairs with VMware Shared DAL region
@@ -90,8 +93,8 @@ Ensure that the VMware Shared VM is powered on from the VMware console.
 3. Provide the login credentials for the peer site and click **LOGIN**.
 4. Select the following options in the **New Incoming Migration** window.
    * For **Source VMs and vApps**:
-   1. From the **Source organization** menu, select the organization ID that you located in the URL when you created the user ID for the VMware Shared pairing.
-   2. Select the VM to replicate and click **NEXT**.
+      1. From the **Source organization** menu, select the organization ID that you located in the URL when you created the user ID for the VMware Shared pairing.
+      2. Select the VM to replicate and click **NEXT**.
    * For **Destination VDC and Storage policy**, select the target VDC to migrate the VM to and click **NEXT**.
    * For **Settings**, keep the default options and click **NEXT**.
    * For **Ready to complete**, review the settings and click **FINISH**.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-08"
+lastupdated: "2024-03-10"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -22,7 +22,7 @@ Before you order an {{site.data.keyword.vmware-service_full}} instance, ensure t
 ## VMware deployment size
 {: #tenant-plan-deploy-vmware-depl}
 
-Consider the size of the VMware® deployment required.
+Consider the size of the VMware® by Broadcom deployment required.
 
 VMware deployments sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
 
@@ -136,8 +136,8 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 
 For vSAN clusters, you can select from the following Dual Intel® 8260 Xeon® options.
 
-* (2 Sockets - 48 Cores, 768 GB RAM) with either 15 TB, 23 TB, or 46 TB of vSAN usable capacity.
-* (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of vSAN usable capacity.
+* 2 Sockets - 48 Cores, 768 GB RAM, with either 15 TB, 23 TB, or 46 TB of vSAN usable capacity
+* 4 Sockets - 96 Cores, 1536 GB RAM, with 61 TB of vSAN usable capacity
 
 For NFS only clusters, you can select from the following options.
 
@@ -207,9 +207,9 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 | Edge type | Details |
 |:--------- |:------- |
 | Efficiency | These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 100 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
-| Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps. |
-| Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps. |
-| Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
+| Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 Gbps. |
+| Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic. |
+| Performance - XL | This option provides the highest level of edge services and throughput over 10 Gbps. |
 {: caption="Table 2. Network edge descriptions" caption-side="bottom"}
 
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).

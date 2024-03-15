@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-02-09"
+lastupdated: "2024-03-15"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -24,12 +24,35 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 15 March 2024
+{: #vmware-service-mar2024}
+{: release-note}
+
+Software currency
+:   This release provides the following infrastructure upgrades.
+
+   * VMware ESXi™ 7.0 Update 3p (23307199)
+   * VMware vCenter Server® Appliance 7.0 Update 3p (01800)
+   * Veeam® Backup and Replication 12.1.1
+
+User interface updates and enhancements
+:   The user interface is updated and provides the following enhancements.
+
+   * A **Help me choose** option is now available on the order page to guide you through the process of ordering a {{site.data.keyword.vmware-service_short}} instance.
+   * The contents of the **Summary** tabs for both single-tenant and multitenant virtual data centers are better structured and organized for a more streamlined user experience.
+
+REST API updates
+:   The [VMware as a Service API](/apidocs/vmware-service) is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director™ site. For more information, see the [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-15-march-2024).
+
+New and updated documentation
+:   The [Architecture patterns for integrating IBM Cloud Security and Compliance Center Workload Protection with {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-arch-pattern-vmwaas-sccwpp) technical document is now available.
+
 ### 9 February 2024
 {: #vmware-service-feb2024}
 {: release-note}
 
 {{site.data.keyword.cloud_notm}} private-only networking
-:   {{site.data.keyword.vmware-service_short}} now offers private-only networks for management connectivity for accessing VMware Cloud Director™ and workload connectivity for accessing your {{site.data.keyword.vmware-service_short}} workloads. For private-only workload connections, connect virtual data centers to {{site.data.keyword.tg_full_notm}} to connect to workloads outside of the private network. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
+:   {{site.data.keyword.vmware-service_short}} now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your {{site.data.keyword.vmware-service_short}} workloads. For private-only workload connections, connect virtual data centers to {{site.data.keyword.tg_full_notm}} to connect to workloads outside of the private network. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
 {{site.data.keyword.tg_full_notm}}
 :   You can now use {{site.data.keyword.tg_short}} to securely interconnect {{site.data.keyword.vmware-service_short}} multitenant and single-tenant virtual data centers to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
@@ -80,7 +103,7 @@ New documentation
 {: release-note}
 
 Migrating virtual machines to VMware as a Service
-:   The VMware Cloud Director Availability (VCDA) service is now available as a cost-effective solution to easily migrate your VMware vCenter Server® or on-premises workloads to the VMware as a Service single-tenant consumption model. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection at no cost. For more information, see [VMware Cloud Director Availability for VMware as a Service overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
+:   The VMware Cloud Director Availability (VCDA) service is now available as a cost-effective solution to easily migrate your VMware vCenter Server or on-premises workloads to the VMware as a Service single-tenant consumption model. Use enterprise-level VCDA to migrate virtual machines over a secure public internet connection at no cost. For more information, see [VMware Cloud Director Availability for VMware as a Service overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.
@@ -93,7 +116,7 @@ Documentation updates and enhancements
 {: release-note}
 
 VMware as a Service Multitenant
-:   This release announces the {{site.data.keyword.vmware-service_short}} Multitenant consumption model. {{site.data.keyword.vmware-service_short}} Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam® Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
+:   This release announces the {{site.data.keyword.vmware-service_short}} Multitenant consumption model. {{site.data.keyword.vmware-service_short}} Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
 
 REST API updates
 :   The [VMware as a Service API](/apidocs/vmware-service) is updated to provide support for {{site.data.keyword.vmware-service_short}} Multitenant. For more information, see [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-20-october-2023).
@@ -109,7 +132,7 @@ IBM Cloud data center availability
 :   {{site.data.keyword.vmware-service_short}} expands global presence and now supports the **Washington DC** region to host your provider virtual data center. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 SAP-certified provider virtual data centers
-:   {{site.data.keyword.vmware-service_short}} now supports SAP® workloads that use the new SAP bare metal server profiles. You can reliably run your mission-critical SAP workloads and scenarios on a scalable, compliant, and enterprise-proven VMware® platform.
+:   {{site.data.keyword.vmware-service_short}} now supports SAP® workloads that use the new SAP bare metal server profiles. You can reliably run your mission-critical SAP workloads and scenarios on a scalable, compliant, and enterprise-proven VMware® by Broadcom platform.
  For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 vSAN host profile updates
@@ -134,7 +157,7 @@ Production refresh
 {: release-note}
 
 Veeam Backup and Replication availability
-:   The Veeam® Backup and Replication service is now available by default for deployment with new and existing {{site.data.keyword.vmware-service_short}} instances. Service charges are incurred only if you choose to include the service in your order. For more information, see [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam).
+:   The Veeam Backup and Replication service is now available by default for deployment with new and existing {{site.data.keyword.vmware-service_short}} instances. Service charges are incurred only if you choose to include the service in your order. For more information, see [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam).
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
@@ -158,7 +181,7 @@ Fast provisioning for virtual machines
 :   Fast provisioning for virtual machines is now available for your virtual data centers. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 VMware currency
-:   This release provides infrastructure upgrades to VMware NSX-T™ 4.1 and VMware ESXi™ 7.0U3L.
+:   This release provides infrastructure upgrades to VMware NSX-T™ 4.1 and VMware ESXi 7.0U3L.
 
 User interface updates and enhancements
 :   You can check the prices for {{site.data.keyword.vmware-service_short}} without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.

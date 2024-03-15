@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-02-13"
+lastupdated: "2024-02-28"
 
 keywords: software currency for vmware service, policies, software currency policies
 
@@ -16,7 +16,7 @@ subcollection: vmware-service
 # Understanding IBM software currency policy
 {: #policies}
 
-Review the following policies to understand how {{site.data.keyword.IBM}} maintains software currency for VMware® and third-party software.
+Review the following policies to understand how {{site.data.keyword.IBM}} maintains software currency for VMware® by Broadcom and third-party software.
 
 IBM defines a major release as the first update level after a VMware major release (for example, 8.0u1) with the following exceptions:
 * Third-party certifications on a new release. For example, IBM does not certify that Zerto works on VMware vSphere ESXi™ 8.0u1.
@@ -28,7 +28,11 @@ IBM defines a major release as the first update level after a VMware major relea
 | Minor releases (for example, 7.1.x) | Up to 4 months |
 | Patches, hotfixes, and maintenance packs | Up to 45 days |
 | Day zero uses (IBM security policy) | Within 5 days |
-{: caption="Table 1. Software currency policies for VMware software" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: caption="Table 1. Software currency policies" caption-side="bottom"}
+{: #table1}
+{: tab-title="VMware software"}
+{: tab-group="currency policies"}
 
 | Third-party releases | Target |
 |:------- |:---------- |
@@ -36,4 +40,8 @@ IBM defines a major release as the first update level after a VMware major relea
 | Minor releases | Up to 45 days |
 | Patches, hotfixes, maintenance packs | Up to 45 days |
 | Day zero uses (IBM security policy) | Within 5 days |
-{: caption="Table 2. Software currency policies for third party software" caption-side="bottom"}
+{: class="simple-tab-table"}
+{: caption="Table 1. Software currency policies" caption-side="bottom"}
+{: #table2}
+{: tab-title="Third party software"}
+{: tab-group="currency policies"}

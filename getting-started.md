@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-02-27"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -65,7 +65,7 @@ The VMware Solutions console is the user interface where you order and manage yo
 {: #getting-started-step2}
 {: step}
 
-Before you order an instance, consider the size of the VMware® deployment required.
+Before you order an instance, consider the size of the VMware® by Broadcom deployment required.
 
 VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 

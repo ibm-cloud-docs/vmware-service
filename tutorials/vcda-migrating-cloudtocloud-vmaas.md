@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023
-lastupdated: "2023-12-21"
+  years: 2023, 2024
+lastupdated: "2024-03-06"
 
 content-type: tutorial
 services: vmware-service
@@ -11,6 +11,7 @@ completion-time: 30m
 
 ---
 {{site.data.keyword.attribute-definition-list}}
+{:video: .video}
 
 # Migrating {{site.data.keyword.vmware-service_short}} workloads with cloud-to-cloud connections
 {: #vcda-migrating-cloudtocloud-vmaas}
@@ -18,7 +19,9 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service_full}} instances.
+You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service_full}} instances. Find out how to migrate VMware® by Broadcom virtual machine (VM) workloads across {{site.data.keyword.vmware-service_short}} environments in the following video.
+
+![Migrate workloads within VMware as a Service environments](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vdo0bb3k?wid=_1773841&iframeembed=true&entry_id=1_vdo0bb3k){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Objectives
 {: #vcda-migrating-cloudtocloud-vmaas-objectives}
@@ -45,30 +48,34 @@ This tutorial requires:
 
 1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vmware-service_short}} single-tenant source instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc). {: #step-1}
 1. Install VCDA on a {{site.data.keyword.vmware-service_short}} single-tenant destination instance.
-1. Navigate to the source instance details where you installed VCDA and click the **Add-on services** tab.
+1. Go to the source instance details page where you installed VCDA and click the **Add-on services** tab.
 1. Click the **{{site.data.keyword.vmware-service_short}} pairings** tab and click **Create pairing**.
+
 1. On the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
-   1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **Instance endpoints** tab. Click the **Copy to clipboard** icon for the **Site name** for the instance to pair. Paste the site name in the create connection configuration.
+   1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **Instance endpoints** tab. Click the **Copy to clipboard** icon for the **Site name** for the instance to pair. Paste the site name in the **Create connection** configuration.
    1. For **Peer region**, select the region where the peer site is installed.
    1. For **Administrator notes**, you can enter notes to provide more information for the pairing. The maximum length is 200 characters and the % & < > " ' / characters are not supported.
-1.	Click **Create pairing**. The **Creating** status displays. When the **Waiting for peer pairing status** displays, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
+
+1. Click **Create pairing**. The **Creating** status is displayed. When the **Waiting for peer pairing status** is displayed, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name to pair with the first pairing.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vmware-service_short}} pairings** tab, click **Create pairing**.
+
 1. On the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
-   1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **{{site.data.keyword.vmware-service_short}} pairings** tab. Click the **Copy to clipboard** icon for the **Peer site name** that you created for the first pairing. Paste the site name in the create connection configuration.
+   1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **{{site.data.keyword.vmware-service_short}} pairings** tab. Click the **Copy to clipboard** icon for the **Peer site name** that you created for the first pairing. Paste the site name in the **Create connection** configuration.
    1. For **Peer region**, select the region of the first pairing.
    1. For **Administrator notes**, you can enter notes to provide more information for the pairing. The maximum length is 200 characters and the % & < > " ' / characters are not supported.
-1. Click **Create pairing**. The **Available** status displays when the pairing is complete.
+
+1. Click **Create pairing**. The **Available** status is displayed when the pairing is complete.
 
 The following pairing status options are available.
 | Status | Description |
-|:---- |:----------- |
+|:------ |:----------- |
 | Creating | The pairing task starts. |
 | Waiting for peer pairing | The pairing is complete on one site. |
 | Available | The pairing is complete on both sites. |
@@ -79,26 +86,28 @@ The following pairing status options are available.
 
 <!-- The {: #step-2} tag and the ordered list that has only 2s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
-2. From the VMware Solutions console, navigate to the instance where you created the pairing and click **VMware console**. {: #step-2}
+2. From the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
 2. Click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.
 2. From the left panel, click **Incoming Replications**.
 2. From the **Incoming Replications** page, click **ALL ACTIONS > New migration**.
 2. Provide the login credentials for the peer site and click **LOGIN**.
+
 2. Select the following options in the **New Incoming Migration** window.
    * For **Source VMs and vApps**:
-   2. From the **SELECT SITE** drop-down menu, select the name of the paired instance. The source virtual machine (VM) displays for migration.
-   2. If the source VM is a multitenant instance, select the source organization ID from the **Source organization** drop-down menu.
-   2. Select the VM to migrate and click **NEXT**.
+      2. From the **SELECT SITE** menu, select the name of the paired instance. The source VM for migration is displayed.
+      2. If the source VM is a multitenant instance, select the source organization ID from the **Source organization** menu.
+      2. Select the VM to migrate and click **NEXT**.
    * For **Destination VDC and Storage policy**:
-   2. Select the target VDC to migrate the VM to.
-   2. If the destination VDC is a multitenant instance, select the target organization ID from the **Target organization** drop-down menu.
-   2. Click **NEXT**.
+      2. Select the target VDC to migrate the VM to.
+      2. If the destination VDC is a multitenant instance, select the target organization ID from the **Target organization** menu.
+      2. Click **NEXT**.
    * For **Settings**, keep the default options and click **NEXT**.
    * For **Ready to complete**, review the settings and click **FINISH**.
 
    The VM is first configured and then synchronized. The replication is complete when the **Last changed** column moves from *Synchronizing* to the date and time of the replication.
 
 2. When the replication is complete, ensure that the newly replicated VM is selected and click **ALL ACTIONS > Migrate** to begin the migration.
+
 2. Select the following options from the **Migrate** window.
    * For **Migrate Settings**, keep the default options and click **NEXT**.
    * For **Ready to complete**, review the settings and click **FINISH**.

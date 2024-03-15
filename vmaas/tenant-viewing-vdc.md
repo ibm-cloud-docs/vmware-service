@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-18"
+lastupdated: "2024-02-28"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -45,37 +45,41 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab. Then, click a VDC name.
 2. On the **Summary** tab, review the virtual data center details.
 
-   For single-tenant instances:
-
    | Item | Description |
    |:---- |:----------- |
+   | Cloud Director instance | The name of the instance where the VDC is deployed. Click **View site** to access site details. |
+   | Resource pool | The name of the resource pool for the VDC. Click **View resource pool** to access resource pool details. |
    | Name | The name of the VDC. |
-   | Cloud Director instance | The name of the instance where the VDC is deployed. Click the name to access site details. |
-   | Resource pool | The name of the resource pool for the VDC. Click the name to access resource pool details. |
-   | Creation time | The date and time that the VDC was created. |
-   | Location | The region and data center where the VDC is deployed. |
-   | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
+   | Region | The region where the VDC is deployed. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
+   | Creation time | The date and time that the VDC was created. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
-   {: caption="Table 2. Virtual data center details for single-tenant instances" caption-side="bottom"}
-
-   For multitenant instances:
+   {: class="simple-tab-table"}
+   {: caption="Table 2. Virtual data center details" caption-side="bottom"}
+   {: #table1}
+   {: tab-title="Single-tenant instances"}
+   {: tab-group="vdc details"}
 
    | Item | Description |
    |:---- |:----------- |
-   | vCPU and RAM limits | The current vCPU and RAM consumption limits. Click **Modify limit** to enable or disable limits and increase or decrease limits. |
-   | Name | The name of the VDC. |
-   | Cloud Director instance | The name of the instance where the VDC is deployed. Click the name to access site details. |
-   | Data center | The data center where the VDC is deployed. |
-   | Location | The region and data center where the VDC is deployed. |
-   | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
+   | vCPU limit and RAM limit | The current vCPU and RAM consumption limits. Click **Modify limit** to enable or disable limits and increase or decrease limits. |
    | Pricing plan | The pricing plan for the virtual data center. Pricing plans are either on-demand or reserved. |
-   | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
-   | Creation time | The date and time that the VDC was created. |
+   | Cloud Director instance | The name of the instance where the VDC is deployed. Click **View site** to access site details. |
+   | Data center | The data center where the VDC is deployed. |
+   | Name | The name of the VDC. |
+   | Region | The region where the VDC is deployed. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
+   | Public IPs or Private IPs | The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
+   | Creation time | The date and time that the VDC was created. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
-   {: caption="Table 3. Virtual data center details for multitenant instances" caption-side="bottom"}
+   {: class="simple-tab-table"}
+   {: caption="Table 2. Virtual data center details" caption-side="bottom"}
+   {: #table2}
+   {: tab-title="Multitenant instances"}
+   {: tab-group="vdc details"}
 
 3. On the **Add-on services** tab, review the available services.
 

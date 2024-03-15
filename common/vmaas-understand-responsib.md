@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-02-27"
 
 subcollection: vmware-service
 
@@ -28,7 +28,7 @@ Incident and operations management includes tasks such as event management, high
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| High availability | Actively monitor and resolve infrastructure and hypervisor issues. VMware® environments are configured with one spare redundant host for workload availability. | Plan and provision VMware workloads with HA configurations such as active-passive and active-active. Active-active and active-passive workload deployments are enabled through customer configurations. These deployments consist of multiple instances of the application that are load-balanced based on factors such as application, instance availability, or application instance response performance. |
+| High availability | Actively monitor and resolve infrastructure and hypervisor issues. VMware® by Broadcom environments are configured with one spare redundant host for workload availability. | Plan and provision VMware workloads with HA configurations such as active-passive and active-active. Active-active and active-passive workload deployments are enabled through customer configurations. These deployments consist of multiple instances of the application that are load-balanced based on factors such as application, instance availability, or application instance response performance. |
 | Infrastructure health monitoring and notification | Remediate all infrastructure and hypervisor environment issues. Notify customers of applicable incidents. | Ascertain the impact of each incident that is reported. Engage IBM Support as required. |
 | Infrastructure health management | Continuously deliver new features, updates, and bug fixes as needed in a manner transparent to you. Schedule maintenance activities that have customer impact in advance and post notifications to the {{site.data.keyword.cloud_notm}} status page. | Set preferences to receive emails notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements.|
 | Clusters, hosts, and storage resource management and observability | Deploy a fully managed single-tenant VMware environment in a secured, IBM-owned infrastructure account to customer specifications. Fulfill customer requests for more infrastructure, such as adding and removing single-tenant clusters, bare metal compute, and storage. Integrate ordered infrastructure resources to work automatically with your cluster architecture and become available to your deployed apps and workloads. Provide monitoring by using IBM Cloud Monitoring to enable observability of your clusters. | Control the amount of deployed infrastructure and ensure that the VMware environment has the proper amount of storage, networking, and compute resources to run workloads. Monitor compute, RAM, and storage usage in [IBM Cloud Monitoring](https://cloud.ibm.com/catalog/services/ibm-cloud-monitoring#about). Use the provided console tools to adjust {{site.data.keyword.vmware-service_short}} instance compute and storage capacity to meet the needs of your workload. |

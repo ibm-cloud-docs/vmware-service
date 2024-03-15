@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-03-06"
 
 keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
 
@@ -14,18 +14,22 @@ subcollection: vmware-service
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+{:video: .video}
 
 # {{site.data.keyword.vmware-service_short}} overview
 {: #vmware-aas-overview}
 
-{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware® sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
+{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
 {: shortdesc}
 
 {{site.data.keyword.vmware-service_short}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vmware-service_short}} single-tenant instances are provisioned and managed by your organization.
 
+For complete billing details for both multitenant and single-tenant models, see the [**About** tab](https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt) on the {{site.data.keyword.vmware-service_short}} provision page.
+{: note}
+
 Find out more about the {{site.data.keyword.vmware-service_short}} instance models in the following video.
 
-![Introducing IBM Cloud for VMware as a Service (text description follows)](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_mrpl7ue5?wid=_1773841&iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Introducing IBM Cloud for VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_mrpl7ue5?wid=_1773841&iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## {{site.data.keyword.vmware-service_short}} single-tenant
 {: #vmware-aas-overview-st}
@@ -110,7 +114,7 @@ The {{site.data.keyword.vmware-service_short}} multitenant consumption model pro
 * Networking edge types and counts
 * Veeam Backup and Replication service (optional)
 
-{{site.data.keyword.vmware-service_short}} multitenant instance charges are based on either the on-demand or reserved pricing models. For more information, see [VMware as a Service multitenant pricing](/docs/vmware-service?topic=vmware-service-mt_pricing).
+{{site.data.keyword.vmware-service_short}} multitenant instance charges are based on either the on-demand or reserved pricing models.
 
 ## Related links
 {: #vmware-aas-overview-links}

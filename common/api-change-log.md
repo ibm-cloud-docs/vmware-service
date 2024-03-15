@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2024
 
-lastupdated: "2024-01-19"
+lastupdated: "2024-02-29"
 
 keywords: change log for VMware as a Service API, updates to VMware as a Service API
 
@@ -18,20 +18,26 @@ subcollection: vmware-service
 
 In this change log, you can learn about the most recent changes, improvements, and updates for the [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
 
+## 15 March 2024
+{: #vmware-service-15-march-2024}
+
+* Added support for enabling and disabling the VMware Cloud Director Availability (VCDA) service for VMware Cloud Director™ sites. For more information, see [Enable or disable Veeam on a Cloud Director site](/apidocs/vmware-service#enable-veeam-on-pvdcs-list).
+* Added support for enabling and disabling the Veeam® service for Cloud Director sites. For more information, see [Enable or disable VCDA on a Cloud Director site](/apidocs/vmware-service#enable-vcda-on-data-center).
+
 ## 9 February 2024
 {: #vmware-service-9-february-2024}
 
-* Added support for VMware Cloud Director Availability (VCDA) service for VMware Cloud Director sites. For more information, see:
+* Added VCDA support for Cloud Director sites. For more information, see:
    * [Create a VCDA cloud-to-cloud connection](/apidocs/vmware-service#create-director-sites-vcda-c2c-connection)
-   * [Delete a VCDA cloud-to-cloud connection](/apidocs/vmware-service#delete-director-sites-vcda-c2c-connection)
    * [Update VCDA connection allowlist](/apidocs/vmware-service#update-director-sites-vcda-connection-endpoints)
-* Added private-only configuration support for Cloud Director sites. For more information, see [Create a director site instance](/apidocs/vmware-service#create-director-sites).
+   * [Delete a VCDA cloud-to-cloud connection](/apidocs/vmware-service#delete-director-sites-vcda-c2c-connection)
+* Added private-only configuration support for Cloud Director sites. For more information, see [Create a Cloud Director site instance](/apidocs/vmware-service#create-director-sites).
 * Added OpenID Connect (OIDC) configuration support for Cloud director sites. For more information, see:
    * [Get an OIDC configuration](/apidocs/vmware-service#get-oidc-configuration)
    * [Set an OIDC configuration](/apidocs/vmware-service#set-oidc-configuration)
 * Added {{site.data.keyword.tg_full_notm}} support to create and delete Transit Gateways for a virtual data center (VDC) edge. For more information, see:
-   * [Add transit gateway connections to edge](/apidocs/vmware-service#add-transit-gateway-connections)
-   * [Remove transit gateway connections from edge](/apidocs/vmware-service#remove-transit-gateway-connections)
+   * [Add IBM Transit Gateway connections to edge](/apidocs/vmware-service#add-transit-gateway-connections)
+   * [Remove IBM Transit Gateway connections from edge](/apidocs/vmware-service#remove-transit-gateway-connections)
 
 ## 20 October 2023
 {: #vmware-service-20-october-2023}

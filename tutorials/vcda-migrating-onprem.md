@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-01-30"
+lastupdated: "2024-03-06"
 
 content-type: tutorial
 services: vmware-service
@@ -14,6 +14,7 @@ completion-time: 30m
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+{:video: .video}
 
 # Migrating workloads from on-premises and vCenter Server environments to VMware as a Service
 {: #vcda-migrating-onprem}
@@ -21,12 +22,14 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service_full}}.
+You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vmware-service_short}} in the following video.
+
+![Migrate workloads from any Self-Managed vCenter to VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Objectives
 {: #vcda-migrating-onprem-objectives}
 
-In this tutorial, you learn how to install the VCDA on-premises appliance on a VMware vCenter Server®, configure a public or a private endpoint with a {{site.data.keyword.vmware-service_short}} VCDA installation, and migrate your vCenter server workloads to {{site.data.keyword.vmware-service_short}}.
+In this tutorial, you learn how to install the VCDA on-premises appliance on a VMware vCenter Server, configure a public or a private endpoint with a {{site.data.keyword.vmware-service_short}} VCDA installation, and migrate your vCenter server workloads to {{site.data.keyword.vmware-service_short}}.
 
 ## Before you begin
 {: #vcda-migrating-onprem-prereqs}

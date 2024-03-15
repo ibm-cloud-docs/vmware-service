@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-02-27"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Ordering virtual data center instances
 {: #vdc-adding}
 
-With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
+With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
 For single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 100 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
 

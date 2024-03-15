@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-11"
+lastupdated: "2024-02-27"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding resource pools
 {: #pvdc-adding-deleting}
 
-You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
+You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
 
 A resource pool is a boundary of compute, storage, and network resources for hosting virtual data centers (VDCs) to run workloads. VDCs created against a resource pool are bound to use the infrastructure from that resource pool.
 
