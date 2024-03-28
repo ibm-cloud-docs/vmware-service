@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-03-06"
+lastupdated: "2024-03-20"
 
 content-type: tutorial
 services: vmware-service
@@ -19,9 +19,12 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
+Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_notm}}](/docs/vmware-service) by 15 January 2025.
+{: deprecated}
+
 You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vmware-service_short}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
 
-![Migrate workloads from IBM Cloud VMWare Shared to VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_hycjbyi0?wid=_1773841&iframeembed=true&entry_id=1_hycjbyi0){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Migrate workloads from IBM Cloud VMWare Shared to {{site.data.keyword.vmware-service_short}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_hycjbyi0?wid=_1773841&iframeembed=true&entry_id=1_hycjbyi0){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Objectives
 {: #vcda-migrating-cloudtocloud-shared-objectives}
