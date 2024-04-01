@@ -1,6 +1,6 @@
 {
     "title": "VMware as a Service docs",
-    "lastupdated": "2024-03-15",
+    "lastupdated": "2024-04-01",
     "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "1 April 2024",
+          "title": "Updated packaging and pricing for VMware Solutions offerings",
+          "description": "IBM Cloud is changing its IBM Cloud for VMware Solutions portfolio and pricing, in response to the changes to the packaging and pricing of the VMware portfolio, announced by Broadcom. These changes will be effective on 1 May 2024."
+        },
+        {
           "date": "15 March 2024",
           "title": "REST API updates",
           "description": "The VMware as a Service API is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director site."
@@ -55,11 +60,6 @@
           "date": "9 February 2024",
           "title": "IBM Cloud private-only networking",
           "description": "VMware as a Service now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your VMware as a Service workloads. For private-only workload connections, connect virtual data centers to IBM Cloud Transit Gateway to connect to workloads outside of the private network."
-        },
-        {
-          "date": "12 January 2024",
-          "title": "Base charge reduction for on-demand multitenant instances",
-          "description": "The base charge for VMware as a Service on-demand multitenant instances is adjusted to $0.00 per month. The six public IP addresses are instead included in the efficiency edge charge."
         }
       ]
     }

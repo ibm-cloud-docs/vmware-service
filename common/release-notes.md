@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-03-15"
+lastupdated: "2024-04-01"
 
 keywords: release notes, what's new in vmware service, what is new, new features, vmware release notes, vmware service
 
@@ -23,6 +23,16 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2024
 {: #vmware-service-year-2024}
+
+### 1 April 2024
+{: #vmware-service-apr2024}
+{: release-note}
+
+Updated packaging and pricing for VMware Solutions offerings
+:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
+
+Updated pricing structure for RHEL for {{site.data.keyword.vmware-service_short}}
+:   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large). For more information, see [April 2024 price changes](/docs/overview?topic=overview-price-adjustments).
 
 ### 15 March 2024
 {: #vmware-service-mar2024}
