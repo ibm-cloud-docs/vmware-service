@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-03-20"
+lastupdated: "2024-04-02"
 
 content-type: tutorial
 services: vmware-service
@@ -19,7 +19,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_notm}}](/docs/vmware-service) by 15 January 2025.
+Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_notm}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vmware-service_short}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
