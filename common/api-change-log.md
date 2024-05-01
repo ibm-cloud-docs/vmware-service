@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-01"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
@@ -16,7 +16,7 @@ subcollection: vmware-service
 # {{site.data.keyword.vcf-aas}} API change log
 {: #vmware-service-api-change-log}
 
-In this change log, you can learn about the most recent changes, improvements, and updates for the [VMware as a Service API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
+In this change log, you can learn about the most recent changes, improvements, and updates for the [VMware Cloud Foundation as a Service API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
 
 ## 15 March 2024
 {: #vmware-service-15-march-2024}
