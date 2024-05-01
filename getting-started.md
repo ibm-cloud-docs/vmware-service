@@ -4,14 +4,13 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-01"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
 subcollection: vmware-service
 
 content-type: tutorial
-services: vmware-service
 account-plan: paid
 completion-time: 20m
 
@@ -22,7 +21,6 @@ completion-time: 20m
 # Getting started with {{site.data.keyword.vcf-aas}}
 {: #getting-started}
 {: toc-content-type="tutorial"}
-{: toc-services="vmware-service"}
 {: toc-completion-time="20m"}
 
 In this {{site.data.keyword.vmware-service-full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
