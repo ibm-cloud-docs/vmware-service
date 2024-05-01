@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-10"
+lastupdated: "2024-04-30"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -17,31 +17,31 @@ subcollection: vmware-service
 # Planning the deployment
 {: #tenant-plan-deploy}
 
-Before you order an {{site.data.keyword.vmware-service_full}} instance, ensure that you plan your deployment.
+Before you order an {{site.data.keyword.vmware-service-full}} instance, ensure that you plan your deployment.
 
 ## VMware deployment size
 {: #tenant-plan-deploy-vmware-depl}
 
 Consider the size of the VMware® by Broadcom deployment required.
 
-VMware deployments sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
+VMware by Broadcom deployments sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware by Broadcom deployment at any time.
 
-## {{site.data.keyword.vmware-service_short}} type
+## {{site.data.keyword.vcf-aas}} type
 {: #tenant-plan-deploy-type}
 
 Consider your instance type.
 
-Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMWare Workloads. The single-tenant option provides the highest level of isolation and consistency.
+Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMWare by Broadcom workloads. The single-tenant option provides the highest level of isolation and consistency.
 
-### {{site.data.keyword.vmware-service_short}} single-tenant
+### {{site.data.keyword.vcf-aas}} single-tenant
 {: #tenant-plan-deploy-type-st}
 
-For a dedicated infrastructure and built to order VMware environment, create a single-tenant Cloud Director site. After you create a Cloud Director site, deploy virtual data centers (VDCs) with monthly charges for the dedicated VMware infrastructure components.
+For a dedicated infrastructure and built to order VMware by Broadcom environment, create a single-tenant Cloud Director site. After you create a Cloud Director site, deploy virtual data centers (VDCs) with monthly charges for the dedicated VMware by Broadcom infrastructure components.
 
-### {{site.data.keyword.vmware-service_short}} multitenant
+### {{site.data.keyword.vcf-aas}} multitenant
 {: #tenant-plan-deploy-type-mt}
 
-For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vmware-service_short}} multitenant, your only step is to create the Cloud Director VDC.
+For a flexible, pay-as-you-go VMware by Broadcom environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the Cloud Director VDC.
 
 On-demand and reserved pricing plans are available for multitenant instances.
 
@@ -66,7 +66,7 @@ For Reserved instances, the vCPU and RAM VDC reservations are pre-allocated and 
 ## IBM Cloud data center availability
 {: #tenant-plan-deploy-locations}
 
-The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vmware-service_short}} deployment.
+The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-aas}} deployment.
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
@@ -77,7 +77,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
-{: #simpletabtable-cr-eur}
+{: #simpletabtable-dc-eur}
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
@@ -98,8 +98,6 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 A resource pool combines compute, memory, and storage resources, and consist of one or more clusters. For more information, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
-You can optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
-
 ## Profile storage type
 {: #tenant-plan-deploy-storage}
 
@@ -117,34 +115,54 @@ The vSAN deduplication and compression option is available for enablement only w
 ## Host profile
 {: #tenant-plan-deploy-host}
 
-{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vmware-service_short}}.
+{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware by Broadcom VMs and workload you plan to run on {{site.data.keyword.vcf-aas}}.
 
-* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
-* For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare by Broadcom environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare by Broadcom environment, including the VM CPU, RAM, and storage sizes.
+* For new VMWare by Broadcom workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
 After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
 
-{{site.data.keyword.vmware-service_short}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
+{{site.data.keyword.vcf-aas}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
 {: note}
 
-Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware deployment into the total host count calculation.
+Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware by Broadcom deployment into the total host count calculation.
 
-### Bare metal server requirements
+### Bare metal server options
 {: #tenant-plan-deploy-host-bms-req}
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
-For vSAN clusters, you can select from the following Dual Intel® 8260 Xeon® options.
+| Profile | Sockets | Cores | RAM | vSAN usable capacity |
+|:--------|:--------|:------|:----|:---------------------|
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 15 TB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 23 TB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 46 TB |
+| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB | 61 TB |
+| Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 23 TB |
+| Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 23 TB |
+| Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 38 TB |
+| Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 38 TB |
+{: caption="Table 3. Available vSAN host profiles" caption-side="bottom"}
+{: tab-title="vSAN clusters"}
+{: tab-group="Host profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vsan-hp}
 
-* 2 Sockets - 48 Cores, 768 GB RAM, with either 15 TB, 23 TB, or 46 TB of vSAN usable capacity
-* 4 Sockets - 96 Cores, 1536 GB RAM, with 61 TB of vSAN usable capacity
-
-For NFS only clusters, you can select from the following options.
-
-* Dual Intel 5218 Xeon (2 Sockets - 32 Cores, 192 GB RAM)
-* Dual Intel 8260 Xeon (2 Sockets - 48 Cores, 384 GB RAM)
-* Dual Intel 8260 Xeon (2 Sockets - 48 Cores, 768 GB RAM)
-* Dual Intel 8260 Xeon (4 Sockets - 96 Cores, 1536 GB RAM)
+| Profile | Sockets | Cores | RAM |
+|:--------|:--------|:------|:----|
+| Dual Intel 5218 Xeon | 2 | 32 | 192 GB |
+| Dual Intel 8260 Xeon | 2 | 48 | 384 GB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB |
+| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB |
+| Dual Intel 5218 Xeon | 2 | 32 | 384 GB |
+| Dual Intel 6248 Xeon | 2 | 40 | 384 GB |
+| Dual Intel 5218 Xeon | 2 | 32 | 768 GB |
+| Dual Intel 6248 Xeon | 2 | 40 | 768 GB |
+{: caption="Table 4. Available NFS-only host profiles" caption-side="bottom"}
+{: tab-title="NFS-only clusters"}
+{: tab-group="Host profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-nfs-hp}
 
 ## Performance characteristics
 {: #tenant-plan-deploy-perf-char}
@@ -166,12 +184,12 @@ You can select public-only or private-only access for your management and worklo
 
 Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup and Replication service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network by using the {{site.data.keyword.cloud_notm}} virtual private network (VPN) or through Direct Link connections. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
 
-Workload connectivity determines how you connect to your {{site.data.keyword.vmware-service_short}} virtual machines (VMs) and vApps. When you select private-only workload connectivity for your Cloud Director site, all VDCs deployed in that site are private-only workloads. These VDCs do not have an incoming or outgoing connectivity path to the public internet and can access {{site.data.keyword.cloud_notm}} Services only over the private {{site.data.keyword.IBM_notm}} network. You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+Workload connectivity determines how you connect to your {{site.data.keyword.vcf-aas}} virtual machines (VMs) and vApps. When you select private-only workload connectivity for your Cloud Director site, all VDCs deployed in that site are private-only workloads. These VDCs do not have an incoming or outgoing connectivity path to the public internet and can access {{site.data.keyword.cloud_notm}} Services only over the private {{site.data.keyword.IBM_notm}} network. You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
-## Services for {{site.data.keyword.vmware-service_short}}
+## Services for {{site.data.keyword.vcf-aas}}
 {: #tenant-plan-deploy-services}
 
-The following add-on services are optionally available for {{site.data.keyword.vmware-service_short}} Cloud Director site instances.
+The following add-on services are optionally available for {{site.data.keyword.vcf-aas}} Cloud Director site instances.
 
 ### Veeam Backup and Replication
 {: #tenant-plan-deploy-services-veeam}
@@ -185,7 +203,7 @@ For multitenant instances, the Veeam Backup and Replication service is deployed 
 
 The VMware Cloud Director Availability (VCDA) service is optionally included at no charge with your single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
 
-The VCDA service is included as a default option in {{site.data.keyword.vmware-service_short}} multitenant VDCs.
+The VCDA service is included as a default option in {{site.data.keyword.vcf-aas}} multitenant VDCs.
 
 Use enterprise-level VCDA to migrate VMs and vAPPS over a secure public internet connection.
 
@@ -206,7 +224,7 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 
 | Edge type | Details |
 |:--------- |:------- |
-| Efficiency | These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 100 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
+| Efficiency | These edges allocate networking resources that can be used by up to 64 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 64 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
 | Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 Gbps. |
 | Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic. |
 | Performance - XL | This option provides the highest level of edge services and throughput over 10 Gbps. |

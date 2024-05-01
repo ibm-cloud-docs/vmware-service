@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-09"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -15,10 +15,10 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites
+# Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites
 {: #tenant-viewing-sites}
 
-View the summary and detailed information of the {{site.data.keyword.vmware-service_full}} Cloud Director sites that are provisioned in your account.
+View the summary and detailed information of the {{site.data.keyword.vmware-service-full}} Cloud Director sites that are provisioned in your account.
 
 When you no longer need them, you can delete the Cloud Director sites that are provisioned in your account.
 
@@ -29,13 +29,13 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 ## Procedure to view a summary of Cloud Director sites
 {: #tenant-viewing-sites-summary}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab to view the summary of sites that are provisioned.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab to view the summary of sites that are provisioned.
 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the site. |
-   | VMwaaS type | The consumption model for the site: Single-tenant or Multitenant. |
+   | VCFaaS type | The consumption model for the site: Single-tenant or Multitenant. |
    | Location | The region where the VDC is deployed. |
    | Status | The status of the provisioned site. |
    {: caption="Table 1. Cloud Director site summary" caption-side="bottom"}
@@ -55,12 +55,12 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 ## Procedure to view details for the Cloud Director site
 {: #tenant-viewing-sites-details}
 
-1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site name.
+1. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab. Then, click the site name.
 2. On the **Summary** tab, review the complete summary of Cloud Director site details: the number of resource pools provisioned for the site, the number of VDCs provisioned for the site, the site details, and the recommended services for the site.
 
    | Item | Description |
    |:---- |:----------- |
-   | Infrastructure | The {{site.data.keyword.vmware-service_short}} offering uses {{site.data.keyword.cloud_notm}} Classic Infrastructure. |
+   | Infrastructure | The {{site.data.keyword.vcf-aas-full}} offering uses {{site.data.keyword.cloud_notm}} Classic Infrastructure. |
    | Resource group | Resource grouping for user access to assignemnts in the Cloud user account. |
    | Billing cycle | The pricing plan for the site. |
    | Creation time | The date and time that the site was created. |
@@ -78,13 +78,13 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
      * Click **Add service** to install a service.
      * Click the overflow menu to delete a service.
      * If Veeam® Backup and Replication is installed, click **Veeam backups** to open the Self-Service Backup Portal.
-     * Expand the **VMware Cloud Director Availability** service to see details and available options for the service. For more information, see [VMware Cloud Director Availability for {{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
+     * Expand the **VMware Cloud Director Availability** service to see details and available options for the service. For more information, see [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
 ## Procedure to delete a Cloud Director site
 {: #tenant-viewing-site-delete}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site that you want to delete.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab. Then, click the site that you want to delete.
 3. Click the **Actions...** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 

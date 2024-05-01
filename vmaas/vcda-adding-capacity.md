@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-12-18"
+lastupdated: "2024-04-09"
 
 keywords: add capacity, capacity adding
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding migration capacity to single-tenant Cloud Director sites
 {: #vcda-capacity-adding}
 
-After your {{site.data.keyword.vmware-service_full}} Cloud Director site instance order is complete, use VMware Cloud Director Availability (VCDA) to configure your instance capacity. Determine the amount of capacity based on how many virtual machines (VMs) you plan to migrate.
+After your {{site.data.keyword.vmware-service-full}} Cloud Director site instance order is complete, use VMware Cloud Director Availability (VCDA) to configure your instance capacity. Determine the amount of capacity based on how many virtual machines (VMs) you plan to migrate.
 
 Select from the following estimated capacity resource options that are required for your resource pool to migrate your VMs. Each resource is per instance.
 
@@ -38,8 +38,8 @@ When you select and apply a resource configuration, you can upgrade only to a gr
 ## Procedure to configure your VMware Cloud Director instance capacity
 {: #vcda-capacity-adding-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. In the **Migration estimated capacity** section, click **Edit capacity**.
 5. Select a resource configuration.
@@ -48,6 +48,6 @@ When you select and apply a resource configuration, you can upgrade only to a gr
 ## Related links
 {: #vcda-capacity-adding-links}
 
-* [VMware Cloud Director Availability for {{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
-* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
+* [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
 * [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-18"
+lastupdated: "2024-04-09"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -15,10 +15,10 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Auditing events for {{site.data.keyword.vmware-service_short}}
+# Auditing events for {{site.data.keyword.vcf-aas}}
 {: #vmaas-at-events}
 
-Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.cloud_notm}} for VMware as a Service in {{site.data.keyword.cloud_notm}}.
+Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.vmware-service-full}} in {{site.data.keyword.cloud_notm}}.
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate for abnormal activity and critical actions, and comply with regulatory audit requirements. In addition, you can be alerted on actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see [Getting started with {{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
@@ -37,7 +37,7 @@ Events are generated to track how users and applications interact with virtual d
 ## Events that are related to director site management
 {: #vmaas-at-events-director-site}
 
-Events are generated when you access VMware Cloud Director™ in {{site.data.keyword.vmware-service_short}}. The following table provides the actions that generate and send events to {{site.data.keyword.at_short}}.
+Events are generated when you access VMware Cloud Director™ in {{site.data.keyword.vcf-aas-full}}. The following table provides the actions that generate and send events to {{site.data.keyword.at_short}}.
 
 | Action | Description |
 |:------ |:----------- |
@@ -59,6 +59,6 @@ Events are generated when you access VMware Cloud Director™ in {{site.data.key
 ## Viewing events
 {: #vmaas-at-events-viewing}
 
-{{site.data.keyword.vmware-service_short}} events are global events. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+{{site.data.keyword.vcf-aas}} events are global events. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
 
 {{site.data.keyword.at_full_notm}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).

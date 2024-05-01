@@ -1,14 +1,14 @@
 {
-    "title": "VMware as a Service docs",
-    "lastupdated": "2024-04-01",
-    "introduction": "IBM Cloud for VMware as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud. Learn how to make the most of your VMware as a Service experience by using the docs.",
+    "title": "VMware Cloud Foundation as a Service docs",
+    "lastupdated": "2024-05-01",
+    "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
     },
     "section_recommended": [
       {
-        "title": "Getting started with VMware as a Service",
-        "description": "Get familiar with the process of ordering a VMware as a Service instance.",
+        "title": "Getting started with VCF as a Service",
+        "description": "Get familiar with the process of ordering a VCF as a Service instance.",
         "href": "/docs/vmware-service?topic=vmware-service-getting-started"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "title": "Ordering instances",
-        "description": "You can order a VMware as a Service instance.",
+        "description": "You can order a VCF as a Service instance.",
         "href": "/docs/vmware-service?topic=vmware-service-tenant-ordering"
       },
       {
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "1 May 2024",
+          "title": "New host profiles for NFS and vSAN clusters",
+          "description": "Additional bare metal server configurations are available for new and existing VCF as a Service Cloud Director site orders."
+        },
+        {
           "date": "1 April 2024",
           "title": "Updated packaging and pricing for VMware Solutions offerings",
           "description": "IBM Cloud is changing its IBM Cloud for VMware Solutions portfolio and pricing, in response to the changes to the packaging and pricing of the VMware portfolio, announced by Broadcom. These changes will be effective on 1 May 2024."
@@ -55,11 +60,6 @@
           "date": "15 March 2024",
           "title": "REST API updates",
           "description": "The VMware as a Service API is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director site."
-        },
-        {
-          "date": "9 February 2024",
-          "title": "IBM Cloud private-only networking",
-          "description": "VMware as a Service now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your VMware as a Service workloads. For private-only workload connections, connect virtual data centers to IBM Cloud Transit Gateway to connect to workloads outside of the private network."
         }
       ]
     }

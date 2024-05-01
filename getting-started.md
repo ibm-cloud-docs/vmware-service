@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-02-27"
+lastupdated: "2024-04-30"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -19,22 +19,22 @@ completion-time: 20m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with {{site.data.keyword.vmware-service_short}}
+# Getting started with {{site.data.keyword.vcf-aas}}
 {: #getting-started}
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="20m"}
 
-In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vmware-service_short}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
+In this {{site.data.keyword.vmware-service-full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
 {: shortdesc}
 
-The completion time that is listed for this tutorial considers only the time that you spend ordering the artifacts for a {{site.data.keyword.vmware-service_short}} instance on the user interface. It does not consider waiting times for deployments, for example.
+The completion time that is listed for this tutorial considers only the time that you spend ordering the artifacts for a {{site.data.keyword.vcf-aas}} instance on the user interface. It does not consider waiting times for deployments, for example.
 {: note}
 
 ## Before you begin
 {: #getting-started-prereqs}
 
-Before you start to work with {{site.data.keyword.vmware-service_short}}, review the following information about browser requirements and users accounts.
+Before you start to work with {{site.data.keyword.vcf-aas}}, review the following information about browser requirements and users accounts.
 
 ### Browser requirements
 {: #getting-started-browser-req}
@@ -69,22 +69,21 @@ Before you order an instance, consider the size of the VMware® by Broadcom depl
 
 VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 
-After the basic size of the VMware environment is established, consider the {{site.data.keyword.vmware-service_short}} deployment type of multitenant or single-tenant instance.
+After the basic size of the VMware environment is established, consider the {{site.data.keyword.vcf-aas}} deployment type of multitenant or single-tenant instance.
 
 For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 
-## Ordering a {{site.data.keyword.vmware-service_short}} instance
+## Ordering a {{site.data.keyword.vcf-aas}} instance
 {: #getting-started-step3}
 {: step}
 
-Specify your {{site.data.keyword.vmware-service_short}} instance settings according to your deployment type.
+Specify your {{site.data.keyword.vcf-aas}} instance settings according to your deployment type.
 
 For single-tenant instances, the following configurations are used to order a new VMware cluster for running the target workload:
 
 * Cloud Director site name and resource group
 * Cloud Director site location (geography and region)
 * Resourc pool name and location
-* Optional SAP-certified server profiles
 * Cluster name
 * Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
 * Host profile and quantity

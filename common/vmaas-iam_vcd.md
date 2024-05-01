@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-04-10"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Roles and permissions for VMware Cloud Director
 {: #vmaas-iam_vcd}
 
-The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
+The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service-full}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director™.
 * **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
@@ -33,15 +33,15 @@ The following table provides information about the platform management roles and
 | Operator | Read-only actions. For example, list instances and view instance details. | Minimum |
 | Editor | Update a specific instance. For example, add or remove VMware ESXi™ servers, clusters, and services; upgrade an instance to a higher version. | Minimum |
 | Administrator | Full management access. For example, create new instances, delete instances, and grant platform access to other users.| Custom |
-| VMwaaS Full Viewer | All view access to every component in VMware Cloud Director. | Custom |
-| VMwaaS vApp Author | Use catalogs and create vApps in VMware Cloud Director. | VMware Cloud Director |
-| VMwaaS vApp User | Use existing vApps in VMware Cloud Director. | VMware Cloud Director |
-| VMwaaS Catalog Author | Create and publish catalogs in VMware Cloud Director. | VMware Cloud Director |
-| VMwaaS Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in VMware Cloud Director. | Custom |
-| VMwaaS Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
-| VMwaaS Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
-| VMwaaS Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
-{: caption="Table 1. Roles and actions for VMware as a Service" caption-side="bottom"}
+| VCFaaS Full Viewer | All view access to every component in VMware Cloud Director. | Custom |
+| VCFaaS vApp Author | Use catalogs and create vApps in VMware Cloud Director. | VMware Cloud Director |
+| VCFaaS vApp User | Use existing vApps in VMware Cloud Director. | VMware Cloud Director |
+| VCFaaS Catalog Author | Create and publish catalogs in VMware Cloud Director. | VMware Cloud Director |
+| VCFaaS Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in VMware Cloud Director. | Custom |
+| VCFaaS Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
+| VCFaaS Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
+| VCFaaS Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
+{: caption="Table 1. Roles and actions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
 
 ## Custom defined roles and permissions
 {: #vmaas-iam_vcd-custom}
@@ -243,9 +243,9 @@ The following table provides information about roles that are custom-defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom-defined roles and permissions for VMware as a Service" caption-side="bottom"}
+{: caption="Table 2. Custom-defined roles and permissions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
 
 ## Related links
 {: #vmaas-iam_vcd-links}
 
-* [Managing IAM access for VMware as a Service](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui)
+* [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui)

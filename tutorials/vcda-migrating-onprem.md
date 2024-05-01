@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-03-06"
+lastupdated: "2024-04-30"
 
 content-type: tutorial
 services: vmware-service
@@ -16,31 +16,34 @@ completion-time: 30m
 {{site.data.keyword.attribute-definition-list}}
 {:video: .video}
 
-# Migrating workloads from on-premises and vCenter Server environments to VMware as a Service
+# Migrating workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas}}
 {: #vcda-migrating-onprem}
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vmware-service_short}} in the following video.
+You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service-full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
 
-![Migrate workloads from any Self-Managed vCenter to VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Migrate workloads from any Self-Managed vCenter to {{site.data.keyword.vcf-aas}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
+{: note}
 
 ## Objectives
 {: #vcda-migrating-onprem-objectives}
 
-In this tutorial, you learn how to install the VCDA on-premises appliance on a VMware vCenter Server, configure a public or a private endpoint with a {{site.data.keyword.vmware-service_short}} VCDA installation, and migrate your vCenter server workloads to {{site.data.keyword.vmware-service_short}}.
+In this tutorial, you learn how to install the VCDA on-premises appliance on a VMware vCenter Server, configure a public or a private endpoint with a {{site.data.keyword.vcf-aas}} VCDA installation, and migrate your vCenter server workloads to {{site.data.keyword.vcf-aas}}.
 
 ## Before you begin
 {: #vcda-migrating-onprem-prereqs}
 
-The VCDA service is optionally included in your {{site.data.keyword.vmware-service_short}} Cloud Director site order at no charge.
+The VCDA service is optionally included in your {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge.
 
 This tutorial requires:
 
 * An {{site.data.keyword.cloud_notm}} [billable account](/docs/account?topic=account-accounts).
-* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vmware-service_short}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
-* [A preprovisioned {{site.data.keyword.vmware-service_short}} Cloud Director site](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
+* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vcf-aas}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
+* [A preprovisioned {{site.data.keyword.vcf-aas}} Cloud Director site](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
 * [The VCDA service is installed on your Cloud Director site instance](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting).
 * An existing VMware vCenter cluster.
 
@@ -113,8 +116,8 @@ The private networking endpoint is more secure and provides more consistent perf
    2. Complete the following configuration for the **Site Details** tab.
       * For **Site name**, enter the unique name for your installation.
    3. Complete the following configuration for the **Cloud Service Details** tab. After you complete the configuration, click **NEXT**, then **ACCEPT** to accept the configuration.
-      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vmware-service_short}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
-      * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vmware-service_short}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
+      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
+      * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vcf-aas}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
 
       If you use the ``admin`` user ID, you must include the Organization ID. For example, ``admin@8db98de2-7735-41f1-a487-64fcaefde250``.
       {: note}
@@ -138,16 +141,16 @@ The private networking endpoint is more secure and provides more consistent perf
    2. Complete the following configuration for the **Site Details** tab.
       * For **Site name**, enter the unique name for your installation.
    3. Complete the following configuration for the **Cloud Service Details** tab. After you complete the configuration, click **NEXT**, then **ACCEPT** to accept the configuration.
-      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vmware-service_short}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
-      * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vmware-service_short}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
+      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
+      * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vcf-aas}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
       * For **Organization Password**, enter the Organization Administrator password.
    4. Review the configuration on the **Ready To Complete** tab and click **Finish**.
 
-## Migrate VMware vCenter workloads to {{site.data.keyword.vmware-service_short}}
+## Migrate VMware vCenter workloads to {{site.data.keyword.vcf-aas}}
 {: #vcda-migrating-onprem-migrate}
 {: step}
 
-After you enable your public or private connection, migrate your VM to {{site.data.keyword.vmware-service_short}}.
+After you enable your public or private connection, migrate your VM to {{site.data.keyword.vcf-aas}}.
 
 Ensure that the VM is powered on from vCenter Server.
 {: important}

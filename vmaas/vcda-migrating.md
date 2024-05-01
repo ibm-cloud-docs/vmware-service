@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-11"
+lastupdated: "2024-04-23"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -66,4 +66,4 @@ The following steps outline a validated process. Many different configurations w
 {: #vcda-migrating-links}
 
 * [Installing and configuring the On-Premises to Cloud Director Replication Appliance](https://docs.vmware.com/en/VMware-Cloud-Director-Availability/4.6/VMware-Cloud-Director-Availability-Install-Config-Upgrade-On-Prem/GUID-7B6E4E1E-92D5-4D84-A7FD-44B0824815DF.html){: external}
-* [Migrating workloads from on-premises and vCenter Server environments to VMware as a Service](/docs/vmware-service?topic=vmware-service-vcda-migrating-onprem)
+* [Migrating workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vcda-migrating-onprem)

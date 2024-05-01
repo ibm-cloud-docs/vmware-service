@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-27"
+lastupdated: "2024-04-09"
 
 keywords: iam roles, manage iam, SSO, single sign on
 
@@ -17,7 +17,7 @@ subcollection: vmware-service
 # VMware Cloud Director single sign-on with IBM Cloud IAM
 {: #iam-integration}
 
-You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
+You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service-full}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
 
 Access the VMware Cloud Director console from the VMware Solutions console to complete the following tasks from the console.
 
@@ -27,14 +27,14 @@ Access the VMware Cloud Director console from the VMware Solutions console to co
 * Edge configuration and putting VMs on the public and private networks
 * User administration
 
-Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vmware-service_short}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
+Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vcf-aas-full}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
 
 From the VMware Solutions console, click **VMware console** to access the VMware Cloud Director console.
 
 ## Before you begin
 {: #iam-integration-prereq}
 
-Review roles and assign resource access for {{site.data.keyword.vmware-service_short}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd).
+Review roles and assign resource access for {{site.data.keyword.vcf-aas}} instances. For more information, see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui) and [Roles and permissions for VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd).
 
 ## Responsibilities when you use IAM
 {: #iam-integration-responsib}
@@ -62,6 +62,6 @@ Review your responsibilities for managing IAM.
 ## Related links
 {: #iam-integration-links}
 
-* [{{site.data.keyword.vmware-service_short}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview&interface=ui)
+* [{{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview&interface=ui)
 * [Contacting IBM Support](/docs/vmware-service?topic=vmware-service-support&interface=ui)
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

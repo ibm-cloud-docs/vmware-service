@@ -10,7 +10,7 @@ toc:
     console-page: /vmware
     product-page: https://www.ibm.com/products/vmware/managed-services
     path: vmware-service
-    label: VMware as a Service
+    label: VMware Cloud Foundation as a Service
 
   entries:
   - navgroup:
@@ -46,11 +46,11 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: VMware as a Service
+          label: VCF as a Service
           topics:
           - vmaas/tenant-plan-deploy.md
           - topicgroup:
-              label: Ordering VMware as a Service instances
+              label: Ordering VCF as a Service instances
               topics:
               - vmaas/tenant-ordering.md
               - vmaas/vdc-adding.md
@@ -67,23 +67,23 @@ toc:
               topics:
               - vmaas/capacity-adding-deleting.md
           - topicgroup:
-              label: Viewing and deleting VMware as a Service instances
+              label: Viewing and deleting VCF as a Service instances
               topics:
               - vmaas/tenant-viewing-sites.md
               - vmaas/tenant-viewing-vdc.md
           - topicgroup:
-              label: Accessing VMware as a Service instances
+              label: Accessing VCF as a Service instances
               topics:
               - common/vmaas-iam.md
               - common/vmaas-iam_vcd.md
               - common/iam-integration.md
           - topicgroup:
-              label: Protecting VMs in VMware as a Service instances
+              label: Protecting VMs in VCF as a Service instances
               topics:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
           - topicgroup:
-              label: Migrating VMs to VMware as a Service instances
+              label: Migrating VMs to VCF as a Service instances
               topics:
               - vmaas/tenant-vcda.md
               - vmaas/vcda-viewing.md
@@ -93,17 +93,17 @@ toc:
               - vmaas/vcda-adding-deleting.md
               - vmaas/vcda-migrating.md
           - topicgroup:
-              label: Creating secure interconnectivity with VMware as a Service
+              label: Creating secure interconnectivity with VCF as a Service
               topics:
                 - vmaas/tgw-adding-connections.md
                 - vmaas/tgw-viewing-deleting-connections.md
-      - offerings/shared-intro.md
-      - offerings/vss-intro.md
       - offerings/vcs-intro.md
-      - offerings/vrw-intro.md
+      - offerings/vss-intro.md
       - offerings/cr-intro.md
+      - offerings/vrw-intro.md
       - offerings/vcf-intro.md
       - offerings/services-intro.md
+      - offerings/shared-intro.md
       - topicgroup:
           label: Enhancing security
           topics:
@@ -119,7 +119,7 @@ toc:
           label: API reference
           topics:
           - link:
-              label: VMware as a Service API
+              label: VMware Cloud Foundation as a Service API
               href: https://{DomainName}/apidocs/vmware-service
           - topic: common/api-change-log.md
           - topic: common/api-virtual-private-ep.md
@@ -128,10 +128,10 @@ toc:
       - common/ha.md
       - common/bc-dr.md
       - topicgroup:
-          label: Solution architectures on VMware as a Service
+          label: Solution architectures on VCF as a Service
           topics:
           - topicgroup:
-              label: VMware as a Service architecture patterns
+              label: VCF as a Service architecture patterns
               topics:
               - archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
 

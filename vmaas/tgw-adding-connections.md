@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-02-14"
+lastupdated: "2024-04-19"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -15,12 +15,12 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services
+# Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services
 {: #tgw-adding-connections}
 
-Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service_full}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
+Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service-notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
 
-{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource in the same region as your {{site.data.keyword.vmware-service_short}} Cloud Director site. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
+{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource in the same region as your {{site.data.keyword.vcf-aas-full}} Cloud Director site. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
 
 You must individually attach all six unbound GRE tunnels to the {{site.data.keyword.tg_short}} to attach the VDC connection group to {{site.data.keyword.tg_short}}. The six unbound GRE tunnels help to avoid redundancy risks.
 
@@ -44,12 +44,12 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 You must create the {{site.data.keyword.tg_short}} in the same region as the Cloud Director site where the VDC is deployed.
 {: important}
 
-## Procedure to connect VMware as a Service
+## Procedure to connect {{site.data.keyword.vcf-aas}}
 {: #tgw-adding-connections-proc}
 
 1. Add a connection group to your VDC.
-   1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-   2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click an instance name.
+   1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+   2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Virtual data center** tab, then click an instance name.
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
    5. In the **Add connection group** panel, enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID on the {{site.data.keyword.tg_short}} details page on the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
@@ -71,7 +71,7 @@ You must create the {{site.data.keyword.tg_short}} in the same region as the Clo
    3. In the {{site.data.keyword.cloud_notm}} console, click the [{{site.data.keyword.cloud-shell_notm}}](https://cloud.ibm.com/shell) icon to open the {{site.data.keyword.cloud-shell_short}} interface.
    4. Paste the CLI command in {{site.data.keyword.cloud-shell_short}} and run the command to connect all six tunnels to {{site.data.keyword.tg_short}}.
 
-   To run the CLI command locally, use the {{site.data.keyword.tg_short}} CLI, which is implemented as an {{site.data.keyword.cloud_notm}} CLI plug-in. For more information, see [Creating an unbound Generic Routing Encapsulation tunnel connection](/docs/transit-gateway?topic=transit-gateway-unbound-gre-connection&interface=cli) and [{{site.data.keyword.tg_short}} CLI](/docs/transit-gateway?topic=transit-gateway-transit-gateway-cli&interface=cli).
+   To run the CLI command locally, use the {{site.data.keyword.tg_short}} CLI, which is implemented as an {{site.data.keyword.cloud_notm}} CLI plug-in. For more information, see [Creating an unbound Generic Routing Encapsulation tunnel connection](/docs/transit-gateway?topic=transit-gateway-unbound-gre-connection&interface=cli) and [{{site.data.keyword.tg_short}} CLI change log](/docs/transit-gateway?topic=transit-gateway-cli-change-log&interface=cli).
    {: note}
 
    * Complete the following steps if you use the {{site.data.keyword.tg_short}} console to connect the tunnels to {{site.data.keyword.tg_short}}.
@@ -104,4 +104,4 @@ You must create the {{site.data.keyword.tg_short}} in the same region as the Clo
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Viewing and deleting {{site.data.keyword.tg_short}} connections](/docs/vmware-service?topic=vmware-service-tgw-viewing-deleting-connections)
-* [Getting help and support for {{site.data.keyword.vmware-service_short}}](/docs/vmware-service?topic=vmware-service-support)
+* [Getting help and support for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-support)

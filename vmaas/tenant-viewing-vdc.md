@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-02-28"
+lastupdated: "2024-04-30"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -15,23 +15,23 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing and deleting {{site.data.keyword.vmware-service_short}} virtual data centers
+# Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers
 {: #tenant-viewing-vdc}
 
-View the summary and detailed information of the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs) that are provisioned in your account.
+View the summary and detailed information of the {{site.data.keyword.vmware-service-full}} virtual data centers (VDCs) that are provisioned in your account.
 
 When you no longer need them, you can delete the VDCs that are provisioned in your account.
 
 ## Procedure to view a summary of virtual data centers
 {: #tenant-viewing-vdc-summary}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab to view a summary of the VDCs that are provisioned.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Virtual data centers** tab to view a summary of the VDCs that are provisioned.
 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | VMwaaS type | The consumption model for the VDC: Single-tenant or Multitenant. |
+   | VCFaaS type | The consumption model for the VDC: Single-tenant or Multitenant. |
    | Location | The data center where the VDC is deployed. |
    | Cloud Director instance | The name of the site where the VDC is deployed. |
    | Status | The status of the provisioned VDC. |
@@ -42,7 +42,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
 ## Procedure to view details for a virtual data center
 {: #tenant-viewing-vdc-details}
 
-1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab. Then, click a VDC name.
+1. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Virtual data centers** tab. Then, click a VDC name.
 2. On the **Summary** tab, review the virtual data center details.
 
    | Item | Description |
@@ -92,8 +92,8 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
 ## Procedure to delete a virtual data center
 {: #tenant-viewing-vdc-delete}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab. Then, click the VDC that you want to delete.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Virtual data centers** tab. Then, click the VDC that you want to delete.
 3. Click the **Actions...** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 
@@ -105,7 +105,7 @@ Alternatively, you can click the delete icon that is located in the VDC row of t
 ## Related links
 {: #tenant-viewing-vdc-links}
 
-* [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview)
+* [{{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview)
 * [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
 * [Adding and deleting capacity](/docs/vmware-service?topic=vmware-service-capacity-adding-deleting)
 * [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)

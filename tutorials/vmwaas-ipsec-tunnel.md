@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-01-22"
+lastupdated: "2024-04-30"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -41,7 +41,7 @@ This tutorial might incur costs. Use the [Cost estimator](https://cloud.ibm.com/
 ## Objectives
 {: #vmwaas-ipsec-tunnel-objectives}
 
-The objective of this tutorial is to demonstrate the basic steps of connecting an {{site.data.keyword.vmware-service_full}} single-tenant or multitenant instance with Juniper® vSRX. The connection happens through a Virtual Private Network (VPN). vSRX can either be deployed in the {{site.data.keyword.cloud_notm}} Classic Infrastructure or in a client data center. The following steps create a basic working environment, providing a VPN, a basic firewall implementation, and end-to-end network connectivity.
+The objective of this tutorial is to demonstrate the basic steps of connecting an {{site.data.keyword.vmware-service-full}} single-tenant or multitenant instance with Juniper® vSRX. The connection happens through a Virtual Private Network (VPN). vSRX can either be deployed in the {{site.data.keyword.cloud_notm}} Classic Infrastructure or in a client data center. The following steps create a basic working environment, providing a VPN, a basic firewall implementation, and end-to-end network connectivity.
 
 In this tutorial, you will learn:
 
@@ -60,9 +60,9 @@ The following diagram presents an overview of the solution to be deployed.
 This tutorial requires:
 
 * An {{site.data.keyword.cloud_notm}} [billable account](/docs/account?topic=account-accounts).
-* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vmware-service_short}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
-* [A preprovisioned {{site.data.keyword.vmware-service_short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
-* [A preprovisioned VDC on {{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
+* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vcf-aas-full}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
+* [A preprovisioned {{site.data.keyword.vcf-aas}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
+* [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
 
@@ -149,8 +149,8 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    | Association Life Time (seconds)  | 3600 |
    {: caption="Table 4. List of IPsec (or tunnel) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
-   As your requirements might differ, use the values from your deployment. 
-   
+   As your requirements might differ, use the values from your deployment.
+
 6. Define your dead peer detection (DPD) policy for the tunnel. The following table shows the values that are used in this example:
 
    | DPD                             | Value |
@@ -158,7 +158,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    | Probe Interval (seconds)        | 60 |
    {: caption="Table 5. List of dead peer detection (DPD) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
-   As your requirements might differ, use the values from your deployment. 
+   As your requirements might differ, use the values from your deployment.
 
 ## Configure vSRX
 {: #vmwaas-ipsec-tunnel-config-vsrx}
@@ -174,7 +174,7 @@ The following configurations use the example policy values that were presented e
    set security ike proposal ike-phase1-vmwaas authentication-algorithm sha-256
    set security ike proposal ike-phase1-vmwaas encryption-algorithm aes-256-cbc
    set security ike proposal ike-phase1-vmwaas lifetime-seconds 28800
-   
+
    set security ike policy ike-phase1-policy mode main
    set security ike policy ike-phase1-policy proposals ike-phase1-vmwaas
    set security ike policy ike-phase1-policy pre-shared-key ascii-text <your-psk>
@@ -185,7 +185,7 @@ The following configurations use the example policy values that were presented e
    ```bash
    set security ike gateway vmwaas ike-policy ike-phase1-policy
    set security ike gateway vmwaas address <public-IP address-of-the-vdc-edge-gateway>
-   
+
    set security ike gateway vmwaas external-interface reth1.0
    set security ike gateway vmwaas version v2-only
    ```
@@ -197,7 +197,7 @@ The following configurations use the example policy values that were presented e
    set security ipsec proposal ipsec-phase2-vmwaas authentication-algorithm hmac-sha-256-128
    set security ipsec proposal ipsec-phase2-vmwaas encryption-algorithm aes-256-cbc
    set security ipsec proposal ipsec-phase2-vmwaas lifetime-seconds 3600
-   
+
    set security ipsec policy ipsec-phase2-policy perfect-forward-secrecy keys group14
    set security ipsec policy ipsec-phase2-policy proposals ipsec-phase2-vmwaas
    ```
@@ -220,20 +220,20 @@ The following configurations use the example policy values that were presented e
    ```bash
    set firewall filter PROTECT-IN term PING from destination-address 10.95.1.1/32
    set firewall filter PROTECT-IN term PING from protocol icmp
-   
+
    set firewall filter PROTECT-IN term IPSec-IKE from destination-address `<public-IP address-of-the-vsrx>/32`
    # Alternative way to use source-address
    # set firewall filter PROTECT-IN term IPSec-IKE from source-address `<public-IP address-of-the-vdc-edge-gateway>/32`
    set firewall filter PROTECT-IN term IPSec-IKE from protocol udp
    set firewall filter PROTECT-IN term IPSec-IKE from port 500
    set firewall filter PROTECT-IN term IPSec-IKE then accept
-   
+
    set firewall filter PROTECT-IN term IPSec-ESP from destination-address `<public-IP address-of-the-vsrx>/32`
    # Alternative way to use source-address
    # set firewall filter PROTECT-IN term IPSec-ESP from source-address `<public-IP address-of-the-vdc-edge-gateway>/32`
    set firewall filter PROTECT-IN term IPSec-ESP from protocol esp
    set firewall filter PROTECT-IN term IPSec-ESP then accept
-   
+
    set firewall filter PROTECT-IN term IPSec-4500 from destination-address `<public-IP address-of-the-vsrx>/32`
    # Alternative way to use source-address
    # set firewall filter PROTECT-IN term IPSec-4500 from source-address `<public-IP address-of-the-vdc-edge-gateway>/32`
@@ -247,12 +247,12 @@ The following configurations use the example policy values that were presented e
    ```bash
    set security zones security-zone vpn-vmwaas-tunnel interfaces st0.0
    set security zones security-zone vsrx-vlan interfaces reth2.2498
-   
+
    set security policies from-zone vsrx-vlan to-zone vpn-vmwaas-tunnel policy vlan_to_vmwaas match source-address any
    set security policies from-zone vsrx-vlan to-zone vpn-vmwaas-tunnel policy vlan_to_vmwaas match destination-address any
    set security policies from-zone vsrx-vlan to-zone vpn-vmwaas-tunnel policy vlan_to_vmwaas match application any
    set security policies from-zone vsrx-vlan to-zone vpn-vmwaas-tunnel policy vlan_to_vmwaas then permit
-   
+
    set security policies from-zone vpn-vmwaas-tunnel to-zone vsrx-vlan policy vmwaas_to_vlan match source-address any
    set security policies from-zone vpn-vmwaas-tunnel to-zone vsrx-vlan policy vmwaas_to_vlan match destination-address any
    set security policies from-zone vpn-vmwaas-tunnel to-zone vsrx-vlan policy vmwaas_to_vlan match application any
@@ -269,16 +269,16 @@ The following configurations use the example policy values that were presented e
 {: #vmwaas-ipsec-tunnel-config-edge-gateway}
 {: step}
 
-Log in to your {{site.data.keyword.vmware-service_short}} instance, configure networking subnets, firewall rules, and IPsec tunnel.
- 
-### Log in to the VMwaaS console
+Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subnets, firewall rules, and IPsec tunnel.
+
+### Log in to the {{site.data.keyword.vcf-aas}} console
 {: #vmwaas-ipsec-tunnel-console}
 
-1. Log in to the {{site.data.keyword.vmware-service_short}} instance with a user that has the `Organization Administrator` role.
+1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
 2. In the left navigation, click **Networking**.
 3. Under **Edge Gateways**, select the `name` of your Edge Gateway.
 
-   ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="Figure 2. VMwaaS VDC Edge Gateway Selection" caption-side="bottom"}
+   ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="Figure 2. {{site.data.keyword.vcf-aas}} VDC Edge Gateway Selection" caption-side="bottom"}
    {: style="text-align: center;"}
 
 4. On the side menu, click **IP Sets** and click **New** to create a new IP Set.
@@ -290,7 +290,7 @@ Log in to your {{site.data.keyword.vmware-service_short}} instance, configure ne
    | IPSET 2     | VMWaaS-VDC-Network | `192.168.100.0/24` |
    {: caption="Table 7. IP sets details" caption-side="bottom"}
 
-   ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="Figure 3. {{site.data.keyword.vmware-service_short}} VDC IP sets" caption-side="bottom"}
+   ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="Figure 3. {{site.data.keyword.vcf-aas}} VDC IP sets" caption-side="bottom"}
    {: style="text-align: center;"}
 
 6. Click **Save**.
@@ -298,27 +298,27 @@ Log in to your {{site.data.keyword.vmware-service_short}} instance, configure ne
 ### Create VDC Gateway firewall rule
 {: #vmwaas-ipsec-tunnel-firewall}
 
-The {{site.data.keyword.vmware-service_short}} tenant instance is provisioned with a default firewall rule that drops all traffic to ensure security. 
+The {{site.data.keyword.vcf-aas}} tenant instance is provisioned with a default firewall rule that drops all traffic to ensure security.
 
-You must add two extra rules to allow traffic to and from the VPN connection. 
+You must add two extra rules to allow traffic to and from the VPN connection.
 
 1. With the Edge Gateway selected, click **Firewall** in the left navigation.
 2. Click **Edit Rules** and click **New on Top**.
 3. Repeat for each rule then click **Save**.
 
    | Firewall Rule  | Name           | Source Address | Destination Address |
-   |:-------------- |:--------------------- |:------------ |:-------------------- | 
+   |:-------------- |:--------------------- |:------------ |:-------------------- |
    | Firewall Rule 1 | `VMWaaS-to-FW`      | `VMWaaS-VDC-Network` | `Firewall-Network` |
    | Firewall Rule 2 | `FW-to-VMWaaS`      | `Firewall-Network`   |`VMWaaS-VDC-Network` |
-   {: caption="Table 8. {{site.data.keyword.vmware-service_short}} VDC firewall rules" caption-side="bottom"}
+   {: caption="Table 8. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
-   ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="Figure 4. {{site.data.keyword.vmware-service_short}} VDC firewall rules" caption-side="bottom"}
+   ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="Figure 4. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
    {: style="text-align: center;"}
 
 ### Create VDC IPSec VPN Tunnel
 {: #vmwaas-ipsec-tunnel-vdc}
 
-The next step is to create the IPSec VPN tunnel between our Local and Remote Endpoint. 
+The next step is to create the IPSec VPN tunnel between our Local and Remote Endpoint.
 
 1. With the Edge Gateway selected, click **IPSec VPN** in the left navigation.
 2. Click **New** to start the wizard.
@@ -330,11 +330,11 @@ The next step is to create the IPSec VPN tunnel between our Local and Remote End
    |:----------------------- |:-------------------- |:--------- |:-------------------- |
    | Local Endpoint  | `<public-IP address-of-the-vdc-edge-gateway>` | `192.168.100.0/24` | `n/a` |
    | Remote Endpoint | `<public-IP address-of-the-vsrx>`      | `10.95.1.1/26`   | `<public-IP address-of-the-vsrx>` |
-   {: caption="Table 9. {{site.data.keyword.vmware-service_short}} VDC firewall rules" caption-side="bottom"}
+   {: caption="Table 9. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
 6. Click **Finish** to complete.
 
-   ![VDC IPsec VPN](../images/vmwaas-ipsec-tunnel-ipsec-vpn.png){: caption="Figure 5. {{site.data.keyword.vmware-service_short}} VDC IPSEC VPN configuration" caption-side="bottom"}
+   ![VDC IPsec VPN](../images/vmwaas-ipsec-tunnel-ipsec-vpn.png){: caption="Figure 5. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN configuration" caption-side="bottom"}
    {: style="text-align: center;"}
 
 ## Validate your IPsec tunnel and connectivity
@@ -354,7 +354,7 @@ You can test the connection on the user interface (UI) or the classic way throug
 4. Check it in detail by clicking **View Statistics**.
 5. If the status is not green, there might be problems with the tunnel.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-01.png){: caption="Figure 6. {{site.data.keyword.vmware-service_short}} VDC IPSEC VPN first validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-01.png){: caption="Figure 6. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN first validation" caption-side="bottom"}
 
 If the tunnel is not working, you can check it by:
 
@@ -363,7 +363,7 @@ If the tunnel is not working, you can check it by:
 3. Check it in detail by clicking **Security Profile Customization**.
 4. Change the specific details about **IKE profile details**, **Tunnel Configuration**, or **DPD Configuration**.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-02.png){: caption="Figure 7. {{site.data.keyword.vmware-service_short}} VDC IPSEC VPN second validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-02.png){: caption="Figure 7. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN second validation" caption-side="bottom"}
 
 If your settings are correct and you click **Save**, then your tunnel is working and you can check it with the same steps as before, with the only change that the **Status** column should be green, and **View Statistics** should show also green.
 
@@ -372,12 +372,12 @@ If your settings are correct and you click **Save**, then your tunnel is working
 3. By the Column **State**, if it says **Enabled** and it's green, then it is working.
 4. Check it in detail by clicking **View Statistics**.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-03.png){: caption="Figure 8. {{site.data.keyword.vmware-service_short}} VDC IPSEC VPN third validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-03.png){: caption="Figure 8. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN third validation" caption-side="bottom"}
 
 ### Validate your IPsec tunnel and connectivity on the CLI
 {: #vmwaas-ipsec-tunnel-connectivity-cli}
 
-You can test the connection by logging in to one of your VMs running on the VDC by using VMware VM Console and test connectivity to your on-premises network virtual machines. 
+You can test the connection by logging in to one of your VMs running on the VDC by using VMware VM Console and test connectivity to your on-premises network virtual machines.
 
 For example, you can use ping to the IP address of vSRX, if your vSRX allows ICMP.
 

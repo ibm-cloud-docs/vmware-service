@@ -4,9 +4,9 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-03-06"
+lastupdated: "2024-04-30"
 
-keywords: vmware service overview, vmware as a service, vmware as a service overview, vmware as a service introduction
+keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
 subcollection: vmware-service
 
@@ -16,43 +16,46 @@ subcollection: vmware-service
 {{site.data.keyword.attribute-definition-list}}
 {:video: .video}
 
-# {{site.data.keyword.vmware-service_short}} overview
+# {{site.data.keyword.vcf-aas}} overview
 {: #vmware-aas-overview}
 
-{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
+{{site.data.keyword.vmware-service-full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
 {: shortdesc}
 
-{{site.data.keyword.vmware-service_short}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vmware-service_short}} single-tenant instances are provisioned and managed by your organization.
+{{site.data.keyword.vcf-aas-full}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vcf-aas}} single-tenant instances are provisioned and managed by your organization.
 
-For complete billing details for both multitenant and single-tenant models, see the [**About** tab](https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt) on the {{site.data.keyword.vmware-service_short}} provision page.
+For complete billing details for both multitenant and single-tenant models, see the [**About** tab](https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt) on the {{site.data.keyword.vmware-service-short}} provision page.
 {: note}
 
-Find out more about the {{site.data.keyword.vmware-service_short}} instance models in the following video.
+Find out more about the {{site.data.keyword.vcf-aas}} instance models in the following video.
 
-![Introducing IBM Cloud for VMware as a Service](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_mrpl7ue5?wid=_1773841&iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Introducing IBM Cloud for {{site.data.keyword.vmware-service-notm}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_mrpl7ue5?wid=_1773841&iframeembed=true&entry_id=1_mrpl7ue5){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
-## {{site.data.keyword.vmware-service_short}} single-tenant
+Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
+{: note}
+
+## {{site.data.keyword.vcf-aas}} single-tenant
 {: #vmware-aas-overview-st}
 
-The {{site.data.keyword.vmware-service_short}} single-tenant consumption model provides the option to deploy managed VMware environments with a dedicated infrastructure. You can select from a choice of bare metal servers and storage infrastructure components to create a single-tenant VMware site. You manage the capacity of the infrastructure.
+The {{site.data.keyword.vcf-aas}} single-tenant consumption model provides the option to deploy managed VMware environments with a dedicated infrastructure. You can select from a choice of bare metal servers and storage infrastructure components to create a single-tenant VMware site. You manage the capacity of the infrastructure.
 
 The combination of the single-tenant infrastructure and a software stack that includes VMware ESXi™, VMware vCenter®, VMware NSX-T™, and Cloud Director is called a site. Sites are the single-tenant VMware platform that is used to host one or more VMware VDCs. VMware VDCs are used to deploy VMware workloads to create virtualized networking, and to connect to external networks that include the public internet and the {{site.data.keyword.IBM_notm}} private network. You can start with as little as two dedicated bare metal servers to deploy or migrate existing VMware workloads into a VMware Cloud Director VDC.
 
-For {{site.data.keyword.vmware-service_short}} single-tenant, you first create the dedicated site and then you create the VDCs after the site is ready.
+For {{site.data.keyword.vcf-aas}} single-tenant, you first create the dedicated site and then you create the VDCs after the site is ready.
 
-![{{site.data.keyword.vmware-service_short}} architecture](../images/vmware-aas-archi.svg){: caption="Figure 1. {{site.data.keyword.vmware-service_short}} architecture" caption-side="bottom"}
+![{{site.data.keyword.vcf-aas}} architecture](../images/vmware-aas-archi.svg){: caption="Figure 1. {{site.data.keyword.vcf-aas}} architecture" caption-side="bottom"}
 
-## {{site.data.keyword.vmware-service_short}} multitenant
+## {{site.data.keyword.vcf-aas}} multitenant
 {: #vmware-aas-overview-mt}
 
-The {{site.data.keyword.vmware-service_short}} multitenant consumption model provides the same capabilities and experience as the single-tenant model. With {{site.data.keyword.vmware-service_short}} multitenant, your workloads share the VMware site platform of infrastructure and VMware components. VMware workloads across different Cloud accounts are securely isolated by VMware Cloud Director virtualization of networking, storage, CPU, and RAM.
+The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the same capabilities and experience as the single-tenant model. With {{site.data.keyword.vcf-aas}} multitenant, your workloads share the VMware site platform of infrastructure and VMware components. VMware workloads across different Cloud accounts are securely isolated by VMware Cloud Director virtualization of networking, storage, CPU, and RAM.
 
-For {{site.data.keyword.vmware-service_short}} multitenant, you start by creating the multitenant VDC with a choice of on-demand pay as you go pricing or reserved pricing plans. IBM Operations manages the physical CPU, RAM, and storage infrastructure capacity.
+For {{site.data.keyword.vcf-aas}} multitenant, you start by creating the multitenant VDC with a choice of on-demand pay as you go pricing or reserved pricing plans. IBM Operations manages the physical CPU, RAM, and storage infrastructure capacity.
 
-## {{site.data.keyword.vmware-service_short}} features
+## {{site.data.keyword.vcf-aas}} features
 {: #vmware-aas-overview-features}
 
-The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant models share the following features:
+The {{site.data.keyword.vcf-aas}} single-tenant and multitenant models share the following features:
 
 * The VMware Cloud Director instance that you log in to provides a 99.99% availability SLA.
 * Unique provider-managed encryption keys per instance with encrypted VMware storage profiles.
@@ -67,15 +70,15 @@ The {{site.data.keyword.vmware-service_short}} single-tenant and multitenant mod
 * Optional data protection through the Veeam® Backup and Replication service.
 * Optional VM and vApp migration through the VMware Cloud Director Availability service.
 
-### {{site.data.keyword.vmware-service_short}} single-tenant features
+### {{site.data.keyword.vcf-aas}} single-tenant features
 {: #vmware-aas-overview-features-st}
 
-For single-tenant instances, first define a VMware environment by provisioning a {{site.data.keyword.vmware-service_short}} single-tenant Cloud Director site. Then, create {{site.data.keyword.vmware-service_short}} single-tenant VDCs to deploy your workloads.
+For single-tenant instances, first define a VMware environment by provisioning a {{site.data.keyword.vcf-aas}} single-tenant Cloud Director site. Then, create {{site.data.keyword.vcf-aas}} single-tenant VDCs to deploy your workloads.
 
-The {{site.data.keyword.vmware-service_short}} single-tenant consumption model provides the following features:
+The {{site.data.keyword.vcf-aas}} single-tenant consumption model provides the following features:
 
 * The highest level of isolation, control, and consistency of the underlying VMware environment.
-* Each {{site.data.keyword.vmware-service_short}} single-tenant instance contains the following VMware components:
+* Each {{site.data.keyword.vcf-aas}} single-tenant instance contains the following VMware components:
    * Dedicated VMware ESXi hosts
    * Dedicated VMware vCenter
    * Multiple performance options for attached vSAN™ and Network File Storage (NFS v3)
@@ -88,12 +91,12 @@ The {{site.data.keyword.vmware-service_short}} single-tenant consumption model p
    * Add and remove storage per VMware vCenter cluster
 * Monthly billing for the dedicated infrastructure and components.
 
-### {{site.data.keyword.vmware-service_short}} multitenant features
+### {{site.data.keyword.vcf-aas}} multitenant features
 {: #vmware-aas-overview-features-mt}
 
 For multitenant instances, create a VDC that deploys on an existing VMware multitenant infrastructure that is created and managed by {{site.data.keyword.IBM_notm}}.
 
-The {{site.data.keyword.vmware-service_short}} multitenant consumption model provides the following features:
+The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the following features:
 
 * Shares resources with others by using a balanced VMware environment profile to support a wide range of needs.
 * Pay-per-use consumption model:
@@ -102,10 +105,10 @@ The {{site.data.keyword.vmware-service_short}} multitenant consumption model pro
 * Billing is determined by the consumption of virtualized CPU (vCPU), RAM, and networking.
 * Add or remove vCPU and RAM limits as needed.
 
-## Billing specifications for {{site.data.keyword.vmware-service_short}}
+## Billing specifications for {{site.data.keyword.vcf-aas}}
 {: #vmware-aas-overview-specs}
 
-{{site.data.keyword.vmware-service_short}} single-tenant instances incur charges for the following components.
+{{site.data.keyword.vcf-aas}} single-tenant instances incur charges for the following components.
 
 * NFS size and performance tiers used
 * Host type and counts used
@@ -114,11 +117,11 @@ The {{site.data.keyword.vmware-service_short}} multitenant consumption model pro
 * Networking edge types and counts
 * Veeam Backup and Replication service (optional)
 
-{{site.data.keyword.vmware-service_short}} multitenant instance charges are based on either the on-demand or reserved pricing models.
+{{site.data.keyword.vcf-aas}} multitenant instance charges are based on either the on-demand or reserved pricing models.
 
 ## Related links
 {: #vmware-aas-overview-links}
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
-* [Ordering {{site.data.keyword.vmware-service_short}} virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
-* [Ordering {{site.data.keyword.vmware-service_short}} Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
+* [Ordering {{site.data.keyword.vcf-aas}} virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
+* [Ordering {{site.data.keyword.vcf-aas}} Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)

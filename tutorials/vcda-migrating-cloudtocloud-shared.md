@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-30"
 
 content-type: tutorial
 services: vmware-service
@@ -13,47 +13,58 @@ completion-time: 30m
 {{site.data.keyword.attribute-definition-list}}
 {:video: .video}
 
-# Migrating VMware Shared workloads to {{site.data.keyword.vmware-service_short}} with cloud-to-cloud connections
+# Migrating VMware Shared workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections
 {: #vcda-migrating-cloudtocloud-shared}
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_notm}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+VMware Shared is no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service-full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vmware-service_short}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
+You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vcf-aas-full}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
 
-![Migrate workloads from IBM Cloud VMWare Shared to {{site.data.keyword.vmware-service_short}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_hycjbyi0?wid=_1773841&iframeembed=true&entry_id=1_hycjbyi0){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Migrate workloads from IBM Cloud VMWare Shared to {{site.data.keyword.vcf-aas}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_hycjbyi0?wid=_1773841&iframeembed=true&entry_id=1_hycjbyi0){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
+{: note}
 
 ## Objectives
 {: #vcda-migrating-cloudtocloud-shared-objectives}
 
-In this tutorial, you learn how to migrate vApps and VMs between your {{site.data.keyword.vmware-service_short}} instance and VMware Shared instances.
+In this tutorial, you learn how to migrate vApps and VMs between your {{site.data.keyword.vcf-aas}} instance and VMware Shared instances.
 
-Pairings are automatically created to the closest geographical VMware Shared region when you install VCDA on a {{site.data.keyword.vmware-service_short}} instance. Migrations between VMware Shared and {{site.data.keyword.vmware-service_short}} require a pairing between the two offerings. The following pairings are supported and created automatically.
-* {{site.data.keyword.vmware-service_short}} DAL region pairs with VMware Shared DAL region
-* {{site.data.keyword.vmware-service_short}} WDC region pairs with VMware Shared DAL region
-* {{site.data.keyword.vmware-service_short}} FRA region pairs with VMware Shared FRA region
+Pairings are automatically created to the closest geographical VMware Shared region when you install VCDA on a {{site.data.keyword.vcf-aas}} instance. Migrations between VMware Shared and {{site.data.keyword.vcf-aas}} require a pairing between the two offerings. The following pairings are supported and created automatically.
+* {{site.data.keyword.vcf-aas}} DAL region pairs with VMware Shared DAL region
+* {{site.data.keyword.vcf-aas}} WDC region pairs with VMware Shared DAL region
+* {{site.data.keyword.vcf-aas}} FRA region pairs with VMware Shared FRA region
 
 ## Before you begin
 {: #vcda-migrating-cloudtocloud-shared-prereqs}
 
-The VCDA service is optionally included in your {{site.data.keyword.vmware-service_short}} Cloud Director site order at no charge and is always included in multitenant {{site.data.keyword.vmware-service_short}} VDCs.
+The VCDA service is optionally included in your {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge and is always included in multitenant {{site.data.keyword.vcf-aas}} VDCs.
 
 This tutorial requires:
 
 * An {{site.data.keyword.cloud_notm}} [billable account](/docs/account?topic=account-accounts).
-* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vmware-service_short}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
-* [A preprovisioned {{site.data.keyword.vmware-service_short}} Cloud Director site](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
-* [The VCDA service is installed on your Cloud Director site instance](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting).
-* A {{site.data.keyword.vmwaresolutions_short}} Shared instance to migrate.
+* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vcf-aas}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
+* A VMware Shared virtual data center instance to migrate.
+* [A provisioned {{site.data.keyword.vcf-aas}} VDC](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering). You can use either a multitenant VDC or a single-tenant Cloud Director site with a VDC.
+* [The VCDA service is installed in your {{site.data.keyword.vcf-aas}} Cloud Director site instance](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting). VCDA is installed by default in all multitenant VDCs.
+* The {{site.data.keyword.vcf-aas}} instance must have networks created before you migrate.
+* If the VMs to migrate have connectivity to the IBM private network or the public internet, verify that the following edge requirements are met.
+   * The {{site.data.keyword.vcf-aas}} network(s) are connected to the edge.
+   * The {{site.data.keyword.vcf-aas}} VDC is created with an edge.
+   * The {{site.data.keyword.vcf-aas}} VDC edge has NATs and firewalls configured.
+
+   You may need to update allowlists or DNS entries with new public IP addresses that result from the migration.
+   {: note}
 
 ## Create a VMware Shared pairing
 {: #vcda-migrating-cloudtocloud-shared-pairing}
 {: step}
 
-1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vmware-service_short}} single-tenant instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc).
+1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc).
 
    VCDA is preinstalled on multitenant instances.
    {: note}
@@ -74,7 +85,7 @@ This tutorial requires:
 {: #vcda-migrating-cloudtocloud-shared-migrate-pairing}
 {: step}
 
-1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service_short}} instance with VCDA installed and click **VMware console**.
+1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service-short}} instance with VCDA installed and click **VMware console**.
 2. From the VMware console, click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.
 3. From the left panel, click **Peer Sites** to review the VMware Shared peer site options.
 4. Select the peer site for the VMware Shared workload to migrate and click **LOGIN**. The peer site name is the VMware Shared organization. To find the VMWare Shared organization name, log in to the Cloud Director user interface in VMware Shared and click a VDC. At the top of the web page, you can find the organization ID.
@@ -84,7 +95,7 @@ This tutorial requires:
 
 The login is successful when the green checkmark icon displays in the **Management Session** column for the peer site.
 
-## Replicate and migrate the VM to {{site.data.keyword.vmware-service_short}}
+## Replicate and migrate the VM to {{site.data.keyword.vcf-aas}}
 {: #vcda-migrating-cloudtocloud-shared-migrate}
 {: step}
 

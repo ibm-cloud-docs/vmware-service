@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-30"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -18,12 +18,12 @@ subcollection: vmware-service
 # Ordering Cloud Director site instances
 {: #tenant-ordering}
 
-You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
+You can create an {{site.data.keyword.vmware-service-full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
 
-{{site.data.keyword.vmware-service_short}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
+{{site.data.keyword.vcf-aas-full}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 {: note}
 
-## Minimum requirements for {{site.data.keyword.vmware-service_short}} instances
+## Minimum requirements for {{site.data.keyword.vcf-aas}} instances
 {: #tenant-ordering-min-req}
 
 Minimum 2 servers (7 servers for vSAN™ profiles)
@@ -45,11 +45,11 @@ You can specify a name that meets the following requirements:
 * Only alphanumeric, dash (-), underscore (_), and space characters are allowed.
 * The name must be unique within all active names in your account. You can reuse a name that is previously deleted.
 
-## Procedure to order {{site.data.keyword.vmware-service_short}} Cloud Director site instances
+## Procedure to order {{site.data.keyword.vcf-aas}} Cloud Director site instances
 {: #tenant-ordering-procedure}
 
-1. In the VMware Solutions console, click **Create** on the **{{site.data.keyword.vmware-service_short}}** card.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, click the **VMwaaS single-tenant Cloud Director site** card.
+1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service-short}}** card.
+2. On the **{{site.data.keyword.vmware-service-short}}** order page, click the **Single-tenant Cloud Director site** card.
 3. Specify the Cloud Director site name and select a resource group.
 
    If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [{{site.data.keyword.IBM_notm}} IAM roles](/docs/account?topic=account-userroles).
@@ -57,7 +57,6 @@ You can specify a name that meets the following requirements:
 5. Specify the settings for the resource pool.
     1. Specify the resource pool name.
     2. Select the resource pool location.
-    3. Optionally enable SAP®-certified server profiles and select the profile type.
 6. Specify the settings for the cluster.
     1. Specify the cluster name.
     2. Select the profile storage type.
@@ -79,6 +78,6 @@ You can specify a name that meets the following requirements:
 {: #tenant-ordering-links}
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
-* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
-* [Viewing and deleting {{site.data.keyword.vmware-service_short}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)
+* [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
+* [Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)
 * [Visualizing your site with {{site.data.keyword.cloud_notm}} Monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)

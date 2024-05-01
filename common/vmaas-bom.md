@@ -4,9 +4,9 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-03-14"
+lastupdated: "2024-04-09"
 
-keywords: VMware as a Service BOM, bill of materials VMware as a Service, BOM
+keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
 subcollection: vmware-service
 
@@ -14,12 +14,12 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vmware-service_short}} BOM
+# {{site.data.keyword.vcf-aas}} BOM
 {: #vmaas-bom}
 
-Review the Bill of Materials (BOM) information for {{site.data.keyword.vmware-service_full}} instances.
+Review the Bill of Materials (BOM) information for {{site.data.keyword.vmware-service-full}} instances.
 
-## Software BOM for {{site.data.keyword.vmware-service_short}} instances
+## Software BOM for {{site.data.keyword.vcf-aas}} instances
 {: #vmaas-bom-software}
 
 The following table details the current component versions for new instance orders. Existing instances are upgraded according to operational timelines and resolving security vulnerabilities.
@@ -27,12 +27,12 @@ The following table details the current component versions for new instance orde
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
 | VMware       | ESXi™ | ESXi 7.0 Update 3p (23307199) |
-| VMware       | vCenter Server® Appliance | 7.0 Update 3p (01800) |
+| VMware       | vCenter Server® Appliance | 8.0 Update 2b (00200) |
 | VMware       | NSX-T™ | 4.1.2.1 (22667789) |
-| VMware       | Cloud Director™ | 10.4.2.2 |
-| VMware       | Cloud Director Availability | 4.6 |
+| VMware       | Cloud Director™ | 10.5.1.1 |
+| VMware       | Cloud Director Availability | 4.7.1 |
 | Veeam®       | Veeam Backup and Replication | 12.1.1 |
-{: caption="Table 1. BOM for the software components in {{site.data.keyword.vmware-service_short}} instances" caption-side="bottom"}
+{: caption="Table 1. BOM for the software components in {{site.data.keyword.vcf-aas}} instances" caption-side="bottom"}
 
 ## Related links
 {: #vmaas-bom-related}

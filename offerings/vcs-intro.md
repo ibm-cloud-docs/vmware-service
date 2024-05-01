@@ -2,11 +2,11 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-11-08"
+lastupdated: "2024-04-05"
 
-keywords: order vCenter Server instance, vCenter Server instances, vCenter Server order
+keywords: order Automated instance, Automated instances, Automated order
 
 subcollection: vmware-service
 
@@ -15,14 +15,14 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vCenter Server
+# {{site.data.keyword.vcf-auto-short}}
 {: #vcs-intro}
 
-For more information about [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances, see the following topics:
+For more information about [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances, see the following topics:
 
-* [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
-* [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
-* [Adding ESXi servers to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
-* [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Adding clusters to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
+* [Adding ESXi servers to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
+* [Ordering services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

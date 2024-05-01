@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023
-lastupdated: "2023-11-21"
+  years: 2023, 2024
+lastupdated: "2024-04-09"
 
 content-type: tutorial
 services: vmware-service
@@ -12,22 +12,22 @@ completion-time: 30m
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Using OVFTool to import VMs to {{site.data.keyword.vmware-service_short}}
+# Using OVFTool to import VMs to {{site.data.keyword.vcf-aas}}
 {: #vmwaas-ovftool}
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-The {{site.data.keyword.vmware-service_full}} VMware Cloud Director is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director system.
+The {{site.data.keyword.vmware-service-full}} is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director system.
 
 This tutorial provides an overview of using OVFTool to manage virtual appliances on VMware Cloud Director.
 
 ## Objectives
 {: #vmwaas-ovftool-objectives}
 
-The objective of this tutorial is to demonstrate the basic steps to import an OVA image from your on-premises environment into a {{site.data.keyword.vmware-service_short}} single-tenant or multitenant instance after initial provisioning.
+The objective of this tutorial is to demonstrate the basic steps to import an OVA image from your on-premises environment into a {{site.data.keyword.vcf-aas-full}} single-tenant or multitenant instance after initial provisioning.
 
-This tutorial takes approximately 20-30 minutes to complete and assumes that a [{{site.data.keyword.vmware-service_short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering) and [a virtual data center (VDC)](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding) are provisioned.
+This tutorial takes approximately 20-30 minutes to complete and assumes that a [{{site.data.keyword.vcf-aas}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering) and [a virtual data center (VDC)](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding) are provisioned.
 
 In this tutorial, you will learn:
 
@@ -42,9 +42,9 @@ OVFTool is available without charge. You need to create a VMware account to [dow
 This tutorial requires:
 
 * An {{site.data.keyword.cloud_notm}} [billable account](/docs/account?topic=account-accounts).
-* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vmware-service_short}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
-* [A preprovisioned {{site.data.keyword.vmware-service_short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
-* [A preprovisioned VDC on {{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
+* Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vcf-aas}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
+* [A preprovisioned {{site.data.keyword.vcf-aas}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
+* [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
 * An exported VM (virtual machine) to import into a VMware Cloud Director instance in OVA format. For more information, see [Deploy and export OVF and OVA templates](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vm-administration/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html){: external}.
@@ -53,11 +53,11 @@ This tutorial requires:
 {: #vmwaas-ovftool-localuser}
 {: step}
 
-A local user in this tutorial is used to authenticate when you import the OVA into the {{site.data.keyword.vmware-service_short}} instance.
+A local user in this tutorial is used to authenticate when you import the OVA into the {{site.data.keyword.vcf-aas}} instance.
 
 To create a local username and password in VMware Cloud Director, complete the following steps:
 
-1. Log in to the {{site.data.keyword.vmware-service_short}} instance with a user that has the `Organization Administrator` role.
+1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
 2. In the navigation bar, click **Administration**.
 3. In the left pane, under **Access Control**, click **Users**.
 4. Next to the list of users, click **New**.
@@ -102,4 +102,4 @@ Deploying to vCloud vApp: vcloud://local-admin@dirw003.us-east.vmware.cloud.ibm.
 Transfer Completed
 Completed successfully
 ```
-The result is a vApp within the {{site.data.keyword.vmware-service_short}} instance that can be started.
+The result is a vApp within the {{site.data.keyword.vcf-aas}} instance that can be started.

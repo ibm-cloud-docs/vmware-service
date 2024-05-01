@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-02-27"
+lastupdated: "2024-04-30"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -18,21 +18,21 @@ subcollection: vmware-service
 # Adding resource pools
 {: #pvdc-adding-deleting}
 
-You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vmware-service_short}} instance.
+You can scale an {{site.data.keyword.vmware-service-full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vcf-aas-full}} instance.
 
 A resource pool is a boundary of compute, storage, and network resources for hosting virtual data centers (VDCs) to run workloads. VDCs created against a resource pool are bound to use the infrastructure from that resource pool.
 
-Resource pools are used within the {{site.data.keyword.vmware-service_short}} instance to form units of the following components, which are fully isolated between resource pools:
+Resource pools are used within the {{site.data.keyword.vcf-aas}} instance to form units of the following components, which are fully isolated between resource pools:
 * Compute
 * Memory
 * Storage
 
-Each resource pool inherits the following policies from the {{site.data.keyword.vmware-service_short}} instance:
+Each resource pool inherits the following policies from the {{site.data.keyword.vcf-aas}} instance:
 * Networking - Networking can be shared between resource pools.
-* User administration - Users and user policies that are configured for the {{site.data.keyword.vmware-service_short}} instance are shared across all resource pools.
+* User administration - Users and user policies that are configured for the {{site.data.keyword.vcf-aas}} instance are shared across all resource pools.
 * Catalogs - Catalog images and policies also apply across all resource pools in the instance.
 
-Resource pools consist of one or more VMware vCenter Server® clusters. A new vCenter Server cluster is created as part of adding a resource pool to the {{site.data.keyword.vmware-service_short}} instance.
+Resource pools consist of one or more VMware vCenter Server® clusters. A new vCenter Server cluster is created as part of adding a resource pool to the {{site.data.keyword.vcf-aas}} instance.
 
 You can increase or decrease the capacity of your deployment by adding or deleting resource pools to and from an instance. You can also expand capacity by adding more clusters to a resource pool.
 
@@ -47,17 +47,16 @@ A new resource pool is typically created for the following scenarios:
 A resource pool is deleted when the last VDC on the resource pool is deleted.
 {: note}
 
-## Procedure to add resource pools
+## Procedure to add resource pools to {{site.data.keyword.vcf-aas}} instances
 {: #pvdc-adding-deleting-add-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vmware-service_short}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab, then click **Add resource pool**.
 4. On the **Add resource pool** window, specify the settings for the new resource pool.
     1. Specify the resource pool name.
-    2. Optionally enable SAP®-certified server profiles and select the profile type.
-    3. Select the resource pool location.
-    4. Click **Next**.
+    2. Select the resource pool location.
+    3. Click **Next**.
 5. Specify the host details.
     1. Specify the cluster name.
     2. Select the host quantity.
@@ -76,4 +75,4 @@ When you deploy a new resource pool, a cluster is created. Cluster configuration
 {: #pvdc-adding-deleting-links}
 
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
-* [Viewing and deleting {{site.data.keyword.vmware-service_short}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
+* [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)

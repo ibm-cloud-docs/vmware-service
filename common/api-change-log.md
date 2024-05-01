@@ -3,9 +3,9 @@
 copyright:
   years:  2023, 2024
 
-lastupdated: "2024-02-29"
+lastupdated: "2024-04-30"
 
-keywords: change log for VMware as a Service API, updates to VMware as a Service API
+keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
 subcollection: vmware-service
 
@@ -13,15 +13,15 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vmware-service_short}} API change log
+# {{site.data.keyword.vcf-aas}} API change log
 {: #vmware-service-api-change-log}
 
-In this change log, you can learn about the most recent changes, improvements, and updates for the [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
+In this change log, you can learn about the most recent changes, improvements, and updates for the [VMware as a Service API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
 
 ## 15 March 2024
 {: #vmware-service-15-march-2024}
 
-* Added support for enabling and disabling the VMware Cloud Director Availability (VCDA) service for VMware Cloud Director™ sites. For more information, see [Enable or disable Veeam on a Cloud Director site](/apidocs/vmware-service#enable-veeam-on-pvdcs-list).
+* Added support for enabling and disabling the VMware Cloud Director Availability (VCDA) service for VMware Cloud Director sites. For more information, see [Enable or disable Veeam on a Cloud Director site](/apidocs/vmware-service#enable-veeam-on-pvdcs-list).
 * Added support for enabling and disabling the Veeam® service for Cloud Director sites. For more information, see [Enable or disable VCDA on a Cloud Director site](/apidocs/vmware-service#enable-vcda-on-data-center).
 
 ## 9 February 2024
@@ -51,4 +51,4 @@ In this change log, you can learn about the most recent changes, improvements, a
 ## 5 May 2023
 {: #vmware-service-5-may-2023}
 
-REST APIs are now available for all {{site.data.keyword.vmware-service_full}} capabilities. API version 1.0.0 is supported. For more information, see [VMware as a Service API](/apidocs/vmware-service).
+REST APIs are now available for all VMware as a Service capabilities. API version 1.0.0 is supported. For more information, see [VMware as a Service API](/apidocs/vmware-service).

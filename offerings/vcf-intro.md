@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-11-08"
+lastupdated: "2024-04-30"
 
 keywords: order cloud foundation, vmware cloud foundation instances, cloud foundation order, cloud foundation provisioning
 
@@ -15,15 +15,14 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Cloud Foundation
+# {{site.data.keyword.vcf-vpc-short}}
 {: #vcf-intro}
 
-For more information about [VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) instances, see the following topics:
+For more information about [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) instances, see the following topics:
 
-* [Planning for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)
-* [Procedure to order VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-procedure)
-* [Adding ESXi servers to VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-host-adding)
-* [Deleting ESXi servers from VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-host-deleting)
-* [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)
-* [Deleting VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deleting)
-
+* [Planning for {{site.data.keyword.vcf-vpc-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)
+* [Procedure to order {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-procedure)
+* [Adding ESXi servers to {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-host-adding)
+* [Deleting ESXi servers from {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-host-deleting)
+* [Viewing {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)
+* [Deleting {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deleting)

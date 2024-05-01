@@ -2,11 +2,11 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-09-07"
+lastupdated: "2024-04-05"
 
-keywords: order vSphere instance, vSphere instances, vSphere order
+keywords: order Flexible instance, Flexible instances, Flexible order
 
 subcollection: vmware-service
 
@@ -15,15 +15,15 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware vSphere
+# {{site.data.keyword.vcf-flex-short}}
 {: #vss-intro}
 
-For more information about [VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview&interface=ui) instances, see the following topics:
+For more information about [{{site.data.keyword.vcf-flex}}](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview&interface=ui) instances, see the following topics:
 
-* [Planning for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers&interface=ui)
-* [Deleting ESXi servers from VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_removingservers)
-* [Managing licenses for VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_manage_licenses)
-* [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
-* [Deleting VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstance&interface=ui)
+* [Planning for Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Adding ESXi servers to Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers&interface=ui)
+* [Deleting ESXi servers from Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_removingservers)
+* [Managing licenses for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_manage_licenses)
+* [Viewing Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
+* [Deleting Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstance&interface=ui)
