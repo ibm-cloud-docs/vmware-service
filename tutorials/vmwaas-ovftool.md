@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-09"
+lastupdated: "2024-05-13"
 
 content-type: tutorial
 services: vmware-service
@@ -37,7 +37,7 @@ In this tutorial, you will learn:
 ## Before you begin
 {: #vmwaas-ovftool-prereqs}
 
-OVFTool is available without charge. You need to create a VMware account to [download OVFTool](https://customerconnect.vmware.com/downloads/get-download?downloadGroup=OVFTOOL460){: external}.
+OVFTool is available without charge. You need to create a VMware account to [download OVFTool](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){: external}.
 
 This tutorial requires:
 
@@ -71,7 +71,7 @@ To create a local username and password in VMware Cloud Director, complete the f
 
 To upload an OVA image into a VDC, complete the following steps:
 
-1. Install [OVFTool](https://customerconnect.vmware.com/downloads/get-download?downloadGroup=OVFTOOL460){: external} on your local computer.
+1. Install [OVFTool](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){: external} on your local computer.
 2. To upload a VM image into a vDC, use the following command. After upload, the VM image appears in a vApp and is ready for configuration.
 
 ```bash

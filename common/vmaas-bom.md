@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-05-13"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
@@ -37,6 +37,6 @@ The following table details the current component versions for new instance orde
 ## Related links
 {: #vmaas-bom-related}
 
-* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://kb.vmware.com/s/article/2143832){: external}
-* [Build numbers and versions of VMware vCenter Server (2143838)](https://kb.vmware.com/s/article/2143838){: external}
+* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
+* [Build numbers and versions of VMware vCenter Server (2143838)](https://knowledge.broadcom.com/external/article?legacyId=2143838){: external}
 * [Veeam Backup & Replication 12](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
