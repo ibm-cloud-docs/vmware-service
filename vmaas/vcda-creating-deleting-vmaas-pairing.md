@@ -26,7 +26,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 ## Procedure to create a {{site.data.keyword.vcf-aas}} pairing
 {: #vcda-creating-deleting-vmaas-pairing-proc-add}
 
-<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane. {: #step-1}
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name.

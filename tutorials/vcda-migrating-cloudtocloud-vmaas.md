@@ -47,7 +47,7 @@ This tutorial requires:
 ## Create a pairing between {{site.data.keyword.vcf-aas}} instances
 {: #vcda-migrating-cloudtocloud-vmaas-pairing}
 
-<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 
 1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant source instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc). {: #step-1}
 1. Install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant destination instance.
@@ -87,7 +87,7 @@ The following pairing status options are available.
 ## Migrate your virtual machine through the {{site.data.keyword.vcf-aas}} pairing
 {: #vcda-migrating-cloudtocloud-migrate-pairing}
 
-<!-- The {: #step-2} tag and the ordered list that has only 2s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 
 2. From the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
 2. Click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.

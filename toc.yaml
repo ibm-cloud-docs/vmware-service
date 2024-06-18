@@ -1,4 +1,3 @@
-
 ---
 toc:
   properties:
@@ -11,7 +10,6 @@ toc:
     product-page: https://www.ibm.com/products/vmware/managed-services
     path: vmware-service
     label: VMware Cloud Foundation as a Service
-
   entries:
   - navgroup:
       id: learn
@@ -21,7 +19,6 @@ toc:
       - common/vmaas-bom.md
       - topic: common/release-notes.md
         navtitle: Release notes
-
   - navgroup:
       id: tutorial
       topics:
@@ -41,7 +38,6 @@ toc:
             - tutorials/vcda-migrating-onprem.md
             - tutorials/vcda-migrating-cloudtocloud-shared.md
             - tutorials/vcda-migrating-cloudtocloud-vmaas.md
-
   - navgroup:
       id: howto
       topics:
@@ -113,7 +109,6 @@ toc:
           - common/single-tenant-monitoring.md
           - common/vmaas-data-security.md
           - common/vmaas-at-events.md
-
   - navgroup:
       id: reference
       topics:
@@ -136,7 +131,6 @@ toc:
               label: VCF as a Service architecture patterns
               topics:
               - archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
-
   - navgroup:
       id: help
       topics:
