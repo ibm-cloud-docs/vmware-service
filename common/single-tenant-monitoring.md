@@ -57,7 +57,7 @@ Use the `VMware Single-Tenant Site` dashboard to monitor {{site.data.keyword.vcf
 ### Multitenant dashboards
 {: #single-tenant-monitoring-dashboards-mt}
 
-Use the `{{site.data.keyword.vmware-service-short}} - Director Site` and `{{site.data.keyword.vmware-service-short}} - Virtual Data Center` dashboards to monitor {{site.data.keyword.vcf-aas}} multitenant metrics.
+Use the `{{site.data.keyword.vmware-service_short}} - Director Site` and `{{site.data.keyword.vmware-service_short}} - Virtual Data Center` dashboards to monitor {{site.data.keyword.vcf-aas}} multitenant metrics.
 
 ## Single-tenant metrics
 {: #single-tenant-monitoring-metrics}

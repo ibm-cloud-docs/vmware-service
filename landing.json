@@ -1,6 +1,6 @@
 {
     "title": "VMware Cloud Foundation as a Service docs",
-    "lastupdated": "2024-05-01",
+    "lastupdated": "2024-06-14",
     "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -47,6 +47,11 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "14 June 2024",
+          "title": "Private network connection availability for virtual data center orders",
+          "description": "You can now select either a public and private network connection or a private-only network connection when you create your virtual data center with a network edge."
+        },
+        {
           "date": "1 May 2024",
           "title": "New host profiles for NFS and vSAN clusters",
           "description": "Additional bare metal server configurations are available for new and existing VCF as a Service Cloud Director site orders."
@@ -55,11 +60,6 @@
           "date": "1 April 2024",
           "title": "Updated packaging and pricing for VMware Solutions offerings",
           "description": "IBM Cloud is changing its IBM Cloud for VMware Solutions portfolio and pricing, in response to the changes to the packaging and pricing of the VMware portfolio, announced by Broadcom. These changes will be effective on 1 May 2024."
-        },
-        {
-          "date": "15 March 2024",
-          "title": "REST API updates",
-          "description": "The VMware as a Service API is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director site."
         }
       ]
     }

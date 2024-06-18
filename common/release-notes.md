@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-06-14"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -18,11 +18,35 @@ content-type: release-note
 # Release notes for {{site.data.keyword.vcf-aas}}
 {: #vmware-service-relnotes}
 
-Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service-full}}, including new features, component updates, usability enhancements, and bug fixes.
+Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
 ## 2024
 {: #vmware-service-year-2024}
+
+### 14 June 2024
+{: #vmware-service-jun2024}
+{: release-note}
+
+Private network connection availability for virtual data center orders
+: You can now select either a public and private network connection or a private-only network connection when you create your virtual data center with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
+
+Scale-out Backup Repository for Veeam Backup and Replication
+: The Veeam® Backup and Replication service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+
+VMware Operations Manager availability
+:   You can now access the Operations Manager service through the VMware Cloud Director™ tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
+
+Software currency
+:   This release provides the following infrastructure upgrades.
+
+   * VMware ESXi™ 7.0 Update 3q
+   * VMware vCenter Server® Appliance 8.0 Update 2c
+   * VMware NSX-T™ 4.1.2.4
+   * Veeam Backup and Replication 12.1.2
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-14-june-2024).
 
 ### 1 May 2024
 {: #vmware-service-may2024}
@@ -31,7 +55,7 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 Updated offerings for VMware Solutions
 :   Existing {{site.data.keyword.vmwaresolutions_short}} offerings are no longer available as separate components and are replaced by VMware Cloud Foundation. The following offering name changes are available across the portfolio, including the documentation and REST API.
 
-   * VMware as a Service is now called **{{site.data.keyword.vmware-service-short}}** or **{{site.data.keyword.vcf-aas}}**.
+   * VMware as a Service is now called **{{site.data.keyword.vmware-service_short}}** or **{{site.data.keyword.vcf-aas}}**.
    * VMware vCenter Server, VMware vSphere, Cyber Recovery, and Regulated Workloads are merged into **{{site.data.keyword.vcf-classic}}** or **{{site.data.keyword.vcf-classic-short}}**.
    * VMware Cloud Foundation is now called **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}**.
 
@@ -44,7 +68,7 @@ Software currency
 :   This release provides the following infrastructure upgrades.
 
    * VMware Cloud Director 10.5.1.1
-   * VMware vCenter Server® Appliance 8.0 Update 2b (00200)
+   * VMware vCenter Server Appliance 8.0 Update 2b (00200)
    * VMware Cloud Director Availability 4.7.1
 
 New host profiles for NFS and vSAN clusters
@@ -73,9 +97,9 @@ Updated pricing structure for RHEL for VMware as a Service
 Software currency
 :   This release provides the following infrastructure upgrades.
 
-   * VMware ESXi™ 7.0 Update 3p (23307199)
+   * VMware ESXi 7.0 Update 3p (23307199)
    * VMware vCenter Server® Appliance 7.0 Update 3p (01800)
-   * Veeam® Backup and Replication 12.1.1
+   * Veeam Backup and Replication 12.1.1
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
@@ -173,6 +197,10 @@ User interface updates and enhancements
 IBM Cloud data center availability
 :   VMware as a Service expands global presence and now supports the **Washington DC** region to host your provider virtual data center. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
+SAP-certified provider virtual data centers
+:   VMware as a Service now supports SAP® workloads that use the new SAP bare metal server profiles. You can reliably run your mission-critical SAP workloads and scenarios on a scalable, compliant, and enterprise-proven VMware® by Broadcom platform.
+ For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 vSAN host profile updates
 :   The Dual Intel 8260 Xeon host profile (2 Sockets - 48 Cores, 768 GB RAM) with 46 TB of vSAN usable capacity is now available for Cloud Director sites.
 
@@ -219,7 +247,7 @@ Fast provisioning for virtual machines
 :   Fast provisioning for virtual machines is now available for your virtual data centers. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 VMware currency
-:   This release provides infrastructure upgrades to VMware NSX-T™ 4.1 and VMware ESXi 7.0U3L.
+:   This release provides infrastructure upgrades to VMware NSX-T 4.1 and VMware ESXi 7.0U3L.
 
 User interface updates and enhancements
 :   You can check the prices for VMware as a Service without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.

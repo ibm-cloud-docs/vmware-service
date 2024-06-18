@@ -22,7 +22,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service-full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
+You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
 
 ![Migrate workloads from any Self-Managed vCenter to {{site.data.keyword.vcf-aas}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
@@ -56,7 +56,7 @@ Before you configure public or private endpoints, you must install VCDA on-premi
 The following steps outline a validated process. Many different configurations work.
 {: note}
 
-1. From VMware Customer Connect, download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
+1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
 
    Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. For more information, see [VMware Cloud Director Availability 4.7.1 Provider Appliance](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN). {: external}
    {: note}

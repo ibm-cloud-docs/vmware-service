@@ -17,7 +17,7 @@ subcollection: vmware-service
 # General FAQ about {{site.data.keyword.vcf-aas}}
 {: #faq-general}
 
-Find answers to frequently asked questions about {{site.data.keyword.vmware-service-full}}.
+Find answers to frequently asked questions about {{site.data.keyword.vmware-service_full}}.
 
 ## What user accounts do I need for {{site.data.keyword.vcf-aas}}?
 {: #faq-general-user-accts}

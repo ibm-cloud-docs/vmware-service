@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-05-31"
 
 keywords: activity tracker, event, vmware virtual data center events, vmware site management events, view events
 
@@ -18,21 +18,23 @@ subcollection: vmware-service
 # Auditing events for {{site.data.keyword.vcf-aas}}
 {: #vmaas-at-events}
 
-Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.vmware-service-full}} in {{site.data.keyword.cloud_notm}}.
+Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.vmware-service_full}} in {{site.data.keyword.cloud_notm}}.
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate for abnormal activity and critical actions, and comply with regulatory audit requirements. In addition, you can be alerted on actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see [Getting started with {{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
 ## Events that are related to virtual data centers
 {: #vmaas-at-events-vdc}
 
-Events are generated to track how users and applications interact with virtual data centers. The following table lists the actions that generate and send events to {{site.data.keyword.at_short}}.
+Events are generated to track how users and applications interact with virtual data centers (VDCs). The following table lists the actions that generate and send events to {{site.data.keyword.at_short}}.
 
 | Action | Description |
 |:------ |:----------- |
-| `vmware.vdc.create` | An event is generated when a virtual data center instance is created. |
-| `vmware.vdc.delete` | An event is generated when a virtual data center instance is deleted. |
-| `vmware.vdc.update` | An event is generated when a virtual data center instance is modified. |
-{: caption="Table 1. Description of actions that generate events related to virtual data centers" caption-side="bottom"}
+| `vmware.vdc.create` | An event is generated when a VDC instance is created. |
+| `vmware.vdc.delete` | An event is generated when a VDC instance is deleted. |
+| `vmware.vdc.update` | An event is generated when a VDC instance is modified. |
+| `vmware.sharedsite.create` | An event is generated when the VMware Cloud Director site creates a VDC on the multitenant site for the first time. |
+| `vmware.sharedsite.delete` | An event is generated when the VMware Cloud Director site deletes a VDC on the multitenant site. |
+{: caption="Table 1. Description of actions that generate events related to VDCs" caption-side="bottom"}
 
 ## Events that are related to director site management
 {: #vmaas-at-events-director-site}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-05-03"
 
 keywords: view vcda details
 
@@ -18,13 +18,13 @@ subcollection: vmware-service
 # Viewing migration details
 {: #vcda-viewing}
 
-View the summary and detailed information for migrating your virtual machines (VMs) to {{site.data.keyword.vmware-service-full}} with VMware Cloud Director Availability (VCDA).
+View the summary and detailed information for migrating your virtual machines (VMs) to {{site.data.keyword.vmware-service_full}} with VMware Cloud Director Availability (VCDA).
 
 ## Procedure to view a summary of VMware Cloud Director Availability details
 {: #vcda-viewing-summary}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click a single-tenant or multitenant instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant or multitenant instance name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. Review the VCDA configuration and summary details.
 

@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM}} and the customer, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vmware-service-notm}}, see [Understanding your responsibilities when using {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
+For more information about your responsibilities when using {{site.data.keyword.vmware-service_notm}}, see [Understanding your responsibilities when using {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
 
 ## Disaster recovery strategy
 {: #bc-dr-strategy}

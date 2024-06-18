@@ -18,7 +18,7 @@ subcollection: vmware-service
 # VMware Shared - deprecated
 {: #shared-intro}
 
-VMware Shared is no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service-full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+VMware Shared is no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 For more information about [VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) instances, see the following topics:

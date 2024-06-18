@@ -17,7 +17,7 @@ subcollection: vmware-service
 # Managing Veeam for {{site.data.keyword.vcf-aas}}
 {: #tenant-veeam}
 
-The Veeam® Backup and Replication service is available and ready to use in your {{site.data.keyword.vmware-service-full}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
+The Veeam® Backup and Replication service is available and ready to use in your {{site.data.keyword.vmware-service_full}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
 Service charges are incurred only if you choose to include the service in your order.
 

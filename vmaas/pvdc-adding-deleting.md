@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-23"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding resource pools
 {: #pvdc-adding-deleting}
 
-You can scale an {{site.data.keyword.vmware-service-full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vcf-aas-full}} instance.
+You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vcf-aas-full}} instance.
 
 A resource pool is a boundary of compute, storage, and network resources for hosting virtual data centers (VDCs) to run workloads. VDCs created against a resource pool are bound to use the infrastructure from that resource pool.
 
@@ -51,12 +51,13 @@ A resource pool is deleted when the last VDC on the resource pool is deleted.
 {: #pvdc-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab, then click **Add resource pool**.
 4. On the **Add resource pool** window, specify the settings for the new resource pool.
     1. Specify the resource pool name.
-    2. Select the resource pool location.
-    3. Click **Next**.
+    2. Optionally enable SAP®-certified server profiles and select the profile type.
+    3. Select the resource pool location.
+    4. Click **Next**.
 5. Specify the host details.
     1. Specify the cluster name.
     2. Select the host quantity.

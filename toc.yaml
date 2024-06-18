@@ -71,6 +71,7 @@ toc:
               topics:
               - vmaas/tenant-viewing-sites.md
               - vmaas/tenant-viewing-vdc.md
+          - common/vcd-ops-guide.md
           - topicgroup:
               label: Accessing VCF as a Service instances
               topics:
@@ -82,6 +83,7 @@ toc:
               topics:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
+              - vmaas/veeam-dedicated-sobr.md
           - topicgroup:
               label: Migrating VMs to VCF as a Service instances
               topics:

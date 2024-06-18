@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-05-13"
+lastupdated: "2024-04-09"
 
 content-type: tutorial
 services: vmware-service
@@ -18,7 +18,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-The {{site.data.keyword.vmware-service-full}} is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director system.
+The {{site.data.keyword.vmware-service_full}} is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director system.
 
 This tutorial provides an overview of using OVFTool to manage virtual appliances on VMware Cloud Director.
 

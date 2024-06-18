@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 Deliver simple, secure, and cost-effective onboarding and migration support with VMware Cloud Director Availability (VCDA).
 
-{{site.data.keyword.vmware-service-full}} with VCDA supports several migration scenarios:
+{{site.data.keyword.vmware-service_full}} with VCDA supports several migration scenarios:
 * Migrate vCenter virtual machine (VM) workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network.
 * Migrate workloads from VMware Shared to {{site.data.keyword.vcf-aas}}.
 * Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-05"
+lastupdated: "2024-06-13"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Ordering virtual data center instances
 {: #vdc-adding}
 
-With {{site.data.keyword.vmware-service-full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
+With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
 For single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 64 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
 
@@ -28,6 +28,19 @@ You can deploy VDCs only to an existing Cloud Director site. Therefore, you must
 For {{site.data.keyword.vcf-aas-full}} multitenant, you start by creating the multitenant VDC. A {{site.data.keyword.vcf-aas}} multitenant site is created automatically when you create the first multitenant VDC in a region. All multitenant VDCs that you create in a region are associated with the same site. User access to the multitenant VDCs within the Cloud account is controlled through IAM policies against the site. 
 
 For multitenant instances, the minimum instance configuration consists of one vCPU and 1 GB RAM.
+
+## Billing details
+{: #vdc-adding-billing}
+
+| Feature         | Billing model      |
+|:----------------|:-------------------|
+| Multitenant \n **On-demand** vCPU | - vCPU is billed hourly. \n -  vCPU quantity is for all vCPU allocated to all running VMs in the VDC at any time per hour. \n - When a VM is stopped it is not counted in the total vCPU calculation. For example, if two running VMs both have 4 vCPU, then a third VM is started at 4 vCPU. The vCPU for the one hour period is 12 vCPU. |
+| Multitenant \n **On-demand** RAM | - RAM is billed hourly. \n - RAM quantity is for all RAM allocated to all running VMs in the VDC at any given time per hour. \n -  When a VM is stopped it is not counted in the total RAM calculation. For example, if there are two running VMs that both have 16 GB RAM, then a third VM is started also at 16 GB RAM. The RAM for that one hour period is 48 GB. |
+| Multitenant \n **Reserved** vCPU   | - vCPU is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased then decreased again, the high water mark vCPU capacity reservation is charged for that month. |
+| Multitenant \n **Reserved** RAM | - RAM is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased then decreased again, the high water mark RAM capacity reservation is charged for that month. |
+| Multitenant shared storage | - Shared storage is billed hourly. \n - Storage quantity includes all storage allocated per VM, even if the VM is stopped, and all VM snapshots. \n - Storage usage increases with new VMs and snapshots and decreases when VMs and snapshots are removed. |
+| Multitenant edges | - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. |
+{: caption="Table 1. Billing details" caption-side="bottom"}
 
 ## Virtual data center name
 {: #vdc-adding-vdc-name}
@@ -42,27 +55,31 @@ You can also specify a VDC name that meets the following requirements:
 ## Procedure to order {{site.data.keyword.vcf-aas}} single-tenant virtual data centers
 {: #vdc-adding-procedure-st}
 
-1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service-short}}** card.
-2. On the **{{site.data.keyword.vmware-service-short}}** page, select the **Single-tenant Virtual data center** card.
+1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **Single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 5. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
 6. Optionally toggle fast provisioning of virtual machines (VMs) on.
 7. Review your options for a network edge:
-   * To order a network edge, ensure that the toggle for **Create with network edge** is on and specify the edge type. Edge storage costs might occur.
+   * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
+      1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
+      2. Specify the edge type. Edge storage costs might occur.
    * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
-9. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
+8. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
 
 ## Procedure to order {{site.data.keyword.vcf-aas}} multitenant virtual data centers
 {: #vdc-adding-procedure-mt}
 
-1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service-short}}** card.
-2. On the **{{site.data.keyword.vmware-service-short}}** page, select the **Multitenant Virtual data center** card.
+1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **Multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Select the pricing plan according to your consumption needs.
 5. Select the region of the Cloud Director site, the Cloud Director instance, and data center. The instance and data center names are filtered based on the region setting.
 6. Optionally toggle fast provisioning of VMs on.
 7. Review your options for a network edge:
-   * To order a network edge, ensure that the toggle for **Create with network edge** is on and specify the edge type. Edge storage costs might occur.
+   * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
+      1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
+      2. Specify the edge type. Edge storage costs might occur.
    * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
 8. Select resource allocations according to your pricing plan.
    * For on-demand, optionally enable consumption limits. Then, select the vCPU and RAM limits. Toggle the consumption limit option off if you do not want to set limits. Limits define the ceiling on the maximum amount of vCPU and RAM that can be used by the multitenant VDC.

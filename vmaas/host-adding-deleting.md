@@ -24,7 +24,7 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 {: #host-adding-deleting-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, click a cluster name to expand its details.
 5. Click **Edit host quantity**.

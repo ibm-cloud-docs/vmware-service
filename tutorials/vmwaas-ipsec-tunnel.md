@@ -41,7 +41,7 @@ This tutorial might incur costs. Use the [Cost estimator](https://cloud.ibm.com/
 ## Objectives
 {: #vmwaas-ipsec-tunnel-objectives}
 
-The objective of this tutorial is to demonstrate the basic steps of connecting an {{site.data.keyword.vmware-service-full}} single-tenant or multitenant instance with Juniper® vSRX. The connection happens through a Virtual Private Network (VPN). vSRX can either be deployed in the {{site.data.keyword.cloud_notm}} Classic Infrastructure or in a client data center. The following steps create a basic working environment, providing a VPN, a basic firewall implementation, and end-to-end network connectivity.
+The objective of this tutorial is to demonstrate the basic steps of connecting an {{site.data.keyword.vmware-service_full}} single-tenant or multitenant instance with Juniper® vSRX. The connection happens through a Virtual Private Network (VPN). vSRX can either be deployed in the {{site.data.keyword.cloud_notm}} Classic Infrastructure or in a client data center. The following steps create a basic working environment, providing a VPN, a basic firewall implementation, and end-to-end network connectivity.
 
 In this tutorial, you will learn:
 

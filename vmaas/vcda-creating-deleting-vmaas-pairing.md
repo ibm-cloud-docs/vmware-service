@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-05-03"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Creating and deleting {{site.data.keyword.vcf-aas}} pairings
 {: #vcda-creating-deleting-vmaas-pairing}
 
-When VMware Cloud Director Availability (VCDA) is enabled, you can create cloud-to-cloud connections between your instance and other single-tenant and multitenant {{site.data.keyword.vmware-service-full}} instances. You must create a pairing from both Cloud Director sites to connect.
+When VMware Cloud Director Availability (VCDA) is enabled, you can create cloud-to-cloud connections between your instance and other single-tenant and multitenant {{site.data.keyword.vmware-service_full}} instances. You must create a pairing from both Cloud Director sites to connect.
 
 VMware Shared pairings are automatically created when you install VCDA on a {{site.data.keyword.vcf-aas-full}} instance. For more information, see [Migrating VMware Shared workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-shared).
 {: note}
@@ -29,7 +29,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane. {: #step-1}
-1. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click an instance name.
+1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 1. On the **Create connection** panel, complete the following configuration.
@@ -43,7 +43,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
    When the **Waiting for peer pairing status** displays, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-1. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click an instance name to pair with the first pairing.
+1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name to pair with the first pairing.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 1. On the **Create connection** panel, complete the following configuration.
@@ -66,7 +66,7 @@ The following pairing status options are available.
 {: #vcda-creating-deleting-vmaas-pairing-proc-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click an instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. On the **{{site.data.keyword.vcf-aas}} pairings** tab, locate the pairing to delete.
 5. Click the overflow menu and click **Delete pairing**.

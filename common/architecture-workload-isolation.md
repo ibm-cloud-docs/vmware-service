@@ -17,7 +17,7 @@ keywords: public isolation for vmware service, compute isolation for vmware serv
 # Learning about {{site.data.keyword.vcf-aas}} architecture and workload isolation
 {: #architecture-workload-isolation-learning}
 
-The {{site.data.keyword.vmware-service-full}} architecture is based on the following logical entities that are created per supported cloud region.
+The {{site.data.keyword.vmware-service_full}} architecture is based on the following logical entities that are created per supported cloud region.
 
 * Management domain - Hosts the {{site.data.keyword.IBM}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
 * Customer workload domain - Hosts single-tenant and multitenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer-deployed networking and workloads.

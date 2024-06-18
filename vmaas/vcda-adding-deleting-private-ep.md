@@ -24,7 +24,7 @@ Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.
 {: #vcda-adding-deleting-private-ep-proc-add}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click a Cloud Director site instance.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a Cloud Director site instance.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. On the **Instance endpoints** tab, click **Add private endpoint +**.
 5. On the **Request instance endpoint** panel, select the zone and enter the subnets to allowlist for access to the private endpoint.
@@ -34,7 +34,7 @@ Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.
 {: #vcda-adding-deleting-private-ep-proc-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click a Cloud Director site instance.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a Cloud Director site instance.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. On the **Instance endpoints** tab, locate the private instance endpoint to delete.
 5. Click the overflow menu and click **Delete endpoint**.

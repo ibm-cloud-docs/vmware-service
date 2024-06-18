@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-03"
 
 content-type: tutorial
 services: vmware-service
@@ -19,7 +19,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-VMware Shared is no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service-full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+VMware Shared is no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 You can use VMware Cloud Director Availability (VCDA) to migrate your workloads from a {{site.data.keyword.vmwaresolutions_full}} Shared virtual data center (VDC) to {{site.data.keyword.vcf-aas-full}}. Find out how to migrate vAPP and virtual machine (VM) workloads in the following video.
@@ -85,7 +85,7 @@ This tutorial requires:
 {: #vcda-migrating-cloudtocloud-shared-migrate-pairing}
 {: step}
 
-1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service-short}} instance with VCDA installed and click **VMware console**.
+1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service_short}} instance with VCDA installed and click **VMware console**.
 2. From the VMware console, click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.
 3. From the left panel, click **Peer Sites** to review the VMware Shared peer site options.
 4. Select the peer site for the VMware Shared workload to migrate and click **LOGIN**. The peer site name is the VMware Shared organization. To find the VMWare Shared organization name, log in to the Cloud Director user interface in VMware Shared and click a VDC. At the top of the web page, you can find the organization ID.

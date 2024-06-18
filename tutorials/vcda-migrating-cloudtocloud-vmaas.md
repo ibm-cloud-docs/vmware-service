@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-03"
 
 content-type: tutorial
 services: vmware-service
@@ -19,7 +19,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service-full}} instances. Find out how to migrate VMware® by Broadcom virtual machine (VM) workloads across {{site.data.keyword.vcf-aas-full}} environments in the following video.
+You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service_full}} instances. Find out how to migrate VMware® by Broadcom virtual machine (VM) workloads across {{site.data.keyword.vcf-aas-full}} environments in the following video.
 
 ![Migrate workloads within {{site.data.keyword.vcf-aas}} environments](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vdo0bb3k?wid=_1773841&iframeembed=true&entry_id=1_vdo0bb3k){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
@@ -63,7 +63,7 @@ This tutorial requires:
 
 1. Click **Create pairing**. The **Creating** status is displayed. When the **Waiting for peer pairing status** is displayed, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-1. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name to pair with the first pairing.
+1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name to pair with the first pairing.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 

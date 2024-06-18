@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Roles and permissions for VMware Cloud Director
 {: #vmaas-iam_vcd}
 
-The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service-full}}.
+The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director™.
 * **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.

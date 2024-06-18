@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-04-19"
+lastupdated: "2024-05-03"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services
 {: #tgw-adding-connections}
 
-Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service-notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
+Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service_notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
 
 {{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource in the same region as your {{site.data.keyword.vcf-aas-full}} Cloud Director site. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
 
@@ -49,7 +49,7 @@ You must create the {{site.data.keyword.tg_short}} in the same region as the Clo
 
 1. Add a connection group to your VDC.
    1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-   2. In the **{{site.data.keyword.vmware-service-short}}** table, click the **Virtual data center** tab, then click an instance name.
+   2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click an instance name.
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
    5. In the **Add connection group** panel, enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID on the {{site.data.keyword.tg_short}} details page on the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).

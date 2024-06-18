@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-23"
 
 keywords: vmware getting started, vmware offerings, vmware service, vmware use cases
 
@@ -23,7 +23,7 @@ completion-time: 20m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="20m"}
 
-In this {{site.data.keyword.vmware-service-full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
+In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
 {: shortdesc}
 
 The completion time that is listed for this tutorial considers only the time that you spend ordering the artifacts for a {{site.data.keyword.vcf-aas}} instance on the user interface. It does not consider waiting times for deployments, for example.
@@ -63,11 +63,11 @@ The VMware Solutions console is the user interface where you order and manage yo
 {: #getting-started-step2}
 {: step}
 
-Before you order an instance, consider the size of the VMware® by Broadcom deployment required.
+Before you order an instance, consider the required size of the VMware® deployment.
 
 VMware deployments are sized based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. VMware deployments are elastic and you can resize them at any time.
 
-After the basic size of the VMware environment is established, consider the {{site.data.keyword.vcf-aas}} deployment type of multitenant or single-tenant instance.
+After the basic size of the VMware environment is established, consider the {{site.data.keyword.vcf-aas}} deployment type of multitenant or single-tenant instance as well as the configuration options for the instance.
 
 For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 
@@ -81,16 +81,19 @@ For single-tenant instances, the following configurations are used to order a ne
 
 * Cloud Director site name and resource group
 * Cloud Director site location (geography and region)
-* Resourc pool name and location
+* Resource pool name and location
+* Optional SAP-certified server profiles
 * Cluster name
 * Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
 * Host profile and quantity
 * Public-only or private-only network settings
 * Add-on services
 
-For multitenant instances, the following configurations are used to order a new virtual data center that deploys on an existing {{site.data.keyword.IBM_notm}} owned VMware cluster.
+After the dedicated Cloud Director site is in **Available** status, you create virtual data centers (VDCs) to deploy on the infrastructure.
 
-* Virtual data center name and resource group
+For multitenant instances, the following configurations are used to order a new VDC that deploys on an existing {{site.data.keyword.IBM_notm}} owned VMware cluster.
+
+* VDC name and resource group
 * Pricing plan for on-demand or reserved resource allocation
 * VMware Cloud Director™ site location (region, Cloud Director instance, data center)
 * Optional fast provisioning of virtual machines that use linked clones

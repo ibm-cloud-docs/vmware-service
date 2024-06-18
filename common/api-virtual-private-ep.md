@@ -16,7 +16,7 @@ subcollection: vmware-service
 # Using a Virtual Private Endpoint
 {: #virtual-private-endpoints}
 
-After you created your {{site.data.keyword.cloud}} Virtual Private Cloud (VPC) and you want to connect to {{site.data.keyword.vmware-service-notm}} APIs to create or manage your instance, you can create a Virtual Private Endpoint (VPE) in your VPC to access {{site.data.keyword.vcf-aas-full}} APIs within your VPC network.
+After you created your {{site.data.keyword.cloud}} Virtual Private Cloud (VPC) and you want to connect to {{site.data.keyword.vmware-service_notm}} APIs to create or manage your instance, you can create a Virtual Private Endpoint (VPE) in your VPC to access {{site.data.keyword.vcf-aas-full}} APIs within your VPC network.
 {: shortdesc}
 
 You can configure the VPE to use the IP addresses of your choice from a subnet within your VPC. VPEs are bound to a [VPE gateway](/docs/vpc?topic=vpc-about-vpe) and serve as an intermediary that enables your workload to interact with {{site.data.keyword.vcf-aas}}.

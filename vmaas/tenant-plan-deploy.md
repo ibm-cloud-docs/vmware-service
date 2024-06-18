@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-06-13"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -17,33 +17,39 @@ subcollection: vmware-service
 # Planning the deployment
 {: #tenant-plan-deploy}
 
-Before you order an {{site.data.keyword.vmware-service-full}} instance, ensure that you plan your deployment.
+Review the following considerations to plan your {{site.data.keyword.vmware-service_full}} instance deployment.
+
+Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.5&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
+{: note}
 
 ## VMware deployment size
 {: #tenant-plan-deploy-vmware-depl}
 
-Consider the size of the VMware® by Broadcom deployment required.
+Consider the size of the VMware® deployment required.
 
-VMware by Broadcom deployments sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware by Broadcom deployment at any time.
+VMware deployment sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
 
 ## {{site.data.keyword.vcf-aas}} type
 {: #tenant-plan-deploy-type}
 
 Consider your instance type.
 
-Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMWare by Broadcom workloads. The single-tenant option provides the highest level of isolation and consistency.
+Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMWare workloads. The single-tenant option provides the highest level of isolation and consistency.
 
 ### {{site.data.keyword.vcf-aas}} single-tenant
 {: #tenant-plan-deploy-type-st}
 
-For a dedicated infrastructure and built to order VMware by Broadcom environment, create a single-tenant Cloud Director site. After you create a Cloud Director site, deploy virtual data centers (VDCs) with monthly charges for the dedicated VMware by Broadcom infrastructure components.
+For a dedicated infrastructure and built to order VMware environment, create a single-tenant Cloud Director site. After you create a Cloud Director site, deploy virtual data centers (VDCs) with monthly charges for the dedicated VMware infrastructure components.
 
 ### {{site.data.keyword.vcf-aas}} multitenant
 {: #tenant-plan-deploy-type-mt}
 
-For a flexible, pay-as-you-go VMware by Broadcom environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the Cloud Director VDC.
+For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the Cloud Director VDC.
 
 On-demand and reserved pricing plans are available for multitenant instances.
+
+Some data centers are restricted to a specific pricing plan.
+{: restriction}
 
 #### On-demand
 {: #tenant-plan-deploy-type-mt-ondemand}
@@ -98,6 +104,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 A resource pool combines compute, memory, and storage resources, and consist of one or more clusters. For more information, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
+You can optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+
 ## Profile storage type
 {: #tenant-plan-deploy-storage}
 
@@ -105,7 +113,7 @@ For single-tenant Cloud Director sites, you can select NFS only storage or vSAN�
 
 NFS only clusters do not have local flash storage and cannot be configured for vSAN.
 
-vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This is a high-performance and high-resilience policy, and it requires at least 7 hosts. vSAN clusters can also use NFS storage.
+vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This policy is high-performance and high-resilience and requires at least seven hosts. vSAN clusters can also use NFS storage.
 
 If you want to save storage space, you can enable vSAN deduplication and compression to reduce redundant data within each disk group. This option can increase overall storage space based on the data type.
 
@@ -115,17 +123,17 @@ The vSAN deduplication and compression option is available for enablement only w
 ## Host profile
 {: #tenant-plan-deploy-host}
 
-{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware by Broadcom VMs and workload you plan to run on {{site.data.keyword.vcf-aas}}.
+{{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vcf-aas}}.
 
-* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare by Broadcom environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare by Broadcom environment, including the VM CPU, RAM, and storage sizes.
-* For new VMWare by Broadcom workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
+* For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
 After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
 
 {{site.data.keyword.vcf-aas}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
 {: note}
 
-Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware by Broadcom deployment into the total host count calculation.
+Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware deployment into the total host count calculation.
 
 ### Bare metal server options
 {: #tenant-plan-deploy-host-bms-req}
@@ -177,45 +185,38 @@ For single-tenant Cloud Director sites, you can select from the following storag
 For NFS only storage, you must select at least one unit of 2 IOPS/GB or higher.
 {: requirement}
 
-## Network settings
-{: #tenant-plan-deploy-network}
-
-You can select public-only or private-only access for your management and workload connectivity.
-
-Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup and Replication service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network by using the {{site.data.keyword.cloud_notm}} virtual private network (VPN) or through Direct Link connections. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
-
-Workload connectivity determines how you connect to your {{site.data.keyword.vcf-aas}} virtual machines (VMs) and vApps. When you select private-only workload connectivity for your Cloud Director site, all VDCs deployed in that site are private-only workloads. These VDCs do not have an incoming or outgoing connectivity path to the public internet and can access {{site.data.keyword.cloud_notm}} Services only over the private {{site.data.keyword.IBM_notm}} network. You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
-
-## Services for {{site.data.keyword.vcf-aas}}
-{: #tenant-plan-deploy-services}
-
-The following add-on services are optionally available for {{site.data.keyword.vcf-aas}} Cloud Director site instances.
-
-### Veeam Backup and Replication
-{: #tenant-plan-deploy-services-veeam}
-
-For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
-
-For multitenant instances, the Veeam Backup and Replication service is deployed on the Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you provision VDC. Service charges are incurred only if you choose to install the service.
-
-### VMware Cloud Director Availability
-{: #tenant-plan-deploy-services-vcda}
-
-The VMware Cloud Director Availability (VCDA) service is optionally included at no charge with your single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
-
-The VCDA service is included as a default option in {{site.data.keyword.vcf-aas}} multitenant VDCs.
-
-Use enterprise-level VCDA to migrate VMs and vAPPS over a secure public internet connection.
-
 ## Fast provisioning of virtual machines
 {: #tenant-plan-deploy-fast-provisioning}
 
-Fast provisioning saves time by using linked clones for VM provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
+For VDC orders, you can enable fast provisioning for any VDC created within the resource pool.
+
+Fast provisioning saves time by using linked clones for VM provisioning. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
 
 In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
 {: important}
 
-You can enable fast provisioning during your instance order and from the **Data center details** page when the VDC is in **Available** status.
+When you create your VDC and it is in **Available** status, you can enable or disable fast provisioning from the **Summary** tab on the VDC details page.
+
+## Network settings
+{: #tenant-plan-deploy-network}
+
+For Cloud Director sites, you can select from public and private options for management and workload connectivity.
+
+### Management connectivity
+{: #tenant-plan-deploy-network-mgmt}
+
+Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup and Replication service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
+
+Select either public-only or private-only management connectivity.
+
+### Workload connectivity
+{: #tenant-plan-deploy-network-wkload}
+
+Workload connectivity determines how you connect to your {{site.data.keyword.vcf-aas}} virtual machines (VMs) and vApps. Select either public and private or private-only workload connectivity.
+
+When you select private-only workload connectivity for your Cloud Director site, all VDCs deployed in that site are private-only workloads. These VDCs do not have an incoming or outgoing connectivity path to the public internet and can access {{site.data.keyword.cloud_notm}} Services only over the private {{site.data.keyword.IBM_notm}} network.
+
+You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
 ## Network edge type
 {: #tenant-plan-deploy-edge}
@@ -233,14 +234,35 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}
 
-## Configuration limits for VMware Cloud Director
-{: #tenant-plan-deploy-cloud-dir-limits}
+### Network edge connection
+{: #tenant-plan-deploy-edge-connection}
 
-Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.4&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
+When you create your VDC with a network edge, you can select either a public and private network connection or a private-only network connection. If the Cloud Director site has a private-only connection, private-only is the only available option for the VDC network edge.
+
+## Services for {{site.data.keyword.vcf-aas}}
+{: #tenant-plan-deploy-services}
+
+The following add-on services are optionally available for {{site.data.keyword.vcf-aas}} Cloud Director site instances.
+
+### Veeam Backup and Replication
+{: #tenant-plan-deploy-services-veeam}
+
+For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+
+For multitenant instances, the Veeam Backup and Replication service is deployed on the Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you create a multitenant VDC. Service charges are incurred only if you choose to install the service.
+
+### VMware Cloud Director Availability
+{: #tenant-plan-deploy-services-vcda}
+
+Use the enterprise-level VMware Cloud Director Availability (VCDA) service to migrate VMs and vAPPS over a secure public internet connection.
+
+The VCDA service is optionally included at no charge with your single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
+
+The VCDA service is included as a default option in multitenant VDC orders.
 
 ## Related links
 {: #tenant-plan-deploy-links}
 
 * [FAQ](/docs/vmware-service?topic=vmware-service-faq-general)
-* [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
+* [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)

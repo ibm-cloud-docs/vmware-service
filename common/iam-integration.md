@@ -17,7 +17,7 @@ subcollection: vmware-service
 # VMware Cloud Director single sign-on with IBM Cloud IAM
 {: #iam-integration}
 
-You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service-full}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
+You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
 
 Access the VMware Cloud Director console from the VMware Solutions console to complete the following tasks from the console.
 
