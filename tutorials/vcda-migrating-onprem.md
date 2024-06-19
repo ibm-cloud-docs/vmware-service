@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-05-13"
+lastupdated: "2024-06-19"
 
 content-type: tutorial
 services: vmware-service
@@ -58,7 +58,7 @@ The following steps outline a validated process. Many different configurations w
 
 1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
 
-   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. For more information, use the following link and find the download under the **Drivers & Tools** tab [VMware Cloud Director Availability 4.7.1 Provider Appliance](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN). {: external}
+   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. Go to [VMware Cloud Director Availability 4.7.1 Provider Appliance](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN) {: external} and click the Drivers & Tools tab to find the download file.
    {: note}
 
 2. Log in to VMware vCenter Server and navigate to the cluster name.
