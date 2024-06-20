@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering virtual data centers for {{site.data.keyword.vmware-service_short}} single-tenant
+# Ordering virtual data center instances
 {: #vdc-adding}
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
