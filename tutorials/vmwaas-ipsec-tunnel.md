@@ -32,11 +32,11 @@ completion-time: 1h
 {: toc-services="vmware-service"}
 {: toc-completion-time="1h"}
 
-<!--##istutorial#-->
+
 This tutorial might incur costs. Use the [Cost estimator](https://cloud.ibm.com/estimator/) to generate a cost estimate based on your projected usage.
 {: tip}
 
-<!--#/istutorial#-->
+
 
 ## Objectives
 {: #vmwaas-ipsec-tunnel-objectives}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-20"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -27,25 +27,9 @@ You can also configure advanced networking capabilities that are provided by VMw
 ### Roles, permissions, and users
 {: #vcd-ops-guide-roles}
 
-The tenant portal includes a preconfigured set of user roles and their privileges. The roles that can access the tenant portal are created by default when an organization is created along with other roles that are created by the organization administrator. Users who are assigned the following organization roles can access the tenant portal. The objects that they see and the actions that they can take depend on the privileges that are associated with a role.
-
-* Organization Administrator
-* Catalog Author
-* vApp Author
-* vApp User
-* Console Access Only
+To access VMware Cloud Director, use single sign-on with your {{site.data.keyword.cloud_notm}} credentials as the default authentication and authorization mechanism. For a list of the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) Director tenant portal roles and authorizations that are associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui). Organization administrators can create local users that are authenticated by the tenant portal as opposed to IBM Cloud {{site.data.keyword.cloud_notm}} and can also create additional customized roles that can be assigned against local users.
 
 For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
-
-### Managing users
-{: #vcd-ops-guide-roles-procedures}
-
-Use the tenant portal to create a user or change passwords or roles for an existing user. For more information about accessing the tenant portal, see [Log in to the VMware Cloud Director tenant portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-28972197-D45B-4156-A733-5966730B5E03.html){: external}.
-
-If you log in with your username and password to access the VMware Cloud Director tenant portal, then use the following URL: ``https://[vcd FQDN]/tenant/[uuid]/login``.
-{: important}
-
-For more information about creating and modifying tenant portal users, see [Managing users](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FE38C285-7605-4473-870C-6AD44D8BF42E.html){: external}.
 
 ### Modifying your email settings
 {: #vcd-ops-guide-roles-email}
