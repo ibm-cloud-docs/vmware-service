@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-20"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -27,7 +27,7 @@ You can also configure advanced networking capabilities that are provided by VMw
 ### Roles, permissions, and users
 {: #vcd-ops-guide-roles}
 
-Users access VMware Cloud Director using single-sign-on with their IBM Cloud credentials as the default authentication and authorization mechanism.  For a list of the IBM Cloud IAM Director tenant portal roles and authorizations associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](vmaas-iam.md).  Organization administrators can create local users that are authenticated by the Director tenant portal as opposed to IBM Cloud IAM and can also create additional customized roles that can be assigned against local users.
+To access VMware Cloud Director, use single sign-on with your {{site.data.keyword.cloud_notm}} credentials as the default authentication and authorization mechanism. For a list of the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) Director tenant portal roles and authorizations that are associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui). Organization administrators can create local users that are authenticated by the tenant portal as opposed to IBM Cloud {{site.data.keyword.cloud_notm}} and can also create additional customized roles that can be assigned against local users.
 
 For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
 
