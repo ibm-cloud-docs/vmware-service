@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-28"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -73,6 +73,17 @@ For Reserved instances, the vCPU and RAM VDC reservations are pre-allocated and 
 {: #tenant-plan-deploy-locations}
 
 The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-aas}} deployment.
+
+| Location | Data center | Type |
+|:----------|:----------|:------|
+| Tokyo | Tokyo 02 | Single-tenant |
+| Tokyo | Tokyo 04 | Single-tenant |
+| Tokyo | Tokyo 05 | Single-tenant |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: tab-title="Asia-Pacific"}
+{: tab-group="Data centers for deployment"}
+{: class="simple-tab-table"}
+{: #simpletabtable-dc-ap}
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
