@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-24"
+lastupdated: "2024-07-03"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -132,4 +132,4 @@ You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a
 
 * [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}
+* [Veeam Help Center Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
