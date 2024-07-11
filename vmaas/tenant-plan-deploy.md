@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-28"
+lastupdated: "2024-07-15"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
