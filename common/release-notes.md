@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-07-15"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -23,6 +23,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2024
 {: #vmware-service-year-2024}
+
+### 15 July 2024
+{: #vmware-service-jul2024}
+{: release-note}
+
+IBM Cloud data center availability
+: {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Tokyo region to host your VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 14 June 2024
 {: #vmware-service-jun2024}
@@ -72,7 +79,7 @@ Software currency
    * VMware Cloud Director Availability 4.7.1
 
 New host profiles for NFS and vSAN clusters
-:   Additional bare metal server configurations are available for new and existing {{site.data.keyword.vcf-aas-full}} Cloud Director site orders. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-host-bms-req).
+:   Additional bare metal server configurations are available for new and existing {{site.data.keyword.vcf-aas}} Cloud Director site orders. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-host-bms-req).
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.

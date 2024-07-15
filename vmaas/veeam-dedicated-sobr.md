@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-05-28"
+lastupdated: "2024-07-03"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -77,4 +77,4 @@ You can open an IBM Support case to request to delete an existing dedicated SOBR
 * [Getting help and support for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-support)
 * [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam)
 * [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}
+* [Veeam Help Center Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
