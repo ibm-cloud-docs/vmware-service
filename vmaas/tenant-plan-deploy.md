@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-15"
+lastupdated: "2024-07-17"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -80,7 +80,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Tokyo | Tokyo 04 | Single-tenant |
 | Tokyo | Tokyo 05 | Single-tenant |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
+{: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-ap}

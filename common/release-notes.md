@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-07-15"
+lastupdated: "2024-07-17"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -23,6 +23,8 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 ## 2024
 {: #vmware-service-year-2024}
+
+
 
 ### 15 July 2024
 {: #vmware-service-jul2024}
@@ -48,7 +50,7 @@ Software currency
 :   This release provides the following infrastructure upgrades.
 
    * VMware ESXi™ 7.0 Update 3q
-   * VMware vCenter Server® Appliance 8.0 Update 2c
+   * VMware vCenter Server Appliance 8.0 Update 2c
    * VMware NSX-T™ 4.1.2.4
    * Veeam Backup and Replication 12.1.2
 
