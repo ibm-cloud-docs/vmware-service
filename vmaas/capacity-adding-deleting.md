@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-19"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -34,5 +34,6 @@ vCPU and RAM charges for on-demand VDCs are based on the amount that is used for
 ## Related links
 {: #capacity-adding-deleting-links}
 
+* [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)

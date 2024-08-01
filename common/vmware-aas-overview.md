@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-07-26"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -67,7 +67,7 @@ The {{site.data.keyword.vcf-aas}} single-tenant and multitenant models share the
 * Public-only or private-only networking for management connectivity.
 * Public and private or private-only networking for workload connectivity.
 * Secure interconnectivity through {{site.data.keyword.tg_full_notm}}
-* Optional data protection through the Veeam® Backup and Replication service.
+* Optional data protection through the Veeam® Backup service.
 * Optional VM and vApp migration through the VMware Cloud Director Availability service.
 
 ### {{site.data.keyword.vcf-aas}} single-tenant features
@@ -117,7 +117,7 @@ The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the fol
 * Egress to public networking
 * Ingress to private networking (optional)
 * Networking edge types and counts
-* Veeam Backup and Replication service (optional)
+* Veeam Backup service (optional)
 
 {{site.data.keyword.vcf-aas}} multitenant instance charges are based on either the on-demand or reserved pricing models.
 

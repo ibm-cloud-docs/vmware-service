@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-08-01"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,12 +26,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 1 August 2024
+{: #vmware-service-aug0124}
+{: release-note}
+
+IBM Cloud data center support for Tokyo multitenant
+: {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Tokyo region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 15 July 2024
 {: #vmware-service-jul2024}
 {: release-note}
 
-IBM Cloud data center availability
-: {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Tokyo region to host your VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+IBM Cloud data center support for Tokyo single-tenant
+: {{site.data.keyword.vcf-aas}} expands global presence and now supports the Tokyo region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 14 June 2024
 {: #vmware-service-jun2024}
@@ -40,8 +47,8 @@ IBM Cloud data center availability
 Private network connection availability for virtual data center orders
 : You can now select either a public and private network connection or a private-only network connection when you create your virtual data center with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
-Scale-out Backup Repository for Veeam Backup and Replication
-: The Veeam® Backup and Replication service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+Scale-out Backup Repository for Veeam Backup
+: The Veeam® Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 VMware Operations Manager availability
 :   You can now access the Operations Manager service through the VMware Cloud Director™ tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
@@ -52,7 +59,7 @@ Software currency
    * VMware ESXi™ 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
    * VMware NSX-T™ 4.1.2.4
-   * Veeam Backup and Replication 12.1.2
+   * Veeam Backup 12.1.2
 
 REST API updates
 :   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-14-june-2024).
@@ -108,7 +115,7 @@ Software currency
 
    * VMware ESXi 7.0 Update 3p (23307199)
    * VMware vCenter Server® Appliance 7.0 Update 3p (01800)
-   * Veeam Backup and Replication 12.1.1
+   * Veeam Backup 12.1.1
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
@@ -191,7 +198,7 @@ Documentation updates and enhancements
 {: release-note}
 
 VMware as a Service Multitenant
-:   This release announces the VMware as a Service Multitenant consumption model. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam Backup and Replication service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
+:   This release announces the VMware as a Service Multitenant consumption model. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam Backup service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
 
 REST API updates
 :   The [VMware as a Service API](/apidocs/vmware-service) is updated to provide support for VMware as a Service Multitenant. For more information, see [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-20-october-2023).
@@ -231,8 +238,8 @@ Production refresh
 {: #vmware-service-jul0723}
 {: release-note}
 
-Veeam Backup and Replication availability
-:   The Veeam Backup and Replication service is now available by default for deployment with new and existing VMware as a Service instances. Service charges are incurred only if you choose to include the service in your order. For more information, see [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam).
+Veeam Backup availability
+:   The Veeam Backup service is now available by default for deployment with new and existing VMware as a Service instances. Service charges are incurred only if you choose to include the service in your order. For more information, see [Managing Veeam for VMware as a Service](/docs/vmware-service?topic=vmware-service-tenant-veeam).
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
@@ -240,7 +247,7 @@ User interface updates and enhancements
    * The ordering flow for both VMware as a Service single-tenant Cloud Director sites and associated virtual data centers are now combined into a single ordering page.
    * The VMware as a Service **Resources** page now provides two tabbed views. In the first tab, all virtual data centers in the account are displayed. In the second tab, all authorized Cloud Director sites are displayed with the associated virtual data centers.
    * You can now access the VMware console from the virtual data center and Cloud Director site summary pages.
-   * The **Add-on services** tab is available on instance details pages to easily manage the Veeam Backup and Replication service.
+   * The **Add-on services** tab is available on instance details pages to easily manage the Veeam Backup service.
 
 ### 2 June 2023
 {: #vmware-service-jun0223}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-26"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -86,7 +86,7 @@ You can also specify a VDC name that meets the following requirements:
    * For reserved, select the vCPU and RAM capacity reservation for the VDC. The CPU and RAM are reserved for exclusive use by the VDC and are metered monthly for the full reservation.
 9. Review the cost, accept the terms, and click **Create** to submit the VDC order.
 
-For multitenant instances, install the Veeam service after you provision your VDC. For more information, see [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
+For multitenant instances, install the Veeam service after you provision your VDC. For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
 {: note}
 
 ## Results after you create virtual data centers

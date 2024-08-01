@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-30"
+lastupdated: "2024-08-01"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -66,13 +66,16 @@ This tutorial requires:
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
 
+Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
+{: note}
+
 ## Gather information and requirements
 {: #vmwaas-ipsec-tunnel-gather-requirements}
 {: step}
 
 To establish a policy-based tunnel, you need to collect various information from your deployment and design, such as gateway endpoints and local and remote networks. In addition, you need to define the tunnel security policies for IKE and IPsec.
 
-Carefully collect and document the information that is listed and mentioned here. It is important that these values match exactly on tunnel configurations on both sides.
+Carefully collect and document the information that is listed and mentioned here. The values must match exactly on tunnel configurations on both sides.
 {: important}
 
 Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to collect the following information and then define IPsec and IKE policy parameters for the tunnel based on your security requirements:
@@ -89,7 +92,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
 
    You might have multiple secondary IP addresses on the vSRX interface, so collect all the required network information for the tunnel.
 
-   Collect all required VDC network information for the tunnel. Use the VMware Cloud Director console or collect the information from your network design documentation (which networks will be deployed on the VDC).
+   Collect all required VDC network information for the tunnel. Use the VMware Cloud Director console or collect the information from your network design documentation (which networks are deployed on the VDC).
 
    Example values are provided as follows:
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-05-17"
+lastupdated: "2024-07-26"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -88,7 +88,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    * Click **Open VCDA** to open the VMware Cloud Director Availability (VCDA) Console.
    * Click **Veeam backups** to open the Self-Service Backup Portal.
 
-   You can enable the Veeam® Backup and Replication and VCDA services through the Cloud Director site details page if the services are not installed.
+   You can enable the Veeam® Backup and VCDA services through the Cloud Director site details page if the services are not installed.
    {: note}
 
 ## Procedure to delete a virtual data center
@@ -110,4 +110,4 @@ Alternatively, you can click the delete icon that is located in the VDC row of t
 * [{{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview)
 * [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)
 * [Adding and deleting capacity](/docs/vmware-service?topic=vmware-service-capacity-adding-deleting)
-* [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
+* [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)

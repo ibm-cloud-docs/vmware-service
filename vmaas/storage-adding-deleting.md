@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-19"
 
 keywords: add storage, delete storage, storage adding, storage remove
 
@@ -18,10 +18,10 @@ subcollection: vmware-service
 # Adding and deleting storage
 {: #storage-adding-deleting}
 
+You can add or delete storage to and from a cluster to increase or decrease the NFS storage capacity of your *single-tenant* cluster.
+
 ## Procedure to add and delete storage to for {{site.data.keyword.vcf-aas}} instances
 {: #storage-adding-deleting-proc}
-
-You can increase or decrease the NFS storage capacity of your *single-tenant* deployment by adding or deleting storage to and from a cluster.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
@@ -37,5 +37,6 @@ Editing the storage details might take up to 24 hours to complete. If a storage 
 ## Related links
 {: #storage-adding-deleting-links}
 
+* [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)

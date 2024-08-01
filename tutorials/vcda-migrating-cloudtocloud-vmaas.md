@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-07-24"
 
 content-type: tutorial
 services: vmware-service
@@ -22,9 +22,6 @@ completion-time: 30m
 You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service_full}} instances. Find out how to migrate VMware® by Broadcom virtual machine (VM) workloads across {{site.data.keyword.vcf-aas-full}} environments in the following video.
 
 ![Migrate workloads within {{site.data.keyword.vcf-aas}} environments](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vdo0bb3k?wid=_1773841&iframeembed=true&entry_id=1_vdo0bb3k){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
-
-Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
-{: note}
 
 ## Objectives
 {: #vcda-migrating-cloudtocloud-vmaas-objectives}
@@ -90,7 +87,7 @@ The following pairing status options are available.
 
 
 2. From the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
-2. Click **More > Availability (<datacenter_name>)**. For example, *Availability (sdirw360t04vcda)*.
+2. Click **More > Availability ``datacenter_name``**. For example, *Availability (sdirw360t04vcda)*.
 2. From the left panel, click **Incoming Replications**.
 2. From the **Incoming Replications** page, click **ALL ACTIONS > New migration**.
 2. Provide the login credentials for the peer site and click **LOGIN**.

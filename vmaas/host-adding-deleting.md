@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-19"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting hosts
 {: #host-adding-deleting}
 
-You can increase or decrease the capacity of your deployment by adding or deleting hosts to and from a *single-tenant* cluster.
+You can add or delete hosts to and from a *single-tenant* cluster.
 
 ## Procedure to add and delete hosts
 {: #host-adding-deleting-proc}
@@ -34,5 +34,6 @@ You can increase or decrease the capacity of your deployment by adding or deleti
 ## Related links
 {: #host-adding-deleting-links}
 
+* [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)

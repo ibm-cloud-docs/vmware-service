@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-05-03"
+lastupdated: "2024-07-26"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -77,7 +77,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 5. On the **Add-on services** tab, review your options for available services.
      * Click **Add service** to install a service.
      * Click the overflow menu to delete a service.
-     * If Veeam® Backup and Replication is installed, click **Veeam backups** to open the Self-Service Backup Portal.
+     * If Veeam® Backup is installed, click **Veeam backups** to open the Self-Service Backup Portal.
      * Expand the **VMware Cloud Director Availability** service to see details and available options for the service. For more information, see [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
 ## Procedure to delete a Cloud Director site
@@ -98,5 +98,5 @@ Alternatively, you can click the delete icon that is located in the site row of 
 
 * [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
 * [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
-* [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
+* [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-19"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting clusters
 {: #cluster-adding-deleting}
 
-You can increase or decrease the capacity of your deployment by adding clusters to or deleting clusters from a *single-tenant* instance. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
+You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
 
 ## Procedure to add clusters to {{site.data.keyword.vcf-aas}} instances
 {: #cluster-adding-deleting-add-proc}
@@ -60,5 +60,6 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 ## Related links
 {: #cluster-adding-deleting-links}
 
+* [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)

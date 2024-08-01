@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-07-26"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -76,9 +76,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
-| Tokyo | Tokyo 02 | Single-tenant |
-| Tokyo | Tokyo 04 | Single-tenant |
-| Tokyo | Tokyo 05 | Single-tenant |
+| Tokyo | Tokyo 02 | Single-tenant and Multitenant |
+| Tokyo | Tokyo 04 | Single-tenant and Multitenant |
+| Tokyo | Tokyo 05 | Single-tenant and Multitenant |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
@@ -208,6 +208,18 @@ In-place consolidation of a fast-provisioned VM is not supported. As the number 
 
 When you create your VDC and it is in **Available** status, you can enable or disable fast provisioning from the **Summary** tab on the VDC details page.
 
+### Linked clones
+{: #tenant-plan-deploy-fast-provisioning-linked}
+
+A linked clone is a snapshot of a VM that shares virtual disks with the parent VM in an ongoing manner. This conserves disk space and allows multiple VMs to use the same software installation. Linked clones make it easier to create unique VMs for individual tasks. Linked clones are also easier to share among Support and Development teams who need access to the same virtual disks.
+
+The disadvantage of a linked clone is that it must maintain access to the parent VM. The VM that first created the clone cannot be deleted unless all linked clones are also deleted.
+
+### Full clones
+{: #tenant-plan-deploy-fast-provisioning-full}
+
+A full clone is a complete and independent copy of a VM and operates separately from the original parent VM. Because they do not share virtual disks with the original parent VM, full clones generally perform better than linked clones. However, they also take longer to create than linked clones. ‍
+
 ## Network settings
 {: #tenant-plan-deploy-network}
 
@@ -216,7 +228,7 @@ For Cloud Director sites, you can select from public and private options for man
 ### Management connectivity
 {: #tenant-plan-deploy-network-mgmt}
 
-Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup and Replication service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
+Management connectivity determines how you connect to the VMware Cloud Director UI or API and the Veeam® Backup service. You can access the management interfaces only from a source in the {{site.data.keyword.cloud_notm}} network. For private-only management network settings, you can create an ingress allowlist to allow connections from source subnets.
 
 Select either public-only or private-only management connectivity.
 
@@ -255,12 +267,12 @@ When you create your VDC with a network edge, you can select either a public and
 
 The following add-on services are optionally available for {{site.data.keyword.vcf-aas}} Cloud Director site instances.
 
-### Veeam Backup and Replication
+### Veeam Backup
 {: #tenant-plan-deploy-services-veeam}
 
-For single-tenant instances, the Veeam Backup and Replication service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
+For single-tenant instances, the Veeam Backup service is included by default with your Cloud Director site instance order. You can optionally remove the service before you create your instance. Service charges are incurred only if you choose to include the service in your order. You can add or remove the service later as required.
 
-For multitenant instances, the Veeam Backup and Replication service is deployed on the Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you create a multitenant VDC. Service charges are incurred only if you choose to install the service.
+For multitenant instances, the Veeam Backup service is deployed on the Cloud Director site to provide VDCs with data recovery. If you want to use the service, you must install it after you create a multitenant VDC. Service charges are incurred only if you choose to install the service.
 
 ### VMware Cloud Director Availability
 {: #tenant-plan-deploy-services-vcda}

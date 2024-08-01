@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-03"
+lastupdated: "2024-07-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -17,11 +17,11 @@ subcollection: vmware-service
 # Managing Veeam for {{site.data.keyword.vcf-aas}}
 {: #tenant-veeam}
 
-The Veeam® Backup and Replication service is available and ready to use in your {{site.data.keyword.vmware-service_full}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
+The Veeam® Backup service is available and ready to use in your {{site.data.keyword.vmware-service_full}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
 Service charges are incurred only if you choose to include the service in your order.
 
-For multitenant instances, you must install the Veeam service after you provision your virtual data center (VDC). For more information, see [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
+For multitenant instances, you must install the Veeam service after you provision your virtual data center (VDC). For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
 
 For single-tenant instances, the service is included by default in your {{site.data.keyword.vcf-aas-full}} Cloud Director site order. You can remove the service from your initial order and add the service to an existing single-tenant Cloud Director site.
 
@@ -31,7 +31,7 @@ The Veeam service is configured with seven days of immutability by default. All 
 ## Accessing the Veeam self-service portal
 {: #tenant-veeam-portal}
 
-The Veeam Backup and Replication service has visibility to back up VMs from any VDC in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
+The Veeam Backup service has visibility to back up VMs from any VDC in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
 
 When you use the Veeam self-service portal to create backup jobs, you can choose any VM instance from any virtual data center in the organization.
 
@@ -55,7 +55,7 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 ## Backup data storage and encryption
 {: #tenant-veeam-storage}
 
-Veeam Backup and Replication backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
+Veeam Backup backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
 When you decide to use the Veeam self-service portal to create backup jobs, identify which VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organizations SOBR.
 
@@ -120,7 +120,7 @@ The retention policy is applied only if the job stops creating backups for the e
 
 You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a new backup job results in a new backup chain and restore points under the new backup job. Removing the original backup and restore points in this case falls into the same category as removing backups. You are responsible for deleting the original restore points.
 
-## Limitations for Veeam Backup and Replication
+## Limitations for Veeam Backup
 {: #tenant-veeam-portal-limitations}
 
 * For the Veeam **application aware image processing** and **guest file system indexing** options to work for Windows® VMs, the most recent VMware Tools™ must be installed on the VMs. Linux® VMs do not support application awareness or guest file system indexing.
@@ -130,6 +130,6 @@ You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a
 ## Related links
 {: #tenant-veeam-related}
 
-* [Adding and deleting Veeam Backup and Replication](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
+* [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}

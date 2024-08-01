@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-22"
 
 content-type: tutorial
 services: vmware-service
@@ -75,18 +75,18 @@ To upload an OVA image into a VDC, complete the following steps:
 2. To upload a VM image into a vDC, use the following command. After upload, the VM image appears in a vApp and is ready for configuration.
 
 ```bash
-ovftool -tt=vCloud c:\<LOCAL_FILEPATH>\<FILE_NAME>.ova “vcloud://<ORG_USER>@<VCLOUD_URL>/cloud?org=<ORG_NAME>&vdc=<VDC_NAME>&vapp=<VAPP_NAME>”
+ovftool -tt=vCloud c:\LOCAL_FILEPATH\FILE_NAME.ova “vcloud://ORG_USER@VCLOUD_URL/cloud?org=ORG_NAME&vdc=VDC_NAME&vapp=VAPP_NAME”
 ```
 
 In the previous command, replace the variables with the following values:
 
-* <LOCAL_FILEPATH> is the absolute file path that contains the OVA image.
-* <FILE_NAME> is the name of the OVA image.
-* <ORG_USER> is the local username (local) to log in to VMware Cloud Director. OVFTool prompts you for the password.
-* <VCLOUD_URL> is the URL that you use to log in to VMware Cloud Director. Use only the domain name, for example, `https://dirw003.us-east.vmware.cloud.ibm.com/`.
-* <ORG_NAME> is the full name of your VMware Cloud Director organization.
-* <VDC_NAME> is the full name of your VDC.
-* <VAPP_NAME> is the name of the destination vApp.
+* ``LOCAL_FILEPATH`` is the absolute file path that contains the OVA image.
+* ``FILE_NAME`` is the name of the OVA image.
+* ``ORG_USER`` is the local username (local) to log in to VMware Cloud Director. OVFTool prompts you for the password.
+* ``VCLOUD_URL`` is the URL that you use to log in to VMware Cloud Director. Use only the domain name, for example, `https://dirw003.us-east.vmware.cloud.ibm.com/`.
+* ``ORG_NAME`` is the full name of your VMware Cloud Director organization.
+* ``VDC_NAME`` is the full name of your VDC.
+* ``VAPP_NAME`` is the name of the destination vApp.
 
 Example command:
 
