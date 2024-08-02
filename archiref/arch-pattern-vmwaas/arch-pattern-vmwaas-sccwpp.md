@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-07-03"
+lastupdated: "2024-08-02"
 
 subcollection: vmware-service
 
@@ -16,7 +16,7 @@ subcollection: vmware-service
 # Architecture patterns for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with {{site.data.keyword.vcf-aas}}
 {: #arch-pattern-vmwaas-sccwpp}
 
-This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with a {{site.data.keyword.vmware-service_notm}} instance.
+This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vmware-service_notm}} instance.
 
 This pattern is suitable for your workloads that are hosted in both a single-tenant or a multitenant instance.
 
