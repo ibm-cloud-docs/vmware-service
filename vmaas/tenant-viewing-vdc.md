@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-08-08"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -58,7 +58,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
    {: class="simple-tab-table"}
-   {: caption="Table 2. Virtual data center details" caption-side="bottom"}
+   {: caption="Table 2. Virtual data center details - single-tenant" caption-side="bottom"}
    {: #table1}
    {: tab-title="Single-tenant instances"}
    {: tab-group="vdc details"}
@@ -78,7 +78,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
    {: class="simple-tab-table"}
-   {: caption="Table 2. Virtual data center details" caption-side="bottom"}
+   {: caption="Table 2. Virtual data center details - multitenant" caption-side="bottom"}
    {: #table2}
    {: tab-title="Multitenant instances"}
    {: tab-group="vdc details"}

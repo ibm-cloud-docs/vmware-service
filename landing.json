@@ -1,6 +1,6 @@
 {
     "title": "VMware Cloud Foundation as a Service docs",
-    "lastupdated": "2024-08-01",
+    "lastupdated": "2024-08-16",
     "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
     "section_devtools": {
       "api": "/apidocs/vmware-service"
@@ -47,6 +47,10 @@
       "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
       "tiles": [
         {
+          "date": "16 August 2024",
+          "title": "Software currency",
+          "description": "This release provides infrastructure upgrades to VMware vCenter Server Appliance 8.0 Update 2d."
+        },{
           "date": "1 August 2024",
           "title": "IBM Cloud data center support for Tokyo multitenant",
           "description": "VCF as a Service expands global presence and now supports the Tokyo region to host your multitenant VMware workloads."
@@ -55,11 +59,6 @@
           "date": "15 July 2024",
           "title": "IBM Cloud data center support for Tokyo single-tenant",
           "description": "VCF as a Service expands global presence and now supports the Tokyo region to host your single-tenant VMware workloads."
-        },
-        {
-          "date": "14 June 2024",
-          "title": "Private network connection availability for virtual data center orders",
-          "description": "You can now select either a public and private network connection or a private-only network connection when you create your virtual data center with a network edge."
         }
       ]
     }

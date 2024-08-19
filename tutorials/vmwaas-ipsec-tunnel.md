@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-08-01"
+lastupdated: "2024-08-08"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -291,7 +291,7 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
    |:----------- |:------------------ |:------------- |
    | IPSET 1     | Firewall-Network   | `10.95.1.0/26` |
    | IPSET 2     | VMWaaS-VDC-Network | `192.168.100.0/24` |
-   {: caption="Table 7. IP sets details" caption-side="bottom"}
+   {: caption="Table 6. IP sets details" caption-side="bottom"}
 
    ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="Figure 3. {{site.data.keyword.vcf-aas}} VDC IP sets" caption-side="bottom"}
    {: style="text-align: center;"}
@@ -313,7 +313,7 @@ You must add two extra rules to allow traffic to and from the VPN connection.
    |:-------------- |:--------------------- |:------------ |:-------------------- |
    | Firewall Rule 1 | `VMWaaS-to-FW`      | `VMWaaS-VDC-Network` | `Firewall-Network` |
    | Firewall Rule 2 | `FW-to-VMWaaS`      | `Firewall-Network`   |`VMWaaS-VDC-Network` |
-   {: caption="Table 8. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+   {: caption="Table 7. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
    ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="Figure 4. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
    {: style="text-align: center;"}
@@ -333,7 +333,7 @@ The next step is to create the IPSec VPN tunnel between our Local and Remote End
    |:----------------------- |:-------------------- |:--------- |:-------------------- |
    | Local Endpoint  | `<public-IP address-of-the-vdc-edge-gateway>` | `192.168.100.0/24` | `n/a` |
    | Remote Endpoint | `<public-IP address-of-the-vsrx>`      | `10.95.1.1/26`   | `<public-IP address-of-the-vsrx>` |
-   {: caption="Table 9. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+   {: caption="Table 8. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
 6. Click **Finish** to complete.
 

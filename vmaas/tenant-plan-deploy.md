@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-08-01"
+lastupdated: "2024-08-08"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -79,7 +79,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Tokyo | Tokyo 02 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 04 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 05 | Single-tenant |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
@@ -90,7 +90,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Frankfurt | Frankfurt 02 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 04 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 05 | Single-tenant |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
@@ -104,7 +104,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Washington DC | Washington DC 04 | Single-tenant |
 | Washington DC | Washington DC 06 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 07 | Single-tenant and Multitenant |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
@@ -161,7 +161,7 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 23 TB |
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 38 TB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 38 TB |
-{: caption="Table 3. Available vSAN host profiles" caption-side="bottom"}
+{: caption="Table 2. Available vSAN host profiles" caption-side="bottom"}
 {: tab-title="vSAN clusters"}
 {: tab-group="Host profiles"}
 {: class="simple-tab-table"}
@@ -177,7 +177,7 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Dual Intel 6248 Xeon | 2 | 40 | 384 GB |
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB |
-{: caption="Table 4. Available NFS-only host profiles" caption-side="bottom"}
+{: caption="Table 2. Available NFS-only host profiles" caption-side="bottom"}
 {: tab-title="NFS-only clusters"}
 {: tab-group="Host profiles"}
 {: class="simple-tab-table"}
@@ -252,7 +252,7 @@ VDCs connect to the public and IBM private networks through edges. Edges can als
 | Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 Gbps. |
 | Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic. |
 | Performance - XL | This option provides the highest level of edge services and throughput over 10 Gbps. |
-{: caption="Table 2. Network edge descriptions" caption-side="bottom"}
+{: caption="Table 3. Network edge descriptions" caption-side="bottom"}
 
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}

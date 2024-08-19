@@ -3,7 +3,7 @@
 copyright:
   years: 2023, 2024
 
-lastupdated: "2024-02-28"
+lastupdated: "2024-08-08"
 
 keywords: software currency for vmware service, policies, software currency policies
 
@@ -43,5 +43,5 @@ IBM defines a major release as the first update level after a VMware major relea
 {: class="simple-tab-table"}
 {: caption="Table 1. Software currency policies" caption-side="bottom"}
 {: #table2}
-{: tab-title="Third party software"}
+{: tab-title="Third-party software"}
 {: tab-group="currency policies"}

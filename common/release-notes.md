@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-01"
+lastupdated: "2024-08-16"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -24,31 +24,39 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 16 August 2024
+{: #vmware-service-aug1624}
+{: release-note}
 
+Software currency
+:   This release provides infrastructure upgrades to VMware vCenter Server® Appliance 8.0 Update 2d.
+
+Terraform 
+:   {{site.data.keyword.vcf-aas-full}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
 
 ### 1 August 2024
 {: #vmware-service-aug0124}
 {: release-note}
 
 IBM Cloud data center support for Tokyo multitenant
-: {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Tokyo region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Tokyo region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 15 July 2024
 {: #vmware-service-jul2024}
 {: release-note}
 
 IBM Cloud data center support for Tokyo single-tenant
-: {{site.data.keyword.vcf-aas}} expands global presence and now supports the Tokyo region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Tokyo region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 14 June 2024
 {: #vmware-service-jun2024}
 {: release-note}
 
 Private network connection availability for virtual data center orders
-: You can now select either a public and private network connection or a private-only network connection when you create your virtual data center with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
+:   You can now select either a public and private network connection or a private-only network connection when you create your VDC with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
 Scale-out Backup Repository for Veeam Backup
-: The Veeam® Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+:   The Veeam® Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 VMware Operations Manager availability
 :   You can now access the Operations Manager service through the VMware Cloud Director™ tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
@@ -121,7 +129,7 @@ User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
 
    * A **Help me choose** option is now available on the order page to guide you through the process of ordering a VMware as a Service instance.
-   * The contents of the **Summary** tabs for both single-tenant and multitenant virtual data centers are better structured and organized for a more streamlined user experience.
+   * The contents of the **Summary** tabs for both single-tenant and multitenant VDCs are better structured and organized for a more streamlined user experience.
 
 REST API updates
 :   The [VMware as a Service API](/apidocs/vmware-service) is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director™ site. For more information, see the [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-15-march-2024).
@@ -134,10 +142,10 @@ New and updated documentation
 {: release-note}
 
 {{site.data.keyword.cloud_notm}} private-only networking
-:   VMware as a Service now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your VMware as a Service workloads. For private-only workload connections, connect virtual data centers to {{site.data.keyword.tg_full_notm}} to connect to workloads outside of the private network. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
+:   VMware as a Service now offers private-only networks for management connectivity for accessing VMware Cloud Director and workload connectivity for accessing your VMware as a Service workloads. For private-only workload connections, connect VDCs to {{site.data.keyword.tg_full_notm}} to connect to workloads outside of the private network. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
 {{site.data.keyword.tg_full_notm}}
-:   You can now use {{site.data.keyword.tg_short}} to securely interconnect VMware as a Service multitenant and single-tenant virtual data centers to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+:   You can now use {{site.data.keyword.tg_short}} to securely interconnect VMware as a Service multitenant and single-tenant VDCs to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. For more information, see [Using Transit Gateway to interconnect VMware as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.
@@ -198,7 +206,7 @@ Documentation updates and enhancements
 {: release-note}
 
 VMware as a Service Multitenant
-:   This release announces the VMware as a Service Multitenant consumption model. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy virtual data centers on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam Backup service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
+:   This release announces the VMware as a Service Multitenant consumption model. VMware as a Service Multitenant provides a flexible, pay-per-use option to deploy VDCs on an IBM-managed Cloud Director site. You can get started quickly by selecting from on-demand or reserved pricing plans, and then add CPU, RAM, and storage as needed. Additionally, the Veeam Backup service is available for you to install to securely protect and provide a recovery option for your workloads. For more information, see [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
 
 REST API updates
 :   The [VMware as a Service API](/apidocs/vmware-service) is updated to provide support for VMware as a Service Multitenant. For more information, see [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-20-october-2023).
@@ -244,8 +252,8 @@ Veeam Backup availability
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
 
-   * The ordering flow for both VMware as a Service single-tenant Cloud Director sites and associated virtual data centers are now combined into a single ordering page.
-   * The VMware as a Service **Resources** page now provides two tabbed views. In the first tab, all virtual data centers in the account are displayed. In the second tab, all authorized Cloud Director sites are displayed with the associated virtual data centers.
+   * The ordering flow for both VMware as a Service single-tenant Cloud Director sites and associated VDCs are now combined into a single ordering page.
+   * The VMware as a Service **Resources** page now provides two tabbed views. In the first tab, all VDCs in the account are displayed. In the second tab, all authorized Cloud Director sites are displayed with the associated VDCs.
    * You can now access the VMware console from the virtual data center and Cloud Director site summary pages.
    * The **Add-on services** tab is available on instance details pages to easily manage the Veeam Backup service.
 
@@ -260,7 +268,7 @@ Accessing VMware as a Service REST APIs
 :   You can now access VMware as a Service APIs through the {{site.data.keyword.cloud_notm}} Virtual Private Cloud. For more information, see [Using a virtual private endpoint](/docs/vmware-service?topic=vmware-service-virtual-private-endpoints).
 
 Fast provisioning for virtual machines
-:   Fast provisioning for virtual machines is now available for your virtual data centers. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
+:   Fast provisioning for virtual machines is now available for your VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 VMware currency
 :   This release provides infrastructure upgrades to VMware NSX-T 4.1 and VMware ESXi 7.0U3L.
@@ -312,7 +320,7 @@ Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).
 
 Virtual data centers without edge
-:   You can deploy virtual data centers (VDCs) without a network edge, which can help you save resources and costs by sharing an existing edge across multiple VDCs. This option is suitable for centralized networking administration and control over many VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
+:   You can deploy VDCs without a network edge, which can help you save resources and costs by sharing an existing edge across multiple VDCs. This option is suitable for centralized networking administration and control over many VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 ### 18 January 2023
 {: #vmware-service-jan1823}
