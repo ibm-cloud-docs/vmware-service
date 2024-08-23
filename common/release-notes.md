@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-16"
+lastupdated: "2024-08-23"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -24,6 +24,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 23 August 2024
+{: #vmware-service-aug2324}
+{: release-note}
+
+IBM Cloud data center support for Toronto single-tenant
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Toronto region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 16 August 2024
 {: #vmware-service-aug1624}
 {: release-note}
@@ -32,7 +39,7 @@ Software currency
 :   This release provides infrastructure upgrades to VMware vCenter Server® Appliance 8.0 Update 2d.
 
 Terraform 
-:   {{site.data.keyword.vcf-aas-full}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
+:   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
 
 ### 1 August 2024
 {: #vmware-service-aug0124}

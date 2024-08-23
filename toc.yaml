@@ -14,9 +14,8 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - getting-started.md
-      - common/vmware-aas-overview.md
-      - common/vmaas-bom.md
+      - topic: getting-started.md
+        navtitle: Getting started
       - topic: common/release-notes.md
         navtitle: Release notes
   - navgroup:
@@ -44,6 +43,11 @@ toc:
       - topicgroup:
           label: VCF as a Service
           topics:
+          - topicgroup:
+              label: Overview
+              topics:
+              - common/vmware-aas-overview.md
+              - common/vmaas-bom.md
           - vmaas/tenant-plan-deploy.md
           - topicgroup:
               label: Ordering VCF as a Service instances
