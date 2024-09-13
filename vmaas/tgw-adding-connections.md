@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-05-03"
+lastupdated: "2024-08-28"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service_notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
 
-{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource in the same region as your {{site.data.keyword.vcf-aas-full}} Cloud Director site. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
+{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
 
 You must individually attach all six unbound GRE tunnels to the {{site.data.keyword.tg_short}} to attach the VDC connection group to {{site.data.keyword.tg_short}}. The six unbound GRE tunnels help to avoid redundancy risks.
 
@@ -41,9 +41,6 @@ If your VDC does not include a compatible version, create a new VDC that include
 
 Before you can add a connection group to your VDC, you must create a {{site.data.keyword.tg_short}}. For more information, see the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision) and [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started).
 
-You must create the {{site.data.keyword.tg_short}} in the same region as the Cloud Director site where the VDC is deployed.
-{: important}
-
 ## Procedure to connect {{site.data.keyword.vcf-aas}}
 {: #tgw-adding-connections-proc}
 
@@ -52,8 +49,10 @@ You must create the {{site.data.keyword.tg_short}} in the same region as the Clo
    2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click an instance name.
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
-   5. In the **Add connection group** panel, enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID on the {{site.data.keyword.tg_short}} details page on the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
-   6. Click **Add**.
+   5. In the **Add connection group** panel, complete the following steps.
+      1. Enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID on the {{site.data.keyword.tg_short}} details page on the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
+      2. Select the region where you want the {{site.data.keyword.tg_short}} to connect.
+      3. Click **Add**.
 
       The connection group with six pending GRE tunnels is added to your VDC and automation runs to generate the connection values. Next, you must individually connect the six unbound GRE tunnels to complete the connection.
 

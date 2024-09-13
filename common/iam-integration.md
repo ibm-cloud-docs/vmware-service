@@ -4,9 +4,9 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-23"
+lastupdated: "2024-09-03"
 
-keywords: iam roles, manage iam, SSO, single sign on
+keywords: iam user role for vmware, iam user, iam roles, manage iam, SSO, single sign on
 
 subcollection: vmware-service
 

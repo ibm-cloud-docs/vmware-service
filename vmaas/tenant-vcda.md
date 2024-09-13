@@ -4,9 +4,9 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-09-13"
 
-keywords: VMware Cloud Director Availability, VMware Cloud Director Availability installation
+keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 
 subcollection: vmware-service
 
@@ -14,18 +14,17 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview
+# Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA
 {: #tenant-vcda}
 
 Deliver simple, secure, and cost-effective migration support with VMware Cloud Director Availability (VCDA).
 
-The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge.
+Both migration and disaster recovery support are available when you install the VCDA service. For more information about disaster recovery configurations, see [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda-dr).
 
-## Migrating workloads to {{site.data.keyword.vcf-aas}}
-{: #tenant-vcda-migrate}
+The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
 
 {{site.data.keyword.vmware-service_full}} with VCDA supports several migration scenarios:
-* Migrate vCenter virtual machine (VM) workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network.
+* Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network.
 * Migrate workloads from VMware Shared to {{site.data.keyword.vcf-aas}}.
 * Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance.
 
@@ -34,7 +33,7 @@ The VCDA service is included by default in all multitenant virtual data centers 
 ## Accessing the VMware Cloud Director Availability console
 {: #tenant-vcda-portal}
 
-When you are ready to complete your migration, you can access the VCDA console from the **Add-on services** tab of a virtual data center instance details page for both multitenant and single-tenant instances.
+When you are ready to complete your migration or data recovery configuration, you can access the VCDA console from the **Add-on services** tab of a virtual data center instance details page for both multitenant and single-tenant instances.
 
 ### Procedure to access the VMware Cloud Director Availability console from the instance
 {: #tenant-vcda-portal-proc-access}
@@ -50,7 +49,7 @@ Alternatively, you can access the VCDA console through the Cloud Director site d
 ## Related links
 {: #tenant-vcda-related}
 
-* [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
-* [Adding migration capacity](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding)
-* [Adding and deleting a private instance endpoint](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep)
-* [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)
+* [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
+* [Adding capacity to single-tenant Cloud Director sites with VCDA](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding)
+* [Adding and deleting private instance endpoints with VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep)
+* [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-08-19"
+lastupdated: "2024-09-11"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -102,8 +102,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Dallas | Dallas 12 | Single-tenant and Multitenant |
 | Dallas | Dallas 13 | Single-tenant |
 | Toronto | Toronto 01 | Single-tenant |
-| Toronto | Toronto 04 | Single-tenant |
-| Toronto | Toronto 05 | Single-tenant |
+| Toronto | Toronto 04 | Single-tenant and Multitenant |
+| Toronto | Toronto 05 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 04 | Single-tenant |
 | Washington DC | Washington DC 06 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 07 | Single-tenant and Multitenant |
@@ -280,11 +280,13 @@ For multitenant instances, the Veeam Backup service is deployed on the Cloud Dir
 ### VMware Cloud Director Availability
 {: #tenant-plan-deploy-services-vcda}
 
-Use the enterprise-level VMware Cloud Director Availability (VCDA) service to migrate VMs and vAPPS over a secure public internet connection.
+Use the enterprise-level VMware Cloud Director Availability (VCDA) service to migrate and protect VMs and vAPPS over a secure public internet connection.
 
 The VCDA service is optionally included at no charge with your single-tenant Cloud Director site instance order. You can remove the service before you create your instance. You can add or remove the service later as required.
 
 The VCDA service is included as a default option in multitenant VDC orders.
+
+For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected VM.
 
 ## Related links
 {: #tenant-plan-deploy-links}

@@ -26,6 +26,7 @@ toc:
           topics:
             - include: ../solution-tutorials/vcf-as-a-service-vdc.md
             - include: ../solution-tutorials/vcf-as-a-service-tf.md
+            - tutorials/vcda-creating-dr-config.md
       - topicgroup:
           label: Connectivity tutorials
           topics:
@@ -79,21 +80,19 @@ toc:
               - common/vmaas-iam_vcd.md
               - common/iam-integration.md
           - topicgroup:
-              label: Protecting VMs in VCF as a Service instances
-              topics:
-              - vmaas/tenant-veeam.md
-              - vmaas/veeam-adding-deleting.md
-              - vmaas/veeam-dedicated-sobr.md
-          - topicgroup:
-              label: Migrating VMs to VCF as a Service instances
+              label: Migrating and protecting VMs in VCF as a Service instances
               topics:
               - vmaas/tenant-vcda.md
+              - vmaas/tenant-vcda-dr.md
               - vmaas/vcda-viewing.md
               - vmaas/vcda-adding-capacity.md
               - vmaas/vcda-adding-deleting-private-ep.md
               - vmaas/vcda-creating-deleting-vmaas-pairing.md
               - vmaas/vcda-adding-deleting.md
               - vmaas/vcda-migrating.md
+              - vmaas/tenant-veeam.md
+              - vmaas/veeam-adding-deleting.md
+              - vmaas/veeam-dedicated-sobr.md
           - topicgroup:
               label: Creating secure interconnectivity with VCF as a Service
               topics:

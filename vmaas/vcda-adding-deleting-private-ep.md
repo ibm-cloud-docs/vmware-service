@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-09-13"
 
 keywords: add private endpoint, VMware Cloud Director Availability
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding and deleting private instance endpoints
+# Adding and deleting private instance endpoints with VCDA
 {: #vcda-adding-deleting-private-ep}
 
 Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.cloud}} provides a public endpoint for each cloud zone in the region that has at least one resource pool. Public endpoints are read only and cannot be deleted. You can request instance endpoints for private connections for an extra charge.
@@ -42,6 +42,7 @@ Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.
 ## Related links
 {: #vcda-delete-adding-links}
 
-* [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
-* [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
-* [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)
+* [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
+* [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

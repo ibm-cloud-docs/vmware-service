@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-09-13"
 
 content-type: tutorial
 services: vmware-service
@@ -46,6 +46,7 @@ This tutorial requires:
 * [A preprovisioned {{site.data.keyword.vcf-aas}} Cloud Director site](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
 * [The VCDA service is installed on your Cloud Director site instance](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting).
 * An existing VMware vCenter cluster.
+* A free VMware® by Broadcom account.
 
 ## Install VCDA on-premises in VMware vCenter Server
 {: #vcda-migrating-onprem-vcs}
@@ -57,8 +58,11 @@ The following steps outline a validated process. Many different configurations w
 {: note}
 
 1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
+   1. [Log in](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN){: external} to VMware by Broadcom or create a free account.
+   2. Click the **Drivers and Tools** tab.
+   3. Download **VMware Cloud Director Availability On-premises Appliance**.
 
-   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. Go to [VMware Cloud Director Availability 4.7.1 Provider Appliance](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN){: external} and click the Drivers & Tools tab to find the download file.
+   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. 
    {: note}
 
 2. Log in to VMware vCenter Server and navigate to the cluster name.
@@ -116,7 +120,7 @@ The private networking endpoint is more secure and provides more consistent perf
    2. Complete the following configuration for the **Site Details** tab.
       * For **Site name**, enter the unique name for your installation.
    3. Complete the following configuration for the **Cloud Service Details** tab. After you complete the configuration, click **NEXT**, then **ACCEPT** to accept the configuration.
-      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
+      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
       * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vcf-aas}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
 
       If you use the ``admin`` user ID, you must include the Organization ID. For example, ``admin@8db98de2-7735-41f1-a487-64fcaefde250``.
@@ -141,7 +145,7 @@ The private networking endpoint is more secure and provides more consistent perf
    2. Complete the following configuration for the **Site Details** tab.
       * For **Site name**, enter the unique name for your installation.
    3. Complete the following configuration for the **Cloud Service Details** tab. After you complete the configuration, click **NEXT**, then **ACCEPT** to accept the configuration.
-      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
+      * For **Public Service Endpoint address**, enter the public replication endpoint URL from the **Instance endpoints** tab for your {{site.data.keyword.vcf-aas}} site. For more information, see [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
       * For **Organization Admin**, enter a local Organization Administrator user credential. You must create the credentials in VMware Cloud Director for {{site.data.keyword.vcf-aas}}. You must use a local VMware Cloud Director administrator account. IAM SSO credentials are not supported.
       * For **Organization Password**, enter the Organization Administrator password.
    4. Review the configuration on the **Ready To Complete** tab and click **Finish**.

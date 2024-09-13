@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-05-03"
+lastupdated: "2024-09-13"
 
 keywords: add vcda, delete vcda, vcda adding, vcda remove, VMware Cloud Director Availability
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding and deleting VMware Cloud Director Availability
+# Adding and deleting VCDA
 {: #vcda-adding-deleting}
 
 You can add the VMware Cloud Director Availability (VCDA) service to your Cloud Director site instance as part of the {{site.data.keyword.vmware-service_full}} order and to existing Cloud Director site instances.
@@ -46,6 +46,7 @@ VCDA is installed in all virtual data centers (VDCs) for the {{site.data.keyword
 ## Related links
 {: #vcda-adding-deleting-links}
 
-* [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
-* [Adding migration capacity](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding)
-* [Adding and deleting a private instance endpoint](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep)
+* [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Adding capacity to single-tenant Cloud Director sites with VCDA](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding)
+* [Adding and deleting private instance endpoints with VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep)

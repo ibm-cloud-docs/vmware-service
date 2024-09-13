@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-05-13"
+lastupdated: "2024-09-13"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Installing VMware Cloud Director Availability on-premises in VMware vCenter Server
+# Installing VCDA on-premises in VMware vCenter Server
 {: #vcda-migrating}
 
 Complete the following steps to install VMware Cloud Director Availability (VCDA) on-premises in VMware vCenter Server®.
@@ -24,8 +24,11 @@ The following steps outline a validated process. Many different configurations w
 {: note}
 
 1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
+   1. [Log in](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN){: external} to VMware® by Broadcom or create a free account.
+   2. Click the **Drivers and Tools** tab.
+   3. Download **VMware Cloud Director Availability On-premises Appliance**.
 
-   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. For more information, see [VMware Cloud Director Availability 4.7.1 Provider Appliance](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN). {: external}
+   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. 
    {: note}
 
 2. Log in to VMware vCenter Server and navigate to the cluster name.

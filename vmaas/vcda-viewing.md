@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-05-03"
+lastupdated: "2024-09-13"
 
 keywords: view vcda details
 
@@ -15,25 +15,28 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing migration details
+# Viewing VCDA details
 {: #vcda-viewing}
 
-View the summary and detailed information for migrating your virtual machines (VMs) to {{site.data.keyword.vmware-service_full}} with VMware Cloud Director Availability (VCDA).
+View the summary and detailed information for migrating and protecting your virtual machines (VMs) to {{site.data.keyword.vmware-service_full}} with VMware Cloud Director Availability (VCDA).
 
 ## Procedure to view a summary of VMware Cloud Director Availability details
 {: #vcda-viewing-summary}
+
+Use the **Migration estimated capacity** section for both migration and protection destination configurations.
+{: note}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant or multitenant instance name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. Review the VCDA configuration and summary details.
 
-   * For single-tenant instances, you can configure the migration capacity based on the estimated number of VMs you plan to migrate. In the **Migration estimated capacity** section, review the range of VMs to migrate, the number of VCDA instances, and the resources that are required for the resource pool to migrate VMs. Resources include the number of replicators, RAM, and CPU per instance.
+   * For single-tenant instances, you can configure the capacity based on the estimated number of VMs you plan to migrate or protect. In the **Migration estimated capacity** section, review the range of VMs to migrate or protect, the number of VCDA instances, and the resources that are required for the resource pool to migrate or protect VMs. Resources include the number of replicators, RAM, and CPU per instance.
 
-     For multitenant instances, the migration capacity is monitored and scaled by {{site.data.keyword.IBM_notm}}.
+     For multitenant instances, the capacity is monitored and scaled by {{site.data.keyword.IBM_notm}}.
      {: note}
 
-      For a single-tenant Cloud Director site instance, click **Edit capacity** to edit the estimated migration capacity. For more information, see [Adding migration capacity](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding).
+      For a single-tenant Cloud Director site instance, click **Edit capacity** to edit the estimated capacity. For more information, see [Adding capacity to single-tenant Cloud Director sites with VCDA](/docs/vmware-service?topic=vmware-service-vcda-capacity-adding).
 
    * In the **Instance endpoints and connections** section, review the instance endpoint type and connection details. You can also add new endpoints for private connections for an additional charge.
 
@@ -72,5 +75,6 @@ Click the overflow menu at the end of the endpoint or pairing row to view detail
 ## Related links
 {: #vcda-viewing-links}
 
-* [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
-* [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)
+* [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

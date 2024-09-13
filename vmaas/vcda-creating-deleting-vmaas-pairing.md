@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-05-03"
+lastupdated: "2024-09-13"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -15,7 +15,7 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Creating and deleting {{site.data.keyword.vcf-aas}} pairings
+# Creating and deleting {{site.data.keyword.vcf-aas}} pairings with VCDA
 {: #vcda-creating-deleting-vmaas-pairing}
 
 When VMware Cloud Director Availability (VCDA) is enabled, you can create cloud-to-cloud connections between your instance and other single-tenant and multitenant {{site.data.keyword.vmware-service_full}} instances. You must create a pairing from both Cloud Director sites to connect.
@@ -55,6 +55,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 1. Click **Create pairing**. The **Available** status displays when the pairing is complete.
 
 The following pairing status options are available.
+
 | Status | Description |
 |:---- |:----------- |
 | Creating | The pairing task starts. |
@@ -75,6 +76,7 @@ The following pairing status options are available.
 {: #vcda-creating-deleting-vmaas-pairing-links}
 
 * [Migrating {{site.data.keyword.vcf-aas}} workloads with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-vmaas)
-* [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-tenant-vcda)
-* [Viewing VMware Cloud Director Availability details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
-* [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)
+* [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda)
+* [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
+* [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting)

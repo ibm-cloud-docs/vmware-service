@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-07-24"
+lastupdated: "2024-09-13"
 
 content-type: tutorial
 services: vmware-service
@@ -61,7 +61,7 @@ This tutorial requires:
 {: #vcda-migrating-cloudtocloud-shared-pairing}
 {: step}
 
-1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant instance. For more information, see [Adding and deleting VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc).
+1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant instance. For more information, see [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc).
 
    VCDA is preinstalled on multitenant instances.
    {: note}

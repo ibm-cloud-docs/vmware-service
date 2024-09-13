@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-27"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -33,6 +33,8 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Name | The name of the VDC. |
    | VCFaaS type | The consumption model for the VDC: Single-tenant or Multitenant. |
    | Location | The data center where the VDC is deployed. |
+   | Network connection | Identifies the connection type: public and private or private only. |
+   | Transit Gateway | The status of the Transit Gateway connection. |
    | Cloud Director instance | The name of the site where the VDC is deployed. |
    | Status | The status of the provisioned VDC. |
    {: caption="Table 1. Virtual data center summary" caption-side="bottom"}
@@ -90,6 +92,8 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
 
    You can enable the Veeam® Backup and VCDA services through the Cloud Director site details page if the services are not installed.
    {: note}
+
+4. For a description of the **Interconnectivity** tab, see [Viewing and deleting Transit Gateway connections](/docs/vmware-service?topic=vmware-service-tgw-viewing-deleting-connections).
 
 ## Procedure to delete a virtual data center
 {: #tenant-viewing-vdc-delete}

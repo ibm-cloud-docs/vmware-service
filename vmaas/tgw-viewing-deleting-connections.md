@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-08-28"
 
 keywords: view connection, interconnectivity, transit gateway, delete connection
 
@@ -20,13 +20,14 @@ subcollection: vmware-service
 
 You can view the status of your {{site.data.keyword.tg_full}} connection and delete the connection group if you no longer need it.
 
-## Procedure to view {{site.data.keyword.tg_short}} connection status
+## Procedure to view {{site.data.keyword.tg_short}} connection details
 {: #tgw-viewing-connections-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click an instance name.
 3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
-4. Review the {{site.data.keyword.tg_short}} connection group status and expand the connection group to review the status of each associated GRE tunnel.
+4. Expand the **{{site.data.keyword.tg_short}} ID** to review the connection group details.
+5. Expand each connection group to review the details and status of each associated GRE tunnel.
 
    | Status | Description |
    |:---- |:----------- |

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-23"
+lastupdated: "2024-09-13"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -24,12 +24,34 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 13 September 2024
+{: #vmware-service-sep1324}
+{: release-note}
+
+Disaster recovery with VMware Cloud Director Availability
+:   You can now use VMware Cloud Director Availability (VCDA) to configure a disaster recovery plan for your primary workload environment. For more information, see [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda-dr).
+
+{{site.data.keyword.tg_full_notm}} connection enhancements
+:   You can now connect to a {{site.data.keyword.tg_short}} instance in a region different from the Cloud Director site. For more information, see [Using Transit Gateway to interconnect VCF as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+
+Software currency
+:   This release provides infrastructure upgrades to VMware Cloud Director Availability 4.7.2.
+
+IBM Cloud data center support for Toronto multitenant
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Toronto region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-13-september-2024).
+
+New documentation
+:   A new solution tutorial, [Configuring disaster recovery with VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-creating-dr-config), is now available.
+
 ### 23 August 2024
 {: #vmware-service-aug2324}
 {: release-note}
 
 IBM Cloud data center support for Toronto single-tenant
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Toronto region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Toronto region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 16 August 2024
 {: #vmware-service-aug1624}
@@ -39,7 +61,7 @@ Software currency
 :   This release provides infrastructure upgrades to VMware vCenter Server® Appliance 8.0 Update 2d.
 
 Terraform 
-:   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
+:   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see the [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
 
 ### 1 August 2024
 {: #vmware-service-aug0124}

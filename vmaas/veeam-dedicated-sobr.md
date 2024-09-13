@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-07-03"
+lastupdated: "2024-09-07"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -15,10 +15,10 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Using a dedicated Scale-out Backup Repository
+# Using a dedicated Scale-out Backup Repository with Veeam Backup
 {: #veeam-adding-sobr}
 
-You can order a dedicated Scale-out Backup Repository (SOBR) through the Veeam® Backup and Replication service for your single-tenant and multitenant instances.
+You can order a dedicated Scale-out Backup Repository (SOBR) through the Veeam® Backup service for your single-tenant and multitenant instances.
 
 A SOBR is a repository system with horizontal scaling support for multitier storage of data. A SOBR consists of one or more backup repositories or object storage repositories that are called the performance tier. You can expand the performance tier with object storage repositories for long-term retention to create the capacity tier. All of the storage devices and systems inside the SOBR are joined into a system with their capacities summarized.
 
