@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-09-14"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
@@ -52,7 +52,7 @@ When you are ready to complete your data recovery configuration, you can access 
 Alternatively, you can access the VCDA console through the Cloud Director site details page. For more information, see [Viewing migration details](/docs/vmware-service?topic=vmware-service-vcda-viewing).
 
 ## Related links
-{: #tenant-vcda-related}
+{: #tenant-vcda-related-dr}
 
 * [Viewing VCDA details](/docs/vmware-service?topic=vmware-service-vcda-viewing)
 * [Adding and deleting private instance endpoints with VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep)
