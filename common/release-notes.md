@@ -24,6 +24,8 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+
+
 ### 13 September 2024
 {: #vmware-service-sep1324}
 {: release-note}
@@ -37,8 +39,7 @@ Disaster recovery with VMware Cloud Director Availability
 Software currency
 :   This release provides infrastructure upgrades to VMware Cloud Director Availability 4.7.2.
 
-IBM Cloud data center support for Toronto multitenant
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Toronto region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 
 REST API updates
 :   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-13-september-2024).
@@ -85,17 +86,17 @@ Private network connection availability for virtual data center orders
 :   You can now select either a public and private network connection or a private-only network connection when you create your VDC with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
 Scale-out Backup Repository for Veeam Backup
-:   The Veeam® Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+:   The Veeam Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 VMware Operations Manager availability
-:   You can now access the Operations Manager service through the VMware Cloud Director™ tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
+:   You can now access the Operations Manager service through the VMware Cloud Director tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
 
 Software currency
 :   This release provides the following infrastructure upgrades.
 
    * VMware ESXi™ 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
-   * VMware NSX-T™ 4.1.2.4
+   * VMware NSX-T 4.1.2.4
    * Veeam Backup 12.1.2
 
 REST API updates

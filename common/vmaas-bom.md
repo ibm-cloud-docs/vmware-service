@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-09-18"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
