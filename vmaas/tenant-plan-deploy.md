@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-09-19"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -102,8 +102,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Dallas | Dallas 12 | Single-tenant and Multitenant |
 | Dallas | Dallas 13 | Single-tenant |
 | Toronto | Toronto 01 | Single-tenant |
-| Toronto | Toronto 04 | Single-tenant |
-| Toronto | Toronto 05 | Single-tenant |
+| Toronto | Toronto 04 | Single-tenant and Multitenant |
+| Toronto | Toronto 05 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 04 | Single-tenant |
 | Washington DC | Washington DC 06 | Single-tenant and Multitenant |
 | Washington DC | Washington DC 07 | Single-tenant and Multitenant |
