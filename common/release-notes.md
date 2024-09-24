@@ -26,6 +26,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 24 September 2024
+{: #vmware-service-sep2424}
+{: release-note}
+
+IBM Cloud data center support for Toronto multitenant
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Toronto region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 13 September 2024
 {: #vmware-service-sep1324}
 {: release-note}
@@ -38,9 +45,6 @@ Disaster recovery with VMware Cloud Director Availability
 
 Software currency
 :   This release provides infrastructure upgrades to VMware Cloud Director Availability 4.7.2.
-
-IBM Cloud data center support for Toronto multitenant
-:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Toronto region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 REST API updates
 :   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-13-september-2024).
