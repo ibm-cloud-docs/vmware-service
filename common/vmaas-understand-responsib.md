@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-09-27"
 
 subcollection: vmware-service
 
@@ -94,6 +94,6 @@ Operating system (OS) licensing refers to the operating system software and conf
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Workload OS licensing | Provide OS licensing for infrastructure tools part of the service, such as VMware and add-on services solution components. | Provide OS licensing for your workloads that are running inside your virtual data centers' VMs or vApps. |
+| Workload OS licensing | Provide OS licensing for infrastructure tools part of the service, such as VMware and add-on services solution components. | For single-tenant instances, you must bring your own OS license for your workloads that are running inside your virtual data centers' VMs or vApps. For multitenant instances, bring your own license is not supported and you must purchase {{site.data.keyword.IBM_notm}} licenses. |
 {: row-headers}
 {: caption="Table 6. Responsibilities for OS licensing" caption-side="bottom"}

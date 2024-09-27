@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-09-03"
+lastupdated: "2024-09-27"
 
 keywords: iam user role for vmware, iam user, iam roles, manage iam, SSO, single sign on
 
@@ -64,4 +64,4 @@ Review your responsibilities for managing IAM.
 
 * [{{site.data.keyword.vcf-aas}} overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview&interface=ui)
 * [Contacting IBM Support](/docs/vmware-service?topic=vmware-service-support&interface=ui)
-* [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director.html){: external}
+* [VMware Cloud Director Documentation](https://docs.vmware.com/en/VMware-Cloud-Director/index.html){: external}
