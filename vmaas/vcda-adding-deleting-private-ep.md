@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting private instance endpoints with VCDA
 {: #vcda-adding-deleting-private-ep}
 
-Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.cloud}} provides a public endpoint for each cloud zone in the region that has at least one resource pool. Public endpoints are read only and cannot be deleted. You can request instance endpoints for private connections for an extra charge.
+Where VMware Cloud Director Availability (VCDA) is enabled, {{site.data.keyword.cloud}} provides a public endpoint for each cloud zone in the region that has at least one resource pool. Public endpoints are read only and cannot be deleted. You can request instance endpoints for private connections for an extra charge.  Note that in the case of multi-tenant VDCs, both public and private endpoints are availible by default.  For multi-tenant VDCs both public and private endpoints are read-only and cannot be deleted.
 
 ## Procedure to add a private connection
 {: #vcda-adding-deleting-private-ep-proc-add}
