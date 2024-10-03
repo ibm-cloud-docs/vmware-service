@@ -43,7 +43,7 @@ Disaster recovery with VMware Cloud Director Availability
 {{site.data.keyword.tg_full_notm}} connection enhancements
 :   You can now connect to a {{site.data.keyword.tg_short}} instance in a region different from the Cloud Director site. For more information, see [Using Transit Gateway to interconnect VCF as a Service with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
-Software currency
+Software currency: VMware Cloud Director Availability 4.7.2
 :   This release provides infrastructure upgrades to VMware Cloud Director Availability 4.7.2.
 
 REST API updates
@@ -63,7 +63,7 @@ IBM Cloud data center support for Toronto single-tenant
 {: #vmware-service-aug1624}
 {: release-note}
 
-Software currency
+Software currency: VMware vCenter Server Appliance 8.0 Update 2d
 :   This release provides infrastructure upgrades to VMware vCenter Server® Appliance 8.0 Update 2d.
 
 Terraform 

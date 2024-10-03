@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-09-27"
+lastupdated: "2024-10-02"
 
 subcollection: vmware-service
 
@@ -69,6 +69,7 @@ Security and regulation compliance includes tasks such as security controls impl
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
+| Workload compliance | Provide up-to-date catalog of operating system images | Configure, harden, maintain, and monitor your virtual machines according to your compliance needs |
 | Encryption | Provide secure SSL connections to administration portals and replication endpoints. Workload can be deployed by using AES 256-bit encrypted data stores with unique key per customer instance. Backups are encrypted uniquely per customer. | Choose encrypted data stores when you are deploying workloads into the environment where appropriate. Use encrypted networking for workload to workload and workload to IBM Cloud Service connections. Use the {{site.data.keyword.cloud_notm}} private network where appropriate. |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
