@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-02"
+lastupdated: "2024-10-03"
 
 subcollection: vmware-service
 
@@ -69,7 +69,7 @@ Security and regulation compliance includes tasks such as security controls impl
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
-| Workload compliance | Provide up-to-date catalog of operating system images | Configure, harden, maintain, and monitor your virtual machines according to your compliance needs |
+| Workload compliance | Provide an up-to-date catalog of operating system images. | Configure, harden, maintain, and monitor your virtual machines according to your compliance needs. |
 | Encryption | Provide secure SSL connections to administration portals and replication endpoints. Workload can be deployed by using AES 256-bit encrypted data stores with unique key per customer instance. Backups are encrypted uniquely per customer. | Choose encrypted data stores when you are deploying workloads into the environment where appropriate. Use encrypted networking for workload to workload and workload to IBM Cloud Service connections. Use the {{site.data.keyword.cloud_notm}} private network where appropriate. |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
@@ -77,7 +77,7 @@ Security and regulation compliance includes tasks such as security controls impl
 ## Disaster recovery
 {: #vmaas-understand-responsib-disaster-recovery}
 
-Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
+Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provisioning disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -91,7 +91,7 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 ## Operating system licensing
 {: #vmaas-understand-responsib-os-mgmt}
 
-Operating system (OS) licensing refers to the operating system software and configuration that are deployed in virtual machines (VMs) or underlying bare metal servers.
+Operating system (OS) licensing refers to the operating system software and configuration that are deployed in virtual machines or underlying bare metal servers.
 
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
