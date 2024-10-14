@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-20"
+lastupdated: "2024-10-14"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -70,12 +70,14 @@ The public catalog contains vApp templates for the following components:
 | Red Hat Enterprise Linux® | 9.3 |
 | Red Hat Enterprise Linux | 8.1 |
 | Red Hat Enterprise Linux | 7.7 |
-{: caption="Table 1. vApp templates" caption-side="bottom"}
+| Rocky Linux | 9.4 |
+| Rocky Linux | 8.1 |
+{: caption="vApp templates" caption-side="bottom"}
 
-#### CentOS templates
+#### CentOS and Rocky templates
 {: #vcd-ops-guide-public-cat-centos}
 
-The CentOS templates that are provided in the public catalog have the following characteristics:
+The templates that are provided in the public catalog have the following characteristics:
 
 * Latest updates installed
 * VMware tools installed
@@ -114,15 +116,13 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
 1. From the **Virtual data centers** tab, locate and click the **Cloud Director instance** name.
 2. On the **Summary** tab, locate the **Red Hat activation key** in the **Site details** panel and click the **Copy to clipboard** icon.
 3. Run the following commands from the Red Hat VM.
-     1. ``rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm``
-     2. ``uuid= `uuidgen` ``
-       Where the character `` ` `` used around uuidgen is the grave accent or backtick.
-     3. ``echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts``
-     4. ``cat /etc/rhsm/facts/uuid_override.facts``
+     1. `uuid=$(uuidgen)`
+     2. `echo {\"dmi.system.uuid\": \"$uuid\"} > /etc/rhsm/facts/uuid_override.facts`
+     3. ``cat /etc/rhsm/facts/uuid_override.facts``
        Ensure the contents of the uuid_override.facts contains a generated UUID.
-     5. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
+     4. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
        Where ``ACTIVATION_KEY`` is the Red Hat activation key that you copied to the clipboard.
-
+       
 You can still use another RHEL Capsule Server or a satellite server if you already have an RHEL subscription outside of IBM. Charges for the RHEL license are incurred against RHEL VMs that are running in a VDC.
 {: note}
 
@@ -157,7 +157,7 @@ You can edit the properties of a VM, including the VM name and description, hard
 
 For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
 
-If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
+If you use the tenant portal (Guest OS Customization) to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
 
 #### Changing the general properties of a virtual machine
@@ -173,20 +173,6 @@ Some disk settings cannot be changed while the VM is powered on. For example, yo
 For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216__GUID-BE9430B7-40F8-43F7-AED4-1080F9E04E34){: external}.
 
 If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-33C22124-A610-4C3E-8F40-26CAC570F958.html){: external}.
-
-#### Enabling a compute policy
-{: #vcd-ops-guide-compute-policy}
-
-Compute policies are applied for VMware stretched vSAN VDCs. When you create a new VM in a stretched location, it uses the `compute_policies` available for that VDC. Additionally, you can change from one compute policy to another by editing your VM hardware properties.
-
-During a failover, a VM moves to a secondary site. When the preferred site is recovered, the VM automatically returns back to the preferred site with the compute policies restored.
-
-You can select the compute policy that you prefer for each VM and VMware Solutions attempts to keep the VM on the preferred data center if it is up and running.
-
-1. From the tenant portal, click **Virtual Machines** from the left panel.
-2. Click **Hardware** to expand the list and click **Compute**.
-3. Locate **Placement Policy** and click **EDIT**.
-4. Select the compute policy and click **Save**.
 
 #### Changing the hardware properties of a virtual machine
 {: #vcd-ops-guide-hardware}
@@ -244,51 +230,21 @@ The following services are available:
 
 | Service | IP address (Endpoint) |
 |:------- |:--------------------- |
-| Microsoft Windows Update Server | 52.117.132.5 |
-| Microsoft Key Management Server | 52.117.132.4 |
-| Red Hat Capsule Server | 52.117.132.7 |
+| Microsoft Windows Update Server | 161.26.4.21 |
+| Microsoft Key Management Server | 161.26.96.8, 161.26.96.9 |
+| Red Hat Capsule Server | 161.26.96.25 |
 | DNS | 161.26.0.10 (`rs1.adn.networklayer.com`) and 161.26.0.11 (`rs2.adn.networklayer.com`) |
 | Ubuntu and Debian APT Mirrors | 161.26.0.6 (mirrors.adn.networklayer.com) |
 | RHEL and CentOS YUM repo | 161.26.0.6 (mirrors.adn.networklayer.com) |
 | NTP | 161.26.0.6 (time.adn.networklayer.com) |
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
-{: caption="Table 2. Available services" caption-side="bottom"}
+{: caption="Available services" caption-side="bottom"}
 
-The VDC must have an edge (public-private or private-only) and have a NAT rule and a firewall rule that is configured on the edge to enable access to the service network.
+The VDC must have an edge (public-private or private-only) to enable access to the service network.  
+
 {: important}
 
-#### Adding the NAT rule for {{site.data.keyword.vcf-aas}}
-{: #vcd-ops-guide-nat-rule-vmwaas}
 
-Add a NAT rule for translating internal network addresses into the service network IP address space.
-1. Log in to the VMware Cloud Director tenant portal.
-2. From the main page under **Virtual Data Center**, click the VDC where you want to add the NAT rule.
-3. In the left pane under **Networking**, click **Edges** and open the single preconfigured edge.
-4. Under the **Services** section, click the **NAT** tab and click **NEW** to add an SNAT rule.
-5. Complete the following configuration in the **Add NAT Rule** window:
-   1. Enter a name for the NAT rule.
-   2. Select `SNAT` in the **Interface Type** field.
-   3. In the **External IP** field, use one of the IP addresses assigned to the VDC. You can find the VDC IP addresses on the VDC **Summary** tab in the VMware Solutions console.
-   4. In the **Internal IP** field, enter the internal IP address, including the CIDR to be translated. A subnet from the `RFC1918` private range is best, but not required. For example, `192.168.10.0/24`. Typically you create one or more networks, connect the target VMs to that network in Director, and use the Gateway CIDR from that network for the internal IP. All of the VMs on that network can then access the service network.
-6. Verify the **Advanced Settings** fields and click **Save**.
-
-#### Adding the firewall rule for {{site.data.keyword.vcf-aas}}
-{: #vcd-ops-guide-firewall-rule-vmwaas}
-
-Add a firewall rule to allow the traffic from the internal network to the service network. Before you add the firewall rule, you must define the IP set.
-1. Log in to the VMware Cloud Director tenant portal.
-2. From the main page under **Virtual Data Center**, click the VDC where you want to add the NAT rule.
-3. In the left pane under **Networking**, click **Edges** and open the single preconfigured edge.
-4. Add the firewall rule.
-   1. Under the **Services** section, click the **Firewall** tab and click **EDIT RULES**. Then, click **NEW ON TOP** to add a firewall rule.
-   2. Add the IP addresses or range from your internal network to the **Source** field. Click the **Firewall IP Addresses** tab and add the IP address of the specific VM or CIDR/IP-Range for the Director network that is connected to the target VMs.
-   3. In the Destination field, select **Any Destination**.
-   4. Select `Allow` in the **Action** field.
-   5. Click **Save**.
-
-After the previous configuration is complete, you can use the supported {{site.data.keyword.cloud_notm}} services on the VMs in your VDC.
-
-If your vApp or VM is deployed from the IBM templates that are provided in the public catalog, the services are already configured on the VM. To enable the connection, you must complete the previous steps in **Adding the NAT rule** and **Adding the firewall rule**.
 
 #### Creating a vApp Network for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-vapp-network-vmaas}

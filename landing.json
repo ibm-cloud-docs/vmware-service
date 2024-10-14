@@ -1,66 +1,54 @@
 {
-    "title": "VMware Cloud Foundation as a Service docs",
-    "lastupdated": "2024-09-24",
-    "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
-    "section_devtools": {
-      "api": "/apidocs/vmware-service"
-    },
-    "section_recommended": [
+  "version": 2,
+  "title": "VMware Cloud Foundation as a Service docs",
+  "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
+  "product_page": "https://www.ibm.com/products/vmware",
+  "console_page": "/vmware", 
+  "section_topics": {
+    "links": [
       {
         "title": "Getting started with VCF as a Service",
-        "description": "Get familiar with the process of ordering a VCF as a Service instance.",
         "href": "/docs/vmware-service?topic=vmware-service-getting-started"
       },
       {
         "title": "Planning the deployment",
-        "description": "Ensure that you plan your deployment properly.",
         "href": "/docs/vmware-service?topic=vmware-service-tenant-plan-deploy"
       },
       {
-        "title": "Ordering instances",
-        "description": "You can order a VCF as a Service instance.",
-        "href": "/docs/vmware-service?topic=vmware-service-tenant-ordering"
+        "title": "Managing IAM access for VCF as a Service",
+        "href": "/docs/vmware-service?topic=vmware-service-vmaas-iam"
       },
       {
-        "title": "Adding hosts",
-        "description": "You can increase or decrease the capacity of your deployment.",
-        "href": "/docs/vmware-service?topic=vmware-service-host-adding-deleting"
+        "title": "Migrating workloads to VCF as a Service with VCDA",
+        "href": "/docs/vmware-service?topic=vmware-service-tenant-vcda"
       },
       {
-        "title": "Adding virtual data centers",
-        "description": "You can deploy one or more virtual data centers.",
-        "href": "/docs/vmware-service?topic=vmware-service-vdc-adding"
+        "title": "Using Transit Gateway to interconnect VCF as a Service with IBM Cloud services",
+        "href": "/docs/vmware-service?topic=vmware-service-tgw-adding-connections"
       },
       {
-        "title": "Viewing instances",
-        "description": "You can view the information of the instances that are provisioned for your account.",
-        "href": "/docs/vmware-service?topic=vmware-service-tenant-viewing-sites"
+        "title": "Understanding your responsibilities when you use VCF as a Service",
+        "href": "/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib"
       }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/architectures/hybrid",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "IBM Cloud for VMware Cloud Foundation as a Service",
+      "description": "Learn about the VCF as a Service instance models.",
+      "href": "https://mediacenter.ibm.com/media/Introducing%20IBM%20Cloud%20for%20VMware%20Cloud%20Foundation%20as%20a%20Service/1_mrpl7ue5",
+      "type": "video",
+      "recommended": true
     },
-    "section_updates": {
-      "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes",
-      "tiles": [
-        {
-          "date": "24 September 2024",
-          "title": "IBM Cloud data center support for Toronto multitenant",
-          "description": "VCF as a Service expands global presence and now supports the Toronto region to host your multitenant VMware workloads."
-        },
-        {
-          "date": "13 September 2024",
-          "title": "Disaster recovery with VMware Cloud Director Availability",
-          "description": "You can now use VMware Cloud Director Availability (VCDA) to configure a disaster recovery plan for your primary workload environment."
-        },
-        {
-          "date": "23 August 2024",
-          "title": "IBM Cloud data center support for Toronto single-tenant",
-          "description": "VCF as a Service expands global presence and now supports the Toronto region to host your single-tenant VMware workloads."
-        }
-      ]
+    {
+      "title": "Veeam on IBM Cloud",
+      "description": "This video shows the advantages you will receive from using Veeam on IBM Cloud for your disaster recovery and backup needs.",
+      "href": "https://www.youtube.com/watch?v=xtVnAhgtSI0",
+      "type": "video",
+      "recommended": true
     }
+  ],
+  "section_updates": {
+    "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes"
+  }
   }

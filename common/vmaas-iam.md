@@ -40,7 +40,7 @@ Review the following tables that outline what types of tasks each role allows fo
 | Administrator | In addition to all Operator permissions, reset the admin credentials for VMware instances. |
 {: row-headers}
 {: class="simple-tab-table"}
-{: caption="Table 1. IAM platform roles" caption-side="bottom"}
+{: caption="IAM platform roles" caption-side="bottom"}
 {: #iamrolesplatform}
 {: tab-title="Platform roles"}
 {: tab-group="IAM"}
@@ -60,7 +60,7 @@ Review the following tables that outline what types of tasks each role allows fo
 | VCFaaS Director Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. |
 {: row-headers}
 {: class="simple-tab-table"}
-{: caption="Table 1. IAM service access roles" caption-side="bottom"}
+{: caption="IAM service access roles" caption-side="bottom"}
 {: #iamrolesservice}
 {: tab-title="Service roles"}
 {: tab-group="IAM"}

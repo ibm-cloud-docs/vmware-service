@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-09-27"
+lastupdated: "2024-10-14"
 
 subcollection: vmware-service
 
@@ -37,7 +37,7 @@ After you provision an instance of the Security and Compliance Center Workload P
 
 Security and Compliance Center Workload Protection enables the following three practices for your VMware workloads:
 
-* Threat detection - Threat detection is managed by defining policies, which consist of rules to detect and respond to security violations, suspicious behavior, or anomalous activities within your Windows and Linux VMs. Security and Compliance Center Workload Protection provides customizable, prebuilt policies, which are created and maintained by Sysdig’s Threat Research team. These policies can detect and prevent various security threats, such as: malware, intrusions, and DDoS attacks. The results of these policies can be viewed in Events. For more information, see [Secure events](https://docs.sysdig.com/en/docs/sysdig-secure/secure-events/){: external}.
+* Threat detection - Threat detection is managed by defining policies, which consist of rules to detect and respond to security violations, suspicious behavior, or anomalous activities within your Windows and Linux VMs. Security and Compliance Center Workload Protection provides customizable, prebuilt policies, which are created and maintained by Sysdig’s Threat Research team. These policies can detect and prevent various security threats, such as: malware, intrusions, and DDoS attacks. The results of these policies can be viewed in Events. For more information, see [Events Feed](https://docs.sysdig.com/en/docs/sysdig-secure/threats/activity/events-feed/){: external}.
 * Vulnerabilities - Security and Compliance Center Workload Protection provides a highly accurate view of the vulnerability risks of your Linux VMs. The views include rich details on your vulnerability risks, such as: CVSS vector, score, fix age, and insights from multiple expert feeds including the NIST National Vulnerability Database (NVD) and VulnDB.
 * Compliance - Posture management provides the framework that includes controls, guidelines, benchmarks, and standards for managing compliance. With Security and Compliance Center Workload Protection, you can evaluate your Linux VMs against several CIS benchmarks such as CIS Distribution Independent Linux Benchmark and compliance policies. For more information, see [Analyzing compliance postures from detection to remediation](/docs/workload-protection?topic=workload-protection-compliance). Typical use cases include:
    * Check the current compliance status against predefined policies to understand the magnitude of the compliance gap.
@@ -48,13 +48,13 @@ Security and Compliance Center Workload Protection enables the following three p
 
 The following diagram shows an example of integrating a {{site.data.keyword.vcf-aas-full}} instance with Security and Compliance Center Workload Protection.
 
-![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vmwaas.svg "Security and Compliance Center Workload Protection."){: caption="Figure 1. Security and Compliance Center Workload Protection" caption-side="bottom"}
+![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vmwaas.svg "Security and Compliance Center Workload Protection."){: caption="Security and Compliance Center Workload Protection" caption-side="bottom"}
 
 This architecture pattern is summarized as follows:
 
 1. The agents, which are installed on your Windows or Linux VMs, collect data that is used for threat detection, posture management, and vulnerability scanning. For more information, see [Sysdig Agents](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/data-sources/sysdig-agents/){: external}. The Sysdig Secure Windows Agent provides runtime detection and policy enforcement for host processes on Windows. For more information, see [Windows Hosts](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/windows-host/){: external}. For Linux VMs, the agent has two parts:
    * Agent - Runtime threat detection is provided by the agent, which processes syscall events and metrics, creates capture files, and performs auditing and compliance tasks. For more information about deploying the agent, see [Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/hosts/packages/sysdig-agent/){: external}.
-   * Vulnerability Host Scanner - The host scanner is used to scan for vulnerabilities on the Linux VM. For more information about deploying the host scanner, see [Vulnerability Host Scanner](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/hosts/packages/vulnerability-host-scanner/){: external}.
+   * Vulnerability Host Scanner - The host scanner is used to scan for vulnerabilities on the Linux VM. For more information about deploying the host scanner, see [Vulnerability Host Scanner](https://docs.sysdig.com/en/docs/sysdig-secure/install-agent-components/install-agent-components/hosts/packages/vulnerability-host-scanner/){: external}.
 2. Your DNS servers need to be able to resolve the Security and Compliance Center Workload Protection endpoint URLs. Configure your DNS servers to use {{site.data.keyword.cloud_notm}} DNS resolvers, if needed.
 3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add an NSX Edge Gateway Firewall Rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html){: external}.
 4. Source Network Address Translation (SNAT) rules allow your VMs overlay IP addresses to be translated to {{site.data.keyword.cloud_notm}} supplied IP addresses that can be used on the Internet. For more information about configuring SNAT rules, see [Add a SNAT or a DNAT Rule to an NSX Edge Gateway](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html){: external}.

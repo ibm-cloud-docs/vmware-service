@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-10-10"
 
 keywords: add capacity, capacity adding, VCDA, VMware Cloud Director Availability
 
@@ -33,7 +33,7 @@ When you select and apply a resource configuration, you can upgrade only to a gr
 | 750 - 1500 | 2 | 24 GB | 22 vCPU |
 | 1500 - 5000 | 6 | 56 GB | 54 vCPU |
 | 5000 - 10000 | 12 | 104 GB| 102 vCPU |
-{: caption="Table 1. Options for estimated migration or replication capacity" caption-side="bottom"}
+{: caption="Options for estimated migration or replication capacity" caption-side="bottom"}
 
 ## Procedure to configure your VMware Cloud Director instance capacity
 {: #vcda-capacity-adding-proc}

@@ -39,7 +39,7 @@ Consider the following tasks, predefined alerts, and what they mean when you mon
 | Monitor CPU usage per cluster to prevent CPU resource exhaustion. The default is to alert after CPU usage is over 80% for any cluster in the site | [VMware by Broadcom Site] Cluster CPU Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
 | Monitor memory usage per cluster to prevent memory resource exhaustion. The default is to alert after memory usage is over 80% for any cluster in the site.| [VMware by Broadcom Site] Cluster Memory Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
 | Monitor storage usage per cluster to prevent storage resource exhaustion. The default is to alert after storage usage is over 80% for any cluster in the site | [VMware by Broadcom Site] Cluster Storage Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with storage. Each of the four performance tiers for the storage that is used in the cluster can be monitored and can receive alerts independently. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
-{: caption="Table 1. Tasks and predefined alerts" caption-side="bottom"}
+{: caption="Tasks and predefined alerts" caption-side="bottom"}
 
 ## {{site.data.keyword.vcf-aas}} predefined dashboard
 {: #single-tenant-monitoring-dashboards}
@@ -72,7 +72,7 @@ The following table displays the name of the single-tenant site cluster.
 | Metadata | Description |
 |:-------- |:----------- |
 | `Metric Name` | `ibm_vmware_directorsite_cluster` |
-{: caption="Table 2. Cluster name metadata" caption-side="bottom"}
+{: caption="Cluster name metadata" caption-side="bottom"}
 
 ### Site cluster ID
 {: #single-tenant-monitoring-metrics-id}
@@ -82,7 +82,7 @@ The following table displays the ID of the single-tenant site cluster.
 | Metadata | Description |
 |:-------- |:----------- |
 | `Metric Name` | `ibm_vmware_directorsite_cluster_id` |
-{: caption="Table 3. Cluster ID metadata" caption-side="bottom"}
+{: caption="Cluster ID metadata" caption-side="bottom"}
 
 ### Site cluster CPU usage
 {: #single-tenant-monitoring-metrics-cpu}
@@ -95,7 +95,7 @@ The following table displays the total usage for the VMware by Broadcom single-t
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 4. CPU usage metadata" caption-side="bottom"}
+{: caption="CPU usage metadata" caption-side="bottom"}
 
 ### Site cluster memory usage
 {: #single-tenant-monitoring-metrics-memory}
@@ -108,7 +108,7 @@ The following table displays the total usage for the VMware by Broadcom single-t
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 5. Memory usage metadata" caption-side="bottom"}
+{: caption="Memory usage metadata" caption-side="bottom"}
 
 ### Site cluster 0.25 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-storage-25}
@@ -121,7 +121,7 @@ The following table displays the total usage for the VMware by Broadcom  single-
 | `Metric Type` | `gauge` |
 | `Unit`  | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 6. 0.25 IOPS/GB storage usage metadata" caption-side="bottom"}
+{: caption="0.25 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Site cluster 2 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-2}
@@ -134,7 +134,7 @@ The following table displays the total usage for the VMware by Broadcom single-t
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 7. 2 IOPS/GB storage usage metadata" caption-side="bottom"}
+{: caption="2 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Site cluster 4 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-4}
@@ -147,7 +147,7 @@ The following table displays the total usage for the VMware by Broadcom  single-
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 8. 4 IOPS/GB storage usage metadata" caption-side="bottom"}
+{: caption="4 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Site cluster 10 IOPS/GB storage usage
 {: #single-tenant-monitoring-metrics-10}
@@ -160,7 +160,7 @@ The following table displays the total usage for the VMware by Broadcom single-t
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 9. 10 IOPS/GB storage usage metadata" caption-side="bottom"}
+{: caption="10 IOPS/GB storage usage metadata" caption-side="bottom"}
 
 ### Site cluster vSAN storage usage
 {: #single-tenant-monitoring-metrics-vsan}
@@ -173,7 +173,7 @@ The following table displays the percentage of usable capacity for the VMware by
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 10. vSAN storage usage metadata" caption-side="bottom"}
+{: caption="vSAN storage usage metadata" caption-side="bottom"}
 
 ### Site cluster vSAN storage raw disk space usage
 {: #single-tenant-monitoring-metrics-vsan-raw}
@@ -186,7 +186,7 @@ The following table displays the total raw disk space for the VMware by Broadcom
 | `Metric Type` | `gauge` |
 | `Unit` | `GB` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 11. vSAN storage raw disk space usage metadata" caption-side="bottom"}
+{: caption="vSAN storage raw disk space usage metadata" caption-side="bottom"}
 
 ### Site cluster vSAN storage disk space usage
 {: #single-tenant-monitoring-metrics-vsan-use}
@@ -199,7 +199,7 @@ The following table displays the total used disk space for the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `GB` |
 | `Segment By` | `VMware Single Tenant Site cluster name` |
-{: caption="Table 12. vSAN storage raw disk space usage metadata" caption-side="bottom"}
+{: caption="vSAN storage raw disk space usage metadata" caption-side="bottom"}
 
 ## Multitenant metrics
 {: #single-tenant-monitoring-metrics-mt}
@@ -217,7 +217,7 @@ The following table displays the total allocation of the VMware by Broadcom virt
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 13. VDC memory allocation" caption-side="bottom"}
+{: caption="VDC memory allocation" caption-side="bottom"}
 
 ### Virtual data center memory usage
 {: #single-tenant-monitoring-metrics-mt-memory-usage}
@@ -230,7 +230,7 @@ The following table displays the total usage of the VMware by Broadcom virtual d
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 14. VDC memory usage" caption-side="bottom"}
+{: caption="VDC memory usage" caption-side="bottom"}
 
 ### Virtual data center storage usage
 {: #single-tenant-monitoring-metrics-mt-storage-usage}
@@ -243,7 +243,7 @@ The following table displays the total usage of the VMware by Broadcom virtual d
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 15. VDC storage usage" caption-side="bottom"}
+{: caption="VDC storage usage" caption-side="bottom"}
 
 ### Virtual data center vCPU allocation
 {: #single-tenant-monitoring-metrics-mt-vcpu-allocation}
@@ -256,7 +256,7 @@ The following table displays the total allocation of the VMware by Broadcom virt
 | `Metric Type` | `gauge` |
 | `Unit` | `none` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 16. VDC vCPU allocation" caption-side="bottom"}
+{: caption="VDC vCPU allocation" caption-side="bottom"}
 
 ### Virtual data center vCPU usage
 {: #single-tenant-monitoring-metrics-mt-vcpu-usage}
@@ -269,7 +269,7 @@ The following table displays the total usage of the VMware by Broadcom virtual d
 | `Metric Type` | `gauge` |
 | `Unit` | `none` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 17. VDC vCPU usage" caption-side="bottom"}
+{: caption="VDC vCPU usage" caption-side="bottom"}
 
 ### Virtual data center disk usage for 0.25 IOPS/GB
 {: #single-tenant-monitoring-metrics-mt-25-iops}
@@ -282,7 +282,7 @@ The following table displays the total disk space usage of the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 18. VDC 0.25 IOPS/GB storage" caption-side="bottom"}
+{: caption="VDC 0.25 IOPS/GB storage" caption-side="bottom"}
 
 ### Virtual data center disk usage for 2 IOPS/GB
 {: #single-tenant-monitoring-metrics-mt-two-iops}
@@ -295,7 +295,7 @@ The following table displays the total disk space usage of the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 19. VDC 2 IOPS/GB storage" caption-side="bottom"}
+{: caption="VDC 2 IOPS/GB storage" caption-side="bottom"}
 
 ### Virtual data center disk usage for 4 IOPS/GB
 {: #single-tenant-monitoring-metrics-mt-four-iops}
@@ -308,7 +308,7 @@ The following table displays the total disk space usage of the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 20. VDC 4 IOPS/GB storage" caption-side="bottom"}
+{: caption="VDC 4 IOPS/GB storage" caption-side="bottom"}
 
 ### Virtual data center disk usage for 10 IOPS/GB
 {: #single-tenant-monitoring-metrics-mt-ten-iops}
@@ -321,7 +321,7 @@ The following table displays the total disk space usage of the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 21. VDC 10 IOPS/GB storage" caption-side="bottom"}
+{: caption="VDC 10 IOPS/GB storage" caption-side="bottom"}
 
 ### Virtual data center disk usage for standard IOPS/GB
 {: #single-tenant-monitoring-metrics-mt-standard-iops}
@@ -334,7 +334,7 @@ The following table displays the total disk space percent of the VMware by Broad
 | `Metric Type` | `gauge` |
 | `Unit` | `percent` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 22. VDC standard IOPS/GB storage" caption-side="bottom"}
+{: caption="VDC standard IOPS/GB storage" caption-side="bottom"}
 
 ### Virtual data center storage usage for vSAN
 {: #single-tenant-monitoring-metrics-mt-vsan}
@@ -347,7 +347,7 @@ The following table displays the total disk space usage of the VMware by Broadco
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance name` |
-{: caption="Table 23. VDC vSAN storage" caption-side="bottom"}
+{: caption="VDC vSAN storage" caption-side="bottom"}
 
 ### Virtual data center storage name
 {: #single-tenant-monitoring-metrics-mt-storage-name}
@@ -357,4 +357,4 @@ The following table displays the name of the VMware by Broadcom virtual data cen
 | Metadata | Description |
 |:-------- |:----------- |
 | `Metric Name` | `ibm_vmware_vdc_datastore` |
-{: caption="Table 24. VDC storage name" caption-side="bottom"}
+{: caption="VDC storage name" caption-side="bottom"}

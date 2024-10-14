@@ -34,7 +34,7 @@ Events are generated to track how users and applications interact with virtual d
 | `vmware.vdc.update` | An event is generated when a VDC instance is modified. |
 | `vmware.sharedsite.create` | An event is generated when the VMware Cloud Director site creates a VDC on the multitenant site for the first time. |
 | `vmware.sharedsite.delete` | An event is generated when the VMware Cloud Director site deletes a VDC on the multitenant site. |
-{: caption="Table 1. Description of actions that generate events related to VDCs" caption-side="bottom"}
+{: caption="Description of actions that generate events related to VDCs" caption-side="bottom"}
 
 ## Events that are related to director site management
 {: #vmaas-at-events-director-site}
@@ -56,7 +56,7 @@ Events are generated when you access VMware Cloud Director™ in {{site.data.key
 | `vmware.directorsite.password-reset` | An event is generated when the user password for a VMware Cloud Director site is reset. |
 | `vmware.directorsite-iam.config` | An event is generated when the OpenID Connect (OIDC) for a VMware Cloud Director site is configured. |
 | `vmware.directorsite-iam.read` | An event is generated when the OIDC for a VMware Cloud Director site is checked. Monitoring is not enabled yet. |
-{: caption="Table 2. Description of actions that generate events related to VMware Cloud Director site management" caption-side="bottom"}
+{: caption="Description of actions that generate events related to VMware Cloud Director site management" caption-side="bottom"}
 
 ## Viewing events
 {: #vmaas-at-events-viewing}

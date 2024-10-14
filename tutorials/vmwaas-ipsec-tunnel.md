@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-08-08"
+lastupdated: "2024-10-10"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -51,7 +51,7 @@ In this tutorial, you will learn:
 
 The following diagram presents an overview of the solution to be deployed.
 
-![Architecture Diagram](../images/vmwaas-solution-tutorial-diagrams-ui-vmwaas-vdc-vpn.svg){: caption="Figure 1. Architecture diagram of the tutorial" caption-side="bottom"}
+![Architecture Diagram](../images/vmwaas-solution-tutorial-diagrams-ui-vmwaas-vdc-vpn.svg){: caption="Architecture diagram of the tutorial" caption-side="bottom"}
 {: style="text-align: center;"}
 
 ## Before you begin
@@ -100,7 +100,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    |:-------------------- |:--------------------------- |
    | Subnets behind vSRX  | `10.95.1.0/26` |
    | Subnets on the VDC   | `192.168.100.0/24` |
-   {: caption="Table 1. List of site prefixes or subnets to review before configuring the VPN." caption-side="bottom"}
+   {: caption="List of site prefixes or subnets to review before configuring the VPN." caption-side="bottom"}
 
    As your solution might differ, use the subnets from your network design and deployment.
 
@@ -121,7 +121,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    |:---------------------------------- |:--------------------------- |
    | Public IP address of edge gateway  | `<public-IP address-of-the-vdc-edge-gateway>` |
    | Public IP address of vSRX          | `<public-IP address-of-the-vsrx>` |
-   {: caption="Table 2. List of gateway IP addresses to review before configuring the VPN." caption-side="bottom"}
+   {: caption="List of gateway IP addresses to review before configuring the VPN." caption-side="bottom"}
 
    As your solution might differ, use the endpoint IP addresses matching your deployment.
 
@@ -136,7 +136,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    | Digest                           | SHA 2 - 256 |
    | Diffie-Hellman Group             | Group 14 |
    | Association Life Time (seconds)  | 28800 |
-   {: caption="Table 3. List of IKE policy parameters to review before configuring the VPN." caption-side="bottom"}
+   {: caption="List of IKE policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
 
@@ -150,7 +150,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    | Digest                           | SHA 2 - 256 |
    | Diffie-Hellman Group             | Group 14 |
    | Association Life Time (seconds)  | 3600 |
-   {: caption="Table 4. List of IPsec (or tunnel) policy parameters to review before configuring the VPN." caption-side="bottom"}
+   {: caption="List of IPsec (or tunnel) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
 
@@ -159,7 +159,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
    | DPD                             | Value |
    |:------------------------------- |:------------------ |
    | Probe Interval (seconds)        | 60 |
-   {: caption="Table 5. List of dead peer detection (DPD) policy parameters to review before configuring the VPN." caption-side="bottom"}
+   {: caption="List of dead peer detection (DPD) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
 
@@ -281,7 +281,7 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
 2. In the left navigation, click **Networking**.
 3. Under **Edge Gateways**, select the `name` of your Edge Gateway.
 
-   ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="Figure 2. {{site.data.keyword.vcf-aas}} VDC Edge Gateway Selection" caption-side="bottom"}
+   ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="{{site.data.keyword.vcf-aas}} VDC Edge Gateway Selection" caption-side="bottom"}
    {: style="text-align: center;"}
 
 4. On the side menu, click **IP Sets** and click **New** to create a new IP Set.
@@ -291,9 +291,9 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
    |:----------- |:------------------ |:------------- |
    | IPSET 1     | Firewall-Network   | `10.95.1.0/26` |
    | IPSET 2     | VMWaaS-VDC-Network | `192.168.100.0/24` |
-   {: caption="Table 6. IP sets details" caption-side="bottom"}
+   {: caption="IP sets details" caption-side="bottom"}
 
-   ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="Figure 3. {{site.data.keyword.vcf-aas}} VDC IP sets" caption-side="bottom"}
+   ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="{{site.data.keyword.vcf-aas}} VDC IP sets" caption-side="bottom"}
    {: style="text-align: center;"}
 
 6. Click **Save**.
@@ -313,9 +313,9 @@ You must add two extra rules to allow traffic to and from the VPN connection.
    |:-------------- |:--------------------- |:------------ |:-------------------- |
    | Firewall Rule 1 | `VMWaaS-to-FW`      | `VMWaaS-VDC-Network` | `Firewall-Network` |
    | Firewall Rule 2 | `FW-to-VMWaaS`      | `Firewall-Network`   |`VMWaaS-VDC-Network` |
-   {: caption="Table 7. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+   {: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
-   ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="Figure 4. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+   ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
    {: style="text-align: center;"}
 
 ### Create VDC IPSec VPN Tunnel
@@ -333,11 +333,11 @@ The next step is to create the IPSec VPN tunnel between our Local and Remote End
    |:----------------------- |:-------------------- |:--------- |:-------------------- |
    | Local Endpoint  | `<public-IP address-of-the-vdc-edge-gateway>` | `192.168.100.0/24` | `n/a` |
    | Remote Endpoint | `<public-IP address-of-the-vsrx>`      | `10.95.1.1/26`   | `<public-IP address-of-the-vsrx>` |
-   {: caption="Table 8. {{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+   {: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
 6. Click **Finish** to complete.
 
-   ![VDC IPsec VPN](../images/vmwaas-ipsec-tunnel-ipsec-vpn.png){: caption="Figure 5. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN configuration" caption-side="bottom"}
+   ![VDC IPsec VPN](../images/vmwaas-ipsec-tunnel-ipsec-vpn.png){: caption="{{site.data.keyword.vcf-aas}} VDC IPSEC VPN configuration" caption-side="bottom"}
    {: style="text-align: center;"}
 
 ## Validate your IPsec tunnel and connectivity
@@ -357,7 +357,7 @@ You can test the connection on the user interface (UI) or the classic way throug
 4. Check it in detail by clicking **View Statistics**.
 5. If the status is not green, there might be problems with the tunnel.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-01.png){: caption="Figure 6. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN first validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-01.png){: caption="{{site.data.keyword.vcf-aas}} VDC IPSEC VPN first validation" caption-side="bottom"}
 
 If the tunnel is not working, you can check it by:
 
@@ -366,7 +366,7 @@ If the tunnel is not working, you can check it by:
 3. Check it in detail by clicking **Security Profile Customization**.
 4. Change the specific details about **IKE profile details**, **Tunnel Configuration**, or **DPD Configuration**.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-02.png){: caption="Figure 7. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN second validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-02.png){: caption="{{site.data.keyword.vcf-aas}} VDC IPSEC VPN second validation" caption-side="bottom"}
 
 If your settings are correct and you click **Save**, then your tunnel is working and you can check it with the same steps as before, with the only change that the **Status** column should be green, and **View Statistics** should show also green.
 
@@ -375,7 +375,7 @@ If your settings are correct and you click **Save**, then your tunnel is working
 3. By the Column **State**, if it says **Enabled** and it's green, then it is working.
 4. Check it in detail by clicking **View Statistics**.
 
-   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-03.png){: caption="Figure 8. {{site.data.keyword.vcf-aas}} VDC IPSEC VPN third validation" caption-side="bottom"}
+   ![VDC IPsec Validation](../images/vmwaas-ipsec-tunnel-verification-03.png){: caption="{{site.data.keyword.vcf-aas}} VDC IPSEC VPN third validation" caption-side="bottom"}
 
 ### Validate your IPsec tunnel and connectivity on the CLI
 {: #vmwaas-ipsec-tunnel-connectivity-cli}

@@ -38,7 +38,7 @@ For more information about your responsibilities when using {{site.data.keyword.
 | RPO | 24 h | Use a backup provider such as Veeam® Backup and Recovery to store periodic backups of your workload. |
 | RPO | Minutes | Use a replication provider such as Veeam to replicate your workload to another location. |
 | RTO | Minutes to hours | The recovery time objective depends on the storage medium that is used for your backups and on how long it takes for your workload to be ready from a cold start. |
-{: caption="Table 1. RPO and RTO for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+{: caption="RPO and RTO for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
 
 ## Locations
 {: #bc-dr-locations}

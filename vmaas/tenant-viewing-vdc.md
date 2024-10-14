@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-10-10"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -37,7 +37,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Transit Gateway | The status of the Transit Gateway connection. |
    | Cloud Director instance | The name of the site where the VDC is deployed. |
    | Status | The status of the provisioned VDC. |
-   {: caption="Table 1. Virtual data center summary" caption-side="bottom"}
+   {: caption="Virtual data center summary" caption-side="bottom"}
 
    Click **VMware console** to create and manage networking and workloads. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration&interface=ui).
 
@@ -60,7 +60,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
    {: class="simple-tab-table"}
-   {: caption="Table 2. Virtual data center details - single-tenant" caption-side="bottom"}
+   {: caption="Virtual data center details - single-tenant" caption-side="bottom"}
    {: #table1}
    {: tab-title="Single-tenant instances"}
    {: tab-group="vdc details"}
@@ -80,7 +80,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either enable or disable fast provisioning for the VDC. |
    {: class="simple-tab-table"}
-   {: caption="Table 2. Virtual data center details - multitenant" caption-side="bottom"}
+   {: caption="Virtual data center details - multitenant" caption-side="bottom"}
    {: #table2}
    {: tab-title="Multitenant instances"}
    {: tab-group="vdc details"}

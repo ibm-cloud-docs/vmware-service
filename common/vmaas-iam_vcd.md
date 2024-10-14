@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-10"
+lastupdated: "2024-10-10"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -41,7 +41,9 @@ The following table provides information about the platform management roles and
 | VCFaaS Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
 | VCFaaS Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
 | VCFaaS Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
-{: caption="Table 1. Roles and actions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+{: caption="Roles and actions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+
+
 
 ## Custom defined roles and permissions
 {: #vmaas-iam_vcd-custom}
@@ -108,7 +110,7 @@ The following table provides information about roles that are custom-defined by 
 | Organization vDC Gateway: Configure DHCP | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure DNS | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure ECMP Routing | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
-| Organization vDC Gateway: Configure Firewall | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | ![Available](../../icons/checkmark-icon.svg) | |
+| Organization vDC Gateway: Configure Firewall | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure IPSec VPN | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure L2 VPN | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure Load Balancer | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | ![Available](../../icons/checkmark-icon.svg) | |
@@ -243,7 +245,9 @@ The following table provides information about roles that are custom-defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom-defined roles and permissions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+{: caption="Custom-defined roles and permissions for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+
+
 
 ## Related links
 {: #vmaas-iam_vcd-links}

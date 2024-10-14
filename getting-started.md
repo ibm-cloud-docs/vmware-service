@@ -48,7 +48,7 @@ You need an {{site.data.keyword.cloud_notm}} account, which must meet certain re
 |:------- |:---------- |
 | IBMid | By using the **IBMid**, you can have a single login username for all {{site.data.keyword.IBM}} products and services that you use, including {{site.data.keyword.cloud_notm}}. VMware Solutions is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the VMware Solutions console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the VMware Solutions console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are guided to either associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You need to go through this process only once. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
 | {{site.data.keyword.cloud_notm}} account | To order and use {{site.data.keyword.cloud_notm}} services, an {{site.data.keyword.cloud_notm}} account is required. Billing information is associated with the {{site.data.keyword.cloud_notm}} account. The price of the physical and virtual infrastructure and the resulting licenses are charged to your {{site.data.keyword.cloud_notm}} account. |
-{: caption="Table 1. Required user accounts" caption-side="bottom"}
+{: caption="Required user accounts" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}

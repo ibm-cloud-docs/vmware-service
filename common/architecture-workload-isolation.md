@@ -22,7 +22,7 @@ The {{site.data.keyword.vmware-service_full}} architecture is based on the follo
 * Management domain - Hosts the {{site.data.keyword.IBM}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
 * Customer workload domain - Hosts single-tenant and multitenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer-deployed networking and workloads.
 
-![{{site.data.keyword.vcf-aas}} region](../images/multi-vs-single-tenant.svg){: caption="Figure 1. {{site.data.keyword.vcf-aas}} region" caption-side="bottom"}
+![{{site.data.keyword.vcf-aas}} region](../images/multi-vs-single-tenant.svg){: caption="{{site.data.keyword.vcf-aas}} region" caption-side="bottom"}
 
 The architecture details the {{site.data.keyword.vcf-aas-full}} solution components and different architecture layers to provide an isolated and private implementation for customers. The architecture provides customizable deployment choices of infrastructure and VMware Cloud Director™ based virtual data center environments.
 
@@ -72,7 +72,7 @@ The customer workload domain is reserved for use by customer workloads except fo
 |:---- |:----------- |:-------- |
 | Management plane | {{site.data.keyword.vcf-aas}} operational management components | Management plane resources exist in {{site.data.keyword.cloud_notm}} classic IaaS regions. Operational interfaces used to access the management domain are protected by networking appliance firewalls and the use of bastion hosts by the operations team. Management component connectivity to the workload plane takes place through networking appliances. Public connectivity to all customer public service interfaces is protected through Akamai security. Customers access VMware Cloud Director and associated service portals by using the web UI through the Akamai security layer from the public network. These interfaces are restricted and do not enable customers to transit further through the management plane network. |
 | Workload plane | VMware Cloud Director Virtual Data Centers consisting of vApps, virtual machines (VM), and virtual networks | Operations management interfaces into the workload plane are protected by networking appliance firewalls and bastion hosts. Customer workloads are allowed by VMware Cloud Director to attach only to restricted, separate NSX-T virtualized networks that are running as overlays on the classic IaaS network. Therefore, customer VMs do not have broad access to the Workload Plane management and storage networks. Customer network access is restricted by NSX-T edge appliances. Customer workload connectivity to public takes place through NSX-T edge routers that are managed by the customer through a restricted VMware Cloud Director interface. Customer workload connectivity to private takes place through IBM-managed NSX-T edge routers that are configured to limit connectivity to well-known {{site.data.keyword.cloud_notm}} private services. |
-{: caption="Table 1. Description and boundaries for the management and workload planes" caption-side="bottom"}
+{: caption="Description and boundaries for the management and workload planes" caption-side="bottom"}
 
 ### Data protection
 {: #architecture-workload-isolation-data-protection}

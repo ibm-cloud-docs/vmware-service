@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-10-10"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -61,7 +61,7 @@ The following pairing status options are available.
 | Creating | The pairing task starts. |
 | Waiting for peer pairing | The pairing is complete on one site. |
 | Available | The pairing is complete on both sites. |
-{: caption="Table 1. Pairing status" caption-side="bottom"}
+{: caption="Pairing status" caption-side="bottom"}
 
 ## Procedure to delete a {{site.data.keyword.vcf-aas}} pairing
 {: #vcda-creating-deleting-vmaas-pairing-proc-delete}

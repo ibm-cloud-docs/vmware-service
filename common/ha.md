@@ -40,7 +40,7 @@ Service level objectives (SLOs) describe the design points that the {{site.data.
 |:------------------- |:------------ | :----- |
 | Availability % | 99.9% | Single instance in a single zone. Your workload is restarted on other hosts if a host failure occurs. |
 | Availability % | 99.99% | Multiple instances that are distributed across multiple zones or regions. Workload is not automatically restarted across zones or regions, but must be designed and implemented for continuous availability or warm standby between zones or regions. |
-{: caption="Table 1. SLO for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
+{: caption="SLO for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
 
 The SLO is not a warranty and {{site.data.keyword.IBM_notm}} will not issue credits for failure to meet an objective. Refer to the SLAs for commitments and credits that are issued for failure to meet any committed SLAs. For a summary of all SLOs, see [{{site.data.keyword.cloud_notm}} service level objectives](/docs/overview?topic=overview-slo).
 

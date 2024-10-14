@@ -3,7 +3,7 @@
 copyright:
   years: 2023, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-10-10"
 
 keywords: software currency for vmware service, policies, software currency policies
 
@@ -29,7 +29,7 @@ IBM defines a major release as the first update level after a VMware major relea
 | Patches, hotfixes, and maintenance packs | Up to 45 days |
 | Day zero uses (IBM security policy) | Within 5 days |
 {: class="simple-tab-table"}
-{: caption="Table 1. Software currency policies" caption-side="bottom"}
+{: caption="Software currency policies" caption-side="bottom"}
 {: #table1}
 {: tab-title="VMware software"}
 {: tab-group="currency policies"}
@@ -41,7 +41,7 @@ IBM defines a major release as the first update level after a VMware major relea
 | Patches, hotfixes, maintenance packs | Up to 45 days |
 | Day zero uses (IBM security policy) | Within 5 days |
 {: class="simple-tab-table"}
-{: caption="Table 1. Software currency policies" caption-side="bottom"}
+{: caption="Software currency policies" caption-side="bottom"}
 {: #table2}
 {: tab-title="Third-party software"}
 {: tab-group="currency policies"}

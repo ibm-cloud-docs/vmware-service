@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-10-10"
 
 keywords: view connection, interconnectivity, transit gateway, delete connection
 
@@ -38,7 +38,7 @@ You can view the status of your {{site.data.keyword.tg_full}} connection and del
    | Attached | The GRE tunnel is attached to {{site.data.keyword.tg_short}} and the connection group is created. |
    | Disconnected | A stand-alone GRE tunnel was deleted from your {{site.data.keyword.tg_short}}. Click **Reattach connection to {{site.data.keyword.tg_short}}** to return to the {{site.data.keyword.tg_short}} console to reattach the connection. |
    | Deleting | The connection group and associated GRE tunnels are being deleted. |
-   {: caption="Table 1. Connection group and unbound GRE tunnel connection statuses " caption-side="bottom"}
+   {: caption="Connection group and unbound GRE tunnel connection statuses " caption-side="bottom"}
 
 ## Procedure to delete a {{site.data.keyword.tg_short}} connection
 {: #tgw-deleting-connections-proc}

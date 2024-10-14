@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-09-13"
+lastupdated: "2024-10-10"
 
 content-type: tutorial
 services: vmware-service
@@ -81,7 +81,7 @@ The following pairing status options are available.
 | Creating | The pairing task starts. |
 | Waiting for peer pairing | The pairing is complete on one site. |
 | Available | The pairing is complete on both sites. |
-{: caption="Table 1. Pairing status" caption-side="bottom"}
+{: caption="Pairing status" caption-side="bottom"}
 
 ## Migrate your virtual machine through the {{site.data.keyword.vcf-aas}} pairing
 {: #vcda-migrating-cloudtocloud-migrate-pairing}

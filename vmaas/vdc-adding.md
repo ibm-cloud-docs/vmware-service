@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-10-10"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -40,7 +40,7 @@ For multitenant instances, the minimum instance configuration consists of one vC
 | Multitenant \n **Reserved** RAM | - RAM is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased then decreased again, the high water mark RAM capacity reservation is charged for that month. |
 | Multitenant shared storage | - Shared storage is billed hourly. \n - Storage quantity includes all storage allocated per VM, even if the VM is stopped, and all VM snapshots. \n - Storage usage increases with new VMs and snapshots and decreases when VMs and snapshots are removed. |
 | Multitenant edges | - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. |
-{: caption="Table 1. Billing details" caption-side="bottom"}
+{: caption="Billing details" caption-side="bottom"}
 
 ## Virtual data center name
 {: #vdc-adding-vdc-name}

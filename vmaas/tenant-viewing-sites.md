@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-10-10"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -38,7 +38,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | VCFaaS type | The consumption model for the site: Single-tenant or Multitenant. |
    | Location | The region where the VDC is deployed. |
    | Status | The status of the provisioned site. |
-   {: caption="Table 1. Cloud Director site summary" caption-side="bottom"}
+   {: caption="Cloud Director site summary" caption-side="bottom"}
 
 3. Expand the site row to view the summary of VDCs that are provisioned for that site.
 
@@ -48,7 +48,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Resource pool | The name of the resource pool for the VDC. |
    | Network edge | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Status | The status of the VDC. |
-   {: caption="Table 2. Virtual data center summary" caption-side="bottom"}
+   {: caption="Virtual data center summary" caption-side="bottom"}
 
    Click **VMware console** to create and manage networking and workloads. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration&interface=ui).
 
@@ -65,7 +65,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Billing cycle | The pricing plan for the site. |
    | Creation time | The date and time that the site was created. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
-   {: caption="Table 3. Cloud Director site details" caption-side="bottom"}
+   {: caption="Cloud Director site details" caption-side="bottom"}
 
    If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
 
