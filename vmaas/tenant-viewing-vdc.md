@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-15"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 

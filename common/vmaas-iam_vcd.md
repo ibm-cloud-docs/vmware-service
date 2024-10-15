@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-15"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -45,7 +45,7 @@ The following table provides information about the platform management roles and
 
 
 
-## Custom defined roles and permissions
+## Custom-defined roles and permissions
 {: #vmaas-iam_vcd-custom}
 
 The following table provides information about roles that are custom-defined by IBM.

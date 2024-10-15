@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-15"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -90,6 +90,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Frankfurt | Frankfurt 02 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 04 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 05 | Single-tenant |
+| London | London 04 | Single-tenant |
+| London | London 05 | Single-tenant |
+| London | London 06 | Single-tenant |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}

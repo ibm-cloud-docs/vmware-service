@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-14"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
@@ -26,10 +26,10 @@ The following table details the current component versions for new instance orde
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware       | ESXi™ | ESXi 7.0 Update 3q |
-| VMware       | vCenter Server® Appliance | 8.0 Update 2d |
-| VMware       | NSX-T™ | 4.1.2.4 |
-| VMware       | Cloud Director™ | 10.5.1.1 |
-| VMware       | Cloud Director Availability | 4.7.2 |
+| VMware       | VMware ESXi™ | ESXi 7.0 Update 3q |
+| VMware       | VMware vCenter Server® Appliance | 8.0 Update 2d |
+| VMware       | VMware NSX-T™ | 4.1.2.4 |
+| VMware       | VMware Cloud Director™ | 10.5.1.1 |
+| VMware       | VMware Cloud Director Availability | 4.7.2 |
 | Veeam®       | Veeam Backup | 12.1.2 |
 {: caption="BOM for the software components in {{site.data.keyword.vcf-aas}} instances" caption-side="bottom"}

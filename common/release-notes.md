@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-09-24"
+lastupdated: "2024-10-15"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2024}
 
 
+
+### 15 October 2024
+{: #vmware-service-oct1824}
+{: release-note}
+
+IBM Cloud data center support for London single-tenant
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the London region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 24 September 2024
 {: #vmware-service-sep2424}
@@ -67,7 +74,7 @@ Software currency update: VMware vCenter Server Appliance 8.0 Update 2d
 :   This release provides infrastructure upgrades to VMware vCenter Server Appliance 8.0 Update 2d.
 
 Terraform 
-:   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} virtual data centers (VDCs). For more information, see the [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
+:   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} VDCs. For more information, see the [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
 
 ### 1 August 2024
 {: #vmware-service-aug0124}
@@ -144,7 +151,7 @@ User interface updates and enhancements
 {: release-note}
 
 Updated packaging and pricing for VMware Solutions offerings
-:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
+:   {{site.data.keyword.cloud_notm}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
 
 Updated pricing structure for RHEL for VMware as a Service
 :   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large). For more information, see [April 2024 price changes](/docs/overview?topic=overview-price-adjustments).
