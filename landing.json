@@ -48,6 +48,9 @@
       "recommended": true
     }
   ],
+  "section_devtools": {
+    "api": "/apidocs/vmware-service"
+  },
   "section_updates": {
     "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes"
   }
