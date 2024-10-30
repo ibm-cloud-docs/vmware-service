@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-25"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -65,9 +65,6 @@ This tutorial requires:
 * [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
-
-Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
-{: note}
 
 ## Gather information and requirements
 {: #vmwaas-ipsec-tunnel-gather-requirements}
@@ -268,7 +265,7 @@ The following configurations use the example policy values that were presented e
    set security flow tcp-mss ipsec-vpn mss 1360
    ```
 
-## Configure VMware-as-a-Service Instance Edge Gateway
+## Configure {{site.data.keyword.vcf-aas}} instance edge gateway
 {: #vmwaas-ipsec-tunnel-config-edge-gateway}
 {: step}
 
@@ -298,7 +295,7 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
 
 6. Click **Save**.
 
-### Create VDC Gateway firewall rule
+### Create the VDC gateway firewall rule
 {: #vmwaas-ipsec-tunnel-firewall}
 
 The {{site.data.keyword.vcf-aas}} tenant instance is provisioned with a default firewall rule that drops all traffic to ensure security.
@@ -318,7 +315,7 @@ You must add two extra rules to allow traffic to and from the VPN connection.
    ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
    {: style="text-align: center;"}
 
-### Create VDC IPSec VPN Tunnel
+### Create the VDC IPSec VPN Tunnel
 {: #vmwaas-ipsec-tunnel-vdc}
 
 The next step is to create the IPSec VPN tunnel between our Local and Remote Endpoint.

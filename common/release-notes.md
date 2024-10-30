@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-15"
+lastupdated: "2024-10-25"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -24,14 +24,36 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 25 October 2024
+{: #vmware-service-oct1124}
+{: release-note}
 
+VMware Cloud Director IP Spaces availability
+:   Beginning with VMware Cloud Director™ 10.6, {{site.data.keyword.vcf-aas-full}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
+
+   By default, each virtual data center (VDC) with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
+ 
+ New rights availability
+ :   Additonal rights are available with this release. If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
+
+Software currency updates
+:   This release provides the following infrastructure upgrades.
+
+   * VMware Cloud Director 10.6.0.1
+   * VMware vCenter Server® Appliance 8.0 Update 3b
+   * VMware NSX-T™ 4.2.0.2
+   * Veeam® Backup 12.2
+   * VMware Cloud Director Availability 4.7.3
+
+Route-based IPsec VPN for {{site.data.keyword.vcf-aas}}
+:   You can now use route-based IPsec VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances. For more information, see [Creating a route-based IPsec VPN against the VDC edge gateway over the public internet for VCF as a Service](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-routebased-ipsec-vpn-vmaas).
 
 ### 15 October 2024
 {: #vmware-service-oct1824}
 {: release-note}
 
 IBM Cloud data center support for London single-tenant
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the London region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the London region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 24 September 2024
 {: #vmware-service-sep2424}

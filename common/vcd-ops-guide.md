@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-29"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -146,7 +146,7 @@ The maximum import size is 750 GB. Large image files or templates might take a l
 ## Virtual machines
 {: #vcd-ops-guide-machines}
 
-When you use the tenant portal, you can create a virtual machine (VM) or provision a VM from a template.
+When you use the tenant portal, you can create a VM or provision a VM from a template.
 
 For more information, see [Create a standalone virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-64CFBEFC-8E3D-49FC-B1BD-16CCE7493544.html){: external}.
 
@@ -224,9 +224,9 @@ For a complete tutorial on how to create VDC networks inside of your VDC, create
 ### Enabling VM access to {{site.data.keyword.cloud_notm}} services by using the private network
 {: #vcd-ops-guide-enable-access}
 
-You can configure vApps and VMs running inside of the VDC to use the {{site.data.keyword.cloud_notm}} private network to access {{site.data.keyword.cloud_notm}} Services. Accessing {{site.data.keyword.cloud_notm}} services through a private network can save on outbound public networking costs and can provide a higher degree of reliability and security. VDCs route to the {{site.data.keyword.cloud_notm}} private network through a VDC service network that is configured as an available external network on the VDC edge.
+You can configure vApps and VMs running inside of the VDC to use the {{site.data.keyword.cloud_notm}} private network to access {{site.data.keyword.cloud_notm}} services. Accessing {{site.data.keyword.cloud_notm}} services through a private network can save on outbound public networking costs and can provide a higher degree of reliability and security. Virtual data centers route to the {{site.data.keyword.cloud_notm}} private network through a VDC service network that is configured as an available external network on the VDC edge.
 
-The following services are available:
+The following services are available.
 
 | Service | IP address (Endpoint) |
 |:------- |:--------------------- |
@@ -240,16 +240,14 @@ The following services are available:
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
 {: caption="Available services" caption-side="bottom"}
 
-The VDC must have an edge (public-private or private-only) to enable access to the service network.  
-
+The VDC must have an edge (public-private or private-only) to enable access to the service network. NAT and firewall rules for private network connectivity are established as a default during the VDC creation.
 {: important}
 
-
-
-#### Creating a vApp Network for {{site.data.keyword.vcf-aas}}
+### Creating a vApp network for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-vapp-network-vmaas}
 
-If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs before you complete the following procedure. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+{: requirement}
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the VDC where you want to create the vApp network.
@@ -260,6 +258,53 @@ If not already completed, create a vApp containing at least two VMs. For more in
 7. Click **Add**.
 
 For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+
+### Creating a route-based IPsec VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
+{: #vcd-ops-guide-routebased-ipsec-vpn-vmaas}
+
+The following steps outline a validated process. Many different configurations work and depending on the remote side of the IPsec tunnel, different configurations might be required.
+
+Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the VDC where you want to create a route-based IPsec VPN.
+3. In the left pane under **Networking**, click **Edges**.
+4. From the **Services** section in the left pane, select **IPSec VPN**.
+5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
+   1. For **General Settings**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+      * For **Type**, select **Route Based**.
+      * For **Security Profile**, use the default.
+      * For **Status**, toggle on to enable.
+      * For **Logging**, toggle off to disable.
+   2. For **Peer Authentication Mode**, complete the following selections and click **NEXT**.
+      * For **Authentication Mode**, select **Pre-Shared Key**. You must also use this value on the other side of the VPN tunnel.
+      * For **Pre-Shared Key**, enter a secure value that is also used on the other side of the VPN tunnel.
+   3. For **Endpoint Configuration**, complete the following selections and click **NEXT**.
+      * For **Local Endpoint**, enter a free and unused public IP address. The public IP address must also be allocated in IP Spaces Floating IPs.
+      * For **Remote Endpoint**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**. Leave the **Remote ID** field empty.
+      * For **Virtual Tunnel Interfaces (VTI) Tunnel Interface**, set the value to a `/30` or `/31` network in the link-local ranges (169.254.0.0/16). Don't reuse the same tunnel interfaces. Consider the following examples.
+
+      | Local interface   | Remote interface   |
+      |:----------------  |:------------------ |
+      | 169.254.101.1/30  | 169.254.101.2/30   | 
+      | 169.254.110.5/30  | 169.254.110.6/30   | 
+      | 169.254.120.9/30  | 169.254.120.10/30  |
+      | 169.254.139.13/30 | 169.254.130.14/30  |
+      {: caption="Tunnel interface examples" caption-side="bottom"}
+
+   4. Review the settings for accuracy and click **FINISH**.
+6. From the **Routing** section in the left pane, select **Static Routes**.
+7. Click **NEW** and complete the following fields for the new static route.
+   1. For the **General** tab, complete the following selections.
+      * For **Name** and **Description**, provide details that help to describe the static route.
+      * For **Network**, enter the remote network that the VPN is connecting with. For example, `192.168.47.0/24`.
+      * Ensure that the **Route Advertised** field is toggled off.
+   2. For the **Next Hops** tab, complete the following selections. 
+      * For **IP Address**, enter the tunnel IP address of the remote tunnel. For example, `169.254.101.1`.
+      * For **Admin Distance**, enter *1*.
+      * For **Scope**, leave the field empty.
+   3. Click **Save**.
 
 ## Accessing Operations Manager
 {: #vcd-ops-guide-enable-chargeback}
