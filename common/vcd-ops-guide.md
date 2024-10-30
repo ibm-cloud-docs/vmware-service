@@ -277,6 +277,147 @@ If not already completed, create a vApp containing at least two VMs before you c
 
 For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
 
+### Creating a route-based IPsec VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
+{: #vcd-ops-guide-routebased-ipsec-vpn-vmaas}
+
+The following steps outline a validated process. Many different configurations work and depending on the remote side of the IPsec tunnel, different configurations might be required.
+
+Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the VDC where you want to create a route-based IPsec VPN.
+3. In the left pane under **Networking**, click **Edges**.
+4. From the **Services** section in the left pane, select **IPSec VPN**.
+5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
+   1. For **General Settings**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+      * For **Type**, select **Route Based**.
+      * For **Security Profile**, use the default.
+      * For **Status**, toggle on to enable.
+      * For **Logging**, toggle off to disable.
+   2. For **Peer Authentication Mode**, complete the following selections and click **NEXT**.
+      * For **Authentication Mode**, select **Pre-Shared Key**. You must also use this value on the other side of the VPN tunnel.
+      * For **Pre-Shared Key**, enter a secure value that is also used on the other side of the VPN tunnel.
+   3. For **Endpoint Configuration**, complete the following selections and click **NEXT**.
+      * For **Local Endpoint**, enter a free and unused public IP address. The public IP address must also be allocated in IP Spaces Floating IPs.
+      * For **Remote Endpoint**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**. Leave the **Remote ID** field empty.
+      * For **Virtual Tunnel Interfaces (VTI) Tunnel Interface**, set the value to a `/30` or `/31` network in the link-local ranges (169.254.0.0/16). Don't reuse the same tunnel interfaces. Consider the following examples.
+
+      | Local interface   | Remote interface   |
+      |:----------------  |:------------------ |
+      | 169.254.101.1/30  | 169.254.101.2/30   | 
+      | 169.254.110.5/30  | 169.254.110.6/30   | 
+      | 169.254.120.9/30  | 169.254.120.10/30  |
+      | 169.254.139.13/30 | 169.254.130.14/30  |
+      {: caption="Tunnel interface examples" caption-side="bottom"}
+
+   4. Review the settings for accuracy and click **FINISH**.
+6. From the **Routing** section in the left pane, select **Static Routes**.
+7. Click **NEW** and complete the following fields for the new static route.
+   1. For the **General** tab, complete the following selections.
+      * For **Name** and **Description**, provide details that help to describe the static route.
+      * For **Network**, enter the remote network that the VPN is connecting with. For example, `192.168.47.0/24`.
+      * Ensure that the **Route Advertised** field is toggled off.
+   2. For the **Next Hops** tab, complete the following selections. 
+      * For **IP Address**, enter the tunnel IP address of the remote tunnel. For example, `169.254.101.1`.
+      * For **Admin Distance**, enter *1*.
+      * For **Scope**, leave the field empty.
+   3. Click **SAVE**.
+
+### Creating a policy-based IPsec VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
+{: #vcd-ops-guide-policybased-ipsec-vpn-vmaas}
+
+The following steps outline a validated process. Many different configurations work and depending on the remote side of the IPsec tunnel, different configurations might be required.
+
+Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the VDC where you want to create a policy-based IPsec VPN.
+3. In the left pane under **Networking**, click **Edges**.
+4. From the **Services** section in the left pane, select **IPSec VPN**.
+5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
+   1. For **General Settings**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+      * For **Type**, select **Policy Based**.
+      * For **Security Profile**, use the default.
+      * For **Status**, toggle on to enable.
+      * For **Logging**, toggle off to disable.
+   2. For **Peer Authentication Mode**, complete the following selections and click **NEXT**.
+      * For **Authentication Mode**, select **Pre-Shared Key**. You must also use this value on the other side of the VPN tunnel.
+      * For **Pre-Shared Key**, enter a secure value that is also used on the other side of the VPN tunnel.
+   3. For **Endpoint Configuration**, complete the following selections and click **NEXT**.
+      * For **Local Endpoint IP Address**, enter a free and unused public IP address. The public IP address must also be allocated in IP Spaces Floating IPs.
+      * For **Local Endpoint Networks**, enter the VDC network CIDR of the local VDC to share over the VPN. For example, `192.168.19.0/24`.    
+      * For **Remote Endpoint IP Address**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**.
+      * For **Remote Endpoint Networks**, enter the VDC network CIDR of the remote VDC to share over the VPN. For example, `192.168.47.0/24`.
+      * For **Remote ID**, leave the field empty.
+   4. Review the settings for accuracy and click **FINISH**.  
+  
+### Creating an L2 VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
+{: #vcd-ops-guide-l2vpn-vmaas}
+
+The following steps outline a validated process. Many different configurations work and depending on the remote side of the L2 VPN, different configurations might be required.
+
+Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
+
+#### Procedure to configure the L2 VPN server
+{: #vcd-ops-guide-l2vpn-vmaas-config-server}
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the VDC where you want to create a L2 VPN.
+3. In the left pane under **Networking**, click **Edges**.
+4. From the **Services** section in the left pane, select **L2 VPN**.
+5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
+   1. For **Choose Session Mode**, set the session mode to **Server** for the L2 VPN. You set the other side to **Client** in the procedure to configure the L2 VPN client.
+   2. For **General Settings**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+      * For **Pre-Shared Key**, enter a secure value.
+      * For **State**, toggle on to enable.
+   3. For **Endpoint Setup**, complete the following selections.
+      * For **Local Endpoint**, enter a free and unused public IP address. The public IP address must be allocated in IP Spaces Floating IPs.
+      * For **Tunnel Interface CIDR**, set the value to a `/30` or `/31` network in the link-local ranges (169.254.0.0/16). Don't reuse the same tunnel interfaces. Consider the following examples:
+        * 169.254.101.1/30
+        * 169.254.110.5/30
+        * 169.254.120.9/30
+        * 169.254.139.13/30
+      * For **Remote IP**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**.
+      * For **Initiation Mode** select one of the three options (Initiator, Respond Only or On Demand) and click **NEXT**.
+   4. For **Org VDC Networks**, select the VDC network to participate in the L2 VPN and click **NEXT**.
+      
+      Both ends of the L2 VPN must use the same network IP ranges with unique IP assigmnets to servers and VMs across both ends of the VPN. For example, the L2 VPN connects one end of the tunnel with a network that uses `192.168.50.10-192.168.50.100` to the other end with network that uses `192.168.50.101-192.168.50.190`.
+      {: tip}
+
+   5. Review the settings for accuracy and click **FINISH**.
+
+#### Procedure to configure the L2 VPN client
+{: #vcd-ops-guide-l2vpn-vmaas-config-client}
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the VDC where you want to create the L2 VPN.
+3. In the left pane under **Networking**, click **Edges**.
+4. From the **Services** section in the left pane, select **L2 VPN**.
+5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
+   1. For **Choose Session Mode**, set the session mode to **Client** for the L2 VPN. The other side is **Server**.
+   2. For **General Settings**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+      * For **Peer Code**, use the value from the server side of the L2 VPN. If the server side is a Director VDC, complete the folowing steps from the VDC that is the server-side of the L2 VPN.
+        1. From the left pane under **Networking**, click **Edges**.
+        2. From the **Services** section in the left pane, select **L2 VPN** and select the L2 VPN Server from the list.
+        3. Above the table, click **Copy peer code**.
+        4. Paste the peer code value in the client L2 VPN **Peer Code* input** field. 
+        5. For **State**, toggle to enable.
+   3. For **Endpoint Setup**, complete the following selections and click **NEXT**.
+      * For **Local Endpoint**, enter a free and unused public IP address.  This is the same address that is used in the L2 VPN server config as the **Remote IP**.  The IP address must also be allocated in IP Spaces Floating IPs.
+      * For **Remote IP**, enter a public IP address from the remote side of the L2 VPN. The address on the Server side of the VPN is called the **Local IP Address**.
+   4. For **Org VDC Networks**, complete the following selections and click **NEXT**.
+      * Select the VDC network to extend over the L2 VPN.
+
+      Both ends of the L2 VPN must use the same network IP ranges with unique IP assigmnets to servers and VMs across both ends of the VPN. For example, the L2 VPN connects one end of the tunnel with a network that uses `192.168.50.10-192.168.50.100` to the other end with network that uses `192.168.50.101-192.168.50.190`.
+      {: tip}
+
+      * For **Tunnel ID**, use incrementing numbers for each L2 VPN tunnel. For the first tunnel use 1. For the second tunnel use 2 and so on.
+   5. Review the settings for accuracy and click **FINISH**.
+
 ## Accessing Operations Manager
 {: #vcd-ops-guide-enable-chargeback}
 
