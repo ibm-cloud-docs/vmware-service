@@ -24,8 +24,10 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+
+
 ### 25 October 2024
-{: #vmware-service-oct1124}
+{: #vmware-service-oct2524}
 {: release-note}
 
 VMware Cloud Director IP Spaces availability
@@ -48,7 +50,7 @@ Software currency updates
    * VMware Cloud Director Availability 4.7.3
 
 ### 15 October 2024
-{: #vmware-service-oct1824}
+{: #vmware-service-oct1524}
 {: release-note}
 
 IBM Cloud data center support for London single-tenant
