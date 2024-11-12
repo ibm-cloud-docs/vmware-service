@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2024
-lastupdated: "2024-09-13"
+lastupdated: "2024-11-06"
 
 content-type: tutorial
 services: vmware-service
@@ -16,13 +16,13 @@ completion-time: 30m
 {{site.data.keyword.attribute-definition-list}}
 {:video: .video}
 
-# Migrating workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas}}
+# Migrating workloads from an on-premises vCenter environment to {{site.data.keyword.vcf-aas}}
 {: #vcda-migrating-onprem}
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and VMware vCenter Server® environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
+You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and {{site.data.keyword.vcf-classic}} environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
 
 ![Migrate workloads from any Self-Managed vCenter to {{site.data.keyword.vcf-aas}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
@@ -32,7 +32,7 @@ Some documentation, including, but not limited to, tutorials, solutions architec
 ## Objectives
 {: #vcda-migrating-onprem-objectives}
 
-In this tutorial, you learn how to install the VCDA on-premises appliance on a VMware vCenter Server, configure a public or a private endpoint with a {{site.data.keyword.vcf-aas}} VCDA installation, and migrate your vCenter server workloads to {{site.data.keyword.vcf-aas}}.
+In this tutorial, you learn how to install the VCDA on-premises appliance in a self-managed vCenter environment, configure a public or a private endpoint with a {{site.data.keyword.vcf-aas}} VCDA installation, and migrate your vCenter workloads to {{site.data.keyword.vcf-aas}}.
 
 ## Before you begin
 {: #vcda-migrating-onprem-prereqs}
@@ -45,19 +45,19 @@ This tutorial requires:
 * Required user permissions. Ensure that your user account has sufficient permissions [to create and manage {{site.data.keyword.vcf-aas}} resources](/docs/vmware-service?topic=vmware-service-getting-started).
 * [A preprovisioned {{site.data.keyword.vcf-aas}} Cloud Director site](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
 * [The VCDA service is installed on your Cloud Director site instance](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting).
-* An existing VMware vCenter cluster.
+* An existing vCenter cluster.
 * A free VMware® by Broadcom account.
 
-## Install VCDA on-premises in VMware vCenter Server
+## Install VCDA on-premises appliance in a self-managed vCenter
 {: #vcda-migrating-onprem-vcs}
 {: step}
 
-Before you configure public or private endpoints, you must install VCDA on-premises in VMware vCenter Server.
+Before you configure public or private endpoints, you must install VCDA on-premises in a self-managed vCenter.
 
 The following steps outline a validated process. Many different configurations work.
 {: note}
 
-1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
+1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the self-managed vCenter.
    1. [Log in](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN){: external} to VMware by Broadcom or create a free account.
    2. Click the **Drivers and Tools** tab.
    3. Download **VMware Cloud Director Availability On-premises Appliance**.
@@ -75,7 +75,7 @@ The following steps outline a validated process. Many different configurations w
       * Enter a unique name for the installation. It is recommended to use a VM name that helps to identify VCDA.
       * Select the default folder for the VM.
    3. Complete the following configuration for the **Select a compute resource** tab.
-      * Select the destination compute resource. It is recommended to install the VCDA On-premises Appliance in the same cluster or compute resource where vCenter Server is installed.
+      * Select the destination compute resource. It is recommended to install the VCDA on-premises appliance in the same cluster or compute resource where vCenter Server is installed.
    4. For the **Review details** tab, verify all of the configuration details.
    5. For the **License agreements** tab, review and accept the license agreements.
    6. For the **Configuration** tab, select **On-Premises to Cloud Director Replication Appliance**.

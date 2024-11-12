@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-11-01"
+lastupdated: "2024-11-12"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -291,8 +291,8 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
 1. From the left panel of the tenant portal, click **Data Centers**.
 2. From the **Virtual Data Center** details page, click the VDC where you want to create a route-based IPsec VPN.
-3. From the **Networking** section in the left panel, click **Edges**.
-4. From the **Services** section in the left panel, click **IPSec VPN**.
+3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+4. From the **Services** section, click **IPSec VPN**.
 5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
    1. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
@@ -329,6 +329,57 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Scope**, leave the field empty.
    3. Click **SAVE**.
 
+#### Creating a route-based IPsec VPN against the VDC provider gateway over the public internet for {{site.data.keyword.vcf-aas}}
+{: #vcd-ops-guide-routebased-ipsec-vpn-provider}
+
+You can use the VMware Cloud Director tenant portal to autoconfigure a route-based IPsec VPN tunnel on a provider gateway. The configuration automatically creates an IPsec VPN tunnel, IP space uplink, and the associated BGP prefixes, maps, and neighbor in VMware Cloud Director. VMware Cloud Director uses IP spaces for defining the networks that are advertised through the IPsec VPN tunnel.
+
+Any edge gateway egress NAT rules take precedence. For example, if the edge gateway has a SNAT egress rule to send target traffic to a different location than the IPsec tunnel, that rule takes precedence and traffic does not use the IPsec tunnel.
+{: note}
+
+The following steps outline a validated process. Many different configurations work and depending on the remote side of the IPsec VPN tunnel, different configurations might be required.
+
+##### Step 1: Creating an IP Space
+{: #vcd-ops-guide-routebased-ipsec-vpn-provider-step1}
+
+1. From the left panel of the tenant portal, click **Networking**.
+2. At the top of the right panel, select **IP Spaces**.
+3. Click **New** at the top of the IP Spaces table.
+   1. For **General**, complete the following selections and click **NEXT**.
+      * For **Name** and **Description**, provide details that help to describe the VPN.
+   2. For **Network Topology**, complete the following selections and click **NEXT**.
+      * Select **Route Advertisement Allowed** to enable.
+      * Keep the **Default Autoconfiguration Rules** disabled.
+   3. For **Scope**, complete the following sections and click **NEXT**.
+      * For **Internal Scope**, enter the VDC network CIDR of the local VDC to share over the VPN. For example, `192.168.19.0/24`.
+      * For **External Scope**, enter the CIDR of the remote network to share over the VPN. For example, `192.168.47.0/24`.
+   4. For **IP Ranges**, complete the following sections and click **NEXT**. You can leave this field blank to share the complete network that is identified for internal scope or you can specify only to share a range in the internal scope. 
+   5. For **IP Prefixes**, complete the following sections and click **NEXT**. You can leave this field blank to share the complete network that is identified for internal scope or you can specify to share the IP range in the prefix identified.
+   6. Review the settings for accuracy and click **FINISH**.  
+
+##### Step 2: Creating the Provider Gateway IPsec VPN
+{: #vcd-ops-guide-routebased-ipsec-vpn-provider-step2}
+
+1. From the left panel of the tenant portal, click **Networking**.
+2. At the top of the right panel, select **Provider Gateways**.
+3. Click the provider gateway that is associated with te VDC. If you have multiple VDCs, complete the following steps to identify the correct provider gateway.  
+   1. From the left panel of the tenant portal, click **Data Centers**.
+   2. From the **Virtual Data Center** details page, click the VDC where you want to create a provider gateway IPsec VPN.
+   3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+   4. Under **Configuration** on the **Edge Gateway** details page, click **General**. Locate the **Provider Gateway** name.
+4. From the **Services** section, select **IPSec VPN**.
+5. Above the **IPSec VPN** table, click **AUTOCONFIGURE**.
+   * For **Name**, enter a description for the VPN.
+   * For **IP Space**, select the previously created IP Space entry from the dropdown.
+   * For **Remote Endpoint**, enter a public IP address from the remote end of the VPN.
+   * For **Local Endpoint**, enter an available and unused public IP address from the VDC. The public IP address must be allocated in IP Spaces Floating IPs.
+   * For **Pre-Shared Key**, enter a secure value.
+   * For **Local Tunnel Interface**, it is recommended to use the default value. Both sides of the VPN tunnel must use different values. For example, the local side uses `192.168.200.1/30` and the remote side uses `192.168.200.2/30`.
+   * For **Remote VTI Address**, enter the IP address that is used in the other side of the VPN tunnel. In most cases, the default value is best. For example, `192.168.200.2`.
+   * For **BGP Neighbor Remote AS Number**, enter a typical BGP number such as `65001`. You must provide different local and remote BGP numbers.
+   * For **BGP Neighbor Local AS Number**, enter a typical BGP number such as `65002`. You must provide different local and remote BGP numbers.
+6. Review the settings for accuracy and click **FINISH**.
+
 #### Creating a policy-based IPsec VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-policybased-ipsec-vpn-vmaas}
 
@@ -338,8 +389,8 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
 1. From the left panel of the tenant portal, click **Data Centers**.
 2. From the **Virtual Data Center** details page, click the VDC where you want to create a policy-based IPsec VPN.
-3. From the **Networking** section in the left panel, click **Edges**.
-4. From the **Services** section in the left panel, click **IPSec VPN**.
+3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+4. From the **Services** section, click **IPSec VPN**.
 5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
    1. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
@@ -370,8 +421,8 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
 1. From the left panel of the tenant portal, click **Data Centers**.
 2. From the **Virtual Data Center** details page, click the VDC where you want to create a L2 VPN.
-3. In the left panel under **Networking**, click **Edges**.
-4. From the **Services** section in the left panel, click **L2 VPN**.
+3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+4. From the **Services** section, click **L2 VPN**.
 5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
    1. For **Choose Session Mode**, set the session mode to **Server** for the L2 VPN. You set the other side to **Client** in the procedure to configure the L2 VPN client.
    2. For **General Settings**, complete the following selections and click **NEXT**.
@@ -399,15 +450,15 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
 1. From the left panel of the tenant portal, click **Data Centers**.
 2. From the **Virtual Data Center** details page, click the VDC where you want to create the L2 VPN.
-3. In the **Networking** section in the left panel, click **Edges**.
-4. From the **Services** section in the left panel, click **L2 VPN**.
+3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+4. From the **Services** section, click **L2 VPN**.
 5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
    1. For **Choose Session Mode**, set the session mode to **Client** for the L2 VPN. The other side is **Server**.
    2. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
       * For **Peer Code**, use the value from the server side of the L2 VPN. If the server side is a Director VDC, complete the following steps from the VDC that is the server-side of the L2 VPN.
-        1. From the left panel under **Networking**, click **Edges**.
-        2. From the **Services** section in the left panel, select **L2 VPN** and select the L2 VPN Server from the list.
+        1. From the left panel of the VDC, expand **Networking** and click **Edges**.
+        2. From the **Services** section, select **L2 VPN** and select the L2 VPN Server from the list.
         3. Above the table, click **Copy peer code**.
         4. Paste the peer code value in the client L2 VPN **Peer Code* input** field. 
         5. For **State**, toggle to enable.
@@ -426,12 +477,11 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 ## Accessing Operations Manager
 {: #vcd-ops-guide-enable-chargeback}
 
-The Operations Manager service is enabled by default. From the Cloud Director tenant portal, click **More > Operations Manager** to access the Operations Manager web UI.
-
-For more information about using Operations Manager, see [Using VMware Chargeback as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html).{: external}
+The Operations Manager service is enabled by default. From the VMware Cloud Director tenant portal, click **More > Operations Manager** to access the Operations Manager web UI.
 
 Use Operations Manager to view VDC, vApp, and VM level metrics and to export metric data. You can use this data to isolate resource usage and to help understand billing charges.
-{: note}
+
+For more information about using Operations Manager, see [Using VMware Chargeback as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html).{: external}
 
 ## Related links
 {: #vcd-ops-guide-related}

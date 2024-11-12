@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-11-11"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,16 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2024}
 
 
+
+### 11 November 2024
+{: #vmware-service-nov1124}
+{: release-note}
+
+Supported VPNs for {{site.data.keyword.vcf-aas}}
+:   You can now use route-based IPsec, policy-based IPsec, and L2 VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances. For more information, see [Operating VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-routebased-ipsec-vpn-vmaas).
+
+Software currency update
+:   This release provides an infrastructure upgrade for VMware vCenter Server® Appliance 8.0 Update 3d.
 
 ### 25 October 2024
 {: #vmware-service-oct2524}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-10-15"
+lastupdated: "2024-11-12"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 Review the following considerations to plan your {{site.data.keyword.vmware-service_full}} instance deployment.
 
-Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.5&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
+Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.broadcom.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.5&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
 {: note}
 
 ## VMware deployment size

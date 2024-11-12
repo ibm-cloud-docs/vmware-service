@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-08"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -56,12 +56,13 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 {: #tenant-viewing-sites-details}
 
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site name.
+
 2. On the **Summary** tab, review the complete summary of Cloud Director site details: the number of resource pools provisioned for the site, the number of VDCs provisioned for the site, the site details, and the recommended services for the site.
 
    | Item | Description |
    |:---- |:----------- |
    | Infrastructure | The {{site.data.keyword.vcf-aas-full}} offering uses {{site.data.keyword.cloud_notm}} Classic Infrastructure. |
-   | Resource group | Resource grouping for user access to assignemnts in the Cloud user account. |
+   | Resource group | Resource grouping for user access to assignments in the Cloud user account. |
    | Billing cycle | The pricing plan for the site. |
    | Creation time | The date and time that the site was created. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
