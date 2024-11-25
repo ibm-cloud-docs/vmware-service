@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-22"
 
 subcollection: vmware-service
 
@@ -58,7 +58,7 @@ Identity and access management includes tasks such as authentication, authorizat
 | Item | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Identity and access | Provide the function to restrict access to resources through the {{site.data.keyword.cloud_notm}} console. Provide default access to the provisioned VMware environment. | Manage access to resources through IAM (Identity and Access Management). Manage access to the VMware environment. |
-| Observability | Allow integration of {{site.data.keyword.cloud_notm}} [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) with your VMware environment to audit the actions that users take in the cluster. | Set up IBM Cloud [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) or other functions to track user activity. |
+| Observability | Allow integration of {{site.data.keyword.atracker_full_notm}} with your VMware environment to audit the actions that users take in the cluster. | Set up [Activity Tracker](/docs/vmware-service?topic=vmware-service-vmaas-at-events) or other functions to track user activity. |
 {: row-headers}
 {: caption="Responsibilities for identity and access management" caption-side="bottom"}
 

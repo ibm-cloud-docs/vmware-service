@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-11-12"
+lastupdated: "2024-11-25"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -90,9 +90,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Frankfurt | Frankfurt 02 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 04 | Single-tenant and Multitenant |
 | Frankfurt | Frankfurt 05 | Single-tenant |
-| London | London 04 | Single-tenant |
+| London | London 04 | Single-tenant and Multitenant |
 | London | London 05 | Single-tenant |
-| London | London 06 | Single-tenant |
+| London | London 06 | Single-tenant and Multitenant |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
@@ -160,18 +160,24 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Profile | Sockets | Cores | RAM | vSAN usable capacity |
 |:--------|:--------|:------|:----|:---------------------|
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 15 TB |
-| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 23 TB |
-| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 46 TB |
-| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB | 61 TB |
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 23 TB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 23 TB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 23 TB |
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 38 TB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 38 TB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 46 TB |
+| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB | 61 TB |
 {: caption="Available vSAN host profiles" caption-side="bottom"}
 {: tab-title="vSAN clusters"}
 {: tab-group="Host profiles"}
 {: class="simple-tab-table"}
 {: #simpletabtable-vsan-hp}
+
+[^esa61]: Applicable to vSAN ESA profiles
+
+[^esa122]: Applicable to vSAN ESA profiles
+
+[^esa184]: Applicable to vSAN ESA profiles
 
 | Profile | Sockets | Cores | RAM |
 |:--------|:--------|:------|:----|

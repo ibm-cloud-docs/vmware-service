@@ -109,8 +109,11 @@ toc:
           label: Enhancing security
           topics:
           - common/architecture-workload-isolation.md
-          - common/single-tenant-monitoring.md
           - common/vmaas-data-security.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - common/single-tenant-monitoring.md
           - common/vmaas-at-events.md
   - navgroup:
       id: reference

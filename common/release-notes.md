@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-11-11"
+lastupdated: "2024-11-25"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,6 +26,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 25 November 2024
+{: #vmware-service-nov2524}
+{: release-note}
+
+IBM Cloud data center support for London multitenant
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the London region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 11 November 2024
 {: #vmware-service-nov1124}
 {: release-note}
@@ -41,22 +48,22 @@ Software currency update
 {: release-note}
 
 VMware Cloud Director IP Spaces availability
-:   Beginning with VMware Cloud Director™ 10.6, {{site.data.keyword.vcf-aas-full}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
+:   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas-full}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
 
    By default, each virtual data center (VDC) with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
 
    IP addresses are managed differently with this update and introduce changes to creating NAT and firewall rules. For more information, see [Allocating public IP addresses for NAT rules and for VPNs](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-allocating-ips).
  
  New rights availability
- :   Additonal rights are available with this release. If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
+ :   Additional rights are available with this release. If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
 
 Software currency updates
 :   This release provides the following infrastructure upgrades.
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T™ 4.2.0.2
-   * Veeam® Backup 12.2
+   * VMware NSX-T 4.2.0.2
+   * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 
 ### 15 October 2024
@@ -139,7 +146,7 @@ VMware Operations Manager availability
 Software currency
 :   This release provides the following infrastructure upgrades.
 
-   * VMware ESXi™ 7.0 Update 3q
+   * VMware ESXi 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
    * VMware NSX-T 4.1.2.4
    * Veeam Backup 12.1.2
@@ -255,7 +262,7 @@ Cloud-to-cloud migration to VMware as a Service
 :   You can now use cloud-to-cloud connections to migrate {{site.data.keyword.vmwaresolutions_short}} Shared instances to VMware as a Service. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant VMware as a Service instances to another VMware as a Service instance. For more information, see [Creating and deleting VMware as a Service pairings](/docs/vmware-service?topic=vmware-service-vcda-creating-deleting-vmaas-pairing).
 
 vSAN host profile updates
-:   The Dual Intel® 8260 Xeon® host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN™ usable capacity is now available for Cloud Director sites.
+:   The Dual Intel 8260 Xeon host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN™ usable capacity is now available for Cloud Director sites.
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.

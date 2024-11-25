@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2024
 
-lastupdated: "2024-08-29"
+lastupdated: "2024-11-19"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
@@ -28,7 +28,7 @@ Added support for connecting to an {{site.data.keyword.tg_full}} instance in a r
 
 * Added support for scale-out backup repositories that are created on the Veeam service instance for Cloud Director sites. For more information, see [Get a Cloud Director site instance](/apidocs/vmware-service#get-director-site).
 * Added support for private-only configuration for Cloud Director sites and resource pools. For more information, see [Create a Cloud Director site instance](/apidocs/vmware-service#create-director-sites).
-* Added support for private-only configuration for virtual data centers (VDCs). For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
+* Added support for private-only configuration for VDCs. For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
 
 ## 15 March 2024
 {: #vmware-service-15-march-2024}
