@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-07-19"
+lastupdated: "2024-11-26"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -27,7 +27,7 @@ You can add clusters to increase or delete clusters to decrease the capacity of 
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, click **Add cluster +**.
-5. On the **Add cluster** window, specify the settings for the new cluster.
+5. In the **Add cluster** pane, specify the settings for the new cluster.
     1. Specify the cluster name.
     2. Select the host quantity.
        * For NFS only storage, select a minimum of 2.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-11-25"
+lastupdated: "2024-12-09"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -76,6 +76,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 | Location | Data center | Type |
 |:----------|:----------|:------|
+| Sydney | Sydney 01 | Single-tenant |
+| Sydney | Sydney 04 | Single-tenant |
+| Sydney | Sydney 05 | Single-tenant |
 | Tokyo | Tokyo 02 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 04 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 05 | Single-tenant |
@@ -218,7 +221,7 @@ Fast provisioning saves time by using linked clones for VM provisioning. If not 
 In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
 {: important}
 
-When you create your VDC and it is in **Available** status, you can enable or disable fast provisioning from the **Summary** tab on the VDC details page.
+When you create your VDC and it is in **Available** status, you can enable or disable fast provisioning from the **Summary** tab in the VDC details page.
 
 ### Linked clones
 {: #tenant-plan-deploy-fast-provisioning-linked}

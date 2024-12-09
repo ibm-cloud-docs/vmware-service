@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-03"
+lastupdated: "2024-11-26"
 
 keywords: add private endpoint, VMware Cloud Director Availability
 
@@ -30,7 +30,7 @@ For multitenant virtual data centers, both public and private endpoints are avai
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a Cloud Director site instance.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. On the **Instance endpoints** tab, click **Add private endpoint +**.
-5. On the **Request instance endpoint** panel, select the zone and enter the subnets to allowlist for access to the private endpoint.
+5. In the **Request instance endpoint** panel, select the zone and enter the subnets to allowlist for access to the private endpoint.
 6. Review the estimated cost, review and accept the terms, and click **Request endpoint**.
 
 ## Procedure to delete a private connection from an instance endpoint zone

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-11-26"
 
 keywords: add vcda, delete vcda, vcda adding, vcda remove, VMware Cloud Director Availability
 
@@ -30,8 +30,8 @@ VCDA is installed in all virtual data centers (VDCs) for the {{site.data.keyword
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Add-on services** tab.
-4. Click **Available services**.
-5. On the **Add-on services** window, toggle VMware Cloud Director Availability on.
+4. Click **Add service**.
+5. In the **Add-on services** panel, toggle VMware Cloud Director Availability on.
 6. Review the new cost, select the confirmation checkboxes, and click **Add**.
 
 ## Procedure to delete VMware Cloud Director Availability from {{site.data.keyword.vcf-aas}} instances

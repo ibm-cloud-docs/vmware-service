@@ -26,7 +26,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Networking** tab.
-4. On the **Management connectivity** panel, click **Edit list**.
+4. In the **Management connectivity** panel, click **Edit list**.
 5. In the **Edit allowlist** window, click **Add new +**.
 6. Enter the new subnet value and click the **Save** icon.
 7. After all updates are complete, click **Update**.
@@ -37,7 +37,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Networking** tab.
-4. On the **Management connectivity** panel, click **Edit list**.
+4. In the **Management connectivity** panel, click **Edit list**.
 5. In the **Edit allowlist** window, click the **Edit** icon.
 6. Enter the updated subnet value and click the **Save** icon.
 7. After all updates are complete, click **Update**.
@@ -48,7 +48,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Networking** tab.
-4. On the **Management connectivity** panel, click **Edit list**.
+4. In the **Management connectivity** panel, click **Edit list**.
 5. In the **Edit allowlist** window, click the **Remove** icon. Then, click **Update**.
 
 ## Related links

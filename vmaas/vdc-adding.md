@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-26"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -56,7 +56,7 @@ You can also specify a VDC name that meets the following requirements:
 {: #vdc-adding-procedure-st}
 
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **Single-tenant Virtual data center** card.
+2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 5. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
 6. Optionally toggle fast provisioning of virtual machines (VMs) on.
@@ -71,7 +71,7 @@ You can also specify a VDC name that meets the following requirements:
 {: #vdc-adding-procedure-mt}
 
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, select the **Multitenant Virtual data center** card.
+2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Select the pricing plan according to your consumption needs.
 5. Select the region of the Cloud Director site, the Cloud Director instance, and data center. The instance and data center names are filtered based on the region setting.

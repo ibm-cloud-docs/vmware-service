@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-11-26"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -32,7 +32,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
-1. On the **Create connection** panel, complete the following configuration.
+1. In the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **Instance endpoints** tab. Click the **Copy to clipboard** icon for the **Site name** for the instance to pair. Paste the site name in the create connection configuration.
@@ -46,7 +46,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click an instance name to pair with the first pairing.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
-1. On the **Create connection** panel, complete the following configuration.
+1. In the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **{{site.data.keyword.vcf-aas}} pairings** tab. Click the **Copy to clipboard** icon for the **Peer site name** that you created for the first pairing. Paste the site name in the create connection configuration.

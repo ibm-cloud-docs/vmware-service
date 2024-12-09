@@ -53,7 +53,7 @@ A resource pool is deleted when the last VDC on the resource pool is deleted.
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab, then click **Add resource pool**.
-4. On the **Add resource pool** window, specify the settings for the new resource pool.
+4. In the **Add resource pool** panel, specify the settings for the new resource pool.
     1. Specify the resource pool name.
     2. Optionally enable SAP®-certified server profiles and select the profile type.
     3. Select the resource pool location.

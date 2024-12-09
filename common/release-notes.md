@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-11-25"
+lastupdated: "2024-12-09"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2024}
 
 
+
+### 9 December 2024
+{: #vmware-service-dec0924}
+{: release-note}
+
+IBM Cloud data center support for Sydney single-tenant
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Sydney region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 25 November 2024
 {: #vmware-service-nov2524}
@@ -214,7 +221,7 @@ User interface updates and enhancements
    * The contents of the **Summary** tabs for both single-tenant and multitenant VDCs are better structured and organized for a more streamlined user experience.
 
 REST API updates
-:   The [VMware as a Service API](/apidocs/vmware-service) is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director™ site. For more information, see the [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-15-march-2024).
+:   The [VMware as a Service API](/apidocs/vmware-service) is updated to support enabling or disabling Veeam and VMware Cloud Director Availability (VCDA) on a VMware Cloud Director site. For more information, see the [VMware as a Service API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-15-march-2024).
 
 New and updated documentation
 :   The [Architecture patterns for integrating IBM Cloud Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmware-service?topic=vmware-service-arch-pattern-vmwaas-sccwpp) technical document is now available.

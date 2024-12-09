@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-11-26"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 
@@ -40,7 +40,7 @@ When you are ready to complete your migration or data recovery configuration, yo
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. Click the **Virtual data center** tab. Then, click the instance name.
-3. Click the **Add-on services** tab on the instance details page.
+3. Click the **Add-on services** tab in the instance details page.
 4. On the **VMware Cloud Director Availability** service, click **Open VCDA**.
 6. Use a user with the Organization Administrator role to log in to the VCDA console. A newly provisioned virtual data center's **admin** user has the role by default.
 

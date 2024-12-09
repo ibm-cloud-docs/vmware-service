@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-11-26"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -50,7 +50,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
    5. In the **Add connection group** panel, complete the following steps.
-      1. Enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID on the {{site.data.keyword.tg_short}} details page on the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
+      1. Enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID in the {{site.data.keyword.tg_short}} details page in the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
       2. Select the region where you want the {{site.data.keyword.tg_short}} to connect.
       3. Click **Add**.
 
@@ -65,7 +65,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
    {: note}
 
    * Complete the following steps if you use {{site.data.keyword.cloud-shell_short}} to connect the tunnels to {{site.data.keyword.tg_short}}.
-   1. Click the overflow menu on the row of the connection group and click **Generate CLI commands**. A single command for all six GRE tunnels is generated.
+   1. Click the overflow menu in the row of the connection group and click **Generate CLI commands**. A single command for all six GRE tunnels is generated.
    2. From the **Generate CLI commands** panel, click the **Copy to clipboard** icon to copy the single CLI command to connect all six GRE tunnels.
    3. In the {{site.data.keyword.cloud_notm}} console, click the [{{site.data.keyword.cloud-shell_notm}}](https://cloud.ibm.com/shell) icon to open the {{site.data.keyword.cloud-shell_short}} interface.
    4. Paste the CLI command in {{site.data.keyword.cloud-shell_short}} and run the command to connect all six tunnels to {{site.data.keyword.tg_short}}.
@@ -84,7 +84,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
       * Select **Request connection to a network in another account** for the connection reach.
       * Enter the GRE Tunnel connection values that you can copy and paste from the VMware Solutions console.
 
-   The {{site.data.keyword.tg_short}} documentation states that the **Remote BGP ASN** field is optional. However, you must provide the **Remote BGP ASN** value that is specified in the GRE tunnel connection values available to copy on the **Interconnectivity** tab for the VDC.
+   The {{site.data.keyword.tg_short}} documentation states that the **Remote BGP ASN** field is optional. However, you must provide the **Remote BGP ASN** value that is specified in the GRE tunnel connection values available to copy in the **Interconnectivity** tab for the VDC.
    {: important}
 
    5. Repeat the steps to create the unbound GRE tunnel for each unbound GRE tunnel associated with the {{site.data.keyword.tg_short}} ID.

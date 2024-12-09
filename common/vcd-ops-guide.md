@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-11-12"
+lastupdated: "2024-11-26"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -198,7 +198,7 @@ For more information, see [Edit virtual machine properties](https://docs.vmware.
 ### Using IBM templates
 {: #vcd-ops-guide-ibm-templates}
 
-Password requirements apply if the VM is deployed from the IBM templates that are provided in the public catalog. You must use the initial password that was generated during power-on when you first log in to the VM. You can find this password on the VM details page.
+Password requirements apply if the VM is deployed from the IBM templates that are provided in the public catalog. You must use the initial password that was generated during power-on when you first log in to the VM. You can find this password in the VM details page.
 
 If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
@@ -254,7 +254,7 @@ If not already completed, create a vApp containing at least two VMs before you c
 3. From the **Compute** section of the left panel, click **vApps**.
 4. Click the vApp that you want to add a vApp network to.
 5. Click the **Networks** tab, and click **NEW** in the **vApp Fencing** section.
-6. On the **Add Network to** window, select **OrgVDC Network** and select the network name.
+6. In the **Add Network to** panel, select **OrgVDC Network** and select the network name.
 7. Click **Add**.
 
 For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
@@ -271,9 +271,9 @@ You must perform these steps as a user who has the **Manage Manual IP Reservatio
 2. At the top of the right panel, select **IP Spaces**.
 3. Click the IP space name that's associated with the VDC's edge. If you have multiple VDCs with a public edge, you can identify which IP space name is associated to the edge when the first three characters of the IP Space name match the data center that the VDC is created in. For example, **t04** matches tokyo04.
 
-   You can also use the **V00** value in the name, if needed. Under **Configuration** on the **Edge Gateway** details page, click **General**. The **Provider Gateway** name has a **VRF000** value. Use the number in that value, for example **vfr015**. In this example, use the pattern **t04-xxx-V15-xxx** to locate the correct IP Space entry.
+   You can also use the **V00** value in the name, if needed. Under **Configuration** in the **Edge Gateway** details page, click **General**. The **Provider Gateway** name has a **VRF000** value. Use the number in that value, for example **vfr015**. In this example, use the pattern **t04-xxx-V15-xxx** to locate the correct IP Space entry.
 
-4. From the **Allocation** section on the **IP Spaces** details page, select **Floating IPs**.
+4. From the **Allocation** section in the **IP Spaces** details page, select **Floating IPs**.
 5. At the top of the table, click **REQUEST**.
 6. Each VDC is assigned eight public IP addresses. The request dialog supports a maximum of five IPs per request operation. To ensure that all eight IP addresses are allocated, first request five IPs, then repeat the request for the remaining three IPs.
 
@@ -366,7 +366,7 @@ The following steps outline a validated process. Many different configurations w
    1. From the left panel of the tenant portal, click **Data Centers**.
    2. From the **Virtual Data Center** details page, click the VDC where you want to create a provider gateway IPsec VPN.
    3. From the left panel of the VDC, expand **Networking** and click **Edges**.
-   4. Under **Configuration** on the **Edge Gateway** details page, click **General**. Locate the **Provider Gateway** name.
+   4. Under **Configuration** in the **Edge Gateway** details page, click **General**. Locate the **Provider Gateway** name.
 4. From the **Services** section, select **IPSec VPN**.
 5. Above the **IPSec VPN** table, click **AUTOCONFIGURE**.
    * For **Name**, enter a description for the VPN.

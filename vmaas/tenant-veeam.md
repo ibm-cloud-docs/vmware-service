@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-11-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -44,7 +44,7 @@ You can access the Veeam portal from the **Add-on services** tab of the VDC inst
 2. Click the instance type tab.
    * For multitenant instances, click the **Cloud director sites** tab. Then, click the instance name.
    * For single-tenant instances, click the **Virtual data centers** tab. Then, click the instance name.
-3. Click the **Add-on services** tab on the instance details page, then click **Veeam backups**.
+3. Click the **Add-on services** tab in the instance details page, then click **Veeam backups**.
 4. Use a user with the Organization Administrator role to log in to the Veeam self-service portal.
 
 Alternatively, click the **More** menu in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
