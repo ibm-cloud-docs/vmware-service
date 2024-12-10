@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-12-09"
+lastupdated: "2024-12-10"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2024}
 
 
+
+### 10 December 2024
+{: #vmware-service-dec1024}
+{: release-note}
+
+IBM Cloud data center support for Sydney multitenant
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Sydney region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 9 December 2024
 {: #vmware-service-dec0924}
@@ -69,7 +76,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T 4.2.0.2
+   * VMware NSX-T™ 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 

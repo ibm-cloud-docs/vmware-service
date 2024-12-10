@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-12-09"
+lastupdated: "2024-12-10"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -77,8 +77,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Location | Data center | Type |
 |:----------|:----------|:------|
 | Sydney | Sydney 01 | Single-tenant |
-| Sydney | Sydney 04 | Single-tenant |
-| Sydney | Sydney 05 | Single-tenant |
+| Sydney | Sydney 04 | Single-tenant and Multitenant |
+| Sydney | Sydney 05 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 02 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 04 | Single-tenant and Multitenant |
 | Tokyo | Tokyo 05 | Single-tenant |
@@ -124,6 +124,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 A resource pool combines compute, memory, and storage resources, and consist of one or more clusters. For more information, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
+You can create a resource pool across three multizone data centers in a region.
+
 You can optionally enable SAPÂ®-certified server profiles of either HANA and NetWeaver or NetWeaver.
 
 ## Profile storage type
@@ -134,11 +136,6 @@ For single-tenant Cloud Director sites, you can select NFS only storage or vSANâ
 NFS only clusters do not have local flash storage and cannot be configured for vSAN.
 
 vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This policy is high-performance and high-resilience and requires at least seven hosts. vSAN clusters can also use NFS storage.
-
-If you want to save storage space, you can enable vSAN deduplication and compression to reduce redundant data within each disk group. This option can increase overall storage space based on the data type.
-
-The vSAN deduplication and compression option is available for enablement only when you order a single-tenant cluster.
-{: note}
 
 ## Host profile
 {: #tenant-plan-deploy-host}
