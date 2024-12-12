@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2024-12-11"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -34,17 +34,17 @@ VMware deployment sizings are based on the CPU, memory, and storage that are req
 
 Consider your instance type.
 
-Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMWare workloads. The single-tenant option provides the highest level of isolation and consistency.
+Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMware workloads. The single-tenant option provides the highest level of isolation and consistency.
 
 ### {{site.data.keyword.vcf-aas}} single-tenant
 {: #tenant-plan-deploy-type-st}
 
-For a dedicated infrastructure and built to order VMware environment, create a single-tenant Cloud Director site. After you create a Cloud Director site, deploy virtual data centers (VDCs) with monthly charges for the dedicated VMware infrastructure components.
+For a dedicated infrastructure and built to order VMware environment, create a **Single-tenant Cloud Director site**. After you create a Cloud Director site, deploy single-tenant virtual data centers (VDCs) with monthly charges for the dedicated VMware infrastructure components.
 
 ### {{site.data.keyword.vcf-aas}} multitenant
 {: #tenant-plan-deploy-type-mt}
 
-For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the Cloud Director VDC.
+For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the **Multitenant virtual data center**.
 
 On-demand and reserved pricing plans are available for multitenant instances.
 
@@ -122,14 +122,21 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 ## Resource pool
 {: #tenant-plan-deploy-rp}
 
-A resource pool combines compute, memory, and storage resources, and consist of one or more clusters. For more information, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
+A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create a resource pool across three multizone data centers in a region.
+You can create a resource pool across three multizone data centers in the selected region.
 
 You can optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
 
-## Profile storage type
-{: #tenant-plan-deploy-storage}
+For more information about resource pools, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
+
+## Cluster
+{: #tenant-plan-deploy-cluster}
+
+ A resource pool consists of one or more clusters with the following configurations.
+
+### Profile storage type
+{: #tenant-plan-deploy-cluster-storage}
 
 For single-tenant Cloud Director sites, you can select NFS only storage or vSAN™ storage with optional NFS storage.
 
@@ -137,13 +144,13 @@ NFS only clusters do not have local flash storage and cannot be configured for v
 
 vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This policy is high-performance and high-resilience and requires at least seven hosts. vSAN clusters can also use NFS storage.
 
-## Host profile
-{: #tenant-plan-deploy-host}
+### Host profile
+{: #tenant-plan-deploy-cluster-host}
 
 {{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vcf-aas}}.
 
-* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMWare environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMWare environment, including the VM CPU, RAM, and storage sizes.
-* For new VMWare workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMware environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMware environment, including the VM CPU, RAM, and storage sizes.
+* For new VMware workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
 After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
 
@@ -152,8 +159,8 @@ After you have a list of target VMs including CPU, RAM, and storage requirements
 
 Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The count of hosts multipled by CPU and RAM per host with a multiple of 20% hypervisor overhead provides you with the total number of hosts of the target profile that are required. Also, ensure to factor the size of VDC edges used in the VMware deployment into the total host count calculation.
 
-### Bare metal server options
-{: #tenant-plan-deploy-host-bms-req}
+#### Bare metal server options
+{: #tenant-plan-deploy-cluster-host-bms-req}
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
@@ -195,8 +202,8 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 {: class="simple-tab-table"}
 {: #simpletabtable-nfs-hp}
 
-## Performance characteristics
-{: #tenant-plan-deploy-perf-char}
+#### Performance characteristics
+{: #tenant-plan-deploy-cluster-perf}
 
 For single-tenant Cloud Director sites, you can select from the following storage performance tiers.
 

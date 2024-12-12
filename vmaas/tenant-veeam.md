@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2024-12-12"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -55,11 +55,26 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 ## Backup data storage and encryption
 {: #tenant-veeam-storage}
 
-Veeam Backup backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
+Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
-When you decide to use the Veeam self-service portal to create backup jobs, identify which VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organizations SOBR.
+When you provision your instance, a total of two *shared* SOBRs, one for each data center location, are available. The size of each shared SOBR is a maximum of 100 TB.
 
-You can manage (restore or delete) backups in the Veeam self-service portal. All backups are deleted if a virtual organization is deleted.
+If you require more storage than the shared SOBRs offer, open an IBM Support ticket to order a new *dedicated* SOBR and request storage suitable to your backup infrastructure needs. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+
+When the new dedicated SOBR is available, use the Veeam self-service portal to create backup jobs and identify which VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organization SOBR.
+
+You can restore or delete backups in the Veeam self-service portal. All backups are deleted if a virtual organization is deleted.
+
+Review the following considerations when you use SOBR for your backup infrastructure requirements.
+
+* All SOBRs are single-zone.
+* The minimum size of a new dedicated SOBR is 200 TB and can expand to a maximum of 1.2 PB.
+* You can scale multiple dedicated SOBRs based on your backup capacity requirements.
+* Each SOBR receives repository VMs, data movers, and cross-region IBM Cloud Object Storage buckets.
+* All data that is stored in the IBM Cloud Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
+* When you delete a SOBR, you are charged until immutability expires on the IBM Cloud Object Storage buckets.
+
+For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 
 ## IBM policy for data protection with Veeam
 {: #tenant-veeam-policy}
@@ -86,7 +101,7 @@ Starting with Veeam 12, the IBM policy uses per-machine backup with separate met
 
 The backup retention policy defines how many restore points to retain on disk. After the allowed number of restore points is exceeded, Veeam applies the retention policy to remove the earliest restore point from the backup chain. Depending on your business requirements, it is your responsibility to set the retention policy when you create the backup job. For more information, see [Short-Term Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_policy.html?ver=120){: external}.
 
-You can update the retention policy at a later time. However, the new settings are applied only to the new data and cannot be applied to previous data that maintains the previous retention policy setting.
+You can update the retention policy. However, the new settings are applied only to the new data and cannot be applied to previous data that maintains the previous retention policy setting.
 {: note}
 
 #### Backup immutability at Performance Tier
@@ -102,7 +117,7 @@ Veeam keeps at least one full backup chain and doesn't remove old restore points
 #### Retention policy for deleted items
 {: #tenant-veeam-policy-backup-remove-ret-delete}
 
-Veeam has the **Remove deleted items data after** setting available for each backup job to delete restore points for deleted items after a set number of days. The IBM policy does not enable this setting by default, but can enable the setting when a support case is opened. You must provide the following information in the support case to enable the setting.
+Veeam provides the **Remove deleted items data after** setting for each backup job to delete restore points for deleted items after a set number of days. The IBM policy does not enable this setting by default, but you can open an IBM Support ticket to enable the setting. You must provide the following information in the support case to enable the setting.
 
 * The name of the backup jobs where you want to enable the setting.
 * The value, in days, to set for the **Remove deleted items data after** setting.
@@ -126,6 +141,7 @@ You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a
 * For the Veeam **application aware image processing** and **guest file system indexing** options to work for Windows® VMs, the most recent VMware Tools™ must be installed on the VMs. Linux® VMs do not support application awareness or guest file system indexing.
 * If you are using **application aware image processing** for MS SQL or Oracle DB backups, the options **application aware** and **Item** restore are not supported. The restore operation needs to complete a full VM restore, which requires a downtime window for any consumers of the database.
 * An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120){: external}.
+* Review the [Backup data storage and encryption](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage) section to understand the limitations that are associated with using SOBR and Veeam Backup.
 
 ## Related links
 {: #tenant-veeam-related}

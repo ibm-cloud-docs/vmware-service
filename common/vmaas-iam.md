@@ -3,7 +3,7 @@
 copyright:
   years:  2022, 2024
 
-lastupdated: "2024-12-07"
+lastupdated: "2024-12-12"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -29,6 +29,9 @@ IAM access policies enable access to be granted at different levels. Some of the
 * Access across all instances of the service in your account
 * Access to an individual service instance in your account
 * Access to a specific resource within an instance
+
+When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
+{: requirement}
 
 Review the following tables that outline what types of tasks each role allows for when you're working with {{site.data.keyword.vcf-aas}}. Platform management roles enable users to complete tasks on service resources at the platform level. For example, assign user access to the service, create, delete or scale instances, and bind instances to applications. Service access roles enable users to access {{site.data.keyword.vcf-aas}}. For more information about the exact actions that are mapped to each role, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-12-10"
+lastupdated: "2024-12-13"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -192,7 +192,7 @@ Software currency
    * VMware Cloud Director Availability 4.7.1
 
 New host profiles for NFS and vSAN clusters
-:   Additional bare metal server configurations are available for new and existing {{site.data.keyword.vcf-aas}} Cloud Director site orders. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-host-bms-req).
+:   Additional bare metal server configurations are available for new and existing {{site.data.keyword.vcf-aas}} Cloud Director site orders. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-cluster-host).
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-12-11"
 
 keywords: HA for vmware service, high availability for vmware service
 
@@ -42,7 +42,7 @@ Service level objectives (SLOs) describe the design points that the {{site.data.
 | Availability % | 99.99% | Multiple instances that are distributed across multiple zones or regions. Workload is not automatically restarted across zones or regions, but must be designed and implemented for continuous availability or warm standby between zones or regions. |
 {: caption="SLO for {{site.data.keyword.vcf-aas}}" caption-side="bottom"}
 
-The SLO is not a warranty and {{site.data.keyword.IBM_notm}} will not issue credits for failure to meet an objective. Refer to the SLAs for commitments and credits that are issued for failure to meet any committed SLAs. For a summary of all SLOs, see [{{site.data.keyword.cloud_notm}} service level objectives](/docs/overview?topic=overview-slo).
+The SLO is not a warranty and {{site.data.keyword.IBM_notm}} will not issue credits for failure to meet an objective. Refer to the SLAs for commitments and credits that are issued for failure to meet any committed SLAs. For more information, see [Service Level Agreements (SLAs)](/docs/overview?topic=overview-slas).
 
 A complete business continuity plan also addresses cases such as regional or site failure; and events such as corruption, malware, and user error. Consider the use of [replication and backup](/docs/vmware-service?topic=vmware-service-bc-dr) as part of your planning.
 
