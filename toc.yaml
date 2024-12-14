@@ -114,7 +114,7 @@ toc:
           label: Observability
           topics:
           - common/single-tenant-monitoring.md
-          - common/vmaas-at-events.md
+          - common/at-events.md
   - navgroup:
       id: reference
       topics:
