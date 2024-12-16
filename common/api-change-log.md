@@ -21,7 +21,7 @@ In this change log, you can learn about the most recent changes, improvements, a
 ## 13 December 2024
 {: #vmware-service-13-december-2024}
 
-Added support to specify the URL (href) for an organization when creating a virtual data center (VDC). For more information, see [Create a virtual data center](https://test.cloud.ibm.com/apidocs/vmware-service#create-vdc).
+Added support to specify the URL (href) for an organization when creating a virtual data center (VDC). For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
 
 ## 13 September 2024
 {: #vmware-service-13-september-2024}
