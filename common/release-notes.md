@@ -24,7 +24,32 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2024
 {: #vmware-service-year-2024}
 
+### 13 December 2024
+{: #vmware-service-dec24}
+{: release-note}
 
+Intel Sapphire Rapids server availability
+:   Dual Intel® 8474C Xeon® bare metal servers are now available for vSAN ESA host profiles, available only on vSphere 8. For more information, see [Planning for deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-cluster-host).
+
+Software currency update
+:   This release provides an infrastructure upgrade for Veeam® Backup 12.2 HF 7.7.
+
+VMware Cloud Director Snapshots
+:   You can now open an IBM Support ticket to enable VMware Cloud Director™ Snapshots to take multiple images of your virtual machines. Include the following details in you support ticket:
+   * The snapshot count. You can request up to 31 images per virtual machine.
+   * The URL to the {{site.data.keyword.vcf-aas}} Cloud Director site.
+   * Your VMware Cloud Director Organization ID.
+
+Promotion code availability for new {{site.data.keyword.vcf-aas}} pay-as-you-go customers 
+:    A new $1,000 limited-time credit promotion code, **VCFAAS1000**, is available for new {{site.data.keyword.vcf-aas}} pay-as-you-go customers. Apply the promotion code during the provision process for any new {{site.data.keyword.vcf-aas}} offering.
+
+User interface updates and enhancements
+:   The user interface is updated and provides the following enhancements.
+   * The **VMware Cloud Foundation as a Service** resource page provides guidance about the next steps to use your VCF as a Service instance.
+   * The **Summary** tab of the Cloud Director site details page is better organized for you to view important information at a glance.
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-13-december-2024).
 
 ### 10 December 2024
 {: #vmware-service-dec1024}

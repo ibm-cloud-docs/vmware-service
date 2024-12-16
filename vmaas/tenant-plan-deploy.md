@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-16"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -144,6 +144,53 @@ NFS only clusters do not have local flash storage and cannot be configured for v
 
 vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This policy is high-performance and high-resilience and requires at least seven hosts. vSAN clusters can also use NFS storage.
 
+The profile storage type is dependent on the resource pool location. The following options are available for multizone regions.
+
+| Data center | NFS-only storage | vSAN + optional NFS storage |
+|:------------|:-----------------|:----------------------------|
+| Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} |
+| Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Data center profile storage types - Asia Pacific" caption-side="bottom"}
+{: tab-title="Asia Pacific"}
+{: tab-group="Multizone profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-prof-asiapacific}
+
+| Data center | NFS-only storage | vSAN + optional NFS storage |
+|:------------|:-----------------|:----------------------------|
+| Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London 05 | [Yes]{: tag-green} | [No]{: tag-red} |
+| London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Data center profile storage types - Europe" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Multizone profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-prof-europe}
+
+| Data center | NFS-only storage | vSAN + optional NFS storage |
+|:------------|:-----------------|:----------------------------|
+| Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Dallas 13 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} |
+| Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Data center profile storage types - North America" caption-side="bottom"}
+{: tab-title="North America"}
+{: tab-group="Multizone profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-prof-northamerica}
+
 ### Host profile
 {: #tenant-plan-deploy-cluster-host}
 
@@ -164,6 +211,9 @@ Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The 
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
+Sapphire Rapids 8474C profiles are not available on Sydney or Tokyo {{site.data.keyword.cloud_notm}} data centers.
+{: important}
+
 | Profile | Sockets | Cores | RAM | vSAN usable capacity |
 |:--------|:--------|:------|:----|:---------------------|
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 15 TB |
@@ -174,6 +224,9 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 38 TB |
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 46 TB |
 | Quad Intel 8260 Xeon | 4 | 96 | 1536 GB | 61 TB |
+| Dual Intel 8474C Xeon[^esa61] | 2 | 96 | 2048 GB | 61 TB |
+| Dual Intel 8474C Xeon[^esa122] | 2 | 96 | 2048 GB | 122 TB |
+| Dual Intel 8474C Xeon[^esa184] | 2 | 96 | 2048 GB | 184 TB |
 {: caption="Available vSAN host profiles" caption-side="bottom"}
 {: tab-title="vSAN clusters"}
 {: tab-group="Host profiles"}
