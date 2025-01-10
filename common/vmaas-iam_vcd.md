@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-02"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -21,7 +21,7 @@ subcollection: vmware-service
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director™.
-* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
 * **Custom** - roles that are custom-defined by {{site.data.keyword.IBM}}.
 
 | Platform management role | Actions | Level of permission |
@@ -57,7 +57,7 @@ To update the roles with the new rights, complete the following steps as an **IB
 5. Click **SAVE** to apply the new or removed permissions. You might need to log out and log back into the tenant portal to see the changes.
 6. Repeat for each role that requires the update.
 
-For more information, see [Edit a Custom Tenant Role Using Your VMware Cloud Director Tenant Portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-CA7567DB-FDE8-42C8-9A45-9B291357E429.html).{: external}
+For more information, see [Edit a Custom Tenant Role Using Your VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/managing-users-groups-and-roles-in-vcd-tenant/vcd-roles-and-rights-tenant/edit-a-role-using-your-vcd-tenant-portal-tenant.html).{: external}
 
 The permissions that include an asterisk (*) are introduced in VMware Cloud Director 10.6 and are available to users after the Cloud Director site where the virtual data centers are deployed is upgraded to VMware Cloud Director 10.6.0.1. For more information, see [IBM Cloud Maintenance notifications for scheduled upgrade dates](https://cloud.ibm.com/notifications?type=maintenance).
 {: note}

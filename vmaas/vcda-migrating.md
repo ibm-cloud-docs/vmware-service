@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-09-13"
+lastupdated: "2025-01-02"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -28,7 +28,7 @@ The following steps outline a validated process. Many different configurations w
    2. Click the **Drivers and Tools** tab.
    3. Download **VMware Cloud Director Availability On-premises Appliance**.
 
-   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance. 
+   Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance.
    {: note}
 
 2. Log in to VMware vCenter Server and navigate to the cluster name.
@@ -68,5 +68,5 @@ The following steps outline a validated process. Many different configurations w
 ## Related links
 {: #vcda-migrating-links}
 
-* [Installing and configuring the On-Premises to Cloud Director Replication Appliance](https://docs.vmware.com/en/VMware-Cloud-Director-Availability/4.6/VMware-Cloud-Director-Availability-Install-Config-Upgrade-On-Prem/GUID-7B6E4E1E-92D5-4D84-A7FD-44B0824815DF.html){: external}
+* [Installing and configuring the On-Premises to Cloud Director Replication Appliance](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/availability/4-6/cloud-availability-install-config-and-upgrade-guide-4-6.html){: external}
 * [Migrating workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vcda-migrating-onprem)

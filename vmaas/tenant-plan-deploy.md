@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-01-10"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -239,21 +239,31 @@ Sapphire Rapids 8474C profiles are not available on Sydney or Tokyo {{site.data.
 
 [^esa184]: Applicable to vSAN ESA profiles
 
+[^esa61h]: Applicable to vSAN ESA profiles
+
+[^esa122h]: Applicable to vSAN ESA profiles
+
+[^esa184h]: Applicable to vSAN ESA profiles
+
 | Profile | Sockets | Cores | RAM |
 |:--------|:--------|:------|:----|
 | Dual Intel 5218 Xeon | 2 | 32 | 192 GB |
-| Dual Intel 8260 Xeon | 2 | 48 | 384 GB |
-| Dual Intel 8260 Xeon | 2 | 48 | 768 GB |
-| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB |
 | Dual Intel 5218 Xeon | 2 | 32 | 384 GB |
 | Dual Intel 6248 Xeon | 2 | 40 | 384 GB |
+| Dual Intel 8260 Xeon | 2 | 48 | 384 GB |
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB |
+| Dual Intel 8260 Xeon | 2 | 48 | 768 GB |
+| Quad Intel 8260 Xeon | 4 | 96 | 1536 GB |
 {: caption="Available NFS-only host profiles" caption-side="bottom"}
 {: tab-title="NFS-only clusters"}
 {: tab-group="Host profiles"}
 {: class="simple-tab-table"}
 {: #simpletabtable-nfs-hp}
+
+[^esa1024]: Applicable to vSAN ESA profiles
+
+[^esa2048]: Applicable to vSAN ESA profiles
 
 #### Performance characteristics
 {: #tenant-plan-deploy-cluster-perf}

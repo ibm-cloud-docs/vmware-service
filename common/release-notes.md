@@ -29,10 +29,10 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: release-note}
 
 Intel Sapphire Rapids server availability
-:   Dual Intel® 8474C Xeon® bare metal servers are now available for vSAN ESA host profiles, available only on vSphere 8. For more information, see [Planning for deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-cluster-host).
+:   Dual Intel 8474C Xeon® bare metal servers are now available for vSAN ESA host profiles, available only on vSphere 8. For more information, see [Planning for deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-cluster-host).
 
 Software currency update
-:   This release provides an infrastructure upgrade for Veeam® Backup 12.2 HF 7.7.
+:   This release provides an infrastructure upgrade for Veeam Backup 12.2 HF 7.7.
 
 VMware Cloud Director Snapshots
 :   You can now open an IBM Support ticket to enable VMware Cloud Director™ Snapshots to take multiple images of your virtual machines. Include the following details in you support ticket:
@@ -101,7 +101,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T™ 4.2.0.2
+   * VMware NSX-T 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 

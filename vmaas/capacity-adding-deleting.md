@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-08"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -21,6 +21,9 @@ subcollection: vmware-service
 You can increase or decrease the reserved computing capacity for reserved *mutlitenant* virtual data centers and consumption limits for on-demand *multitenant* virtual data centers (VDCs).
 
 vCPU and RAM charges for on-demand VDCs are based on the amount that is used for running workloads. To control cost, you can use limits to restrict the maximum amount of vCPU and RAM usage in the VDC.
+
+The capacity is set to the current utilization if the VDC utilization exceeds the requested capacity limit.
+{: note}
 
 ## Procedure to add or delete capacity for {{site.data.keyword.vcf-aas}} VDCs
 {: #capacity-adding-deleting-proc}

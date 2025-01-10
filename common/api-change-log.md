@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-12-16"
+lastupdated: "2025-01-09"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
@@ -21,7 +21,7 @@ In this change log, you can learn about the most recent changes, improvements, a
 ## 13 December 2024
 {: #vmware-service-13-december-2024}
 
-Added support to specify the URL (href) for an organization when creating a virtual data center (VDC). For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
+Added support to specify the URL (href) for an organization when creating a VDC. For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
 
 ## 13 September 2024
 {: #vmware-service-13-september-2024}

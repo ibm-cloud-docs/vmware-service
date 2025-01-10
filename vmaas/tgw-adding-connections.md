@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-02"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -92,9 +92,9 @@ Before you can add a connection group to your VDC, you must create a {{site.data
    When all unbound GRE tunnels display the **Attached** status, the connection group is attached to {{site.data.keyword.tg_short}}.
 
 3. Complete the following procedures to configure the VDC network edge.
-   1. Configure a fully routed network environment in your VDC. For more information, see [Manage Route Advertisement in the VMware Cloud Director Tenant Portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-6DEC4DF7-2168-4162-8BD1-42BCD555DBF9.html).{: external}
-   2. If you have existing SNAT rules, edit the priority and configurations rules and add No Source NAT (NOSNAT) rules to use {{site.data.keyword.tg_short}}. For more information, see [Add an SNAT or a DNAT Rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html).{: external}
-   3. Update your firewall rules to allow for the new outbound network traffic and for the new remote network inbound traffic. For more information, see [Configure Firewall Rules on a Provider Gateway in the VMware Cloud Director Tenant Portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-613FAF16-6543-4A4A-B29A-1F88297A7C0E.html).{: external}
+   1. Configure a fully routed network environment in your VDC. For more information, see [Manage Route Advertisement in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/configure-dedicated-provider-gateway-services-tenant/route-advertisement-tenant.html).{: external}
+   2. If you have existing SNAT rules, edit the priority and configurations rules and add No Source NAT (NOSNAT) rules to use {{site.data.keyword.tg_short}}. For more information, see [Add an SNAT or a DNAT Rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html).{: external}
+   3. Update your firewall rules to allow for the new outbound network traffic and for the new remote network inbound traffic. For more information, see [Configure Firewall Rules on a Provider Gateway in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/working-with-provider-gateways-tenant/configure-firewall-rules-on-a-provider-gateway-tenant.html).{: external}
 
 4.  From [{{site.data.keyword.tg_short}}](https://cloud.ibm.com/interconnectivity/transit/provision), create the route and Border Gateway Protocol report. For more information, see [Generating a route report](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui).
 

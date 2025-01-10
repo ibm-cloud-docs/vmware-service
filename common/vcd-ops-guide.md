@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-11-26"
+lastupdated: "2025-01-02"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -29,14 +29,14 @@ You can also configure advanced networking capabilities that are provided by VMw
 
 To access VMware Cloud Director, use single sign-on with your {{site.data.keyword.cloud_notm}} credentials as the default authentication and authorization mechanism. For a list of the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) Director tenant portal roles and authorizations that are associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui). Organization administrators can create local users that are authenticated by the tenant portal as opposed to IBM Cloud {{site.data.keyword.cloud_notm}} and can also create additional customized roles that can be assigned against local users.
 
-For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
+For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/getting-started-with-vmware-cloud-director-tenant-portal-tenant/vmware-cloud-director-tenant-portal-roles-and-rights-tenant.html){: external}.
 
 ### Modifying your email settings
 {: #vcd-ops-guide-roles-email}
 
 The Organization Administrator must modify email notification settings to the organization SMTP server.
 
-For more information about modifying SMTP server settings, see [Modify your email settings](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-726D40D7-4251-47AD-B945-2030E489165F.html){: external}.
+For more information about modifying SMTP server settings, see [Modify your email settings in VMware Cloud Director](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/managing-your-organization-tenant/modify-your-email-settings-tenant.html){: external}.
 
 ## Catalogs
 {: #vcd-ops-guide-catalogs}
@@ -122,7 +122,7 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
        Ensure the contents of the uuid_override.facts contains a generated UUID.
      4. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
        Where ``ACTIVATION_KEY`` is the Red Hat activation key that you copied to the clipboard.
-       
+
 You can still use another RHEL Capsule Server or a satellite server if you already have an RHEL subscription outside of IBM. Charges for the RHEL license are incurred against RHEL VMs that are running in a VDC.
 {: note}
 
@@ -131,14 +131,14 @@ You can still use another RHEL Capsule Server or a satellite server if you alrea
 
 To create a catalog, you must have either the **Organizational Administrator** or **Catalog Author** tenant portal role.
 
-For more information about defining catalogs and policies, see [Working with catalogs](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-6424C4A7-EA95-49A0-B673-9DDB971AB566.html){: external}.
+For more information about defining catalogs and policies, see [Working with catalogs in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-catalogs-tenant.html){: external}.
 
 ### Uploading your media or templates
 {: #vcd-ops-guide-customer}
 
-OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp template from an OVF file](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-5EA412C4-179A-42CF-9B30-1B81C23551E6.html){: external}.
+OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp from an OVF package in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant/create-a-vapp-from-an-ovf-package-tenant.html){: external}.
 
-Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
+Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-media-files-tenant.html){: external}.
 
 The maximum import size is 750 GB. Large image files or templates might take a long time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmware-service?topic=vmware-service-support).
 {: note}
@@ -148,14 +148,14 @@ The maximum import size is 750 GB. Large image files or templates might take a l
 
 When you use the tenant portal, you can create a VM or provision a VM from a template.
 
-For more information, see [Create a standalone virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-64CFBEFC-8E3D-49FC-B1BD-16CCE7493544.html){: external}.
+For more information, see [Create a standalone virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/creating-a-virtual-machine-tenant/create-a-standalone-vm-tenant.html){: external}.
 
 ### Customizing virtual machine properties
 {: #vcd-ops-guide-cust-properties}
 
 You can edit the properties of a VM, including the VM name and description, hardware and network settings, and operating system settings for a guest.
 
-For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
+For more information about working with VMs, see [Working with virtual machines in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant.html){: external}.
 
 If you use the tenant portal (Guest OS Customization) to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
@@ -168,11 +168,11 @@ You can change the name, description, storage policy, and other general properti
 ##### Switching between storage properties
 {: #vcd-ops-guide-change-properties-storage}
 
-Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power off a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-2323B049-4E36-4510-999E-F2D4A77AC0F9.html){: external}.
+Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power off a virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/performing-power-operations-on-virtual-machines-tenant/power-off-a-virtual-machine-tenant.html){: external}.
 
-For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216__GUID-BE9430B7-40F8-43F7-AED4-1080F9E04E34){: external}.
+For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1-en){: external}.
 
-If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-33C22124-A610-4C3E-8F40-26CAC570F958.html){: external}.
+If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/performing-power-operations-on-virtual-machines-tenant/power-on-a-virtual-machine-tenant.html){: external}.
 
 #### Changing the hardware properties of a virtual machine
 {: #vcd-ops-guide-hardware}
@@ -186,14 +186,14 @@ Guest OS customization is optional for all platforms. It is required for VMs tha
 
 When you use an IBM template to create the VM, use the **Guest OS Customization** panel to acquire or set the unique password for the OS instance. Ensure that the option **Enable guest customization** is selected and then use one of the **Password Reset** options to establish the initial administrator credential.
 
-For more information, see [Change the guest OS customization properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F__GUID-658C5607-04BA-4BE1-87D3-8553DD2601EE){: external}.
+For more information, see [Change the guest OS customization of a virtual machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F-en){: external}.
 
 #### Changing the advanced properties of a virtual machine
 {: #vcd-ops-guide-advanced}
 
 In the Advanced settings, you can configure the resource allocation settings (shares, reservation, and limit) to determine the amount of virtual CPU (vCPU), memory, and storage resources provided for a VM.
 
-For more information, see [Edit virtual machine properties](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html){: external}.
+For more information, see [Edit the guest properties of a virtual machine](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/editing-virtual-machine-properties-tenant.html#GUID-567E346C-7200-41BA-96F2-4ED7F3B26DF0-en){: external}.
 
 ### Using IBM templates
 {: #vcd-ops-guide-ibm-templates}
@@ -214,7 +214,7 @@ A vApp consists of one or more VMs that communicate over a network and use resou
 
 You can add VMs and networks to the vApp.
 
-For more information about vApps, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+For more information about vApps, see [Working with vApps in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant.html){: external}.
 
 ## Networking
 {: #vcd-ops-guide-networking}
@@ -246,7 +246,7 @@ The VDC must have an edge (public-private or private-only) to enable access to t
 ### Creating a vApp network for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-vapp-network-vmaas}
 
-If not already completed, create a vApp containing at least two VMs before you complete the following procedure. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs before you complete the following procedure. For more information, see [Working with vApps in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant.html){: external}.
 {: requirement}
 
 1. From the left panel of the tenant portal, click **Data Centers**.
@@ -257,7 +257,7 @@ If not already completed, create a vApp containing at least two VMs before you c
 6. In the **Add Network to** panel, select **OrgVDC Network** and select the network name.
 7. Click **Add**.
 
-For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+For more information, see [Working with networks in a vApp in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant/working-with-networks-in-a-vapp-tenant.html).
 
 ### Allocating public IP addresses for NAT rules and for VPNs
 {: #vcd-ops-guide-allocating-ips}
@@ -310,8 +310,8 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
       | Local interface   | Remote interface   |
       |:----------------  |:------------------ |
-      | 169.254.101.1/30  | 169.254.101.2/30   | 
-      | 169.254.110.5/30  | 169.254.110.6/30   | 
+      | 169.254.101.1/30  | 169.254.101.2/30   |
+      | 169.254.110.5/30  | 169.254.110.6/30   |
       | 169.254.120.9/30  | 169.254.120.10/30  |
       | 169.254.139.13/30 | 169.254.130.14/30  |
       {: caption="Tunnel interface examples" caption-side="bottom"}
@@ -323,7 +323,7 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Name** and **Description**, provide details that help to describe the static route.
       * For **Network**, enter the remote network that the VPN is connecting with. For example, `192.168.47.0/24`.
       * Ensure that the **Route Advertised** field is toggled off.
-   2. For the **Next Hops** tab, complete the following selections. 
+   2. For the **Next Hops** tab, complete the following selections.
       * For **IP Address**, enter the tunnel IP address of the remote tunnel. For example, `169.254.101.1`.
       * For **Admin Distance**, enter *1*.
       * For **Scope**, leave the field empty.
@@ -353,16 +353,16 @@ The following steps outline a validated process. Many different configurations w
    3. For **Scope**, complete the following sections and click **NEXT**.
       * For **Internal Scope**, enter the VDC network CIDR of the local VDC to share over the VPN. For example, `192.168.19.0/24`.
       * For **External Scope**, enter the CIDR of the remote network to share over the VPN. For example, `192.168.47.0/24`.
-   4. For **IP Ranges**, complete the following sections and click **NEXT**. You can leave this field blank to share the complete network that is identified for internal scope or you can specify only to share a range in the internal scope. 
+   4. For **IP Ranges**, complete the following sections and click **NEXT**. You can leave this field blank to share the complete network that is identified for internal scope or you can specify only to share a range in the internal scope.
    5. For **IP Prefixes**, complete the following sections and click **NEXT**. You can leave this field blank to share the complete network that is identified for internal scope or you can specify to share the IP range in the prefix identified.
-   6. Review the settings for accuracy and click **FINISH**.  
+   6. Review the settings for accuracy and click **FINISH**.
 
 ##### Step 2: Creating the Provider Gateway IPsec VPN
 {: #vcd-ops-guide-routebased-ipsec-vpn-provider-step2}
 
 1. From the left panel of the tenant portal, click **Networking**.
 2. At the top of the right panel, select **Provider Gateways**.
-3. Click the provider gateway that is associated with te VDC. If you have multiple VDCs, complete the following steps to identify the correct provider gateway.  
+3. Click the provider gateway that is associated with te VDC. If you have multiple VDCs, complete the following steps to identify the correct provider gateway.
    1. From the left panel of the tenant portal, click **Data Centers**.
    2. From the **Virtual Data Center** details page, click the VDC where you want to create a provider gateway IPsec VPN.
    3. From the left panel of the VDC, expand **Networking** and click **Edges**.
@@ -403,12 +403,12 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Pre-Shared Key**, enter a secure value that is also used on the other side of the VPN tunnel.
    3. For **Endpoint Configuration**, complete the following selections and click **NEXT**.
       * For **Local Endpoint IP Address**, enter an available and unused public IP address. The public IP address must also be allocated in IP Spaces Floating IPs.
-      * For **Local Endpoint Networks**, enter the VDC network CIDR of the local VDC to share over the VPN. For example, `192.168.19.0/24`.    
+      * For **Local Endpoint Networks**, enter the VDC network CIDR of the local VDC to share over the VPN. For example, `192.168.19.0/24`.
       * For **Remote Endpoint IP Address**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**.
       * For **Remote Endpoint Networks**, enter the VDC network CIDR of the remote VDC to share over the VPN. For example, `192.168.47.0/24`.
       * For **Remote ID**, leave the field empty.
-   4. Review the settings for accuracy and click **FINISH**.  
-  
+   4. Review the settings for accuracy and click **FINISH**.
+
 #### Creating an L2 VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-l2vpn-vmaas}
 
@@ -439,7 +439,7 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Remote IP**, enter a public IP address from the remote side of the VPN. The address on the remote side of the VPN is called the **Local IP Address**.
       * For **Initiation Mode** select one of the three options (Initiator, Respond Only or On Demand) and click **NEXT**.
    4. For **Org VDC Networks**, select the VDC network to participate in the L2 VPN and click **NEXT**.
-      
+
       Both ends of the L2 VPN must use the same network IP ranges with unique IP assignments to servers and VMs across both ends of the VPN. For example, the L2 VPN connects one end of the tunnel with a network that uses `192.168.50.10-192.168.50.100` to the other end with network that uses `192.168.50.101-192.168.50.190`.
       {: tip}
 
@@ -460,7 +460,7 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
         1. From the left panel of the VDC, expand **Networking** and click **Edges**.
         2. From the **Services** section, select **L2 VPN** and select the L2 VPN Server from the list.
         3. Above the table, click **Copy peer code**.
-        4. Paste the peer code value in the client L2 VPN **Peer Code* input** field. 
+        4. Paste the peer code value in the client L2 VPN **Peer Code* input** field.
         5. For **State**, toggle to enable.
    3. For **Endpoint Setup**, complete the following selections and click **NEXT**.
       * For **Local Endpoint**, enter an available and unused public IP address. The IP address is the same address that is used in the L2 VPN server config as the **Remote IP**. The IP address must also be allocated in IP Spaces Floating IPs.
@@ -486,4 +486,4 @@ For more information about using Operations Manager, see [Using VMware Chargebac
 ## Related links
 {: #vcd-ops-guide-related}
 
-* [VMware Cloud Director Tenant Portal Guide](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director Tenant Portal Guide](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5.html){: external}

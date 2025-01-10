@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-10-02"
+lastupdated: "2025-01-10"
 
 keywords: order shared instance, shared instances, order shared instance, shared order
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # VMware Shared - deprecated
 {: #shared-intro}
 
-VMware Shared is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+As of 28 March 2024, {{site.data.keyword.vm-shared}} is not available for new deployments. Support for existing instances is extended until 28 February 2025. All customer and management data, including the backups of workloads, will be deleted in March 2025. Migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 28 February 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 For more information about [VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) instances, see the following topics:
