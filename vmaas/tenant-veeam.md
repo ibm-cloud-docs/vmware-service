@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2025
+  years:  2023, 2024
 
-lastupdated: "2025-01-29"
+lastupdated: "2024-12-12"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -40,9 +40,11 @@ You can access the Veeam portal from the **Add-on services** tab of the VDC inst
 ### Procedure to access the Veeam self-service portal from the instance
 {: #tenant-veeam-portal-proc-access}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site or virtual data center name.
-3. Click the **Add-on services** tab on the instance details page, then click **Veeam backups**.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. Click the instance type tab.
+   * For multitenant instances, click the **Cloud director sites** tab. Then, click the instance name.
+   * For single-tenant instances, click the **Virtual data centers** tab. Then, click the instance name.
+3. Click the **Add-on services** tab in the instance details page, then click **Veeam backups**.
 4. Use a user with the Organization Administrator role to log in to the Veeam self-service portal.
 
 Alternatively, click the **More** menu in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
@@ -70,7 +72,6 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * You can scale multiple dedicated SOBRs based on your backup capacity requirements.
 * Each SOBR receives repository VMs, data movers, and cross-region IBM Cloud Object Storage buckets.
 * All data that is stored in the IBM Cloud Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
-* Veeam backups are encrypted when stored on both vSAN™ or IBM Cloud Object Storage.
 * When you delete a SOBR, you are charged until immutability expires on the IBM Cloud Object Storage buckets.
 
 For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2025
+  years: 2023, 2024
 
-lastupdated: "2025-01-22"
+lastupdated: "2024-11-26"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 
@@ -34,21 +34,21 @@ Before you delete the Veeam Backup service from your instance, review the follow
 ## Procedure to add Veeam Backup to {{site.data.keyword.vcf-aas}} instances
 {: #veeam-adding-deleting-add-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Add-on services** tab.
 4. Click **Add service**.
-5. In the **Add-on services** pane, toggle Veeam Backup on.
+5. In the **Add-on services** panel, toggle Veeam Backup on.
 6. Review the new cost, select the confirmation checkboxes, and click **Add**.
 
 ## Procedure to delete Veeam Backup from {{site.data.keyword.vcf-aas}} instances
 {: #veeam-adding-deleting-delete-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click an instance name.
 3. Click the **Add-on services** tab.
 4. Click the vertical overflow menu in the Veeam Backup panel and click **Delete**.
-5. In the **Delete add-on service** pane, review the considerations, and enter **Veeam Backup** to confirm that you want to delete all Veeam backup services from your instance. Click **Delete**.
+5. In the **Delete add-on service** window, review the considerations, and enter **Veeam Backup** to confirm that you want to delete all Veeam backup services from your instance. Click **Delete**.
 
 ## Related links
 {: #veeam-adding-deleting-links}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-01-03"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -81,11 +81,11 @@ The {{site.data.keyword.vcf-aas}} single-tenant consumption model provides the f
 * Each {{site.data.keyword.vcf-aas}} single-tenant instance contains the following VMware components:
    * Dedicated VMware ESXi hosts
    * Dedicated VMware vCenter
-   * Multiple performance options for attached vSAN and Network File Storage (NFS v3)
+   * Multiple performance options for attached vSAN™ and Network File Storage (NFS v3)
    * Dedicated VMware NSX-T with dedicated networking
    * Dedicated VMware Cloud Director
 * Right-size and scale of the VMware environment:
-   * Add and remove VMware Cloud Director resource pools
+   * Add and remove VMware Cloud Director PVDCs
    * Add and remove VMware vCenter clusters
    * Add and remove hosts per VMware vCenter cluster
    * Add and remove storage per VMware vCenter cluster
@@ -112,8 +112,8 @@ The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the fol
 
 {{site.data.keyword.vcf-aas}} single-tenant instances incur charges for the following components.
 
-* Host type and counts used
 * NFS size and performance tiers used
+* Host type and counts used
 * Egress to public networking
 * Ingress to private networking (optional)
 * Networking edge types and counts

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024
 
-lastupdated: "2025-01-29"
+lastupdated: "2025-01-02"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -174,9 +174,6 @@ For more information about changing a storage policy, see [Change the general pr
 
 If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/performing-power-operations-on-virtual-machines-tenant/power-on-a-virtual-machine-tenant.html){: external}.
 
-The size of disks cannot exceed 15.8 TB when you use NFS storage policies. If you attempt to move any disks larger than 15.8 TB to NFS storage policies, the conversion fails.
-{: note}
-
 #### Changing the hardware properties of a virtual machine
 {: #vcd-ops-guide-hardware}
 
@@ -267,7 +264,7 @@ For more information, see [Working with networks in a vApp in the VMware Cloud D
 
 Every {{site.data.keyword.vcf-aas}} VDC with a public edge is provided with eight public IP addresses. To enable the eight addresses for use in the edge NAT rules or the Virtual Private Network (VPN) rules, you must first allocate the public addresses.
 
-You must complete these steps as a user who has the **Manage Manual IP Reservation** permission. IBM default roles **Manager**, **Administrator**, **Director Network Admin**, and **Director Security Admin** all have this permission.
+You must perform these steps as a user who has the **Manage Manual IP Reservation** permission. IBM default roles **Manager**, **Administrator**, **Director Network Admin**, and **Director Security Admin** all have this permission.
 {: requirement}
 
 1. From the left panel of the tenant portal, click **Networking**.
@@ -373,7 +370,7 @@ The following steps outline a validated process. Many different configurations w
 4. From the **Services** section, select **IPSec VPN**.
 5. Above the **IPSec VPN** table, click **AUTOCONFIGURE**.
    * For **Name**, enter a description for the VPN.
-   * For **IP Space**, select the previously created IP Space entry from the dropdown menu.
+   * For **IP Space**, select the previously created IP Space entry from the dropdown.
    * For **Remote Endpoint**, enter a public IP address from the remote end of the VPN.
    * For **Local Endpoint**, enter an available and unused public IP address from the VDC. The public IP address must be allocated in IP Spaces Floating IPs.
    * For **Pre-Shared Key**, enter a secure value.
@@ -433,7 +430,7 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Pre-Shared Key**, enter a secure value.
       * For **State**, toggle to enable.
    3. For **Endpoint Setup**, complete the following selections.
-      * For **Local Endpoint**, enter an available and unused public IP address. The public IP address must be allocated in IP Spaces Floating IPs.
+      * For **Local Endpoint**, enter a free and unused public IP address. The public IP address must be allocated in IP Spaces Floating IPs.
       * For **Tunnel Interface CIDR**, set the value to a `/30` or `/31` network in the link-local ranges (169.254.0.0/16). Don't reuse the same tunnel interfaces. Consider the following examples:
         * 169.254.101.1/30
         * 169.254.110.5/30
@@ -477,15 +474,12 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Tunnel ID**, use incrementing numbers for each L2 VPN tunnel. For the first tunnel, use `1`. For the second tunnel, use `2` and so on.
    5. Review the settings for accuracy and click **FINISH**.
 
-## Using services in the VMware Cloud Director tenant portal
-{: #vcd-ops-guide-services}
-
-### Accessing Operations Manager
-{: #vcd-ops-guide-services-chargeback}
-
-Use Operations Manager to view VDC, vApp, and VM level metrics and to export metric data. You can use this data to isolate resource usage and to help understand billing charges.
+## Accessing Operations Manager
+{: #vcd-ops-guide-enable-chargeback}
 
 The Operations Manager service is enabled by default. From the VMware Cloud Director tenant portal, click **More > Operations Manager** to access the Operations Manager web UI.
+
+Use Operations Manager to view VDC, vApp, and VM level metrics and to export metric data. You can use this data to isolate resource usage and to help understand billing charges.
 
 For more information about using Operations Manager, see [Using VMware Chargeback as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html).{: external}
 

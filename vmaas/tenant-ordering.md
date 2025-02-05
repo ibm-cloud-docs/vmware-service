@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2024
 
-lastupdated: "2025-01-23"
+lastupdated: "2024-12-12"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -60,9 +60,6 @@ You can specify a name that meets the following requirements:
 
 When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
 {: requirement}
-
-Some host profiles might not be available for a selected location. Contact your IBM Sales representative to request missing host profiles.
-{: note}
 
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
 2. On the **{{site.data.keyword.vmware-service_short}}** order page, click the **Single-tenant Cloud Director site** card.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-01-10"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -34,7 +34,7 @@ VMware deployment sizings are based on the CPU, memory, and storage that are req
 
 Consider your instance type.
 
-Choose from {{site.data.keyword.vcf-aas-full}} single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMware workloads. The single-tenant option provides the highest level of isolation and consistency.
+Choose from single-tenant or multitenant options. Both single-tenant and multitenant configuration options provide the same experience, security, and reliability for running VMware workloads. The single-tenant option provides the highest level of isolation and consistency.
 
 ### {{site.data.keyword.vcf-aas}} single-tenant
 {: #tenant-plan-deploy-type-st}
@@ -44,7 +44,7 @@ For a dedicated infrastructure and built to order VMware environment, create a *
 ### {{site.data.keyword.vcf-aas}} multitenant
 {: #tenant-plan-deploy-type-mt}
 
-For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.cloud_notm}} multitenant, your only step is to create the **Multitenant virtual data center**.
+For a flexible, pay-as-you-go VMware environment, create a VDC in a multitenant Cloud Director site. With {{site.data.keyword.vcf-aas-full}} multitenant, your only step is to create the **Multitenant virtual data center**.
 
 On-demand and reserved pricing plans are available for multitenant instances.
 
@@ -72,51 +72,47 @@ For Reserved instances, the vCPU and RAM VDC reservations are pre-allocated and 
 ## IBM Cloud data center availability
 {: #tenant-plan-deploy-locations}
 
-The following data centers are available for {{site.data.keyword.vcf-aas}} deployment.
+The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-aas}} deployment.
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+| Location | Data center | Type |
+|:----------|:----------|:------|
+| Sydney | Sydney 01 | Single-tenant |
+| Sydney | Sydney 04 | Single-tenant and Multitenant |
+| Sydney | Sydney 05 | Single-tenant and Multitenant |
+| Tokyo | Tokyo 02 | Single-tenant and Multitenant |
+| Tokyo | Tokyo 04 | Single-tenant and Multitenant |
+| Tokyo | Tokyo 05 | Single-tenant |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-ap}
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+| Location | Data center | Type |
+|:----------|:----------|:------|
+| Frankfurt | Frankfurt 02 | Single-tenant and Multitenant |
+| Frankfurt | Frankfurt 04 | Single-tenant and Multitenant |
+| Frankfurt | Frankfurt 05 | Single-tenant |
+| London | London 04 | Single-tenant and Multitenant |
+| London | London 05 | Single-tenant |
+| London | London 06 | Single-tenant and Multitenant |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-eur}
 
-[^lon1ST]: Single-tenant only
-
-[^lon3ST]: Single-tenant only
-
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+| Location | Data center | Type |
+|:----------|:----------|:------|
+| Dallas | Dallas 10 | Single-tenant and Multitenant |
+| Dallas | Dallas 12 | Single-tenant and Multitenant |
+| Dallas | Dallas 13 | Single-tenant |
+| Toronto | Toronto 01 | Single-tenant |
+| Toronto | Toronto 04 | Single-tenant and Multitenant |
+| Toronto | Toronto 05 | Single-tenant and Multitenant |
+| Washington DC | Washington DC 04 | Single-tenant |
+| Washington DC | Washington DC 06 | Single-tenant and Multitenant |
+| Washington DC | Washington DC 07 | Single-tenant and Multitenant |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
@@ -128,19 +124,21 @@ The following data centers are available for {{site.data.keyword.vcf-aas}} deplo
 
 A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create a resource pool across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+You can create a resource pool across three multizone data centers in the selected region.
+
+You can optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
 
 For more information about resource pools, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
 ## Cluster
 {: #tenant-plan-deploy-cluster}
 
-A resource pool consists of one or more clusters with the following configurations.
+ A resource pool consists of one or more clusters with the following configurations.
 
-### Profile storage types
+### Profile storage type
 {: #tenant-plan-deploy-cluster-storage}
 
-For single-tenant Cloud Director sites, you can select NFS only storage or vSAN storage with optional NFS storage.
+For single-tenant Cloud Director sites, you can select NFS only storage or vSAN™ storage with optional NFS storage.
 
 NFS only clusters do not have local flash storage and cannot be configured for vSAN.
 
@@ -213,6 +211,9 @@ Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The 
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
+Sapphire Rapids 8474C profiles are not available on Sydney or Tokyo {{site.data.keyword.cloud_notm}} data centers.
+{: important}
+
 | Profile | Sockets | Cores | RAM | vSAN usable capacity |
 |:--------|:--------|:------|:----|:---------------------|
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 15 TB |
@@ -238,11 +239,11 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 
 [^esa184]: Applicable to vSAN ESA profiles
 
+[^esa61h]: Applicable to vSAN ESA profiles
 
+[^esa122h]: Applicable to vSAN ESA profiles
 
-
-
-
+[^esa184h]: Applicable to vSAN ESA profiles
 
 | Profile | Sockets | Cores | RAM |
 |:--------|:--------|:------|:----|
@@ -260,9 +261,9 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 {: class="simple-tab-table"}
 {: #simpletabtable-nfs-hp}
 
+[^esa1024]: Applicable to vSAN ESA profiles
 
-
-
+[^esa2048]: Applicable to vSAN ESA profiles
 
 #### Performance characteristics
 {: #tenant-plan-deploy-cluster-perf}

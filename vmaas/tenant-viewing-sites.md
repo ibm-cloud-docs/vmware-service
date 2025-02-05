@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2024
 
-lastupdated: "2025-02-04"
+lastupdated: "2024-12-16"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -29,53 +29,56 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 ## Procedure to view a summary of Cloud Director sites
 {: #tenant-viewing-sites-summary}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. On the **{{site.data.keyword.vmware-service_short}}** page, view the summary of Cloud Director sites and the VDCs that are provisioned for each site. Each site summary includes the following information.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab to view the summary of sites that are provisioned.
 
-   * The name and status of the provisioned site.
-   * The consumption model for the site, Single-tenant or Multitenant, and the region where the site is deployed.
-   * The services that are installed and available for the VDCs to use.
-   * Available actions for the site.
-   
-   Click **VMware console** to create and manage networking and workloads. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration&interface=ui).
-   
-   Click the **Delete** icon to delete the Cloud Director site. You cannot delete an IBM managed multitenant site.
+   | Item | Description |
+   |:---- |:----------- |
+   | Name | The name of the site. |
+   | VCFaaS type | The consumption model for the site: Single-tenant or Multitenant. |
+   | Location | The region where the VDC is deployed. |
+   | Status | The status of the provisioned site. |
+   {: caption="Cloud Director site summary" caption-side="bottom"}
 
-3. View the summary of VDCs that are provisioned for the site.
+3. Expand the site row to view the summary of VDCs that are provisioned for that site.
 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
+   | Resource pool | The name of the resource pool for the VDC. |
+   | Network edge | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Status | The status of the VDC. |
-   | Location | The name of the data center where the site is deployed. |
-   | Network connection | Identifies the connection type: public and private or private only. |
-   | Transit gateway | The status of the Transit Gateway connection. |
    {: caption="Virtual data center summary" caption-side="bottom"}
 
-   Click the **Delete** icon on the VDC row to delete the VDC from the Cloud Director site.
+   Click **VMware console** to create and manage networking and workloads. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration&interface=ui).
 
 ## Procedure to view details for the Cloud Director site
 {: #tenant-viewing-sites-details}
 
-1. Click the Cloud Director site name.
-2. On the **Summary** tab, review the site information: the number of resource pools, clusters, VDCs, and network edges that are provisioned for the site. Under **Site details**, review the following details:
+1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site name.
+
+2. On the **Summary** tab, review the site information: the number of resource pools, clusters, VDCs, and network edges provisioned for the site. Under **Site details**, review the following items:
 
    | Item | Description |
    |:---- |:----------- |
    | Infrastructure | The {{site.data.keyword.vcf-aas-full}} offering uses {{site.data.keyword.cloud_notm}} Classic Infrastructure. |
-   | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
+   | Resource group | Resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the site is deployed. |
    | VCFaaS type | The consumption model for the site: Single-tenant or Multitenant. |
-   | Creation time | The date and time that the site was created. |
    | Billing cycle | The pricing plan for the site. |
+   | Creation time | The date and time that the site was created. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
-   | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
+   | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |
+   {: caption="Cloud Director site details" caption-side="bottom"}
 
-3. On the **Networking** tab, review the type of management and workload connectivity. For private-only management connectivity, you can view and edit the allowlisted subnets.On the **Resource pool** tab, review details for each resource pool provisioned for the site. On the **Resource pool** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
+   If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
 
+3. On the **Networking** tab, review the type of management and workload connectivity. For private-only management connectivity, you can view and edit the allowlisted subnets.
+4. On the **Resource pool** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
      * Click the **Clusters** tab to view all clusters that are deployed on the resource pool and to view cluster details: name, total cores and RAM, host units, storage type, and status. Expand the cluster to view host and storage details.
      * Click the **Virtual data centers** tab to view all VDCs deployed on the resource pool and to view VDC details: name, edge type, fast provisioning, and status. Click a VDC name to review complete VDC details.
-     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.On the **Add-on services** tab, review your options for available services.
+     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.
+5. On the **Add-on services** tab, review your options for available services.
      * Click **Add service** to install a service.
      * Click the overflow menu to delete a service.
      * If Veeam® Backup is installed, click **Veeam backups** to open the Self-Service Backup Portal.
@@ -84,9 +87,9 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 ## Procedure to delete a Cloud Director site
 {: #tenant-viewing-site-delete}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click the site that you want to delete.
-3. Click the **Actions** menu, and then click **Delete instance**.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab. Then, click the site that you want to delete.
+3. Click the **Actions...** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 
    The status of the Cloud Director site is changed to **Deleting**. When the site is deleted successfully, the components are released, and the status is changed to **Deleted**.

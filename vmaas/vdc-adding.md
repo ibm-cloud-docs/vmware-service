@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2024
 
-lastupdated: "2025-02-04"
+lastupdated: "2024-12-12"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -61,14 +61,14 @@ When you use resource groups for IAM access, you must keep the Cloud Director si
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
 2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
-4. Specify how you would like the VDC deployed.
-4. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
-5. Optionally enable fast provisioning of virtual machines (VMs).Review your options for a network edge.
+5. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
+6. Optionally toggle fast provisioning of virtual machines (VMs) on.
+7. Review your options for a network edge:
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
       1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
       2. Specify the edge type. Edge storage costs might occur.
-   * To order without a network edge, turn off **Create with network edge**. This option is suitable for centralized networking administration and control over multiple VDCs.
-7. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
+   * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
+8. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
 
 ## Procedure to order {{site.data.keyword.vcf-aas}} multitenant virtual data centers
 {: #vdc-adding-procedure-mt}
@@ -79,14 +79,13 @@ When you use resource groups for IAM access, you must keep the Cloud Director si
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
 2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
-4. Specify how you would like the VDC deployed.
 4. Select the region of the Cloud Director site, the Cloud Director instance, and data center. The instance and data center names are filtered based on the region setting.
-5. Optionally enable fast provisioning of VMs.
-6.  Review your options for a network edge:
+5. Optionally toggle fast provisioning of VMs on.
+6. Review your options for a network edge:
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
       1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
       2. Specify the edge type. Edge storage costs might occur.
-   * To order without a network edge, turn off **Create with network edge**. This option is suitable for centralized networking administration and control over multiple VDCs.
+   * To order without a network edge, toggle **Create with network edge** off. This option is suitable for centralized networking administration and control over multiple VDCs.
 7. Select the pricing plan according to your consumption needs.
 8. Select resource allocations according to your pricing plan.
    * For on-demand, optionally enable consumption limits. Then, select the vCPU and RAM limits. Toggle the consumption limit option off if you do not want to set limits. Limits define the ceiling on the maximum amount of vCPU and RAM that can be used by the multitenant VDC.

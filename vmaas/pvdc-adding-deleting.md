@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2024
 
-lastupdated: "2025-01-27"
+lastupdated: "2024-12-11"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -22,7 +22,7 @@ You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* insta
 
 A resource pool is a boundary of compute, storage, and network resources for hosting virtual data centers (VDCs) to run workloads. VDCs created against a resource pool are bound to use the infrastructure from that resource pool.
 
-Resource pools are used within the {{site.data.keyword.vcf-aas}} instance to form units of compute, memory, and storage components. These resources are fully isolated between resource pools.
+Resource pools are used within the {{site.data.keyword.vcf-aas}} instance to form units of compute, memory, and storage components. These resources are fully isolated between resource pools
 
 Each resource pool inherits the following policies from the {{site.data.keyword.vcf-aas}} instance:
 * Networking - Networking can be shared between resource pools.
@@ -41,40 +41,36 @@ A new resource pool is typically created for the following scenarios:
 * Separate and isolate different types of VMware workloads. The previous guidance is to use the same host profile type for all clusters in the same resource pool. If different workloads are better suited for different host types, then separate resource pools are required to ensure each workload runs on the correct host type.
 * Run VM workload in different data centers within the region. All clusters in the same resource pool must be in the same data center. Regional high availability across data centers is achieved by creating resource pools in separate data centers, and then deploying the VDC and applications into each region. A load balancer is used to route requests to active instances of the target workload.
 
-When you deploy a new resource pool, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can complete user access and administration tasks.
+A resource pool is deleted when the last VDC on the resource pool is deleted.
 {: note}
 
 ## Procedure to add resource pools to {{site.data.keyword.vcf-aas}} instances
 {: #pvdc-adding-deleting-add-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab, then click **Add resource pool**.
-4. In the **Add resource pool** pane, specify the settings for the new resource pool.
-   1. Specify the resource pool name.
-   2. Optionally enable SAP®-certified server profiles and select the profile type.
-   3. Select the resource pool location.
-   4. Click **Next**.
+4. In the **Add resource pool** panel, specify the settings for the new resource pool.
+    1. Specify the resource pool name.
+    2. Optionally enable SAP®-certified server profiles and select the profile type.
+    3. Select the resource pool location.
+    4. Click **Next**.
 5. Specify the host details.
-   1. Specify the cluster name.
-   2. Select the host quantity.
-      * For NFS-only storage, select a minimum of 2.
-      * For vSAN + optional NFS storage, select a minimum of 7.
-   3. Select the profile storage type.
-   4. Select the host profile.
-   5. For vSAN, optionally enable vSAN de-duplication and compression.
-   6. Click **Next**.
+    1. Specify the cluster name.
+    2. Select the host quantity.
+       * For NFS only storage, select a minimum of 2.
+       * For vSAN™ storage, select a minimum of 7.
+    3. Select the profile storage type.
+    4. Select the host profile.
+    5. Click **Next**.
 6. Specify the attached NFS storage settings.
 7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
 
-## Procedure to delete a resource pool
-{: #pvdc-adding-deleting-delete-proc}
-
-A resource pool is deleted when the last VDC on the resource pool is deleted. For more information about deleting VDCs, see [Viewing and deleting VCF as a Service virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc).
+When you deploy a new resource pool, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can complete user access and administration tasks.
+{: note}
 
 ## Related links
 {: #pvdc-adding-deleting-links}
 
-* [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
 * [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)

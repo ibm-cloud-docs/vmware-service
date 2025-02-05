@@ -35,7 +35,7 @@ Software currency update
 :   This release provides an infrastructure upgrade for Veeam Backup 12.2 HF 7.7.
 
 VMware Cloud Director Snapshots
-:   You can now open an IBM Support ticket to enable VMware Cloud Director Snapshots to take multiple images of your virtual machines. Include the following details in you support ticket:
+:   You can now open an IBM Support ticket to enable VMware Cloud Director™ Snapshots to take multiple images of your virtual machines. Include the following details in you support ticket:
    * The snapshot count. You can request up to 31 images per virtual machine.
    * The URL to the {{site.data.keyword.vcf-aas}} Cloud Director site.
    * Your VMware Cloud Director Organization ID.
@@ -89,7 +89,7 @@ Software currency update
 VMware Cloud Director IP Spaces availability
 :   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas-full}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
 
-   By default, each VDC with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
+   By default, each virtual data center (VDC) with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
 
    IP addresses are managed differently with this update and introduce changes to creating NAT and firewall rules. For more information, see [Allocating public IP addresses for NAT rules and for VPNs](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-allocating-ips).
  
@@ -101,7 +101,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T™ 4.2.0.2
+   * VMware NSX-T 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 
@@ -180,7 +180,7 @@ Scale-out Backup Repository for Veeam Backup
 :   The Veeam Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 VMware Operations Manager availability
-:   You can now access the Operations Manager service through the VMware Cloud Director tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-services-chargeback).
+:   You can now access the Operations Manager service through the VMware Cloud Director tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-enable-chargeback).
 
 Software currency
 :   This release provides the following infrastructure upgrades.
@@ -301,7 +301,7 @@ Cloud-to-cloud migration to VMware as a Service
 :   You can now use cloud-to-cloud connections to migrate {{site.data.keyword.vmwaresolutions_short}} Shared instances to VMware as a Service. You can also use cloud-to-cloud connections to migrate workloads from single-tenant and multitenant VMware as a Service instances to another VMware as a Service instance. For more information, see [Creating and deleting VMware as a Service pairings](/docs/vmware-service?topic=vmware-service-vcda-creating-deleting-vmaas-pairing).
 
 vSAN host profile updates
-:   The Dual Intel 8260 Xeon host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN usable capacity is now available for Cloud Director sites.
+:   The Dual Intel 8260 Xeon host profile (4 Sockets - 96 Cores, 1536 GB RAM) with 61 TB of VMware vSAN™ usable capacity is now available for Cloud Director sites.
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.

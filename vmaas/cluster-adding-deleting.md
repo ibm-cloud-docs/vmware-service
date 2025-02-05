@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2024
 
-lastupdated: "2025-01-23"
+lastupdated: "2024-11-26"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -20,25 +20,21 @@ subcollection: vmware-service
 
 You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
 
-Some host profiles might not be available for a selected location. Contact your IBM Sales representative to request missing host profiles.
-{: note}
-
 ## Procedure to add clusters to {{site.data.keyword.vcf-aas}} instances
 {: #cluster-adding-deleting-add-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, click **Add cluster +**.
 5. In the **Add cluster** pane, specify the settings for the new cluster.
     1. Specify the cluster name.
     2. Select the host quantity.
-       * For NFS-only storage, select a minimum of 2.
-       * For vSAN + optional NFS storage, select a minimum of 7.
+       * For NFS only storage, select a minimum of 2.
+       * For vSAN™ storage, select a minimum of 7.
     3. Select the profile storage type.
     4. Select the host profile.
-    5. For vSAN, optionally enable vSAN de-duplication and compression.
-    6. Click **Next**.
+    5. Click **Next**.
 6. Specify the attached NFS storage settings.
 7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
 
@@ -54,7 +50,7 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 ## Procedure to delete clusters from {{site.data.keyword.vcf-aas}} instances
 {: #cluster-adding-deleting-delete-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
 2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, locate the cluster that you want to delete.
@@ -65,5 +61,5 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 {: #cluster-adding-deleting-links}
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
-* [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting)
+* [Ordering Cloud Director site instances](/docs/vmware-service?topic=vmware-service-tenant-ordering)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
