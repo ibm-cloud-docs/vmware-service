@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years:  2023, 2024
+  years:  2023, 2025
 
-lastupdated: "2024-12-09"
+lastupdated: "2025-01-27"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 

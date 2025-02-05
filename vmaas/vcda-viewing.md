@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-09-13"
+lastupdated: "2025-01-21"
 
 keywords: view vcda details
 
@@ -26,8 +26,8 @@ View the summary and detailed information for migrating and protecting your virt
 Use the **Migration estimated capacity** section for both migration and protection destination configurations.
 {: note}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant or multitenant instance name.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. Review the VCDA configuration and summary details.
 
