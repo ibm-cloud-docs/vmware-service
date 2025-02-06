@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024
+  years: 2024, 2025
 
-lastupdated: "2025-01-02"
+lastupdated: "2025-01-22"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -45,11 +45,11 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 {: #tgw-adding-connections-proc}
 
 1. Add a connection group to your VDC.
-   1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-   2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click an instance name.
+   1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+   2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
-   5. In the **Add connection group** panel, complete the following steps.
+   5. In the **Add connection group** pane, complete the following steps.
       1. Enter the {{site.data.keyword.tg_short}} ID that you want to connect to. You can locate the {{site.data.keyword.tg_short}} ID in the {{site.data.keyword.tg_short}} details page in the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision).
       2. Select the region where you want the {{site.data.keyword.tg_short}} to connect.
       3. Click **Add**.
@@ -66,7 +66,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 
    * Complete the following steps if you use {{site.data.keyword.cloud-shell_short}} to connect the tunnels to {{site.data.keyword.tg_short}}.
    1. Click the overflow menu in the row of the connection group and click **Generate CLI commands**. A single command for all six GRE tunnels is generated.
-   2. From the **Generate CLI commands** panel, click the **Copy to clipboard** icon to copy the single CLI command to connect all six GRE tunnels.
+   2. From the **Generate CLI commands** pane, click the **Copy to clipboard** icon to copy the single CLI command to connect all six GRE tunnels.
    3. In the {{site.data.keyword.cloud_notm}} console, click the [{{site.data.keyword.cloud-shell_notm}}](https://cloud.ibm.com/shell) icon to open the {{site.data.keyword.cloud-shell_short}} interface.
    4. Paste the CLI command in {{site.data.keyword.cloud-shell_short}} and run the command to connect all six tunnels to {{site.data.keyword.tg_short}}.
 

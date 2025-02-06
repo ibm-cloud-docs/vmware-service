@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-08"
+lastupdated: "2025-02-04"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -29,9 +29,9 @@ The capacity is set to the current utilization if the VDC utilization exceeds th
 {: #capacity-adding-deleting-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click a multitenant instance name.
+2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
 3. In the consumption limit section of the **Summary** tab, click **Modify limit**.
-4. Click the toggle switch to either disable or enable the limits.
+4. Click the toggle switch to either turn limits on or off.
 5. For enabling consumption limits, enter the vCPU and RAM limits. Then, click **Save**.
 
 ## Related links

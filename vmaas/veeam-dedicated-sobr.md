@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024
+  years: 2024, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-01-22"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -36,11 +36,11 @@ You must request a size less than or equal to a specified maximum size (1200 TB)
 
 1. Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter).
 2. Scroll down and click **Create a case**.
-3. On the **Category** section of the **Create a case** page, complete the following selections.
+3. In the **Category** section of the **Create a case** page, complete the following selections.
     1. For **Topic**, select `IBM Cloud Backup - Veeam`.
     2. For **Subtopic**, select `Veeam Scale Out Backup Repository`.
     3. Select the **All topics** tile and click **Next**.
-4. On the **Details** section, provide the following information and then click **Next**.
+4. In the **Details** section, provide the following information and then click **Next**.
     1. For **Subject**, enter `Request to Add New Dedicated SOBR to Veeam Instance`
     2. For **Description**, provide the following details to help IBM Support tailor the repository to meet your specific data protection needs and to ensure a smooth setup process.
 
@@ -48,7 +48,7 @@ You must request a size less than or equal to a specified maximum size (1200 TB)
     * `SOBR name:` Specify the name of your dedicated SOBR. This name is used to identify the repository in your Veeam management console.
     * `SOBR size and data center:` Indicate the required storage capacity for the SOBR and the data center with available storage clusters where you want to deploy the SOBR. Consider your current and anticipated storage needs. You must provide a value that includes the data center region and number. For example, `dal12`.
 
-5. On the **Review** section, review the case details and click **Submit case**.
+5. In the **Review** section, review the case details and click **Submit case**.
 
 After you submit the case, you receive a confirmation email with a case number for your records. The IBM Support team reviews your request and might contact you for further information. The typical setup time can take up to three days.
 

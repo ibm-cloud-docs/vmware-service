@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-12-13"
+  years: 2024, 2025
+lastupdated: "2025-01-27"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -52,9 +52,9 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
+| Frankfurt (`eu-de`) | London (`eu-gb`) |  |
 |---------------------|------------------|------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}  | [No]{: tag-red}  |
+| [Yes]{: tag-green}  | [Yes]{: tag-green}    |
 {: caption="Regions where activity tracking events are generated in Europe locations" caption-side="bottom"}
 {: #at-table-3}
 {: tab-title="Europe"}
@@ -89,9 +89,9 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
+| Frankfurt (`eu-de`) | London (`eu-gb`) |  |
 |---------------------|------------------|------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}  | [No]{: tag-red}  |
+| [Yes]{: tag-green}  | [Yes]{: tag-green}    |
 {: caption="Regions where activity tracking events are sent in Europe locations" caption-side="bottom"}
 {: #at-legacy-table-3}
 {: tab-title="Europe"}
