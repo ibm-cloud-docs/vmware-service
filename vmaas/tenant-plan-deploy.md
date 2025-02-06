@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-06"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -74,49 +74,48 @@ For Reserved instances, the vCPU and RAM VDC reservations are pre-allocated and 
 
 The following data centers are available for {{site.data.keyword.vcf-aas}} deployment.
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
+|:---------|:---------|:---------|:---------|:---------|:---------|
+| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-ap}
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
+|:---------|:---------|:---------|:---------|:---------|:---------|
+| Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-eur}
 
-[^lon1ST]: Single-tenant only
 
-[^lon3ST]: Single-tenant only
-
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |  |
-|:---------|:---------|:---------|:---------|:---------|:---------||
-| Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} |  |
-| Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
-| Washington DC | Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |  |
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
+|:---------|:---------|:---------|:---------|:---------|:---------|
+| Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}|
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}

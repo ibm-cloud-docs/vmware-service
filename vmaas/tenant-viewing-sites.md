@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-04"
+lastupdated: "2025-02-06"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -69,13 +69,20 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Creation time | The date and time that the site was created. |
    | Billing cycle | The pricing plan for the site. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
-   | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
+   | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |
+   {: caption="Cloud Director site details" caption-side="bottom"}
 
-3. On the **Networking** tab, review the type of management and workload connectivity. For private-only management connectivity, you can view and edit the allowlisted subnets.On the **Resource pool** tab, review details for each resource pool provisioned for the site. On the **Resource pool** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
+   If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
+
+3. On the **Networking** tab, review the type of management and workload connectivity. For private-only management connectivity, you can view and edit the allowlisted subnets.
+
+4. On the **Infrastructure** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
 
      * Click the **Clusters** tab to view all clusters that are deployed on the resource pool and to view cluster details: name, total cores and RAM, host units, storage type, and status. Expand the cluster to view host and storage details.
      * Click the **Virtual data centers** tab to view all VDCs deployed on the resource pool and to view VDC details: name, edge type, fast provisioning, and status. Click a VDC name to review complete VDC details.
-     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.On the **Add-on services** tab, review your options for available services.
+     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.
+
+6. On the **Add-on services** tab, review your options for available services.
      * Click **Add service** to install a service.
      * Click the overflow menu to delete a service.
      * If Veeam® Backup is installed, click **Veeam backups** to open the Self-Service Backup Portal.
