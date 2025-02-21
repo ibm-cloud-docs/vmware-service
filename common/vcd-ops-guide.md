@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-29"
+lastupdated: "2025-02-13"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -477,6 +477,17 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       * For **Tunnel ID**, use incrementing numbers for each L2 VPN tunnel. For the first tunnel, use `1`. For the second tunnel, use `2` and so on.
    5. Review the settings for accuracy and click **FINISH**.
 
+## Viewing firewall logs for your edge gateway
+{: #vcd-ops-guide-firewall-logs}
+
+You can use the tenant portal to view firewall logs to troubleshoot your edge gateway environment.
+
+1. From the left panel of the tenant portal, click **Data Centers**.
+2. From the **Virtual Data Center** details page, click the VDC where you want to view the firewall logs.
+3. From the left panel of the VDC, expand **Networking** and click **Edges**.
+4. From the **Services** section, click **Firewall**.
+5. Click the **Logs** tab to view firewall log details.
+
 ## Using services in the VMware Cloud Director tenant portal
 {: #vcd-ops-guide-services}
 
@@ -487,7 +498,7 @@ Use Operations Manager to view VDC, vApp, and VM level metrics and to export met
 
 The Operations Manager service is enabled by default. From the VMware Cloud Director tenant portal, click **More > Operations Manager** to access the Operations Manager web UI.
 
-For more information about using Operations Manager, see [Using VMware Chargeback as a Tenant](https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations/8.10/vmware-chargeback-for-vcd-for-a-tenant/GUID-4D7030B6-AF73-464B-8FE8-75B879EE76B8.html).{: external}
+For more information about using Operations Manager, see [Performing VMware Cloud Director (VCD) Based Multitenancy Operations in VMware Aria Operations](https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations/8-18/vmware-aria-operations-configuration-guide-8-18/performing-vcd-based-multitenancy-operations.html).{: external}
 
 ## Related links
 {: #vcd-ops-guide-related}

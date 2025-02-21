@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-12-13"
+lastupdated: "2025-02-14"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -20,6 +20,46 @@ content-type: release-note
 
 Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_full}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
+
+## 2025
+{: #vmware-service-year-2025}
+
+
+
+### 14 February 2025
+{: #vmware-service-feb1425}
+{: release-note}
+
+Intel Sapphire Rapids server availability
+:   The following Intel Sapphire Rapids bare metal servers are now available for NFS and vSAN™ ESA host profiles, available only on vSphere 8. For more information, see the *Host profile* section in [Planning for deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-cluster-host).
+
+   * Dual Intel® 6416H Xeon® Platinum
+   * Dual Intel 8474C Xeon Platinum
+
+Software currency update
+:   This release provides the infrastructure upgrades for Veeam® Backup 12.3.
+
+Enhanced log access
+:   Firewall logs are now available on the VMware Cloud Director™ tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
+
+   Additionally, the *Organization vDC Gateway: Configure System Logging* right is now available with this release.
+
+    If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information about the recommended OIDC roles to use with the new right, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
+    {: note}
+
+VMware Cloud Director Snapshots availability
+:   You no longer need to open an IBM Support ticket to enable VMware Cloud Director Snapshots. By default, the snapshot limit is now set to 31.
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-14-february-2025).
+
+User interface updates and enhancements
+:   The user interface is updated and provides the following enhancements.
+   * The **{{site.data.keyword.vmware-service_short}}** resource page provides a new resource list view to better organize the Cloud Director site and VDC relationship and details. You have the option to switch to the original resource list view.
+   * The {{site.data.keyword.vmware-service_short}} site details page for single-tenant instances provides the following improvements.
+      * The **Networking** tab now provides edge and VDC details.
+      * The **Resource pool** tab replaces the **Infrastructure** tab. The **Resource pool** tab provides location, compute, storage, cluster, and host details.
+      * A new **Virtual data centers** tab provides a summary of VDCs deployed on the Cloud Director site.
 
 ## 2024
 {: #vmware-service-year-2024}
@@ -40,7 +80,7 @@ VMware Cloud Director Snapshots
    * The URL to the {{site.data.keyword.vcf-aas}} Cloud Director site.
    * Your VMware Cloud Director Organization ID.
 
-Promotion code availability for new {{site.data.keyword.vcf-aas}} pay-as-you-go customers 
+Promotion code availability for new {{site.data.keyword.vcf-aas}} pay-as-you-go customers
 :    A new $1,000 limited-time credit promotion code, **VCFAAS1000**, is available for new {{site.data.keyword.vcf-aas}} pay-as-you-go customers. Apply the promotion code during the provision process for any new {{site.data.keyword.vcf-aas}} offering.
 
 User interface updates and enhancements
@@ -92,7 +132,7 @@ VMware Cloud Director IP Spaces availability
    By default, each VDC with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
 
    IP addresses are managed differently with this update and introduce changes to creating NAT and firewall rules. For more information, see [Allocating public IP addresses for NAT rules and for VPNs](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-allocating-ips).
- 
+
  New rights availability
  :   Additional rights are available with this release. If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
 
@@ -101,7 +141,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T™ 4.2.0.2
+   * VMware NSX-T 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 
@@ -152,7 +192,7 @@ IBM Cloud data center support for Toronto single-tenant
 Software currency update: VMware vCenter Server Appliance 8.0 Update 2d
 :   This release provides infrastructure upgrades to VMware vCenter Server Appliance 8.0 Update 2d.
 
-Terraform 
+Terraform
 :   {{site.data.keyword.vcf-aas}} provides Terraform in addition to APIs for creating, updating, and deleting {{site.data.keyword.vcf-aas}} VDCs. For more information, see the [Terraform registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/vmaas_vdc). {: external}
 
 ### 1 August 2024
@@ -435,7 +475,7 @@ IBM software currency policy
 {: release-note}
 
 VMware currency
-:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
 
 Multiple clusters support
 :   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).

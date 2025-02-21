@@ -130,6 +130,7 @@ toc:
       - common/policies.md
       - common/ha.md
       - common/bc-dr.md
+      - common/data-portability.md
       - topicgroup:
           label: Solution architectures on VCF as a Service
           topics:

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-13"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 # {{site.data.keyword.vcf-aas}} overview
 {: #vmware-aas-overview}
 
-{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
+{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide additional isolation and support multiple host configuration options to support flexible workload requirements.
 {: shortdesc}
 
 {{site.data.keyword.vcf-aas-full}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vcf-aas}} single-tenant instances are provisioned and managed by your organization.
@@ -36,7 +36,7 @@ Find out more about the {{site.data.keyword.vcf-aas}} instance models in the fol
 
 The {{site.data.keyword.vcf-aas}} single-tenant consumption model provides the option to deploy managed VMware environments with a dedicated infrastructure. You can select from a choice of bare metal servers and storage infrastructure components to create a single-tenant VMware site. You manage the capacity of the infrastructure.
 
-The combination of the single-tenant infrastructure and a software stack that includes VMware ESXi™, VMware vCenter®, VMware NSX-T™, and Cloud Director is called a site. Sites are the single-tenant VMware platform that is used to host one or more VMware VDCs. VMware VDCs are used to deploy VMware workloads to create virtualized networking, and to connect to external networks that include the public internet and the {{site.data.keyword.IBM_notm}} private network. You can start with as little as two dedicated bare metal servers to deploy or migrate existing VMware workloads into a VMware Cloud Director VDC.
+The combination of the single-tenant infrastructure and a software stack that includes VMware ESXi™, VMware vCenter®, VMware NSX-T™, and Cloud Director is called a site. Sites are the single-tenant VMware platform that is used to host one or more VMware VDCs. VMware VDCs are used to deploy VMware workloads to create virtualized networking, and to connect to external networks that include the public internet and the {{site.data.keyword.IBM_notm}} private network. You can start with as few as two dedicated bare metal servers to deploy or migrate existing VMware workloads into a VMware Cloud Director VDC.
 
 For {{site.data.keyword.vcf-aas}} single-tenant, you first create the dedicated Cloud Director site and then you create the VDCs after the site is ready. Find out more about ordering a dedicated single-tenant Cloud Director site in the following video.
 
@@ -60,6 +60,7 @@ The {{site.data.keyword.vcf-aas}} single-tenant and multitenant models share the
 * Unique provider-managed encryption keys per instance with encrypted VMware storage profiles.
 * Single sign-on (SSO) with role-based authentication and authorization from {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to VMware Cloud Director.
 * Improved provisioning speed, availability, and resilience.
+* Stretch vSAN™ resource pools and clusters to ensure resiliency and high availability across applications.
 * Regional-level high availability through creating VMware Cloud Director VDCs in multiple data centers in the same region.
 * VMware infrastructure health and patching is managed by {{site.data.keyword.IBM_notm}} Operations up through the hypervisor.
 * Full compatibility to run existing VMware workloads. Migration of existing {{site.data.keyword.cloud_notm}}, on-premises or other workloads are fully supported.
@@ -114,6 +115,7 @@ The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the fol
 
 * Host type and counts used
 * NFS size and performance tiers used
+* Stretch vSAN high availability storage (optional)
 * Egress to public networking
 * Ingress to private networking (optional)
 * Networking edge types and counts

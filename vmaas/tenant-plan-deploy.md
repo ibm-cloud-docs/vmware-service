@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-20"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -74,48 +74,55 @@ For Reserved instances, the vCPU and RAM VDC reservations are pre-allocated and 
 
 The following data centers are available for {{site.data.keyword.vcf-aas}} deployment.
 
+High availability is supported on a Cloud Director site region only when a Sapphire Rapids server is available.
+{: requirement}
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
-|:---------|:---------|:---------|:---------|:---------|:---------|
-| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+| Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red}|
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-ap}
 
-
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
-|:---------|:---------|:---------|:---------|:---------|:---------|
-| Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+| Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon1ST] |
+| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon3ST] |
+| Madrid | Madrid 02 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-eur}
 
+[^lon1ST]: Single-tenant only
 
-| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake |
-|:---------|:---------|:---------|:---------|:---------|:---------|
-| Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
-| Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
-| Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} |
-| Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Washington DC | Washington DC 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Washington DC | Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Washington DC | Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}|
+[^lon3ST]: Single-tenant only
+
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+| Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
+| Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
+| Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
+| Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Washington DC | Washington DC 07 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
@@ -127,7 +134,11 @@ The following data centers are available for {{site.data.keyword.vcf-aas}} deplo
 
 A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create a resource pool across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+
+You can add stretch vSAN™ high availability resource pools and clusters to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+
+Enable regional compute high availability when you create a new single-tenant or multitenant VDC on a stretched workload cluster.
 
 For more information about resource pools, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
@@ -145,7 +156,10 @@ NFS only clusters do not have local flash storage and cannot be configured for v
 
 vSAN storage with optional NFS storage is available for instances in locations with 25 GbE availability. vSAN clusters use bare metal host profiles with local flash storage and a RAID 6, FTT=2 policy. This policy is high-performance and high-resilience and requires at least seven hosts. vSAN clusters can also use NFS storage.
 
-The profile storage type is dependent on the resource pool location. The following options are available for multizone regions.
+High availability resource pools require stretched clusters with vSAN™ storage profiles. NFS storage is not supported.
+{: requirement}
+
+The profile storage type depends on the resource pool location. The following options are available for multizone regions.
 
 | Data center | NFS-only storage | vSAN + optional NFS storage |
 |:------------|:-----------------|:----------------------------|
@@ -200,7 +214,7 @@ The profile storage type is dependent on the resource pool location. The followi
 * For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMware environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMware environment, including the VM CPU, RAM, and storage sizes.
 * For new VMware workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
-After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 percent hypervisor overhead.
+After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 % hypervisor overhead.
 
 {{site.data.keyword.vcf-aas}} vCPU is mapped to physical cores at a ration of 2:1. For every one physical core, two vCPUs of compute are assigned.
 {: note}
@@ -212,6 +226,9 @@ Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The 
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
+Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
+{: requirement}
+
 | Profile | Sockets | Cores | RAM | vSAN usable capacity |
 |:--------|:--------|:------|:----|:---------------------|
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 15 TB |
@@ -221,7 +238,13 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB | 38 TB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB | 38 TB |
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB | 46 TB |
+| Dual Intel 6416H Xeon[^esa61h] | 2 | 36 | 1024 GB | 61 TB |
+| Dual Intel 6416H Xeon[^esa122h] | 2 | 36 | 1024 GB | 122 TB |
+| Dual Intel 6416H Xeon[^esa184h] | 2 | 36 | 1024 GB | 184 TB |
 | Quad Intel 8260 Xeon | 4 | 96 | 1536 GB | 61 TB |
+| Dual Intel 8474C Xeon | 2 | 96 | 2048 GB | 6 TB |
+| Dual Intel 8474C Xeon | 2 | 96 | 2048 GB | 13 TB |
+| Dual Intel 8474C Xeon | 2 | 96 | 2048 GB | 31 TB |
 | Dual Intel 8474C Xeon[^esa61] | 2 | 96 | 2048 GB | 61 TB |
 | Dual Intel 8474C Xeon[^esa122] | 2 | 96 | 2048 GB | 122 TB |
 | Dual Intel 8474C Xeon[^esa184] | 2 | 96 | 2048 GB | 184 TB |
@@ -237,11 +260,11 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 
 [^esa184]: Applicable to vSAN ESA profiles
 
+[^esa61h]: Applicable to vSAN ESA profiles
 
+[^esa122h]: Applicable to vSAN ESA profiles
 
-
-
-
+[^esa184h]: Applicable to vSAN ESA profiles
 
 | Profile | Sockets | Cores | RAM |
 |:--------|:--------|:------|:----|
@@ -252,16 +275,18 @@ For single-tenant Cloud Director sites, you can select from various bare metal s
 | Dual Intel 5218 Xeon | 2 | 32 | 768 GB |
 | Dual Intel 6248 Xeon | 2 | 40 | 768 GB |
 | Dual Intel 8260 Xeon | 2 | 48 | 768 GB |
+| Dual Intel 6416H Xeon[^esa1024] | 2 | 36 | 1024 GB |
 | Quad Intel 8260 Xeon | 4 | 96 | 1536 GB |
+| Dual Intel 8474C Xeon[^esa2048] | 2 | 96 | 2048 GB |
 {: caption="Available NFS-only host profiles" caption-side="bottom"}
 {: tab-title="NFS-only clusters"}
 {: tab-group="Host profiles"}
 {: class="simple-tab-table"}
 {: #simpletabtable-nfs-hp}
 
+[^esa1024]: Applicable to vSAN ESA profiles
 
-
-
+[^esa2048]: Applicable to vSAN ESA profiles
 
 #### Performance characteristics
 {: #tenant-plan-deploy-cluster-perf}
@@ -283,7 +308,7 @@ For VDC orders, you can enable fast provisioning for any VDC created within the 
 
 Fast provisioning saves time by using linked clones for VM provisioning. If not enabled, all provisioning operations use full clones. When fast provisioning is enabled, VM deployment time that uses Director catalog images can be 10 times faster or more.
 
-In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grow, VM execution performance can be impacted.
+In-place consolidation of a fast-provisioned VM is not supported. As the number of linked clones grows, VM execution performance can be impacted.
 {: important}
 
 When you create your VDC and it is in **Available** status, you can enable or disable fast provisioning from the **Summary** tab in the VDC details page.
@@ -324,15 +349,17 @@ You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloa
 ## Network edge type
 {: #tenant-plan-deploy-edge}
 
-VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge. Network edge types include: Efficiency, Performance - M, Performance - L, and Performance - XL.
+VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
+
+NSX Edge performance is coupled to the CPU available to the edge. Network IO amounts, including inbound and outbound traffic, in addition to use of edge services directly impact edge use of CPU. The larger edge sizes provide more CPU resource for the edge.
 
 | Edge type | Details |
 |:--------- |:------- |
-| Efficiency | These edges allocate networking resources that can be used by up to 64 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 64 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC. |
-| Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 Gbps. |
-| Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic. |
-| Performance - XL | This option provides the highest level of edge services and throughput over 10 Gbps. |
-{: caption="Network edge descriptions" caption-side="bottom"}
+| Efficiency | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  An efficiency edge does not provide a performance upgrade option. |
+| Performance - M | This dedicated edge option is suitable for smaller production deployments with fewer networking demands.  \n  Provides an edge that is dedicated to a single VDC. Networking bandwidth is consistent and supports traffic performance up to 6 Gbps and supports edge services such as VPN, Firewall, NAT, and routing. |
+| Performance - L | The recommended dedicated edge option for large production workloads and high traffic.  \n Provides an edge that is dedicated to a single VDC and consistent networking bandwidth to support traffic performance up to 10 Gbps while also supporting edge services such as VPN, Firewall, NAT, and routing. |
+| Performance - XL | This dedicated edge option is suitable for the most demanding networking requirements.  \n Supports the highest level of edge services and throughput over 10 Gbps.  |
+{: caption="Network edge descriptions" caption-side="bottom"}  
 
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}

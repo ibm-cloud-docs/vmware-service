@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-04"
+lastupdated: "2025-02-13"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -22,16 +22,20 @@ View the summary and detailed information of the {{site.data.keyword.vmware-serv
 
 When you no longer need them, you can delete the VDCs that are provisioned in your account.
 
+Click the **Switch view mode** icon on the **Create** panel to open the original resource list summary view.
+{: note}
+
 ## Procedure to view a summary of virtual data centers
 {: #tenant-viewing-vdc-summary}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab to view a summary of the VDCs that are provisioned.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, review the summary of VDCs that are provisioned for the Cloud Director site.
 
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
    | Status | The status of the provisioned VDC. |
+   | Regional high availability | Identifies if high availability is turned on or turned off for the VDC. |
    | Location | The data center where the VDC is deployed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
@@ -50,12 +54,14 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Name | The name of the VDC. |
    | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the VDC is deployed. |
+   | Compute location | The data center where the VDC is deployed. |
    | Creation time | The date and time that the VDC was created. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either turn fast provisioning on or off for the VDC. |
    | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Regional high availability | Identifies if high availability is either turned on or off for the VDC. |
    {: class="simple-tab-table"}
    {: caption="Virtual data center details - single-tenant" caption-side="bottom"}
    {: #table1}
@@ -70,11 +76,13 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    | Data center | The data center where the VDC is deployed. |
    | Name | The name of the VDC. |
    | Region | The region where the VDC is deployed. |
+   | Compute location | The data center where the VDC is deployed. |
    | Creation time | The date and time that the VDC was created. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Fast provisioning | Use the toggle to either turn fast provisioning on or off for the VDC. |
    | Public IPs or Private IPs | The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Regional high availability | Identifies if high availability is either on or off for the VDC. |
    {: class="simple-tab-table"}
    {: caption="Virtual data center details - multitenant" caption-side="bottom"}
    {: #table2}
@@ -89,7 +97,7 @@ When you no longer need them, you can delete the VDCs that are provisioned in yo
    You can enable the Veeam® Backup and VCDA services through the Cloud Director site details page if the services are not installed.
    {: note}
 
-4. For a description of the **Interconnectivity** tab, see [Viewing and deleting Transit Gateway connections](/docs/vmware-service?topic=vmware-service-tgw-viewing-deleting-connections).
+4. On the **Interconnectivity** tab, see details for Transit Gateway connections. For more information, see [Viewing and deleting Transit Gateway connections](/docs/vmware-service?topic=vmware-service-tgw-viewing-deleting-connections).
 
 Click **VMware console** to create and manage networking and workloads. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration&interface=ui).
 
@@ -97,7 +105,7 @@ Click **VMware console** to create and manage networking and workloads. For more
 {: #tenant-viewing-vdc-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data center** tab, then click the VDC that you want to delete.
+2. On the **Virtual data center** table, click the VDC name that you want to delete.
 3. Click the **Actions** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 

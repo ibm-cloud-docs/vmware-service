@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
@@ -44,7 +44,7 @@ When you are ready to complete your data recovery configuration, you can access 
 {: #tenant-vcda-portal-proc-access-dr}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the virtual data center name.
 3. Click the **Add-on services** tab in the instance details page.
 4. In the **VMware Cloud Director Availability** section, click **Open VCDA**.
 6. Use a user with the Organization Administrator role to log in to the VCDA console. A newly provisioned virtual data center's **admin** user has the role by default.

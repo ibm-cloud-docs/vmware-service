@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-21"
+lastupdated: "2025-02-13"
 
 keywords: view vcda details
 
@@ -23,15 +23,15 @@ View the summary and detailed information for migrating and protecting your virt
 ## Procedure to view a summary of VMware Cloud Director Availability details
 {: #vcda-viewing-summary}
 
-Use the **Migration estimated capacity** section for both migration and protection destination configurations.
+Use the **Migration and protection estimated capacity** section for both migration and protection destination configurations.
 {: note}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. Review the VCDA configuration and summary details.
 
-   * For single-tenant instances, you can configure the capacity based on the estimated number of VMs you plan to migrate or protect. In the **Migration estimated capacity** section, review the range of VMs to migrate or protect, the number of VCDA instances, and the resources that are required for the resource pool to migrate or protect VMs. Resources include the number of replicators, RAM, and CPU per instance.
+   * For single-tenant instances, you can configure the capacity based on the estimated number of VMs you plan to migrate or protect. In the **Migration and protection estimated capacity** section, review the range of VMs to migrate or protect, the number of VCDA instances, and the resources that are required for the resource pool to migrate or protect VMs. Resources include the number of replicators, RAM, and CPU per instance.
 
      For multitenant instances, the capacity is monitored and scaled by {{site.data.keyword.IBM_notm}}.
      {: note}

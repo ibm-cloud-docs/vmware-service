@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-03"
+lastupdated: "2025-02-13"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -69,6 +69,7 @@ The following table provides the recently introduced rights and the recommended 
 | IP Spaces: Allocate | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  | ![Available](../../icons/checkmark-icon.svg) |  ![Available](../../icons/checkmark-icon.svg) |
 | Organization vDC Gateway: Configure Firewall | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure NAT | | | | | ![Available](../../icons/checkmark-icon.svg) |
+| Organization vDC Gateway: Configure System Logging | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |
 | Organization vDC Gateway: View | | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Network: Manage Manual IP Reservation* | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |
 | Private IP Spaces: Manage | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |  | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) |
@@ -166,6 +167,7 @@ The following table provides information about roles that are custom-defined by 
 | Organization vDC Gateway: Configure SSL VPN | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure Static Routing | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Syslog | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
+| Organization vDC Gateway: Configure System Logging | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Convert to Advanced Networking | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Distributed Routing | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | | ![Available](../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: View | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | ![Available](../../icons/checkmark-icon.svg) | |

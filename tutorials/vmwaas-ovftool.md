@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-07-22"
+  years: 2023, 2025
+lastupdated: "2025-02-07"
 
 content-type: tutorial
 services: vmware-service
@@ -47,7 +47,7 @@ This tutorial requires:
 * [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
-* An exported VM (virtual machine) to import into a VMware Cloud Director instance in OVA format. For more information, see [Deploy and export OVF and OVA templates](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vm-administration/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html){: external}.
+* An exported VM (virtual machine) to import into a VMware Cloud Director instance in OVA format. For more information, see [Deploy and export OVF and OVA templates](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/deploying-ovf-templatesvsphere-vm-admin.html){: external}.
 
 ## Creating a local username and password in VMware Cloud Director
 {: #vmwaas-ovftool-localuser}

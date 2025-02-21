@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years:  2022, 2024
+  years:  2022, 2025
 
-lastupdated: "2024-12-12"
+lastupdated: "2025-02-11"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -29,9 +29,6 @@ IAM access policies enable access to be granted at different levels. Some of the
 * Access across all instances of the service in your account
 * Access to an individual service instance in your account
 * Access to a specific resource within an instance
-
-When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
-{: requirement}
 
 Review the following tables that outline what types of tasks each role allows for when you're working with {{site.data.keyword.vcf-aas}}. Platform management roles enable users to complete tasks on service resources at the platform level. For example, assign user access to the service, create, delete or scale instances, and bind instances to applications. Service access roles enable users to access {{site.data.keyword.vcf-aas}}. For more information about the exact actions that are mapped to each role, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
 
@@ -67,6 +64,22 @@ Review the following tables that outline what types of tasks each role allows fo
 {: #iamrolesservice}
 {: tab-title="Service roles"}
 {: tab-group="IAM"}
+
+## Resource group considerations
+{: #vmaas-iam-rg-reqs}
+
+For access control, IAM policies are tested against the Cloud Director site and not the VDCs.
+
+Even though you can place your {{site.data.keyword.vcf-aas}} VDCs into different resource groups, the resource group differentiation is useful only for billing purposes.
+
+For single-tenant VDCs, select the resource group for the Cloud Director site.
+
+For multitenant VDCs, your Cloud Director site is placed in the same resource group as the first VDC in any region.
+
+Because {{site.data.keyword.cloud_notm}} checks against the Cloud Director site resource group rather than the VDC resource group, users with permission to create a VDC can create one in any resource group.
+
+When you use resource groups for IAM access, keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
+{: tip}
 
 ## Assigning access to {{site.data.keyword.vcf-aas}} in the console
 {: #assign-access-console}

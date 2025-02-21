@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-13"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -25,6 +25,9 @@ When you no longer need them, you can delete the Cloud Director sites that are p
 You cannot delete a single-tenant Cloud Director site instance if it still has virtual data centers (VDCs) in it. Before you delete your Cloud Director site, ensure that all VDC instances in the site are deleted.
 
 For multitenant instances, you can delete only VDCs. The Cloud Director site is automatically deleted when the last VDC in the region is deleted.
+
+Click the **Switch view mode** icon next to **Create** to open the original resource list summary view.
+{: note}
 
 ## Procedure to view a summary of Cloud Director sites
 {: #tenant-viewing-sites-summary}
@@ -47,6 +50,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    |:---- |:----------- |
    | Name | The name of the VDC. |
    | Status | The status of the VDC. |
+   | Regional high availability | Identifies if the VDC is enabled for high availability. |
    | Location | The name of the data center where the site is deployed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
@@ -70,17 +74,68 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
    | Billing cycle | The pricing plan for the site. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |
+   | Regional high availability | Identifies if the VDC is enabled for high availability. |
    {: caption="Cloud Director site details" caption-side="bottom"}
 
    If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
 
-3. On the **Networking** tab, review the type of management and workload connectivity. For private-only management connectivity, you can view and edit the allowlisted subnets.
+3. On the **Networking** tab, review the type of management and workload connectivity. Under **Network edges**, review the following details:
 
-4. On the **Infrastructure** tab, review details for each resource pool provisioned for the site. Click the resource pool tab in the right panel to open details.
+   | Item | Description |
+   |:---- |:----------- |
+   | Name | The VDC name. |
+   | Type | The edge performance type. |
+   | Regional high availability | Identifies if the VDC is enabled for high availability. |
+   | Location | The data center where the site is deployed. |
+   | vCPU | The amount of virtual CPU for the VDC. |
+   | RAM | The amount of RAM for the VDC. |
+   {: caption="Network edge details" caption-side="bottom"}
 
-     * Click the **Clusters** tab to view all clusters that are deployed on the resource pool and to view cluster details: name, total cores and RAM, host units, storage type, and status. Expand the cluster to view host and storage details.
-     * Click the **Virtual data centers** tab to view all VDCs deployed on the resource pool and to view VDC details: name, edge type, fast provisioning, and status. Click a VDC name to review complete VDC details.
-     * Click the **Network edges** tab to view the edges that are deployed on the resource pool and to view edge details: type, quantity, vCPU, and RAM.
+   Use the search bar to narrow down the network edge list.
+
+4. On the **Resource pool** tab, review details for each resource pool provisioned for the site.
+
+     * The name and status of the resource pool.
+     * The type of resource pool: standard or stretch high availability, the data centers where the resource pool is deployed, and if the host is an SAP-certified server.
+     * The total computing and vSAN storage capacity of the resource pool.
+     * The total NFS storage capacity of the resource pool.
+     
+   Expand the **Clusters** section to view all clusters that are deployed on the resource pool and to view cluster details.
+
+   | Item | Description |
+   |:---- |:----------- |
+   | Name | The name of the cluster. |
+   | Status | The status of the cluster. |
+   | Profile | The host profile of the cluster. |
+   | Total CPU | The total host CPU for the cluster. |
+   | Total RAM | The total host RAM for the cluster. |
+   | vSAN storage | The amount of vSAN storage space. |
+   | NFS storage | The attached NFS storage tier and space. |
+   |Host units | The number of hosts for the host profile. |
+   {: caption="Cluster details" caption-side="bottom"}
+
+   Click **Actions** to complete the following actions for the cluster:
+
+   * [Edit host quantity](/docs/vmware-service?topic=vmware-service-host-adding-deleting)
+   * [Edit NFS storage](/docs/vmware-service?topic=vmware-service-storage-adding-deleting)
+   * [View monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)
+   * [Delete the cluster](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting)
+
+5. On the **Virtual data centers** tab, review details for each VDC provisioned for the site.
+
+   | Item | Description |
+   |:---- |:----------- |
+   | Name | The name of the VDC. |
+   | Location | The name of the data center where the VDC is deployed. |
+   | Resource pool | The name of the resource pool for the VDC. |
+   | Regional high availability | Identifies if the VDC is enabled for high availability. |
+   | Network connection | Identifies the connection type: public and private or private only. Available if you provisioned a network edge with your VDC order. |
+   | Transit gateway | The status of the Transit Gateway connection. |
+   |Creation time | The date and time that the VDC was created. |
+   | Status | The status of the VDC. |
+   {: caption="Virtual data center details" caption-side="bottom"}
+
+   Click the VDC name to review the VDC details. For more information, see [Viewing and deleting VCF as a Service virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc#tenant-viewing-vdc-details).
 
 6. On the **Add-on services** tab, review your options for available services.
      * Click **Add service** to install a service.
@@ -92,7 +147,7 @@ For multitenant instances, you can delete only VDCs. The Cloud Director site is 
 {: #tenant-viewing-site-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click the site that you want to delete.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name that you want to delete.
 3. Click the **Actions** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-01-23"
+lastupdated: "2025-02-13"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -20,6 +20,8 @@ subcollection: vmware-service
 
 You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
 
+You can add a stretch vSAN™ high availability cluster only to a stretch vSAN high availability resource pool. NFS storage is not supported for high availability resource pools. For stretch vSAN clusters, the hosts are split into the first and second location of the resoure pool.
+
 Some host profiles might not be available for a selected location. Contact your IBM Sales representative to request missing host profiles.
 {: note}
 
@@ -27,9 +29,9 @@ Some host profiles might not be available for a selected location. Contact your 
 {: #cluster-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab.
-4. On the **Clusters** tab, click **Add cluster +**.
+4. Locate the resource pool where you want to add the cluster and expand the cluster section. Then, click **Add cluster**.
 5. In the **Add cluster** pane, specify the settings for the new cluster.
     1. Specify the cluster name.
     2. Select the host quantity.
@@ -38,9 +40,25 @@ Some host profiles might not be available for a selected location. Contact your 
     3. Select the profile storage type.
     4. Select the host profile.
     5. For vSAN, optionally enable vSAN de-duplication and compression.
-    6. Click **Next**.
+    6. Review the cost, accept the terms, and click **Next**.
 6. Specify the attached NFS storage settings.
-7. Review the new cost, select the confirmation checkbox, and click **Order** to confirm.
+7. Click **Order** to confirm.
+
+## Procedure to add stretch vSAN high availability clusters to {{site.data.keyword.vcf-aas}} instances
+{: #cluster-adding-deleting-add-vsan-proc}
+
+Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
+{: requirement}
+
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
+3. Click the **Resource pool** tab.
+4. Locate the resource pool where you want to add the cluster and expand the cluster section. Then, click **Add cluster**.
+5. In the **Add cluster** pane, specify the settings for the new cluster.
+    1. Specify the cluster name.
+    2. Select the host quantity. A minimum of 14 is required for stretch vSAN storage.
+    4. Select the host profile.
+    5. Review the cost, accept the terms, and click **Order**.
 
 ## Before you delete clusters
 {: #cluster-adding-deleting-before-delete}
@@ -55,7 +73,7 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 {: #cluster-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab.
 4. On the **Clusters** tab, locate the cluster that you want to delete.
 5. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete cluster**.

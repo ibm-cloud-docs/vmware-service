@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-24"
+lastupdated: "2025-02-13"
 
 keywords: add capacity, capacity adding, VCDA, VMware Cloud Director Availability
 
@@ -38,13 +38,13 @@ When you select and apply a resource configuration, you can upgrade only to a gr
 ## Procedure to configure your VMware Cloud Director instance capacity
 {: #vcda-capacity-adding-proc}
 
-Use the **Migration estimated capacity** section for both migration and protection destination configurations.
+Use the **Migration and protection estimated capacity** section for both migration and protection destination configurations.
 {: note}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
-4. In the **Migration estimated capacity** section, click **Edit capacity**.
+4. In the **Migration and protection estimated capacity** section, click **Edit capacity**.
 5. Select a resource configuration.
 6. Click **Apply**.
 

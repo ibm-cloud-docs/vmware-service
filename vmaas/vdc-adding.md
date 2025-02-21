@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-04"
+lastupdated: "2025-02-13"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -20,14 +20,38 @@ subcollection: vmware-service
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
-For single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 64 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
+You can enable regional compute high availability when you create a new single-tenant or multitenant VDC on a stretch vSAN™ workload cluster.
+
+Regional network high availability is not currently supported. You cannot include a network edge in a highly available VDC.
+{: restriction}
+
+## Single-tenant virtual data centers
+{: #vdc-adding-st}
+
+For  {{site.data.keyword.vcf-aas-full}} single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 64 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
 
 You can deploy VDCs only to an existing Cloud Director site. Therefore, you must create a single-tenant Cloud Director site before you can create a single-tenant VDC.
-{: requirement}
 
-For {{site.data.keyword.vcf-aas-full}} multitenant, you start by creating the multitenant VDC. A {{site.data.keyword.vcf-aas}} multitenant site is created automatically when you create the first multitenant VDC in a region. All multitenant VDCs that you create in a region are associated with the same site. User access to the multitenant VDCs within the Cloud account is controlled through IAM policies against the site. 
+## Multitenant virtual data centers
+{: #vdc-adding-mt}
+
+For multitenant instances, you start by creating the multitenant VDC. A multitenant site is created automatically when you create the first multitenant VDC in a region. All multitenant VDCs that you create in a region are associated with the same site. 
 
 For multitenant instances, the minimum instance configuration consists of one vCPU and 1 GB RAM.
+
+## Resource group considerations
+{: #vdc-adding-rg-reqs}
+
+Even though you can place your {{site.data.keyword.vcf-aas}} VDCs into different resource groups, the resource group differentiation is useful only for billing purposes. For access control, IAM policies are tested against the Cloud Director site and not the VDCs.
+
+For single-tenant VDCs, select the resource group for the Cloud Director site.
+
+For multitenant VDCs, your Cloud Director site is placed in the same resource group as the first VDC in any region.
+
+Because {{site.data.keyword.cloud_notm}} checks against the Cloud Director site resource group rather than the VDC resource group, users with permission to create a VDC can create one in any resource group.
+
+When you use resource groups for IAM access, keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
+{: tip}
 
 ## Billing details
 {: #vdc-adding-billing}
@@ -55,15 +79,14 @@ You can also specify a VDC name that meets the following requirements:
 ## Procedure to order {{site.data.keyword.vcf-aas}} single-tenant virtual data centers
 {: #vdc-adding-procedure-st}
 
-When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
-{: requirement}
-
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
 2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Single-tenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Specify how you would like the VDC deployed.
-4. Select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
-5. Optionally enable fast provisioning of virtual machines (VMs).Review your options for a network edge.
+   * For highly available VDCs, enable regional compute high availability and select the stretch resource pool location.
+   * For VDCs that are not highly available, select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
+5. Optionally enable fast provisioning of virtual machines (VMs).
+6. For VDCs that are not highly available, review your options for a network edge.
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
       1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
       2. Specify the edge type. Edge storage costs might occur.
@@ -73,16 +96,14 @@ When you use resource groups for IAM access, you must keep the Cloud Director si
 ## Procedure to order {{site.data.keyword.vcf-aas}} multitenant virtual data centers
 {: #vdc-adding-procedure-mt}
 
-When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
-{: requirement}
-
 1. In the VMware Solutions console, click the **{{site.data.keyword.vmware-service_short}}** card.
 2. In the **{{site.data.keyword.vmware-service_short}}** page, select the **Multitenant Virtual data center** card.
 3. Specify the VDC name and select the resource group.
 4. Specify how you would like the VDC deployed.
-4. Select the region of the Cloud Director site, the Cloud Director instance, and data center. The instance and data center names are filtered based on the region setting.
+   * For highly available VDCs, enable regional compute high availability and select the stretch resource pool location.
+   * For VDCs that are not highly available, select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
 5. Optionally enable fast provisioning of VMs.
-6.  Review your options for a network edge:
+6. For VDCs that are not highly available, review your options for a network edge:
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
       1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
       2. Specify the edge type. Edge storage costs might occur.
@@ -106,7 +127,7 @@ For multitenant instances, install the Veeam service after you provision your VD
 ## Related links
 {: #vdc-adding-links}
 
-* [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)
 * [Managing Veeam for {{site.data.keyword.vcf-aas}} instances](/docs/vmware-service?topic=vmware-service-tenant-veeam)
+* [Managing resource groups](/docs/account?topic=account-rgs&interface=ui)
 * [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -46,7 +46,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 
 1. Add a connection group to your VDC.
    1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-   2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
+   2. On the **{{site.data.keyword.vmware-service_short}}** page, click the virtual data center name.
    3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
    4. Click **Add connection group +**.
    5. In the **Add connection group** pane, complete the following steps.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: private-only networks, add subnet, delete subnet, subnet adding, subnet deleting
 
@@ -24,7 +24,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 {: #subnet-adding-deleting-add}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Networking** tab.
 4. In the **Management connectivity** section, click **Edit list**.
 5. In the **Edit allowlist** pane, click **Add new +**.
@@ -35,7 +35,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 {: #subnet-adding-deleting-edit}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Networking** tab.
 4. In the **Management connectivity** section, click **Edit list**.
 5. In the **Edit allowlist** pan, click the **Edit** icon.
@@ -46,7 +46,7 @@ You can add, edit, or delete private-only management connectivity allowlisted su
 {: #subnet-adding-deleting-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Networking** tab.
 4. In the **Management connectivity** section, click **Edit list**.
 5. In the **Edit allowlist** pane, click the **Remove** icon. Then, click **Update**.

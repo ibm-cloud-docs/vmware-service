@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-01-23"
+lastupdated: "2025-02-11"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -58,9 +58,6 @@ You can specify a name that meets the following requirements:
 ## Procedure to order {{site.data.keyword.vcf-aas}} Cloud Director site instances
 {: #tenant-ordering-procedure}
 
-When you use resource groups for IAM access, you must keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
-{: requirement}
-
 Some host profiles might not be available for a selected location. Contact your IBM Sales representative to request missing host profiles.
 {: note}
 
@@ -92,10 +89,24 @@ Some host profiles might not be available for a selected location. Contact your 
 8. In the **Summary** panel, review the instance settings and the estimated price.
 7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
+## Provisioning a virtual data center - resource group considerations
+{: #tenant-ordering-rg-reqs}
+
+Review the following considerations before you order a {{site.data.keyword.vcf-aas}} VDC.
+
+Even though you can place your {{site.data.keyword.vcf-aas}} VDCs into different resource groups, the resource group differentiation is useful only for billing purposes. For access control, IAM policies are tested against the Cloud Director site and not the VDCs.
+
+For single-tenant VDCs, select the resource group for the Cloud Director site.
+
+Because {{site.data.keyword.cloud_notm}} checks against the Cloud Director site resource group rather than the VDC resource group, users with permission to create a VDC can create one in any resource group.
+
+When you use resource groups for IAM access, keep the Cloud Director site and all of the VDCs in the Cloud Director site in the same resource group.
+{: tip}
+
 ## Related links
 {: #tenant-ordering-links}
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Viewing and deleting {{site.data.keyword.vcf-aas}} Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-viewing-sites)
-* [Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers](/docs/vmware-service?topic=vmware-service-tenant-viewing-vdc)
+* [Managing resource groups](/docs/account?topic=account-rgs&interface=ui)
 * [Visualizing your site with {{site.data.keyword.cloud_notm}} Monitoring](/docs/vmware-service?topic=vmware-service-single-tenant-monitoring)

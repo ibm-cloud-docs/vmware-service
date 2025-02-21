@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: view connection, interconnectivity, transit gateway, delete connection
 
@@ -24,7 +24,7 @@ You can view the status of your {{site.data.keyword.tg_full}} connection and del
 {: #tgw-viewing-connections-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the virtual data center name.
 3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
 4. Expand the **{{site.data.keyword.tg_short}} ID** to review the connection group details.
 5. Expand each connection group to review the details and status of each associated GRE tunnel.
@@ -44,7 +44,7 @@ You can view the status of your {{site.data.keyword.tg_full}} connection and del
 {: #tgw-deleting-connections-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Virtual data centers** tab, then click an instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the virtual data center name.
 3. Click the **Interconnectivity** tab to open the {{site.data.keyword.tg_short}} connections page.
 4. From the {{site.data.keyword.tg_short}} connections page, click the overflow menu for the connection group and click **Delete connection group**.
 5. From the **Delete connection group** pane, enter the {{site.data.keyword.tg_short}} ID to confirm the deletion. Then, click **Delete**.

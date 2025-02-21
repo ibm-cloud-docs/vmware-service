@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -29,7 +29,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
 
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel. {: #step-1}
-1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+1. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 1. In the **Create connection** pane, complete the following configuration.
@@ -43,7 +43,7 @@ VMware Shared pairings are automatically created when you install VCDA on a {{si
    When the **Waiting for peer pairing status** displays, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+1. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 1. In the **Create connection** pane, complete the following configuration.
@@ -67,7 +67,7 @@ The following pairing status options are available.
 {: #vcda-creating-deleting-vmaas-pairing-proc-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 4. On the **{{site.data.keyword.vcf-aas}} pairings** tab, locate the pairing to delete.
 5. Click the overflow menu and click **Delete pairing**.

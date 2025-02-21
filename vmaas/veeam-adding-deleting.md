@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-13"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 
@@ -35,7 +35,7 @@ Before you delete the Veeam Backup service from your instance, review the follow
 {: #veeam-adding-deleting-add-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Add-on services** tab.
 4. Click **Add service**.
 5. In the **Add-on services** pane, toggle Veeam Backup on.
@@ -45,7 +45,7 @@ Before you delete the Veeam Backup service from your instance, review the follow
 {: #veeam-adding-deleting-delete-proc}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud director sites** tab, then click a single-tenant instance name.
+2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Add-on services** tab.
 4. Click the vertical overflow menu in the Veeam Backup panel and click **Delete**.
 5. In the **Delete add-on service** pane, review the considerations, and enter **Veeam Backup** to confirm that you want to delete all Veeam backup services from your instance. Click **Delete**.
