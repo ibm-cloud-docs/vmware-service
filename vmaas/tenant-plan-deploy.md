@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-21"
+lastupdated: "2025-02-25"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -131,11 +131,11 @@ High availability is supported on a Cloud Director site region only when a Sapph
 
 A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver. 
 
-You can add stretch vSAN™ high availability resource pools and clusters to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+To ensure that your applications remain resilient, you can add stretch vSAN™ high availability resource pools and clusters to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
-Enable regional compute high availability when you create a new single-tenant or multitenant VDC on a stretched workload cluster.
+Enable regional compute high availability (HA) when you create a new single-tenant or multitenant VDC on a stretched workload cluster.
 
 For more information about resource pools, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
@@ -343,10 +343,13 @@ When you select private-only workload connectivity for your Cloud Director site,
 
 You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloads to securely connect to other workloads outside of the private network or are alternatively sandboxed in the VDC. For more information, see [Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
-## Network edge type
-{: #tenant-plan-deploy-edge}
+## Network edge
+{: #tenant-plan-deploy-nwedge}
 
 VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
+
+## Network edge type
+{: #tenant-plan-deploy-edge}
 
 NSX Edge performance is coupled to the CPU available to the edge. Network IO amounts, including inbound and outbound traffic, in addition to use of edge services directly impact edge use of CPU. The larger edge sizes provide more CPU resource for the edge.
 

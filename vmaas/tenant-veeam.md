@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-01-29"
+lastupdated: "2025-02-24"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -53,7 +53,7 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 ## Backup data storage and encryption
 {: #tenant-veeam-storage}
 
-Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
+Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific  {{site.data.keyword.cloud_notm}} Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the {{site.data.keyword.cloud_notm}} Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
 When you provision your instance, a total of two *shared* SOBRs, one for each data center location, are available. The size of each shared SOBR is a maximum of 100 TB.
 
@@ -68,10 +68,10 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * All SOBRs are single-zone.
 * The minimum size of a new dedicated SOBR is 200 TB and can expand to a maximum of 1.2 PB.
 * You can scale multiple dedicated SOBRs based on your backup capacity requirements.
-* Each SOBR receives repository VMs, data movers, and cross-region IBM Cloud Object Storage buckets.
-* All data that is stored in the IBM Cloud Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
-* Veeam backups are encrypted when stored on both vSAN™ or IBM Cloud Object Storage.
-* When you delete a SOBR, you are charged until immutability expires on the IBM Cloud Object Storage buckets.
+* Each SOBR receives repository VMs, data movers, and cross-region {{site.data.keyword.cloud_notm}} Object Storage buckets.
+* All data that is stored in the {{site.data.keyword.cloud_notm}} Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
+* Veeam backups are encrypted when stored on both vSAN™ or {{site.data.keyword.cloud_notm}} Object Storage.
+* When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets.
 
 For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 

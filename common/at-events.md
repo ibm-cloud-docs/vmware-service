@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-01-27"
+lastupdated: "2025-02-25"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -52,9 +52,9 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Frankfurt (`eu-de`) | London (`eu-gb`) |  |
-|---------------------|------------------|------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}    |
+| Frankfurt (`eu-de`) | London (`eu-gb`) |
+|---------------------|------------------|
+| [Yes]{: tag-green}  | [Yes]{: tag-green}  |
 {: caption="Regions where activity tracking events are generated in Europe locations" caption-side="bottom"}
 {: #at-table-3}
 {: tab-title="Europe"}
@@ -89,9 +89,9 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Frankfurt (`eu-de`) | London (`eu-gb`) |  |
-|---------------------|------------------|------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}    |
+| Frankfurt (`eu-de`) | London (`eu-gb`) |
+|---------------------|------------------|
+| [Yes]{: tag-green}  | [Yes]{: tag-green} |
 {: caption="Regions where activity tracking events are sent in Europe locations" caption-side="bottom"}
 {: #at-legacy-table-3}
 {: tab-title="Europe"}
@@ -102,7 +102,7 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 ## Viewing activity tracking events for {{site.data.keyword.vcf-aas}}
 {: #at-viewing}
 
-{{site.data.keyword.vcf-aas}} events are global events. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+{{site.data.keyword.vcf-aas}} events are global events. For more information, see [Event types](/docs/atracker?topic=atracker-event_types).
 
 ### Launching {{site.data.keyword.logs_full_notm}} from the VMware Solutions console
 {: #at-launch-integrated}

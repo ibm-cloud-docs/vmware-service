@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-02-25"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -227,7 +227,7 @@ For a complete tutorial on how to create VDC networks inside of your VDC, create
 ### Enabling VM access to {{site.data.keyword.cloud_notm}} services by using the private network
 {: #vcd-ops-guide-enable-access}
 
-You can configure vApps and VMs running inside of the VDC to use the {{site.data.keyword.cloud_notm}} private network to access {{site.data.keyword.cloud_notm}} services. Accessing {{site.data.keyword.cloud_notm}} services through a private network can save on outbound public networking costs and can provide a higher degree of reliability and security. Virtual data centers route to the {{site.data.keyword.cloud_notm}} private network through a VDC service network that is configured as an available external network on the VDC edge.
+You can configure vApps and VMs running inside of the VDC to use the {{site.data.keyword.cloud_notm}} private network to access {{site.data.keyword.cloud_notm}} services. Accessing {{site.data.keyword.cloud_notm}} services through a private network can save on outbound public networking costs and can provide a higher degree of reliability and security. VDCs route to the {{site.data.keyword.cloud_notm}} private network through a VDC service network that is configured as an available external network on the VDC edge.
 
 The following services are available.
 
@@ -243,7 +243,7 @@ The following services are available.
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
 {: caption="Available services" caption-side="bottom"}
 
-The VDC must have an edge (public-private or private-only) to enable access to the service network. NAT and firewall rules for private network connectivity are established as a default during the VDC creation.
+The VDC must have an edge (public-private or private-only) to enable access to the service network. Some NAT and firewall rules for private network connectivity are established as a default during the VDC creation. Review your firewall rules and add additional rules, as needed, for Windows activation and other operations that require private network connectivity. For additional information, see [Add an NSX Edge Gateway Firewall Rule in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6/map-for-vmware-cloud-director-tenant-portal-guide-10-6/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/add-an-nsx-t-edge-gateway-firewall-rule-tenant.html).{: external}
 {: important}
 
 ### Creating a vApp network for {{site.data.keyword.vcf-aas}}

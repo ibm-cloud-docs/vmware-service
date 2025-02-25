@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-01-22"
+lastupdated: "2025-02-24"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Using a dedicated Scale-out Backup Repository with Veeam Backup
 {: #veeam-adding-sobr}
 
-When you provision your {{site.data.keyword.vcf-aas}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are available. The size of each shared SOBR is a maximum of 100 TB.
+When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are available. The size of each shared SOBR is a maximum of 100 TB.
 
 A SOBR is a repository system with horizontal scaling support for multitier storage of data and consists of one or more backup repositories or object storage repositories that are called the performance tier. You can expand the performance tier with object storage repositories for long-term retention to create the capacity tier. All of the storage devices and systems inside the SOBR are joined into a system with their capacities summarized.
 
