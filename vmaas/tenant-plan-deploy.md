@@ -3,7 +3,6 @@
 copyright:
 
   years: 2022, 2025
-
 lastupdated: "2025-02-25"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
@@ -348,14 +347,19 @@ You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloa
 
 VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
 
-## Network edge type
+### Network edge connection
+{: #tenant-plan-deploy-edge-connection}
+
+When you create your VDC with a network edge, you can select either a public and private network connection or a private-only network connection. If the Cloud Director site has a private-only connection, private-only is the only available option for the VDC network edge.
+
+### Network edge type
 {: #tenant-plan-deploy-edge}
 
 NSX Edge performance is coupled to the CPU available to the edge. Network IO amounts, including inbound and outbound traffic, in addition to use of edge services directly impact edge use of CPU. The larger edge sizes provide more CPU resource for the edge.
 
 | Edge type | Details |
 |:--------- |:------- |
-| Efficiency | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  An efficiency edge does not provide a performance upgrade option. |
+| Efficiency - Shared | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  An Efficiency - Shared edge does not provide a performance upgrade option. |
 | Performance - M | This dedicated edge option is suitable for smaller production deployments with fewer networking demands.  \n  Provides an edge that is dedicated to a single VDC. Networking bandwidth is consistent and supports traffic performance up to 6 Gbps and supports edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - L | The recommended dedicated edge option for large production workloads and high traffic.  \n Provides an edge that is dedicated to a single VDC and consistent networking bandwidth to support traffic performance up to 10 Gbps while also supporting edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - XL | This dedicated edge option is suitable for the most demanding networking requirements.  \n Supports the highest level of edge services and throughput over 10 Gbps.  |
@@ -363,11 +367,6 @@ NSX Edge performance is coupled to the CPU available to the edge. Network IO amo
 
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}
-
-### Network edge connection
-{: #tenant-plan-deploy-edge-connection}
-
-When you create your VDC with a network edge, you can select either a public and private network connection or a private-only network connection. If the Cloud Director site has a private-only connection, private-only is the only available option for the VDC network edge.
 
 ## Services for {{site.data.keyword.vcf-aas}}
 {: #tenant-plan-deploy-services}

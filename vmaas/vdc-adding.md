@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-02-27"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
-You can enable regional compute high availability when you create a new single-tenant or multitenant VDC on a stretch vSAN™ workload cluster.
+You can enable regional compute high availability when you create a new single-tenant or multitenant VDC on a stretch vSAN™ workload cluster. For more information, see [Procedure to add stretch vSAN high availability clusters to VCF as a Service instances](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting#cluster-adding-deleting-add-vsan-proc).
 
 Regional network high availability is not currently supported. You cannot include a network edge in a highly available VDC.
 {: restriction}
@@ -28,7 +28,7 @@ Regional network high availability is not currently supported. You cannot includ
 ## Single-tenant virtual data centers
 {: #vdc-adding-st}
 
-For  {{site.data.keyword.vcf-aas-full}} single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 64 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
+For {{site.data.keyword.vcf-aas-full}} single-tenant VDCs, the minimum instance configuration consists of two hosts (2 Sockets - 32 Cores and 192 GB RAM). You can order up to 64 efficiency edges or one performance edge of medium size until more hosts are added to one of the clusters in the resource pool.
 
 You can deploy VDCs only to an existing Cloud Director site. Therefore, you must create a single-tenant Cloud Director site before you can create a single-tenant VDC.
 
@@ -88,7 +88,7 @@ You can also specify a VDC name that meets the following requirements:
 5. Optionally enable fast provisioning of virtual machines (VMs).
 6. For VDCs that are not highly available, review your options for a network edge.
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
-      1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
+      1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is required.
       2. Specify the edge type. Edge storage costs might occur.
    * To order without a network edge, turn off **Create with network edge**. This option is suitable for centralized networking administration and control over multiple VDCs.
 7. Review the included services, cost, accept the terms, and click **Create** to submit the VDC order.
@@ -103,7 +103,7 @@ You can also specify a VDC name that meets the following requirements:
    * For highly available VDCs, enable regional compute high availability and select the stretch resource pool location.
    * For VDCs that are not highly available, select the region, Cloud Director instance, and resource pool. The instance and resource pool names are filtered based on the region setting.
 5. Optionally enable fast provisioning of VMs.
-6. For VDCs that are not highly available, review your options for a network edge:
+6. For VDCs that are not highly available, review your options for a network edge.
    * To order a network edge, ensure that the toggle for **Create with network edge** is on and complete the following steps.
       1. Select the network connection for the edge. If the Cloud Director site is a private-only connection, the **Private only** option is available.
       2. Specify the edge type. Edge storage costs might occur.

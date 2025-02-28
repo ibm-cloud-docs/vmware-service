@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-02-26"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -35,7 +35,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    |:---- |:----------- |
    | Name | The name of the VDC. |
    | Status | The status of the provisioned VDC. |
-   | Regional high availability | Identifies if high availability is turned on or turned off for the VDC. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    | Location | The data center where the VDC is deployed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
@@ -60,8 +60,8 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Network connection | The type of network connection of either private only or both public and private. |
    | Fast provisioning | Use the toggle to either turn fast provisioning on or off for the VDC. |
-   | Public IPs or Private IPs| The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
-   | Regional high availability | Identifies if high availability is either turned on or off for the VDC. |
+   | Public IPs or Private IPs| The public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    {: class="simple-tab-table"}
    {: caption="Virtual data center details - single-tenant" caption-side="bottom"}
    {: #table1}
@@ -82,12 +82,14 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
    | Fast provisioning | Use the toggle to either turn fast provisioning on or off for the VDC. |
    | Public IPs or Private IPs | The 6 public or private IP addresses that are assigned to the VDC. For public IP addresses, you can assign them to support public egress and ingress against the VDC and are not intended to enable VDC creation. It is recommended to use the included VDC firewalls when you are using the public IP addresses. |
-   | Regional high availability | Identifies if high availability is either on or off for the VDC. |
+   | Regional high availability | Identifies type of high availability for the VDC, if any. |
    {: class="simple-tab-table"}
    {: caption="Virtual data center details - multitenant" caption-side="bottom"}
    {: #table2}
    {: tab-title="Multitenant instances"}
    {: tab-group="vdc details"}
+
+   For VDCs deployed after VMware Cloud Director™ IP Spaces availability, IP addresses are managed and viewed through the VMware Cloud Director tenant portal. For more information, see [Allocating public IP addresses for NAT rules and for VPNs](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-allocating-ips).
 
 3. On the **Add-on services** tab, review the available services.
 
@@ -109,7 +111,7 @@ Click **VMware console** to create and manage networking and workloads. For more
 3. Click the **Actions** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 
-   The status of the VDC is changed to **Deleting**. When the VDC is deleted successfully, the components are released, and the status is changed to **Deleted**.
+   The status of the VDC is changed to **Deleting**. The components are released when the VDC is deleted successfully.
 
 Alternatively, you can click the delete icon that is located in the VDC row of the **Virtual data centers** summary table.
 {: fast-path}

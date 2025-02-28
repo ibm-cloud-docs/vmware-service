@@ -3,7 +3,6 @@
 copyright:
 
   years:  2024, 2025
-
 lastupdated: "2025-02-25"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
@@ -243,7 +242,7 @@ The following services are available.
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
 {: caption="Available services" caption-side="bottom"}
 
-The VDC must have an edge (public-private or private-only) to enable access to the service network. Some NAT and firewall rules for private network connectivity are established as a default during the VDC creation. Review your firewall rules and add additional rules, as needed, for Windows activation and other operations that require private network connectivity. For additional information, see [Add an NSX Edge Gateway Firewall Rule in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6/map-for-vmware-cloud-director-tenant-portal-guide-10-6/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/add-an-nsx-t-edge-gateway-firewall-rule-tenant.html).{: external}
+The VDC must have an edge (public-private or private-only) to enable access to the service network. Some NAT and firewall rules for private network connectivity are established as a default during the VDC creation. Review your firewall rules and add additional rules, as needed, for Windows activation and other operations that require private network connectivity. For additional information, see [Add an NSX Edge Gateway Firewall Rule in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6/map-for-vmware-cloud-director-tenant-portal-guide-10-6/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/add-an-nsx-t-edge-gateway-firewall-rule-tenant.html).{: external} 
 {: important}
 
 ### Creating a vApp network for {{site.data.keyword.vcf-aas}}

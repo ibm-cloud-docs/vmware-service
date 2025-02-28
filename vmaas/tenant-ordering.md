@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-02-28"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -66,7 +66,7 @@ Some host profiles might not be available for a selected location. Contact your 
 3. Specify the Cloud Director site name and select a resource group.
 
    If **No resource group available** is displayed, you currently do not have the permission to add VDCs to any resource group in this account. Contact the account owner to assign the **Editor** or **Administrator** role on a resource group in the account. For more information, see [{{site.data.keyword.IBM_notm}} IAM roles](/docs/account?topic=account-userroles).
-4. Select the Cloud Director geography and region.
+4. Select the geography and region for the site location.
 5. Specify the settings for the resource pool.
     1. Specify the resource pool name.
     2. Select the resource pool location.

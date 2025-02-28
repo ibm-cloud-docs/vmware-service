@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-02-25"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -50,7 +50,7 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    |:---- |:----------- |
    | Name | The name of the VDC. |
    | Status | The status of the VDC. |
-   | Regional high availability | Identifies if the VDC is enabled for high availability. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    | Location | The name of the data center where the site is deployed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
@@ -74,7 +74,7 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    | Billing cycle | The pricing plan for the site. |
    | ID | The globally unique ID of the site. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Red Hat activation key | The Red Hat Enterprise Linux activation key that is used to register the Red Hat VM. |
-   | Regional high availability | Identifies if the VDC is enabled for high availability. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    {: caption="Cloud Director site details" caption-side="bottom"}
 
    If a recommended service is not already installed for the site, you can click the service link to install or enable the service for your instance.
@@ -85,8 +85,8 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    |:---- |:----------- |
    | Name | The VDC name. |
    | Type | The edge performance type. |
-   | Regional high availability | Identifies if the VDC is enabled for high availability. |
-   | Location | The data center where the site is deployed. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
+   | Location | The name of the data center where the site is deployed. |
    | vCPU | The amount of virtual CPU for the VDC. |
    | RAM | The amount of RAM for the VDC. |
    {: caption="Network edge details" caption-side="bottom"}
@@ -126,9 +126,9 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | Location | The name of the data center where the VDC is deployed. |
+   | Location | The name of the data center where the site is deployed. |
    | Resource pool | The name of the resource pool for the VDC. |
-   | Regional high availability | Identifies if the VDC is enabled for high availability. |
+   | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    | Network connection | Identifies the connection type: public and private or private only. Available if you provisioned a network edge with your VDC order. |
    | Transit gateway | The status of the Transit Gateway connection. |
    |Creation time | The date and time that the VDC was created. |

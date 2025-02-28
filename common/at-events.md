@@ -54,7 +54,7 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 
 | Frankfurt (`eu-de`) | London (`eu-gb`) |
 |---------------------|------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}  |
+| [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Regions where activity tracking events are generated in Europe locations" caption-side="bottom"}
 {: #at-table-3}
 {: tab-title="Europe"}

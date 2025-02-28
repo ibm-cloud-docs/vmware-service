@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-02-26"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -31,7 +31,7 @@ Each resource pool inherits the following policies from the {{site.data.keyword.
 
 You can optionally create a resource pool to stretch the workload cluster across two different data centers within a multizone region. A stretch vSAN™ high availability resource pool helps to protect critical workloads by increasing the availability of the VMware infrastructure.
 
-High availability is supported on a Cloud Director site region only when a Sapphire Rapids server is available and require stretch high availability clusters with vSAN storage profiles. NFS storage is not supported.
+Regional compute high availability is supported on a Cloud Director site region only when a Sapphire Rapids server is available and require stretch high availability clusters with vSAN storage profiles. NFS storage is not supported.
 {: requirement}
 
 Resource pools consist of one or more VMware vCenter Server® clusters. A new vCenter Server cluster is created when you add a resource pool to the {{site.data.keyword.vcf-aas}} instance.

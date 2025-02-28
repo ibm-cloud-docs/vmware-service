@@ -127,7 +127,7 @@ Software currency update
 {: release-note}
 
 VMware Cloud Director IP Spaces availability
-:   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas-full}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
+:   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
 
    By default, each VDC with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
 
