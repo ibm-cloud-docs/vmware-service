@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-27"
+lastupdated: "2025-03-03"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 

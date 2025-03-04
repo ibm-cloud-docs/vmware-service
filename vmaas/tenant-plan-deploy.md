@@ -3,7 +3,8 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-02-25"
+
+lastupdated: "2025-03-04"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -98,6 +99,9 @@ High availability is supported on a Cloud Director site region only when a Sapph
 | London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon1ST] |
 | London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon3ST] |
+| Madrid | Madrid 02 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
@@ -179,6 +183,9 @@ The profile storage type depends on the resource pool location. The following op
 | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | London 05 | [Yes]{: tag-green} | [No]{: tag-red} |
 | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Data center profile storage types - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Multizone profiles"}
@@ -359,7 +366,7 @@ NSX Edge performance is coupled to the CPU available to the edge. Network IO amo
 
 | Edge type | Details |
 |:--------- |:------- |
-| Efficiency - Shared | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  An Efficiency - Shared edge does not provide a performance upgrade option. |
+| Efficiency - Shared | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  A shared edge does not provide a performance upgrade option. |
 | Performance - M | This dedicated edge option is suitable for smaller production deployments with fewer networking demands.  \n  Provides an edge that is dedicated to a single VDC. Networking bandwidth is consistent and supports traffic performance up to 6 Gbps and supports edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - L | The recommended dedicated edge option for large production workloads and high traffic.  \n Provides an edge that is dedicated to a single VDC and consistent networking bandwidth to support traffic performance up to 10 Gbps while also supporting edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - XL | This dedicated edge option is suitable for the most demanding networking requirements.  \n Supports the highest level of edge services and throughput over 10 Gbps.  |

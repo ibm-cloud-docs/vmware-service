@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-02-25"
+lastupdated: "2025-03-04"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 
@@ -53,6 +53,7 @@ or [API](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=api), you must 
 | Dallas | `api.private.us-south.vmware.cloud.ibm.com` |`crn:v1:bluemix:public:vmware:us-south:::endpoint:api:private.us-south.vmware.cloud.ibm.com` |
 | Frankfurt | `api.private.eu-de.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:eu-de:::endpoint:api:private.eu-de.vmware.cloud.ibm.com` |
 | London | `api.private.eu-gb.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:eu-gb:::endpoint:api:private.eu-gb.vmware.cloud.ibm.com` |
+| Madrid | `api.private.eu-es.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:eu-es:::endpoint:api:private.eu-es.vmware.cloud.ibm.com` |
 | Sydney | `api.private.au-syd.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:au-syd:::endpoint:api:private.au-syd.vmware.cloud.ibm.com` |
 | Tokyo | `api.private.jp-tok.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:jp-tok:::endpoint:api:private.jp-tok.vmware.cloud.ibm.com` |
 | Toronto | `api.private.ca-tor.vmware.cloud.ibm.com` | `crn:v1:bluemix:public:vmware:ca-tor:::endpoint:api:private.ca-tor.vmware.cloud.ibm.com` |

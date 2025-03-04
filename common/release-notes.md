@@ -26,6 +26,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 4 March 2025
+{: #vmware-service-mar425}
+{: release-note}
+
+IBM Cloud data center support for Madrid single-tenant
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Madrid region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 14 February 2025
 {: #vmware-service-feb1425}
 {: release-note}

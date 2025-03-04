@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-03-04"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -58,6 +58,9 @@ Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
     1. Specify the cluster name.
     2. Select the host quantity. A minimum of 14 is required for stretch vSAN storage.
     4. Select the host profile.
+    5. For vSAN, optionally select the **Enable vSAN de-duplication & compression** checkbox to save storage space.
+    6. Click **Next**.
+    7. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
     5. Review the cost, accept the terms, and click **Order**.
 
 ## Before you delete clusters
@@ -75,9 +78,9 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab.
-4. On the **Clusters** tab, locate the cluster that you want to delete.
-5. Click the vertical overflow menu next to the **Status** column for that cluster and click **Delete cluster**.
-6. Confirm that you want to delete.
+4. Expand **Clusters**, locate the cluster that you want to delete.
+5. On the cluster row to delete, click **Actions** then **Delete**.
+6. Confirm that you want to delete the cluster.
 
 ## Related links
 {: #cluster-adding-deleting-links}
