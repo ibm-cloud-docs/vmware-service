@@ -37,7 +37,6 @@ Some host profiles might not be available for a selected location. Contact your 
     2. Select the host quantity.
        * For NFS-only storage, select a minimum of 2.
        * For vSAN + optional NFS storage, select a minimum of 7.
-    3. Select the profile storage type.
     4. Select the host profile.
     5. For vSAN, optionally enable vSAN de-duplication and compression.
     6. Review the cost, accept the terms, and click **Next**.
