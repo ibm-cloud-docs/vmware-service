@@ -62,7 +62,7 @@ REST API updates
 
 User interface updates and enhancements
 :   The user interface is updated and provides the following enhancements.
-   * The **{{site.data.keyword.vmware-service_short}}** resource page provides a new resource list view to better organize the Cloud Director site and VDC relationship and details. You have the option to switch to the original resource list view.
+   * The **{{site.data.keyword.vmware-service_short}}** resource page provides a new resource list view to better organize the Cloud Director site and VDC relationship and details. You can switch to the original resource list view.
    * The {{site.data.keyword.vmware-service_short}} site details page for single-tenant instances provides the following improvements.
       * The **Networking** tab now provides edge and VDC details.
       * The **Resource pool** tab replaces the **Infrastructure** tab. The **Resource pool** tab provides location, compute, storage, cluster, and host details.
@@ -134,7 +134,7 @@ Software currency update
 {: release-note}
 
 VMware Cloud Director IP Spaces availability
-:   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console have changed. Most noticeable, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include additional views such as BGP summary and the option to download the routing table.
+:   Beginning with VMware Cloud Director 10.6, {{site.data.keyword.vcf-aas}} is moving to an updated edge architecture along with the use of IP Spaces. With this update, the networking views on the VMware console are updated. Most noticeably, the BGP settings are now located in the **Provider Gateways** view instead of the **Edge Gateways** view and include more views such as BGP summary and the option to download the routing table.
 
    By default, each VDC with the public and private network edge connection is now provisioned with eight public IP addresses and one private IP address that is used for accessing the {{site.data.keyword.cloud_notm}} private network. All public OS templates, by default, now have routability to the {{site.data.keyword.cloud_notm}} private network, including licensed OS activation, OS updates, NTP, DNS, and Cloud Object Storage.
 

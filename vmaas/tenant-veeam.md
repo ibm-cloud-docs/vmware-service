@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-24"
+lastupdated: "2025-03-10"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -71,7 +71,7 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * Each SOBR receives repository VMs, data movers, and cross-region {{site.data.keyword.cloud_notm}} Object Storage buckets.
 * All data that is stored in the {{site.data.keyword.cloud_notm}} Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
 * Veeam backups are encrypted when stored on both vSAN™ or {{site.data.keyword.cloud_notm}} Object Storage.
-* When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets.
+* When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets. The immutability default expiration is 7 days plus up to 30 more days due to block generation. For more information, see [Block Generation](https://helpcenter.veeam.com/docs/backup/hyperv/object_storage_block_generation.html?ver=120){: external}
 
 For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 

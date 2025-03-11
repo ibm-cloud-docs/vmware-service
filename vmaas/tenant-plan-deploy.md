@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-10"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -136,9 +136,12 @@ A resource pool combines compute, memory, and storage resources to properly scal
 
 You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver. 
 
-To ensure that your applications remain resilient, you can add stretch vSAN™ high availability resource pools and clusters to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+To ensure that your applications remain resilient, you can add stretch vSAN™ high availability resource pools to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
-Enable regional compute high availability (HA) when you create a new single-tenant or multitenant VDC on a stretched workload cluster.
+When the high availability resource pool is available, you can create a new single-tenant or multitenant VDC on the stretched resource pool.
+
+Stretched resource pools are available only on some multitenant Cloud Director sites. Additional stretched resource pools will be made available over time.
+{: note}
 
 For more information about resource pools, see [Adding resource pools](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
 
@@ -366,7 +369,7 @@ NSX Edge performance is coupled to the CPU available to the edge. Network IO amo
 
 | Edge type | Details |
 |:--------- |:------- |
-| Efficiency - Shared | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low cost and lower performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further consume edge resources and can degrade performance in a shared edge configuration.  \n  A shared edge does not provide a performance upgrade option. |
+| Efficiency - Shared | This option is suitable for saving resources and costs for development and proof-of-concept scenarios and is not recommended for use in production scenarios.  \n  Provides a low-cost and lower-performing solution where a single edge is shared by up to 64 VDCs. Network performance can be inconsistent with multiple VDCs that use the same infrastructure and compete for networking bandwidth. In addition, edge services such as VPN, Firewall, NAT, and routing further use edge resources and can degrade performance in a shared edge configuration.  \n  A shared edge does not provide a performance upgrade option. |
 | Performance - M | This dedicated edge option is suitable for smaller production deployments with fewer networking demands.  \n  Provides an edge that is dedicated to a single VDC. Networking bandwidth is consistent and supports traffic performance up to 6 Gbps and supports edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - L | The recommended dedicated edge option for large production workloads and high traffic.  \n Provides an edge that is dedicated to a single VDC and consistent networking bandwidth to support traffic performance up to 10 Gbps while also supporting edge services such as VPN, Firewall, NAT, and routing. |
 | Performance - XL | This dedicated edge option is suitable for the most demanding networking requirements.  \n Supports the highest level of edge services and throughput over 10 Gbps.  |

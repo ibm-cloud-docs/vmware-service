@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-06"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -52,15 +52,12 @@ Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab.
-4. Locate the resource pool where you want to add the cluster and expand the cluster section. Then, click **Add cluster**.
+4. Locate the stretched resource pool where you want to add the cluster and expand the cluster section. Then, click **Add cluster**.
 5. In the **Add cluster** pane, specify the settings for the new cluster.
     1. Specify the cluster name.
     2. Select the host quantity. A minimum of 14 is required for stretch vSAN storage.
-    4. Select the host profile.
-    5. For vSAN, optionally select the **Enable vSAN de-duplication & compression** checkbox to save storage space.
-    6. Click **Next**.
-    7. Select the sizings for one or more IOPS/GB performance tiers for attached NFS storage.
-    5. Review the cost, accept the terms, and click **Order**.
+    3. Select the Sapphire Rapids host profile.
+    4. Review the cost, accept the terms, and click **Order**.
 
 ## Before you delete clusters
 {: #cluster-adding-deleting-before-delete}
