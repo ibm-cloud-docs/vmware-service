@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-24"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,12 +26,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 24 March 2025
+{: #vmware-service-mar2425}
+{: release-note}
+
+IBM Cloud data center support for Madrid multitenant
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Madrid region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+
 ### 4 March 2025
 {: #vmware-service-mar425}
 {: release-note}
 
 IBM Cloud data center support for Madrid single-tenant
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Madrid region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Madrid region to host your single-tenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 14 February 2025
 {: #vmware-service-feb1425}
@@ -148,7 +155,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T 4.2.0.2
+   * VMware NSX-T™ 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 

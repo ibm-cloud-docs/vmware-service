@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-14"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -18,13 +18,15 @@ subcollection: vmware-service
 {{site.data.keyword.cloud}} services, such as {{site.data.keyword.vcf-aas-full}}, generate activity tracking events.
 {: shortdesc}
 
-Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. 
 
 You can use {{site.data.keyword.atracker_full_notm}}, a platform service to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
+{{site.data.keyword.vcf-aas}} events are global events. For more information, see [Event types](/docs/atracker?topic=atracker-event_types).
+
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [Migrating to IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-migration-intro).
+As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-intro).
 {: important}
 
 ## Locations where activity tracking events are generated
@@ -99,21 +101,6 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: class="simple-tab-table"}
 {: row-headers}
 
-## Viewing activity tracking events for {{site.data.keyword.vcf-aas}}
-{: #at-viewing}
-
-{{site.data.keyword.vcf-aas}} events are global events. For more information, see [Event types](/docs/atracker?topic=atracker-event_types).
-
-### Launching {{site.data.keyword.logs_full_notm}} from the VMware Solutions console
-{: #at-launch-integrated}
-
-{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
-
-### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-{: #at-launch-standalone}
-
-For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI through the IBM Cloud UI](/docs/cloud-logs?topic=cloud-logs-instance-launch#instance-launch-cloud-ui).
-
 ## Events that are related to virtual data centers
 {: #at-events-vdc}
 
@@ -153,5 +140,5 @@ Events are generated when you access VMware Cloud Director in {{site.data.keywor
 ## Related links
 {: #at-events-links}
 
-* [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision)
-* [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch)
+* [Getting started with {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-getting-started)
+* [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started)

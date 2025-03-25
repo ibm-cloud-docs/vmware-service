@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-02-24"
+lastupdated: "2025-03-19"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -18,11 +18,11 @@ subcollection: vmware-service
 # Using a dedicated Scale-out Backup Repository with Veeam Backup
 {: #veeam-adding-sobr}
 
-When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are available. The size of each shared SOBR is a maximum of 100 TB.
+When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are available by default through the Veeam® Backup service. The size of each shared SOBR is a maximum of 100 TB.
 
 A SOBR is a repository system with horizontal scaling support for multitier storage of data and consists of one or more backup repositories or object storage repositories that are called the performance tier. You can expand the performance tier with object storage repositories for long-term retention to create the capacity tier. All of the storage devices and systems inside the SOBR are joined into a system with their capacities summarized.
 
-If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR through the Veeam® Backup service for your single-tenant and multitenant instances. You can add a SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a SOBR are not shared.
+If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. You can add a SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a SOBR are not shared.
 
 For more information about SOBRs with Veeam Backup, see the *Backup data storage and encryption* section in [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-03"
+lastupdated: "2025-03-12"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -53,7 +53,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Name | The name of the VDC. |
    | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the VDC is deployed. |
-   | Compute location | The data center where the VDC is deployed. |
+   | Compute location | The data center where the VDC is deployed. Both data centers display for a stretched resource pool. |
    | Creation time | The date and time that the VDC was created. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |
@@ -75,7 +75,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Name | The name of the VDC. |
    | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the VDC is deployed. |
-   | Compute location | The data center where the VDC is deployed. |
+   | Compute location | The data center where the VDC is deployed. Both data centers display for a stretched resource pool. |
    | Creation time | The date and time that the VDC was created. |
    | ID | The globally unique ID of the VDC. This ID can be helpful to copy if you need to open an IBM Support ticket. |
    | Network edge type | The edge performance type. Available if you provisioned a network edge with your VDC order. |

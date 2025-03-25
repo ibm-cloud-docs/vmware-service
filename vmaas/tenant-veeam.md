@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-10"
+lastupdated: "2025-03-19"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -21,11 +21,11 @@ The Veeam® Backup service is available and ready to use in your {{site.data.key
 
 Service charges are incurred only if you choose to include the service in your order.
 
-For multitenant instances, you must install the Veeam service after you provision your virtual data center (VDC). For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
+For multitenant instances, you must install the Veeam Backup service after you provision your virtual data center (VDC). For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
 
 For single-tenant instances, the service is included by default in your {{site.data.keyword.vcf-aas-full}} Cloud Director site order. You can remove the service from your initial order and add the service to an existing single-tenant Cloud Director site.
 
-The Veeam service is configured with seven days of immutability by default. All backups are deleted after seven days. If more time is needed, open an IBM Support ticket to increase the number of days.
+The Veeam Backup service is configured with seven days of immutability by default. All backups are deleted after seven days. If more time is needed, open an IBM Support ticket to increase the number of days.
 {: note}
 
 ## Accessing the Veeam self-service portal
@@ -59,6 +59,8 @@ When you provision your instance, a total of two *shared* SOBRs, one for each da
 
 If you require more storage than the shared SOBRs offer, open an IBM Support ticket to order a new *dedicated* SOBR and request storage suitable to your backup infrastructure needs. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
+For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
+
 When the new dedicated SOBR is available, use the Veeam self-service portal to create backup jobs and identify which VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organization SOBR.
 
 You can restore or delete backups in the Veeam self-service portal. All backups are deleted if a virtual organization is deleted.
@@ -72,8 +74,6 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * All data that is stored in the {{site.data.keyword.cloud_notm}} Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
 * Veeam backups are encrypted when stored on both vSAN™ or {{site.data.keyword.cloud_notm}} Object Storage.
 * When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets. The immutability default expiration is 7 days plus up to 30 more days due to block generation. For more information, see [Block Generation](https://helpcenter.veeam.com/docs/backup/hyperv/object_storage_block_generation.html?ver=120){: external}
-
-For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 
 ## IBM policy for data protection with Veeam
 {: #tenant-veeam-policy}

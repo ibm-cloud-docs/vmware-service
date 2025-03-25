@@ -26,7 +26,7 @@ completion-time: 20m
 In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
 {: shortdesc}
 
-The completion time that is listed for this tutorial considers only the time that you spend ordering the artifacts for a {{site.data.keyword.vcf-aas}} instance on the user interface. It does not consider waiting times for deployments, for example.
+The completion time that is listed for this tutorial considers only the time that is spent on ordering the artifacts for a {{site.data.keyword.vcf-aas}} instance on the user interface. It does not consider waiting times for deployments, for example.
 {: note}
 
 ## Before you begin
@@ -83,22 +83,20 @@ For single-tenant instances, the following configurations are used to order a ne
 * Cloud Director site location (geography and region)
 * Resource pool name and location
 * Optional SAP-certified server profiles
-* Cluster name
-* Attached Network File Storage (NFS) performance tiers and amount of storage in each tier
-* Host profile and quantity
+* Cluster name and profile configuration:
+   * CPU type, including host profile and quantity
+   * Storage type for NFS-only or vSAN with optional NFS, including performance tiers and size
 * Public-only or private-only network settings
 * Add-on services
 
-After the dedicated Cloud Director site is in **Available** status, you create virtual data centers (VDCs) to deploy on the infrastructure.
-
-For multitenant instances, the following configurations are used to order a new VDC that deploys on an existing {{site.data.keyword.IBM_notm}} owned VMware cluster.
+After the dedicated Cloud Director site is in **Available** status, you create virtual data centers (VDCs) with the following configurations to deploy on the infrastructure.
 
 * VDC name and resource group
-* Pricing plan for on-demand or reserved resource allocation
-* VMware Cloud Director™ site location (region, Cloud Director instance, data center)
+* Resource pool location, stretched or nonstretched
 * Optional fast provisioning of virtual machines that use linked clones
-* Optional network edge types
-* vCPU and RAM limits
+* Optional network edge
+
+Multitenant VDCs include pricing plan configurations for either on-demand or reserved resource allocation instances, including vCPU and RAM limits.
 
 After you specify all configurations, validate the cost and submit the instance order.
 

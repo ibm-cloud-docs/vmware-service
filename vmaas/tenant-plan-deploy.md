@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-10"
+lastupdated: "2025-03-21"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -99,9 +99,9 @@ High availability is supported on a Cloud Director site region only when a Sapph
 | London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon1ST] |
 | London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon3ST] |
-| Madrid | Madrid 02 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Madrid | Madrid 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Madrid | Madrid 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 02 | [Yes]{: tag-green} | [Yes]{: tag-green}| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 04 | [Yes]{: tag-green} | [Yes]{: tag-green}| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Madrid | Madrid 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
@@ -355,7 +355,7 @@ You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloa
 ## Network edge
 {: #tenant-plan-deploy-nwedge}
 
-VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
+VDCs connect to the public and IBM private networks through high availability edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
 
 ### Network edge connection
 {: #tenant-plan-deploy-edge-connection}
