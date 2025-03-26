@@ -51,7 +51,7 @@ Intel Sapphire Rapids server availability
    * Dual Intel 8474C Xeon Platinum
 
 Software currency update
-:   This release provides the infrastructure upgrades for Veeam® Backup 12.3.
+:   This release provides the infrastructure upgrades for Veeam Backup 12.3.
 
 Enhanced log access
 :   Firewall logs are now available on the VMware Cloud Director™ tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
@@ -155,7 +155,7 @@ Software currency updates
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server® Appliance 8.0 Update 3b
-   * VMware NSX-T™ 4.2.0.2
+   * VMware NSX-T 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3
 
