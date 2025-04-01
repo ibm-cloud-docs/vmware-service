@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2024
-lastupdated: "2024-09-13"
+lastupdated: "2025-03-31"
 
 content-type: tutorial
 services: vmware-service
@@ -63,21 +63,21 @@ From your browser, open a tab for the *primary* single-tenant Cloud Director sit
    1. Return to the browser tab for the *primary* single-tenant site.
 1. Create the instance pairing for the *primary* site to the *disaster recovery* site. 
    1. From the **Instance endpoints and connections** section of the VCDA details page for the *primary* site, click the **{{site.data.keyword.vcf-aas}} pairings** tab. Then, click **Create pairing**.
-   1. On the **Create connection** panel, complete the following configuration.
+   1. On the **Create connection** pane, complete the following configuration.
       - For **Zones**, select the data center for the *primary* site VDC.
       - For **Peer geography** and **Peer region**, select the geography and region for the *disaster recovery* site.
       - For **Peer site name**, go to the **Instance endpoints and connections** section of the VCDA service details page for the *disaster recovery* site and complete the following steps.
       1. On the **Instance endpoints** tab, click the **Copy to clipboard** icon for the **Site name** for the instance to pair.
-      1. Return to the **Create connection** panel for the *primary* site and paste the disaster recovery site name in the **Peer site name** field.
+      1. Return to the **Create connection** pane for the *primary* site and paste the disaster recovery site name in the **Peer site name** field.
    1. Click **Create pairing**.
 1. Create the instance pairing for the *disaster recovery* site to the *primary* site.
    1. From the **Instance endpoints and connections** section of the VCDA details page for the *disaster recovery* site, click the **{{site.data.keyword.vcf-aas}} pairings** tab. Then, click **Create pairing**.
-   1. On the **Create connection** panel, complete the following configuration.
+   1. On the **Create connection** pane, complete the following configuration.
       - For **Zones**, select the data center for the *disaster recovery* site VDC.
       - For **Peer geography** and **Peer region**, select the geography and region for the *primary* site.
       - For **Peer site name**, go to the **Instance endpoints and connections** section of the VCDA service details page for the *primary* site and complete the following steps.
       1. On the **Instance endpoints** tab, click the **Copy to clipboard** icon for the **Site name** for the instance to pair.
-      1. Return to the **Create connection** panel for the *disaster recovery* site and paste the primary site name in the **Peer site name** field.
+      1. Return to the **Create connection** pane for the *disaster recovery* site and paste the primary site name in the **Peer site name** field.
    1. Click **Create pairing**.
 1. Return to the **Instance endpoints and connections** section of the VCDA details page for the *primary* site and click the **{{site.data.keyword.vcf-aas}} pairings** tab. The **Waiting for peer pairing** status is displayed for the new pairing.
 1. When the pairing status is **Available**, click **Open VCDA** to start the VMware Cloud Director VCDA console for the *primary* site.
@@ -135,6 +135,3 @@ From your browser, open a tab for the *primary* single-tenant Cloud Director sit
       1. For **Settings**, use the default options and click **NEXT**.
       1. For **Recovery instance**, select the replicated instance and click **NEXT**.
       1. Review the failover configuration and click **FINISH**. The data synchronizes and the recovery state displays **Failed-Back**. The workload in now back on the *primary* site.
-
-
-

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-03-31"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -28,7 +28,7 @@ The capacity is set to the current utilization if the VDC utilization exceeds th
 ## Procedure to add or delete capacity for {{site.data.keyword.vcf-aas}} VDCs
 {: #capacity-adding-deleting-proc}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the virtual data center name.
 3. In the consumption limit section of the **Summary** tab, click **Modify limit**.
 4. Click the toggle switch to either turn limits on or off.

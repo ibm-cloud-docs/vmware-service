@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-10"
+lastupdated: "2025-03-31"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -78,7 +78,7 @@ When you deploy a new resource pool, a cluster is created. Cluster configuration
 Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
 {: requirement}
 
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab, then click **Add resource pool**.
 4. In the **Add resource pool** pane, specify the settings for the new resource pool.

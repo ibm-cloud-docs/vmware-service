@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-28"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -147,7 +147,7 @@ Stretched resource pools are available only on some multitenant Cloud Director s
    * For reserved, select the vCPU and RAM capacity reservation for the VDC. The CPU and RAM are reserved for exclusive use by the VDC and are metered monthly for the full reservation.
 10. Review the cost, accept the terms, and click **Create** to submit the VDC order.
 
-For multitenant instances, install the Veeam service after you provision your VDC. For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
+For multitenant instances, install the Veeam® Backup service after you provision your VDC. For more information, see [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting).
 {: note}
 
 ## Results after you create virtual data centers

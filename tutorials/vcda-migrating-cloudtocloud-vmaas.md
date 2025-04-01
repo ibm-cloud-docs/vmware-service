@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-10-10"
+  years: 2023, 2025
+lastupdated: "2025-03-31"
 
 content-type: tutorial
 services: vmware-service
@@ -60,7 +60,7 @@ This tutorial requires:
    1. For **Administrator notes**, you can enter notes to provide more information for the pairing. The maximum length is 200 characters and the % & < > " ' / characters are not supported.
 
 1. Click **Create pairing**. The **Creating** status is displayed. When the **Waiting for peer pairing status** is displayed, repeat the previous steps to complete the pairing connection with the Cloud Director site to pair.
-1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation pane.
+1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 1. In the **{{site.data.keyword.vmware-service_short}}** table, click the **Cloud Director site** tab, then click a single-tenant instance name to pair with the first pairing.
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
@@ -91,7 +91,7 @@ The following pairing status options are available.
 
 2. From the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
 2. Click **More > Availability ``datacenter_name``**. For example, *Availability (sdirw360t04vcda)*.
-2. From the left panel, click **Incoming Replications**.
+2. From the left navigation panel, click **Incoming Replications**.
 2. From the **Incoming Replications** page, click **ALL ACTIONS > New migration**.
 2. Provide the login credentials for the peer site and click **LOGIN**.
 

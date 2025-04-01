@@ -70,7 +70,7 @@ Customer keys (BYOK) are not initially supported. {{site.data.keyword.vcf-aas}} 
 
 Client metadata is associated with the VMware instances that the client creates. When the VMware instance is deleted by the client that the metadata is maintained in the DB where the instance state is set to deleted. Client metadata is maintained in the DB unless the client specifically requests that the data is removed by using a support ticket.
 
-Logs and support data that is associated with the instance are retained by {{site.data.keyword.cloud_notm}} policy for 1 year unless requested for deletion through an IBM Support ticket.
+Logs and support data that is associated with the instance are retained by {{site.data.keyword.cloud_notm}} policy for 1 year unless requested for deletion through an {{site.data.keyword.cloud_notm}} ticket.
 
 ### Deleting {{site.data.keyword.vcf-aas}} customer data
 {: #vmaas-data-security-data-delete-cust-data}

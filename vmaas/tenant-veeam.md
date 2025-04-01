@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-19"
+lastupdated: "2025-03-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -55,9 +55,9 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 
 Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific  {{site.data.keyword.cloud_notm}} Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the {{site.data.keyword.cloud_notm}} Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
-When you provision your instance, a total of two *shared* SOBRs, one for each data center location, are available. The size of each shared SOBR is a maximum of 100 TB.
+When you provision your Cloud Director site instance, a total of two *shared* SOBRs, one for each data center location, are available. You receive one vSAN™ and {{site.data.keyword.cloud_notm}} Object Storage bucket and one {{site.data.keyword.cloud_notm}} Object Storage only bucket. Each shared SOBR is a maximum of 100 TB and cannot be deleted.
 
-If you require more storage than the shared SOBRs offer, open an IBM Support ticket to order a new *dedicated* SOBR and request storage suitable to your backup infrastructure needs. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+If you require more storage than the shared SOBRs offer, you can order a new *dedicated* SOBR to request storage suitable to your backup infrastructure needs. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 
@@ -72,7 +72,7 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * You can scale multiple dedicated SOBRs based on your backup capacity requirements.
 * Each SOBR receives repository VMs, data movers, and cross-region {{site.data.keyword.cloud_notm}} Object Storage buckets.
 * All data that is stored in the {{site.data.keyword.cloud_notm}} Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
-* Veeam backups are encrypted when stored on both vSAN™ or {{site.data.keyword.cloud_notm}} Object Storage.
+* Veeam backups are encrypted when stored on both vSAN or {{site.data.keyword.cloud_notm}} Object Storage.
 * When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets. The immutability default expiration is 7 days plus up to 30 more days due to block generation. For more information, see [Block Generation](https://helpcenter.veeam.com/docs/backup/hyperv/object_storage_block_generation.html?ver=120){: external}
 
 ## IBM policy for data protection with Veeam

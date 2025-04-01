@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-10-25"
+  years: 2023, 2025
+lastupdated: "2025-03-31"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -275,7 +275,7 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
 {: #vmwaas-ipsec-tunnel-console}
 
 1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
-2. In the left navigation, click **Networking**.
+2. From the left navigation panel, click **Networking**.
 3. Under **Edge Gateways**, select the `name` of your Edge Gateway.
 
    ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="{{site.data.keyword.vcf-aas}} VDC Edge Gateway Selection" caption-side="bottom"}
@@ -302,7 +302,7 @@ The {{site.data.keyword.vcf-aas}} tenant instance is provisioned with a default 
 
 You must add two extra rules to allow traffic to and from the VPN connection.
 
-1. With the Edge Gateway selected, click **Firewall** in the left navigation.
+1. With the Edge Gateway selected, click **Firewall** from the left navigation panel.
 2. Click **Edit Rules** and click **New on Top**.
 3. Repeat for each rule then click **Save**.
 
@@ -320,7 +320,7 @@ You must add two extra rules to allow traffic to and from the VPN connection.
 
 The next step is to create the IPSec VPN tunnel between our Local and Remote Endpoint.
 
-1. With the Edge Gateway selected, click **IPSec VPN** in the left navigation.
+1. With the Edge Gateway selected, click **IPSec VPN** from the left navigation panel.
 2. Click **New** to start the wizard.
 3. Under **General Settings**, populate the **Name** field, for example, `VMWaaS-to-FW-VPN` and click **Next**.
 4. Under **Peer Authentication mode**, populate the pre-shared key. This key must match the firewall. Click **Next**.
@@ -348,7 +348,7 @@ You can test the connection on the user interface (UI) or the classic way throug
 ### Validate your IPsec tunnel and connectivity on the UI
 {: #vmwaas-ipsec-tunnel-connectivity-ui}
 
-1. With the Edge Gateway selected, click **IPSec VPN** in the left navigation.
+1. With the Edge Gateway selected, click **IPSec VPN** from the left navigation panel.
 2. In the list, select your VPN Configured.
 3. By the Column **State**, find the state of the tunnel.
 4. Check it in detail by clicking **View Statistics**.
@@ -358,7 +358,7 @@ You can test the connection on the user interface (UI) or the classic way throug
 
 If the tunnel is not working, you can check it by:
 
-1. With the Edge Gateway selected, click **IPSec VPN** in the left navigation.
+1. With the Edge Gateway selected, click **IPSec VPN** from the left navigation panel.
 2. In the list, select your VPN Configured.
 3. Check it in detail by clicking **Security Profile Customization**.
 4. Change the specific details about **IKE profile details**, **Tunnel Configuration**, or **DPD Configuration**.
@@ -367,7 +367,7 @@ If the tunnel is not working, you can check it by:
 
 If your settings are correct and you click **Save**, then your tunnel is working and you can check it with the same steps as before, with the only change that the **Status** column should be green, and **View Statistics** should show also green.
 
-1. With the Edge Gateway selected, click **IPSec VPN** in the left navigation.
+1. With the Edge Gateway selected, click **IPSec VPN** from the left navigation panel.
 2. In the list, select your VPN Configured.
 3. By the Column **State**, if it says **Enabled** and it's green, then it is working.
 4. Check it in detail by clicking **View Statistics**.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-03-28"
 
 subcollection: vmware-service
 
@@ -19,21 +19,21 @@ keywords: public isolation for vmware service, compute isolation for vmware serv
 
 The {{site.data.keyword.vmware-service_full}} architecture is based on the following logical entities that are created per supported cloud region.
 
-* Management domain - Hosts the {{site.data.keyword.IBM}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
+* Management domain - Hosts the {{site.data.keyword.IBM_notm}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
 * Customer workload domain - Hosts single-tenant and multitenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer-deployed networking and workloads.
 
 ![{{site.data.keyword.vcf-aas}} region](../images/multi-vs-single-tenant.svg){: caption="{{site.data.keyword.vcf-aas}} region" caption-side="bottom"}
 
 The architecture details the {{site.data.keyword.vcf-aas-full}} solution components and different architecture layers to provide an isolated and private implementation for customers. The architecture provides customizable deployment choices of infrastructure and VMware Cloud Director™ based virtual data center environments.
 
-With single tenant and multitenant Cloud Director instances and its virtual data center instances, customers can migrate or deploy VMware workloads to the cloud on the IBM-hosted and managed VMware infrastructure. Customer workloads that consist of networking configurations and VMs are separated to isolated and virtualized infrastructure.
+With single-tenant and multitenant Cloud Director instances and its virtual data center instances, customers can migrate or deploy VMware workloads to the cloud on the IBM-hosted and managed VMware infrastructure. Customer workloads that consist of networking configurations and VMs are separated to isolated and virtualized infrastructure.
 
 ## {{site.data.keyword.vcf-aas}} management domain architecture
 {: #architecture-workload-isolation-mgmt}
 
 The management domain contains the components for managing the virtual infrastructure of the workload domains in {{site.data.keyword.vcf-aas}}. The management domain also provides the foundation for deploying solutions for workload provisioning and operations management.
 
-The management domain consists of tools to support the virtual infrastructure, cloud operations, cloud automation, business continuity, and security and compliance components for {{site.data.keyword.vcf-aas}}. {{site.data.keyword.vcf-aas}} allocates separate workload domains per customer instance for the single-tenant service and uses Cloud Director organizational isolation for multitenant customers within a single workload domain. Each workload domain is managed by a separate vCenter Server instance and a dedicated NSX-T Manager cluster for scalability. The vCenter Server and VMware NSX-T™ Manager components for these workload domains run in the management domain.
+The management domain consists of tools to support the virtual infrastructure, cloud operations, cloud automation, business continuity, and security and compliance components for {{site.data.keyword.vcf-aas}}. {{site.data.keyword.vcf-aas}} allocates separate workload domains per customer instance for the single-tenant service and uses Cloud Director organizational isolation for multitenant customers within a single workload domain. Each workload domain is managed by a separate vCenter Server instance and a dedicated NSX-T™ Manager cluster for scalability. The vCenter Server and VMware NSX-T Manager components for these workload domains run in the management domain.
 
 The management domain runs all management components in the {{site.data.keyword.vcf-aas}} offering for both the management domain and workload domains, except for workload NSX-T Edge nodes. {{site.data.keyword.vcf-aas}} starts with an initial management domain configuration that is extended with each workload domain deployment.
 
@@ -44,21 +44,21 @@ A workload domain represents a logical unit that groups VMware ESXi™ hosts man
 
 The following types of workload domains exist:
 
-* Single-tenant workload domain, which is fully dedicated to a single IBM Cloud customer account. The infrastructure and management components are both fully dedicated.
+* Single-tenant workload domain, which is fully dedicated to a single {{site.data.keyword.cloud_notm}} customer account. The infrastructure and management components are both fully dedicated.
 * Multitenant workload domain, which consists of infrastructure and management components that are used by many customers. Each customers VMware environment is fully isolated through Cloud Director organizations.
 
 Each workload domain contains the following components that are installed in the management domain:
 
 * NSX-T segment to isolate the management components
 * One VMware vCenter Server® instance
-* One NSX-T Data Center instance
+* One NSX-T data center instance
 * One VMware Cloud Director instance
 
 Offloading customer workload instance management components into the management domain makes IaaS resources available in the workload domain for running customer workloads.
 
 The following components are installed in the workload domain:
 
-* At least one VMware vSphere® cluster with vSphere HA with single tenant ESXi bare metal servers, networking and shared storage
+* At least one VMware vSphere® cluster with vSphere HA with single-tenant ESXi bare metal servers, networking and shared storage
 * Optionally, one NSX-T Edge cluster that connects the workloads in the domain for logical switching, logical dynamic routing, and load balancing
 
 The customer workload domain is reserved for use by customer workloads except for NSX-T Edge clusters used for North-South networking traffic.
@@ -71,7 +71,7 @@ The customer workload domain is reserved for use by customer workloads except fo
 | Name | Description | Boundary |
 |:---- |:----------- |:-------- |
 | Management plane | {{site.data.keyword.vcf-aas}} operational management components | Management plane resources exist in {{site.data.keyword.cloud_notm}} classic IaaS regions. Operational interfaces used to access the management domain are protected by networking appliance firewalls and the use of bastion hosts by the operations team. Management component connectivity to the workload plane takes place through networking appliances. Public connectivity to all customer public service interfaces is protected through Akamai security. Customers access VMware Cloud Director and associated service portals by using the web UI through the Akamai security layer from the public network. These interfaces are restricted and do not enable customers to transit further through the management plane network. |
-| Workload plane | VMware Cloud Director Virtual Data Centers consisting of vApps, virtual machines (VM), and virtual networks | Operations management interfaces into the workload plane are protected by networking appliance firewalls and bastion hosts. Customer workloads are allowed by VMware Cloud Director to attach only to restricted, separate NSX-T virtualized networks that are running as overlays on the classic IaaS network. Therefore, customer VMs do not have broad access to the Workload Plane management and storage networks. Customer network access is restricted by NSX-T edge appliances. Customer workload connectivity to public takes place through NSX-T edge routers that are managed by the customer through a restricted VMware Cloud Director interface. Customer workload connectivity to private takes place through IBM-managed NSX-T edge routers that are configured to limit connectivity to well-known {{site.data.keyword.cloud_notm}} private services. |
+| Workload plane | VMware Cloud Director Virtual Data Centers consisting of vApps, virtual machines (VM), and virtual networks | Operations management interfaces into the workload plane are protected by networking appliance firewalls and bastion hosts. Customer workloads are allowed by VMware Cloud Director to attach only to restricted, separate NSX-T virtualized networks that are running as overlays on the classic IaaS network. Therefore, customer VMs do not have broad access to the Workload Plane management and storage networks. Customer network access is restricted by NSX-T edge appliances. Customer workload connectivity to the public takes place through NSX-T edge routers that are managed by the customer through a restricted VMware Cloud Director interface. Customer workload connectivity to private takes place through IBM-managed NSX-T edge routers that are configured to limit connectivity to well-known {{site.data.keyword.cloud_notm}} private services. |
 {: caption="Description and boundaries for the management and workload planes" caption-side="bottom"}
 
 ### Data protection

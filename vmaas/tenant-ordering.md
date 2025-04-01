@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-28"
+lastupdated: "2025-03-28"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -85,7 +85,7 @@ Some host profiles might not be available for a selected location. Contact your 
        1. Select either public-only or private-only networking.
        2. For private-only, click **Add new +** and enter the subnet value. Then, click the **Save** icon. Repeat for all of the subnets that you want to add.
     * For workload connectivity, select either public and private networking or private-only networking.
-8. Review the add-on service options to deploy the Veeam® Backup and Replication service and the VMware Cloud Director Availability service. Toggle the service off if you do not want to include it in your order.
+8. Review the add-on service options to deploy the Veeam® Backup service and the VMware Cloud Director Availability service. Toggle the service off if you do not want to include it in your order.
 8. In the **Summary** panel, review the instance settings and the estimated price.
 7. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 

@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-02-07"
+lastupdated: "2025-03-31"
 
 content-type: tutorial
 services: vmware-service
@@ -59,7 +59,7 @@ To create a local username and password in VMware Cloud Director, complete the f
 
 1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
 2. In the navigation bar, click **Administration**.
-3. In the left pane, under **Access Control**, click **Users**.
+3. In the left navigation panel, under **Access Control**, click **Users**.
 4. Next to the list of users, click **New**.
 5. Enter a username and password for the user. The minimum password length is 6 characters.
 6. From the list of predefined roles, select the `Organization Administrator` role to assign to the user.

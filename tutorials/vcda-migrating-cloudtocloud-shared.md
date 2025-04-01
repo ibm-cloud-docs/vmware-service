@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-17"
+lastupdated: "2025-03-31"
 
 content-type: tutorial
 services: vmware-service
@@ -84,7 +84,7 @@ This tutorial requires:
 
 1. From the VMware Solutions console, go to the {{site.data.keyword.vmware-service_short}} instance with VCDA installed and click **VMware console**.
 2. From the VMware console, click **More > Availability ``datacenter_name``**. For example, *Availability (sdirw360t04vcda)*.
-3. From the left panel, click **Peer Sites** to review the VMware Shared peer site options.
+3. From the left navigation panel, click **Peer Sites** to review the VMware Shared peer site options.
 4. Select the peer site for the VMware Shared workload to migrate and click **LOGIN**. The peer site name is the VMware Shared organization. To find the VMware Shared organization name, log in to the Cloud Director user interface in VMware Shared and click a VDC. At the top of the web page, you can find the organization ID.
 5. Provide the following login credentials for the peer site and click **LOGIN**.
    * For **Username**, use the local user ID that you created in the VMware console for the VMware Shared pairing.
