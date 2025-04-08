@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-10"
+lastupdated: "2025-04-01"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -37,5 +37,5 @@ If you still can't resolve the problem, you can open a support case. For more in
    1. Enter a subject for your issue.
    2. Describe your issue in detail, such as the error messages, steps to re-create, and the URL that you are accessing.
    3. Under **Add attachments**, upload screen captures of the issue.
-   4. If you want to be notified of updates on the issue, select the **Email me updates about this case** checkbox.
+   4. If you want to be notified of updates for the issue, select the **Email me updates about this case** checkbox.
 6. Click **Submit**.

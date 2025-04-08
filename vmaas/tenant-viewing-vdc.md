@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-12"
+lastupdated: "2025-04-04"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -22,7 +22,7 @@ View the summary and detailed information of the {{site.data.keyword.vmware-serv
 
 When you no longer need them, you can delete the VDCs that are provisioned in your account.
 
-Click the **Switch view mode** icon on the **Create** panel to open the original resource list summary view.
+Click the **Switch view mode** icon in the **Create** panel to open the original resource list summary view.
 {: note}
 
 ## Procedure to view a summary of virtual data centers
@@ -36,7 +36,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Name | The name of the VDC. |
    | Status | The status of the provisioned VDC. |
    | Regional high availability | Identifies the type of high availability for the VDC, if any. |
-   | Location | The data center where the VDC is deployed. |
+   | Location | The data center where the VDC is deployed. For regional high availability VDCs, the primary and secondary data centers are displayed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
    {: caption="Virtual data center summary" caption-side="bottom"}
@@ -50,6 +50,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Item | Description |
    |:---- |:----------- |
    | Cloud Director instance | The name of the site where the VDC is deployed. Click **View** to access site details. |
+   | Network location | The primary and secondary network location where the VDC is deployed for a highly available network edge. Click **Swap primary and secondary**  to change the locations. |
    | Name | The name of the VDC. |
    | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the VDC is deployed. |
@@ -72,6 +73,7 @@ Click the **Switch view mode** icon on the **Create** panel to open the original
    | Consumption limit | The current vCPU and RAM consumption limits. Click **Modify limit** to turn consumption limits on or off, and to increase or decrease limits. |
    | Pricing plan | The pricing plan for the virtual data center. Pricing plans are either on-demand or reserved. |
    | Cloud Director instance | The name of the instance where the VDC is deployed. Click **View site** to access site details. |
+   | Network location | The primary and secondary network location where the VDC is deployed for a highly available network edge. Click **Swap primary and secondary**  to change the locations. |
    | Name | The name of the VDC. |
    | Resource group | The resource grouping for user access to assignments in the Cloud user account. |
    | Region | The region where the VDC is deployed. |
@@ -107,7 +109,7 @@ Click **VMware console** to create and manage networking and workloads. For more
 {: #tenant-viewing-vdc-delete}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-2. On the **Virtual data center** table, click the VDC name that you want to delete.
+2. In the **Virtual data center** table, click the VDC name that you want to delete.
 3. Click the **Actions** menu, and then click **Delete instance**.
 4. Confirm that you want to delete the instance.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-03-26"
+lastupdated: "2025-04-04"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -42,7 +42,7 @@ You can access the Veeam portal from the **Add-on services** tab of the VDC inst
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site or virtual data center name.
-3. Click the **Add-on services** tab on the instance details page, then click **Veeam backups**.
+3. Click the **Add-on services** tab in the instance details page, then click **Veeam backups**.
 4. Use a user with the Organization Administrator role to log in to the Veeam self-service portal.
 
 Alternatively, click the **More** menu in the VMware Cloud Director tenant portal and select **Data Protection with Veeam**.
@@ -53,11 +53,16 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 ## Backup data storage and encryption
 {: #tenant-veeam-storage}
 
-Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific  {{site.data.keyword.cloud_notm}} Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the {{site.data.keyword.cloud_notm}} Object Storage buckets remain in the same country, which is sometimes the same physical site.
+Veeam Backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in either **Dallas 12** or **Dallas 13** depending on which one has more storage when the Veeam service was added. The SOBR includes a customer-specific immutable {{site.data.keyword.cloud_notm}} Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the {{site.data.keyword.cloud_notm}} Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
 When you provision your Cloud Director site instance, a total of two *shared* SOBRs, one for each data center location, are available. You receive one vSAN™ and {{site.data.keyword.cloud_notm}} Object Storage bucket and one {{site.data.keyword.cloud_notm}} Object Storage only bucket. Each shared SOBR is a maximum of 100 TB and cannot be deleted.
 
 If you require more storage than the shared SOBRs offer, you can order a new *dedicated* SOBR to request storage suitable to your backup infrastructure needs. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+
+Immutable {{site.data.keyword.cloud_notm}} Object Storage is available by default for shared and dedicated SOBRs.
+
+Default and dedicated SOBRs before the March 2025 release do not have {{site.data.keyword.cloud_notm}} Object Storage immutability. To receive {{site.data.keyword.cloud_notm}} Object Storage immutability for existing instances, order a new dedicated SOBR to back up your VMs.
+{: note}
 
 For more information, see [What is IBM Cloud Object Storage?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 

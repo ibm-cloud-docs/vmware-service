@@ -94,7 +94,7 @@ After the dedicated Cloud Director site is in **Available** status, you create v
 * VDC name and resource group
 * Resource pool location, stretched or nonstretched
 * Optional fast provisioning of virtual machines that use linked clones
-* Optional network edge
+* Optional network edge with or without regional high availability
 
 Multitenant VDCs include pricing plan configurations for either on-demand or reserved resource allocation instances, including vCPU and RAM limits.
 

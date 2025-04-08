@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 
 content-type: tutorial
 services: vmware-service
@@ -47,12 +47,12 @@ This tutorial requires:
 
 
 
-1. From the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant source instance. For more information, see [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc). {: #step-1}
+1. In the VMware Solutions console, install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant source instance. For more information, see [Adding and deleting VCDA](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting#vcda-adding-deleting-add-proc). {: #step-1}
 1. Install VCDA on a {{site.data.keyword.vcf-aas}} single-tenant destination instance.
 1. Go to the source instance details page where you installed VCDA and click the **Add-on services** tab.
 1. Click the **{{site.data.keyword.vcf-aas}} pairings** tab and click **Create pairing**.
 
-1. On the **Create connection** panel, complete the following configuration.
+1. In the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **Instance endpoints** tab. Click the **Copy to clipboard** icon for the **Site name** for the instance to pair. Paste the site name in the **Create connection** configuration.
@@ -65,7 +65,7 @@ This tutorial requires:
 1. Click the **Add-on services** tab, then expand the **VMware Cloud Director Availability** service.
 1. On the **{{site.data.keyword.vcf-aas}} pairings** tab, click **Create pairing**.
 
-1. On the **Create connection** panel, complete the following configuration.
+1. In the **Create connection** panel, complete the following configuration.
    1. For **Zones**, the default zone of the resource pool is displayed. If the instance has multiple PVDCs belonging to different zones, all the zones are displayed. Select the zone pairing.
    1. For **Peer geography**, the geography where the peer site is installed is displayed.
    1. For **Peer site name**, return to the VMware Cloud Director Availability details page and click the **{{site.data.keyword.vcf-aas}} pairings** tab. Click the **Copy to clipboard** icon for the **Peer site name** that you created for the first pairing. Paste the site name in the **Create connection** configuration.
@@ -89,15 +89,15 @@ The following pairing status options are available.
 
 
 
-2. From the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
+2. In the VMware Solutions console, go to the instance where you created the pairing and click **VMware console**. {: #step-2}
 2. Click **More > Availability ``datacenter_name``**. For example, *Availability (sdirw360t04vcda)*.
 2. From the left navigation panel, click **Incoming Replications**.
-2. From the **Incoming Replications** page, click **ALL ACTIONS > New migration**.
+2. On the **Incoming Replications** page, click **ALL ACTIONS > New migration**.
 2. Provide the login credentials for the peer site and click **LOGIN**.
 
 2. Select the following options in the **New Incoming Migration** window.
    * For **Source VMs and vApps**:
-      2. From the **SELECT SITE** menu, select the name of the paired instance. The source VM for migration is displayed.
+      2. In the **SELECT SITE** menu, select the name of the paired instance. The source VM for migration is displayed.
       2. If the source VM is a multitenant instance, select the source organization ID from the **Source organization** menu.
       2. Select the VM to migrate and click **NEXT**.
    * For **Destination VDC and Storage policy**:

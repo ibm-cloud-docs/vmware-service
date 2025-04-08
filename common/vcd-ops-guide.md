@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -113,7 +113,7 @@ After you deploy the VM on the tenant portal, register the Red Hat VM with your 
 Complete the following steps to register the Red Hat VM with your RHEL activation key.
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
-1. From the **Virtual data centers** tab, locate and click the **Cloud Director instance** name.
+1. On the **Virtual data centers** tab, locate and click the **Cloud Director instance** name.
 2. On the **Summary** tab, locate the **Red Hat activation key** in the **Site details** panel and click the **Copy to clipboard** icon.
 3. Run the following commands from the Red Hat VM.
      1. `uuid=$(uuidgen)`
@@ -201,13 +201,13 @@ For more information, see [Edit the guest properties of a virtual machine](https
 ### Using IBM templates
 {: #vcd-ops-guide-ibm-templates}
 
-Password requirements apply if the VM is deployed from the IBM templates that are provided in the public catalog. You must use the initial password that was generated during power-on when you first log in to the VM. You can find this password in the VM details page.
+Password requirements apply if the VM is deployed from the IBM templates that are provided in the public catalog. You must use the initial password that was generated during power-on when you first log in to the VM. You can find this password on the VM details page.
 
 If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
 
-1. From the **Guest OS Customization** panel, click **EDIT**.
-2. From the **Edit Guest Properties** panel, locate the password in the **Specify password** field.
+1. In the **Guest OS Customization** panel, click **EDIT**.
+2. In the **Edit Guest Properties** panel, locate the password in the **Specify password** field.
 3. After a successful login with the initial password, return to the **Edit Guest Properties** panel to reset the password and log in again with the new password.
 
 ## vApps
@@ -257,9 +257,9 @@ Consider the following firewall rule examples to *Allow* VMware Cloud Director n
 If not already completed, create a vApp containing at least two VMs before you complete the following procedure. For more information, see [Working with vApps in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant.html){: external}.
 {: requirement}
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to create the vApp network.
-3. From the **Compute** section of the left navigation panel, click **vApps**.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to create the vApp network.
+3. In the **Compute** section of the left navigation panel, click **vApps**.
 4. Click the vApp that you want to add a vApp network to.
 5. Click the **Networks** tab, and click **NEW** in the **vApp Fencing** section.
 6. In the **Add Network to** panel, select **OrgVDC Network** and select the network name.
@@ -275,13 +275,13 @@ Every {{site.data.keyword.vcf-aas}} VDC with a public edge is provided with eigh
 You must complete these steps as a user who has the **Manage Manual IP Reservation** permission. IBM default roles **Manager**, **Administrator**, **Director Network Admin**, and **Director Security Admin** all have this permission.
 {: requirement}
 
-1. From the left navigation panel of the tenant portal, click **Networking**.
+1. In the tenant portal, click **Networking** from the left navigation panel.
 2. At the top of the right panel, select **IP Spaces**.
 3. Click the IP space name that's associated with the VDC's edge. If you have multiple VDCs with a public edge, you can identify which IP space name is associated to the edge when the first three characters of the IP Space name match the data center that the VDC is created in. For example, **t04** matches tokyo04.
 
-   You can also use the **V00** value in the name, if needed. Under **Configuration** in the **Edge Gateway** details page, click **General**. The **Provider Gateway** name has a **VRF000** value. Use the number in that value, for example **vfr015**. In this example, use the pattern **t04-xxx-V15-xxx** to locate the correct IP Space entry.
+   You can also use the **V00** value in the name, if needed. Under **Configuration** on the **Edge Gateway** details page, click **General**. The **Provider Gateway** name has a **VRF000** value. Use the number in that value, for example **vfr015**. In this example, use the pattern **t04-xxx-V15-xxx** to locate the correct IP Space entry.
 
-4. From the **Allocation** section in the **IP Spaces** details page, select **Floating IPs**.
+4. In the **Allocation** section on the **IP Spaces** details page, select **Floating IPs**.
 5. At the top of the table, click **REQUEST**.
 6. Each VDC is assigned eight public IP addresses. The request dialog supports a maximum of five IPs per request operation. To ensure that all eight IP addresses are allocated, first request five IPs, then repeat the request for the remaining three IPs.
 
@@ -297,10 +297,10 @@ The following steps outline a validated process. Many different configurations w
 
 Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to create a route-based IPsec VPN.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to create a route-based IPsec VPN.
 3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-4. From the **Services** section, click **IPSec VPN**.
+4. In the **Services** section, click **IPSec VPN**.
 5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
    1. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
@@ -325,13 +325,13 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
       {: caption="Tunnel interface examples" caption-side="bottom"}
 
    4. Review the settings for accuracy and click **FINISH**.
-6. From the **Routing** section in the left navigation panel, click **Static Routes**.
+6. In the **Routing** section from the left navigation panel, click **Static Routes**.
 7. Click **NEW** and complete the following fields for the new static route.
-   1. For the **General** tab, complete the following selections.
+   1. On the **General** tab, complete the following selections.
       * For **Name** and **Description**, provide details that help to describe the static route.
       * For **Network**, enter the remote network that the VPN is connecting with. For example, `192.168.47.0/24`.
       * Ensure that the **Route Advertised** field is toggled off.
-   2. For the **Next Hops** tab, complete the following selections.
+   2. On the **Next Hops** tab, complete the following selections.
       * For **IP Address**, enter the tunnel IP address of the remote tunnel. For example, `169.254.101.1`.
       * For **Admin Distance**, enter *1*.
       * For **Scope**, leave the field empty.
@@ -350,7 +350,7 @@ The following steps outline a validated process. Many different configurations w
 ##### Step 1: Creating an IP Space
 {: #vcd-ops-guide-routebased-ipsec-vpn-provider-step1}
 
-1. From the left navigation panel of the tenant portal, click **Networking**.
+1. In the tenant portal, click **Networking** from the left navigation panel.
 2. At the top of the right panel, select **IP Spaces**.
 3. Click **New** at the top of the IP Spaces table.
    1. For **General**, complete the following selections and click **NEXT**.
@@ -368,14 +368,14 @@ The following steps outline a validated process. Many different configurations w
 ##### Step 2: Creating the Provider Gateway IPsec VPN
 {: #vcd-ops-guide-routebased-ipsec-vpn-provider-step2}
 
-1. From the left navigation panel of the tenant portal, click **Networking**.
+1. In the tenant portal, click **Networking** from the left navigation panel.
 2. At the top of the right panel, select **Provider Gateways**.
 3. Click the provider gateway that is associated with te VDC. If you have multiple VDCs, complete the following steps to identify the correct provider gateway.
-   1. From the left navigation panel of the tenant portal, click **Data Centers**.
-   2. From the **Virtual Data Center** details page, click the VDC where you want to create a provider gateway IPsec VPN.
+   1. In the tenant portal, click **Data Centers** from the left navigation panel.
+   2. On the **Virtual Data Center** details page, click the VDC where you want to create a provider gateway IPsec VPN.
    3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-   4. Under **Configuration** in the **Edge Gateway** details page, click **General**. Locate the **Provider Gateway** name.
-4. From the **Services** section, select **IPSec VPN**.
+   4. Under **Configuration** on the **Edge Gateway** details page, click **General**. Locate the **Provider Gateway** name.
+4. In the **Services** section, select **IPSec VPN**.
 5. Above the **IPSec VPN** table, click **AUTOCONFIGURE**.
    * For **Name**, enter a description for the VPN.
    * For **IP Space**, select the previously created IP Space entry from the dropdown menu.
@@ -395,10 +395,10 @@ The following steps outline a validated process. Many different configurations w
 
 Before you begin, ensure that any edge public egress rules don't use `Any` for the **Internal IP** value. The rules must specify a CIDR of the internal VDC network that supports SNAT egress.
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to create a policy-based IPsec VPN.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to create a policy-based IPsec VPN.
 3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-4. From the **Services** section, click **IPSec VPN**.
+4. In the **Services** section, click **IPSec VPN**.
 5. Click **NEW** and complete the following fields for the IPsec VPN tunnel.
    1. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
@@ -427,10 +427,10 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 ##### Procedure to configure the L2 VPN server
 {: #vcd-ops-guide-l2vpn-vmaas-config-server}
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to create a L2 VPN.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to create a L2 VPN.
 3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-4. From the **Services** section, click **L2 VPN**.
+4. In the **Services** section, click **L2 VPN**.
 5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
    1. For **Choose Session Mode**, set the session mode to **Server** for the L2 VPN. You set the other side to **Client** in the procedure to configure the L2 VPN client.
    2. For **General Settings**, complete the following selections and click **NEXT**.
@@ -456,17 +456,17 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 ##### Procedure to configure the L2 VPN client
 {: #vcd-ops-guide-l2vpn-vmaas-config-client}
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to create the L2 VPN.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to create the L2 VPN.
 3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-4. From the **Services** section, click **L2 VPN**.
+4. In the **Services** section, click **L2 VPN**.
 5. Click **NEW** and complete the following fields for the L2 VPN tunnel.
    1. For **Choose Session Mode**, set the session mode to **Client** for the L2 VPN. The other side is **Server**.
    2. For **General Settings**, complete the following selections and click **NEXT**.
       * For **Name** and **Description**, provide details that help to describe the VPN.
       * For **Peer Code**, use the value from the server side of the L2 VPN. If the server side is a Director VDC, complete the following steps from the VDC that is the server-side of the L2 VPN.
         1. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-        2. From the **Services** section, select **L2 VPN** and select the L2 VPN Server from the list.
+        2. In the **Services** section, select **L2 VPN** and select the L2 VPN Server from the list.
         3. Above the table, click **Copy peer code**.
         4. Paste the peer code value in the client L2 VPN **Peer Code* input** field.
         5. For **State**, toggle to enable.
@@ -487,10 +487,10 @@ Before you begin, ensure that any edge public egress rules don't use `Any` for t
 
 You can use the tenant portal to view firewall logs to troubleshoot your edge gateway environment.
 
-1. From the left navigation panel of the tenant portal, click **Data Centers**.
-2. From the **Virtual Data Center** details page, click the VDC where you want to view the firewall logs.
+1. In the tenant portal, click **Data Centers** from the left navigation panel.
+2. On the **Virtual Data Center** details page, click the VDC where you want to view the firewall logs.
 3. From the left navigation panel of the VDC, expand **Networking** and click **Edges**.
-4. From the **Services** section, click **Firewall**.
+4. In the **Services** section, click **Firewall**.
 5. Click the **Logs** tab to view firewall log details.
 
 ## Using services in the VMware Cloud Director tenant portal

@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-12-11"
+lastupdated: "2025-04-04"
 
 keywords: HA for vmware service, high availability for vmware service
 
@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 For more information about responsibility ownership for using {{site.data.keyword.cloud}} products between {{site.data.keyword.IBM}} and the customer, see [Shared responsibilities for using {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 
-For more information about your responsibilities when using {{site.data.keyword.vcf-aas-full}}, see [Understanding your responsibilities when using {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
+For more information about your responsibilities, see [Understanding your responsibilities when using {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-understand-responsib).
 
 ## What level of availability do I need?
 {: #ha-level}
@@ -34,7 +34,7 @@ You can achieve high availability on different levels in your IT infrastructure 
 ## What level of availability does {{site.data.keyword.cloud_notm}} offer?
 {: #ha-service}
 
-Service level objectives (SLOs) describe the design points that the {{site.data.keyword.cloud_notm}} services are engineered to meet. {{site.data.keyword.vcf-aas}} is designed to achieve the following availability target.
+Service level objectives (SLOs) describe the design points that the {{site.data.keyword.cloud_notm}} services are engineered to meet. {{site.data.keyword.vcf-aas-full}} is designed to achieve the following availability target.
 
 | Availability target | Target value | Method |
 |:------------------- |:------------ | :----- |

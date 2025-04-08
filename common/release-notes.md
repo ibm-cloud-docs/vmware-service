@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-03-24"
+lastupdated: "2025-04-07"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,35 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2025}
 
 
+
+### 7 April 2025
+{: #vmware-service-apr725}
+{: release-note}
+
+vSAN stretched workload support
+:  You can now create stretch vSAN™ high availability resource pools for existing single-tenant Cloud Director sites. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+
+   With vSAN stretched support, you can order a single-tenant or multitenant virtual data center (VDC) on a stretched resource pool.
+
+   Stretched resource pools are available only on some multitenant Cloud Director sites. Additional stretched resource pools will be made available over time.
+   {: note}
+
+Network regional high availability
+:  To ensure high performance and effective load distribution, you can now order a regional high availability edge when you create a new single-tenant or multitenant VDC. Either deploy the regional high availability edge on a stretched resource pool or consolidate your network across two resource pools in a multizone region. For additional information, see [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding).
+
+Immutable IBM Cloud Object Storage availability
+:   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared Scale-out Backup Repositories (SOBRs) or when you order a dedicated SOBR through the Veeam® Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
+
+Software currency update
+:   This release provides an infrastructure upgrade for VMware NSX-T™ 4.2.1.2.
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-7-april-2025).
+
+User interface updates and enhancements
+:   The user interface is updated and provides the following enhancements.
+   * The **Profile CPU type** field for Cascade Lake and Sapphire Rapids profiles is added to the cluster configuration for Cloud Director site and cluster orders.
+   * The option to swap the primary and secondary network locations for a highly available network edge is available on the VDC summary page.
 
 ### 24 March 2025
 {: #vmware-service-mar2425}

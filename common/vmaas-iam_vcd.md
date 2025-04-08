@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-04-01"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -50,7 +50,7 @@ Additional rights are available with recent releases. If you use pre-configured 
 
 To update the roles with the new rights, complete the following steps as an **IBM Cloud IAM Administrator** or as an **Organization Administrator**.
 
-1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Administration**.
+1. In the tenant portal, click the **Menu** icon at the upper left of the page and select **Administration**.
 2. Under the **Access Control** section in the left pane, select **Roles**.
 3. Select the role to change and click **Edit**. You must use the recommended OIDC roles from the following table, **Table 2. Recommended OIDC roles**, or use customized roles.
 4. In the **Edit Role** window, select the new permissions and clear the permissions to remove. You can add the new tenant permissions to the roles as defined in **Table 2. Recommended OIDC roles**.

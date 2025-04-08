@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-04"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -73,6 +73,7 @@ Some host profiles might not be available for a selected location. Contact your 
     3. Optionally enable SAP®-certified server profiles and select the profile type.
 6. Specify the settings for the cluster.
     1. Specify the cluster name.
+    2. Select the profile CPU type.
     2. Select the profile storage type.
     3. Select the host profile.
     4. Select the host quantity.

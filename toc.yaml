@@ -67,6 +67,7 @@ toc:
               label: Managing virtual data center instances
               topics:
               - vmaas/capacity-adding-deleting.md
+              - vmaas/swap-network-locations.md
           - topicgroup:
               label: Viewing and deleting VCF as a Service instances
               topics:

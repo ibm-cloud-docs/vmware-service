@@ -3,7 +3,7 @@
 copyright:
   years:  2022, 2025
 
-lastupdated: "2025-02-11"
+lastupdated: "2025-04-03"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -47,8 +47,8 @@ Review the following tables that outline what types of tasks each role allows fo
 
 | Service role | Description of actions |
 |:------------ |:---------------------- |
-| Reader | View VMware instances and virtual data centers and dashboards. |
-| Writer | View VMware instances and also add and remove services to virtual data centers. |
+| Reader | View VMware instances, virtual data centers, and dashboards. |
+| Writer | View VMware instances, also add and remove services to virtual data centers. |
 | Manager | In addition to all Writer permissions, create and delete virtual data centers, and reset the admin credentials for VMware instances. |
 | VCFaaS Director Full Viewer | All view access to every component in VMware Cloud Director. |
 | VCFaaS Director vApp Author | Use catalogs and create vApps in VMware Cloud Director. |

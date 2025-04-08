@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-27"
+lastupdated: "2025-04-04"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -51,12 +51,12 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    | Name | The name of the VDC. |
    | Status | The status of the VDC. |
    | Regional high availability | Identifies the type of high availability for the VDC, if any. |
-   | Location | The name of the data center where the site is deployed. |
+   | Location | The name of the data center where the site is deployed. For regional high availability VDCs, the primary and secondary data centers are displayed. |
    | Network connection | Identifies the connection type: public and private or private only. |
    | Transit gateway | The status of the Transit Gateway connection. |
    {: caption="Virtual data center summary" caption-side="bottom"}
 
-   Click the **Delete** icon on the VDC row to delete the VDC from the Cloud Director site.
+   Click the **Delete** icon in the VDC row to delete the VDC from the Cloud Director site.
 
 ## Procedure to view details for the Cloud Director site
 {: #tenant-viewing-sites-details}
@@ -86,7 +86,7 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    | Name | The VDC name. |
    | Type | The edge performance type. |
    | Regional high availability | Identifies the type of high availability for the VDC, if any. |
-   | Location | The name of the data center where the site is deployed. |
+   | Location | The name of the data center where the site is deployed. For regional high availability VDCs, the primary and secondary data centers are displayed. |
    | vCPU | The amount of virtual CPU for the VDC. |
    | RAM | The amount of RAM for the VDC. |
    {: caption="Network edge details" caption-side="bottom"}
@@ -126,7 +126,7 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
    | Item | Description |
    |:---- |:----------- |
    | Name | The name of the VDC. |
-   | Location | The name of the data center where the site is deployed. |
+   | Location | The name of the data center where the site is deployed. For regional high availability VDCs, the primary and secondary data centers are displayed. |
    | Resource pool | The name of the resource pool for the VDC. |
    | Regional high availability | Identifies the type of high availability for the VDC, if any. |
    | Network connection | Identifies the connection type: public and private or private only. Available if you provisioned a network edge with your VDC order. |

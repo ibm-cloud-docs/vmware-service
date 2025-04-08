@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-01-02"
+lastupdated: "2025-04-01"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -33,7 +33,7 @@ The following steps outline a validated process. Many different configurations w
 
 2. Log in to VMware vCenter Server and navigate to the cluster name.
 3. Right-click the cluster name and click **Deploy OVF Template...**.
-4. From the **Deploy OVF Template** window, complete the following configurations. After you complete the configuration for each tab, click **NEXT** to move to the next tab.
+4. In the **Deploy OVF Template** window, complete the following configurations. After you complete the configuration for each tab, click **NEXT** to move to the next tab.
    1. Complete the following configuration for the **Select an OVF template** tab.
       * Select **Local file**.
       * Select the ``.ovf`` file and click **UPLOAD FILES**.
@@ -62,7 +62,7 @@ The following steps outline a validated process. Many different configurations w
    10. For the **Ready to complete** tab, review your selections and click **FINISH**.
 
       The VCDA on-premises deployment to VMware vCenter Server begins. When the deployment is complete, the new folder that you created is available under the vCenter Server cluster.
-5. From the installation folder, navigate to the VM and click the **Power On** icon.
+5. In the installation folder, navigate to the VM and click the **Power On** icon.
 6. When the VM is powered on, navigate to the newly installed VCDA IP address.
 
 ## Related links

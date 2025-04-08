@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-06"
+lastupdated: "2025-04-04"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -37,6 +37,7 @@ Some host profiles might not be available for a selected location. Contact your 
     2. Select the host quantity.
        * For NFS-only storage, select a minimum of 2.
        * For vSAN + optional NFS storage, select a minimum of 7.
+    3. Select the profile CPU type, then the profile storage type.
     4. Select the host profile.
     5. For vSAN, optionally enable vSAN de-duplication and compression.
     6. Review the cost, accept the terms, and click **Next**.
@@ -75,7 +76,7 @@ If not enough CPU, RAM, or equivalent storage performance for the cluster exists
 2. On the **{{site.data.keyword.vmware-service_short}}** page, click the single-tenant Cloud Director site name.
 3. Click the **Resource pool** tab.
 4. Expand **Clusters**, locate the cluster that you want to delete.
-5. On the cluster row to delete, click **Actions** then **Delete**.
+5. In the cluster row to delete, click **Actions** then **Delete**.
 6. Confirm that you want to delete the cluster.
 
 ## Related links

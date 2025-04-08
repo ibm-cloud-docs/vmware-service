@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-07"
+lastupdated: "2025-04-01"
 
 keywords: iam user role for vmware, iam user, iam roles, manage iam, SSO, single sign on
 
@@ -29,7 +29,7 @@ Access the VMware Cloud Director console from the VMware Solutions console to co
 
 Authentication and authorization to VMware Cloud Director defaults to using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Users log in to VMware Cloud Director by using their {{site.data.keyword.cloud_notm}} credentials. When logged in to the {{site.data.keyword.cloud_notm}} account with the {{site.data.keyword.vcf-aas-full}} instance, single sign-on (SSO) is used to access VMware Cloud Director.
 
-From the VMware Solutions console, click **VMware console** to access the VMware Cloud Director console.
+In the VMware Solutions console, click **VMware console** to access the VMware Cloud Director console.
 
 ## Before you begin
 {: #iam-integration-prereq}

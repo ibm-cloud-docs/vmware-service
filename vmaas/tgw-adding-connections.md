@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-04-01"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -66,7 +66,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 
    * Complete the following steps if you use {{site.data.keyword.cloud-shell_short}} to connect the tunnels to {{site.data.keyword.tg_short}}.
    1. Click the overflow menu in the row of the connection group and click **Generate CLI commands**. A single command for all six GRE tunnels is generated.
-   2. From the **Generate CLI commands** pane, click the **Copy to clipboard** icon to copy the single CLI command to connect all six GRE tunnels.
+   2. In the **Generate CLI commands** pane, click the **Copy to clipboard** icon to copy the single CLI command to connect all six GRE tunnels.
    3. In the {{site.data.keyword.cloud_notm}} console, click the [{{site.data.keyword.cloud-shell_notm}}](https://cloud.ibm.com/shell) icon to open the {{site.data.keyword.cloud-shell_short}} interface.
    4. Paste the CLI command in {{site.data.keyword.cloud-shell_short}} and run the command to connect all six tunnels to {{site.data.keyword.tg_short}}.
 
@@ -74,7 +74,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
    {: note}
 
    * Complete the following steps if you use the {{site.data.keyword.tg_short}} console to connect the tunnels to {{site.data.keyword.tg_short}}.
-   1. From the {{site.data.keyword.tg_short}} connections page, expand the {{site.data.keyword.tg_short}} ID. The six pending GRE tunnels display.
+   1. On the {{site.data.keyword.tg_short}} connections page, expand the {{site.data.keyword.tg_short}} ID. The six pending GRE tunnels display.
    2. Expand an unbound GRE tunnel. The tunnel parameters display. Use the **Copy to clipboard** icon to copy the parameters as you complete the next steps to create the tunnel connection.
    3. Click **Add connection to {{site.data.keyword.tg_short}}** to open the {{site.data.keyword.tg_short}} console.
    4. In the {{site.data.keyword.tg_short}} console, complete the procedure to [create the unbound GRE tunnel connection](/docs/transit-gateway?topic=transit-gateway-unbound-gre-connection&interface=ui). Specify the following parameters.

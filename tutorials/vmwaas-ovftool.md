@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 
 content-type: tutorial
 services: vmware-service
@@ -58,11 +58,11 @@ A local user in this tutorial is used to authenticate when you import the OVA in
 To create a local username and password in VMware Cloud Director, complete the following steps:
 
 1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
-2. In the navigation bar, click **Administration**.
-3. In the left navigation panel, under **Access Control**, click **Users**.
+2. Click **Administration** froom the navigation bar.
+3. From the left navigation panel, under **Access Control**, click **Users**.
 4. Next to the list of users, click **New**.
 5. Enter a username and password for the user. The minimum password length is 6 characters.
-6. From the list of predefined roles, select the `Organization Administrator` role to assign to the user.
+6. In the list of predefined roles, select the `Organization Administrator` role to assign to the user.
 7. Click **Save**.
 
 ## Uploading an OVA image into a VDC

@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -275,13 +275,13 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
 {: #vmwaas-ipsec-tunnel-console}
 
 1. Log in to the {{site.data.keyword.vcf-aas}} instance with a user that has the `Organization Administrator` role.
-2. From the left navigation panel, click **Networking**.
+2. Click **Networking** from the left navigation panel.
 3. Under **Edge Gateways**, select the `name` of your Edge Gateway.
 
    ![Login](../images/vmwaas-ipsec-tunnel-edgegateway.png){: caption="{{site.data.keyword.vcf-aas}} VDC Edge Gateway Selection" caption-side="bottom"}
    {: style="text-align: center;"}
 
-4. On the side menu, click **IP Sets** and click **New** to create a new IP Set.
+4. In the side menu, click **IP Sets** and click **New** to create a new IP Set.
 5. Create two IP sets.
 
    | IP set      | Name               | IP address |
