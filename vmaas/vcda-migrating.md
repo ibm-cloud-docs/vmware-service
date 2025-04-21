@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-21"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -25,8 +25,9 @@ The following steps outline a validated process. Many different configurations w
 
 1. Download the **VMware Cloud Director Availability On-premises Appliance** ``.ova`` file to a server that has a network connection to the vCenter Server.
    1. [Log in](https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Director%20Availability&displayGroup=Standard&release=4.7.1&os=&servicePk=203331&language=EN){: external} to VMware® by Broadcom or create a free account.
-   2. Click the **Drivers and Tools** tab.
-   3. Download **VMware Cloud Director Availability On-premises Appliance**.
+   2. From the **Cloud** drop-down menu next to the username, select **VMware Cloud Foundation**.
+   3. Select **My Downloads** and [Free Software Downloads available HERE](https://support.broadcom.com/group/ecx/free-downloads).{: external}
+   4. Click **VMware Cloud Director Availability** and download **VMware Cloud Director Availability On-premises Appliance**.
 
    Entitlements are not required for the VMware Cloud Director Availability On-premises Appliance.
    {: note}
@@ -50,7 +51,7 @@ The following steps outline a validated process. Many different configurations w
       * Select the management share or workload share datastore option from the table. It is recommended that you use the same storage where vCenter Server is installed.
    8. For the **Select networks** tab, select the management network. The management network is the same network as the vCenter Server VM.
    9. Complete the following configuration for the **Customize template** tab.
-      * For **Root password**, set the root password used for the first log in to the on-premises VCDA appliance.
+      * For **Root password**, set the root password that is used for the first log into the on-premises VCDA appliance.
       * Select **Enable SSH**.
       * For **NTP Server**, enter the AD/DNS IP addresses from vCenter Server.
       * For **Hostname**, enter any valid hostname.
