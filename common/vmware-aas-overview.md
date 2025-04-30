@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-04-30"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -60,7 +60,7 @@ The {{site.data.keyword.vcf-aas}} single-tenant and multitenant models share the
 * Unique provider-managed encryption keys per instance with encrypted VMware storage profiles.
 * Single sign-on (SSO) with role-based authentication and authorization from {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to VMware Cloud Director.
 * Improved provisioning speed, availability, and resilience.
-* Stretch vSAN™ resource pools and clusters to ensure resiliency and high availability across applications.
+* Stretched vSAN™ resource pools and clusters to ensure resiliency and high availability across applications.
 * Regional-level high availability through creating VMware Cloud Director VDCs in multiple data centers in the same region.
 * VMware infrastructure health and patching is managed by {{site.data.keyword.IBM_notm}} Operations up through the hypervisor.
 * Full compatibility to run existing VMware workloads. Migration of existing {{site.data.keyword.cloud_notm}}, on-premises or other workloads are fully supported.
@@ -115,7 +115,7 @@ The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the fol
 
 * Host type and counts used
 * NFS size and performance tiers used
-* Stretch vSAN high availability storage (optional)
+* Stretched vSAN high availability storage (optional)
 * Egress to public networking
 * Ingress to private networking (optional)
 * Networking edge types and counts

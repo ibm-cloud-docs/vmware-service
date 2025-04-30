@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-04-30"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 You can add or delete hosts to and from a *single-tenant* cluster.
 
-For stretch vSAN™ high availability clusters, the hosts are split into the first and second location of the resource pool. The minimum host requirement for stretch vSAN high availability clusters is 14.
+For stretched vSAN™ high availability clusters, the hosts are split into the first and second location of the resource pool. The minimum host requirement for stretched vSAN high availability clusters is 14.
 
 ## Procedure to add and delete hosts
 {: #host-adding-deleting-proc}

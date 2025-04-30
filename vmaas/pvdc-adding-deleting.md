@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-30"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -29,7 +29,7 @@ Each resource pool inherits the following policies from the {{site.data.keyword.
 * User administration - Users and user policies that are configured for the {{site.data.keyword.vcf-aas}} instance are shared across all resource pools.
 * Catalogs - Catalog images and policies also apply across all resource pools in the instance.
 
-You can optionally create a resource pool to stretch the workload cluster across two different data centers within a multizone region. A stretch vSAN™ high availability (HA) resource pool helps to protect critical workloads by increasing the availability of the VMware infrastructure.
+You can optionally create a resource pool to stretch the workload cluster across two different data centers within a multizone region. A stretched vSAN™ high availability (HA) resource pool helps to protect critical workloads by increasing the availability of the VMware infrastructure.
 
 Highly available resource pools are supported on a Cloud Director site region only when a Sapphire Rapids server is available. HA resource pools require stretched clusters with vSAN storage profiles. NFS storage is not supported.
 {: requirement}
@@ -38,7 +38,7 @@ Resource pools consist of one or more VMware vCenter Server® clusters. A new vC
 
 You can increase or decrease the capacity of your deployment by adding or deleting resource pools to and from an instance. You can also expand capacity by adding more clusters to a resource pool.
 
-Typically, the instance is scaled first through the host count and the storage count management within the cluster. Up to 25 homogeneous hosts are supported in a cluster. After the maximum size of 25 hosts for a cluster is reached, a new cluster is required. For stretch vSAN high availability clusters, the hosts are split into the first and second location of the resource pool. The minimum host requirement for stretch vSAN high availability clusters is 14.
+Typically, the instance is scaled first through the host count and the storage count management within the cluster. Up to 25 homogeneous hosts are supported in a cluster. After the maximum size of 25 hosts for a cluster is reached, a new cluster is required. For stretched vSAN high availability clusters, the hosts are split into the first and second location of the resource pool. The minimum host requirement for stretched vSAN high availability clusters is 14.
 
 VDCs deployed to a resource pool can use all compute, memory, and storage within the resource pool, including when multiple clusters exist. To get consistent workload performance, it's best if all clusters within the same resource pool use the same host profile type. VMware Cloud Director automatically selects and adjusts the placement of workload VMs across the clusters in the resource pool. Placement is not controlled by users with VMware Cloud Director.
 
@@ -72,10 +72,10 @@ When you deploy a new resource pool, a cluster is created. Cluster configuration
 6. Specify the attached NFS storage settings.
 7. Click **Order** to confirm.
 
-## Procedure to add stretch vSAN high availability resource pools to {{site.data.keyword.vcf-aas}} instances
+## Procedure to add stretched vSAN high availability resource pools to {{site.data.keyword.vcf-aas}} instances
 {: #pvdc-adding-deleting-add-vsan-proc}
 
-Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
+Stretched vSAN high availability clusters support only Sapphire Rapids profiles.
 {: requirement}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
@@ -88,7 +88,7 @@ Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
     4. Click **Next**.
 5. Specify the host details.
     1. Specify the cluster name.
-    2. Select the host quantity. A minimum of 14 is required for stretch vSAN storage.
+    2. Select the host quantity. A minimum of 14 is required for stretched vSAN storage.
     3. Select the host profile.
     4. Optionally enable vSAN de-duplication and compression.
 6. Review the cost, accept the terms, and click **Order** to confirm.

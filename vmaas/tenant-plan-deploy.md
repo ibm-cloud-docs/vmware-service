@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-04-30"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -136,7 +136,7 @@ A resource pool combines compute, memory, and storage resources to properly scal
 
 You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver. 
 
-To ensure that your applications remain resilient, you can add stretch vSAN™ high availability resource pools to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+To ensure that your applications remain resilient, you can add stretched vSAN™ high availability resource pools to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
 When the high availability resource pool is available, you can create a new single-tenant or multitenant VDC on the stretched resource pool.
 
@@ -232,7 +232,7 @@ Lastly sum the total RAM, CPU, and storage requirements for all target VMs. The 
 
 For single-tenant Cloud Director sites, you can select from various bare metal server CPU and memory sizes based on your selection of location and profile storage type.
 
-Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
+Stretched vSAN high availability clusters support only Sapphire Rapids profiles.
 {: requirement}
 
 | Profile | Sockets | Cores | RAM | vSAN usable capacity |

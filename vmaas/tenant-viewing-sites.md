@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-04-30"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -96,7 +96,7 @@ Click the **Switch view mode** icon next to **Create** to open the original reso
 4. On the **Resource pool** tab, review details for each resource pool provisioned for the site.
 
      * The name and status of the resource pool.
-     * The type of resource pool: standard or stretch high availability, the data centers where the resource pool is deployed, and if the host is an SAP-certified server.
+     * The type of resource pool: standard or stretched high availability, the data centers where the resource pool is deployed, and if the host is an SAP-certified server.
      * The total computing and vSAN storage capacity of the resource pool.
      * The total NFS storage capacity of the resource pool.
      

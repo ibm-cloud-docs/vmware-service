@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-04-30"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
 
-You can add a stretch vSAN™ high availability cluster only to a stretch vSAN high availability resource pool. NFS storage is not supported for high availability resource pools. For stretch vSAN clusters, the hosts are split into the first and second location of the resoure pool.
+You can add a stretched vSAN™ high availability cluster only to a stretched vSAN high availability resource pool. NFS storage is not supported for high availability resource pools. For stretched vSAN clusters, the hosts are split into the first and second location of the resoure pool.
 
 Some host profiles might not be available for a selected location. Contact your IBM Sales representative to request missing host profiles.
 {: note}
@@ -44,10 +44,10 @@ Some host profiles might not be available for a selected location. Contact your 
 6. Specify the attached NFS storage settings.
 7. Click **Order** to confirm.
 
-## Procedure to add stretch vSAN high availability clusters to {{site.data.keyword.vcf-aas}} instances
+## Procedure to add stretched vSAN high availability clusters to {{site.data.keyword.vcf-aas}} instances
 {: #cluster-adding-deleting-add-vsan-proc}
 
-Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
+Stretched vSAN high availability clusters support only Sapphire Rapids profiles.
 {: requirement}
 
 1. In the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-aas}}** from the left navigation panel.
@@ -56,7 +56,7 @@ Stretch vSAN high availability clusters support only Sapphire Rapids profiles.
 4. Locate the stretched resource pool where you want to add the cluster and expand the cluster section. Then, click **Add cluster**.
 5. In the **Add cluster** pane, specify the settings for the new cluster.
     1. Specify the cluster name.
-    2. Select the host quantity. A minimum of 14 is required for stretch vSAN storage.
+    2. Select the host quantity. A minimum of 14 is required for stretched vSAN storage.
     3. Select the Sapphire Rapids host profile.
     4. Review the cost, accept the terms, and click **Order**.
 

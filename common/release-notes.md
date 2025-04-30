@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-04-07"
+lastupdated: "2025-04-28"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,12 +26,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 28 April 2025
+{: #vmware-service-apr2825}
+{: release-note}
+
+Multitenant compute regional high availability resource pool support in Washington DC
+:   A new multizone resource pool in the **Washington DC** region is now available for workloads that require 99.99% infrastructure availability. The Washington DC resource pool offers cross-data center high availability for both networking and compute resources. Additional compute regional high availability resource pools will be made available in other locations soon.
+
 ### 7 April 2025
 {: #vmware-service-apr725}
 {: release-note}
 
 vSAN stretched workload support
-:  You can now create stretch vSAN™ high availability resource pools for existing single-tenant Cloud Director sites. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+:  You can now create stretched vSAN high availability resource pools for existing single-tenant Cloud Director sites. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
    With vSAN stretched support, you can order a single-tenant or multitenant virtual data center (VDC) on a stretched resource pool.
 

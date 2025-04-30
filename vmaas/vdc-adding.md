@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-04-30"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware workloads.
 
-You can optionally deploy your VDC in a stretched vSAN™ resource pool. To deploy your VDC in a compute regional high availability (HA) resource pool, you must first create a stretched resource pool in your Cloud director site. For more information, see [Procedure to add stretch vSAN high availability resource pools to {{site.data.keyword.vcf-aas}} instances](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting#pvdc-adding-deleting-add-vsan-proc).
+You can optionally deploy your VDC in a stretched vSAN™ resource pool. To deploy your VDC in a compute regional high availability (HA) resource pool, you must first create a stretched resource pool in your Cloud director site. For more information, see [Procedure to add stretched vSAN high availability resource pools to {{site.data.keyword.vcf-aas}} instances](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting#pvdc-adding-deleting-add-vsan-proc).
 
 When you choose to deploy your VDC in a compute regional HA resource pool, you must create a highly available network edge or disable the option to create a network edge.
 
