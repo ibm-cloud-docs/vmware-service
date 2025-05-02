@@ -38,7 +38,7 @@ Multitenant compute regional high availability resource pool support in Washingt
 {: release-note}
 
 vSAN stretched workload support
-:  You can now create stretched vSAN high availability resource pools for existing single-tenant Cloud Director sites. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
+:  You can now create stretched vSAN™ high availability resource pools for existing single-tenant Cloud Director sites. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
    With vSAN stretched support, you can order a single-tenant or multitenant virtual data center (VDC) on a stretched resource pool.
 

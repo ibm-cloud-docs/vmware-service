@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-03-04"
+lastupdated: "2025-05-01"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 
@@ -31,7 +31,7 @@ You must complete the following before you target a VPE for {{site.data.keyword.
 
 - Ensure that you have [provisioned a Virtual Private Cloud](/docs/vpc?topic=vpc-getting-started).
 - Ensure that you have reviewed [Planning for Virtual Private Endpoints](/docs/vpc?topic=vpc-planning-considerations).
-- Ensure that [correct access controls](/docs/vpc?topic=vpc-acls-security-groups-vpn) are set for your VPE.
+- Ensure that [correct access controls](/docs/vpc?topic=vpc-vpe-iam) are set for your VPE.
 - Understand the [limitations](/docs/vpc?topic=vpc-limitations-vpe) of having a VPE.
 - Ensure that you have [created](/docs/vpc?topic=vpc-ordering-endpoint-gateway) and understand how to [access](/docs/vpc?topic=vpc-accessing-vpe-after-setup) a VPE gateway.
 - Understand how to [view details](/docs/vpc?topic=vpc-vpe-viewing-details-of-an-endpoint-gateway) of a VPE.
