@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-05-05"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -31,7 +31,7 @@ The Veeam Backup service is configured with seven days of immutability by defaul
 ## Accessing the Veeam self-service portal
 {: #tenant-veeam-portal}
 
-The Veeam Backup service has visibility to back up VMs from any VDC in the organization. It is available at the VMware® Cloud Director organization level for any VMware Cloud Director user with the **Organization Administrator** role.
+The Veeam Backup service has visibility to back up VMs from any VDC in the organization. It is available at the VMware Cloud Director™ organization level for any VMware Cloud Director user with the **Organization Administrator** role.
 
 When you use the Veeam self-service portal to create backup jobs, you can choose any VM instance from any virtual data center in the organization.
 
@@ -90,6 +90,47 @@ You can configure the Veeam service in various ways. Some options include self-s
 
 When you create a backup job, you add VMs or vApps to the job for data protection and also define the backup job schedule. The IBM policy is to never remove your VMs or vApps from your backup jobs or to delete any backups without your permission.
 
+### Backup copy job retention policy
+{: #tenant-veeam-policy-backup-remove-retention}
+
+The backup copy retention policy defines how many restore points to retain on disk. After the allowed number of restore points is exceeded, Veeam applies the retention policy to remove the earliest restore point from the backup chain. Depending on your business requirements, it is your responsibility to set the retention policy when you create the backup job.
+
+You can update the retention policy. However, the new settings are applied only to the new data and cannot be applied to previous data that maintains the previous retention policy setting.
+{: note}
+
+Veeam Backup offers two retention policy schemes for backup copy jobs: short-term retention policy and long-term retention policy.
+
+#### Short-term retention policy
+{: #tenant-veeam-policy-backup-remove-retention-short}
+
+The [Short-Term Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_policy.html?ver=120){: external} retains restore points that are created by backup copy jobs for a specified number of days or until the number of restore points reaches the specified number in the retention settings. You have the following options when you configure short-term retention policy settings for a backup copy job.
+
+* Specify the number of restore points. Veeam Backup keeps the last `N` restore points, where `N` is the number of restore points that you specify in the settings. The minimum number that you can specify is 2.
+* Specify the number of days. Veeam Backup keeps restore points that are created during the last `N` days, where `N` is the number of days that you specify in the settings. The minimum number that you can specify is 2.
+
+IBM recommends using the forward incremental backup retention policy. However, you can choose to change the policy based on your requirements. For more information, see [Forward Incremental Backup Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_incremental.html?ver=120){: external}.
+
+#### Long-term retention policy
+{: #tenant-veeam-policy-backup-remove-retention-long}
+
+The [Long-Term or Grandfather-Father-Son (GFS) Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/gfs_retention_policy.html?ver=120){: external} stores VM backups for long periods of time. The policy allows storage for weeks, months, or years. Veeam Backup creates synthetic or active full backup files and marks them with `weekly`, `monthly`, or `yearly` GFS flags. Depending on which flag is assigned to the full backup, it is stored for a specified number of weeks, months, or years.
+
+GFS backups are always full backup files that contain data of the entire image as of a specific date. GFS is a tiered retention policy and uses a number of cycles to retain backups for the following periods of time.
+
+* A weekly backup cycle, which is known as `sons`
+* A monthly backup cycle, which is known as `fathers`
+* A yearly backup cycle, which is known as `grandfathers`
+
+Weekly, monthly, and yearly backups are also called archive backups.
+
+#### Veeam backup sizing guidelines and calculator
+{: #tenant-veeam-policy-backup-remove-retention-calculator}
+
+Depending on the backup retention policy that you choose, the overall sizing for the Veeam Backup differs. Use the [Veeam calculator](https://www.veeam.com/calculators/simple/vbr/machines){: external} to calculate the Veeam Backup sizing based on your retention policy and number of required backups. 
+
+IBM uses the backup 3-2-1 rule for storing backups. The rule creates two copies of the data and makes it available on different storage mediums during the retention period.
+{: note}
+
 ### Removal of backups
 {: #tenant-veeam-policy-backup-remove}
 
@@ -99,14 +140,6 @@ To remove backups, you can choose to remove VMs or vApps from the backup job or 
 {: #tenant-veeam-policy-backup-remove-chain}
 
 Starting with Veeam 12, the IBM policy uses per-machine backup with separate metadata files for backup chain format. For more information, see [Backup Chain Formats](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}.
-
-#### Backup job retention policy
-{: #tenant-veeam-policy-backup-remove-retention}
-
-The backup retention policy defines how many restore points to retain on disk. After the allowed number of restore points is exceeded, Veeam applies the retention policy to remove the earliest restore point from the backup chain. Depending on your business requirements, it is your responsibility to set the retention policy when you create the backup job. For more information, see [Short-Term Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_policy.html?ver=120){: external}.
-
-You can update the retention policy. However, the new settings are applied only to the new data and cannot be applied to previous data that maintains the previous retention policy setting.
-{: note}
 
 #### Backup immutability at Performance Tier
 {: #tenant-veeam-policy-backup-remove-perf-tier}
