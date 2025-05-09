@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-05-08"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -21,6 +21,7 @@ subcollection: vmware-service
 If you experience an issue or have questions when using {{site.data.keyword.vmware-service_full}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
+* Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console.
 * Review the [FAQ](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 
