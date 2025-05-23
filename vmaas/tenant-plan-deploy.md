@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-05-23"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -134,7 +134,7 @@ High availability is supported on a Cloud Director site region only when a Sapph
 
 A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver. 
+You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
 
 To ensure that your applications remain resilient, you can add stretched vSAN™ high availability resource pools to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 

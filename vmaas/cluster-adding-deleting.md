@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-05-20"
 
 keywords: add cluster, delete cluster, cluster adding, cluster remove
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 # Adding and deleting clusters
 {: #cluster-adding-deleting}
 
-You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director resource pools and are added to existing resource pools or are added as part of a resource pool creation.
+You can add clusters to increase or delete clusters to decrease the capacity of your *single-tenant* instance deployment. VMware vCenter clusters are the building blocks of VMware Cloud Director™ resource pools and are added to existing resource pools or are added as part of a resource pool creation.
 
 You can add a stretched vSAN™ high availability cluster only to a stretched vSAN high availability resource pool. NFS storage is not supported for high availability resource pools. For stretched vSAN clusters, the hosts are split into the first and second location of the resoure pool.
 

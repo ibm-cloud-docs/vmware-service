@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-05-22"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -24,7 +24,7 @@ Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.v
 
 You must individually attach all six unbound GRE tunnels to the {{site.data.keyword.tg_short}} to attach the VDC connection group to {{site.data.keyword.tg_short}}. The six unbound GRE tunnels help to avoid redundancy risks.
 
-The {{site.data.keyword.tg_short}} resource does not need to be in the same {{site.data.keyword.cloud_notm}} account as the VDC. The {{site.data.keyword.tg_short}} resource is included in your {{site.data.keyword.cloud_notm}} account, not your VMware account.
+The {{site.data.keyword.tg_short}} resource does not need to be in the same {{site.data.keyword.cloud_notm}} account as the VDC. The {{site.data.keyword.tg_short}} resource is included in your {{site.data.keyword.cloud_notm}} account, not your VMware® by Broadcom account.
 
 ## Before you begin
 {: #tgw-adding-connections-prereq}
@@ -81,7 +81,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 
       * Select **Unbound GRE Tunnel** for the network connection type.
       * Select **Classic Infrastructure** for the base network type.
-      * Select **Request connection to a network in another account** for the connection reach.
+      * Select **Request connection to a network in another account** for the connection reach. You can copy the **Cloud account ID** from the {{site.data.keyword.tg_short}} connections section on the **Interconnectivity** tab in the VMware Solutions console.
       * Enter the GRE Tunnel connection values that you can copy and paste from the VMware Solutions console.
 
    The {{site.data.keyword.tg_short}} documentation states that the **Remote BGP ASN** field is optional. However, you must provide the **Remote BGP ASN** value that is specified in the GRE tunnel connection values available to copy in the **Interconnectivity** tab for the VDC.
@@ -92,7 +92,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
    When all unbound GRE tunnels display the **Attached** status, the connection group is attached to {{site.data.keyword.tg_short}}.
 
 3. Complete the following procedures to configure the VDC network edge.
-   1. Configure a fully routed network environment in your VDC. For more information, see [Manage Route Advertisement in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/configure-dedicated-provider-gateway-services-tenant/route-advertisement-tenant.html).{: external}
+   1. Add your VDC networks as routed networks. New networks are advertised by default, and you can optionally disable the route advertisement setting for each network separately.
    2. If you have existing SNAT rules, edit the priority and configurations rules and add No Source NAT (NOSNAT) rules to use {{site.data.keyword.tg_short}}. For more information, see [Add an SNAT or a DNAT Rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html).{: external}
    3. Update your firewall rules to allow for the new outbound network traffic and for the new remote network inbound traffic. For more information, see [Configure Firewall Rules on a Provider Gateway in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/working-with-provider-gateways-tenant/configure-firewall-rules-on-a-provider-gateway-tenant.html).{: external}
 

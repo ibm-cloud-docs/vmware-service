@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-04-07"
+lastupdated: "2025-05-20"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -89,7 +89,7 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
 
    You might have multiple secondary IP addresses on the vSRX interface, so collect all the required network information for the tunnel.
 
-   Collect all required VDC network information for the tunnel. Use the VMware Cloud Director console or collect the information from your network design documentation (which networks are deployed on the VDC).
+   Collect all required VDC network information for the tunnel. Use the VMware Cloud Director™ console or collect the information from your network design documentation (which networks are deployed on the VDC).
 
    Example values are provided as follows:
 
@@ -377,7 +377,7 @@ If your settings are correct and you click **Save**, then your tunnel is working
 ### Validate your IPsec tunnel and connectivity on the CLI
 {: #vmwaas-ipsec-tunnel-connectivity-cli}
 
-You can test the connection by logging in to one of your VMs running on the VDC by using VMware VM Console and test connectivity to your on-premises network virtual machines.
+You can test the connection by logging in to one of your VMs running on the VDC by using the VMware virtual machine console and test connectivity to your on-premises network virtual machines.
 
 For example, you can use ping to the IP address of vSRX, if your vSRX allows ICMP.
 

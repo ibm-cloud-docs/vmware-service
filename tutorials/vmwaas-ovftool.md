@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-04-07"
+lastupdated: "2025-05-20"
 
 content-type: tutorial
 services: vmware-service
@@ -18,7 +18,7 @@ completion-time: 30m
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
 
-The {{site.data.keyword.vmware-service_full}} is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director system.
+The {{site.data.keyword.vmware-service_full}} is a powerful platform to manage virtualized resources and to facilitate the creation of flexible cloud environments. The VMware Open Virtualization Format Tool (OVFTool) simplifies the tasks of deploying and configuring virtual appliances within the VMware Cloud Director™ system.
 
 This tutorial provides an overview of using OVFTool to manage virtual appliances on VMware Cloud Director.
 
@@ -37,7 +37,7 @@ In this tutorial, you will learn:
 ## Before you begin
 {: #vmwaas-ovftool-prereqs}
 
-OVFTool is available without charge. You need to create a VMware account to [download OVFTool](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){: external}.
+OVFTool is available without charge. You need to create a VMware® by Broadcom account to [download OVFTool](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){: external}.
 
 This tutorial requires:
 

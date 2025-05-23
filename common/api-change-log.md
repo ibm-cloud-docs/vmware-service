@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-04-07"
+lastupdated: "2025-05-23"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
@@ -17,6 +17,11 @@ subcollection: vmware-service
 {: #vmware-service-api-change-log}
 
 In this change log, you can learn about the most recent changes, improvements, and updates for the [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
+
+## 23 May 2025
+{: #vmware-service-23-may-2025}
+
+Updated the `/vdcs` API so that the `compute_ha_enabled` value is identical in both the request and response bodies. This change provides a consistent representation of the compute high availability (HA) setting. For more information, see [Create a virtual data center](/apidocs/vmware-service#create-vdc).
 
 ## 7 April 2025
 {: #vmware-service-7-april-2025}

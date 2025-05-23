@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-02"
+lastupdated: "2025-05-20"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -80,7 +80,7 @@ The public catalog contains vApp templates for the following components:
 The templates that are provided in the public catalog have the following characteristics:
 
 * Latest updates installed
-* VMware tools installed
+* VMware® by Broadcom tools installed
 * YUM repository enabled configured to the IBM private network YUM repository
 * NTP server that is configured to the IBM private network NTP Server
 
@@ -90,7 +90,7 @@ The templates that are provided in the public catalog have the following charact
 The Microsoft Windows templates that are provided in the public catalog have the following characteristics:
 * Latest updates installed
 * Windows update enabled configured to the IBM private network Windows update server
-* VMware tools installed
+* VMware by Broadcom tools installed
 * Windows Remote Desktop disabled
 * Firewall activated
 * Windows Defender activated
@@ -103,7 +103,7 @@ The Microsoft Windows templates that are provided in the public catalog have the
 The Red Hat Enterprise Linux (RHEL) templates that are provided in the public catalog have the following characteristics:
 
 * Latest updates installed
-* VMware tools installed
+* VMware by Broadcom tools installed
 * Firewall activated
 * NTP server that is configured to the IBM private network servers
 
@@ -267,6 +267,20 @@ If not already completed, create a vApp containing at least two VMs before you c
 
 For more information, see [Working with networks in a vApp in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-vapps-tenant/working-with-networks-in-a-vapp-tenant.html).
 
+### Requesting additional public IP addresses
+{: #vcd-ops-guide-additional-ips}
+
+You can open an IBM Support ticket to request additional public IP addresses on VDCs with public-private networking. Each ticket can include a request for either four NAT/Floating IPs or a public IP prefix. IP prefix requests can include a single `/30` (two contiguous addresses) or `/29` (six contiguous addresses).
+
+* Use NAT/Floating addresses similar to the initial eight public addresses.  You must configure the addresses to NAT from the public network to the Cloud Director private networks.
+* Use IP prefix addresses to connect Cloud Director VMs directly to the public network without a NAT. The edge firewall is used to control public egress and ingress.
+
+Provide the following details in the IBM Support ticket:
+
+* The IP address type: NAT/Floating IPs or IP Prefix
+* The VDC ID that includes the edge to add the IP addresses against
+* The name of the edge gateway or the provider gateway in the VDC to add additional IP addresses
+
 ### Allocating public IP addresses for NAT rules and for VPNs
 {: #vcd-ops-guide-allocating-ips}
 
@@ -285,10 +299,38 @@ You must complete these steps as a user who has the **Manage Manual IP Reservati
 5. At the top of the table, click **REQUEST**.
 6. Each VDC is assigned eight public IP addresses. The request dialog supports a maximum of five IPs per request operation. To ensure that all eight IP addresses are allocated, first request five IPs, then repeat the request for the remaining three IPs.
 
-### Using VPNs to connect VMware workloads to {{site.data.keyword.cloud_notm}}
+### Creating a Cloud Director network for IP prefix addresses
+{: #vcd-ops-guide-ip-prefix}
+
+With IP prefix addresses, VMs are directly assigned a public IP prefix address and do not use a NAT for public access. 
+
+1. Allocate public IP addresses.
+   1. In the tenant portal, click **Networking** from the left navigation panel.
+   2. At the top of the right panel, select **IP Spaces**.
+   3. Click the IP space name that's associated with the VDC's edge. If you have multiple VDCs with a public edge, you can identify which IP space name is associated to the edge when the first three characters of the IP Space name match the data center that the VDC is created in. For example, **t04** matches tokyo04.
+
+      You can also use the **V00** value in the name, if needed. Under **Configuration** on the **Edge Gateway** details page, click **General**. The **Provider Gateway** name has a **VRF000** value. Use the number in that value, for example **vfr015**. In this example, use the pattern **t04-xxx-V15-xxx** to locate the correct IP Space entry.
+
+   4. In the **Allocation** section on the **IP Spaces** details page, select **IP Prefixes**.
+   5. At the top of the table, click **REQUEST**.
+2. Create the network.
+   1. In the target VDC click the **Networks** tab. Then, click **NEW**.
+   2. Complete the network settings for the new organization VDC network.
+      * For **Scope**, select **Current Organization Virtual Data Center** and click **NEXT**.
+      * For **Network Type**, select **Routed** and click **NEXT**.
+      * For **Edge Connection**, select the single edge and toggle on **Distributed Routing**. Click **NEXT**.
+      * For **General**, select the IP prefix for **Gateway CIDR** and click **NEXT**.
+      * Complete the remaining network settings and click **FINISH**.
+3. Create the VMs to use the IP prefix address. For more information, see [Create a standalone virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/creating-a-virtual-machine-tenant/create-a-standalone-vm-tenant.html){: external}. 
+
+   * When you create VMs to use the IP prefix addresses, you must use the IP prefix network.  
+   * For the **Primary NIC** configuration, set the **IP Mode** to **Static - Manual** and assign one of the IP Prefix addresses for the **IP Address**.  
+   * Ensure that the firewall configuration is set to ingress and egress traffic.
+
+### Using VPNs to connect VMware by Broadcom workloads to {{site.data.keyword.cloud_notm}}
 {: #vcd-ops-guide-vpn-vmaas}
 
-You can use VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances.
+You can use VPNs to connect your VMware by Broadcom workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances.
 
 #### Creating a route-based IPsec VPN against the VDC edge gateway over the public internet for {{site.data.keyword.vcf-aas}}
 {: #vcd-ops-guide-routebased-ipsec-vpn-vmaas}

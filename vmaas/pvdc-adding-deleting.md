@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-05-20"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -29,7 +29,7 @@ Each resource pool inherits the following policies from the {{site.data.keyword.
 * User administration - Users and user policies that are configured for the {{site.data.keyword.vcf-aas}} instance are shared across all resource pools.
 * Catalogs - Catalog images and policies also apply across all resource pools in the instance.
 
-You can optionally create a resource pool to stretch the workload cluster across two different data centers within a multizone region. A stretched vSAN™ high availability (HA) resource pool helps to protect critical workloads by increasing the availability of the VMware infrastructure.
+You can optionally create a resource pool to stretch the workload cluster across two different data centers within a multizone region. A stretched vSAN™ high availability (HA) resource pool helps to protect critical workloads by increasing the availability of the VMware by Broadcom infrastructure.
 
 Highly available resource pools are supported on a Cloud Director site region only when a Sapphire Rapids server is available. HA resource pools require stretched clusters with vSAN storage profiles. NFS storage is not supported.
 {: requirement}
@@ -43,7 +43,7 @@ Typically, the instance is scaled first through the host count and the storage c
 VDCs deployed to a resource pool can use all compute, memory, and storage within the resource pool, including when multiple clusters exist. To get consistent workload performance, it's best if all clusters within the same resource pool use the same host profile type. VMware Cloud Director automatically selects and adjusts the placement of workload VMs across the clusters in the resource pool. Placement is not controlled by users with VMware Cloud Director.
 
 A new resource pool is typically created for the following scenarios:
-* Separate and isolate different types of VMware workloads. The previous guidance is to use the same host profile type for all clusters in the same resource pool. If different workloads are better suited for different host types, then separate resource pools are required to ensure each workload runs on the correct host type.
+* Separate and isolate different types of VMware by Broadcom workloads. The previous guidance is to use the same host profile type for all clusters in the same resource pool. If different workloads are better suited for different host types, then separate resource pools are required to ensure each workload runs on the correct host type.
 * Run VM workload in different data centers within the region. All clusters in the same resource pool must be in the same data center. Regional high availability across data centers is achieved by creating resource pools in separate data centers, and then deploying the VDC and applications into each region. A load balancer is used to route requests to active instances of the target workload.
 
 When you deploy a new resource pool, a cluster is created. Cluster configuration can take up to 72 hours. After the cluster configuration is complete, you can complete user access and administration tasks.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-03-28"
+lastupdated: "2025-05-20"
 
 subcollection: vmware-service
 
@@ -26,7 +26,7 @@ The {{site.data.keyword.vmware-service_full}} architecture is based on the follo
 
 The architecture details the {{site.data.keyword.vcf-aas-full}} solution components and different architecture layers to provide an isolated and private implementation for customers. The architecture provides customizable deployment choices of infrastructure and VMware Cloud Director™ based virtual data center environments.
 
-With single-tenant and multitenant Cloud Director instances and its virtual data center instances, customers can migrate or deploy VMware workloads to the cloud on the IBM-hosted and managed VMware infrastructure. Customer workloads that consist of networking configurations and VMs are separated to isolated and virtualized infrastructure.
+With single-tenant and multitenant Cloud Director instances and its virtual data center instances, customers can migrate or deploy VMware® by Broadcom workloads to the cloud on the IBM-hosted and managed VMware by Broadcom infrastructure. Customer workloads that consist of networking configurations and VMs are separated to isolated and virtualized infrastructure.
 
 ## {{site.data.keyword.vcf-aas}} management domain architecture
 {: #architecture-workload-isolation-mgmt}
@@ -45,7 +45,7 @@ A workload domain represents a logical unit that groups VMware ESXi™ hosts man
 The following types of workload domains exist:
 
 * Single-tenant workload domain, which is fully dedicated to a single {{site.data.keyword.cloud_notm}} customer account. The infrastructure and management components are both fully dedicated.
-* Multitenant workload domain, which consists of infrastructure and management components that are used by many customers. Each customers VMware environment is fully isolated through Cloud Director organizations.
+* Multitenant workload domain, which consists of infrastructure and management components that are used by many customers. Each customers VMware by Broadcom environment is fully isolated through Cloud Director organizations.
 
 Each workload domain contains the following components that are installed in the management domain:
 
@@ -81,7 +81,7 @@ Client metadata is associated with the {{site.data.keyword.vcf-aas}} instances t
 
 Client metadata is stored in {{site.data.keyword.cloud_notm}} databases (ICD) that encrypts all data both in transit and at rest.
 
-The credentials that are used to access the underlay IaaS and VMware components are also stored in the database. They are stored with a second layer of envelope encryption in addition to the DB encryption by using [{{site.data.keyword.cloud_notm}} Key Protect](https://cloud.ibm.com/catalog/services/key-protect) Root Key with wrapped Data Encryption Key (DEK). The unwrapped DEK is to encrypt and decrypt the final data.
+The credentials that are used to access the underlay IaaS and VMware by Broadcom components are also stored in the database. They are stored with a second layer of envelope encryption in addition to the DB encryption by using [{{site.data.keyword.cloud_notm}} Key Protect](https://cloud.ibm.com/catalog/services/key-protect) Root Key with wrapped Data Encryption Key (DEK). The unwrapped DEK is to encrypt and decrypt the final data.
 
 Envelope encryption uses a unique Key Protect instance per region with unique root key and DEK per microservice in the {{site.data.keyword.vcf-aas}} solution across all customer instances.
 

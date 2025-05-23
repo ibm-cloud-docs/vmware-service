@@ -3,7 +3,7 @@
 copyright:
   years:  2022, 2025
 
-lastupdated: "2025-04-09"
+lastupdated: "2025-05-20"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -34,10 +34,10 @@ Review the following tables that outline what types of tasks each role allows fo
 
 | Platform role | Description of actions |
 |:------------- |:---------------------- |
-| Viewer | View VMware instances, clusters, hosts, storage, services, virtual data centers, and dashboards. |
-| Operator | View or update VMware instances, add and remove hosts, storage, and clusters, and install VMware services. |
-| Editor | In addition to all Operator permissions, create and delete VMware instances. |
-| Administrator | In addition to all Operator permissions, reset the admin credentials for VMware instances. |
+| Viewer | View VMware® by Broadcom instances, clusters, hosts, storage, services, virtual data centers, and dashboards. |
+| Operator | View or update VMware by Broadcom instances, add and remove hosts, storage, and clusters, and install VMware by Broadcom services. |
+| Editor | In addition to all Operator permissions, create and delete VMware by Broadcom instances. |
+| Administrator | In addition to all Operator permissions, reset the admin credentials for VMware by Broadcom instances. |
 {: row-headers}
 {: class="simple-tab-table"}
 {: caption="IAM platform roles" caption-side="bottom"}
@@ -47,10 +47,10 @@ Review the following tables that outline what types of tasks each role allows fo
 
 | Service role | Description of actions |
 |:------------ |:---------------------- |
-| Reader | View VMware and Usage Meter instances, virtual data centers, and dashboards. |
-| Writer | View VMware and Usage Meter instances, also add and remove services to virtual data centers. |
-| Manager | In addition to all Writer permissions, create and delete virtual data centers, and reset the admin credentials for VMware instances. |
-| VCFaaS Director Full Viewer | All view access to every component in VMware Cloud Director. |
+| Reader | View VMware by Broadcom and Usage Meter instances, virtual data centers, and dashboards. |
+| Writer | View VMware by Broadcom and Usage Meter instances, also add and remove services to virtual data centers. |
+| Manager | In addition to all Writer permissions, create and delete virtual data centers, and reset the admin credentials for VMware by Broadcom instances. |
+| VCFaaS Director Full Viewer | All view access to every component in VMware Cloud Director™. |
 | VCFaaS Director vApp Author | Use catalogs and create vApps in VMware Cloud Director. |
 | VCFaaS Director vApp User | Use existing vApps in VMware Cloud Director. |
 | VCFaaS Director Catalog Author | Create and publish catalogs in VMware Cloud Director. |

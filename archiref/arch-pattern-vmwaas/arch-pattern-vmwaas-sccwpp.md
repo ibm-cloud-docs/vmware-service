@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-01"
+lastupdated: "2025-05-20"
 
 subcollection: vmware-service
 
@@ -29,10 +29,10 @@ Although Security and Compliance Center Workload Protection offers functions for
 
 After you provision an instance of the Security and Compliance Center Workload Protection service, you can deploy the Host Shield Agents on your Windows or Linux VMs. The agents collect data that is used for intrusion detection, posture management, and vulnerability scanning capabilities.
 
-## Overview of {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection for VMware workloads
+## Overview of {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection for VMware by Broadcom workloads
 {: #arch-pattern-vmwaas-sccwpp-overview}
 
-Security and Compliance Center Workload Protection enables the following three practices for your VMware workloads:
+Security and Compliance Center Workload Protection enables the following three practices for your VMware by Broadcom workloads:
 
 * Threat detection - Threat detection is managed by defining policies, which consist of rules to detect and respond to security violations, suspicious behavior, or anomalous activities within your Windows and Linux VMs. Security and Compliance Center Workload Protection provides customizable, prebuilt policies, which are created and maintained by Sysdig’s Threat Research team. These policies can detect and prevent various security threats, such as: malware, intrusions, and DDoS attacks. The results of these policies can be viewed in Events. For more information, see [Events Feed](https://docs.sysdig.com/en/docs/sysdig-secure/threats/activity/events-feed/){: external}.
 * Vulnerabilities - Security and Compliance Center Workload Protection provides a highly accurate view of the vulnerability risks of your Windows and Linux VMs. The views include rich details on your vulnerability risks, such as: CVSS vector, score, fix age, and insights from multiple expert feeds including the NIST National Vulnerability Database (NVD) and VulnDB.

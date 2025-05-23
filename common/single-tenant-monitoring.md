@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-11-20"
+lastupdated: "2025-05-20"
 
 keywords: monitoring, sysdig, vmware multitenant monitor, vmware single tenant monitor, vmware site management monitoring, view metrics
 
@@ -20,12 +20,12 @@ subcollection: vmware-service
 
 {{site.data.keyword.atracker_full}} provides an integration with {{site.data.keyword.mon_full_notm}}, which allows you to use a VMware® by Broadcom site provided default dashboard to view metrics for your sites. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
-Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
+Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks:
 
-* Explore and easily visualize your environment.
-* Accelerate a diagnosis and a resolution for performance incidents.
-* Control cost of monitoring infrastructure.
-* Mitigate impact of abnormal situations with proactive notifications.
+* Explore and easily visualize your environment
+* Accelerate a diagnosis and a resolution for performance incidents
+* Control cost of monitoring infrastructure
+* Mitigate impact of abnormal situations with proactive notifications
 
 For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started).
 
@@ -36,9 +36,9 @@ Consider the following tasks, predefined alerts, and what they mean when you mon
 
 | Task | Predefined alert | What to look for |
 |:---- |----------------- |----------------- |
-| Monitor CPU usage per cluster to prevent CPU resource exhaustion. The default is to alert after CPU usage is over 80% for any cluster in the site | [VMware by Broadcom Site] Cluster CPU Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
-| Monitor memory usage per cluster to prevent memory resource exhaustion. The default is to alert after memory usage is over 80% for any cluster in the site.| [VMware by Broadcom Site] Cluster Memory Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
-| Monitor storage usage per cluster to prevent storage resource exhaustion. The default is to alert after storage usage is over 80% for any cluster in the site | [VMware by Broadcom Site] Cluster Storage Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with storage. Each of the four performance tiers for the storage that is used in the cluster can be monitored and can receive alerts independently. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
+| Monitor CPU usage per cluster to prevent CPU resource exhaustion. The default is to alert after CPU usage is over 80% for any cluster in the site. | [VMware by Broadcom site] Cluster CPU Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
+| Monitor memory usage per cluster to prevent memory resource exhaustion. The default is to alert after memory usage is over 80% for any cluster in the site.| [VMware by Broadcom site] Cluster Memory Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with more bare metal servers. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
+| Monitor storage usage per cluster to prevent storage resource exhaustion. The default is to alert after storage usage is over 80% for any cluster in the site. | [VMware by Broadcom site] Cluster Storage Usage | Frequent triggering of this alert might be an indication that you need to scale up your cluster with storage. Each of the four performance tiers for the storage that is used in the cluster can be monitored and can receive alerts independently. As usage reaches 100%, VMware by Broadcom workloads start to fail, and new deployments of workloads fail. |
 {: caption="Tasks and predefined alerts" caption-side="bottom"}
 
 ## {{site.data.keyword.vcf-aas}} predefined dashboard

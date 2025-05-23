@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-04-28"
+lastupdated: "2025-05-23"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,19 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2025}
 
 
+
+### 23 May 2025
+{: #vmware-service-may2325}
+{: release-note}
+
+Public IP enhancements
+:   You can open an IBM Support ticket to request additional public IP addresses. For more information, see [Requesting additional public IP addresses](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-additional-ips).
+
+Software currency update
+:   This release provides the infrastructure upgrades for Veeam® Backup 12.3.1.
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-23-may-2025).
 
 ### 28 April 2025
 {: #vmware-service-apr2825}

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2024-04-09"
+lastupdated: "2025-05-20"
 
 keywords: data encryption in vmware service, data storage for vmware service, bring your own keys for vmware service, BYOK for vmware service, key management for vmware service, key encryption for vmware service, personal data in vmware service, data deletion for vmware service, data in vmware service, data security in vmware service, KYOK for vmware service
 
@@ -46,11 +46,11 @@ Some of the metadata is collected directly from the customer and other metadata 
 
 * Client cloud account and contact information
 * Instance names and IDs of VMware® by Broadcom instances that are deployed for customers
-* VMware instances locations
+* VMware® by Broadcom instances locations
 * Installed services, for example, Veeam®, Zerto, or HCX™
 * Deployment state of each instance, for example Deploying, Failed, or Ready
 * Configuration of user solutions and the underlying components that are used in customer solutions (Compute, networking, storage, licenses)
-* Credentials to access the underlay IaaS and VMware components that are hosting the customers' workloads
+* Credentials to access the underlay IaaS and VMware by Broadcom components that are hosting the customers' workloads
 * Management logs generated from automation
 * Support data that is associated with helping the client resolve issues and questions
 
@@ -68,7 +68,7 @@ Customer keys (BYOK) are not initially supported. {{site.data.keyword.vcf-aas}} 
 ### Deleting {{site.data.keyword.vcf-aas}} metadata
 {: #vmaas-data-security-data-delete-metadata}
 
-Client metadata is associated with the VMware instances that the client creates. When the VMware instance is deleted by the client that the metadata is maintained in the DB where the instance state is set to deleted. Client metadata is maintained in the DB unless the client specifically requests that the data is removed by using a support ticket.
+Client metadata is associated with the VMware by Broadcom instances that the client creates. When the VMware by Broadcom instance is deleted by the client that the metadata is maintained in the DB where the instance state is set to deleted. Client metadata is maintained in the DB unless the client specifically requests that the data is removed by using a support ticket.
 
 Logs and support data that is associated with the instance are retained by {{site.data.keyword.cloud_notm}} policy for 1 year unless requested for deletion through an {{site.data.keyword.cloud_notm}} ticket.
 
