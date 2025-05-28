@@ -103,7 +103,7 @@ Software currency update
 :   This release provides the infrastructure upgrades for Veeam Backup 12.3.
 
 Enhanced log access
-:   Firewall logs are now available on the VMware Cloud Director™ tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
+:   Firewall logs are now available on the VMware Cloud Director tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
 
    Additionally, the *Organization vDC Gateway: Configure System Logging* right is now available with this release.
 

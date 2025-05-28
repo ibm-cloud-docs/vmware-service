@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-05-23"
+lastupdated: "2025-05-28"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -127,7 +127,7 @@ High availability is supported on a Cloud Director site region only when a Sapph
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
-{: #simpletabtable-cr-northamerica}
+{: #simpletabtable-dc-northamerica}
 
 ## Resource pool
 {: #tenant-plan-deploy-rp}

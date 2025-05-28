@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-05-22"
+lastupdated: "2025-05-28"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -93,7 +93,7 @@ Before you can add a connection group to your VDC, you must create a {{site.data
 
 3. Complete the following procedures to configure the VDC network edge.
    1. Add your VDC networks as routed networks. New networks are advertised by default, and you can optionally disable the route advertisement setting for each network separately.
-   2. If you have existing SNAT rules, edit the priority and configurations rules and add No Source NAT (NOSNAT) rules to use {{site.data.keyword.tg_short}}. For more information, see [Add an SNAT or a DNAT Rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html).{: external}
+   2. If you have existing SNAT rules, edit the priority and configurations rules and add No Source NAT (NOSNAT) rules to use {{site.data.keyword.tg_short}}. For more information, see [Add an SNAT or a DNAT Rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/add-an-snat-or-a-dnat-rule.html).{: external}
    3. Update your firewall rules to allow for the new outbound network traffic and for the new remote network inbound traffic. For more information, see [Configure Firewall Rules on a Provider Gateway in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-networks-tenant/working-with-provider-gateways-tenant/configure-firewall-rules-on-a-provider-gateway-tenant.html).{: external}
 
 4.  From [{{site.data.keyword.tg_short}}](https://cloud.ibm.com/interconnectivity/transit/provision), create the route and Border Gateway Protocol report. For more information, see [Generating a route report](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui).
