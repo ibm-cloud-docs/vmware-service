@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-05-23"
+lastupdated: "2025-06-04"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 

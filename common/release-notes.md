@@ -138,7 +138,7 @@ Software currency update
 :   This release provides an infrastructure upgrade for Veeam Backup 12.2 HF 7.7.
 
 VMware Cloud Director Snapshots
-:   You can now open an IBM Support ticket to enable VMware Cloud Director Snapshots to take multiple images of your virtual machines. Include the following details in you support ticket:
+:   You can now open an IBM Support ticket to enable VMware Cloud Director Snapshots to take multiple images of your virtual machines. Include the following details in the support ticket:
    * The snapshot count. You can request up to 31 images per virtual machine.
    * The URL to the {{site.data.keyword.vcf-aas}} Cloud Director site.
    * Your VMware Cloud Director Organization ID.

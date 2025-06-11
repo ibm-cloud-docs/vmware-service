@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-06-06"
 
 keywords: data portability, VCF as a Service, IBM Cloud for VMware Cloud Foundation as a Service
 
@@ -34,18 +34,12 @@ For more information about your responsibilities for {{site.data.keyword.vmware-
 ## Data export procedures
 {: #data-portability-procedures}
 
-Data portability in {{site.data.keyword.vmware-service_short}} is accomplished by using the VMware Cloud Director™ Availability (VCDA) product. For more information about VCDA and how to migrate workloads and data to an alternative infrastructure site, see the following documentation.
-
-- [VMware Cloud Director Availability - User Guide](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/availability/4-7/availability-user-guide-4-7.html){: external}
-- [VMware Cloud Director Availability Migration - White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}
+Data portability in {{site.data.keyword.vmware-service_short}} is accomplished by using the VMware Cloud Director™ Availability (VCDA) product. For more information about VCDA and how to migrate workloads and data to an alternative infrastructure site, see [VMware Cloud Director Availability Migration - White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}.
 
 ## Exported data formats
 {: #data-portability-data-formats}
 
-The exported data format is set and controlled by the VMware Cloud Director Availability product. For more information, see the following documentation.
-
-- [VMware Cloud Director Availability - User Guide](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/availability/4-7/availability-user-guide-4-7.html){: external}
-- [VMware Cloud Director Availability - Migration White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}
+The exported data format is set and controlled by the VMware Cloud Director Availability product. For more information, see [VMware Cloud Director Availability - Migration White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}.
 
 ## Data ownership
 {: #data-portability-ownership}

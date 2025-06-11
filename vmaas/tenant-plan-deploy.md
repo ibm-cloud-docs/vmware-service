@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-06-11"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -217,7 +217,7 @@ The profile storage type depends on the resource pool location. The following op
 
 {{site.data.keyword.cloud_notm}} offers several host profiles to choose from with different sizes and configurations of RAM and CPU. You can select the most optimized host profile to fit the target workloads. When you select a host profile, first assess the types of VMware VMs and workload you plan to run on {{site.data.keyword.vcf-aas}}.
 
-* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.robware.net/){: external} build an inventory of the existing VMware environments. [RVTools](https://www.robware.net/) lists all VMs in an existing VMware environment, including the VM CPU, RAM, and storage sizes.
+* For migrating workloads into {{site.data.keyword.cloud_notm}}, open source tools such as [RVTools](https://www.dell.com/support/kbdoc/en-us/000325532/rvtools-4-7-1-installer){: external} build an inventory of the existing VMware environments. RVTools lists all VMs in an existing VMware environment, including the VM CPU, RAM, and storage sizes.
 * For new VMware workloads, model out the applications and VM sizes (CPU, RAM, and storage) that you need for each VM.
 
 After you have a list of target VMs including CPU, RAM, and storage requirements, next identify the largest and most important VM applications. When you select a host profile, you want to ensure to use the largest and most important applications to match against the host profile options. Match the largest VM's RAM requirements and CPU requirements against the list of host profiles. As a standard choice, use the host profile with at least as much physical RAM and CPU as the largest VM. It is also important to account for a 10 to 20 % hypervisor overhead.
@@ -357,7 +357,7 @@ You can connect VDCs to {{site.data.keyword.tg_full_notm}} to enable the workloa
 
 VDCs connect to the public and IBM private networks through high availability edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge.
 
-You can optionally deploy a regional high availability edge either on a stretched resource pool or across two resource pools in a multizone region. For network regional high availability, a dedicated network edge and a private-only connection are required for multizone availability. 
+You can optionally deploy a regional high availability edge either on a stretched resource pool or across two resource pools in a multizone region. For network regional high availability, a dedicated network edge and a private-only connection are required for multizone availability.
 
 ### Network edge location
 {: #tenant-plan-deploy-edge-location}
@@ -384,7 +384,7 @@ NSX Edge performance is coupled to the CPU available to the edge. Network IO amo
 | Dedicated - M | This dedicated edge option is suitable for smaller production deployments with fewer networking demands.  \n  Provides an edge that is dedicated to a single VDC. Networking bandwidth is consistent and supports traffic performance up to 6 Gbps and supports edge services such as VPN, Firewall, NAT, and routing. |
 | Dedicated - L | The recommended dedicated edge option for large production workloads and high traffic.  \n Provides an edge that is dedicated to a single VDC and consistent networking bandwidth to support traffic performance up to 10 Gbps while also supporting edge services such as VPN, Firewall, NAT, and routing. |
 | Dedicated - XL | This dedicated edge option is suitable for the most demanding networking requirements.  \n Supports the highest level of edge services and throughput over 10 Gbps.  |
-{: caption="Network edge descriptions" caption-side="bottom"}  
+{: caption="Network edge descriptions" caption-side="bottom"}
 
 High inbound traffic from the public internet can trigger {{site.data.keyword.cloud_notm}}'s network protection platform. Contact IBM Support to discuss options for your network protection setting if you anticipate high inbound rates. For more information, see [Understanding network protection](/docs/subnets?topic=subnets-understanding-network-protect).
 {: note}

@@ -22,40 +22,46 @@ toc:
       id: tutorial
       topics:
       - topicgroup:
+          id: configuration-tutorials
           label: Configuration tutorials
           topics:
             - include: ../solution-tutorials/vcf-as-a-service-vdc.md
             - include: ../solution-tutorials/vcf-as-a-service-tf.md
             - tutorials/vcda-creating-dr-config.md
       - topicgroup:
+          id: connectivity-tutorials-vmware-service
           label: Connectivity tutorials
           topics:
             - tutorials/vmwaas-ipsec-tunnel.md
       - topicgroup:
+          id: migration-tutorials-vmware-service
           label: Migration tutorials
           topics:
             - tutorials/vmwaas-ovftool.md
             - tutorials/vcda-migrating-onprem.md
-            - tutorials/vcda-migrating-cloudtocloud-shared.md
             - tutorials/vcda-migrating-cloudtocloud-vmaas.md
   - navgroup:
       id: howto
       topics:
       - topicgroup:
+          id: vcfaas-vmware-service
           label: VCF as a Service
           topics:
           - topicgroup:
+              id: overview-vcfaas
               label: Overview
               topics:
               - common/vmware-aas-overview.md
               - common/vmaas-bom.md
           - vmaas/tenant-plan-deploy.md
           - topicgroup:
+              id: vcfaas-ordering
               label: Ordering VCF as a Service instances
               topics:
               - vmaas/tenant-ordering.md
               - vmaas/vdc-adding.md
           - topicgroup:
+              id: vcfaas-managing-cloud-dir-site-instances
               label: Managing Cloud Director site instances
               topics:
               - vmaas/pvdc-adding-deleting.md
@@ -64,23 +70,27 @@ toc:
               - vmaas/storage-adding-deleting.md
               - vmaas/private-subnets-adding-deleting.md
           - topicgroup:
+              id: vcfaas-managing-vdc-instances
               label: Managing virtual data center instances
               topics:
               - vmaas/capacity-adding-deleting.md
               - vmaas/swap-network-locations.md
           - topicgroup:
+              id: vcfaas-view-delete-instances
               label: Viewing and deleting VCF as a Service instances
               topics:
               - vmaas/tenant-viewing-sites.md
               - vmaas/tenant-viewing-vdc.md
           - common/vcd-ops-guide.md
           - topicgroup:
+              id: vcfaas-accessing-instances
               label: Accessing VCF as a Service instances
               topics:
               - common/vmaas-iam.md
               - common/vmaas-iam_vcd.md
               - common/iam-integration.md
           - topicgroup:
+              id: vcfaas-migrate-protectvms-instances
               label: Migrating and protecting VMs in VCF as a Service instances
               topics:
               - vmaas/tenant-vcda.md
@@ -95,6 +105,7 @@ toc:
               - vmaas/veeam-adding-deleting.md
               - vmaas/veeam-dedicated-sobr.md
           - topicgroup:
+              id: vcfaas-creating-secure-interconnectivity
               label: Creating secure interconnectivity with VCF as a Service
               topics:
                 - vmaas/tgw-adding-connections.md
@@ -105,13 +116,14 @@ toc:
       - offerings/vrw-intro.md
       - offerings/vcf-intro.md
       - offerings/services-intro.md
-      - offerings/shared-intro.md
       - topicgroup:
+          id: vcfaas-enhancing-security
           label: Enhancing security
           topics:
           - common/architecture-workload-isolation.md
           - common/vmaas-data-security.md
       - topicgroup:
+          id: vcfaas-observability
           label: Observability
           topics:
           - common/single-tenant-monitoring.md
@@ -120,6 +132,7 @@ toc:
       id: reference
       topics:
       - topicgroup:
+          id: api-reference-vcfaas
           label: API reference
           topics:
           - link:
@@ -133,9 +146,11 @@ toc:
       - common/bc-dr.md
       - common/data-portability.md
       - topicgroup:
+          id: vcfaas-solution-architectures
           label: Solution architectures on VCF as a Service
           topics:
           - topicgroup:
+              id: architecture-patterns
               label: VCF as a Service architecture patterns
               topics:
               - archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-06-11"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
