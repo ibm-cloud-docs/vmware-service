@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-05-23"
+lastupdated: "2025-06-26"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2025}
 
 
+
+### 26 June 2025
+{: #vmware-service-june2625}
+{: release-note}
+
+IBM Cloud data center support for Sao Paulo
+:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Sao Paulo region to host your single-tenant and multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 23 May 2025
 {: #vmware-service-may2325}
@@ -103,7 +110,7 @@ Software currency update
 :   This release provides the infrastructure upgrades for Veeam Backup 12.3.
 
 Enhanced log access
-:   Firewall logs are now available on the VMware Cloud Director tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
+:   Firewall logs are now available on the VMware Cloud Director™ tenant portal. For more information, see [Viewing firewall logs for your edge gateway](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-firewall-logs).
 
    Additionally, the *Organization vDC Gateway: Configure System Logging* right is now available with this release.
 
@@ -288,7 +295,7 @@ VMware Operations Manager availability
 Software currency
 :   This release provides the following infrastructure upgrades.
 
-   * VMware ESXi 7.0 Update 3q
+   * VMware ESXi™ 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
    * VMware NSX-T 4.1.2.4
    * Veeam Backup 12.1.2

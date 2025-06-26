@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-06-04"
+lastupdated: "2025-06-25"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -126,7 +126,6 @@ The {{site.data.keyword.vcf-aas}} multitenant consumption model provides the fol
 
 ## Related links
 {: #vmware-aas-overview-links}
-
 
 * [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Ordering {{site.data.keyword.vcf-aas}} virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding)

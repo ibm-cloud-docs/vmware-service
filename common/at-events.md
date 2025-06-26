@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-06-11"
+lastupdated: "2025-06-16"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -33,7 +33,7 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 | Dallas (`us-south`) | Washington (`us-east`) | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
 |---------------------|------------------------|--------------------|----------------------|
-| [Yes]{: tag-green}  | [Yes]{: tag-green}     | [Yes]{: tag-green} | [No]{: tag-red}      |
+| [Yes]{: tag-green}  | [Yes]{: tag-green}     | [Yes]{: tag-green} | [Yes]{: tag-green}      |
 {: caption="Regions where activity tracking events are generated in Americas locations" caption-side="bottom"}
 {: #at-table-1}
 {: tab-title="Americas"}

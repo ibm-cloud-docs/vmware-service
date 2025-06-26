@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-06-11"
+lastupdated: "2025-06-26"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -129,6 +129,17 @@ High availability is supported on a Cloud Director site region only when a Sapph
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-northamerica}
 
+| Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+| Sao Paulo | Sao Paulo 01 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sao Paulo | Sao Paulo 04 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sao Paulo | Sao Paulo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - South America" caption-side="bottom"}
+{: tab-title="South America"}
+{: tab-group="Data centers for deployment"}
+{: class="simple-tab-table"}
+{: #simpletabtable-dc-southamerica}
+
 ## Resource pool
 {: #tenant-plan-deploy-rp}
 
@@ -211,6 +222,17 @@ The profile storage type depends on the resource pool location. The following op
 {: tab-group="Multizone profiles"}
 {: class="simple-tab-table"}
 {: #simpletabtable-prof-northamerica}
+
+| Data center | NFS-only storage | vSAN + optional NFS storage |
+|:------------|:-----------------|:----------------------------|
+| Sao Paulo 01 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sao Paulo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Sao Paulo 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Data center profile storage types - South America" caption-side="bottom"}
+{: tab-title="South America"}
+{: tab-group="Multizone profiles"}
+{: class="simple-tab-table"}
+{: #simpletabtable-prof-southamerica}
 
 ### Host profile
 {: #tenant-plan-deploy-cluster-host}

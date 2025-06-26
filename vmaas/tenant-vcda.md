@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-06-18"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 
@@ -24,11 +24,10 @@ Both migration and disaster recovery support are available when you install the 
 The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
 
 {{site.data.keyword.vmware-service_full}} with VCDA supports several migration scenarios:
-* Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network.
-* Migrate workloads from VMware Shared to {{site.data.keyword.vcf-aas}}.
-* Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance.
+* Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network
+* Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance
 
-{{site.data.keyword.IBM_notm}} provides public instance endpoints with VCDA. Endpoints are used to access the VCDA web interface and also to migrate workloads. You can request new endpoints for private connections for an additional charge. With private endpoints, you can migrate workloads into {{site.data.keyword.vcf-aas}} by using the {{site.data.keyword.cloud_notm}} private network to improve consistency and security. Cloud-to-cloud migrations from both VMware Shared and from {{site.data.keyword.vcf-aas}} to {{site.data.keyword.vcf-aas}} are over the private network.
+{{site.data.keyword.IBM_notm}} provides public instance endpoints with VCDA. Endpoints are used to access the VCDA web interface and also to migrate workloads. You can request new endpoints for private connections for an additional charge. With private endpoints, you can migrate workloads into {{site.data.keyword.vcf-aas}} by using the {{site.data.keyword.cloud_notm}} private network to improve consistency and security. Cloud-to-cloud migrations from {{site.data.keyword.vcf-aas}} to {{site.data.keyword.vcf-aas}} are over the private network.
 
 ## Accessing the VMware Cloud Director Availability console
 {: #tenant-vcda-portal}

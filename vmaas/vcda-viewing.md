@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-06-18"
 
 keywords: view vcda details
 
@@ -50,15 +50,6 @@ On the **Instance endpoints** tab, review the zone, the connection type of publi
 * The **Site name** and **Replication endpoint** columns provide the option to **Copy to clipboard** for the site and endpoint names. Use the site name of your instance to connect your on-premises peers. Use the replication endpoint URL to connect to the peer from your on-premises instance.
 * Click **Open VCDA** to access the VCDA console.
 * Click **Add private endpoint** to add new endpoints for private connections. For more information, see [Adding and deleting a private instance endpoint](/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep).
-
-### VMware Shared pairing details
-{: #vcda-viewing-shared}
-
-The following details are available for VMware Shared pairings.
-
-On the **VMware Shared pairings** tab, you can review the source and peer zones, the source and peer site names, and the status.
-
-The **Source site name** and **Peer site name** columns provide the option to **Copy to clipboard**.
 
 ### {{site.data.keyword.vcf-aas}} pairing details
 {: #vcda-viewing-vmwaas}

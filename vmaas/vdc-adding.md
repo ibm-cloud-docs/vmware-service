@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-06-19"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -79,6 +79,14 @@ With network regional HA on a nonstretched workload cluster, the primary network
 | Multitenant shared storage | - Shared storage is billed hourly. \n - Storage quantity includes all storage that is allocated per VM, even if the VM is stopped, and all VM snapshots. \n - Storage usage increases with new VMs and snapshots and decreases when VMs and snapshots are removed. |
 | Multitenant edges | - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost-effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. |
 {: caption="Billing details" caption-side="bottom"}
+
+## Minimum requirements for {{site.data.keyword.vcf-aas}} instances
+{: #vdc-adding-min-req}
+
+Minimum 2 servers (7 servers for vSAN™ profiles)
+ * 2 hosts (2-socket 32 cores, 192 GB RAM)
+ * 24 TB of shared storage
+ * Minimum of 1 VDC with a Medium Dedicated Edge
 
 ## Name requirements
 {: #vdc-adding-vdc-name}

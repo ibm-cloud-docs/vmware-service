@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-06-19"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -32,14 +32,6 @@ You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud 
 | Single-tenant shared storage | - Shared storage is billed monthly. \n - Storage that is ordered after the first day of the month is prorated for the first month. \n - Storage that is removed during the month is charged for the full month that it is removed. \n - Each storage change is treated individually. For example, when you remove storage then add storage, the bill reflects both storages for that month. |
 | Single-tenant edge storage | - Edge storage is billed monthly. \n - Edges that are ordered after the first day of the month are prorated for the first month. \n - Edges that are removed during the month are charged for the full month that they are removed. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. \n - For an efficiency edge, one edge instance is used with 1-64 VRF (virtual edges). One efficiency edge can support up to 64 virtual data centers (VDCs) until the next edge instance is deployed. When an efficiency edge reaches attachment of zero VDCs the efficiency edge is removed. |
 {: caption="Billing details" caption-side="bottom"}
-
-## Minimum requirements for {{site.data.keyword.vcf-aas}} instances
-{: #tenant-ordering-min-req}
-
-Minimum 2 servers (7 servers for vSAN™ profiles)
- * 2 hosts (2-socket 32 cores, 192 GB RAM)
- * 24 TB of shared storage
- * Minimum of 1 VDC with a medium performance edge
 
 ## Name requirements
 {: #tenant-ordering-vdc-name}
