@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-07-02"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -25,6 +25,8 @@ You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud 
 
 ## Billing details
 {: #tenant-ordering-billing}
+
+On the {{site.data.keyword.vmware-service_short}} order page, click the [**About** tab](/vmware/vmware_as_a_service/provision/vdc_st) to view complete pricing details.
 
 | Feature                      | Billing model      |
 |:-----------------------------|:-------------------|

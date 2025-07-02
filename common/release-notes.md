@@ -69,7 +69,7 @@ Network regional high availability
 :  To ensure high performance and effective load distribution, you can now order a regional high availability edge when you create a new single-tenant or multitenant VDC. Either deploy the regional high availability edge on a stretched resource pool or consolidate your network across two resource pools in a multizone region. For additional information, see [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 Immutable IBM Cloud Object Storage availability
-:   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared Scale-out Backup Repositories (SOBRs) or when you order a dedicated SOBR through the Veeam® Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
+:   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared Scale-out Backup Repositories (SOBRs) or when you order a dedicated SOBR through the Veeam Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
 
 Software currency update
 :   This release provides an infrastructure upgrade for VMware NSX-T™ 4.2.1.2.
@@ -190,7 +190,7 @@ Supported VPNs for {{site.data.keyword.vcf-aas}}
 :   You can now use route-based IPsec, policy-based IPsec, and L2 VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances. For more information, see [Operating VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-routebased-ipsec-vpn-vmaas).
 
 Software currency update
-:   This release provides an infrastructure upgrade for VMware vCenter Server® Appliance 8.0 Update 3d.
+:   This release provides an infrastructure upgrade for VMware vCenter Server Appliance 8.0 Update 3d.
 
 ### 25 October 2024
 {: #vmware-service-oct2524}
@@ -295,7 +295,7 @@ VMware Operations Manager availability
 Software currency
 :   This release provides the following infrastructure upgrades.
 
-   * VMware ESXi™ 7.0 Update 3q
+   * VMware ESXi 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
    * VMware NSX-T 4.1.2.4
    * Veeam Backup 12.1.2

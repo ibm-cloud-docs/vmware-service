@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-06-19"
+lastupdated: "2025-07-02"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -65,6 +65,8 @@ With network regional HA on a nonstretched workload cluster, the primary network
 
 ## Billing details
 {: #vdc-adding-billing}
+
+On the {{site.data.keyword.vmware-service_short}} order page, click the [**About** tab](/vmware/vmware_as_a_service/provision/vdc_mt) to view complete pricing details.
 
 | Feature         | Billing model      |
 |:----------------|:-------------------|

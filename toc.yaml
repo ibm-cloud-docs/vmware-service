@@ -142,8 +142,7 @@ toc:
           - topic: common/api-virtual-private-ep.md
       - common/vmaas-understand-responsib.md
       - common/policies.md
-      - common/ha.md
-      - common/bc-dr.md
+      - common/ha-dr.md
       - common/data-portability.md
       - topicgroup:
           id: vcfaas-solution-architectures
