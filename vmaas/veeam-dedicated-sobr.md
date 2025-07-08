@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-03-27"
+lastupdated: "2025-07-07"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
