@@ -69,7 +69,7 @@ Network regional high availability
 :  To ensure high performance and effective load distribution, you can now order a regional high availability edge when you create a new single-tenant or multitenant VDC. Either deploy the regional high availability edge on a stretched resource pool or consolidate your network across two resource pools in a multizone region. For additional information, see [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding).
 
 Immutable IBM Cloud Object Storage availability
-:   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared Scale-out Backup Repositories (SOBRs) or when you order a dedicated SOBR through the Veeam Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
+:   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared SOBRs or when you order a dedicated SOBR through the Veeam Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
 
 Software currency update
 :   This release provides an infrastructure upgrade for VMware NSX-T™ 4.2.1.2.
@@ -287,7 +287,7 @@ Private network connection availability for virtual data center orders
 :   You can now select either a public and private network connection or a private-only network connection when you create your VDC with a network edge. For more information, see [Network settings](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-network).
 
 Scale-out Backup Repository for Veeam Backup
-:   The Veeam Backup service now provides the option to order a dedicated Scale-out Backup Repository (SOBR) for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+:   The Veeam Backup service now provides the option to order a dedicated SOBR for your single-tenant and multitenant instances. For more information, see [Ordering a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 VMware Operations Manager availability
 :   You can now access the Operations Manager service through the VMware Cloud Director tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-services-chargeback).

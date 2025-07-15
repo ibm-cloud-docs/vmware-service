@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-05-28"
+lastupdated: "2025-07-15"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -20,7 +20,9 @@ subcollection: vmware-service
 
 Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service_notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
 
-{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource. Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
+{{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource. The 198.18.0.0/15 network is used to connect the VDC to the transit gateway from a set of IPs allocated for the region where the VDC is deployed. 198.18.0.0/15 is a private-only network that is used by {{site.data.keyword.IBM}} for transit networks and GRE tunnels.
+
+Use the VMware Solutions console to add a connection group to your VDC. A connection group contains six unbound GRE tunnels to establish redundant connectivity to each zone. After you create the connection group, add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the connection group. You can connect the tunnels to {{site.data.keyword.tg_short}} by using either the {{site.data.keyword.cloud-shell_notm}} or the {{site.data.keyword.tg_short}} console.
 
 You must individually attach all six unbound GRE tunnels to the {{site.data.keyword.tg_short}} to attach the VDC connection group to {{site.data.keyword.tg_short}}. The six unbound GRE tunnels help to avoid redundancy risks.
 

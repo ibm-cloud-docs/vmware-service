@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-15"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -18,14 +18,16 @@ subcollection: vmware-service
 # Using a dedicated Scale-out Backup Repository with Veeam Backup
 {: #veeam-adding-sobr}
 
-When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are created by default through the Veeam® Backup service. The default shared SOBRs include one performance SOBR and one {{site.data.keyword.cloud_notm}} Object Storage SOBR, each with a maximum size of 100 TB and 7 days of immutability. You cannot change the configuration or delete default SOBRs.
+When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are created by default through the Veeam® Backup service. The default shared SOBRs include performance tier storage that is backed by vSAN™ and capacity tier storage that is backed by {{site.data.keyword.cloud_notm}} Object Storage, each with a maximum size of 100 TB and 7 days of immutability. You cannot change the configuration or delete default SOBRs.
 
 All default backups are deleted after seven days. If more time is needed, open an IBM Support ticket to increase the number of days.
 {: note}
 
-A SOBR is a repository system with horizontal scaling support for multitier storage of data and consists of one or more backup repositories or {{site.data.keyword.cloud_notm}} Object Storage repositories that are called the performance tier. You can expand the performance tier with {{site.data.keyword.cloud_notm}} Object Storage repositories for long-term retention to create the capacity tier. All of the storage devices and systems inside the SOBR are joined into a system with their capacities summarized.
+A SOBR is a data repository target for backup jobs that are configured in the Veeam service. This storage solution is designed to support horizontal scaling through its multitier system, which consists of a performance tier and an optional capacity tier. The performance tier can either be a set of vSAN repositories or two Cloud Object Storage repositories. Additionally, if a capacity tier is specified, it is either a pair of Cloud Object Storage repositories if the performance tier has vSAN repositories, or it is two Cloud Object Storage repositories if the performance tier has Cloud Object Storage repositories. 
 
-If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. You can add a SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a SOBR are not shared.
+If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. Add a dedicated SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a dedicated SOBR are not shared.
+
+For {{site.data.keyword.cloud_notm}} Object Storage immutability, the Veeam Backup service retains the backup up to an additional 30 days.
 
 ## Procedure to request a dedicated SOBR
 {: #veeam-adding-sobr-proc}
@@ -41,7 +43,7 @@ You must request a size less than or equal to a specified maximum size (1200 TB)
     3. Select the **All topics** tile and click **Next**.
 4. In the **Details** section, provide the following information and then click **Next**.
     1. For **Subject**, enter `Request to Add New Dedicated SOBR to Veeam Instance`
-    2. For **Description**, provide the following details to help IBM Support tailor the repository to meet your specific data protection needs and to ensure a smooth setup process.
+    2. For **Description**, provide the following details to help IBM Support tailor the repository to meet your specific data protection needs and to help ensure a smooth setup process.
 
     * `Site ID:` Specify the unique director site identifier where the SOBR is configured. For multitenant instances, use the site ID of the multitenant instance owner's account.
     * `SOBR name:` Specify the name of your dedicated SOBR. This name is used to identify the repository in your Veeam management console.
