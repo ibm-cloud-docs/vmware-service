@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-12-10"
+lastupdated: "2025-07-16"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -28,7 +28,6 @@ Add-on services are not supported for all {{site.data.keyword.vmwaresolutions_fu
 
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
-* [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 
@@ -53,8 +52,7 @@ Add-on services are not supported for all {{site.data.keyword.vmwaresolutions_fu
 * [Dizzion](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview)
 * [IBM Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap)
 
-## Other services
+## Management tools
 {: #services-intro-other}
 
-* [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

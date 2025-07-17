@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-07-16"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -47,7 +47,7 @@ You must request a size less than or equal to a specified maximum size (1200 TB)
 
     * `Site ID:` Specify the unique director site identifier where the SOBR is configured. For multitenant instances, use the site ID of the multitenant instance owner's account.
     * `SOBR name:` Specify the name of your dedicated SOBR. This name is used to identify the repository in your Veeam management console.
-    * `SOBR size and data center:` Indicate the required storage capacity for the SOBR and the data center with available storage clusters where you want to deploy the SOBR. Consider your current and anticipated storage needs. You must provide a value that includes the data center region and number. For example, `dal12`.
+    * `SOBR size and data center:` Specify the required storage capacity for the SOBR and the data center with available storage clusters where you want to deploy the SOBR. Consider your current and anticipated storage needs. You must provide a value that includes the data center region and number. For example, `dal12`.
 
 5. In the **Review** section, review the case details and click **Submit case**.
 
