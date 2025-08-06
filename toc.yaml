@@ -53,6 +53,7 @@ toc:
               topics:
               - common/vmware-aas-overview.md
               - common/vmaas-bom.md
+              - common/vmaas-pricing.md
           - vmaas/tenant-plan-deploy.md
           - topicgroup:
               id: vcfaas-ordering

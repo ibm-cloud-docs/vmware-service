@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-05-05"
+lastupdated: "2025-08-04"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -126,7 +126,7 @@ Weekly, monthly, and yearly backups are also called archive backups.
 #### Veeam backup sizing guidelines and calculator
 {: #tenant-veeam-policy-backup-remove-retention-calculator}
 
-Depending on the backup retention policy that you choose, the overall sizing for the Veeam Backup differs. Use the [Veeam calculator](https://www.veeam.com/calculators/simple/vbr/machines){: external} to calculate the Veeam Backup sizing based on your retention policy and number of required backups. 
+Depending on the backup retention policy that you choose, the overall sizing for the Veeam Backup differs. Use the [Veeam calculator](https://www.veeam.com/calculators/simple/vbr/machines){: external} to calculate the Veeam Backup sizing based on your retention policy and number of required backups.
 
 IBM uses the backup 3-2-1 rule for storing backups. The rule creates two copies of the data and makes it available on different storage mediums during the retention period.
 {: note}
@@ -185,4 +185,4 @@ You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a
 
 * [Adding and deleting Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-deleting)
 * [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
+* [Veeam Help Center Technical Documentation](https://helpcenter.veeam.com/){: external}

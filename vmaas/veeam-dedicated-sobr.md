@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-04"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -23,7 +23,7 @@ When you provision your {{site.data.keyword.vmware-service_full}} instance, a to
 All default backups are deleted after seven days. If more time is needed, open an IBM Support ticket to increase the number of days.
 {: note}
 
-A SOBR is a data repository target for backup jobs that are configured in the Veeam service. This storage solution is designed to support horizontal scaling through its multitier system, which consists of a performance tier and an optional capacity tier. The performance tier can either be a set of vSAN repositories or two Cloud Object Storage repositories. Additionally, if a capacity tier is specified, it is either a pair of Cloud Object Storage repositories if the performance tier has vSAN repositories, or it is two Cloud Object Storage repositories if the performance tier has Cloud Object Storage repositories. 
+A SOBR is a data repository target for backup jobs that are configured in the Veeam service. This storage solution is designed to support horizontal scaling through its multitier system, which consists of a performance tier and an optional capacity tier. The performance tier can either be a set of vSAN repositories or two Cloud Object Storage repositories. Additionally, if a capacity tier is specified, it is either a pair of Cloud Object Storage repositories if the performance tier has vSAN repositories, or it is two Cloud Object Storage repositories if the performance tier has Cloud Object Storage repositories.
 
 If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. Add a dedicated SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a dedicated SOBR are not shared.
 
@@ -78,4 +78,4 @@ You can open an IBM Support case to request to delete an existing dedicated SOBR
 * [Getting help and support for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-support)
 * [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam)
 * [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center Technical Documentation](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
+* [Veeam Help Center Technical Documentation](https://helpcenter.veeam.com/){: external}
