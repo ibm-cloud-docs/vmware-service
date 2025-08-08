@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-08"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -25,6 +25,30 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2025}
 
 
+
+### 8 August 2025
+{: #vmware-service-aug825}
+{: release-note}
+
+IBM Cloud Object Storage only backup support 
+:   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+
+Software currency updates
+:   This release provides the following infrastructure upgrades.
+
+   * NSX-T™ 4.2.2.1
+   * VMware Cloud Director™ 10.6.1.1
+   * VMware ESXi™ 8.0 Update 3f
+   * Veeam Backup 12.3.2
+
+REST API updates
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](https://test.cloud.ibm.com/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-8-august-2025).
+
+User interface updates and enhancements
+:   The user interface is updated with various message and tooltip enhancements.
+
+New documentation
+:   A new topic, [{{site.data.keyword.vcf-aas}} pricing](/docs/vmware-service?topic=vmware-service-vmaas_pricing), is now available to help you understand pricing and billing considerations for {{site.data.keyword.vcf-aas}}.
 
 ### 26 June 2025
 {: #vmware-service-june2625}

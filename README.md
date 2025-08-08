@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2025
 
-lastupdated: "2024-08-14"
+lastupdated: "2025-08-06"
 
 subcollection: vmware-service
 
@@ -12,6 +12,6 @@ subcollection: vmware-service
 
 # User documentation set for IBM Cloud for VMware Cloud Foundation as a Service
 
-Internal-only documentation: https://test.cloud.ibm.com/docs/vmware-service
+
 
 Customer-facing documentation: https://cloud.ibm.com/docs/vmware-service

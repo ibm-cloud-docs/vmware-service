@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-06-04"
+lastupdated: "2025-08-08"
 
 keywords: change log for VMware Cloud Foundation as a Service API, updates to VCF as a Service API
 
@@ -17,6 +17,13 @@ subcollection: vmware-service
 {: #vmware-service-api-change-log}
 
 In this change log, you can learn about the most recent changes, improvements, and updates for the [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
+
+## 8 August 2025
+{: #vmware-service-8-august-2025}
+
+Updated the Activity Tracker events to match what the Usage Meter APIs are sending back. For more information, see:
+* [Create a Usage Meter registration - Auditing](/apidocs/vmware-service#create-usage-meter-registration)
+* [Delete a Usage Meter registration - Auditing](/apidocs/vmware-service#delete-usage-meter-registration)
 
 ## 23 May 2025
 {: #vmware-service-23-may-2025}

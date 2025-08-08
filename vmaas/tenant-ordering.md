@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-07"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -21,19 +21,9 @@ subcollection: vmware-service
 You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
 
 {{site.data.keyword.vcf-aas-full}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
+
+On the **{{site.data.keyword.vmware-service_short}}** order page, click [See pricing details](/vmware/vmware_as_a_service/provision/vdc_st) to view the rate card that outlines cost details by feature. For more information, see [VCF as a Service pricing](/docs/vmware-service?topic=vmware-service-vmaas_pricing).
 {: note}
-
-## Billing details
-{: #tenant-ordering-billing}
-
-On the {{site.data.keyword.vmware-service_short}} order page, click the [**About** tab](/vmware/vmware_as_a_service/provision/vdc_st) to view complete pricing details.
-
-| Feature                      | Billing model      |
-|:-----------------------------|:-------------------|
-| Single-tenant host profiles | - Hosts are billed monthly. \n - Hosts that you order after the first day of the month are prorated for the first month. \n - Hosts that are removed during the month are charged for the full month that they are removed. \n - Each host is treated individually. For example, when you remove a host then add a host, the bill reflects two hosts for that month. |
-| Single-tenant shared storage | - Shared storage is billed monthly. \n - Storage that is ordered after the first day of the month is prorated for the first month. \n - Storage that is removed during the month is charged for the full month that it is removed. \n - Each storage change is treated individually. For example, when you remove storage then add storage, the bill reflects both storages for that month. |
-| Single-tenant edge storage | - Edge storage is billed monthly. \n - Edges that are ordered after the first day of the month are prorated for the first month. \n - Edges that are removed during the month are charged for the full month that they are removed. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. \n - For an efficiency edge, one edge instance is used with 1-64 VRF (virtual edges). One efficiency edge can support up to 64 virtual data centers (VDCs) until the next edge instance is deployed. When an efficiency edge reaches attachment of zero VDCs the efficiency edge is removed. |
-{: caption="Billing details" caption-side="bottom"}
 
 ## Name requirements
 {: #tenant-ordering-vdc-name}

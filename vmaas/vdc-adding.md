@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-07"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -23,6 +23,9 @@ With {{site.data.keyword.vmware-service_full}}, you can quickly provision a comp
 You can optionally deploy your VDC in a stretched vSAN™ resource pool. To deploy your VDC in a compute regional high availability (HA) resource pool, you must first create a stretched resource pool in your Cloud director site. For more information, see [Procedure to add stretched vSAN high availability resource pools to {{site.data.keyword.vcf-aas}} instances](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting#pvdc-adding-deleting-add-vsan-proc).
 
 When you choose to deploy your VDC in a compute regional HA resource pool, you must create a highly available network edge or disable the option to create a network edge.
+
+On the **{{site.data.keyword.vmware-service_short}}** order page, click [See pricing details](/vmware/vmware_as_a_service/provision/vdc_st) to view the rate card that outlines cost details by feature. For more information, see [VCF as a Service pricing](/docs/vmware-service?topic=vmware-service-vmaas_pricing).
+{: note}
 
 ## Single-tenant virtual data centers
 {: #vdc-adding-st}
@@ -62,25 +65,6 @@ When you select to deploy your VDC on a stretched compute regional HA resource p
 With network regional HA on a stretched workload cluster, the primary network location is the preferred and active location for your workloads. During an outage, the secondary network location temporarily becomes the active location. You can swap the primary and secondary locations as needed.
 
 With network regional HA on a nonstretched workload cluster, the primary networking location defaults to the VDC primary resource pool location. You select the resource pool for the secondary network location.
-
-## Billing details
-{: #vdc-adding-billing}
-
-On the {{site.data.keyword.vmware-service_short}} order page, click the [**About** tab](/vmware/vmware_as_a_service/provision/vdc_mt) to view complete pricing details.
-
-| Feature         | Billing model      |
-|:----------------|:-------------------|
-| Multitenant \n **On-demand** vCPU | - vCPU is billed hourly. \n -  vCPU quantity is for all vCPU allocated to all running VMs in the VDC at any time per hour. \n - When a VM is stopped it is not counted in the total vCPU calculation. For example, if two running VMs both have 4 vCPU, then a third VM is started at 4 vCPU. The vCPU for the one hour period is 12 vCPU. |
-| Multitenant \n **On-demand** RAM | - RAM is billed hourly. \n - RAM quantity is for all RAM allocated to all running VMs in the VDC at any given time per hour. \n -  When a VM is stopped it is not counted in the total RAM calculation. For example, if two running VMs have 16 GB RAM, then a third VM is started also at 16 GB RAM. The RAM for the one hour period is 48 GB. |
-| Multitenant multizone \n **On-demand** vCPU | - vCPU is billed hourly. \n - vCPU quantity supports vCPU in both (2) of the data centers for all vCPU allocated to all running VMs in the VDC at any time per hour. \n - The vCPU size is double the cost of your order to support the vCPU in both data centers. For example, if the VM has 4 vCPU and runs in a multizone region, then the total vCPU is 8. \n - You can see the amount of vCPU that the VM uses in the primary region and IBM allocates the same amount of vCPU in the secondary region.
-| Multitenant multizone \n **On-demand** RAM | - RAM is billed hourly.  \n - RAM quantity supports RAM in both (2) of the data centers for all RAM allocated to all running VMs in the VDC at any time per hour. \n - The RAM size is double the cost of your order to support the RAM in both data centers. For example, if the VM has 16 GB RAM in a multizone region, then the total is 32 GB RAM. \n - You can see the amount of RAM that the VM uses in the primary region and IBM allocates the same amount of RAM in the secondary region.
-| Multitenant \n **Reserved** vCPU   | - vCPU is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased, then decreased again, the high water mark vCPU capacity reservation is charged for that month. |
-| Multitenant \n **Reserved** RAM | - RAM is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased, then decreased again, the high water mark RAM capacity reservation is charged for that month. |
-| Multizone \n **Reserved** vCPU | - vCPU is billed monthly for the highest capacity reservation set for that month. \n - The vCPU size is double the cost of your reservation to support the vCPU in both data centers.  For example, if the VM has 4 vCPU reserved in a multizone region, then the total reserved vCPU is 8. \n - You can see the amount of vCPU that the VM uses in the primary region and IBM allocates the same amount of vCPU in the secondary region.
-| Multizone \n **Reserved** RAM | - RAM is billed monthly for the highest capacity reservation set for that month. \n - The RAM size is double the cost of your reservation to support the RAM in both data centers.  For example, if the VM has 16 GB RAM reserved in a multizone region, then the total reservation is 32 GB RAM. \n - You can see the amount of RAM that the VM uses in the primary region and IBM allocates the same amount of RAM in the secondary region.
-| Multitenant shared storage | - Shared storage is billed hourly. \n - Storage quantity includes all storage that is allocated per VM, even if the VM is stopped, and all VM snapshots. \n - Storage usage increases with new VMs and snapshots and decreases when VMs and snapshots are removed. |
-| Multitenant edges | - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost-effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. |
-{: caption="Billing details" caption-side="bottom"}
 
 ## Minimum requirements for {{site.data.keyword.vcf-aas}} instances
 {: #vdc-adding-min-req}

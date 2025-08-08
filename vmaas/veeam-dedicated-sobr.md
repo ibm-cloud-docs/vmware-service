@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-08-06"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -27,6 +27,14 @@ A SOBR is a data repository target for backup jobs that are configured in the Ve
 
 If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. Add a dedicated SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a dedicated SOBR are not shared.
 
+The following SOBR types are available when you request a dedicated SOBR. You are billed monthly for the vSAN and {{site.data.keyword.cloud_notm}} Object Storage SOBR option and no charge for the {{site.data.keyword.cloud_notm}} Object Storage only SOBR options.
+
+* vSAN and {{site.data.keyword.cloud_notm}} Object Storage, two copies.
+* {{site.data.keyword.cloud_notm}} Object Storage only, one local and one remote copy.
+* {{site.data.keyword.cloud_notm}} Object Storage only, one local copy
+
+*vSAN and {{site.data.keyword.cloud_notm}} Object Storage* is the recommended SOBR type for rapid disaster recovery scenarios. *{{site.data.keyword.cloud_notm}} Object Storage only* SOBR types are recommended exclusively for larger data volumes and slower disaster recovery scenarios.
+
 For {{site.data.keyword.cloud_notm}} Object Storage immutability, the Veeam Backup service retains the backup up to an additional 30 days.
 
 ## Procedure to request a dedicated SOBR
@@ -47,7 +55,9 @@ You must request a size less than or equal to a specified maximum size (1200 TB)
 
     * `Site ID:` Specify the unique director site identifier where the SOBR is configured. For multitenant instances, use the site ID of the multitenant instance owner's account.
     * `SOBR name:` Specify the name of your dedicated SOBR. This name is used to identify the repository in your Veeam management console.
-    * `SOBR size and data center:` Specify the required storage capacity for the SOBR and the data center with available storage clusters where you want to deploy the SOBR. Consider your current and anticipated storage needs. You must provide a value that includes the data center region and number. For example, `dal12`.
+    * `Type:` Specify the storage type of the performance tier of the SOBR as either **vSAN** or **Cloud Object Storage**. For the Cloud Object Storage type, specify either **One local Cloud Object Storage** or **Two copy (one local and one remote) Cloud Object Storage**.
+    * `SOBR size:` Specify the required storage capacity for the performance tier as **Performance Tier Size**, in increments of 200 TB. If the vSAN or Two Copy Cloud Object Storage type is specified for the performance tier, specify a size for the capacity tier as **Capacity Tier Size**, in increments of 200 TB.
+    * `Data center:` Specify the data center with available storage clusters where you want to deploy the SOBR. Consider your current and anticipated storage needs. You must provide a value that includes the data center region and number. For example, `dal12`.
 
 5. In the **Review** section, review the case details and click **Submit case**.
 
