@@ -36,13 +36,13 @@ IBM Cloud Object Storage only backup support
 Software currency updates
 :   This release provides the following infrastructure upgrades.
 
-   * NSX-T™ 4.2.2.1
-   * VMware Cloud Director™ 10.6.1.1
+   * NSX-T 4.2.2.1
+   * VMware Cloud Director 10.6.1.1
    * VMware ESXi™ 8.0 Update 3f
    * Veeam Backup 12.3.2
 
 REST API updates
-:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](https://test.cloud.ibm.com/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-8-august-2025).
+:   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-8-august-2025).
 
 User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements.
@@ -96,7 +96,7 @@ Immutable IBM Cloud Object Storage availability
 :   Immutable {{site.data.keyword.cloud_notm}} Object Storage provides an extra layer of security, by default, for shared SOBRs or when you order a dedicated SOBR through the Veeam Backup service for your single-tenant and multitenant instances. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage).
 
 Software currency update
-:   This release provides an infrastructure upgrade for VMware NSX-T™ 4.2.1.2.
+:   This release provides an infrastructure upgrade for VMware NSX-T 4.2.1.2.
 
 REST API updates
 :   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-7-april-2025).
@@ -234,7 +234,7 @@ Software currency updates
 :   This release provides the following infrastructure upgrades.
 
    * VMware Cloud Director 10.6.0.1
-   * VMware vCenter Server® Appliance 8.0 Update 3b
+   * VMware vCenter Server Appliance 8.0 Update 3b
    * VMware NSX-T 4.2.0.2
    * Veeam Backup 12.2
    * VMware Cloud Director Availability 4.7.3

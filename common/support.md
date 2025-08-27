@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-05-08"
+lastupdated: "2025-08-18"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -30,7 +30,7 @@ If you still can't resolve the problem, you can open a support case. For more in
 ## Procedure to create a case for {{site.data.keyword.vcf-aas}}
 {: #support-procedure}
 
-1. Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter).
+1. Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
 2. Log in with your **IBMid** account.
 3. Select **All Products** and type **{{site.data.keyword.vmware-service_short}}** where prompted for the product name, then click **{{site.data.keyword.vmware-service_notm}}**.
 4. Review the various solutions offered. If you do not see an answer to your problem, click **Create a case**.

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-08-18"
 
 subcollection: vmware-service
 
@@ -81,7 +81,7 @@ Client metadata is associated with the {{site.data.keyword.vcf-aas}} instances t
 
 Client metadata is stored in {{site.data.keyword.cloud_notm}} databases (ICD) that encrypts all data both in transit and at rest.
 
-The credentials that are used to access the underlay IaaS and VMware by Broadcom components are also stored in the database. They are stored with a second layer of envelope encryption in addition to the DB encryption by using [{{site.data.keyword.cloud_notm}} Key Protect](https://cloud.ibm.com/catalog/services/key-protect) Root Key with wrapped Data Encryption Key (DEK). The unwrapped DEK is to encrypt and decrypt the final data.
+The credentials that are used to access the underlay IaaS and VMware by Broadcom components are also stored in the database. They are stored with a second layer of envelope encryption in addition to the DB encryption by using [{{site.data.keyword.cloud_notm}} Key Protect](https://cloud.ibm.com/catalog/services/key-protect){: external} Root Key with wrapped Data Encryption Key (DEK). The unwrapped DEK is to encrypt and decrypt the final data.
 
 Envelope encryption uses a unique Key Protect instance per region with unique root key and DEK per microservice in the {{site.data.keyword.vcf-aas}} solution across all customer instances.
 

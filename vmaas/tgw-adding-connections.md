@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-18"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -41,7 +41,7 @@ If your VDC does not include a compatible version, create a new VDC that include
 ### {{site.data.keyword.tg_short}} requirement
 {: #tgw-adding-connections-prereq-version-tgw}
 
-Before you can add a connection group to your VDC, you must create a {{site.data.keyword.tg_short}}. For more information, see the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision) and [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started).
+Before you can add a connection group to your VDC, you must create a {{site.data.keyword.tg_short}}. For more information, see the [{{site.data.keyword.tg_short}} console](https://cloud.ibm.com/interconnectivity/transit/provision){: external} and [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started).
 
 ## Procedure to connect {{site.data.keyword.vcf-aas}}
 {: #tgw-adding-connections-proc}

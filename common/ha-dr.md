@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-22"
 
 keywords: HA for VCF as a Service, DR for VCF as a Service, VCF as a Service recovery time objective, VCF as a Service recovery point objective
 
@@ -22,14 +22,14 @@ subcollection: vmware-service
 
 
 
-{{site.data.keyword.vmware-service_full}} is a highly available regional service designed for availability during a zonal outage. {{site.data.keyword.vmware-service_short}} is designed to meet the [Service Level Objectives (SLO)](/docs/resiliency?topic=resiliency-slo) with the Standard plan.
+{{site.data.keyword.vmware-service_full}} is a highly available regional service that is designed for availability during a zonal outage. {{site.data.keyword.vmware-service_short}} is designed to meet the [Service Level Objectives (SLO)](/docs/resiliency?topic=resiliency-slo) with the Standard plan.
 
 
 
 For more information about the available region and data center locations, see [Service and infrastructure availability by location](/docs/overview?topic=overview-services_region).
 
 
-## High availability architecture
+## High availability
 {: #ha-architecture}
 
 
@@ -43,12 +43,12 @@ For more information about the available region and data center locations, see [
 
 | Feature | Description | Consideration |
 | -------------- | -------------- | -------------- |
-| Compute regional HA | Ensures workload uptime through maintaining resources to run workloads across two zones. Workloads migrate to the healthy zone in case of a zonal failure. | Available in the Washington DC region for both networking and compute resources. |
-| Network regional HA | Ensure workloads maintain networking durability across zonal failures. | Deploy the HA edge on a stretched resource pool or consolidate your network across two resource pools in a multizone region. |
-| Swap locations | Swap primary and secondary network locations for a highly available network edge. | The primary location is the preferred location for your workloads. In case of an outage at the primary location, the secondary location tempoararily becomes the active location.  |
+| Compute regional HA | Ensures workload uptime through maintaining resources to run workloads across two zones. Workloads migrate to the healthy zone when there is a zonal failure. | Available in the Washington DC region for both networking and compute resources. |
+| Network regional HA | Ensures that workloads maintain networking durability across zonal failures. | Deploy the HA edge on a stretched resource pool or consolidate your network across two resource pools in a multizone region. |
+| Swap locations | Swap primary and secondary network locations for a highly available network edge. | The primary location is the preferred location for your workloads. When there is an outage at the primary location, the secondary location temporarily becomes the active location. |
 {: caption="HA features for {{site.data.keyword.vmware-service_short}}" caption-side="bottom"}
 
-## Disaster recovery architecture
+## Disaster recovery
 {: #disaster-recovery-intro}
 
 
@@ -62,8 +62,23 @@ For more information about the available region and data center locations, see [
 
 | Feature | Description | Consideration |
 | -------------- | -------------- | -------------- |
-| VMware Cloud Director Availability | Replicate workloads from a source {{site.data.keyword.vmware-service_short}} environment over to a second {{site.data.keyword.vmware-service_short}} environment. You can replicate source workloads to any VMware environment including {{site.data.keyword.cloud_notm}}, other Cloud vendors, and on-premesis.  | Included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant Cloud Director site order. |
+| VMware Cloud Director Availability | Replicate workloads from a source {{site.data.keyword.vmware-service_short}} environment over to a second {{site.data.keyword.vmware-service_short}} environment. You can replicate source workloads to any VMware environment, including {{site.data.keyword.cloud_notm}}, other Cloud vendors, and on-premises.  | Included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant Cloud Director site order. |
 | Veeam® Backup | Achieve cyber-secure recovery points for your applications and data. | Service charges are incurred only if you choose to include the service in your order. |
+{: caption="DR features for {{site.data.keyword.vmware-service_short}}" caption-side="bottom"}
+
+### Planning for disaster recovery
+{: #features-for-disaster-recovery}
+
+The DR steps must be practiced regularly. As you build your plan, consider the following failure scenarios and resolutions.
+
+
+
+| Failure | Resolution |
+| -------------- | -------------- |
+| Hardware failure (single point) | {{site.data.keyword.vmware-service_short}} as a managed service has an operations team that manages the hardware to ensure enough hardware capacity to maintain VMware workload stability through hardware failures. |
+| Zone failure | {{site.data.keyword.vmware-service_short}} management components that support each customer VMware environment are run cross-zone as the default configuration and are resilient if a single zone failure occurs, including the VMware Director Console. Customer workloads must use one of the HA solutions or VMware Cloud Director Availability DR for cross-zone resilience. |
+| Data corruption | All management components that support customer VMware environments are backed up on intervals and can be restored by the IBM operations team if corrupted. It is recommended that customers use Veeam with {{site.data.keyword.vmware-service_short}} to create regular backups. With regular backups, customers can self-service a recovery of data. |
+| Regional failure | {{site.data.keyword.vmware-service_short}} management components nor workloads are resilient across regions. If the full region fails an approach to run workload in an alternative region is required.  A disaster recovery solution such as VMware Cloud Director Availability is required to maintain availability |
 {: caption="DR scenarios for {{site.data.keyword.vmware-service_short}}" caption-side="bottom"}
 
 ## Your responsibilities for HA and DR
@@ -83,7 +98,7 @@ For more information about your responsibilities, see [Understanding your respon
 
 
 
-{{site.data.keyword.cloud_notm}} has [business continuity](#x3026801){: term} plans in place to provide for the recovery of services within hours if a disaster occurs. You are responsible for your data backup and associated recovery of your content.
+{{site.data.keyword.cloud_notm}} has [business continuity](#x3026801){: term} plans in place to provide for the recovery of services within hours if a disaster occurs. Customers are responsible for deployed workload data backup and associated recovery of your content.
 
 {{site.data.keyword.vmware-service_short}} provides mechanisms to protect your data and restore service functions. Business continuity plans are in place to achieve targeted [recovery point objective](#x3429911){: term} (RPO) and [recovery time objective](#x3167918){: term} (RTO) for the service. The following table outlines the targets for {{site.data.keyword.vmware-service_short}}.
 
@@ -99,19 +114,19 @@ For more information about your responsibilities, see [Understanding your respon
 
 
 
-Change management includes tasks such as upgrades, configuration changes, and deletion.
+Change management includes tasks such as upgrades, configuration changes, and deletion. 
+
+Consider creating a manual backup before you upgrade to a new version of {{site.data.keyword.vmware-service_short}}.
 
 Grant users and processes the IAM roles and actions with the least privilege that is required for their work. For more information, see [How can I prevent accidental deletion of services?](/docs/resiliency?topic=resiliency-dr-faq#prevent-accidental-deletion).
 {: tip}
 
 
 
-Consider creating a manual backup before you upgrade to a new version of {{site.data.keyword.vmware-service_short}}.
-
 ## How {{site.data.keyword.IBM_notm}} supports disaster recovery planning
 {: #ibm-disaster-recovery}
 
-{{site.data.keyword.IBM_notm}} takes specific recovery actions for {{site.data.keyword.vmware-service_short}} if a disaster occurs.
+{{site.data.keyword.IBM_notm}} takes specific recovery actions for {{site.data.keyword.vmware-service_short}} if a disaster occurs. These actions and disaster response are practiced and validated yearly.
 
 ### How {{site.data.keyword.IBM_notm}} recovers from zone failures
 {: #ibm-zone-failure}
@@ -127,9 +142,11 @@ If a zone failure occurs, {{site.data.keyword.IBM_notm}} resolves the zone outag
 
 
 
-If regional data remains intact, the service instance is restored to its previous state with the same connection strings. RTO = x, RPO = x minutes."
+If regional data for the management components remains intact, the service instance is restored to its previous state with the same configuration.
 
-If regional state is corrupted, the service is restored from the last internal backups that are stored in a cross-region {{site.data.keyword.cloud_notm}} Object Storage bucket. This might result in up to 24 hours of data loss.
+If regional state for the management components is corrupted, the service is restored from the last internal backups that are stored in a cross-region {{site.data.keyword.cloud_notm}} Object Storage bucket. This type of corruption can result in 24 hours of data loss.
+
+After the management components are restored, workloads that are deployed by the customer must be restored by the customer by using either the Veeam Backup and Recovery solution or with VMware Cloud Director Availability.
 
 If {{site.data.keyword.IBM_notm}} can’t restore the service instance, you must restore the service as described in the [Disaster recovery architecture](#disaster-recovery-intro).
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-18"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -43,7 +43,7 @@ For {{site.data.keyword.cloud_notm}} Object Storage immutability, the Veeam Back
 You must request a size less than or equal to a specified maximum size (1200 TB) and divisible evenly by 200 TB.
 {: requirement}
 
-1. Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter).
+1. Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
 2. Scroll down and click **Create a case**.
 3. In the **Category** section of the **Create a case** page, complete the following selections.
     1. For **Topic**, select `IBM Cloud Backup - Veeam`.

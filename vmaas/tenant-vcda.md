@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-06-18"
+lastupdated: "2025-08-26"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 

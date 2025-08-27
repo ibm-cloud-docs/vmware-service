@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-08-18"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -33,7 +33,7 @@ completion-time: 1h
 {: toc-completion-time="1h"}
 
 
-This tutorial might incur costs. Use the [Cost estimator](https://cloud.ibm.com/estimator/) to generate a cost estimate based on your projected usage.
+This tutorial might incur costs. Use the [Cost estimator](https://cloud.ibm.com/estimator/){: external} to generate a cost estimate based on your projected usage.
 {: tip}
 
 

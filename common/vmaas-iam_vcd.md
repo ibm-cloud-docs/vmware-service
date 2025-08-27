@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-04-01"
+lastupdated: "2025-08-18"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -57,9 +57,9 @@ To update the roles with the new rights, complete the following steps as an **IB
 5. Click **SAVE** to apply the new or removed permissions. You might need to log out and log back into the tenant portal to see the changes.
 6. Repeat for each role that requires the update.
 
-For more information, see [Edit a Custom Tenant Role Using Your VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/managing-users-groups-and-roles-in-vcd-tenant/vcd-roles-and-rights-tenant/edit-a-role-using-your-vcd-tenant-portal-tenant.html).{: external}
+For more information, see [Edit a Custom Tenant Role Using Your VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/managing-users-groups-and-roles-in-vcd-tenant/vcd-roles-and-rights-tenant/edit-a-role-using-your-vcd-tenant-portal-tenant.html){: external}.
 
-The permissions that include an asterisk (*) are introduced in VMware Cloud Director 10.6 and are available to users after the Cloud Director site where the virtual data centers are deployed is upgraded to VMware Cloud Director 10.6.0.1. For more information, see [IBM Cloud Maintenance notifications for scheduled upgrade dates](https://cloud.ibm.com/notifications?type=maintenance).
+The permissions that include an asterisk (*) are introduced in VMware Cloud Director 10.6 and are available to users after the Cloud Director site where the virtual data centers are deployed is upgraded to VMware Cloud Director 10.6.0.1. For more information, see [IBM Cloud Maintenance notifications for scheduled upgrade dates](https://cloud.ibm.com/notifications?type=maintenance){: external}.
 {: note}
 
 The following table provides the recently introduced rights and the recommended OIDC roles to manually update.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-08-27"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
