@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-08-30"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -27,7 +27,7 @@ You can also configure advanced networking capabilities that are provided by VMw
 ### Roles, permissions, and users
 {: #vcd-ops-guide-roles}
 
-To access VMware Cloud Director, use single sign-on with your {{site.data.keyword.cloud_notm}} credentials as the default authentication and authorization mechanism. For a list of the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) Director tenant portal roles and authorizations that are associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui). Organization administrators can create local users that are authenticated by the tenant portal as opposed to IBM Cloud {{site.data.keyword.cloud_notm}} and can also create additional customized roles that can be assigned against local users.
+To access VMware Cloud Director, use single sign-on with your {{site.data.keyword.cloud_notm}} credentials as the default authentication and authorization mechanism. For a list of the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) Director tenant portal roles and authorizations that are associated with each role see [Managing IAM access for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-vmaas-iam&interface=ui). Organization administrators can create local users that are authenticated by the tenant portal as opposed to {{site.data.keyword.cloud_notm}} and can also create additional customized roles that can be assigned against local users.
 
 For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/getting-started-with-vmware-cloud-director-tenant-portal-tenant/vmware-cloud-director-tenant-portal-roles-and-rights-tenant.html){: external}.
 
@@ -142,6 +142,24 @@ Media files, such as ISO disk images and FLP diskette drive images, can be uploa
 
 The maximum import size is 750 GB. Large image files or templates might take a long time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmware-service?topic=vmware-service-support).
 {: note}
+
+### Registering {{site.data.keyword.cloud_notm}} provided licenses
+{: #vcd-ops-guide-license}
+
+Manual registration of an {{site.data.keyword.cloud_notm}} provided license is required for the following scenarios:
+
+* Deploying an instance by using an {{site.data.keyword.cloud_notm}} provided template and the license is not automatically registered.
+* Bringing your own custom instance into {{site.data.keyword.cloud_notm}} by using replication, an OVF import, or creating a custom template on {{site.data.keyword.cloud_notm}}.
+
+Run the following RHEL commands on your deployed instance to configure an IBM satellite server.
+
+1. `subscription-manager config --server.hostname=rhncapdal1001.adn.networklayer.com`
+2. `subscription-manager config --`
+3. `rhsm.baseurl=https://rhncapdal1001.adn.networklayer.com/pulp/content/`
+
+Run the following Windows command on your deployed instance to configure a KMS server:
+
+`slmgr /skms kms.adn.networklayer.com`
 
 ## Virtual machines
 {: #vcd-ops-guide-machines}
