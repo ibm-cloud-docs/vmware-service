@@ -102,9 +102,11 @@ toc:
               - vmaas/vcda-creating-deleting-vmaas-pairing.md
               - vmaas/vcda-adding-deleting.md
               - vmaas/vcda-migrating.md
+              - vmaas/vcda-vcd-connect.md
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
               - vmaas/veeam-dedicated-sobr.md
+              - vmaas/byok-dedicated.md
           - topicgroup:
               id: vcfaas-creating-secure-interconnectivity
               label: Creating secure interconnectivity with VCF as a Service

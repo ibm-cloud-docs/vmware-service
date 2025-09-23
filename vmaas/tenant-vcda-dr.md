@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-27"
+lastupdated: "2025-09-16"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
@@ -30,6 +30,10 @@ You can create the following disaster recover configurations.
 * {{site.data.keyword.vcf-aas}} single-tenant or multitenant to {{site.data.keyword.vcf-aas}} single-tenant or multitenant environments
 * On-premises to {{site.data.keyword.vcf-aas}} environments
 * {{site.data.keyword.vcf-classic}} to {{site.data.keyword.vcf-aas}} environments
+* On-premises VMware Cloud Director™ instance to {{site.data.keyword.vcf-aas}} environments
+
+You must open an IBM Support ticket to request a VCDA connection from your VMware Cloud Director instance to {{site.data.keyword.vcf-aas}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
+{: note}
 
 For a tutorial on how to create a disaster recovery configuration that uses a {{site.data.keyword.vcf-aas}} single-tenant instance as the primary workload environment and a {{site.data.keyword.vcf-aas}} multitenant instance as the disaster recovery environment, see [Configuring disaster recovery with VMware Cloud Director Availability](/docs/vmware-service?topic=vmware-service-vcda-creating-dr-config).
 

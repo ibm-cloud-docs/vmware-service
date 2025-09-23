@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-09-11"
 
 keywords: add veeam sobr, veeam adding sobr, scale-out backup repository
 
@@ -15,17 +15,19 @@ subcollection: vmware-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Using a dedicated Scale-out Backup Repository with Veeam Backup
+# Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository 
 {: #veeam-adding-sobr}
 
-When you provision your {{site.data.keyword.vmware-service_full}} instance, a total of two *shared* Scale-out Backup Repository (SOBRs) are created by default through the Veeam® Backup service. The default shared SOBRs include performance tier storage that is backed by vSAN™ and capacity tier storage that is backed by {{site.data.keyword.cloud_notm}} Object Storage, each with a maximum size of 100 TB and 7 days of immutability. You cannot change the configuration or delete default SOBRs.
+A Scale-out Backup Repository (SOBR) is a data repository target for backup jobs that are configured in the Veeam® Backup service. This storage solution is designed to support horizontal scaling through its multitier system, which consists of a performance tier and an optional capacity tier. The performance tier can either be a set of vSAN™ repositories or two Cloud Object Storage repositories. Additionally, if a capacity tier is specified, it is either a pair of Cloud Object Storage repositories if the performance tier has vSAN repositories, or it is two Cloud Object Storage repositories if the performance tier has Cloud Object Storage repositories.
+
+{{site.data.keyword.vmware-service_full}} offers cost-effective Veeam Backup options that include *shared* SOBRs and *dedicated* SOBRs that improve scale, performance, and provide additional consumption options.
+
+When you provision your {{site.data.keyword.vcf-aas-full}} instance, a total of two *shared* SOBRs are created by default through the Veeam Backup service. The default shared SOBRs include performance tier storage that is backed by vSAN and capacity tier storage that is backed by {{site.data.keyword.cloud_notm}} Object Storage, each with a maximum size of 100 TB and 7 days of immutability. You cannot change the configuration or delete default SOBRs.
 
 All default backups are deleted after seven days. If more time is needed, open an IBM Support ticket to increase the number of days.
 {: note}
 
-A SOBR is a data repository target for backup jobs that are configured in the Veeam service. This storage solution is designed to support horizontal scaling through its multitier system, which consists of a performance tier and an optional capacity tier. The performance tier can either be a set of vSAN repositories or two Cloud Object Storage repositories. Additionally, if a capacity tier is specified, it is either a pair of Cloud Object Storage repositories if the performance tier has vSAN repositories, or it is two Cloud Object Storage repositories if the performance tier has Cloud Object Storage repositories.
-
-If you require more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. Add a dedicated SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a dedicated SOBR are not shared.
+If you do not require the performance tier vSAN storage option or need more storage than the shared SOBRs offer, you can order a *dedicated* SOBR for your single-tenant and multitenant instances. Add a dedicated SOBR of a minimum size of 200 TB or multiple 200 TB repository virtual machines (VMs) to create a SOBR up to a maximum of 1200 TBs. The repository VMs for a dedicated SOBR are not shared.
 
 The following SOBR types are available when you request a dedicated SOBR. You are billed monthly for the vSAN and {{site.data.keyword.cloud_notm}} Object Storage SOBR option and no charge for the {{site.data.keyword.cloud_notm}} Object Storage only SOBR options.
 
@@ -36,6 +38,8 @@ The following SOBR types are available when you request a dedicated SOBR. You ar
 *vSAN and {{site.data.keyword.cloud_notm}} Object Storage* is the recommended SOBR type for rapid disaster recovery scenarios. *{{site.data.keyword.cloud_notm}} Object Storage only* SOBR types are recommended exclusively for larger data volumes and slower disaster recovery scenarios.
 
 For {{site.data.keyword.cloud_notm}} Object Storage immutability, the Veeam Backup service retains the backup up to an additional 30 days.
+
+
 
 ## Procedure to request a dedicated SOBR
 {: #veeam-adding-sobr-proc}

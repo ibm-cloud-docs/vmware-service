@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-22"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,12 +26,25 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 22 September 2025
+{: #vmware-service-sep2225}
+{: release-note}
+
+Software currency update
+:   This release provides an infrastructure upgrade for NSX-T™ 4.2.3.
+
+Bring Your Own Key for dedicated workloads
+:   You can open an {{site.data.keyword.IBM}} Support ticket to Bring Your Own Key (BYOK) for dedicated workload virtual machine (VM) encryption. An {{site.data.keyword.keymanagementservicefull_notm}} instance is required for customer-managed keys. For more information, see [Bring Your Own Key for dedicated workloads](/docs/vmware-service?topic=vmware-service-byok-dedicated). 
+
+Migration and disaster recovery for on-premises VMware Cloud Director instances 
+:   You can open an IBM Support ticket to create a VCDA connection from your on-premises VMware Cloud Director™ instance to {{site.data.keyword.vcf-aas-full}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
+
 ### 8 August 2025
 {: #vmware-service-aug825}
 {: release-note}
 
-IBM Cloud Object Storage only backup support 
-:   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using a dedicated Scale-out Backup Repository with Veeam Backup](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+New cost-effective Veeam Backup options 
+:   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 Software currency updates
 :   This release provides the following infrastructure upgrades.
@@ -55,7 +68,7 @@ New documentation
 {: release-note}
 
 IBM Cloud data center support for Sao Paulo
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Sao Paulo region to host your single-tenant and multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Sao Paulo region to host your single-tenant and multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 23 May 2025
 {: #vmware-service-may2325}
@@ -111,7 +124,7 @@ User interface updates and enhancements
 {: release-note}
 
 IBM Cloud data center support for Madrid multitenant
-:   {{site.data.keyword.vcf-aas-full}} expands global presence and now supports the Madrid region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
+:   {{site.data.keyword.vcf-aas}} expands global presence and now supports the Madrid region to host your multitenant VMware workloads. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-locations).
 
 ### 4 March 2025
 {: #vmware-service-mar425}
@@ -214,7 +227,7 @@ Supported VPNs for {{site.data.keyword.vcf-aas}}
 :   You can now use route-based IPsec, policy-based IPsec, and L2 VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances. For more information, see [Operating VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-routebased-ipsec-vpn-vmaas).
 
 Software currency update
-:   This release provides an infrastructure upgrade for VMware vCenter Server Appliance 8.0 Update 3d.
+:   This release provides an infrastructure upgrade for VMware vCenter Server® Appliance 8.0 Update 3d.
 
 ### 25 October 2024
 {: #vmware-service-oct2524}
@@ -562,7 +575,7 @@ User interface updates and enhancements
 :   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
 
 IBM software currency policy
-:   Documentation is now available describing how {{site.data.keyword.IBM}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
+:   Documentation is now available describing how {{site.data.keyword.IBM_notm}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
 
 ### 10 February 2023
 {: #vmware-service-feb1023}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-26"
+lastupdated: "2025-09-16"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 
@@ -26,6 +26,10 @@ The VCDA service is included by default in all multitenant virtual data centers 
 {{site.data.keyword.vmware-service_full}} with VCDA supports several migration scenarios:
 * Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network
 * Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance
+* Migrate workloads from VMware Cloud Director™ instances to {{site.data.keyword.vcf-aas}} environments
+
+You must open an IBM Support ticket to request a VCDA connection from your VMware Cloud Director instance to {{site.data.keyword.vcf-aas}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
+{: note}
 
 {{site.data.keyword.IBM_notm}} provides public instance endpoints with VCDA. Endpoints are used to access the VCDA web interface and also to migrate workloads. You can request new endpoints for private connections for an additional charge. With private endpoints, you can migrate workloads into {{site.data.keyword.vcf-aas}} by using the {{site.data.keyword.cloud_notm}} private network to improve consistency and security. Cloud-to-cloud migrations from {{site.data.keyword.vcf-aas}} to {{site.data.keyword.vcf-aas}} are over the private network.
 
