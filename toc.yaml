@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: vmware-service
@@ -25,21 +24,21 @@ toc:
           id: configuration-tutorials
           label: Configuration tutorials
           topics:
-            - include: ../solution-tutorials/vcf-as-a-service-vdc.md
-            - include: ../solution-tutorials/vcf-as-a-service-tf.md
-            - tutorials/vcda-creating-dr-config.md
+          - include: ../solution-tutorials/vcf-as-a-service-vdc.md
+          - include: ../solution-tutorials/vcf-as-a-service-tf.md
+          - tutorials/vcda-creating-dr-config.md
       - topicgroup:
           id: connectivity-tutorials-vmware-service
           label: Connectivity tutorials
           topics:
-            - tutorials/vmwaas-ipsec-tunnel.md
+          - tutorials/vmwaas-ipsec-tunnel.md
       - topicgroup:
           id: migration-tutorials-vmware-service
           label: Migration tutorials
           topics:
-            - tutorials/vmwaas-ovftool.md
-            - tutorials/vcda-migrating-onprem.md
-            - tutorials/vcda-migrating-cloudtocloud-vmaas.md
+          - tutorials/vmwaas-ovftool.md
+          - tutorials/vcda-migrating-onprem.md
+          - tutorials/vcda-migrating-cloudtocloud-vmaas.md
   - navgroup:
       id: howto
       topics:
@@ -91,8 +90,8 @@ toc:
               - common/vmaas-iam_vcd.md
               - common/iam-integration.md
           - topicgroup:
-              id: vcfaas-migrate-protectvms-instances
-              label: Migrating and protecting VMs in VCF as a Service instances
+              id: vcfaas-migrate-protectvms-vcda
+              label: Migrating and protecting VMs with VCDA
               topics:
               - vmaas/tenant-vcda.md
               - vmaas/tenant-vcda-dr.md
@@ -103,16 +102,20 @@ toc:
               - vmaas/vcda-adding-deleting.md
               - vmaas/vcda-migrating.md
               - vmaas/vcda-vcd-connect.md
+          - topicgroup:
+              id: vcfaas-migrate-protectvms-veeam
+              label: Migrating and protecting VMs with Veeam
+              topics:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
               - vmaas/veeam-dedicated-sobr.md
-              - vmaas/byok-dedicated.md
+          - vmaas/byok-dedicated.md
           - topicgroup:
               id: vcfaas-creating-secure-interconnectivity
               label: Creating secure interconnectivity with VCF as a Service
               topics:
-                - vmaas/tgw-adding-connections.md
-                - vmaas/tgw-viewing-deleting-connections.md
+              - vmaas/tgw-adding-connections.md
+              - vmaas/tgw-viewing-deleting-connections.md
       - offerings/vcs-intro.md
       - offerings/vss-intro.md
       - offerings/cr-intro.md

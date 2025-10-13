@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-08-07"
+lastupdated: "2025-10-09"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 
@@ -30,7 +30,7 @@ To connect to {{site.data.keyword.vcf-aas}} by using a VPE, you must use the {{s
 You must complete the following before you target a VPE for {{site.data.keyword.vcf-aas}}.
 
 - Ensure that you have [provisioned a Virtual Private Cloud](/docs/vpc?topic=vpc-getting-started).
-- Ensure that you have reviewed [Planning for Virtual Private Endpoints](/docs/vpc?topic=vpc-planning-considerations).
+- Ensure that you have reviewed [planning for virtual private endpoint gateways](/docs/vpc?topic=vpc-vpe-planning-considerations).
 - Ensure that [correct access controls](/docs/vpc?topic=vpc-vpe-iam) are set for your VPE.
 - Ensure that you have [created](/docs/vpc?topic=vpc-ordering-endpoint-gateway) and understand how to [access](/docs/vpc?topic=vpc-accessing-vpe-after-setup) a VPE gateway.
 - Understand how to [view details](/docs/vpc?topic=vpc-vpe-viewing-details-of-an-endpoint-gateway) of a VPE.

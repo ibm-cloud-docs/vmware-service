@@ -3,7 +3,7 @@
   "title": "VMware Cloud Foundation as a Service docs",
   "introduction": "IBM Cloud for VMware Cloud Foundation as a Service is an IBM Cloud offering that deploys a comprehensive portfolio of automated and on-demand services for VMware by Broadcom workloads to the cloud. Learn how to make the most of your VMware Cloud Foundation (VCF) as a Service experience by using the docs.",
   "product_page": "https://www.ibm.com/products/vmware",
-  "console_page": "/vmware", 
+  "console_page": "/vmware",
   "section_topics": {
     "links": [
       {
@@ -54,4 +54,4 @@
   "section_updates": {
     "view_more": "/docs/vmware-service?topic=vmware-service-vmware-service-relnotes"
   }
-  }
+}
