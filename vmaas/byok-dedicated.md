@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-27"
 
 keywords: dedicated workloads, virtual machine encryption, bring your own key, vm encryption, IBM Key Protect
 
@@ -34,7 +34,7 @@ Review the following documentation for details on roles and responsibilities for
 ## Understanding your responsibilities when you BYOK
 {: #byok-dedicated-customer}
 
-Review the following to understand critical responsibilities when you manage your own {{site.data.keyword.keymanagementserviceshort}} instance. It is your responsibility to work with {{site.data.keyword.keymanagementservicelong_notm}} support for recovery, if necessary.
+Review the following to understand the critical responsibilities when you manage your own {{site.data.keyword.keymanagementserviceshort}} instance. It is your responsibility to work with {{site.data.keyword.keymanagementservicelong_notm}} support for recovery, if necessary.
 {: important}
 
 * **Removing a {{site.data.keyword.keymanagementserviceshort}} instance**: If you delete or disable your {{site.data.keyword.keymanagementserviceshort}} instance, the KMS encryption keys and KMS instance sever the decryption path for any workloads that are hosted on {{site.data.keyword.vcf-aas-full}} in {{site.data.keyword.cloud_notm}}.
