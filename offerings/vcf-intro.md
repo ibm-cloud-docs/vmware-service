@@ -18,6 +18,8 @@ subcollection: vmware-service
 # {{site.data.keyword.vcf-vpc-short}}
 {: #vcf-intro}
 
+{{site.data.content.vms-deprecated-note}}
+
 For more information about [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) instances, see the following topics:
 
 * [Planning for {{site.data.keyword.vcf-vpc-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)

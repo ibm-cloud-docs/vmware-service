@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-10-24"
 
 subcollection: vmware-service
 
@@ -15,6 +15,8 @@ keywords: ibm responsibilities, customer responsibilities, management responsibi
 
 # Understanding your responsibilities when you use {{site.data.keyword.vcf-aas}}
 {: #vmaas-understand-responsib}
+
+{{site.data.content.vms-deprecated-note}}
 
 Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmware-service_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} products](/docs/overview?topic=overview-shared-responsibilities).
 {: shortdesc}

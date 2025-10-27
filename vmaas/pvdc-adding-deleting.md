@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-10-24"
 
 keywords: add resource pool, delete resource pool, resource pool
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding resource pools
 {: #pvdc-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can scale an {{site.data.keyword.vmware-service_full}} *single-tenant* instance in different ways. Scaling is used to size the instance properly, based on VMware® by Broadcom workload requirements. By creating a resource pool, you can increase the size of the {{site.data.keyword.vcf-aas-full}} instance.
 

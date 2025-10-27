@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-10-24"
 
 keywords: add storage, delete storage, storage adding, storage remove
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding and deleting storage
 {: #storage-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can add or delete storage to and from a cluster to increase or decrease the NFS storage capacity of your *single-tenant* cluster.
 

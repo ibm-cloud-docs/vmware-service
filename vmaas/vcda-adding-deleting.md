@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-10-24"
 
 keywords: add vcda, delete vcda, vcda adding, vcda remove, VMware Cloud Director Availability
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding and deleting VCDA
 {: #vcda-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can add the VMware Cloud Director Availability (VCDA) service to your Cloud Director site instance as part of the {{site.data.keyword.vmware-service_full}} order and to existing Cloud Director site instances.
 

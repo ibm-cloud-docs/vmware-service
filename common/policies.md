@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-10-10"
+lastupdated: "2025-10-24"
 
 keywords: software currency for vmware service, policies, software currency policies
 
@@ -15,6 +15,8 @@ subcollection: vmware-service
 
 # Understanding IBM software currency policy
 {: #policies}
+
+{{site.data.content.vms-deprecated-note}}
 
 Review the following policies to understand how {{site.data.keyword.IBM}} maintains software currency for VMware® by Broadcom and third-party software.
 

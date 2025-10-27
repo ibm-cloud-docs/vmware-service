@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-03-31"
+lastupdated: "2025-10-24"
 
 keywords: add capacity, delete capacity, capacity adding, capacity remove, multitenant add capacity
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding and deleting capacity
 {: #capacity-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can increase or decrease the reserved computing capacity for reserved *mutlitenant* virtual data centers and consumption limits for on-demand *multitenant* virtual data centers (VDCs).
 

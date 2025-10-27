@@ -3,7 +3,7 @@
 copyright:
   years:  2022, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-10-24"
 
 keywords: IAM access for vmware service, permissions for vmware service, identity and access management for vmware service, roles for vmware service, actions for vmware service, assigning access for vmware service
 
@@ -15,6 +15,8 @@ subcollection: vmware-service
 
 # Managing IAM access for {{site.data.keyword.vcf-aas}}
 {: #vmaas-iam}
+
+{{site.data.content.vms-deprecated-note}}
 
 Access to {{site.data.keyword.vmware-service_full}} instances for users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). Every user that accesses {{site.data.keyword.vcf-aas-full}} in your account must be assigned an access policy with an IAM role. Review the following roles, actions, and more to help determine the best way to assign access to {{site.data.keyword.vcf-aas}}.
 {: shortdesc}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-08-30"
+lastupdated: "2025-10-24"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # Operating VMware Cloud Director
 {: #vcd-ops-guide}
+
+{{site.data.content.vms-deprecated-note}}
 
 ## VMware Cloud Director tenant portal overview
 {: #vcd-ops-guide-overview}

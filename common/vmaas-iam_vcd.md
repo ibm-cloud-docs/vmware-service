@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-10-24"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Roles and permissions for VMware Cloud Director
 {: #vmaas-iam_vcd}
+
+{{site.data.content.vms-deprecated-note}}
 
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
 

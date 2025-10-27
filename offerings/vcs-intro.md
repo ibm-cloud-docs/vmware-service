@@ -18,6 +18,8 @@ subcollection: vmware-service
 # {{site.data.keyword.vcf-auto-short}}
 {: #vcs-intro}
 
+{{site.data.content.vms-deprecated-note}}
+
 For more information about [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instances, see the following topics:
 
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)

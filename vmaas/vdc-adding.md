@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-08-07"
+lastupdated: "2025-10-24"
 
 keywords: add virtual data center, virtual data center, add virtual data center, vdc add
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Ordering virtual data center instances
 {: #vdc-adding}
+
+{{site.data.content.vms-deprecated-note}}
 
 With {{site.data.keyword.vmware-service_full}}, you can quickly provision a complete VMware® by Broadcom virtual data center (VDC) environment and control the capacity that is used to run VMware® by Broadcom workloads.
 

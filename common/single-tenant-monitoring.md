@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-10-24"
 
 keywords: monitoring, sysdig, vmware multitenant monitor, vmware single tenant monitor, vmware site management monitoring, view metrics
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Visualizing your site with {{site.data.keyword.mon_full_notm}}
 {: #single-tenant-monitoring}
+
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.atracker_full}} provides an integration with {{site.data.keyword.mon_full_notm}}, which allows you to use a VMware® by Broadcom site provided default dashboard to view metrics for your sites. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 

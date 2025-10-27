@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-10-24"
 
 keywords: faq vmware, vmware faq
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # FAQ for {{site.data.keyword.vcf-aas}}
 {: #faq-general}
+
+{{site.data.content.vms-deprecated-note}}
 
 Find answers to frequently asked questions for {{site.data.keyword.vmware-service_full}}.
 

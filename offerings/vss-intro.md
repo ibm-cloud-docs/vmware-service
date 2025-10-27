@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-03-21"
+lastupdated: "2025-10-24"
 
 keywords: order Flexible instance, Flexible instances, Flexible order
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # {{site.data.keyword.vcf-flex-short}}
 {: #vss-intro}
+
+{{site.data.content.vms-deprecated-note}}
 
 For more information about [{{site.data.keyword.vcf-flex}}](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview&interface=ui) instances, see the following topics:
 

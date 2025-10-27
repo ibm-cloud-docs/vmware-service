@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-10-24"
 
 subcollection: vmware-service
 
@@ -16,6 +16,8 @@ keywords: public isolation for vmware service, compute isolation for vmware serv
 
 # Learning about {{site.data.keyword.vcf-aas}} architecture and workload isolation
 {: #architecture-workload-isolation-learning}
+
+{{site.data.content.vms-deprecated-note}}
 
 The {{site.data.keyword.vmware-service_full}} architecture is based on the following logical entities that are created per supported cloud region.
 

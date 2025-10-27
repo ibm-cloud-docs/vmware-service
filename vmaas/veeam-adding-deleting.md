@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-10-24"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding and deleting Veeam Backup
 {: #veeam-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can add the Veeam® Backup service to your Cloud Director site instance if you did not include it in your instance order. You can delete the Veeam service from your instance if you no longer need the backup service.
 

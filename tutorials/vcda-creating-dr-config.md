@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2024
-lastupdated: "2025-04-01"
+lastupdated: "2025-10-24"
 
 content-type: tutorial
 services: vmware-service
@@ -21,6 +21,8 @@ completion-time: 30m
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
+
+{{site.data.content.vms-deprecated-note}}
 
 When you install VMware Cloud Director Availability (VCDA) on a {{site.data.keyword.vcf-aas-full}} instance, you can create a disaster recovery configuration. Using the VCDA service, you can replicate the primary production workload environment over to a failover environment during an unplanned service interruption. When the interruption resolves, the workload moves back to the primary environment. Find out how to use {{site.data.keyword.vcf-aas}} with VCDA to create a disaster recovery configuration in the following video.
 

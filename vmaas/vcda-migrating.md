@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-10-24"
 
 keywords: migrate endpoints, migrate, vcda migration
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Installing VCDA on-premises in VMware vCenter Server
 {: #vcda-migrating}
+
+{{site.data.content.vms-deprecated-note}}
 
 Complete the following steps to install VMware Cloud Director Availability (VCDA) on-premises in VMware vCenter Server®.
 

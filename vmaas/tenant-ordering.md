@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-08-07"
+lastupdated: "2025-10-24"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Ordering Cloud Director site instances
 {: #tenant-ordering}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
 

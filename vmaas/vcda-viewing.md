@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-06-18"
+lastupdated: "2025-10-24"
 
 keywords: view vcda details
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Viewing VCDA details
 {: #vcda-viewing}
+
+{{site.data.content.vms-deprecated-note}}
 
 View the summary and detailed information for migrating and protecting your virtual machines (VMs) to {{site.data.keyword.vmware-service_full}} with VMware Cloud Director Availability (VCDA).
 

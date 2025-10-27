@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-02-13"
+lastupdated: "2025-10-24"
 
 keywords: private-only networks, add subnet, delete subnet, subnet adding, subnet deleting
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding, editing, and deleting private-only network subnets
 {: #subnet-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can add, edit, or delete private-only management connectivity allowlisted subnets for your {{site.data.keyword.vmware-service_full}} instance.
 

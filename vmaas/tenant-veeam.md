@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-08-04"
+lastupdated: "2025-10-24"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # Managing Veeam for {{site.data.keyword.vcf-aas}}
 {: #tenant-veeam}
+
+{{site.data.content.vms-deprecated-note}}
 
 The Veeam® Backup service is available and ready to use in your {{site.data.keyword.vmware-service_full}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 

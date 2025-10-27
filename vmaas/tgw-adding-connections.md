@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-08-18"
+lastupdated: "2025-10-24"
 
 keywords: add connection, interconnectivity, transit gateway
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Using Transit Gateway to interconnect {{site.data.keyword.vcf-aas}} with IBM Cloud services
 {: #tgw-adding-connections}
+
+{{site.data.content.vms-deprecated-note}}
 
 Use {{site.data.keyword.tg_full}} to securely interconnect {{site.data.keyword.vmware-service_notm}} multitenant and single-tenant virtual data centers (VDCs) to a transit gateway to enable network connectivity into your {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using Direct Link connections. Use the VDC **Interconnectivity** tab in the VMware Solutions console to connect to {{site.data.keyword.tg_short}}.
 

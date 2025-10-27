@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-09-16"
+lastupdated: "2025-10-24"
 
 keywords: dedicated workloads, virtual machine encryption, bring your own key, vm encryption, IBM Key Protect
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Bring Your Own Key for dedicated workloads
 {: #byok-dedicated}
+
+{{site.data.content.vms-deprecated-note}}
 
 An {{site.data.keyword.keymanagementservicefull}} instance is provided when you provision your {{site.data.keyword.vmware-service_notm}} instance or you can Bring Your Own Key (BYOK) for dedicated workload virtual machine (VM) encryption. An {{site.data.keyword.keymanagementservicelong_notm}} instance is required for customer-managed keys. Review the following important requirements to ensure that your VMs work properly with the encryption.
 

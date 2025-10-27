@@ -3,7 +3,7 @@
 copyright:
   years:  2023, 2025
 
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-24"
 
 keywords: network access policies, virtual private endpoints, virtual private gateway, VPE
 
@@ -15,6 +15,8 @@ subcollection: vmware-service
 
 # Using a Virtual Private Endpoint
 {: #virtual-private-endpoints}
+
+{{site.data.content.vms-deprecated-note}}
 
 After you created your {{site.data.keyword.cloud}} Virtual Private Cloud (VPC) and you want to connect to {{site.data.keyword.vmware-service_notm}} APIs to create or manage your instance, you can create a Virtual Private Endpoint (VPE) in your VPC to access {{site.data.keyword.vcf-aas-full}} APIs within your VPC network.
 {: shortdesc}

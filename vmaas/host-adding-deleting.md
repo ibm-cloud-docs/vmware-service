@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-04-30"
+lastupdated: "2025-10-24"
 
 keywords: add host, delete host, host adding, host remove
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Adding and deleting hosts
 {: #host-adding-deleting}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can add or delete hosts to and from a *single-tenant* cluster.
 

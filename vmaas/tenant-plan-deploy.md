@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-10-24"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # Planning the deployment
 {: #tenant-plan-deploy}
+
+{{site.data.content.vms-deprecated-note}}
 
 Review the following considerations to plan your {{site.data.keyword.vmware-service_full}} instance deployment.
 

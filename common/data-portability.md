@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-06-06"
+lastupdated: "2025-10-24"
 
 keywords: data portability, VCF as a Service, IBM Cloud for VMware Cloud Foundation as a Service
 
@@ -14,6 +14,8 @@ subcollection: vmware-service
 
 # Understanding data portability for {{site.data.keyword.vmware-service_short}}
 {: #data-portability}
+
+{{site.data.content.vms-deprecated-note}}
 
 Data portability involves a set of tools and procedures that enable you to export the digital artifacts that are needed to implement similar workload and data processing on different service providers or on-premises software. It includes procedures for copying and storing the service customer content, including the related configuration that is used by the service to store and process the data, in your location.
 {: shortdesc}

@@ -16,6 +16,8 @@ subcollection: vmware-service
 # {{site.data.keyword.vcf-aas}} API change log
 {: #vmware-service-api-change-log}
 
+{{site.data.content.vms-deprecated-note}}
+
 In this change log, you can learn about the most recent changes, improvements, and updates for the [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service). The change log lists the changes that were made, ordered by the date they were released. Changes to existing API versions are compatible with existing client applications.
 
 ## 8 August 2025

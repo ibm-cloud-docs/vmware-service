@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-09-16"
+lastupdated: "2025-10-24"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA
 {: #tenant-vcda-dr}
+
+{{site.data.content.vms-deprecated-note}}
 
 Deliver simple, secure, and cost-effective disaster recovery support with VMware Cloud Director Availability (VCDA).
 

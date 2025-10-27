@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-04-07"
+lastupdated: "2025-10-24"
 
 content-type: tutorial
 services: vmware-service
@@ -18,6 +18,8 @@ completion-time: 30m
 {: toc-content-type="tutorial"}
 {: toc-services="vmware-service"}
 {: toc-completion-time="30m"}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can use VMware Cloud Director Availability (VCDA) to create cloud-to-cloud connections to migrate your workloads between {{site.data.keyword.vmware-service_full}} instances. Find out how to migrate VMware® by Broadcom virtual machine (VM) workloads across {{site.data.keyword.vcf-aas-full}} environments in the following video.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-07-16"
+lastupdated: "2025-10-24"
 
 keywords: order add-on services, add-on services, add-on services order
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Add-on services
 {: #services-intro}
+
+{{site.data.content.vms-deprecated-note}}
 
 Add-on services are available for your security and compliance, data resiliency and migration, workload solutions, transformation and modernization, and management tool needs.
 

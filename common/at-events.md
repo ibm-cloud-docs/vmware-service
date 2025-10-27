@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-06-16"
+lastupdated: "2025-10-24"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -14,6 +14,8 @@ subcollection: vmware-service
 
 # Activity tracking events for {{site.data.keyword.vcf-aas}}
 {: #at_events}
+
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.cloud}} services, such as {{site.data.keyword.vcf-aas-full}}, generate activity tracking events.
 {: shortdesc}

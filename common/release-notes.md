@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-09-22"
+lastupdated: "2025-10-27"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -18,13 +18,22 @@ content-type: release-note
 # Release notes for {{site.data.keyword.vcf-aas}}
 {: #vmware-service-relnotes}
 
-Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_full}}, including new features, component updates, usability enhancements, and bug fixes.
+{{site.data.content.vms-deprecated-note}}
+
+Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_notm}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
 ## 2025
 {: #vmware-service-year-2025}
 
 
+
+### 27 October 2025
+{: #vmware-service-oct2725}
+{: release-note}
+
+End of Marketing for VMware on {{site.data.keyword.cloud_notm}}
+:   As of 31 October 2025, new deployments of VMware Solutions offerings are no longer available for new customers. Existing customers can still use and expand their active VMware workloads on {{site.data.keyword.cloud_notm}}. For more information, see [End of Marketing for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms).
 
 ### 22 September 2025
 {: #vmware-service-sep2225}
@@ -37,7 +46,7 @@ Bring Your Own Key for dedicated workloads
 :   You can open an {{site.data.keyword.IBM}} Support ticket to Bring Your Own Key (BYOK) for dedicated workload virtual machine (VM) encryption. An {{site.data.keyword.keymanagementservicefull_notm}} instance is required for customer-managed keys. For more information, see [Bring Your Own Key for dedicated workloads](/docs/vmware-service?topic=vmware-service-byok-dedicated). 
 
 Migration and disaster recovery for on-premises VMware Cloud Director instances 
-:   You can open an IBM Support ticket to create a VCDA connection from your on-premises VMware Cloud Director™ instance to {{site.data.keyword.vcf-aas}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
+:   You can open an IBM Support ticket to create a VCDA connection from your on-premises VMware Cloud Director™ instance to {{site.data.keyword.vcf-aas-full}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
 
 ### 8 August 2025
 {: #vmware-service-aug825}

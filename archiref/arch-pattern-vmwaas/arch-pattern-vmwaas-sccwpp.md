@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-05-20"
+lastupdated: "2025-10-24"
 
 subcollection: vmware-service
 
@@ -15,6 +15,8 @@ subcollection: vmware-service
 
 # Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with {{site.data.keyword.vcf-aas}}
 {: #arch-pattern-vmwaas-sccwpp}
+
+{{site.data.content.vms-deprecated-note}}
 
 This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vmware-service_notm}} instance.
 

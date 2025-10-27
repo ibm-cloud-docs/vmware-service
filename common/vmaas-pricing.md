@@ -4,7 +4,7 @@ copyright:
  
   years: 2025
 
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-24"
 
 keywords: VMware Cloud Foundation as a Service pricing, VCF as a Service pricing, pricing plan
 
@@ -16,6 +16,8 @@ subcollection: vmware-service
 
 # {{site.data.keyword.vcf-aas}} pricing
 {: #vmaas_pricing}
+
+{{site.data.content.vms-deprecated-note}}
 
 {{site.data.keyword.vmware-service_full}} compute resources are available as either a single-tenant or multitenant model.
 

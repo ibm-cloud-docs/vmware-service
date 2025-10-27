@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-22"
+lastupdated: "2025-10-24"
 
 keywords: HA for VCF as a Service, DR for VCF as a Service, VCF as a Service recovery time objective, VCF as a Service recovery point objective
 
@@ -14,6 +14,8 @@ subcollection: vmware-service
 
 # Understanding high availability and disaster recovery for VCF as a Service
 {: #ha-dr}
+
+{{site.data.content.vms-deprecated-note}}
 
 
 

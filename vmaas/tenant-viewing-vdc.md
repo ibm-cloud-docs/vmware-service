@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-10-24"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Viewing and deleting {{site.data.keyword.vcf-aas}} virtual data centers
 {: #tenant-viewing-vdc}
+
+{{site.data.content.vms-deprecated-note}}
 
 View the summary and detailed information of the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs) that are provisioned in your account.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-04-04"
+lastupdated: "2025-10-24"
 
 keywords: swap network location, highly available network, network edge, regional high availability
 
@@ -17,6 +17,8 @@ subcollection: vmware-service
 
 # Swapping locations for a regional high availability edge
 {: #swap-network-locations}
+
+{{site.data.content.vms-deprecated-note}}
 
 You can swap the primary and secondary network locations for a regional high availability edge on the virtual data center summary page.
 

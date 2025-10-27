@@ -18,6 +18,8 @@ subcollection: vmware-service
 # {{site.data.keyword.cr}}
 {: #cr-intro}
 
+{{site.data.content.vms-deprecated-note}}
+
 For more information about [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview), see the following topics:
 
 * [Planning for {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning)
