@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -43,7 +43,7 @@ For more information about modifying SMTP server settings, see [Modify your emai
 ## Catalogs
 {: #vcd-ops-guide-catalogs}
 
-A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors can create catalogs in an organization. Catalog contents can be shared with other users or organizations in the {{site.data.keyword.vcf-aas-full}}installation. Or they can be published externally for access by organizations outside the {{site.data.keyword.vcf-aas}} installation.
+A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors can create catalogs in an organization. Catalog contents can be shared with other users or organizations in the {{site.data.keyword.vmware-service_notm}} installation. Or they can be published externally for access by organizations outside the {{site.data.keyword.vcf-aas-full}} installation.
 
 {{site.data.keyword.vcf-aas}} contains private catalogs, shared catalogs, and externally accessible catalogs. Private catalogs include vApp templates and media files that you can share with other users in the organization. If a system administrator enables catalog-sharing for your organization, you can share an organization catalog to create a catalog accessible to other organizations in the {{site.data.keyword.vcf-aas}} installation.
 

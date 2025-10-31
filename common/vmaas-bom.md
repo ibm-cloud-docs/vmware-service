@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-Review the Bill of Materials (BOM) information for {{site.data.keyword.vmware-service_full}} instances.
+Review the Bill of Materials (BOM) information for {{site.data.keyword.vmware-service_notm}} instances.
 
 ## Software BOM for {{site.data.keyword.vcf-aas}} instances
 {: #vmaas-bom-software}

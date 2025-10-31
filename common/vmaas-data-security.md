@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: data encryption in vmware service, data storage for vmware service, bring your own keys for vmware service, BYOK for vmware service, key management for vmware service, key encryption for vmware service, personal data in vmware service, data deletion for vmware service, data in vmware service, data security in vmware service, KYOK for vmware service
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-To ensure that you can securely manage your data when you use {{site.data.keyword.vmware-service_full}}, it is important to know exactly what data is stored and encrypted and how you can delete any stored data. All {{site.data.keyword.vcf-aas-full}} instances come with encryption enabled that uses a unique cloud provider key per instance. Each {{site.data.keyword.vcf-aas}} instance is configured with the following unique resources:
+To ensure that you can securely manage your data when you use {{site.data.keyword.vmware-service_notm}}, it is important to know exactly what data is stored and encrypted and how you can delete any stored data. All {{site.data.keyword.vcf-aas-full}} instances come with encryption enabled that uses a unique cloud provider key per instance. Each {{site.data.keyword.vcf-aas}} instance is configured with the following unique resources:
 
 * Dedicated {{site.data.keyword.keymanagementserviceshort}} instance
 * Dedicated keys per instance

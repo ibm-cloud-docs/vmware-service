@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-31"
 
 keywords: data portability, VCF as a Service, IBM Cloud for VMware Cloud Foundation as a Service
 
@@ -23,7 +23,7 @@ Data portability involves a set of tools and procedures that enable you to expor
 ## Responsibilities
 {: #data-portability-responsibilities}
 
-{{site.data.keyword.cloud}} services provide interfaces and instructions to guide you through the process of copying and storing service customer content, including the related configuration, in your selected location.
+{{site.data.keyword.cloud_notm}} services provide interfaces and instructions to guide you through the process of copying and storing service customer content, including the related configuration, in your selected location.
 
 You're responsible for the use of the exported data and configuration for data portability to other infrastructures, which includes:
 
@@ -36,7 +36,7 @@ For more information about your responsibilities for {{site.data.keyword.vmware-
 ## Data export procedures
 {: #data-portability-procedures}
 
-Data portability in {{site.data.keyword.vmware-service_short}} is accomplished by using the VMware Cloud Director™ Availability (VCDA) product. For more information about VCDA and how to migrate workloads and data to an alternative infrastructure site, see [VMware Cloud Director Availability Migration - White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}.
+Data portability in {{site.data.keyword.vcf-aas-full}} is accomplished by using the VMware Cloud Director Availability (VCDA) product. For more information about VCDA and how to migrate workloads and data to an alternative infrastructure site, see [VMware Cloud Director Availability Migration - White Paper](https://www.vmware.com/docs/vmware-cloud-director-availability-migration){: external}.
 
 ## Exported data formats
 {: #data-portability-data-formats}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: order tenant instance, cloud director site instances, order instance, single tenant order
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-You can create an {{site.data.keyword.vmware-service_full}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
+You can create an {{site.data.keyword.vmware-service_notm}} single-tenant Cloud Director site from the VMware Solutions user interface. First, review the minimum requirements.
 
 {{site.data.keyword.vcf-aas-full}} multitenant Cloud Director site instances are ordered and managed by {{site.data.keyword.IBM}}. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
 

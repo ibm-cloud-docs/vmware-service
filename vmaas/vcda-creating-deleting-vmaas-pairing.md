@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: create VMware Cloud Foundation as a Service pairing, pairing
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-When VMware Cloud Director Availability (VCDA) is enabled, you can create cloud-to-cloud connections between your instance and other single-tenant and multitenant {{site.data.keyword.vmware-service_full}} instances. You must create a pairing from both Cloud Director sites to connect.
+When VMware Cloud Director Availability (VCDA) is enabled, you can create cloud-to-cloud connections between your instance and other single-tenant and multitenant {{site.data.keyword.vmware-service_notm}} instances. You must create a pairing from both Cloud Director sites to connect.
 
 ## Procedure to create a {{site.data.keyword.vcf-aas}} pairing
 {: #vcda-creating-deleting-vmaas-pairing-proc-add}

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmware-service
 
@@ -19,7 +19,7 @@ keywords: public isolation for vmware service, compute isolation for vmware serv
 
 {{site.data.content.vms-deprecated-note}}
 
-The {{site.data.keyword.vmware-service_full}} architecture is based on the following logical entities that are created per supported cloud region.
+The {{site.data.keyword.vmware-service_notm}} architecture is based on the following logical entities that are created per supported cloud region.
 
 * Management domain - Hosts the {{site.data.keyword.IBM_notm}} operations tools and all the single-tenant customer management tools except for the networking edges that are used by customer workloads.
 * Customer workload domain - Hosts single-tenant and multitenant {{site.data.keyword.cloud_notm}} IaaS, networking edges, and customer-deployed networking and workloads.

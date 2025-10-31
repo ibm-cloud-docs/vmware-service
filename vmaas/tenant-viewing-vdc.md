@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: view instance, virtual data center instances, virtual data center view, view virtual data center
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-View the summary and detailed information of the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs) that are provisioned in your account.
+View the summary and detailed information of the {{site.data.keyword.vmware-service_notm}} virtual data centers (VDCs) that are provisioned in your account.
 
 When you no longer need them, you can delete the VDCs that are provisioned in your account.
 

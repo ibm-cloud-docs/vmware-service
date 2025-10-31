@@ -25,7 +25,7 @@ completion-time: 20m
 
 {{site.data.content.vms-deprecated-note}}
 
-In this {{site.data.keyword.vmware-service_full}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
+In this {{site.data.keyword.vmware-service_notm}} tutorial, we take you through the process of ordering a {{site.data.keyword.vcf-aas-full}} instance by using the {{site.data.keyword.vmwaresolutions_short}} user interface. Other operations that you can complete are also listed.
 {: shortdesc}
 
 The completion time that is listed for this tutorial considers only the time that is spent on ordering the artifacts for a {{site.data.keyword.vcf-aas}} instance on the user interface. It does not consider waiting times for deployments, for example.

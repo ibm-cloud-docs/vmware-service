@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-Review the following considerations to plan your {{site.data.keyword.vmware-service_full}} instance deployment.
+Review the following considerations to plan your {{site.data.keyword.vmware-service_notm}} instance deployment.
 
 Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.broadcom.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.5&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director™.
 {: note}
@@ -27,7 +27,7 @@ Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.broad
 ## VMware deployment size
 {: #tenant-plan-deploy-vmware-depl}
 
-Consider the size of the VMware® deployment required.
+Consider the size of the VMware deployment required.
 
 VMware deployment sizings are based on the CPU, memory, and storage that are required to run the targeted workload. If you are planning a workload migration from on-premises to the cloud, the on-premises size is a good starting point. You can resize your VMware deployment at any time.
 

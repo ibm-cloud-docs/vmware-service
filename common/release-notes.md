@@ -43,16 +43,16 @@ Software currency update
 :   This release provides an infrastructure upgrade for NSX-T™ 4.2.3.
 
 Bring Your Own Key for dedicated workloads
-:   You can open an {{site.data.keyword.IBM}} Support ticket to Bring Your Own Key (BYOK) for dedicated workload virtual machine (VM) encryption. An {{site.data.keyword.keymanagementservicefull_notm}} instance is required for customer-managed keys. For more information, see [Bring Your Own Key for dedicated workloads](/docs/vmware-service?topic=vmware-service-byok-dedicated). 
+:   You can open an {{site.data.keyword.IBM}} Support ticket to Bring Your Own Key (BYOK) for dedicated workload virtual machine (VM) encryption. An {{site.data.keyword.keymanagementservicefull_notm}} instance is required for customer-managed keys. For more information, see [Bring Your Own Key for dedicated workloads](/docs/vmware-service?topic=vmware-service-byok-dedicated).
 
-Migration and disaster recovery for on-premises VMware Cloud Director instances 
+Migration and disaster recovery for on-premises VMware Cloud Director instances
 :   You can open an IBM Support ticket to create a VCDA connection from your on-premises VMware Cloud Director™ instance to {{site.data.keyword.vcf-aas-full}}. For more information, see [Connecting VMware Cloud Director instances to VCF as a Service](/docs/vmware-service?topic=vmware-service-vcda-vdc-connect).
 
 ### 8 August 2025
 {: #vmware-service-aug825}
 {: release-note}
 
-New cost-effective Veeam Backup options 
+New cost-effective Veeam Backup options
 :   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 Software currency updates

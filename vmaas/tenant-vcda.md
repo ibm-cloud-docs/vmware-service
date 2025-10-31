@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability migration
 
@@ -23,10 +23,10 @@ Deliver simple, secure, and cost-effective migration support with VMware Cloud D
 
 Both migration and disaster recovery support are available when you install the VCDA service. For more information about disaster recovery configurations, see [Protecting workload data in {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda-dr).
 
-The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
+The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vmware-service_notm}} Cloud Director site order at no charge. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
 
-{{site.data.keyword.vmware-service_full}} with VCDA supports several migration scenarios:
-* Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas-full}} over the public or private {{site.data.keyword.IBM}} network
+{{site.data.keyword.vcf-aas-full}} with VCDA supports several migration scenarios:
+* Migrate vCenter virtual machine workloads from on-premises and vCenter Server environments to {{site.data.keyword.vcf-aas}} over the public or private {{site.data.keyword.IBM}} network
 * Migrate workloads from {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances to another {{site.data.keyword.vcf-aas}} instance
 * Migrate workloads from VMware Cloud Director™ instances to {{site.data.keyword.vcf-aas}} environments
 

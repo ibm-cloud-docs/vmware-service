@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-If you experience an issue or have questions when using {{site.data.keyword.vmware-service_full}}, you can use the following resources before you open a support case.
+If you experience an issue or have questions when using {{site.data.keyword.vmware-service_notm}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
 * Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 subcollection: vmware-service
 
@@ -18,7 +18,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vmware-service_notm}} instance.
+This architecture pattern describes how to use {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vmware-service_notm}} instance.
 
 This pattern is suitable for your workloads that are hosted in both a single-tenant or a multitenant instance.
 

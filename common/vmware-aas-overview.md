@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: vmware service overview, vmware cloud foundation as a service, vmware cloud foundation as a service overview, vmware cloud foundation as a service introduction, VCF as a Service
 
@@ -21,7 +21,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-{{site.data.keyword.vmware-service_full}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide additional isolation and support multiple host configuration options to support flexible workload requirements.
+{{site.data.keyword.vmware-service_notm}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide additional isolation and support multiple host configuration options to support flexible workload requirements.
 {: shortdesc}
 
 {{site.data.keyword.vcf-aas-full}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. Create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vcf-aas}} single-tenant instances are provisioned and managed by your organization.

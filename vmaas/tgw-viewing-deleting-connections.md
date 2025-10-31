@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-31"
 
 keywords: view connection, interconnectivity, transit gateway, delete connection
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-You can view the status of your {{site.data.keyword.tg_full}} connection and delete the connection group if you no longer need it.
+You can view the status of your {{site.data.keyword.tg_full_notm}} connection and delete the connection group if you no longer need it.
 
 ## Procedure to view {{site.data.keyword.tg_short}} connection details
 {: #tgw-viewing-connections-proc}

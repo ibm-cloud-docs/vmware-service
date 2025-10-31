@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_full}}.
+The following table provides information about the platform management roles and permissions for {{site.data.keyword.vmware-service_notm}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director™.
 * **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.

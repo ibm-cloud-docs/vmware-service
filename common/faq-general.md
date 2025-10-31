@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: faq vmware, vmware faq
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-Find answers to frequently asked questions for {{site.data.keyword.vmware-service_full}}.
+Find answers to frequently asked questions for {{site.data.keyword.vmware-service_notm}}.
 
 ## What user accounts do I need for {{site.data.keyword.vcf-aas}}?
 {: #faq-general-user-accts}

@@ -3,7 +3,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 content-type: tutorial
 services: vmware-service
@@ -24,7 +24,7 @@ completion-time: 30m
 
 {{site.data.content.vms-deprecated-note}}
 
-You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and {{site.data.keyword.vcf-classic}} environments to {{site.data.keyword.vmware-service_full}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
+You can use VMware Cloud Director Availability (VCDA) to migrate your vCenter virtual machine (VM) workloads from on-premises and {{site.data.keyword.vcf-classic}} environments to {{site.data.keyword.vmware-service_notm}}. Find out how to migrate vApp and virtual machine (VM) workloads from any self-managed vCenter environment to {{site.data.keyword.vcf-aas-full}} in the following video.
 
 ![Migrate workloads from any Self-Managed vCenter to {{site.data.keyword.vcf-aas}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_vrb1m547?wid=_1773841&iframeembed=true&entry_id=1_vrb1m547){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: add capacity, capacity adding, VCDA, VMware Cloud Director Availability
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-After your {{site.data.keyword.vmware-service_full}} Cloud Director site instance order is complete, use VMware Cloud Director Availability (VCDA) to configure your instance capacity. Determine the amount of capacity based on how many virtual machines (VMs) you plan to migrate or protect.
+After your {{site.data.keyword.vmware-service_notm}} Cloud Director site instance order is complete, use VMware Cloud Director Availability (VCDA) to configure your instance capacity. Determine the amount of capacity based on how many virtual machines (VMs) you plan to migrate or protect.
 
 Select from the following estimated capacity resource options that are required for your resource pool to migrate or protect your VMs. Each resource is per instance.
 

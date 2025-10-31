@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: view instance, cloud director site instances, cloud director site view, view cloud director site
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-View the summary and detailed information of the {{site.data.keyword.vmware-service_full}} Cloud Director sites that are provisioned in your account.
+View the summary and detailed information of the {{site.data.keyword.vmware-service_notm}} Cloud Director sites that are provisioned in your account.
 
 When you no longer need them, you can delete the Cloud Director sites that are provisioned in your account.
 

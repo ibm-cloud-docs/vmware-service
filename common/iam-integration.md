@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: iam user role for vmware, iam user, iam roles, manage iam, SSO, single sign on
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service_full}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
+You can use the VMware Cloud Director™ console to configure and manage the {{site.data.keyword.vmware-service_notm}} virtual data centers (VDCs). VMware® by Broadcom workloads are created, deployed, and managed in the VMware Cloud Director console.
 
 Access the VMware Cloud Director console from the VMware Solutions console to complete the following tasks from the console.
 

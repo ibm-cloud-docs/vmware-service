@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery
 
@@ -23,9 +23,9 @@ Deliver simple, secure, and cost-effective disaster recovery support with VMware
 
 Both disaster recovery and migration support are available when you install the VCDA service. For more information about migration scenarios, see [Migrating workloads to VCF as a Service with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
-The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
+The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vmware-service_notm}} Cloud Director site order. For a VCDA *disaster recovery* configuration, a monthly charge is incurred per protected virtual machine (VM).
 
-With the VCDA service, you can replicate workloads from a source {{site.data.keyword.vcf-aas}} environment over to a second {{site.data.keyword.vcf-aas}} environment. Replicating VMware® by Broadcom workloads protects the workloads if a disaster with the source VMware by Broadcom environment where workloads can fail over and run on the second VMware by Broadcom environment. The workload replication frequency is configurable by default to as low as every five minutes. The number of replications to maintain can range from 1 to 24. Optionally, you can open an {{site.data.keyword.cloud_notm}} support ticket to request that replications are reduced down to as low as one minute.
+With the VCDA service, you can replicate workloads from a source {{site.data.keyword.vcf-aas-full}} environment over to a second {{site.data.keyword.vcf-aas}} environment. Replicating VMware® by Broadcom workloads protects the workloads if a disaster with the source VMware by Broadcom environment where workloads can fail over and run on the second VMware by Broadcom environment. The workload replication frequency is configurable by default to as low as every five minutes. The number of replications to maintain can range from 1 to 24. Optionally, you can open an {{site.data.keyword.cloud_notm}} support ticket to request that replications are reduced down to as low as one minute.
 
 You can create the following disaster recover configurations.
   

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-29"
 
 keywords: add veeam, delete veeam, veeam adding, veean remove
 

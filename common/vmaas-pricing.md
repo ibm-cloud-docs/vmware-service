@@ -4,7 +4,7 @@ copyright:
  
   years: 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: VMware Cloud Foundation as a Service pricing, VCF as a Service pricing, pricing plan
 
@@ -19,7 +19,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-{{site.data.keyword.vmware-service_full}} compute resources are available as either a single-tenant or multitenant model.
+{{site.data.keyword.vmware-service_notm}} compute resources are available as either a single-tenant or multitenant model.
 
 The {{site.data.keyword.vcf-aas-full}} single-tenant model offers dedicated hosts that are managed by your organization. First, you order a {{site.data.keyword.vcf-aas}} single-tenant Cloud Director site then you create one or more virtual data centers (VDCs) where you deploy your virtual machines (VMs).
 

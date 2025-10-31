@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: HA for VCF as a Service, DR for VCF as a Service, VCF as a Service recovery time objective, VCF as a Service recovery point objective
 
@@ -24,7 +24,7 @@ subcollection: vmware-service
 
 
 
-{{site.data.keyword.vmware-service_full}} is a highly available regional service that is designed for availability during a zonal outage. {{site.data.keyword.vmware-service_short}} is designed to meet the [Service Level Objectives (SLO)](/docs/resiliency?topic=resiliency-slo) with the Standard plan.
+{{site.data.keyword.vmware-service_notm}} is a highly available regional service that is designed for availability during a zonal outage. {{site.data.keyword.vmware-service_short}} is designed to meet the [Service Level Objectives (SLO)](/docs/resiliency?topic=resiliency-slo) with the Standard plan.
 
 
 

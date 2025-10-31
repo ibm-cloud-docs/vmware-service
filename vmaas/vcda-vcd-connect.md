@@ -4,7 +4,7 @@ copyright:
 
   years: 2025
 
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-30"
 
 keywords: VMware Cloud Director Availability, VMware Cloud Director Availability disaster recovery, on-premises VMware Cloud Director
 
@@ -20,7 +20,7 @@ subcollection: vmware-service
 
 {{site.data.content.vms-deprecated-note}}
 
-You can open an IBM Support ticket to request a VMware Cloud Director Availability (VCDA) connection from an existing on-premises VMware Cloud Director™ instance to {{site.data.keyword.vmware-service_full}}. When the connection is complete, you can use VCDA to migrate and protect your VMware Cloud Director instance.
+You can open an IBM Support ticket to request a VMware Cloud Director Availability (VCDA) connection from an existing on-premises VMware Cloud Director™ instance to {{site.data.keyword.vmware-service_notm}}. When the connection is complete, you can use VCDA to migrate and protect your VMware Cloud Director instance.
 
 ## Procedure to request a VCDA connection
 {: #vcda-vdc-connect-proc}
