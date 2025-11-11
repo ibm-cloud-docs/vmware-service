@@ -236,7 +236,7 @@ Supported VPNs for {{site.data.keyword.vcf-aas}}
 :   You can now use route-based IPsec, policy-based IPsec, and L2 VPNs to connect your VMware workloads through the public network to {{site.data.keyword.vcf-aas}} single-tenant and multitenant instances. For more information, see [Operating VMware Cloud Director](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-routebased-ipsec-vpn-vmaas).
 
 Software currency update
-:   This release provides an infrastructure upgrade for VMware vCenter Server® Appliance 8.0 Update 3d.
+:   This release provides an infrastructure upgrade for VMware vCenter Server Appliance 8.0 Update 3d.
 
 ### 25 October 2024
 {: #vmware-service-oct2524}
@@ -399,7 +399,7 @@ Software currency
 :   This release provides the following infrastructure upgrades.
 
    * VMware ESXi 7.0 Update 3p (23307199)
-   * VMware vCenter Server® Appliance 7.0 Update 3p (01800)
+   * VMware vCenter Server Appliance 7.0 Update 3p (01800)
    * Veeam Backup 12.1.1
 
 User interface updates and enhancements

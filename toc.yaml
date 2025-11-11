@@ -6,7 +6,7 @@ toc:
     audience: service
     href: /docs/vmware-service
     console-page: /vmware
-    product-page: https://www.ibm.com/products/vmware/managed-services
+    product-page: https://www.ibm.com/solutions/virtualization
     path: vmware-service
     label: VMware Cloud Foundation as a Service
   entries:
