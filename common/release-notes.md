@@ -56,7 +56,7 @@ New cost-effective Veeam Backup options
 :   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 Software currency updates
-:   This release provides the following infrastructure upgrades.
+:   This release provides the following infrastructure upgrades:
 
    * NSX-T 4.2.2.1
    * VMware Cloud Director 10.6.1.1
@@ -253,7 +253,7 @@ VMware Cloud Director IP Spaces availability
  :   Additional rights are available with this release. If you use pre-configured Open ID Connect roles or any role other than the Organization Administrator role, you must manually update the rights to your roles. For more information, see [Recently introduced rights](/docs/vmware-service?topic=vmware-service-vmaas-iam_vcd#vmaas-iam_vcd-custom-reqs).
 
 Software currency updates
-:   This release provides the following infrastructure upgrades.
+:   This release provides the following infrastructure upgrades:
 
    * VMware Cloud Director 10.6.0.1
    * VMware vCenter Server Appliance 8.0 Update 3b
@@ -339,7 +339,7 @@ VMware Operations Manager availability
 :   You can now access the Operations Manager service through the VMware Cloud Director tenant portal. Use Operations Manager to view your virtual machine metrics for new and existing organizations. For more information, see [Accessing Operations Manager](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-services-chargeback).
 
 Software currency
-:   This release provides the following infrastructure upgrades.
+:   This release provides the following infrastructure upgrades:
 
    * VMware ESXi 7.0 Update 3q
    * VMware vCenter Server Appliance 8.0 Update 2c
@@ -366,7 +366,7 @@ Some documentation, including, but not limited to, tutorials, solutions architec
 {: note}
 
 Software currency
-:   This release provides the following infrastructure upgrades.
+:   This release provides the following infrastructure upgrades:
 
    * VMware Cloud Director 10.5.1.1
    * VMware vCenter Server Appliance 8.0 Update 2b (00200)
@@ -396,7 +396,7 @@ Updated pricing structure for RHEL for VMware as a Service
 {: release-note}
 
 Software currency
-:   This release provides the following infrastructure upgrades.
+:   This release provides the following infrastructure upgrades:
 
    * VMware ESXi 7.0 Update 3p (23307199)
    * VMware vCenter Server Appliance 7.0 Update 3p (01800)
