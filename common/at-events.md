@@ -20,7 +20,7 @@ subcollection: vmware-service
 {{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.vmware-service_notm}}, generate activity tracking events.
 {: shortdesc}
 
-Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. 
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
 
 You can use {{site.data.keyword.atracker_full_notm}}, a platform service to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
@@ -53,9 +53,9 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Frankfurt (`eu-de`) | London (`eu-gb`) | Madrid (`eu-es`) |
-|---------------------|------------------|------------------|
-| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | 
+| Frankfurt (`eu-de`) | Madrid (`eu-es`) |
+|---------------------|------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} |
 {: caption="Regions where activity tracking events are generated in Europe locations" caption-side="bottom"}
 {: #at-table-3}
 {: tab-title="Europe"}

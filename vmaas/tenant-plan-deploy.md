@@ -95,9 +95,6 @@ High availability is supported on a Cloud Director site region only when a Sapph
 | Frankfurt | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Frankfurt | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Frankfurt | Frankfurt 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London | London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon1ST] |
-| London | London 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London | London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green}[^lon3ST] |
 | Madrid | Madrid 02 | [Yes]{: tag-green} | [Yes]{: tag-green}| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Madrid | Madrid 04 | [Yes]{: tag-green} | [Yes]{: tag-green}| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Madrid | Madrid 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
@@ -107,9 +104,6 @@ High availability is supported on a Cloud Director site region only when a Sapph
 {: class="simple-tab-table"}
 {: #simpletabtable-dc-eur}
 
-[^lon1ST]: Single-tenant only
-
-[^lon3ST]: Single-tenant only
 
 | Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -190,9 +184,6 @@ The profile storage type depends on the resource pool location. The following op
 | Frankfurt 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Frankfurt 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Frankfurt 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| London 05 | [Yes]{: tag-green} | [No]{: tag-red} |
-| London 06 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Madrid 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Madrid 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Madrid 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
