@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-10-30"
+lastupdated: "2025-11-14"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -81,9 +81,6 @@ High availability is supported on a Cloud Director site region only when a Sapph
 
 | Location | Data center | Single-tenant | Multitenant | Cascade Lake | SAP-certified Cascade Lake | Sapphire Rapids |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-| Sydney | Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
-| Sydney | Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
-| Sydney | Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
 | Tokyo | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
 | Tokyo | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
 | Tokyo | Tokyo 05 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red}|
@@ -179,9 +176,6 @@ The profile storage type depends on the resource pool location. The following op
 
 | Data center | NFS-only storage | vSAN + optional NFS storage |
 |:------------|:-----------------|:----------------------------|
-| Sydney 01 | [Yes]{: tag-green} | [No]{: tag-red} |
-| Sydney 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
-| Sydney 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Tokyo 02 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Tokyo 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Tokyo 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |

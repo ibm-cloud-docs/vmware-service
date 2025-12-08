@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-11-14"
 
 keywords: activity tracking, tracking locations, enable events, view events, analyze events
 
@@ -43,9 +43,9 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Tokyo (`jp-tok`)   | Sydney (`au-syd`) | Osaka (`jp-osa`) | Chennai (`in-che`) |
-|--------------------|-------------------|------------------|--------------------|
-| [Yes]{: tag-green} | [Yes]{: tag-green}   | [No]{: tag-red}  | [No]{: tag-red}    |
+| Tokyo (`jp-tok`)   | Osaka (`jp-osa`) | Chennai (`in-che`) |
+|--------------------|------------------|--------------------|
+| [Yes]{: tag-green} | [No]{: tag-red}  | [No]{: tag-red}    |
 {: caption="Regions where activity tracking events are generated in Asia Pacific locations" caption-side="bottom"}
 {: #at-table-2}
 {: tab-title="Asia Pacific"}

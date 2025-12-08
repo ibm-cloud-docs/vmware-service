@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2025
 
-lastupdated: "2025-10-30"
+lastupdated: "2025-11-21"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -80,7 +80,7 @@ Review the following considerations when you use SOBR for your backup infrastruc
 * Each SOBR receives repository VMs, data movers, and cross-region {{site.data.keyword.cloud_notm}} Object Storage buckets.
 * All data that is stored in the {{site.data.keyword.cloud_notm}} Object Storage buckets is encrypted, erasure-coded, and dispersed across three locations.
 * Veeam backups are encrypted when stored on both vSAN or {{site.data.keyword.cloud_notm}} Object Storage.
-* When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets. The immutability default expiration is 7 days plus up to 30 more days due to block generation. For more information, see [Block Generation](https://helpcenter.veeam.com/docs/backup/hyperv/object_storage_block_generation.html?ver=120){: external}
+* When you delete a SOBR, you are charged until immutability expires on the {{site.data.keyword.cloud_notm}} Object Storage buckets. The immutability default expiration is 7 days plus up to 30 more days due to block generation. For more information, see [Block Generation](https://helpcenter.veeam.com/archive/backup/120/hyperv/object_storage_block_generation.html){: external}
 
 ## IBM policy for data protection with Veeam
 {: #tenant-veeam-policy}
@@ -105,17 +105,17 @@ Veeam Backup offers two retention policy schemes for backup copy jobs: short-ter
 #### Short-term retention policy
 {: #tenant-veeam-policy-backup-remove-retention-short}
 
-The [Short-Term Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_policy.html?ver=120){: external} retains restore points that are created by backup copy jobs for a specified number of days or until the number of restore points reaches the specified number in the retention settings. You have the following options when you configure short-term retention policy settings for a backup copy job.
+The [Short-Term Retention Policy](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_policy.html){: external} retains restore points that are created by backup copy jobs for a specified number of days or until the number of restore points reaches the specified number in the retention settings. You have the following options when you configure short-term retention policy settings for a backup copy job.
 
 * Specify the number of restore points. Veeam Backup keeps the last `N` restore points, where `N` is the number of restore points that you specify in the settings. The minimum number that you can specify is 2.
 * Specify the number of days. Veeam Backup keeps restore points that are created during the last `N` days, where `N` is the number of days that you specify in the settings. The minimum number that you can specify is 2.
 
-IBM recommends using the forward incremental backup retention policy. However, you can choose to change the policy based on your requirements. For more information, see [Forward Incremental Backup Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/retention_incremental.html?ver=120){: external}.
+IBM recommends using the forward incremental backup retention policy. However, you can choose to change the policy based on your requirements. For more information, see [Forward Incremental Backup Retention Policy](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_incremental.html){: external}.
 
 #### Long-term retention policy
 {: #tenant-veeam-policy-backup-remove-retention-long}
 
-The [Long-Term or Grandfather-Father-Son (GFS) Retention Policy](https://helpcenter.veeam.com/docs/backup/vsphere/gfs_retention_policy.html?ver=120){: external} stores VM backups for long periods of time. The policy allows storage for weeks, months, or years. Veeam Backup creates synthetic or active full backup files and marks them with `weekly`, `monthly`, or `yearly` GFS flags. Depending on which flag is assigned to the full backup, it is stored for a specified number of weeks, months, or years.
+The [Long-Term or Grandfather-Father-Son (GFS) Retention Policy](https://helpcenter.veeam.com/archive/backup/120/vsphere/gfs_retention_policy.html){: external} stores VM backups for long periods of time. The policy allows storage for weeks, months, or years. Veeam Backup creates synthetic or active full backup files and marks them with `weekly`, `monthly`, or `yearly` GFS flags. Depending on which flag is assigned to the full backup, it is stored for a specified number of weeks, months, or years.
 
 GFS backups are always full backup files that contain data of the entire image as of a specific date. GFS is a tiered retention policy and uses a number of cycles to retain backups for the following periods of time.
 
@@ -141,17 +141,17 @@ To remove backups, you can choose to remove VMs or vApps from the backup job or 
 #### Backup chain format
 {: #tenant-veeam-policy-backup-remove-chain}
 
-Starting with Veeam 12, the IBM policy uses per-machine backup with separate metadata files for backup chain format. For more information, see [Backup Chain Formats](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}.
+Starting with Veeam 12, the IBM policy uses per-machine backup with separate metadata files for backup chain format. For more information, see [Backup Chain Formats](https://helpcenter.veeam.com/archive/backup/120/vsphere/per_vm_backup_files.html){: external}.
 
 #### Backup immutability at Performance Tier
 {: #tenant-veeam-policy-backup-remove-perf-tier}
 
-Immutability prohibits deletion of data by making that data temporarily immutable. The IBM policy is to set the backup immutability at the performance tier to seven days. For more information, see [Immutability for Performance Tier](https://helpcenter.veeam.com/docs/backup/vsphere/immutability_performance_tier.html?ver=120){: external}.
+Immutability prohibits deletion of data by making that data temporarily immutable. The IBM policy is to set the backup immutability at the performance tier to seven days. For more information, see [Immutability for Performance Tier](https://helpcenter.veeam.com/archive/backup/120/vsphere/immutability_performance_tier.html){: external}.
 
 #### Removal of restore points
 {: #tenant-veeam-policy-backup-remove-restore-points}
 
-Veeam keeps at least one full backup chain and doesn't remove old restore points until a second full backup (synthetic or active) is created and a new backup chain starts. For more information, see [Removal of Restore Points](https://helpcenter.veeam.com/docs/backup/vsphere/retention_separate_vms.html?ver=120){: external}.
+Veeam keeps at least one full backup chain and doesn't remove old restore points until a second full backup (synthetic or active) is created and a new backup chain starts. For more information, see [Removal of Restore Points](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_separate_vms.html){: external}.
 
 #### Retention policy for deleted items
 {: #tenant-veeam-policy-backup-remove-ret-delete}
@@ -164,7 +164,7 @@ Veeam provides the **Remove deleted items data after** setting for each backup j
 When this option is enabled, the restore points for any VM or vApp that is no longer processed by the backup job is permanently deleted after the set number of days.
 {: important}
 
-For more information, see [Retention Policy for Deleted Item](https://helpcenter.veeam.com/docs/backup/vsphere/retention_deleted_vms.html?ver=120){: external}.
+For more information, see [Retention Policy for Deleted Item](https://helpcenter.veeam.com/archive/backup/120/vsphere/retention_deleted_vms.html){: external}.
 
 The retention policy is applied only if the job stops creating backups for the entire vApp. Therefore, a removal of VMs within vApps does not result in automatic deletion of those restore points. It is your responsibility to delete the restore points.
 {: note}
@@ -179,7 +179,7 @@ You can move VMs or vApps between backup jobs. Any VM or vApp that you move to a
 
 * For the Veeam **application aware image processing** and **guest file system indexing** options to work for Windows® VMs, the most recent VMware Tools™ must be installed on the VMs. Linux® VMs do not support application awareness or guest file system indexing.
 * If you are using **application aware image processing** for MS SQL or Oracle DB backups, the options **application aware** and **Item** restore are not supported. The restore operation needs to complete a full VM restore, which requires a downtime window for any consumers of the database.
-* An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120){: external}.
+* An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/archive/backup/120/vsphere/vcloud_manage_backup.html){: external}.
 * Review the [Backup data storage and encryption](/docs/vmware-service?topic=vmware-service-tenant-veeam#tenant-veeam-storage) section to understand the limitations that are associated with using SOBR and Veeam Backup.
 
 ## Related links
