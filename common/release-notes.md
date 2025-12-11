@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2025
 
-lastupdated: "2025-10-27"
+lastupdated: "2025-12-09"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -27,6 +27,16 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2025}
 
 
+
+### 9 December 2025
+{: #vmware-service-dec0925}
+{: release-note}
+
+Software currency updates
+:   This release provides the following infrastructure upgrades:
+
+   * VMware vCenter Server® Appliance 8.0 Update 3g
+   * VMware vCloud Usage Meter 9.0.1
 
 ### 27 October 2025
 {: #vmware-service-oct2725}

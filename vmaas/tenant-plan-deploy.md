@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2025
 
-lastupdated: "2025-12-08"
+lastupdated: "2025-12-09"
 
 keywords: ordering prerequisites, before you order, setup, environment setup
 
@@ -110,6 +110,7 @@ High availability is supported on a Cloud Director site region only when a Sapph
 | Dallas | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
 | Dallas | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
 | Dallas | Dallas 13 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
+| Dallas | Dallas 14 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} |
 | Toronto | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Toronto | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Toronto | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
@@ -138,7 +139,7 @@ High availability is supported on a Cloud Director site region only when a Sapph
 
 A resource pool combines compute, memory, and storage resources to properly scale your workload requirements.
 
-You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver.
+You can create resource pools across three data centers in the selected multizone region and optionally enable SAP®-certified server profiles of either HANA and NetWeaver or NetWeaver. For the Dallas region, you can create resource pools across four data centers.
 
 To ensure that your applications remain resilient, you can add stretched vSAN™ high availability resource pools to an existing Cloud Director site. The resource pool stretches across two data centers in a multizone region to increase availability and to protect critical workloads from unexpected downtime.
 
@@ -198,6 +199,7 @@ The profile storage type depends on the resource pool location. The following op
 | Dallas 10 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Dallas 12 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Dallas 13 | [Yes]{: tag-green} | [Yes]{: tag-green} |
+| Dallas 14 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Toronto 01 | [Yes]{: tag-green} | [No]{: tag-red} |
 | Toronto 04 | [Yes]{: tag-green} | [Yes]{: tag-green} |
 | Toronto 05 | [Yes]{: tag-green} | [Yes]{: tag-green} |

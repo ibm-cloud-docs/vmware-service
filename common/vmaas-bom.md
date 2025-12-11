@@ -4,7 +4,7 @@ copyright:
 
   years:  2024, 2025
 
-lastupdated: "2025-12-08"
+lastupdated: "2025-12-09"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
@@ -29,7 +29,7 @@ The following table details the current component versions for new instance orde
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
 | VMware® by Broadcom   | VMware ESXi™ | ESXi 8.0 Update 3f [^esxi80] |
-| VMware by Broadcom    | VMware vCenter Server® Appliance | 8.0 Update 3d |
+| VMware by Broadcom    | VMware vCenter Server® Appliance | 8.0 Update 3g |
 | VMware by Broadcom    | VMware NSX-T™ | 4.2.3 |
 | VMware by Broadcom    | VMware Cloud Director™ | 10.6.1.1 |
 | VMware by Broadcom    | VMware Cloud Director Availability | 4.7.3 |
