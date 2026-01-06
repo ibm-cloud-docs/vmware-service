@@ -23,10 +23,6 @@ content-type: release-note
 Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_notm}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
 
-
-
-
-
 ## 2025
 {: #vmware-service-year-2025}
 
