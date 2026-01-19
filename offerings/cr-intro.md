@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2022, 2025
+  years: 2022, 2026
 
 lastupdated: "2024-04-03"
 

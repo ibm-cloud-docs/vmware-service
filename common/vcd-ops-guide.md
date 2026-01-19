@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-01-19"
 
 keywords: vmware cloud director, rhel, red hat enterprise linux, operating
 
@@ -64,7 +64,7 @@ Review the following considerations for {{site.data.keyword.vcf-aas}}:
 The public catalog contains vApp templates for the following components:
 
 | Image | Version |
-|---|---|
+| --- | --- |
 | CentOS | 7.x |
 | Microsoft® Windows® | 2022 Standard |
 | Microsoft Windows | 2019 Standard |
@@ -252,7 +252,7 @@ You can configure vApps and VMs running inside of the VDC to use the {{site.data
 The following services are available.
 
 | Service | IP address (Endpoint) |
-|:------- |:--------------------- |
+| :------- | :--------------------- |
 | Microsoft Windows Update Server | 161.26.4.21 |
 | Microsoft Key Management Server | 161.26.96.8, 161.26.96.9 |
 | Red Hat Capsule Server | 161.26.96.25 |
@@ -263,7 +263,7 @@ The following services are available.
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
 {: caption="Available services" caption-side="bottom"}
 
-The VDC must have an edge (public-private or private-only) to enable access to the service network. Some NAT and firewall rules for private network connectivity are established as a default during the VDC creation. Ensure that firewall rules  *Allow* traffic from the VMware Cloud Director network that the VMs run on to the service destination. Review your firewall rules and add additional rules, as needed, for Windows activation and other operations that require private network connectivity. For additional information, see [Add an NSX Edge Gateway Firewall Rule in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6/map-for-vmware-cloud-director-tenant-portal-guide-10-6/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/add-an-nsx-t-edge-gateway-firewall-rule-tenant.html).{: external} 
+The VDC must have an edge (public-private or private-only) to enable access to the service network. Some NAT and firewall rules for private network connectivity are established as a default during the VDC creation. Ensure that firewall rules  *Allow* traffic from the VMware Cloud Director network that the VMs run on to the service destination. Review your firewall rules and add additional rules, as needed, for Windows activation and other operations that require private network connectivity. For additional information, see [Add an NSX Edge Gateway Firewall Rule in the VMware Cloud Director Tenant Portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6/map-for-vmware-cloud-director-tenant-portal-guide-10-6/working-with-networks-tenant/managing-nsx-t-edge-gateways-in-vcd-tenant/add-an-nsx-t-edge-gateway-firewall-rule-tenant.html).{: external}
 {: important}
 
 Consider the following firewall rule examples to *Allow* VMware Cloud Director network access.
@@ -322,7 +322,7 @@ You must complete these steps as a user who has the **Manage Manual IP Reservati
 ### Creating a Cloud Director network for IP prefix addresses
 {: #vcd-ops-guide-ip-prefix}
 
-With IP prefix addresses, VMs are directly assigned a public IP prefix address and do not use a NAT for public access. 
+With IP prefix addresses, VMs are directly assigned a public IP prefix address and do not use a NAT for public access.
 
 1. Allocate public IP addresses.
    1. In the tenant portal, click **Networking** from the left navigation panel.
@@ -341,10 +341,10 @@ With IP prefix addresses, VMs are directly assigned a public IP prefix address a
       * For **Edge Connection**, select the single edge and toggle on **Distributed Routing**. Click **NEXT**.
       * For **General**, select the IP prefix for **Gateway CIDR** and click **NEXT**.
       * Complete the remaining network settings and click **FINISH**.
-3. Create the VMs to use the IP prefix address. For more information, see [Create a standalone virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/creating-a-virtual-machine-tenant/create-a-standalone-vm-tenant.html){: external}. 
+3. Create the VMs to use the IP prefix address. For more information, see [Create a standalone virtual machine in the VMware Cloud Director tenant portal](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-5/map-for-vmware-cloud-director-tenant-portal-guide-10-5/working-with-virtual-machines-tenant/creating-a-virtual-machine-tenant/create-a-standalone-vm-tenant.html){: external}.
 
-   * When you create VMs to use the IP prefix addresses, you must use the IP prefix network.  
-   * For the **Primary NIC** configuration, set the **IP Mode** to **Static - Manual** and assign one of the IP Prefix addresses for the **IP Address**.  
+   * When you create VMs to use the IP prefix addresses, you must use the IP prefix network.
+   * For the **Primary NIC** configuration, set the **IP Mode** to **Static - Manual** and assign one of the IP Prefix addresses for the **IP Address**.
    * Ensure that the firewall configuration is set to ingress and egress traffic.
 
 ### Using VPNs to connect VMware by Broadcom workloads to {{site.data.keyword.cloud_notm}}

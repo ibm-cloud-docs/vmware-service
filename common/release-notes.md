@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2025
+  years: 2022, 2026
 
-lastupdated: "2025-12-09"
+lastupdated: "2026-01-19"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -22,6 +22,30 @@ content-type: release-note
 
 Use these release notes to learn about the most recent updates to {{site.data.keyword.vmware-service_notm}}, including new features, component updates, usability enhancements, and bug fixes.
 {: shortdesc}
+
+## 2026
+{: #vmware-service-year-2026}
+
+
+
+### 19 January 2026
+{: #vmware-service-jan1926}
+{: release-note}
+
+Updated pricing for {{site.data.keyword.vcf-aas-full}}
+:   As of 1 January 2026, the prices are increased for Veeam® software. The regional pricing is also increased for {{site.data.keyword.vcf-aas}}.
+
+   * Veeam software price is increased from $13 per VM per month to $15.60 per VM per month.
+   * The pricing is also increased for the following regions:
+      * Toronto - from 3% to 6%
+      * London - from 7% to 13%
+      * Frankfurt - from 10% to 16%
+      * Madrid - from 10% to 16%
+      * Tokyo - from 13% to 22%
+      * Sydney - from 20% to 22%
+      * Sao Paulo - from 20% to 38%
+
+   You can also review the updated pricing details on the Summary section of the related ordering page. For more information, see the [{{site.data.keyword.cloud}} announcement](https://cloud.ibm.com/notifications?selected=1767799886080){: external}.
 
 ## 2025
 {: #vmware-service-year-2025}
@@ -61,7 +85,7 @@ Migration and disaster recovery for on-premises VMware Cloud Director instances
 {: release-note}
 
 New cost-effective Veeam Backup options
-:   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam® backups. For more information, see [Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
+:   You can open an IBM Support ticket to request a dedicated IBM Cloud Object Storage only Scale-out Backup Repository (SOBR) for your Veeam backups. For more information, see [Using cost-effective Veeam Backup options with a dedicated Scale-out Backup Repository](/docs/vmware-service?topic=vmware-service-veeam-adding-sobr).
 
 Software currency updates
 :   This release provides the following infrastructure upgrades:
@@ -95,7 +119,7 @@ Public IP enhancements
 :   You can open an IBM Support ticket to request additional public IP addresses. For more information, see [Requesting additional public IP addresses](/docs/vmware-service?topic=vmware-service-vcd-ops-guide#vcd-ops-guide-additional-ips).
 
 Software currency update
-:   This release provides the infrastructure upgrades for Veeam® Backup 12.3.1.
+:   This release provides the infrastructure upgrades for Veeam Backup 12.3.1.
 
 REST API updates
 :   The [{{site.data.keyword.vmware-service_short}} API](/apidocs/vmware-service) is updated with additional features. For more information, see the [{{site.data.keyword.vcf-aas}} API change log](/docs/vmware-service?topic=vmware-service-vmware-service-api-change-log#vmware-service-23-may-2025).
