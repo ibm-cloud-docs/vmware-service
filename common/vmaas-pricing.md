@@ -2,9 +2,9 @@
 
 copyright:
  
-  years: 2025
+  years: 2025, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-02-19"
 
 keywords: VMware Cloud Foundation as a Service pricing, VCF as a Service pricing, pricing plan
 
@@ -74,16 +74,16 @@ With a seven host minimum with vSAN profiles, a high availability standard with 
 Storage that is ordered after the first day of the month is prorated for the first month. Storage that is removed during the month is charged for the full month that it is removed. Each storage change is treated individually. For example, when you remove storage then add storage, the bill reflects both storages for that month. For vSAN host profiles, the profile name displays the total of both raw and the usable storage.
 
 | Feature | Billing model |
-|:--------|:--------------|
-| Host profiles | Size for bare metal server profiles including sockets, core, and RAM. \n - Hosts are billed monthly. \n - Hosts that you order after the first day of the month are prorated for the first month. \n - Hosts that are removed during the month are charged for the full month that they are removed. \n - Each host is treated individually. For example, when you remove a host then add a host, the bill reflects two hosts for that month. |
+| :-------- | :-------------- |
+| Host profiles | Size for bare metal server profiles including sockets, core, and RAM. \n - Hosts are billed monthly. \n - Hosts that you order after the first day of the month are prorated for the first month. \n - Hosts that are removed during the month are charged for the full month that they are removed. \n - Each host is treated individually. For example, when you remove a host then add a host, the bill reflects two hosts for that month. | 
 {: caption="Single-tenant instance billing" caption-side="bottom"}
 {: tab-title="Compute"}
 {: tab-group="Single-tenant billing"}
 {: class="simple-tab-table"}
 {: #simpletabtable-st-compute}
 
-| Feature | Metrics | Billing model  |
-|:--------|:--------|:---------------|
+| Feature | Metrics | Billing model |
+| :-------- | :-------- | :--------------- |
 | NFS Shared Storage at 0.25 IOPS/GB | TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB | The peak storage **allocation** at the 0.25 IOPS/GB tier over the period of a month. |
 | NFS Shared Storage at 2.0 IOPS/GB | TOTAL_STORAGE_TWO_IOPS_GB | The peak storage **allocation** at the 2 IOPS/GB tier over the period of a month. |
 | NFS Shared Storage at 4.0 IOPS/GB | TOTAL_STORAGE_FOUR_IOPS_GB | The peak storage **allocation** at the 4 IOPS/GB tier over the period of a month. |
@@ -95,7 +95,7 @@ Storage that is ordered after the first day of the month is prorated for the fir
 {: #simpletabtable-st-storage}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
+| :-------- | :-------- | :-------------- |
 | Network edge storage | | Shared edge storage with egress pricing and billed separately. \n - Edge storage is billed monthly.\n - Edges that are ordered after the first day of the month are prorated for the first month. \n - Edges that are removed during the month are charged for the full month that they are removed. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. \n - For an efficiency edge, one edge instance is used with 1-64 VRF (virtual edges). One efficiency edge can support up to 64 virtual data centers (VDCs) until the next edge instance is deployed. When an efficiency edge reaches attachment of zero VDCs the efficiency edge is removed. |
 | Total egress | TOTAL_EGRESS_GB | Total outbound public networking from all virtual data centers. |
 | Private service endpoint | MAX_PRIVATE_NETWORK_ONE_G_COST \n MAX_PRIVATE_NETWORK_TEN_G_COST | Monthly charge for dedicated 1 or 10 GB uplinks for the Cloud Director UI and API private network access. |
@@ -106,7 +106,7 @@ Storage that is ordered after the first day of the month is prorated for the fir
 {: #simpletabtable-st-network}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
+| :-------- | :-------- | :-------------- |
 | Veeam Backup service base | | Monthly managed Veeam service base charge for every instance. |
 | Veeam Backup service host | | Monthly Veeam proxy storage cost for every host. |
 | Veeam license | MAX_VEEAM_LICENSES | Veeam license charge for every VM under backup. Monthly charge for the highest number of VMs under backup at any time period in the month. |
@@ -119,9 +119,9 @@ Storage that is ordered after the first day of the month is prorated for the fir
 {: #simpletabtable-st-veeam}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
-| VCDA Disaster Recovery license| DEDICATED-VCDA-DR-LICENSES | Monthly VMware Cloud Director Availability (VCDA) disaster recovery license charge for every protected VM. \n A VCDA VM Migration license is optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge.|
-| VCDA 20 GB private service endpoint | VCDA-PRIVATE-SERVICE-ENDPOINT |  Monthly charge for every instance endpoint with a private connection. |
+| :-------- | :-------- | :-------------- |
+| VCDA Disaster Recovery license | DEDICATED-VCDA-DR-LICENSES | Monthly VMware Cloud Director Availability (VCDA) disaster recovery license charge for every protected VM. \n A VCDA VM Migration license is optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge. |
+| VCDA 20 GB private service endpoint | VCDA-PRIVATE-SERVICE-ENDPOINT | Monthly charge for every instance endpoint with a private connection. |
 {: caption="Single-tenant instance billing" caption-side="bottom"}
 {: tab-title="Migration and DR"}
 {: tab-group="Single-tenant billing"}
@@ -144,7 +144,7 @@ Storage quantity includes all storage that is allocated per VM, even if the VM i
 Storage policy availability can vary by region and deployment topology.
 
 | Feature | Metrics | Billing model |
-|:--------|:-------|:--------------|
+| :-------- | :------- | :-------------- |
 | **On-demand** vCPU | TOTAL_VCPU_HOURS | The peak vCPU **usage** over the period of an hour. \n - vCPU is billed hourly. \n -  vCPU quantity is for all vCPU allocated to all running VMs in the VDC at any time per hour. \n - When a VM is stopped it is not counted in the total vCPU calculation. For example, if two running VMs both have 4 vCPU, then a third VM is started at 4 vCPU. The vCPU for the one hour period is 12 vCPU. |
 | **On-demand** RAM | TOTAL_RAM_GB_HOURS | The peak memory **usage** over the period of an hour. \b - RAM is billed hourly. \n - RAM quantity is for all RAM allocated to all running VMs in the VDC at any time per hour. \n -  When a VM is stopped it is not counted in the total RAM calculation. For example, if two running VMs have 16 GB RAM, then a third VM is started also at 16 GB RAM. The RAM for the one hour period is 48 GB. |
 | Multizone **On-demand** vCPU | | - vCPU is billed hourly. \n - vCPU quantity supports vCPU in both (2) of the data centers for all vCPU allocated to all running VMs in the VDC at any time per hour. \n - The vCPU size is double the cost of your order to support the vCPU in both data centers. For example, if the VM has 4 vCPU and runs in a multizone region, then the total vCPU is 8. \n - You can see the amount of vCPU that the VM uses in the primary region and {{site.data.keyword.IBM_notm}} allocates the same amount of vCPU in the secondary region. |
@@ -156,7 +156,7 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-compute-od}
 
 | Feature | Metrics | Billing model |
-|:--------|:-------|:--------------|
+| :-------- | :------- | :-------------- |
 | **Reserved** vCPU | MAX_VCPU | The peak vCPU **allocation** for the VDC over the period of one month. The peak vCPU metric is determined by the largest vCPU reservation value that is selected by the customer over a one month period. \n - vCPU is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased, then decreased again, the high water mark vCPU capacity reservation is charged for that month. |
 | **Reserved** RAM | MAX_RAM_GB | The peak memory **allocation** for the VDC over the period of one month. The peak memory metric is determined by the largest memory reservation value that is selected by the customer over a one month period. \n - RAM is billed monthly for the highest capacity reservation set for that month. \n - VDC reservations are prorated for the first month. If the reservation is increased, then decreased again, the high water mark RAM capacity reservation is charged for that month. |
 | Multizone **Reserved** vCPU | | - vCPU is billed monthly for the highest capacity reservation set for that month. \n - The vCPU size is double the cost of your reservation to support the vCPU in both data centers.  For example, if the VM has 4 vCPU reserved in a multizone region, then the total reserved vCPU is 8. \n - You can see the amount of vCPU that the VM uses in the primary region and {{site.data.keyword.IBM_notm}} allocates the same amount of vCPU in the secondary region. |
@@ -168,7 +168,7 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-compute-reserved}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
+| :-------- | :-------- | :-------------- |
 | NFS Shared Storage at 0.25 IOPS/GB | TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS | The peak storage **allocation** at the 0.25 IOPS/GB tier over the period of an hour. |
 | NFS Shared Storage at 2.0 IOPS/GB | TOTAL_STORAGE_TWO_IOPS_GB_HOURS | The peak storage **allocation** at the 2 IOPS/GB tier over the period of an hour. |
 | NFS Shared Storage at 4.0 IOPS/GB | TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | The peak storage **allocation** at the 4 IOPS/GB tier over the period of an hour. |
@@ -182,7 +182,7 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-storage}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
+| :-------- | :-------- | :-------------- |
 | Windows license | MAX_WINDOWS_LICENSES | The hourly peak number of Windows® license **usage** based on Windows VM vCPU size. For example, if you have two Windows VMs, one VM with 16 vCPU and one VM with 8 vCPU, the usage is 24 vCPU of Windows license usage. |
 | Red Hat Enterprise Linux (over 127 vCPU) license | TOTAL_RHEL_LARGE_LICENSES | The hourly peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Large RHEL VMs are larger than 127 vCPUs. |
 | Red Hat Enterprise Linux (9-127 vCPU) license | TOTAL_RHEL_MID_LICENSES	| The hourly peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Mid RHEL VMs are between 9 and 127 vCPUs. |
@@ -194,8 +194,8 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-os}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
-| Network edge | |  \n - Multiple edge storage options: shared and dedicated medium, large, or extra large \n - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost-effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. \n - {{site.data.keyword.IBM_notm}} recommends the **Dedicated - L** edge for large production workloads and high traffic. For more information, see [Network edge type](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-edge). |
+| :-------- | :-------- | :-------------- |
+| Network edge | | \n - Multiple edge storage options: shared and dedicated medium, large, or extra large \n - Edges are billed monthly based on the type of edge used. The efficiency edge is the most cost-effective edge and the extra large edge provides the highest level of edge services and throughput over 10 Gbps. \n - Edges are prorated for the first month. \n - Each edge change is treated individually. For example, when you remove an edge then add an edge, the bill reflects both edges for that month. \n - {{site.data.keyword.IBM_notm}} recommends the **Dedicated - L** edge for large production workloads and high traffic. For more information, see [Network edge type](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-edge). |
 | Edge gateway traffic | TOTAL_EGRESS_GB | The **total** outbound public traffic is charged per GB transferred over the period of one month. This value includes the outbound traffic through the VDC NSX edge to the public internet. |
 {: caption="Multitenant instance billing" caption-side="bottom"}
 {: tab-title="Network"}
@@ -204,7 +204,7 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-network}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
+| :-------- | :-------- | :-------------- |
 | Veeam license | MAX_VEEAM_LICENSES | Veeam Backup service license charge for every VM under backup. Monthly charge for the highest number of VMs under backup at any time period in the month. |
 | Veeam block storage | TOTAL_VEEAM_BLOCK_STORAGE_GB_HOURS | Hourly charge per GB of block storage used for all backups. Initially, all Veeam backups go to the {{site.data.keyword.blockstorageshort}} that is closest to their VM workloads. Backups that are a part of an inactive backup chain are immediately moved to {{site.data.keyword.cloud_notm}} Object Storage. The restore speed for these inactive backups might be impacted. You can change how fast the inactive backup chains are moved to {{site.data.keyword.cloud_notm}} Object Storage by opening an {{site.data.keyword.vcf-aas}} service ticket. For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmware-service?topic=vmware-service-tenant-veeam). |
 | Veeam object storage | TOTAL_VEEAM_OBJECT_STORAGE_GB_HOURS | Hourly charge per GB of object storage used for all backups. |
@@ -215,8 +215,8 @@ Storage policy availability can vary by region and deployment topology.
 {: #simpletabtable-mt-veeam}
 
 | Feature | Metrics | Billing model |
-|:--------|:--------|:--------------|
-| VCDA Disaster Recovery license| DEDICATED-VCDA-DR-LICENSES | Monthly VMware Cloud Director Availability (VCDA) disaster recovery license charge for every protected VM. \n A VCDA VM Migration license is optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge.|
+| :-------- | :-------- | :-------------- |
+| VCDA Disaster Recovery license | DEDICATED-VCDA-DR-LICENSES | Monthly VMware Cloud Director Availability (VCDA) disaster recovery license charge for every protected VM. \n A VCDA VM Migration license is optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge. |
 {: caption="Multitenant instance billing" caption-side="bottom"}
 {: tab-title="Migration and DR"}
 {: tab-group="Multitenant billing"}

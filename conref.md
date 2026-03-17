@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2025
+  years: 2025, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-03-10"
 
 keywords: VMware Cloud Foundation as a Service , getting started, VCF as a Service
 

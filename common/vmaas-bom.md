@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-12-09"
+lastupdated: "2026-02-04"
 
 keywords: VMware Cloud Foundation as a Service BOM, bill of materials VMware Cloud Foundation as a Service, BOM, VCF as a Service BOM
 
@@ -27,13 +27,13 @@ Review the Bill of Materials (BOM) information for {{site.data.keyword.vmware-se
 The following table details the current component versions for new instance orders. Existing instances are upgraded according to operational timelines and resolving security vulnerabilities.
 
 | Manufacturer | Component | Version |
-|:------------ |:--------- |:------- |
-| VMware® by Broadcom   | VMware ESXi™ | ESXi 8.0 Update 3f [^esxi80] |
-| VMware by Broadcom    | VMware vCenter Server® Appliance | 8.0 Update 3g |
-| VMware by Broadcom    | VMware NSX-T™ | 4.2.3 |
-| VMware by Broadcom    | VMware Cloud Director™ | 10.6.1.1 |
-| VMware by Broadcom    | VMware Cloud Director Availability | 4.7.3 |
-| Veeam®       | Veeam Backup | 12.3.2 |
+| :------------ | :--------- | :------- |
+| VMware® by Broadcom | VMware ESXi™ | ESXi 8.0 Update 3f [^esxi80] |
+| VMware by Broadcom | VMware vCenter Server® Appliance | 8.0 Update 3g  |
+| VMware by Broadcom | VMware NSX® | 4.2.3  |
+| VMware by Broadcom | VMware Cloud Director™ | 10.6.1.1 |
+| VMware by Broadcom | VMware Cloud Director Availability | 4.7.3 |
+| Veeam® | Veeam Backup | 12.3.2 |
 {: caption="BOM for the software components in {{site.data.keyword.vcf-aas}} instances" caption-side="bottom"}
 
 [^esxi80]: Applicable to vSphere 8 in Frankfurt, Dallas, and Washington DC

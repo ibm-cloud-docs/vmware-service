@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-10-30"
+  years: 2025, 2026
+lastupdated: "2026-02-19"
 
 keywords: HA for VCF as a Service, DR for VCF as a Service, VCF as a Service recovery time objective, VCF as a Service recovery point objective
 
@@ -64,7 +64,7 @@ For more information about the available region and data center locations, see [
 
 | Feature | Description | Consideration |
 | -------------- | -------------- | -------------- |
-| VMware Cloud Director Availability | Replicate workloads from a source {{site.data.keyword.vmware-service_short}} environment over to a second {{site.data.keyword.vmware-service_short}} environment. You can replicate source workloads to any VMware environment, including {{site.data.keyword.cloud_notm}}, other Cloud vendors, and on-premises.  | Included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant Cloud Director site order. |
+| VMware Cloud Director Availability | Replicate workloads from a source {{site.data.keyword.vmware-service_short}} environment over to a second {{site.data.keyword.vmware-service_short}} environment. You can replicate source workloads to any VMware environment, including {{site.data.keyword.cloud_notm}}, other Cloud vendors, and on-premises. | Included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant Cloud Director site order. |
 | Veeam® Backup | Achieve cyber-secure recovery points for your applications and data. | Service charges are incurred only if you choose to include the service in your order. |
 {: caption="DR features for {{site.data.keyword.vmware-service_short}}" caption-side="bottom"}
 
@@ -105,7 +105,7 @@ For more information about your responsibilities, see [Understanding your respon
 {{site.data.keyword.vmware-service_short}} provides mechanisms to protect your data and restore service functions. Business continuity plans are in place to achieve targeted [recovery point objective](#x3429911){: term} (RPO) and [recovery time objective](#x3167918){: term} (RTO) for the service. The following table outlines the targets for {{site.data.keyword.vmware-service_short}}.
 
 | Disaster recovery objective | Target value | Method |
-|:--------------------------- |:------------ |:------ |
+| :--------------------------- | :------------ | :------ |
 | RPO | 24 h | Use a backup provider such as Veeam Backup and Recovery to store periodic backups of your workload. |
 | RPO | Minutes | Use a replication provider such as Veeam to replicate your workload to another location. |
 | RTO | Minutes to hours | The recovery time objective depends on the storage medium that is used for your backups and on how long it takes for your workload to be ready from a cold start. |

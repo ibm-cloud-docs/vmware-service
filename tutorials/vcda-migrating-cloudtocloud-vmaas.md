@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-10-30"
+  years: 2023, 2026
+lastupdated: "2026-03-04"
 
 content-type: tutorial
 services: vmware-service
@@ -79,7 +79,7 @@ This tutorial requires:
 The following pairing status options are available.
 
 | Status | Description |
-|:------ |:----------- |
+| :------ | :----------- |
 | Creating | The pairing task starts. |
 | Waiting for peer pairing | The pairing is complete on one site. |
 | Available | The pairing is complete on both sites. |
