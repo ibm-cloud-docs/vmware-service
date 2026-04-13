@@ -1,8 +1,8 @@
 ---
 subcollection: vmware-service
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-10-30"
+  years: 2023, 2026
+lastupdated: "2026-04-13"
 lasttested: "2024-01-05"
 
 content-type: tutorial
@@ -66,7 +66,7 @@ This tutorial requires:
 * [A preprovisioned {{site.data.keyword.vcf-aas}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
 * [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
-* An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
+* An [{{site.data.keyword.cloud_notm}} API key](/docs/iam?topic=iam-userapikey&interface=ui).
 
 ## Gather information and requirements
 {: #vmwaas-ipsec-tunnel-gather-requirements}
@@ -95,10 +95,10 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
 
    Example values are provided as follows:
 
-   | Prefix               | Value |
-   |:-------------------- |:--------------------------- |
-   | Subnets behind vSRX  | `10.95.1.0/26` |
-   | Subnets on the VDC   | `192.168.100.0/24` |
+| Prefix | Value |
+| :-------------------- | :--------------------------- |
+| Subnets behind vSRX | `10.95.1.0/26` |
+| Subnets on the VDC | `192.168.100.0/24` |
    {: caption="List of site prefixes or subnets to review before configuring the VPN." caption-side="bottom"}
 
    As your solution might differ, use the subnets from your network design and deployment.
@@ -116,10 +116,10 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
 
    The following table shows the values that are used in this example:
 
-   | Gateway IP address                 | Value |
-   |:---------------------------------- |:--------------------------- |
-   | Public IP address of edge gateway  | `<public-IP address-of-the-vdc-edge-gateway>` |
-   | Public IP address of vSRX          | `<public-IP address-of-the-vsrx>` |
+| Gateway IP address | Value |
+| :---------------------------------- | :--------------------------- |
+| Public IP address of edge gateway | `<public-IP address-of-the-vdc-edge-gateway>` |
+| Public IP address of vSRX | `<public-IP address-of-the-vsrx>` |
    {: caption="List of gateway IP addresses to review before configuring the VPN." caption-side="bottom"}
 
    As your solution might differ, use the endpoint IP addresses matching your deployment.
@@ -128,36 +128,36 @@ Use {{site.data.keyword.cloud_notm}} portal and vSRX firewall configuration to c
 
 4. Define your IKE policy for the tunnel. The following table shows the values that are used in this example:
 
-   | IKE policy                       | Value |
-   |:-------------------------------- |:------------------ |
-   | Version                          | IKE v2 |
-   | Encryption                       | AES 256 |
-   | Digest                           | SHA 2 - 256 |
-   | Diffie-Hellman Group             | Group 14 |
-   | Association Life Time (seconds)  | 28800 |
+| IKE policy | Value |
+| :-------------------------------- | :------------------ |
+| Version | IKE v2 |
+| Encryption | AES 256 |
+| Digest | SHA 2 - 256 |
+| Diffie-Hellman Group | Group 14 |
+| Association Life Time (seconds) | 28800 |
    {: caption="List of IKE policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
 
 5. Define your IPsec (or tunnel) policy for the tunnel. The following table shows the values that are used in this example:
 
-   | IPsec (or tunnel) policy         | Value |
-   |:-------------------------------- |:------------------ |
-   | Perfect Forward Secrecy          | Enabled |
-   | Defragmentation Policy           | Copy |
-   | Encryption                       | AES 256 |
-   | Digest                           | SHA 2 - 256 |
-   | Diffie-Hellman Group             | Group 14 |
-   | Association Life Time (seconds)  | 3600 |
+| IPsec (or tunnel) policy | Value |
+| :-------------------------------- | :------------------ |
+| Perfect Forward Secrecy | Enabled |
+| Defragmentation Policy | Copy |
+| Encryption | AES 256 |
+| Digest | SHA 2 - 256 |
+| Diffie-Hellman Group | Group 14 |
+| Association Life Time (seconds) | 3600 |
    {: caption="List of IPsec (or tunnel) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
 
 6. Define your dead peer detection (DPD) policy for the tunnel. The following table shows the values that are used in this example:
 
-   | DPD                             | Value |
-   |:------------------------------- |:------------------ |
-   | Probe Interval (seconds)        | 60 |
+| DPD | Value |
+| :------------------------------- | :------------------ |
+| Probe Interval (seconds) | 60 |
    {: caption="List of dead peer detection (DPD) policy parameters to review before configuring the VPN." caption-side="bottom"}
 
    As your requirements might differ, use the values from your deployment.
@@ -286,10 +286,10 @@ Log in to your {{site.data.keyword.vcf-aas}} instance, configure networking subn
 4. In the side menu, click **IP Sets** and click **New** to create a new IP Set.
 5. Create two IP sets.
 
-   | IP set      | Name               | IP address |
-   |:----------- |:------------------ |:------------- |
-   | IPSET 1     | Firewall-Network   | `10.95.1.0/26` |
-   | IPSET 2     | VMWaaS-VDC-Network | `192.168.100.0/24` |
+| IP set | Name | IP address |
+| :----------- | :------------------ | :------------- |
+| IPSET 1 | Firewall-Network | `10.95.1.0/26` |
+| IPSET 2 | VMWaaS-VDC-Network | `192.168.100.0/24` |
    {: caption="IP sets details" caption-side="bottom"}
 
    ![VDC IPsec Rules](../images/vmwaas-ipsec-tunnel-ipset.png){: caption="{{site.data.keyword.vcf-aas}} VDC IP sets" caption-side="bottom"}
@@ -308,11 +308,11 @@ You must add two extra rules to allow traffic to and from the VPN connection.
 2. Click **Edit Rules** and click **New on Top**.
 3. Repeat for each rule then click **Save**.
 
-   | Firewall Rule  | Name           | Source Address | Destination Address |
-   |:-------------- |:--------------------- |:------------ |:-------------------- |
-   | Firewall Rule 1 | `VMWaaS-to-FW`      | `VMWaaS-VDC-Network` | `Firewall-Network` |
-   | Firewall Rule 2 | `FW-to-VMWaaS`      | `Firewall-Network`   |`VMWaaS-VDC-Network` |
-   {: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+| Firewall Rule | Name | Source Address | Destination Address |
+| :-------------- :--------------------- |:------------ |:-------------------- |
+| Firewall Rule 1 | `VMWaaS-to-FW` | `VMWaaS-VDC-Network` | `Firewall-Network` |
+| Firewall Rule 2 | `FW-to-VMWaaS` | `Firewall-Network` |`VMWaaS-VDC-Network` |
+{: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
    ![VDC firewall rules](../images/vmwaas-ipsec-tunnel-firewall-rules.png){: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
    {: style="text-align: center;"}
@@ -328,11 +328,11 @@ The next step is to create the IPSec VPN tunnel between our Local and Remote End
 4. Under **Peer Authentication mode**, populate the pre-shared key. This key must match the firewall. Click **Next**.
 5. Under **Endpoint Configuration**, set the following values:
 
-   | Endpoint configuration  | IP address           | Network | Remote ID |
-   |:----------------------- |:-------------------- |:--------- |:-------------------- |
-   | Local Endpoint  | `<public-IP address-of-the-vdc-edge-gateway>` | `192.168.100.0/24` | `n/a` |
-   | Remote Endpoint | `<public-IP address-of-the-vsrx>`      | `10.95.1.1/26`   | `<public-IP address-of-the-vsrx>` |
-   {: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
+| Endpoint configuration | IP address | Network | Remote ID |
+| :----------------------- | :-------------------- | :--------- | :-------------------- |
+| Local Endpoint | `<public-IP address-of-the-vdc-edge-gateway>` | `192.168.100.0/24` | `n/a` |
+| Remote Endpoint | `<public-IP address-of-the-vsrx>` | `10.95.1.1/26` | `<public-IP address-of-the-vsrx>` |
+{: caption="{{site.data.keyword.vcf-aas}} VDC firewall rules" caption-side="bottom"}
 
 6. Click **Finish** to complete.
 

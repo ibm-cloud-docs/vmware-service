@@ -2,7 +2,7 @@
 subcollection: vmware-service
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-20"
+lastupdated: "2026-04-13"
 
 content-type: tutorial
 services: vmware-service
@@ -48,7 +48,7 @@ This tutorial requires:
 * [A preprovisioned {{site.data.keyword.vcf-aas}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering).
 * [A preprovisioned VDC on {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-vdc-adding).
 * [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
-* An [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui).
+* An [{{site.data.keyword.cloud_notm}} API key](/docs/iam?topic=iam-userapikey&interface=ui).
 * An exported VM (virtual machine) to import into a VMware Cloud Director instance in OVA format. For more information, see [Deploy and export OVF and OVA templates](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration/deploying-ovf-templatesvsphere-vm-admin.html){: external}.
 
 ## Creating a local username and password in VMware Cloud Director
