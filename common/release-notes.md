@@ -26,6 +26,8 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2026
 {: #vmware-service-year-2026}
 
+
+
 ### 26 June 2026
 {: #vmware-service-jun2626}
 {: release-note}
@@ -35,8 +37,6 @@ Veeam Backup service usage
 
 New and updated documentation
 :   The [Migrating Veeam Backup options from shared SOBRs to IBM Cloud Object Storage-only SOBRs](/docs/vmware-service?topic=vmware-service-veeam-migrating-cos) technical document is now available.
-
-
 
 ### 18 March 2026
 {: #vmware-service-mar1826}
@@ -606,72 +606,3 @@ VMware currency
 
 User interface updates and enhancements
 :   You can check the prices for VMware as a Service without having to sign in to {{site.data.keyword.cloud_notm}}. However, you might have limited access to some sections of the ordering pages. To place an order, or for a complete access to the ordering pages, you must log in to {{site.data.keyword.cloud_notm}}.
-
-### 5 May 2023
-{: #vmware-service-may0523}
-{: release-note}
-
-vSAN storage availability
-:   You can now select vSAN storage with optional NFS storage for your instance order in locations with 25 GbE availability. For more information, see [Planning the deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy).
-
-REST APIs
-:   REST APIs are now available for all VMware as a Service capabilities. For more information, see [VMware as a Service API](/apidocs/vmware-service).
-
-User interface updates and enhancements
-:   The user interface is updated with various message and tooltip enhancements.
-
-### 7 April 2023
-{: #vmware-service-apr0723}
-{: release-note}
-
-Production refresh
-:   Production refresh to deliver defect resolutions, performance improvements, and maintain security currency.
-
-### 10 March 2023
-{: #vmware-service-mar1023}
-{: release-note}
-
-Data center support for 25 GbE
-:   You can now select a data center with networking speed of either 10 GbE or 25 GbE.
-
-User interface updates and enhancements
-:   The user interface is updated with various message and tooltip enhancements. Additionally, **Dark** mode is now enabled.
-
-IBM software currency policy
-:   Documentation is now available describing how {{site.data.keyword.IBM_notm}} maintains software currency for VMware and third-party software. For more information, see [Understanding IBM software currency policy](/docs/vmware-service?topic=vmware-service-policies).
-
-### 10 February 2023
-{: #vmware-service-feb1023}
-{: release-note}
-
-VMware currency
-:   Infrastructure upgrade to VMware NSX-T 4.0 and VMware Cloud Director 10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
-
-Multiple clusters support
-:   The limitation of one cluster per provider virtual data center (PVDC) is removed. For more information, see [Adding and deleting clusters](/docs/vmware-service?topic=vmware-service-cluster-adding-deleting).
-
-Virtual data centers without edge
-:   You can deploy VDCs without a network edge, which can help you save resources and costs by sharing an existing edge across multiple VDCs. This option is suitable for centralized networking administration and control over many VDCs. For more information, see [Adding virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding).
-
-### 18 January 2023
-{: #vmware-service-jan1823}
-{: release-note}
-
-Multizone support
-:   You can now create PVDCs across three data centers in the region. For more information, see [Ordering VMware as a Service instances](/docs/vmware-service?topic=vmware-service-tenant-ordering) and [Adding and deleting PVDCs](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
-
-Add PVDC with new cluster
-:   Adding multiple PVDCs with new clusters is now supported, with a limitation of one cluster per PVDC. For more information, see [Adding and deleting PVDCs](/docs/vmware-service?topic=vmware-service-pvdc-adding-deleting).
-
-IAM enablement
-:   VMware Cloud Director SSO is enabled with {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) for new sites. You can also enable IAM for existing sites. After you integrate your site with IAM, you can use single sign-on to log in to the VMware Cloud Director console from the VMware Solutions console. For more information, see [VMware Cloud Director single sign-on with IBM Cloud IAM](/docs/vmware-service?topic=vmware-service-iam-integration).
-
-## 2022
-{: #vmware-service-year-2022}
-
-### 14 November 2022
-{: #vmware-service-nov1422}
-{: release-note}
-
-VMware as a Service released
-:   IBM Cloud for VMware as a Service is released! For more information, see [VMware as a Service overview](/docs/vmware-service?topic=vmware-service-vmware-aas-overview).
