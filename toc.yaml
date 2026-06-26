@@ -109,6 +109,7 @@ toc:
               - vmaas/tenant-veeam.md
               - vmaas/veeam-adding-deleting.md
               - vmaas/veeam-dedicated-sobr.md
+              - topic: vmaas/veeam-migrating-cos.md
           - vmaas/byok-dedicated.md
           - topicgroup:
               id: vcfaas-creating-secure-interconnectivity

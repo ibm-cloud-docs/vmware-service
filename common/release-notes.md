@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-03-18"
+lastupdated: "2026-06-26"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -26,7 +26,15 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 ## 2026
 {: #vmware-service-year-2026}
 
+### 26 June 2026
+{: #vmware-service-jun2626}
+{: release-note}
 
+Veeam Backup service usage
+:   {{site.data.keyword.cloud}} has disabled Veeam® services for accounts that did not continuously use Veeam for VM backups, effective 1 November 2025. For more information, see [End of Marketing for VMware on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vms).
+
+New and updated documentation
+:   The [Migrating Veeam Backup options from shared SOBRs to IBM Cloud Object Storage-only SOBRs](/docs/vmware-service?topic=vmware-service-veeam-migrating-cos) technical document is now available.
 
 
 
