@@ -33,7 +33,7 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: release-note}
 
 Software currency updates
-:   This release provides the infrastructure upgrades for VMware vCenter Server® Appliance 8.0 Update 3i.
+:   VMware vCenter Server® Appliance 8.0 Update 3i is now available for the infrastructure upgrade.
 
 ### 21 July 2026
 {: #vmwaresolutions-jul2126}
