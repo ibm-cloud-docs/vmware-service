@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-07-21"
+lastupdated: "2026-07-28"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -27,6 +27,13 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: #vmware-service-year-2026}
 
 
+
+### 28 July 2026
+{: #vmwaresolutions-jul2826}
+{: release-note}
+
+Software currency updates
+:   This release provides the infrastructure upgrades for VMware vCenter Server® Appliance 8.0 Update 3i.
 
 ### 21 July 2026
 {: #vmwaresolutions-jul2126}
@@ -54,7 +61,7 @@ Software currency updates
 
    * NSX-T™ 4.2.3.1
    * VMware Cloud Director 10.6.1.2
-   * VMware vCenter Server® Appliance 8.0 Update 3h
+   * VMware vCenter Server Appliance 8.0 Update 3h
    * VMware ESXi™ 8.0 Update 3h
 
 ### 19 January 2026
