@@ -33,14 +33,18 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 {: release-note}
 
 Software currency updates
-:   VMware vCenter Server® Appliance 8.0 Update 3i is now available for the infrastructure upgrade.
+:   The following infrastructure upgrades are provided:
+
+   * VMware vCenter Server® Appliance 8.0 Update 3i
 
 ### 21 July 2026
 {: #vmwaresolutions-jul2126}
 {: release-note}
 
 Software currency updates
-:   VMware vCloud Usage Meter version 9.1.0 is now available for the infrastructure upgrade.
+:   The following infrastructure upgrades are provided:
+
+   * VMware vCloud Usage Meter version 9.1.0
 
 ### 26 June 2026
 {: #vmware-service-jun2626}
