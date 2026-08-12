@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2023, 2025
+  years: 2023, 2026
 
-lastupdated: "2025-10-24"
+lastupdated: "2026-08-12"
 
 keywords: software currency for vmware service, policies, software currency policies
 
@@ -25,7 +25,7 @@ IBM defines a major release as the first update level after a VMware major relea
 * IBM code freeze windows.
 
 | VMware vSphere and VMware Cloud Director releases | Target |
-|:------- |:---------- |
+| :------- | :---------- |
 | Major releases (for example, 7.x) | Up to 9 months |
 | Minor releases (for example, 7.1.x) | Up to 4 months |
 | Patches, hotfixes, and maintenance packs | Up to 45 days |
@@ -37,7 +37,7 @@ IBM defines a major release as the first update level after a VMware major relea
 {: tab-group="currency policies"}
 
 | Third-party releases | Target |
-|:------- |:---------- |
+| :------- | :---------- |
 | Major releases | Up to 4 months |
 | Minor releases | Up to 45 days |
 | Patches, hotfixes, maintenance packs | Up to 45 days |

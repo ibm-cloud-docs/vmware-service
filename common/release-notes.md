@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-07-28"
+lastupdated: "2026-08-12"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -28,6 +28,16 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 12 August 2026
+{: #vmwaresolutions-aug1226}
+{: release-note}
+
+Software currency updates
+:   The following infrastructure upgrades are provided:
+
+   * VMware vCenter Server® Appliance 8.0 Update 3k
+   * VMware ESXi™ 8.0 Update 3k
+
 ### 28 July 2026
 {: #vmwaresolutions-jul2826}
 {: release-note}
@@ -35,7 +45,7 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 Software currency updates
 :   The following infrastructure upgrades are provided:
 
-   * VMware vCenter Server® Appliance 8.0 Update 3i
+   * VMware vCenter Server Appliance 8.0 Update 3i
 
 ### 21 July 2026
 {: #vmwaresolutions-jul2126}
@@ -66,7 +76,7 @@ Software currency updates
    * NSX-T™ 4.2.3.1
    * VMware Cloud Director 10.6.1.2
    * VMware vCenter Server Appliance 8.0 Update 3h
-   * VMware ESXi™ 8.0 Update 3h
+   * VMware ESXi 8.0 Update 3h
 
 ### 19 January 2026
 {: #vmware-service-jan1926}
@@ -97,7 +107,7 @@ Updated pricing for {{site.data.keyword.vcf-aas-full}}
 Software currency updates
 :   This release provides the following infrastructure upgrades:
 
-   * VMware vCenter Server® Appliance 8.0 Update 3g
+   * VMware vCenter Server Appliance 8.0 Update 3g
    * VMware vCloud Usage Meter 9.0.1
 
 ### 27 October 2025
@@ -132,7 +142,7 @@ Software currency updates
 
    * NSX-T 4.2.2.1
    * VMware Cloud Director 10.6.1.1
-   * VMware ESXi™ 8.0 Update 3f
+   * VMware ESXi 8.0 Update 3f
    * Veeam Backup 12.3.2
 
 REST API updates
