@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-08-12"
+lastupdated: "2026-09-23"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -30,7 +30,12 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 23 September 2026
+{: #vmware-service-sep2326}
+{: release-note}
 
+Production refresh
+:   This release includes security currency updates.
 
 ### 12 August 2026
 {: #vmwaresolutions-aug1226}
