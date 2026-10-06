@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-09-23"
+lastupdated: "2026-10-06"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -30,6 +30,15 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 06 October 2026
+{: #vmware-service-oct0626}
+{: release-note}
+
+Software currency updates
+:   The following infrastructure upgrades are provided:
+
+   * VMware vCloud Usage Meter version 9.1.1
+
 ### 23 September 2026
 {: #vmware-service-sep2326}
 {: release-note}
@@ -38,7 +47,7 @@ Production refresh
 :   This release includes security currency updates.
 
 ### 12 August 2026
-{: #vmwaresolutions-aug1226}
+{: #vmware-service-aug1226}
 {: release-note}
 
 Software currency updates
@@ -48,7 +57,7 @@ Software currency updates
    * VMware ESXi™ 8.0 Update 3k
 
 ### 28 July 2026
-{: #vmwaresolutions-jul2826}
+{: #vmware-service-jul2826}
 {: release-note}
 
 Software currency updates
@@ -57,7 +66,7 @@ Software currency updates
    * VMware vCenter Server Appliance 8.0 Update 3i
 
 ### 21 July 2026
-{: #vmwaresolutions-jul2126}
+{: #vmware-service-jul2126}
 {: release-note}
 
 Software currency updates
