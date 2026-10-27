@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2026
 
-lastupdated: "2026-10-06"
+lastupdated: "2026-10-15"
 
 keywords: release notes, what's new in VMware Cloud Foundation as a Service, what is new, new features, vmware release notes, VMware Cloud Foundation as a Service, VCF as a Service
 
@@ -28,7 +28,14 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+### 15 October 2026
+{: #vmware-service-oct1526}
+{: release-note}
 
+Software currency updates
+:   The following infrastructure upgrades are provided:
+
+   * Veeam Backup 12.3.2.4854
 
 ### 06 October 2026
 {: #vmware-service-oct0626}

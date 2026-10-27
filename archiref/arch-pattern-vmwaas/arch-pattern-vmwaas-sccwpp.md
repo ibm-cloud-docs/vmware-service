@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2024, 2025
+  years:  2024, 2026
 
-lastupdated: "2025-10-30"
+lastupdated: "2026-10-27"
 
 subcollection: vmware-service
 
@@ -62,11 +62,7 @@ This architecture pattern is summarized as follows:
 2. Your DNS servers need to be able to resolve the Security and Compliance Center Workload Protection endpoint URLs. Configure your DNS servers to use {{site.data.keyword.cloud_notm}} DNS resolvers, if needed.
 3. Firewall rules enable the downloading of the agents from the internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add an NSX Edge Gateway Firewall Rule](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html){: external}.
 4. Source Network Address Translation (SNAT) rules allow your VMs overlay IP addresses to be converted to {{site.data.keyword.cloud_notm}} supplied IP addresses that can be used on the internet. For more information about configuring SNAT rules, see [Add a SNAT or a DNAT Rule to an NSX Edge Gateway](https://techdocs.broadcom.com/us/en/vmware-cis/cloud-director/vmware-cloud-director/10-6.html){: external}.
-5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see:
-   * [Provisioning an instance](/docs/workload-protection?topic=workload-protection-provision)
-   * [Regions](/docs/workload-protection?topic=workload-protection-regions)
-   * [Protecting Linux hosts](/docs/workload-protection?topic=workload-protection-protecting-linux-hosts)
-   * [Endpoints](/docs/workload-protection?topic=workload-protection-endpoints)
+5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see the [IBM Cloud Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started) documentation.
 
 ## Considerations
 {: #arch-pattern-vmwaas-sccwpp-considerations}
