@@ -28,6 +28,8 @@ Use these release notes to learn about the most recent updates to {{site.data.ke
 
 
 
+
+
 ### 21 October 2026
 {: #vmware-service-oct2126}
 {: release-note}
