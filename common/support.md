@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2026
 
-lastupdated: "2026-04-13"
+lastupdated: "2026-11-10"
 
 keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
@@ -23,7 +23,7 @@ subcollection: vmware-service
 If you experience an issue or have questions when using {{site.data.keyword.vmware-service_notm}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
-* Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console.
+* Troubleshoot with [{{site.data.keyword.paver_full}}](http://paver.cloud.ibm.com){: external}. {{site.data.keyword.paver}} is an embedded AI operator that understands your account context, creates a resolution plan, and executes changes on your behalf, while always requiring your approval before touching your live environment.
 * Review the [FAQ](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 
